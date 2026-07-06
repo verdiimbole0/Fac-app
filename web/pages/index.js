@@ -7,7 +7,9 @@ export default function Home() {
         Accompagnement pour tes TP, tes révisions et tes projets de fin de cycle,
         par des tuteurs qui connaissent ton parcours.
       </p>
-      <a href="/login">Se connecter</a>
+      <p>
+        <a href="/login">Se connecter</a> · <a href="/sessions">Mes sessions</a>
+      </p>
     </main>
   );
 }

@@ -2,17 +2,10 @@ const express = require("express");
 const { z } = require("zod");
 const { PrismaClient } = require("@prisma/client");
 const { requireAuth } = require("../middleware/auth");
+const { PRICING } = require("../pricing");
 
 const router = express.Router();
 const prisma = new PrismaClient();
-
-// Grille tarifaire de référence (en $) — à ajuster si besoin
-const PRICING = {
-  SESSION_TP: { min: 3, max: 30 },
-  SESSION_EXAM_PREP: { min: 3, max: 30 },
-  SUBSCRIPTION_MONTHLY: { min: 30, max: 50 },
-  MEMOIRE_PFE: { min: 50, max: 200 },
-};
 
 const initiateSchema = z.object({
   provider: z.enum(["ORANGE_MONEY", "AIRTEL_MONEY", "MPESA", "FONDEKA"]),

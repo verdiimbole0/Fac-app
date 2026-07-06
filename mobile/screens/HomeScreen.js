@@ -1,13 +1,23 @@
-import { View, Text, StyleSheet } from "react-native";
+import { View, Text, Button, StyleSheet } from "react-native";
+import { getUser } from "../api";
 
-export default function HomeScreen() {
+export default function HomeScreen({ navigation }) {
+  const user = getUser();
+  const isStudent = user?.role !== "TUTOR";
+
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Bienvenue sur Fac'App</Text>
-      <Text>
+      <Text style={styles.text}>
         Réserve une session avec un tuteur, dépose tes documents, ou consulte ton abonnement.
       </Text>
-      {/* TODO: liste des tuteurs disponibles, réservation de créneaux, accès à l'abonnement */}
+      <View style={styles.actions}>
+        {isStudent && (
+          <Button title="Réserver un créneau" onPress={() => navigation.navigate("Tutors")} />
+        )}
+        <Button title="Mes sessions" onPress={() => navigation.navigate("Sessions")} />
+      </View>
+      {/* TODO: accès à l'abonnement, dépôt de documents */}
     </View>
   );
 }
@@ -15,4 +25,6 @@ export default function HomeScreen() {
 const styles = StyleSheet.create({
   container: { flex: 1, padding: 24 },
   title: { fontSize: 22, fontWeight: "bold", marginBottom: 12 },
+  text: { marginBottom: 24 },
+  actions: { gap: 12 },
 });

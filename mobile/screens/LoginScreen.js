@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { View, Text, TextInput, Button, StyleSheet } from "react-native";
-
-const API_URL = "http://localhost:4000"; // à remplacer par l'URL de votre backend déployé
+import { API_URL, setAuth } from "../api";
 
 export default function LoginScreen({ navigation }) {
   const [email, setEmail] = useState("");
@@ -19,6 +18,7 @@ export default function LoginScreen({ navigation }) {
       const data = await res.json();
       if (!res.ok) throw new Error(data.error || "Erreur de connexion");
       // TODO: stocker le token de façon sécurisée (expo-secure-store)
+      setAuth(data.token, data.user);
       navigation.replace("Home");
     } catch (err) {
       setError(err.message);

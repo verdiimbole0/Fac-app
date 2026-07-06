@@ -19,7 +19,8 @@ export default function Login() {
       const data = await res.json();
       if (!res.ok) throw new Error(data.error || "Erreur de connexion");
       localStorage.setItem("facapp_token", data.token);
-      window.location.href = "/";
+      localStorage.setItem("facapp_user", JSON.stringify(data.user));
+      window.location.href = "/sessions";
     } catch (err) {
       setError(err.message);
     }
