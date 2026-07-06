@@ -1,10 +1,28 @@
+import * as SecureStore from "expo-secure-store";
+
 export const API_URL = "http://localhost:4000"; // à remplacer par l'URL de votre backend déployé
 
-// TODO: stocker le token de façon sécurisée (expo-secure-store) — cf. README, étape dédiée.
+const AUTH_KEY = "facapp_auth";
+
 let auth = { token: null, user: null };
 
-export function setAuth(token, user) {
+export async function setAuth(token, user) {
   auth = { token, user };
+  await SecureStore.setItemAsync(AUTH_KEY, JSON.stringify(auth));
+}
+
+// Recharge la session stockée au lancement de l'app ; retourne l'utilisateur ou null.
+export async function loadAuth() {
+  const raw = await SecureStore.getItemAsync(AUTH_KEY);
+  if (raw) {
+    auth = JSON.parse(raw);
+  }
+  return auth.user;
+}
+
+export async function clearAuth() {
+  auth = { token: null, user: null };
+  await SecureStore.deleteItemAsync(AUTH_KEY);
 }
 
 export function getUser() {

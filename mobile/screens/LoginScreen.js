@@ -1,11 +1,18 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { View, Text, TextInput, Button, StyleSheet } from "react-native";
-import { API_URL, setAuth } from "../api";
+import { API_URL, setAuth, loadAuth } from "../api";
 
 export default function LoginScreen({ navigation }) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState(null);
+
+  // Reconnexion automatique si une session est stockée (expo-secure-store)
+  useEffect(() => {
+    loadAuth().then((user) => {
+      if (user) navigation.replace("Home");
+    });
+  }, []);
 
   async function handleLogin() {
     setError(null);
@@ -17,8 +24,7 @@ export default function LoginScreen({ navigation }) {
       });
       const data = await res.json();
       if (!res.ok) throw new Error(data.error || "Erreur de connexion");
-      // TODO: stocker le token de façon sécurisée (expo-secure-store)
-      setAuth(data.token, data.user);
+      await setAuth(data.token, data.user);
       navigation.replace("Home");
     } catch (err) {
       setError(err.message);
@@ -46,6 +52,9 @@ export default function LoginScreen({ navigation }) {
       />
       {error && <Text style={styles.error}>{error}</Text>}
       <Button title="Se connecter" onPress={handleLogin} />
+      <View style={{ marginTop: 12 }}>
+        <Button title="Créer un compte" onPress={() => navigation.navigate("Register")} />
+      </View>
     </View>
   );
 }

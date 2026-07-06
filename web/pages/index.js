@@ -8,7 +8,7 @@ export default function Home() {
         par des tuteurs qui connaissent ton parcours.
       </p>
       <p>
-        <a href="/login">Se connecter</a> · <a href="/sessions">Mes sessions</a>
+        <a href="/register">S'inscrire</a> · <a href="/login">Se connecter</a> · <a href="/sessions">Mes sessions</a>
       </p>
     </main>
   );

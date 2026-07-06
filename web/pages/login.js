@@ -47,6 +47,9 @@ export default function Login() {
         {error && <p style={{ color: "red" }}>{error}</p>}
         <button type="submit">Se connecter</button>
       </form>
+      <p>
+        Pas encore de compte ? <a href="/register">S'inscrire</a>
+      </p>
     </main>
   );
 }

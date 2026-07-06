@@ -13,6 +13,11 @@ const registerSchema = z.object({
   fullName: z.string().min(2),
   role: z.enum(["STUDENT", "TUTOR"]).default("STUDENT"),
   filiere: z.string().optional(),
+  acceptedIntegrityCharter: z
+    .boolean()
+    .refine((v) => v === true, {
+      message: "La charte d'intégrité académique doit être acceptée pour s'inscrire",
+    }),
 });
 
 router.post("/register", async (req, res) => {
@@ -20,7 +25,7 @@ router.post("/register", async (req, res) => {
   if (!parsed.success) {
     return res.status(400).json({ error: parsed.error.flatten() });
   }
-  const { email, password, fullName, role, filiere } = parsed.data;
+  const { email, password, fullName, role, filiere, acceptedIntegrityCharter } = parsed.data;
 
   const existing = await prisma.user.findUnique({ where: { email } });
   if (existing) {
@@ -29,7 +34,7 @@ router.post("/register", async (req, res) => {
 
   const passwordHash = await bcrypt.hash(password, 10);
   const user = await prisma.user.create({
-    data: { email, passwordHash, fullName, role, filiere },
+    data: { email, passwordHash, fullName, role, filiere, acceptedIntegrityCharter },
   });
 
   if (role === "TUTOR") {

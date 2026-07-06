@@ -101,6 +101,7 @@ router.get("/", requireAuth, async (req, res) => {
     include: {
       student: { select: { id: true, fullName: true, filiere: true } },
       tutor: { include: { user: { select: { id: true, fullName: true } } } },
+      payments: { select: { id: true, provider: true, status: true, reference: true } },
     },
   });
 

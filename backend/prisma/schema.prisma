@@ -54,12 +54,14 @@ model User {
   fullName     String
   role         Role     @default(STUDENT)
   filiere      String?  // filière/spécialité, optionnelle pour un étudiant
+  acceptedIntegrityCharter Boolean @default(false) // charte d'intégrité académique acceptée à l'inscription
   createdAt    DateTime @default(now())
 
   // Relations quand l'utilisateur est étudiant
   sessionsAsStudent Session[]      @relation("StudentSessions")
   subscriptions     Subscription[]
   payments          Payment[]
+  messages          Message[]
 
   // Relations quand l'utilisateur est tuteur
   tutorProfile TutorProfile?
@@ -87,6 +89,8 @@ model Session {
   scheduledAt DateTime?
   priceUsd    Float
   createdAt   DateTime      @default(now())
+  payments    Payment[]
+  messages    Message[]
 }
 
 model Subscription {
@@ -108,4 +112,27 @@ model Payment {
   status     PaymentStatus   @default(PENDING)
   reference  String          @unique // référence externe de l'agrégateur/opérateur
   createdAt  DateTime        @default(now())
+
+  // Session payée, si le paiement règle un créneau réservé (plusieurs
+  // tentatives possibles pour une même session si un paiement échoue)
+  session   Session? @relation(fields: [sessionId], references: [id])
+  sessionId String?
+}
+
+// Messagerie asynchrone rattachée à une session : messages écrits et
+// dépôt de documents (TP, brouillons de mémoire...) entre étudiant et tuteur.
+model Message {
+  id        String   @id @default(uuid())
+  session   Session  @relation(fields: [sessionId], references: [id])
+  sessionId String
+  sender    User     @relation(fields: [senderId], references: [id])
+  senderId  String
+  content   String?  // texte du message, optionnel si pièce jointe seule
+  createdAt DateTime @default(now())
+
+  // Pièce jointe, stockée sur disque local pour l'instant (TODO: S3/Supabase Storage)
+  fileName   String? // nom original du fichier
+  storedName String? // nom du fichier dans le dossier uploads/
+  mimeType   String?
+  sizeBytes  Int?
 }

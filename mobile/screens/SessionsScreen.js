@@ -16,7 +16,23 @@ const STATUS_LABELS = {
   CANCELLED: "Annulée",
 };
 
-export default function SessionsScreen() {
+const PROVIDER_LABELS = {
+  ORANGE_MONEY: "Orange Money",
+  AIRTEL_MONEY: "Airtel Money",
+  MPESA: "M-Pesa",
+  FONDEKA: "FONDEKA",
+};
+
+function paymentInfo(session) {
+  const payments = session.payments || [];
+  const success = payments.find((p) => p.status === "SUCCESS");
+  if (success) return { paid: true, label: `Payée via ${PROVIDER_LABELS[success.provider]} ✓` };
+  const pending = payments.find((p) => p.status === "PENDING");
+  if (pending) return { paid: false, pending: true, label: `Paiement en cours (réf. ${pending.reference})` };
+  return { paid: false, pending: false, label: null };
+}
+
+export default function SessionsScreen({ navigation }) {
   const [sessions, setSessions] = useState([]);
   const [error, setError] = useState(null);
   const user = getUser();
@@ -47,32 +63,40 @@ export default function SessionsScreen() {
       <FlatList
         data={sessions}
         keyExtractor={(s) => s.id}
-        renderItem={({ item }) => (
-          <View style={styles.card}>
-            <Text style={styles.name}>
-              {TYPE_LABELS[item.type]} —{" "}
-              {item.scheduledAt ? new Date(item.scheduledAt).toLocaleString() : "date à définir"}
-            </Text>
-            <Text style={styles.meta}>
-              {isTutor
-                ? `Étudiant : ${item.student?.fullName}`
-                : `Tuteur : ${item.tutor?.user?.fullName}`}{" "}
-              — {item.priceUsd} $
-            </Text>
-            <Text style={styles.meta}>Statut : {STATUS_LABELS[item.status]}</Text>
-            <View style={styles.actions}>
-              {isTutor && item.status === "REQUESTED" && (
-                <Button title="Confirmer" onPress={() => updateStatus(item.id, "confirm")} />
-              )}
-              {isTutor && item.status === "CONFIRMED" && (
-                <Button title="Marquer effectuée" onPress={() => updateStatus(item.id, "complete")} />
-              )}
-              {(item.status === "REQUESTED" || item.status === "CONFIRMED") && (
-                <Button title="Annuler" color="#b91c1c" onPress={() => updateStatus(item.id, "cancel")} />
-              )}
+        renderItem={({ item }) => {
+          const pInfo = paymentInfo(item);
+          return (
+            <View style={styles.card}>
+              <Text style={styles.name}>
+                {TYPE_LABELS[item.type]} —{" "}
+                {item.scheduledAt ? new Date(item.scheduledAt).toLocaleString() : "date à définir"}
+              </Text>
+              <Text style={styles.meta}>
+                {isTutor
+                  ? `Étudiant : ${item.student?.fullName}`
+                  : `Tuteur : ${item.tutor?.user?.fullName}`}{" "}
+                — {item.priceUsd} $
+              </Text>
+              <Text style={styles.meta}>Statut : {STATUS_LABELS[item.status]}</Text>
+              {pInfo.label && <Text style={styles.meta}>Paiement : {pInfo.label}</Text>}
+              <View style={styles.actions}>
+                {isTutor && item.status === "REQUESTED" && (
+                  <Button title="Confirmer" onPress={() => updateStatus(item.id, "confirm")} />
+                )}
+                {isTutor && item.status === "CONFIRMED" && (
+                  <Button title="Marquer effectuée" onPress={() => updateStatus(item.id, "complete")} />
+                )}
+                {(item.status === "REQUESTED" || item.status === "CONFIRMED") && (
+                  <Button title="Annuler" color="#b91c1c" onPress={() => updateStatus(item.id, "cancel")} />
+                )}
+                {!isTutor && item.status === "CONFIRMED" && !pInfo.paid && !pInfo.pending && (
+                  <Button title="Payer" onPress={() => navigation.navigate("Pay", { session: item })} />
+                )}
+                <Button title="Messages" onPress={() => navigation.navigate("Messages", { session: item })} />
+              </View>
             </View>
-          </View>
-        )}
+          );
+        }}
       />
     </View>
   );
