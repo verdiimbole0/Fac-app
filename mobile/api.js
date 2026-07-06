@@ -1,6 +1,8 @@
 import * as SecureStore from "expo-secure-store";
 
-export const API_URL = "http://localhost:4000"; // à remplacer par l'URL de votre backend déployé
+// URL du backend : définir EXPO_PUBLIC_API_URL (fichier .env ou variable EAS)
+// avec l'URL du backend déployé ; localhost par défaut en développement.
+export const API_URL = process.env.EXPO_PUBLIC_API_URL || "http://localhost:4000";
 
 const AUTH_KEY = "facapp_auth";
 
@@ -42,6 +44,21 @@ export async function api(path, options = {}) {
   if (!res.ok) {
     const err = data.error;
     throw new Error(typeof err === "string" ? err : "Requête invalide");
+  }
+  return data;
+}
+
+// Envoi multipart (documents) — le Content-Type est posé par fetch avec la boundary.
+export async function apiUpload(path, formData) {
+  const res = await fetch(`${API_URL}${path}`, {
+    method: "POST",
+    headers: auth.token ? { Authorization: `Bearer ${auth.token}` } : {},
+    body: formData,
+  });
+  const data = await res.json();
+  if (!res.ok) {
+    const err = data.error;
+    throw new Error(typeof err === "string" ? err : "Envoi impossible");
   }
   return data;
 }

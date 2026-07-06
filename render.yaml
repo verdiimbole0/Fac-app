@@ -1,0 +1,27 @@
+# Blueprint Render : crée l'API + la base PostgreSQL en un clic
+# (https://render.com/docs/blueprint-spec). Après le premier déploiement,
+# renseigner CORS_ORIGIN avec l'URL Vercel du site, et les variables S3_* /
+# clés des opérateurs de paiement quand elles seront disponibles.
+services:
+  - type: web
+    name: facapp-api
+    runtime: node
+    rootDir: backend
+    buildCommand: npm ci && npx prisma generate
+    startCommand: npx prisma migrate deploy && node src/index.js
+    healthCheckPath: /health
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: facapp-db
+          property: connectionString
+      - key: JWT_SECRET
+        generateValue: true
+      - key: CORS_ORIGIN
+        sync: false
+      - key: STORAGE_DRIVER
+        value: local # passer à "s3" avec les variables S3_* pour un stockage persistant
+
+databases:
+  - name: facapp-db
+    plan: free

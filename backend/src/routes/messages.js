@@ -1,19 +1,14 @@
 const express = require("express");
 const path = require("path");
-const fs = require("fs");
 const crypto = require("crypto");
 const multer = require("multer");
 const { z } = require("zod");
 const { PrismaClient } = require("@prisma/client");
 const { requireAuth } = require("../middleware/auth");
+const { UPLOADS_DIR, saveFile, sendFile } = require("../storage");
 
 const router = express.Router();
 const prisma = new PrismaClient();
-
-// Stockage local des pièces jointes — TODO: remplacer par S3/Supabase Storage
-// avant le déploiement (cf. README).
-const UPLOADS_DIR = path.join(__dirname, "..", "..", "uploads");
-fs.mkdirSync(UPLOADS_DIR, { recursive: true });
 
 const upload = multer({
   storage: multer.diskStorage({
@@ -89,6 +84,10 @@ router.post("/:id/messages", requireAuth, upload.single("file"), async (req, res
     return res.status(400).json({ error: "Message vide : texte ou document requis" });
   }
 
+  if (req.file) {
+    await saveFile(req.file.filename, req.file.mimetype);
+  }
+
   const message = await prisma.message.create({
     data: {
       sessionId: session.id,
@@ -123,7 +122,7 @@ router.get("/:id/messages/:messageId/file", requireAuth, async (req, res) => {
     return res.status(404).json({ error: "Document introuvable" });
   }
 
-  res.download(path.join(UPLOADS_DIR, message.storedName), message.fileName);
+  await sendFile(res, message.storedName, message.fileName);
 });
 
 module.exports = router;

@@ -1,12 +1,15 @@
 import { useCallback, useState } from "react";
-import { View, Text, TextInput, Button, FlatList, StyleSheet } from "react-native";
+import { View, Text, TextInput, Button, FlatList, StyleSheet, TouchableOpacity } from "react-native";
 import { useFocusEffect } from "@react-navigation/native";
-import { api, getUser } from "../api";
+import * as DocumentPicker from "expo-document-picker";
+import { api, apiUpload, getUser } from "../api";
 
 export default function MessagesScreen({ route }) {
   const { session } = route.params;
   const [messages, setMessages] = useState([]);
   const [content, setContent] = useState("");
+  const [attachment, setAttachment] = useState(null);
+  const [sending, setSending] = useState(false);
   const [error, setError] = useState(null);
   const user = getUser();
 
@@ -18,18 +21,40 @@ export default function MessagesScreen({ route }) {
 
   useFocusEffect(refresh);
 
+  async function pickDocument() {
+    const result = await DocumentPicker.getDocumentAsync({ copyToCacheDirectory: true });
+    if (!result.canceled && result.assets?.length) {
+      setAttachment(result.assets[0]);
+    }
+  }
+
   async function handleSend() {
-    if (!content.trim()) return;
+    if (!content.trim() && !attachment) return;
     setError(null);
+    setSending(true);
     try {
-      await api(`/api/sessions/${session.id}/messages`, {
-        method: "POST",
-        body: JSON.stringify({ content: content.trim() }),
-      });
+      if (attachment) {
+        const form = new FormData();
+        if (content.trim()) form.append("content", content.trim());
+        form.append("file", {
+          uri: attachment.uri,
+          name: attachment.name,
+          type: attachment.mimeType || "application/octet-stream",
+        });
+        await apiUpload(`/api/sessions/${session.id}/messages`, form);
+      } else {
+        await api(`/api/sessions/${session.id}/messages`, {
+          method: "POST",
+          body: JSON.stringify({ content: content.trim() }),
+        });
+      }
       setContent("");
+      setAttachment(null);
       refresh();
     } catch (err) {
       setError(err.message);
+    } finally {
+      setSending(false);
     }
   }
 
@@ -51,15 +76,27 @@ export default function MessagesScreen({ route }) {
               {item.content && <Text>{item.content}</Text>}
               {item.attachment && (
                 <Text style={styles.attachment}>
-                  📎 {item.attachment.fileName} (à télécharger depuis le site web pour l'instant)
+                  📎 {item.attachment.fileName} (téléchargeable depuis le site web)
                 </Text>
               )}
             </View>
           );
         }}
       />
-      {/* TODO: dépôt de documents depuis le mobile (expo-document-picker) — déjà possible via le site web */}
+      {attachment && (
+        <View style={styles.attachmentRow}>
+          <Text style={styles.attachment} numberOfLines={1}>
+            📎 {attachment.name}
+          </Text>
+          <TouchableOpacity onPress={() => setAttachment(null)}>
+            <Text style={styles.removeAttachment}>✕</Text>
+          </TouchableOpacity>
+        </View>
+      )}
       <View style={styles.composer}>
+        <TouchableOpacity style={styles.attachButton} onPress={pickDocument}>
+          <Text style={styles.attachButtonText}>📎</Text>
+        </TouchableOpacity>
         <TextInput
           style={styles.input}
           placeholder="Ton message..."
@@ -67,7 +104,7 @@ export default function MessagesScreen({ route }) {
           onChangeText={setContent}
           multiline
         />
-        <Button title="Envoyer" onPress={handleSend} />
+        <Button title={sending ? "Envoi..." : "Envoyer"} onPress={handleSend} disabled={sending} />
       </View>
     </View>
   );
@@ -88,6 +125,15 @@ const styles = StyleSheet.create({
   sender: { fontSize: 11, color: "#666", marginBottom: 2 },
   attachment: { color: "#1d4ed8", marginTop: 4 },
   composer: { flexDirection: "row", alignItems: "flex-end", gap: 8, marginTop: 8 },
+  attachmentRow: { flexDirection: "row", alignItems: "center", gap: 8, marginTop: 8 },
+  removeAttachment: { color: "#b91c1c", fontSize: 16, paddingHorizontal: 6 },
+  attachButton: {
+    borderWidth: 1,
+    borderColor: "#ccc",
+    borderRadius: 8,
+    padding: 10,
+  },
+  attachButtonText: { fontSize: 16 },
   input: {
     flex: 1,
     borderWidth: 1,

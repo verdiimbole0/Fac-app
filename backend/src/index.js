@@ -9,7 +9,8 @@ const tutorRoutes = require("./routes/tutors");
 const messageRoutes = require("./routes/messages");
 
 const app = express();
-app.use(cors());
+// En production, restreindre le CORS aux domaines du site via CORS_ORIGIN
+app.use(cors({ origin: process.env.CORS_ORIGIN ? process.env.CORS_ORIGIN.split(",") : true }));
 app.use(express.json());
 
 app.get("/health", (_req, res) => res.json({ status: "ok", app: "Fac'App API" }));
