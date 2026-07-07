@@ -1,0 +1,17 @@
+{
+  "expo": {
+    "name": "Fac'App",
+    "slug": "facapp",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "cd.facapp.mobile"
+    },
+    "android": {
+      "package": "cd.facapp.mobile"
+    }
+  }
+}

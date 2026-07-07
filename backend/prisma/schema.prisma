@@ -1,0 +1,141 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum Role {
+  STUDENT
+  TUTOR
+  ADMIN
+}
+
+enum SubscriptionPlan {
+  NONE
+  DECOUVERTE
+  STANDARD
+  INTENSIF
+}
+
+enum PaymentProvider {
+  ORANGE_MONEY
+  AIRTEL_MONEY
+  MPESA
+  FONDEKA
+}
+
+enum PaymentStatus {
+  PENDING
+  SUCCESS
+  FAILED
+}
+
+enum SessionType {
+  TP
+  PREPARATION_EXAM
+  MEMOIRE_PFE
+}
+
+enum SessionStatus {
+  REQUESTED
+  CONFIRMED
+  COMPLETED
+  CANCELLED
+}
+
+model User {
+  id           String   @id @default(uuid())
+  email        String   @unique
+  phone        String?  @unique
+  passwordHash String
+  fullName     String
+  role         Role     @default(STUDENT)
+  filiere      String?  // filière/spécialité, optionnelle pour un étudiant
+  acceptedIntegrityCharter Boolean @default(false) // charte d'intégrité académique acceptée à l'inscription
+  createdAt    DateTime @default(now())
+
+  // Relations quand l'utilisateur est étudiant
+  sessionsAsStudent Session[]      @relation("StudentSessions")
+  subscriptions     Subscription[]
+  payments          Payment[]
+  messages          Message[]
+
+  // Relations quand l'utilisateur est tuteur
+  tutorProfile TutorProfile?
+}
+
+model TutorProfile {
+  id             String   @id @default(uuid())
+  user           User     @relation(fields: [userId], references: [id])
+  userId         String   @unique
+  bio            String?
+  specialites     String[] // liste de filières/matières couvertes
+  tarifSession   Float?   // tarif indicatif à l'acte, en $
+  compensationType String @default("A_DEFINIR") // COMMISSION | FORFAIT | A_DEFINIR
+  sessionsAsTutor Session[] @relation("TutorSessions")
+}
+
+model Session {
+  id          String        @id @default(uuid())
+  student     User          @relation("StudentSessions", fields: [studentId], references: [id])
+  studentId   String
+  tutor       TutorProfile  @relation("TutorSessions", fields: [tutorId], references: [id])
+  tutorId     String
+  type        SessionType
+  status      SessionStatus @default(REQUESTED)
+  scheduledAt DateTime?
+  priceUsd    Float
+  createdAt   DateTime      @default(now())
+  payments    Payment[]
+  messages    Message[]
+}
+
+model Subscription {
+  id        String           @id @default(uuid())
+  user      User             @relation(fields: [userId], references: [id])
+  userId    String
+  plan      SubscriptionPlan @default(NONE)
+  startedAt DateTime         @default(now())
+  expiresAt DateTime?
+  active    Boolean          @default(true)
+}
+
+model Payment {
+  id         String          @id @default(uuid())
+  user       User            @relation(fields: [userId], references: [id])
+  userId     String
+  provider   PaymentProvider
+  amountUsd  Float
+  status     PaymentStatus   @default(PENDING)
+  reference  String          @unique // référence externe de l'agrégateur/opérateur
+  createdAt  DateTime        @default(now())
+
+  // Session payée, si le paiement règle un créneau réservé (plusieurs
+  // tentatives possibles pour une même session si un paiement échoue)
+  session   Session? @relation(fields: [sessionId], references: [id])
+  sessionId String?
+
+  // Plan à activer si le paiement règle un abonnement mensuel
+  plan SubscriptionPlan?
+}
+
+// Messagerie asynchrone rattachée à une session : messages écrits et
+// dépôt de documents (TP, brouillons de mémoire...) entre étudiant et tuteur.
+model Message {
+  id        String   @id @default(uuid())
+  session   Session  @relation(fields: [sessionId], references: [id])
+  sessionId String
+  sender    User     @relation(fields: [senderId], references: [id])
+  senderId  String
+  content   String?  // texte du message, optionnel si pièce jointe seule
+  createdAt DateTime @default(now())
+
+  // Pièce jointe, stockée sur disque local pour l'instant (TODO: S3/Supabase Storage)
+  fileName   String? // nom original du fichier
+  storedName String? // nom du fichier dans le dossier uploads/
+  mimeType   String?
+  sizeBytes  Int?
+}
