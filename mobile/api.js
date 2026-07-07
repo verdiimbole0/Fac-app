@@ -31,6 +31,10 @@ export function getUser() {
   return auth.user;
 }
 
+export function getToken() {
+  return auth.token;
+}
+
 export async function api(path, options = {}) {
   const res = await fetch(`${API_URL}${path}`, {
     ...options,

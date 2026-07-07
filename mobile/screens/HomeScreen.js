@@ -16,8 +16,11 @@ export default function HomeScreen({ navigation }) {
           <Button title="Réserver un créneau" onPress={() => navigation.navigate("Tutors")} />
         )}
         <Button title="Mes sessions" onPress={() => navigation.navigate("Sessions")} />
+        {isStudent && (
+          <Button title="Mon abonnement" onPress={() => navigation.navigate("Subscription")} />
+        )}
+        <Button title="Mon profil" onPress={() => navigation.navigate("Profile")} />
       </View>
-      {/* TODO: accès à l'abonnement, dépôt de documents */}
     </View>
   );
 }

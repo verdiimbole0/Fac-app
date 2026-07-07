@@ -2,7 +2,7 @@ const express = require("express");
 const { z } = require("zod");
 const { PrismaClient } = require("@prisma/client");
 const { requireAuth } = require("../middleware/auth");
-const { PRICING } = require("../pricing");
+const { PRICING, PLAN_PRICING } = require("../pricing");
 
 const router = express.Router();
 const prisma = new PrismaClient();
@@ -12,15 +12,15 @@ const initiateSchema = z
     provider: z.enum(["ORANGE_MONEY", "AIRTEL_MONEY", "MPESA", "FONDEKA"]),
     purpose: z.enum(["SESSION", "SUBSCRIPTION"]),
     // Pour une SESSION : sessionId obligatoire, le montant est celui du créneau.
-    // Pour un SUBSCRIPTION : amountUsd obligatoire.
+    // Pour un SUBSCRIPTION : plan obligatoire, le montant est celui du plan.
     sessionId: z.string().uuid().optional(),
-    amountUsd: z.number().positive().optional(),
+    plan: z.enum(["DECOUVERTE", "STANDARD", "INTENSIF"]).optional(),
   })
   .refine((d) => d.purpose !== "SESSION" || d.sessionId, {
     message: "sessionId est requis pour payer une session",
   })
-  .refine((d) => d.purpose !== "SUBSCRIPTION" || d.amountUsd, {
-    message: "amountUsd est requis pour un abonnement",
+  .refine((d) => d.purpose !== "SUBSCRIPTION" || d.plan, {
+    message: "plan est requis pour un abonnement",
   });
 
 // Initie un paiement : crée un enregistrement PENDING puis retourne une référence
@@ -32,8 +32,21 @@ router.post("/initiate", requireAuth, async (req, res) => {
   if (!parsed.success) {
     return res.status(400).json({ error: parsed.error.flatten() });
   }
-  const { provider, purpose, sessionId } = parsed.data;
-  let { amountUsd } = parsed.data;
+  const { provider, purpose, sessionId, plan } = parsed.data;
+  let amountUsd;
+
+  if (purpose === "SUBSCRIPTION") {
+    if (req.user.role !== "STUDENT") {
+      return res.status(403).json({ error: "Seul un étudiant peut souscrire un abonnement" });
+    }
+    const pendingSub = await prisma.payment.findFirst({
+      where: { userId: req.user.userId, plan: { not: null }, status: "PENDING" },
+    });
+    if (pendingSub) {
+      return res.status(409).json({ error: "Un paiement d'abonnement est déjà en cours" });
+    }
+    amountUsd = PLAN_PRICING[plan];
+  }
 
   if (purpose === "SESSION") {
     const session = await prisma.session.findUnique({
@@ -70,6 +83,7 @@ router.post("/initiate", requireAuth, async (req, res) => {
       reference,
       status: "PENDING",
       sessionId: purpose === "SESSION" ? sessionId : null,
+      plan: purpose === "SUBSCRIPTION" ? plan : null,
     },
   });
 
@@ -95,6 +109,10 @@ router.post("/webhook/:provider", async (req, res) => {
   if (!payment) {
     return res.status(404).json({ error: "Paiement introuvable pour cette référence" });
   }
+  if (payment.status !== "PENDING") {
+    // Webhook rejoué : ne pas réactiver un abonnement déjà traité
+    return res.json({ received: true, alreadyProcessed: true });
+  }
 
   const newStatus = status === "SUCCESS" ? "SUCCESS" : "FAILED";
   await prisma.payment.update({
@@ -102,9 +120,50 @@ router.post("/webhook/:provider", async (req, res) => {
     data: { status: newStatus },
   });
 
+  // Un paiement d'abonnement confirmé active le plan pour 30 jours
+  // (prolonge l'abonnement en cours s'il n'est pas encore expiré).
+  if (newStatus === "SUCCESS" && payment.plan) {
+    await activateSubscription(payment.userId, payment.plan);
+  }
+
   console.log(`[webhook:${provider}] Paiement ${reference} → ${newStatus}`);
   res.json({ received: true });
 });
+
+const SUBSCRIPTION_DAYS = 30;
+
+async function activateSubscription(userId, plan) {
+  const now = new Date();
+  const current = await prisma.subscription.findFirst({
+    where: { userId, active: true, expiresAt: { gt: now } },
+    orderBy: { expiresAt: "desc" },
+  });
+
+  if (current) {
+    const base = current.expiresAt > now ? current.expiresAt : now;
+    await prisma.subscription.update({
+      where: { id: current.id },
+      data: {
+        plan,
+        expiresAt: new Date(base.getTime() + SUBSCRIPTION_DAYS * 24 * 60 * 60 * 1000),
+      },
+    });
+    return;
+  }
+
+  await prisma.subscription.updateMany({
+    where: { userId, active: true },
+    data: { active: false },
+  });
+  await prisma.subscription.create({
+    data: {
+      userId,
+      plan,
+      active: true,
+      expiresAt: new Date(now.getTime() + SUBSCRIPTION_DAYS * 24 * 60 * 60 * 1000),
+    },
+  });
+}
 
 router.get("/pricing", (_req, res) => res.json(PRICING));
 

@@ -8,6 +8,8 @@ import BookSessionScreen from "./screens/BookSessionScreen";
 import SessionsScreen from "./screens/SessionsScreen";
 import PayScreen from "./screens/PayScreen";
 import MessagesScreen from "./screens/MessagesScreen";
+import SubscriptionScreen from "./screens/SubscriptionScreen";
+import ProfileScreen from "./screens/ProfileScreen";
 
 const Stack = createNativeStackNavigator();
 
@@ -23,6 +25,8 @@ export default function App() {
         <Stack.Screen name="Sessions" component={SessionsScreen} options={{ title: "Mes sessions" }} />
         <Stack.Screen name="Pay" component={PayScreen} options={{ title: "Paiement" }} />
         <Stack.Screen name="Messages" component={MessagesScreen} options={{ title: "Messages & documents" }} />
+        <Stack.Screen name="Subscription" component={SubscriptionScreen} options={{ title: "Abonnement" }} />
+        <Stack.Screen name="Profile" component={ProfileScreen} options={{ title: "Mon profil" }} />
       </Stack.Navigator>
     </NavigationContainer>
   );

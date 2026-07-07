@@ -13,4 +13,11 @@ const SESSION_TYPE_PRICING = {
   MEMOIRE_PFE: PRICING.MEMOIRE_PFE,
 };
 
-module.exports = { PRICING, SESSION_TYPE_PRICING };
+// Tarif mensuel de chaque plan d'abonnement (dans la fourchette 30-50 $)
+const PLAN_PRICING = {
+  DECOUVERTE: 30,
+  STANDARD: 40,
+  INTENSIF: 50,
+};
+
+module.exports = { PRICING, SESSION_TYPE_PRICING, PLAN_PRICING };

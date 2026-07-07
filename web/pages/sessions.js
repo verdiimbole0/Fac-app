@@ -153,6 +153,14 @@ export default function Sessions() {
 
   return (
     <main style={{ fontFamily: "sans-serif", padding: "3rem", maxWidth: 700, margin: "0 auto" }}>
+      <p>
+        {isStudent && (
+          <>
+            <a href="/subscription">Abonnement</a>{" · "}
+          </>
+        )}
+        <a href="/profile">Mon profil</a>
+      </p>
       <h1>Mes sessions — Fac'App</h1>
 
       {isStudent && (

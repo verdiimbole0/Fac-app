@@ -7,6 +7,7 @@ const paymentRoutes = require("./routes/payments");
 const sessionRoutes = require("./routes/sessions");
 const tutorRoutes = require("./routes/tutors");
 const messageRoutes = require("./routes/messages");
+const subscriptionRoutes = require("./routes/subscriptions");
 
 const app = express();
 // En production, restreindre le CORS aux domaines du site via CORS_ORIGIN
@@ -20,6 +21,7 @@ app.use("/api/payments", paymentRoutes);
 app.use("/api/sessions", sessionRoutes);
 app.use("/api/sessions", messageRoutes); // fil de discussion et documents d'une session
 app.use("/api/tutors", tutorRoutes);
+app.use("/api/subscriptions", subscriptionRoutes);
 
 const PORT = process.env.PORT || 4000;
 app.listen(PORT, () => {

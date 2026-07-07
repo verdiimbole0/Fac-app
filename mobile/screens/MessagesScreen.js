@@ -2,7 +2,9 @@ import { useCallback, useState } from "react";
 import { View, Text, TextInput, Button, FlatList, StyleSheet, TouchableOpacity } from "react-native";
 import { useFocusEffect } from "@react-navigation/native";
 import * as DocumentPicker from "expo-document-picker";
-import { api, apiUpload, getUser } from "../api";
+import * as FileSystem from "expo-file-system";
+import * as Sharing from "expo-sharing";
+import { API_URL, api, apiUpload, getUser, getToken } from "../api";
 
 export default function MessagesScreen({ route }) {
   const { session } = route.params;
@@ -20,6 +22,24 @@ export default function MessagesScreen({ route }) {
   }, [session.id]);
 
   useFocusEffect(refresh);
+
+  async function downloadAttachment(message) {
+    setError(null);
+    try {
+      const target = FileSystem.cacheDirectory + message.attachment.fileName;
+      const { status, uri } = await FileSystem.downloadAsync(
+        `${API_URL}/api/sessions/${session.id}/messages/${message.id}/file`,
+        target,
+        { headers: { Authorization: `Bearer ${getToken()}` } }
+      );
+      if (status !== 200) throw new Error("Téléchargement impossible");
+      if (await Sharing.isAvailableAsync()) {
+        await Sharing.shareAsync(uri);
+      }
+    } catch (err) {
+      setError(err.message);
+    }
+  }
 
   async function pickDocument() {
     const result = await DocumentPicker.getDocumentAsync({ copyToCacheDirectory: true });
@@ -75,9 +95,11 @@ export default function MessagesScreen({ route }) {
               </Text>
               {item.content && <Text>{item.content}</Text>}
               {item.attachment && (
-                <Text style={styles.attachment}>
-                  📎 {item.attachment.fileName} (téléchargeable depuis le site web)
-                </Text>
+                <TouchableOpacity onPress={() => downloadAttachment(item)}>
+                  <Text style={styles.attachment}>
+                    📎 {item.attachment.fileName} (toucher pour ouvrir)
+                  </Text>
+                </TouchableOpacity>
               )}
             </View>
           );

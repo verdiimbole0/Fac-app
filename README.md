@@ -16,10 +16,12 @@ facapp/
 - **Backend** : inscription/connexion (JWT), schéma de base de données complet (étudiants, tuteurs, sessions, abonnements, paiements, messages), route d'initiation de paiement + webhook générique pour Orange Money / Airtel Money / M-Pesa / FONDEKA (stub à brancher sur les vraies API).
 - **Réservation de créneaux** : liste des tuteurs (`GET /api/tutors`), demande de créneau par un étudiant (`POST /api/sessions`, avec contrôle des tarifs et des conflits d'horaires), liste des sessions de l'utilisateur connecté (`GET /api/sessions`), confirmation/clôture par le tuteur et annulation par les deux parties (`PATCH /api/sessions/:id/confirm|complete|cancel`).
 - **Liaison session ↔ paiement** : `POST /api/payments/initiate` avec `purpose: "SESSION"` + `sessionId` — le montant est celui du créneau, réservé à l'étudiant concerné, session confirmée uniquement, pas de double paiement (une nouvelle tentative reste possible après un échec). Le statut de paiement est visible dans `GET /api/sessions`.
+- **Abonnements mensuels** : plans Découverte 30 $ / Standard 40 $ / Intensif 50 $ (`GET /api/subscriptions/plans`), souscription via `POST /api/payments/initiate` (`purpose: "SUBSCRIPTION"` + `plan`, réservé aux étudiants), activation automatique de 30 jours à la confirmation du webhook (renouvellement = prolongation, webhook idempotent), abonnement courant via `GET /api/subscriptions/me` et pages Abonnement web + mobile.
+- **Profils** : `GET /api/auth/me` (profil complet avec abonnement), `PUT /api/tutors/me` (bio, spécialités, tarif indicatif 3-200 $) et pages Profil web + mobile avec déconnexion.
 - **Messagerie asynchrone** : fil de discussion par session (`GET|POST /api/sessions/:id/messages`), dépôt de documents en multipart (20 Mo max) et téléchargement (`GET /api/sessions/:id/messages/:messageId/file`), accessible uniquement aux participants. Stockage configurable (`backend/src/storage.js`) : disque local par défaut, ou tout service compatible S3 (AWS S3, Supabase Storage, Cloudflare R2...) via `STORAGE_DRIVER=s3` + variables `S3_*`.
 - **Charte d'intégrité académique** : acceptation obligatoire à l'inscription (`acceptedIntegrityCharter`), affichée sur les formulaires web et mobile.
 - **Web** : page d'accueil, inscription (avec charte), connexion, page `/sessions` (réservation, confirmation/annulation/clôture, paiement d'une session confirmée) et fil de discussion `/sessions/[id]` avec dépôt et téléchargement de documents.
-- **Mobile** : inscription (avec charte) et connexion (token stocké via `expo-secure-store`, reconnexion automatique), écrans « Choisir un tuteur », « Réserver un créneau », « Mes sessions », paiement d'une session confirmée et messagerie par session (texte + dépôt de documents via `expo-document-picker`).
+- **Mobile** : inscription (avec charte) et connexion (token stocké via `expo-secure-store`, reconnexion automatique), écrans « Choisir un tuteur », « Réserver un créneau », « Mes sessions », paiement d'une session confirmée, messagerie par session (texte + dépôt de documents via `expo-document-picker`, ouverture des pièces jointes via `expo-file-system`/`expo-sharing`), abonnement et profil avec déconnexion.
 - **Prêt pour le déploiement** : migrations Prisma versionnées (`backend/prisma/migrations/`), `Dockerfile` backend, blueprint Render (`render.yaml`), CORS configurable (`CORS_ORIGIN`), config Expo/EAS (`mobile/app.json`, `mobile/eas.json`), URL de l'API configurable partout (`NEXT_PUBLIC_API_URL` web, `EXPO_PUBLIC_API_URL` mobile).
 
 ## Démarrage rapide
@@ -75,7 +77,7 @@ L'URL de l'API se règle dans `eas.json` (variable `EXPO_PUBLIC_API_URL` de chaq
 
 1. **Paiement réel** : intégrer les API/SDK d'Orange Money, Airtel Money, M-Pesa et FONDEKA dans `backend/src/routes/payments.js` (remplacer les TODO) — en attente des accès API des opérateurs. Chaque provider aura sa propre documentation d'intégration et son format de webhook.
 2. **Mise en production** : créer les comptes Render/Vercel/Expo et dérouler la section « Déploiement » ci-dessus (tout est prêt côté code).
-3. **Téléchargement des documents depuis le mobile** : ouvrir/télécharger les pièces jointes dans l'app (`expo-file-system` + `expo-sharing`) — l'envoi mobile fonctionne déjà, la lecture se fait sur le web.
+3. **Avantages abonnés** : définir ce que chaque plan inclut concrètement (nombre de sessions, priorité de réservation...) et l'appliquer côté backend lors de la réservation.
 
 ## Notes importantes
 

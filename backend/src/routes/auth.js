@@ -3,9 +3,36 @@ const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const { z } = require("zod");
 const { PrismaClient } = require("@prisma/client");
+const { requireAuth } = require("../middleware/auth");
 
 const router = express.Router();
 const prisma = new PrismaClient();
+
+// Profil complet de l'utilisateur connecté (avec profil tuteur et abonnement actif).
+router.get("/me", requireAuth, async (req, res) => {
+  const user = await prisma.user.findUnique({
+    where: { id: req.user.userId },
+    select: {
+      id: true,
+      email: true,
+      fullName: true,
+      role: true,
+      filiere: true,
+      createdAt: true,
+      tutorProfile: true,
+    },
+  });
+  if (!user) {
+    return res.status(404).json({ error: "Utilisateur introuvable" });
+  }
+
+  const subscription = await prisma.subscription.findFirst({
+    where: { userId: user.id, active: true, expiresAt: { gt: new Date() } },
+    orderBy: { expiresAt: "desc" },
+  });
+
+  res.json({ ...user, subscription });
+});
 
 const registerSchema = z.object({
   email: z.string().email(),
