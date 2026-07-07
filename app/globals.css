@@ -1,18 +1,23 @@
 @import "tailwindcss";
 
 @theme {
-  --color-ink: #0c0c11;
-  --color-ink-soft: #15151d;
-  --color-ink-card: #1a1a24;
-  --color-paper: #f5f2ea;
-  --color-paper-dim: #b8b4a8;
-  --color-accent: #ffb02e;
-  --color-accent-strong: #ff8a00;
-  --color-bubble: #1f5c46;
-  --color-bubble-light: #25d366;
+  /* Nuit violette — jamais de noir pur */
+  --color-ink: #0d0b16;
+  --color-ink-2: #14111f;
+  --color-ink-3: #1c1830;
+  --color-line: #2a2440;
+  --color-paper: #efeaf7;
+  --color-dim: #9a92b4;
+  --color-accent: #ffc24b;
+  --color-accent-2: #ff7847;
+  --color-green: #57e389;
+  --color-green-deep: #1d5c3d;
+
   --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif;
-  --font-display: "Georgia", "Times New Roman", serif;
+  --font-voice: Georgia, "Times New Roman", serif;
+  --font-mono: ui-monospace, "SF Mono", "Cascadia Code", Menlo, Consolas,
+    monospace;
 }
 
 html {
@@ -23,53 +28,284 @@ body {
   background: var(--color-ink);
   color: var(--color-paper);
   font-family: var(--font-sans);
+  position: relative;
 }
 
-.font-display {
-  font-family: var(--font-display);
+/* ————— Matière ————— */
+
+/* Grain très léger sur toute la page */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 50;
+  opacity: 0.05;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)' opacity='0.6'/%3E%3C/svg%3E");
 }
 
-/* Rendu du rapport généré */
+.halo {
+  background:
+    radial-gradient(560px 420px at 78% 8%, rgba(255, 120, 71, 0.13), transparent 65%),
+    radial-gradient(700px 520px at 12% 92%, rgba(87, 227, 137, 0.05), transparent 65%);
+}
+
+.voice {
+  font-family: var(--font-voice);
+  font-style: italic;
+}
+
+.etiquette {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.degrade-accent {
+  background: linear-gradient(100deg, var(--color-accent), var(--color-accent-2));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.btn-accent {
+  background: linear-gradient(100deg, var(--color-accent), var(--color-accent-2));
+  color: #1c1206;
+  box-shadow: 0 8px 28px -8px rgba(255, 150, 60, 0.55);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, filter 0.15s ease;
+}
+
+.btn-accent:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.06);
+  box-shadow: 0 12px 34px -8px rgba(255, 150, 60, 0.65);
+}
+
+.btn-accent:disabled {
+  filter: grayscale(0.6);
+  opacity: 0.45;
+  box-shadow: none;
+  transform: none;
+  cursor: not-allowed;
+}
+
+.carte {
+  background: linear-gradient(180deg, var(--color-ink-3), var(--color-ink-2));
+  border: 1px solid var(--color-line);
+  transition: transform 0.18s ease, border-color 0.18s ease;
+}
+
+.carte:hover {
+  transform: translateY(-3px);
+  border-color: rgba(255, 194, 75, 0.45);
+}
+
+.tampon {
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  border: 1.5px dashed rgba(255, 194, 75, 0.65);
+  color: var(--color-accent);
+  transform: rotate(-2deg);
+}
+
+/* ————— Téléphone du hero ————— */
+
+.telephone {
+  border: 1px solid var(--color-line);
+  background: linear-gradient(180deg, #171224, #100d1b);
+  border-radius: 2.4rem;
+  box-shadow:
+    0 40px 80px -30px rgba(0, 0, 0, 0.8),
+    inset 0 1px 0 rgba(255, 255, 255, 0.06);
+}
+
+.bulle-in,
+.bulle-out,
+.bulle-bertrand {
+  max-width: 84%;
+  border-radius: 1.1rem;
+  padding: 0.55rem 0.8rem;
+  font-size: 0.8rem;
+  line-height: 1.45;
+  opacity: 0;
+  transform: translateY(10px) scale(0.97);
+  animation: bulle-pop 0.45s ease forwards;
+}
+
+.bulle-in {
+  background: #241e3a;
+  border-bottom-left-radius: 0.3rem;
+  align-self: flex-start;
+}
+
+.bulle-out {
+  background: var(--color-green-deep);
+  border-bottom-right-radius: 0.3rem;
+  align-self: flex-end;
+}
+
+.bulle-bertrand {
+  background: linear-gradient(120deg, rgba(255, 194, 75, 0.16), rgba(255, 120, 71, 0.12));
+  border: 1px solid rgba(255, 194, 75, 0.4);
+  align-self: flex-start;
+}
+
+@keyframes bulle-pop {
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.points-frappe {
+  display: inline-flex;
+  gap: 3px;
+  align-items: center;
+}
+
+.points-frappe span {
+  width: 5px;
+  height: 5px;
+  border-radius: 999px;
+  background: var(--color-dim);
+  animation: frappe 1.2s infinite;
+}
+
+.points-frappe span:nth-child(2) {
+  animation-delay: 0.18s;
+}
+
+.points-frappe span:nth-child(3) {
+  animation-delay: 0.36s;
+}
+
+@keyframes frappe {
+  0%,
+  60%,
+  100% {
+    transform: translateY(0);
+    opacity: 0.4;
+  }
+  30% {
+    transform: translateY(-3px);
+    opacity: 1;
+  }
+}
+
+/* ————— Bandeau superlatifs ————— */
+
+.marquee {
+  overflow: hidden;
+  border-top: 1px solid var(--color-line);
+  border-bottom: 1px solid var(--color-line);
+  background: var(--color-ink-2);
+}
+
+.marquee-piste {
+  display: flex;
+  gap: 3.5rem;
+  width: max-content;
+  padding: 0.85rem 0;
+  animation: defile 36s linear infinite;
+}
+
+.marquee:hover .marquee-piste {
+  animation-play-state: paused;
+}
+
+@keyframes defile {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* ————— Apparitions ————— */
+
+.lever {
+  opacity: 0;
+  transform: translateY(16px);
+  animation: lever 0.7s ease forwards;
+}
+
+@keyframes lever {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .lever,
+  .bulle-in,
+  .bulle-out,
+  .bulle-bertrand {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+  .marquee-piste {
+    animation: none;
+  }
+  .points-frappe span {
+    animation: none;
+  }
+}
+
+/* ————— Rendu du rapport généré ————— */
+
 .rapport h1,
 .rapport h2 {
-  font-family: var(--font-display);
+  font-family: var(--font-voice);
+  font-style: italic;
   color: var(--color-accent);
-  margin-top: 1.75rem;
+  margin-top: 1.9rem;
   margin-bottom: 0.75rem;
-  line-height: 1.2;
+  line-height: 1.25;
 }
 
 .rapport h1 {
-  font-size: 1.6rem;
+  font-size: 1.65rem;
+  margin-top: 0.25rem;
 }
 
 .rapport h2 {
-  font-size: 1.25rem;
+  font-size: 1.28rem;
+}
+
+.rapport h2::before {
+  content: "§ ";
+  opacity: 0.5;
 }
 
 .rapport h3 {
   font-weight: 700;
-  color: var(--color-paper);
   margin-top: 1.25rem;
   margin-bottom: 0.5rem;
 }
 
 .rapport p {
-  margin-bottom: 0.85rem;
-  line-height: 1.65;
+  margin-bottom: 0.9rem;
+  line-height: 1.7;
 }
 
 .rapport ul,
 .rapport ol {
-  margin: 0.75rem 0 1rem 1.25rem;
+  margin: 0.75rem 0 1rem 1.3rem;
   list-style: disc;
   display: flex;
   flex-direction: column;
-  gap: 0.4rem;
+  gap: 0.45rem;
 }
 
 .rapport ol {
   list-style: decimal;
+}
+
+.rapport li {
+  line-height: 1.6;
 }
 
 .rapport strong {
@@ -79,18 +315,30 @@ body {
 
 .rapport blockquote {
   border-left: 3px solid var(--color-accent);
-  padding-left: 1rem;
+  background: rgba(255, 194, 75, 0.07);
+  border-radius: 0 0.75rem 0.75rem 0;
+  padding: 0.75rem 1rem;
   margin: 1rem 0;
+  font-family: var(--font-voice);
   font-style: italic;
-  color: var(--color-paper-dim);
+  color: var(--color-paper);
 }
 
 .rapport hr {
-  border-color: #2c2c3a;
+  border-color: var(--color-line);
   margin: 1.5rem 0;
 }
 
-@keyframes blink {
+.rapport code {
+  font-family: var(--font-mono);
+  font-size: 0.85em;
+  background: var(--color-ink-3);
+  border: 1px solid var(--color-line);
+  border-radius: 0.35rem;
+  padding: 0.1rem 0.35rem;
+}
+
+@keyframes clignote {
   0%,
   100% {
     opacity: 1;
@@ -103,6 +351,6 @@ body {
 .cursor-blink::after {
   content: "▋";
   color: var(--color-accent);
-  animation: blink 1s step-end infinite;
+  animation: clignote 1s step-end infinite;
   margin-left: 2px;
 }
