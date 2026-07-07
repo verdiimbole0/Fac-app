@@ -1,0 +1,108 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #0c0c11;
+  --color-ink-soft: #15151d;
+  --color-ink-card: #1a1a24;
+  --color-paper: #f5f2ea;
+  --color-paper-dim: #b8b4a8;
+  --color-accent: #ffb02e;
+  --color-accent-strong: #ff8a00;
+  --color-bubble: #1f5c46;
+  --color-bubble-light: #25d366;
+  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  --font-display: "Georgia", "Times New Roman", serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-ink);
+  color: var(--color-paper);
+  font-family: var(--font-sans);
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+/* Rendu du rapport généré */
+.rapport h1,
+.rapport h2 {
+  font-family: var(--font-display);
+  color: var(--color-accent);
+  margin-top: 1.75rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.2;
+}
+
+.rapport h1 {
+  font-size: 1.6rem;
+}
+
+.rapport h2 {
+  font-size: 1.25rem;
+}
+
+.rapport h3 {
+  font-weight: 700;
+  color: var(--color-paper);
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.rapport p {
+  margin-bottom: 0.85rem;
+  line-height: 1.65;
+}
+
+.rapport ul,
+.rapport ol {
+  margin: 0.75rem 0 1rem 1.25rem;
+  list-style: disc;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.rapport ol {
+  list-style: decimal;
+}
+
+.rapport strong {
+  color: var(--color-accent);
+  font-weight: 700;
+}
+
+.rapport blockquote {
+  border-left: 3px solid var(--color-accent);
+  padding-left: 1rem;
+  margin: 1rem 0;
+  font-style: italic;
+  color: var(--color-paper-dim);
+}
+
+.rapport hr {
+  border-color: #2c2c3a;
+  margin: 1.5rem 0;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.cursor-blink::after {
+  content: "▋";
+  color: var(--color-accent);
+  animation: blink 1s step-end infinite;
+  margin-left: 2px;
+}
