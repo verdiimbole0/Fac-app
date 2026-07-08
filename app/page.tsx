@@ -219,6 +219,76 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Les deux modes */}
+      <section className="bg-blanc pb-20">
+        <div className="mx-auto max-w-5xl px-5">
+          <h2 className="text-center text-3xl font-extrabold tracking-tight text-teal">
+            Deux analystes, <span className="voice">deux ambiances</span>
+          </h2>
+          <p className="mx-auto mt-3 max-w-xl text-center text-gris">
+            Choisis ton rapport selon la conversation — et selon ton courage.
+          </p>
+          <div className="mt-10 grid gap-6 md:grid-cols-2">
+            {/* Carte Steve */}
+            <div className="carte carte-survol flex flex-col p-7">
+              <div className="flex items-center gap-3">
+                <span className="flex h-12 w-12 items-center justify-center rounded-full bg-vert text-xl font-bold text-teal">
+                  S
+                </span>
+                <div>
+                  <h3 className="text-xl font-extrabold text-teal">Steve</h3>
+                  <p className="text-xs font-semibold uppercase tracking-wider text-gris">
+                    Groupes &amp; conversations à plusieurs
+                  </p>
+                </div>
+              </div>
+              <p className="mt-4 flex-1 text-sm leading-relaxed text-gris">
+                Le pote lucide et bienveillant. Il lit tout le groupe, analyse
+                en profondeur, tacle avec tendresse — et termine toujours par
+                des <strong className="text-teal">conseils concrets</strong>{" "}
+                pour améliorer la situation. Rapport rédigé en direct, dans une
+                vraie discussion.
+              </p>
+              <Link
+                href="/rapport"
+                className="btn-vert mt-6 inline-block self-start px-6 py-3 text-sm"
+              >
+                💬 Parler à Steve →
+              </Link>
+            </div>
+            {/* Carte Brandon */}
+            <div className="carte carte-survol flex flex-col !border-stone-300 !bg-stone-50 p-7">
+              <div className="flex items-center gap-3">
+                <span className="flex h-12 w-12 items-center justify-center rounded-full bg-stone-800 text-xl font-bold text-white">
+                  B
+                </span>
+                <div>
+                  <h3 className="text-xl font-extrabold text-stone-800">
+                    Brandon
+                  </h3>
+                  <p className="text-xs font-semibold uppercase tracking-wider text-stone-500">
+                    Mode duo 🔥 — tête-à-tête uniquement
+                  </p>
+                </div>
+              </div>
+              <p className="mt-4 flex-1 text-sm leading-relaxed text-stone-600">
+                Le procureur satirique, zéro filtre. Il instruit le{" "}
+                <strong className="text-stone-800">dossier de chacun</strong>{" "}
+                avec pièces à conviction verbatim, superlatifs et métaphores
+                chirurgicales. Pour les couples, les ex, les situationships —
+                et les curieux qui assument.
+              </p>
+              <Link
+                href="/roast"
+                className="mt-6 inline-block self-start rounded-full bg-stone-900 px-6 py-3 text-sm font-bold text-white shadow-md transition hover:bg-stone-700"
+              >
+                🗂️ Ouvrir un dossier →
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Comment ça marche */}
       <section className="papier-peint py-20" id="comment">
         <div className="mx-auto max-w-5xl px-5">
