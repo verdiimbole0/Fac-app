@@ -16,6 +16,7 @@ const EMOJIS: Record<string, string> = {
   boulot: "💼",
   situationship: "🫠",
   autre: "🎲",
+  roast: "🔥",
 };
 
 export const dynamic = "force-dynamic";

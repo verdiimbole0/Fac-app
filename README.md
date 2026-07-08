@@ -13,6 +13,7 @@ Steve lit une conversation exportée (WhatsApp `.txt` ou copier-coller), **mène
 - **Interface de chat façon WhatsApp** (`/rapport`) : on parle à Steve comme dans une discussion — trombone pour joindre l'export, bulles, indicateur de frappe, rapport rédigé en direct.
 - **Espace personnel** (`/mes-rapports`) : relecture des rapports, **téléchargement en PDF** (généré côté client, le rapport ne repart pas vers le serveur), suppression individuelle.
 - **« Supprimer mes données »** : efface tous les rapports stockés en un clic (disponible après chaque rapport et dans l'espace personnel). Suppression de compte possible également.
+- **Mode duo « Brandon »** (`/roast`) : pour les discussions à **deux** personnes. Le persona « Brandon » (`lib/roast.ts`) mène l'analyse puis renvoie un rapport satirique **JSON structuré** (sortie garantie conforme via `output_config.format`) : titre-métaphore, dossiers de chacun avec pièces à conviction verbatim, teasing. Rendu par le composant `RapportRoast` (aperçu sur `/apercu-roast`), refus explicite des conversations de groupe, sauvegarde, relecture et PDF comme les rapports de Steve.
 - **Mode démo** : sans `ANTHROPIC_API_KEY`, un rapport d'exemple est servi pour tester tout le parcours.
 
 ## Sécurité

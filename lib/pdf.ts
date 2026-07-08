@@ -17,7 +17,12 @@ function nettoyer(ligne: string): string {
   return ligne.replace(/\*\*([^*]+)\*\*/g, "$1").trim();
 }
 
-export function telechargerRapportPdf(markdown: string, titre: string) {
+export function telechargerRapportPdf(
+  markdown: string,
+  titre: string,
+  marque: string = "Que pense Steve",
+  prefixeFichier: string = "rapport-steve",
+) {
   const doc = new jsPDF({ unit: "mm", format: "a4" });
   let y = 0;
 
@@ -76,7 +81,7 @@ export function telechargerRapportPdf(markdown: string, titre: string) {
   doc.setFontSize(13);
   doc.setTextColor("#ffffff");
   doc.text("S", MARGE + 5, 14.6, { align: "center" });
-  doc.text("Que pense Steve", MARGE + 14, 11.5);
+  doc.text(marque, MARGE + 14, 11.5);
   doc.setFont("helvetica", "normal");
   doc.setFontSize(8.5);
   doc.setTextColor("#c9ece5");
@@ -152,19 +157,19 @@ export function telechargerRapportPdf(markdown: string, titre: string) {
     doc.setFontSize(8);
     doc.setTextColor(GRIS);
     doc.text(
-      `Que pense Steve — ${titre}`,
+      `${marque} — ${titre}`,
       MARGE,
       292,
     );
     doc.text(`${i} / ${nbPages}`, 210 - MARGE, 292, { align: "right" });
   }
 
-  const nomFichier = `rapport-steve-${titre
+  const nomFichier = `${prefixeFichier}-${titre
     .toLowerCase()
     .normalize("NFD")
     .replace(/[̀-ͯ]/g, "")
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/^-+|-+$/g, "")
     .slice(0, 60)}.pdf`;
-  doc.save(nomFichier || "rapport-steve.pdf");
+  doc.save(nomFichier || `${prefixeFichier}.pdf`);
 }

@@ -8,10 +8,14 @@ export default function BarreRapport({
   id,
   titre,
   contenu,
+  marque = "Que pense Steve",
+  prefixeFichier = "rapport-steve",
 }: {
   id: number;
   titre: string;
   contenu: string;
+  marque?: string;
+  prefixeFichier?: string;
 }) {
   const [copie, setCopie] = useState(false);
   const router = useRouter();
@@ -21,7 +25,7 @@ export default function BarreRapport({
       <button
         type="button"
         className="btn-vert px-4 py-2 text-sm"
-        onClick={() => telechargerRapportPdf(contenu, titre)}
+        onClick={() => telechargerRapportPdf(contenu, titre, marque, prefixeFichier)}
       >
         ⬇️ Télécharger en PDF
       </button>

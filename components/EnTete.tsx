@@ -23,6 +23,13 @@ export default async function EnTete() {
               >
                 Mes rapports
               </Link>
+              <Link
+                href="/roast"
+                className="hidden text-white/80 hover:text-white sm:block"
+                title="Mode duo : le rapport de Brandon"
+              >
+                Duo 🔥
+              </Link>
               {u.role === "admin" && (
                 <Link
                   href="/admin"
