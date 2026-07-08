@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Que pense Bertrand — Des rapports IA sur tes conversations",
+  title: "Que pense Steve — Des rapports humains sur tes conversations",
   description:
-    "Bertrand est une IA qui lit tes conversations WhatsApp ou iMessage et écrit ce qu'il en pense vraiment. Les dynamiques, les private jokes, les verdicts.",
+    "Steve lit tes conversations WhatsApp ou iMessage, mène une analyse approfondie et te dit ce qu'il en pense vraiment — avec humour, cœur et des conseils concrets.",
 };
 
 export default function RootLayout({
