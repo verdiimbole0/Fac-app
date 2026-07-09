@@ -1,0 +1,20 @@
+# Déploiement en un clic sur Render (https://render.com/deploy).
+# Le disque persistant conserve la base SQLite (comptes, sessions, rapports).
+services:
+  - type: web
+    name: que-pense-steve
+    runtime: node
+    plan: starter # les disques persistants nécessitent un plan payant
+    buildCommand: npm ci && npm run build
+    startCommand: npm run start
+    envVars:
+      - key: NODE_VERSION
+        value: 22.12.0
+      - key: ANTHROPIC_API_KEY
+        sync: false # à saisir au déploiement — sans elle, mode démo
+      - key: ADMIN_EMAIL
+        sync: false # ton adresse : ce compte devient propriétaire
+    disk:
+      name: donnees
+      mountPath: /opt/render/project/src/donnees
+      sizeGB: 1

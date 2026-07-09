@@ -49,6 +49,20 @@ npm run dev
 
 Puis ouvrir <http://localhost:3000>. **Le premier compte inscrit devient propriétaire du site.**
 
-## Déploiement
+## Déploiement (obtenir tes liens publics)
 
-La base SQLite vit dans `donnees/steve.db` : il faut un hébergeur à disque persistant (VPS, Railway, Fly.io…). Sur une plateforme serverless (Vercel), remplacer `lib/db.ts` par un Postgres managé — le reste du code ne change pas. Servir impérativement en HTTPS (les cookies `Secure` l'exigent en production).
+La base SQLite vit dans `donnees/steve.db` : il faut un hébergeur à **disque persistant**. Un blueprint `render.yaml` est fourni :
+
+1. Fusionner la branche dans `main` (bouton *Merge* de la pull request).
+2. Ouvrir <https://render.com/deploy?repo=https://github.com/verdiimbole0/Fac-app> et se connecter à Render.
+3. Renseigner les deux variables demandées : `ANTHROPIC_API_KEY` (clé sur <https://console.anthropic.com>, sinon le site tourne en mode démo) et `ADMIN_EMAIL` (ton adresse : ce compte sera propriétaire).
+4. À la fin du déploiement, Render fournit l'URL publique, par ex. `https://que-pense-steve.onrender.com`.
+
+Les liens sont alors :
+
+| Qui | Lien | Rôle |
+|---|---|---|
+| **Toi (propriétaire)** | `https://<ton-app>.onrender.com/admin` | Console de gestion — crée d'abord ton compte via `/inscription` avec l'adresse `ADMIN_EMAIL` |
+| **Les utilisateurs** | `https://<ton-app>.onrender.com/inscription` | Inscription puis accès à Steve, Brandon, leurs rapports |
+
+Le rôle est porté par le **compte**, pas par l'URL : `/admin` refuse quiconque n'est pas propriétaire. Note : les disques persistants Render nécessitent un plan payant (~7 $/mois) ; alternative gratuite possible en migrant `lib/db.ts` vers un Postgres managé (Neon) + Vercel. Servir impérativement en HTTPS (les cookies `Secure` l'exigent en production).
