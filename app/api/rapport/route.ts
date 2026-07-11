@@ -1,6 +1,6 @@
 import Anthropic from "@anthropic-ai/sdk";
 import { RAPPORT_DEMO } from "@/lib/demo";
-import { db } from "@/lib/db";
+import { requete } from "@/lib/db";
 import {
   ipClient,
   limiteDebit,
@@ -63,7 +63,7 @@ function extraireTitre(texte: string): string {
 
 function fluxAvecSauvegarde(
   source: AsyncIterable<string>,
-  sauvegarder: (texte: string) => void,
+  sauvegarder: (texte: string) => Promise<void>,
 ): ReadableStream {
   const encoder = new TextEncoder();
   return new ReadableStream({
@@ -74,7 +74,7 @@ function fluxAvecSauvegarde(
           complet += morceau;
           controller.enqueue(encoder.encode(morceau));
         }
-        if (complet.trim()) sauvegarder(complet);
+        if (complet.trim()) await sauvegarder(complet);
         controller.close();
       } catch (e) {
         controller.error(e);
@@ -138,12 +138,11 @@ export async function POST(req: Request) {
     );
   }
 
-  const sauvegarder = (texte: string) => {
-    db()
-      .prepare(
-        "INSERT INTO rapports (utilisateur_id, titre, type, contenu) VALUES (?, ?, ?, ?)",
-      )
-      .run(utilisateur.id, extraireTitre(texte), type, texte);
+  const sauvegarder = async (texte: string) => {
+    await requete(
+      "INSERT INTO rapports (utilisateur_id, titre, type, contenu) VALUES ($1, $2, $3, $4)",
+      [utilisateur.id, extraireTitre(texte), type, texte],
+    );
   };
 
   if (!process.env.ANTHROPIC_API_KEY) {

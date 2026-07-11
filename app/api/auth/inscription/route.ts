@@ -1,4 +1,4 @@
-import { db, type Utilisateur } from "@/lib/db";
+import { requete } from "@/lib/db";
 import {
   creerSession,
   hacherMdp,
@@ -34,11 +34,10 @@ export async function POST(req: Request) {
   const probleme = validerInscription(email, nom, mdp);
   if (probleme) return Response.json({ erreur: probleme }, { status: 400 });
 
-  const base = db();
-  const existe = base
-    .prepare("SELECT id FROM utilisateurs WHERE email = ?")
-    .get(email);
-  if (existe) {
+  const existe = await requete("SELECT id FROM utilisateurs WHERE email = $1", [
+    email,
+  ]);
+  if (existe.length > 0) {
     return Response.json(
       { erreur: "Un compte existe déjà avec cette adresse." },
       { status: 409 },
@@ -46,9 +45,9 @@ export async function POST(req: Request) {
   }
 
   // Le premier compte créé — ou l'adresse ADMIN_EMAIL — devient propriétaire.
-  const nbComptes = (
-    base.prepare("SELECT COUNT(*) AS n FROM utilisateurs").get() as { n: number }
-  ).n;
+  const [{ n: nbComptes }] = await requete<{ n: number }>(
+    "SELECT COUNT(*)::int AS n FROM utilisateurs",
+  );
   const role =
     nbComptes === 0 ||
     email === (process.env.ADMIN_EMAIL ?? "").trim().toLowerCase()
@@ -56,17 +55,13 @@ export async function POST(req: Request) {
       : "membre";
 
   const { hash, sel } = hacherMdp(mdp);
-  const resultat = base
-    .prepare(
-      "INSERT INTO utilisateurs (email, nom, mdp_hash, sel, role) VALUES (?, ?, ?, ?, ?)",
-    )
-    .run(email, nom, hash, sel, role);
+  const [cree] = await requete<{ id: number; nom: string; role: string }>(
+    `INSERT INTO utilisateurs (email, nom, mdp_hash, sel, role)
+     VALUES ($1, $2, $3, $4, $5) RETURNING id, nom, role`,
+    [email, nom, hash, sel, role],
+  );
 
-  const jeton = creerSession(Number(resultat.lastInsertRowid));
+  const jeton = await creerSession(cree.id);
   await poserCookieSession(jeton);
-
-  const u = base
-    .prepare("SELECT * FROM utilisateurs WHERE id = ?")
-    .get(Number(resultat.lastInsertRowid)) as Utilisateur;
-  return Response.json({ nom: u.nom, role: u.role });
+  return Response.json({ nom: cree.nom, role: cree.role });
 }

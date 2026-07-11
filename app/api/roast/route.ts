@@ -6,7 +6,7 @@ import {
   type RapportRoastData,
 } from "@/lib/roast";
 import { analyserConversation } from "@/lib/whatsapp";
-import { db } from "@/lib/db";
+import { requete } from "@/lib/db";
 import {
   ipClient,
   limiteDebit,
@@ -19,12 +19,11 @@ export const maxDuration = 300;
 const MAX_CARACTERES = 400_000;
 const MIN_CARACTERES = 200;
 
-function sauvegarder(utilisateurId: number, rapport: RapportRoastData) {
-  db()
-    .prepare(
-      "INSERT INTO rapports (utilisateur_id, titre, type, contenu) VALUES (?, ?, ?, ?)",
-    )
-    .run(utilisateurId, rapport.titre.slice(0, 120), "roast", JSON.stringify(rapport));
+async function sauvegarder(utilisateurId: number, rapport: RapportRoastData) {
+  await requete(
+    "INSERT INTO rapports (utilisateur_id, titre, type, contenu) VALUES ($1, $2, $3, $4)",
+    [utilisateurId, rapport.titre.slice(0, 120), "roast", JSON.stringify(rapport)],
+  );
 }
 
 export async function POST(req: Request) {
@@ -93,7 +92,7 @@ export async function POST(req: Request) {
 
   if (!process.env.ANTHROPIC_API_KEY) {
     await new Promise((r) => setTimeout(r, 1200));
-    sauvegarder(utilisateur.id, RAPPORT_ROAST_DEMO);
+    await sauvegarder(utilisateur.id, RAPPORT_ROAST_DEMO);
     return Response.json({ rapport: RAPPORT_ROAST_DEMO, demo: true });
   }
 
@@ -131,7 +130,7 @@ export async function POST(req: Request) {
       throw new Error("Réponse sans contenu textuel.");
     }
     const rapport = JSON.parse(texte.text) as RapportRoastData;
-    sauvegarder(utilisateur.id, rapport);
+    await sauvegarder(utilisateur.id, rapport);
     return Response.json({ rapport });
   } catch (e) {
     console.error("roast:", e);

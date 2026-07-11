@@ -49,20 +49,27 @@ npm run dev
 
 Puis ouvrir <http://localhost:3000>. **Le premier compte inscrit devient propriétaire du site.**
 
-## Déploiement (obtenir tes liens publics)
+## Déploiement gratuit (obtenir tes liens publics)
 
-La base SQLite vit dans `donnees/steve.db` : il faut un hébergeur à **disque persistant**. Un blueprint `render.yaml` est fourni :
+La base est **Postgres partout** : Neon (gratuit) en production via `DATABASE_URL`, PGlite (Postgres embarqué, zéro configuration) en local dans `donnees/pg`.
+
+**Parcours 100 % gratuit — Vercel + Neon (~10 min) :**
 
 1. Fusionner la branche dans `main` (bouton *Merge* de la pull request).
-2. Ouvrir <https://render.com/deploy?repo=https://github.com/verdiimbole0/Fac-app> et se connecter à Render.
-3. Renseigner les deux variables demandées : `ANTHROPIC_API_KEY` (clé sur <https://console.anthropic.com>, sinon le site tourne en mode démo) et `ADMIN_EMAIL` (ton adresse : ce compte sera propriétaire).
-4. À la fin du déploiement, Render fournit l'URL publique, par ex. `https://que-pense-steve.onrender.com`.
+2. Créer une base gratuite sur <https://neon.tech> (bouton *Create project*) et copier la chaîne de connexion (`postgresql://…`).
+3. Ouvrir <https://vercel.com/new/clone?repository-url=https://github.com/verdiimbole0/Fac-app&env=DATABASE_URL,ADMIN_EMAIL,ANTHROPIC_API_KEY> et renseigner les trois variables :
+   - `DATABASE_URL` — la chaîne Neon copiée à l'étape 2 ;
+   - `ADMIN_EMAIL` — ton adresse : ce compte sera propriétaire ;
+   - `ANTHROPIC_API_KEY` — ta clé (<https://console.anthropic.com>) ; sans elle, le site tourne en mode démo.
+4. Vercel construit et fournit l'URL publique, par ex. `https://fac-app.vercel.app`.
 
 Les liens sont alors :
 
 | Qui | Lien | Rôle |
 |---|---|---|
-| **Toi (propriétaire)** | `https://<ton-app>.onrender.com/admin` | Console de gestion — crée d'abord ton compte via `/inscription` avec l'adresse `ADMIN_EMAIL` |
-| **Les utilisateurs** | `https://<ton-app>.onrender.com/inscription` | Inscription puis accès à Steve, Brandon, leurs rapports |
+| **Toi (propriétaire)** | `https://<ton-app>.vercel.app/admin` | Console de gestion — crée d'abord ton compte via `/inscription` avec l'adresse `ADMIN_EMAIL` |
+| **Les utilisateurs** | `https://<ton-app>.vercel.app/inscription` | Inscription puis accès à Steve, Brandon, leurs rapports |
 
-Le rôle est porté par le **compte**, pas par l'URL : `/admin` refuse quiconque n'est pas propriétaire. Note : les disques persistants Render nécessitent un plan payant (~7 $/mois) ; alternative gratuite possible en migrant `lib/db.ts` vers un Postgres managé (Neon) + Vercel. Servir impérativement en HTTPS (les cookies `Secure` l'exigent en production).
+Le rôle est porté par le **compte**, pas par l'URL : `/admin` refuse quiconque n'est pas propriétaire.
+
+Notes : la limitation de débit est en mémoire (par instance serverless — protection « meilleur effort ») ; sur Vercel sans `DATABASE_URL`, l'application s'arrête avec un message explicite plutôt que de perdre des données. Alternative à disque persistant : le blueprint `render.yaml` fonctionne aussi tel quel (PGlite persiste sur le disque Render, plan payant). Servir impérativement en HTTPS (les cookies `Secure` l'exigent en production).

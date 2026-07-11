@@ -1,4 +1,4 @@
-import { db, type Utilisateur } from "@/lib/db";
+import { requete, type Utilisateur } from "@/lib/db";
 import { origineValide, utilisateurCourant } from "@/lib/auth";
 
 type Params = { params: Promise<{ id: string }> };
@@ -25,12 +25,19 @@ async function verifierAdmin(): Promise<
   return { ok: true, admin: u };
 }
 
+function identifiant(brut: string): number | null {
+  const n = Number(brut);
+  return Number.isInteger(n) && n > 0 ? n : null;
+}
+
 // Suspendre / réactiver / changer le rôle d'un compte.
 export async function PATCH(req: Request, { params }: Params) {
   const garde = await verifierAdmin();
   if (!garde.ok) return garde.reponse;
-  const { id } = await params;
-  const cibleId = Number(id);
+  const cibleId = identifiant((await params).id);
+  if (!cibleId) {
+    return Response.json({ erreur: "Compte introuvable." }, { status: 404 });
+  }
 
   let corps: { statut?: string; role?: string };
   try {
@@ -39,10 +46,10 @@ export async function PATCH(req: Request, { params }: Params) {
     return Response.json({ erreur: "Requête invalide." }, { status: 400 });
   }
 
-  const base = db();
-  const cible = base
-    .prepare("SELECT * FROM utilisateurs WHERE id = ?")
-    .get(cibleId) as Utilisateur | undefined;
+  const [cible] = await requete<Utilisateur>(
+    "SELECT * FROM utilisateurs WHERE id = $1",
+    [cibleId],
+  );
   if (!cible) {
     return Response.json({ erreur: "Compte introuvable." }, { status: 404 });
   }
@@ -54,17 +61,19 @@ export async function PATCH(req: Request, { params }: Params) {
   }
 
   if (corps.statut === "actif" || corps.statut === "suspendu") {
-    base
-      .prepare("UPDATE utilisateurs SET statut = ? WHERE id = ?")
-      .run(corps.statut, cibleId);
+    await requete("UPDATE utilisateurs SET statut = $1 WHERE id = $2", [
+      corps.statut,
+      cibleId,
+    ]);
     if (corps.statut === "suspendu") {
-      base.prepare("DELETE FROM sessions WHERE utilisateur_id = ?").run(cibleId);
+      await requete("DELETE FROM sessions WHERE utilisateur_id = $1", [cibleId]);
     }
   }
   if (corps.role === "admin" || corps.role === "membre") {
-    base
-      .prepare("UPDATE utilisateurs SET role = ? WHERE id = ?")
-      .run(corps.role, cibleId);
+    await requete("UPDATE utilisateurs SET role = $1 WHERE id = $2", [
+      corps.role,
+      cibleId,
+    ]);
   }
   return Response.json({ ok: true });
 }
@@ -73,18 +82,21 @@ export async function PATCH(req: Request, { params }: Params) {
 export async function DELETE(_req: Request, { params }: Params) {
   const garde = await verifierAdmin();
   if (!garde.ok) return garde.reponse;
-  const { id } = await params;
-  const cibleId = Number(id);
+  const cibleId = identifiant((await params).id);
+  if (!cibleId) {
+    return Response.json({ erreur: "Compte introuvable." }, { status: 404 });
+  }
   if (cibleId === garde.admin.id) {
     return Response.json(
       { erreur: "Tu ne peux pas supprimer ton propre compte ici." },
       { status: 400 },
     );
   }
-  const resultat = db()
-    .prepare("DELETE FROM utilisateurs WHERE id = ?")
-    .run(cibleId);
-  if (resultat.changes === 0) {
+  const supprimes = await requete(
+    "DELETE FROM utilisateurs WHERE id = $1 RETURNING id",
+    [cibleId],
+  );
+  if (supprimes.length === 0) {
     return Response.json({ erreur: "Compte introuvable." }, { status: 404 });
   }
   return Response.json({ ok: true });

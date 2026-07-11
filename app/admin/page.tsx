@@ -4,7 +4,7 @@ import TableauUtilisateurs, {
   type LigneUtilisateur,
 } from "@/components/TableauUtilisateurs";
 import { utilisateurCourant } from "@/lib/auth";
-import { db } from "@/lib/db";
+import { requete } from "@/lib/db";
 
 export const dynamic = "force-dynamic";
 
@@ -13,15 +13,14 @@ export default async function PageAdmin() {
   if (!u) redirect("/connexion");
   if (u.role !== "admin") redirect("/rapport");
 
-  const utilisateurs = db()
-    .prepare(
-      `SELECT u.id, u.email, u.nom, u.role, u.statut, u.cree_le,
-              COUNT(r.id) AS nb_rapports
-       FROM utilisateurs u
-       LEFT JOIN rapports r ON r.utilisateur_id = u.id
-       GROUP BY u.id ORDER BY u.id ASC`,
-    )
-    .all() as LigneUtilisateur[];
+  const utilisateurs = await requete<LigneUtilisateur>(
+    `SELECT u.id, u.email, u.nom, u.role, u.statut,
+            to_char(u.cree_le AT TIME ZONE 'UTC', 'YYYY-MM-DD"T"HH24:MI:SS') AS cree_le,
+            COUNT(r.id)::int AS nb_rapports
+     FROM utilisateurs u
+     LEFT JOIN rapports r ON r.utilisateur_id = u.id
+     GROUP BY u.id ORDER BY u.id ASC`,
+  );
 
   const actifs = utilisateurs.filter((x) => x.statut === "actif").length;
   const totalRapports = utilisateurs.reduce((s, x) => s + x.nb_rapports, 0);

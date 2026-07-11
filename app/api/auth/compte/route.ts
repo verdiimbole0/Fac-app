@@ -1,4 +1,4 @@
-import { db } from "@/lib/db";
+import { requete } from "@/lib/db";
 import {
   detruireSession,
   origineValide,
@@ -14,14 +14,10 @@ export async function DELETE() {
   if (!u) {
     return Response.json({ erreur: "Non connecté." }, { status: 401 });
   }
-  const base = db();
-  const admins = (
-    base
-      .prepare(
-        "SELECT COUNT(*) AS n FROM utilisateurs WHERE role = 'admin' AND id != ?",
-      )
-      .get(u.id) as { n: number }
-  ).n;
+  const [{ n: admins }] = await requete<{ n: number }>(
+    "SELECT COUNT(*)::int AS n FROM utilisateurs WHERE role = 'admin' AND id != $1",
+    [u.id],
+  );
   if (u.role === "admin" && admins === 0) {
     return Response.json(
       {
@@ -32,6 +28,6 @@ export async function DELETE() {
     );
   }
   await detruireSession();
-  base.prepare("DELETE FROM utilisateurs WHERE id = ?").run(u.id);
+  await requete("DELETE FROM utilisateurs WHERE id = $1", [u.id]);
   return Response.json({ ok: true });
 }

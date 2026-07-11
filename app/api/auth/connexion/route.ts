@@ -1,4 +1,4 @@
-import { db, type Utilisateur } from "@/lib/db";
+import { requete, type Utilisateur } from "@/lib/db";
 import {
   creerSession,
   ipClient,
@@ -35,9 +35,10 @@ export async function POST(req: Request) {
     );
   }
 
-  const u = db()
-    .prepare("SELECT * FROM utilisateurs WHERE email = ?")
-    .get(email) as Utilisateur | undefined;
+  const [u] = await requete<Utilisateur>(
+    "SELECT * FROM utilisateurs WHERE email = $1",
+    [email],
+  );
 
   // Message identique que le compte existe ou non : pas d'énumération.
   if (!u || !verifierMdp(mdp, u.mdp_hash, u.sel)) {
@@ -50,7 +51,7 @@ export async function POST(req: Request) {
     );
   }
 
-  const jeton = creerSession(u.id);
+  const jeton = await creerSession(u.id);
   await poserCookieSession(jeton);
   return Response.json({ nom: u.nom, role: u.role });
 }

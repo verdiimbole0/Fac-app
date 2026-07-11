@@ -1,59 +1,87 @@
-import Database from "better-sqlite3";
-import fs from "node:fs";
-import path from "node:path";
+// Couche base de données : Postgres partout.
+// - En production : Neon (gratuit) via DATABASE_URL — compatible serverless (Vercel).
+// - En local : PGlite (Postgres embarqué), persisté dans donnees/pg, zéro configuration.
+// Les conversations ne sont JAMAIS stockées ici : uniquement les comptes,
+// les sessions et les rapports générés, effaçables par l'utilisateur.
 
-// Base locale : les conversations ne sont JAMAIS stockées ici.
-// On ne conserve que les comptes, les sessions et les rapports générés
-// (pour relecture / PDF), que l'utilisateur peut effacer à tout moment.
+type Ligne = Record<string, unknown>;
+type Executeur = (texte: string, params?: unknown[]) => Promise<Ligne[]>;
 
-const DOSSIER = path.join(process.cwd(), "donnees");
-const FICHIER = path.join(DOSSIER, "steve.db");
+const SCHEMA = `
+CREATE TABLE IF NOT EXISTS utilisateurs (
+  id INTEGER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+  email TEXT NOT NULL UNIQUE,
+  nom TEXT NOT NULL,
+  mdp_hash TEXT NOT NULL,
+  sel TEXT NOT NULL,
+  role TEXT NOT NULL DEFAULT 'membre' CHECK (role IN ('admin','membre')),
+  statut TEXT NOT NULL DEFAULT 'actif' CHECK (statut IN ('actif','suspendu')),
+  cree_le TIMESTAMPTZ NOT NULL DEFAULT now()
+);
+CREATE TABLE IF NOT EXISTS sessions (
+  id INTEGER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+  utilisateur_id INTEGER NOT NULL REFERENCES utilisateurs(id) ON DELETE CASCADE,
+  jeton_hash TEXT NOT NULL UNIQUE,
+  expire_le TIMESTAMPTZ NOT NULL,
+  cree_le TIMESTAMPTZ NOT NULL DEFAULT now()
+);
+CREATE INDEX IF NOT EXISTS idx_sessions_jeton ON sessions(jeton_hash);
+CREATE TABLE IF NOT EXISTS rapports (
+  id INTEGER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+  utilisateur_id INTEGER NOT NULL REFERENCES utilisateurs(id) ON DELETE CASCADE,
+  titre TEXT NOT NULL,
+  type TEXT NOT NULL,
+  contenu TEXT NOT NULL,
+  cree_le TIMESTAMPTZ NOT NULL DEFAULT now()
+);
+CREATE INDEX IF NOT EXISTS idx_rapports_utilisateur ON rapports(utilisateur_id);
+`;
+
+async function initialiser(): Promise<Executeur> {
+  if (process.env.DATABASE_URL) {
+    const { neon } = await import("@neondatabase/serverless");
+    const sql = neon(process.env.DATABASE_URL);
+    for (const instruction of SCHEMA.split(";").map((s) => s.trim()).filter(Boolean)) {
+      await sql.query(instruction);
+    }
+    return async (texte, params) => {
+      // Selon la version du pilote, query() renvoie les lignes directement
+      // ou un objet { rows } complet.
+      const resultat = (await sql.query(texte, params as unknown[])) as unknown;
+      if (Array.isArray(resultat)) return resultat as Ligne[];
+      return (resultat as { rows: Ligne[] }).rows;
+    };
+  }
+
+  if (process.env.VERCEL) {
+    throw new Error(
+      "DATABASE_URL manquante : sur Vercel, crée une base Neon (gratuite) et renseigne DATABASE_URL dans les variables d'environnement du projet.",
+    );
+  }
+
+  // Local : Postgres embarqué, persisté sur disque, aucune configuration.
+  const { mkdirSync } = await import("node:fs");
+  mkdirSync("donnees/pg", { recursive: true });
+  const { PGlite } = await import("@electric-sql/pglite");
+  const pg = new PGlite("donnees/pg");
+  await pg.exec(SCHEMA);
+  return async (texte, params) => {
+    const resultat = await pg.query(texte, params as unknown[]);
+    return resultat.rows as Ligne[];
+  };
+}
 
 declare global {
-  var __steveDb: Database.Database | undefined;
+  var __steveExecuteur: Promise<Executeur> | undefined;
 }
 
-function ouvrir(): Database.Database {
-  fs.mkdirSync(DOSSIER, { recursive: true });
-  const db = new Database(FICHIER);
-  db.pragma("journal_mode = WAL");
-  db.pragma("foreign_keys = ON");
-  db.exec(`
-    CREATE TABLE IF NOT EXISTS utilisateurs (
-      id INTEGER PRIMARY KEY AUTOINCREMENT,
-      email TEXT NOT NULL UNIQUE,
-      nom TEXT NOT NULL,
-      mdp_hash TEXT NOT NULL,
-      sel TEXT NOT NULL,
-      role TEXT NOT NULL DEFAULT 'membre' CHECK (role IN ('admin','membre')),
-      statut TEXT NOT NULL DEFAULT 'actif' CHECK (statut IN ('actif','suspendu')),
-      cree_le TEXT NOT NULL DEFAULT (datetime('now'))
-    );
-    CREATE TABLE IF NOT EXISTS sessions (
-      id INTEGER PRIMARY KEY AUTOINCREMENT,
-      utilisateur_id INTEGER NOT NULL REFERENCES utilisateurs(id) ON DELETE CASCADE,
-      jeton_hash TEXT NOT NULL UNIQUE,
-      expire_le TEXT NOT NULL,
-      cree_le TEXT NOT NULL DEFAULT (datetime('now'))
-    );
-    CREATE INDEX IF NOT EXISTS idx_sessions_jeton ON sessions(jeton_hash);
-    CREATE TABLE IF NOT EXISTS rapports (
-      id INTEGER PRIMARY KEY AUTOINCREMENT,
-      utilisateur_id INTEGER NOT NULL REFERENCES utilisateurs(id) ON DELETE CASCADE,
-      titre TEXT NOT NULL,
-      type TEXT NOT NULL,
-      contenu TEXT NOT NULL,
-      cree_le TEXT NOT NULL DEFAULT (datetime('now'))
-    );
-    CREATE INDEX IF NOT EXISTS idx_rapports_utilisateur ON rapports(utilisateur_id);
-  `);
-  return db;
-}
-
-// Réutilise la connexion entre rechargements (dev) et entre requêtes.
-export function db(): Database.Database {
-  if (!globalThis.__steveDb) globalThis.__steveDb = ouvrir();
-  return globalThis.__steveDb;
+/** Exécute une requête SQL paramétrée ($1, $2…) et renvoie les lignes. */
+export function requete<T = Ligne>(
+  texte: string,
+  params?: unknown[],
+): Promise<T[]> {
+  globalThis.__steveExecuteur ??= initialiser();
+  return globalThis.__steveExecuteur.then((exec) => exec(texte, params)) as Promise<T[]>;
 }
 
 export interface Utilisateur {
@@ -75,3 +103,6 @@ export interface Rapport {
   contenu: string;
   cree_le: string;
 }
+
+/** Rend un horodatage lisible côté SQL, stable quel que soit le pilote. */
+export const COL_CREE_LE = `to_char(cree_le AT TIME ZONE 'UTC', 'YYYY-MM-DD"T"HH24:MI:SS') AS cree_le`;

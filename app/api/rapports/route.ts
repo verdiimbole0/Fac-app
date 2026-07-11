@@ -1,14 +1,16 @@
-import { db, type Rapport } from "@/lib/db";
+import { COL_CREE_LE, requete, type Rapport } from "@/lib/db";
 import { origineValide, utilisateurCourant } from "@/lib/auth";
 
 export async function GET() {
   const u = await utilisateurCourant();
   if (!u) return Response.json({ erreur: "Non connecté." }, { status: 401 });
-  const rapports = db()
-    .prepare(
-      "SELECT id, titre, type, cree_le FROM rapports WHERE utilisateur_id = ? ORDER BY id DESC",
-    )
-    .all(u.id) as Pick<Rapport, "id" | "titre" | "type" | "cree_le">[];
+  const rapports = await requete<
+    Pick<Rapport, "id" | "titre" | "type" | "cree_le">
+  >(
+    `SELECT id, titre, type, ${COL_CREE_LE}
+     FROM rapports WHERE utilisateur_id = $1 ORDER BY id DESC`,
+    [u.id],
+  );
   return Response.json({ rapports });
 }
 
@@ -19,8 +21,9 @@ export async function DELETE() {
   }
   const u = await utilisateurCourant();
   if (!u) return Response.json({ erreur: "Non connecté." }, { status: 401 });
-  const resultat = db()
-    .prepare("DELETE FROM rapports WHERE utilisateur_id = ?")
-    .run(u.id);
-  return Response.json({ supprimes: resultat.changes });
+  const supprimes = await requete(
+    "DELETE FROM rapports WHERE utilisateur_id = $1 RETURNING id",
+    [u.id],
+  );
+  return Response.json({ supprimes: supprimes.length });
 }

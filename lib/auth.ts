@@ -1,7 +1,7 @@
 import "server-only";
 import crypto from "node:crypto";
 import { cookies, headers } from "next/headers";
-import { db, type Utilisateur } from "./db";
+import { requete, type Utilisateur } from "./db";
 
 const COOKIE = "steve_session";
 const DUREE_SESSION_JOURS = 30;
@@ -12,9 +12,7 @@ const SCRYPT_OPTS = { N: 16384, r: 8, p: 1 };
 
 export function hacherMdp(mdp: string): { hash: string; sel: string } {
   const sel = crypto.randomBytes(16).toString("hex");
-  const hash = crypto
-    .scryptSync(mdp, sel, 32, SCRYPT_OPTS)
-    .toString("hex");
+  const hash = crypto.scryptSync(mdp, sel, 32, SCRYPT_OPTS).toString("hex");
   return { hash, sel };
 }
 
@@ -48,16 +46,15 @@ function hacherJeton(jeton: string): string {
   return crypto.createHash("sha256").update(jeton).digest("hex");
 }
 
-export function creerSession(utilisateurId: number): string {
+export async function creerSession(utilisateurId: number): Promise<string> {
   const jeton = crypto.randomBytes(32).toString("base64url");
   const expire = new Date(
     Date.now() + DUREE_SESSION_JOURS * 24 * 3600 * 1000,
   ).toISOString();
-  db()
-    .prepare(
-      "INSERT INTO sessions (utilisateur_id, jeton_hash, expire_le) VALUES (?, ?, ?)",
-    )
-    .run(utilisateurId, hacherJeton(jeton), expire);
+  await requete(
+    "INSERT INTO sessions (utilisateur_id, jeton_hash, expire_le) VALUES ($1, $2, $3)",
+    [utilisateurId, hacherJeton(jeton), expire],
+  );
   return jeton;
 }
 
@@ -75,9 +72,9 @@ export async function detruireSession() {
   const magasin = await cookies();
   const jeton = magasin.get(COOKIE)?.value;
   if (jeton) {
-    db().prepare("DELETE FROM sessions WHERE jeton_hash = ?").run(
+    await requete("DELETE FROM sessions WHERE jeton_hash = $1", [
       hacherJeton(jeton),
-    );
+    ]);
   }
   magasin.delete(COOKIE);
 }
@@ -85,15 +82,14 @@ export async function detruireSession() {
 export async function utilisateurCourant(): Promise<Utilisateur | null> {
   const jeton = (await cookies()).get(COOKIE)?.value;
   if (!jeton) return null;
-  const ligne = db()
-    .prepare(
-      `SELECT u.* FROM sessions s
-       JOIN utilisateurs u ON u.id = s.utilisateur_id
-       WHERE s.jeton_hash = ? AND s.expire_le > datetime('now')
-         AND u.statut = 'actif'`,
-    )
-    .get(hacherJeton(jeton)) as Utilisateur | undefined;
-  return ligne ?? null;
+  const lignes = await requete<Utilisateur>(
+    `SELECT u.* FROM sessions s
+     JOIN utilisateurs u ON u.id = s.utilisateur_id
+     WHERE s.jeton_hash = $1 AND s.expire_le > now()
+       AND u.statut = 'actif'`,
+    [hacherJeton(jeton)],
+  );
+  return lignes[0] ?? null;
 }
 
 /* ————— Garde anti-CSRF : les mutations doivent venir du même site ————— */
@@ -110,7 +106,9 @@ export async function origineValide(): Promise<boolean> {
   }
 }
 
-/* ————— Limitation de débit en mémoire (par clé) ————— */
+/* ————— Limitation de débit en mémoire (par clé) —————
+   Sur serverless, chaque instance a son propre compteur : protection
+   « meilleur effort », suffisante pour un petit site. ————— */
 
 const compteurs = new Map<string, { n: number; jusqua: number }>();
 

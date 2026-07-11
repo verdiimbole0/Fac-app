@@ -7,7 +7,7 @@ import {
   BoutonSupprimerRapport,
 } from "@/components/ActionsRapports";
 import { utilisateurCourant } from "@/lib/auth";
-import { db, type Rapport } from "@/lib/db";
+import { COL_CREE_LE, requete, type Rapport } from "@/lib/db";
 
 const EMOJIS: Record<string, string> = {
   "groupe d'amis": "👯",
@@ -25,11 +25,13 @@ export default async function PageMesRapports() {
   const u = await utilisateurCourant();
   if (!u) redirect("/connexion");
 
-  const rapports = db()
-    .prepare(
-      "SELECT id, titre, type, cree_le FROM rapports WHERE utilisateur_id = ? ORDER BY id DESC",
-    )
-    .all(u.id) as Pick<Rapport, "id" | "titre" | "type" | "cree_le">[];
+  const rapports = await requete<
+    Pick<Rapport, "id" | "titre" | "type" | "cree_le">
+  >(
+    `SELECT id, titre, type, ${COL_CREE_LE}
+     FROM rapports WHERE utilisateur_id = $1 ORDER BY id DESC`,
+    [u.id],
+  );
 
   return (
     <main className="flex flex-1 flex-col">
