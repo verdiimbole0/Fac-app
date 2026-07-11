@@ -8,8 +8,8 @@ const MARGE = 18;
 const LARGEUR = 210 - 2 * MARGE;
 const BAS_PAGE = 285;
 
-const TEAL = "#075e54";
-const VERT = "#25d366";
+const TEAL = "#1c3d5a";
+const VERT = "#17c3a3";
 const ENCRE = "#111b21";
 const GRIS = "#667781";
 
@@ -72,7 +72,7 @@ export function telechargerRapportPdf(
     y += apres;
   };
 
-  // Bandeau d'en-tête façon WhatsApp
+  // Bandeau d'en-tête aux couleurs du site
   doc.setFillColor(TEAL);
   doc.rect(0, 0, 210, 26, "F");
   doc.setFillColor(VERT);

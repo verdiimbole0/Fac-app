@@ -195,7 +195,7 @@ export default function ChatSteve({ prenomCompte }: { prenomCompte: string }) {
             <div className="bulle-envoyee apparait">
               {TYPES.find((t) => t.id === type)?.label}
               <span className="heure-bulle">
-                {heureActuelle()} <span className="coches">✓✓</span>
+                {heureActuelle()} <span className="coches">✓</span>
               </span>
             </div>
           )}
@@ -243,7 +243,7 @@ export default function ChatSteve({ prenomCompte }: { prenomCompte: string }) {
               {nomFichier ? ` (${nomFichier})` : ""} —{" "}
               {conversation.length.toLocaleString("fr-FR")} caractères
               <span className="heure-bulle">
-                {heureActuelle()} <span className="coches">✓✓</span>
+                {heureActuelle()} <span className="coches">✓</span>
               </span>
             </div>
           )}

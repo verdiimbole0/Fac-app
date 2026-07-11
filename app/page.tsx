@@ -104,7 +104,7 @@ function TelephoneDemo() {
         <div className="bulle-envoyee apparait" style={{ animationDelay: "0.2s" }}>
           Steve, analyse notre groupe « Vacances 2024 » stp 🙏
           <span className="heure-bulle">
-            23:54 <span className="coches">✓✓</span>
+            23:54 <span className="coches">✓</span>
           </span>
         </div>
         <div className="bulle-recue apparait" style={{ animationDelay: "0.9s" }}>

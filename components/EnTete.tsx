@@ -2,7 +2,7 @@ import Link from "next/link";
 import { utilisateurCourant } from "@/lib/auth";
 import BoutonDeconnexion from "./BoutonDeconnexion";
 
-// Barre supérieure façon WhatsApp : bandeau sarcelle, avatar, actions.
+// Barre supérieure façon messagerie : bandeau bleu nuit, avatar, actions.
 export default async function EnTete() {
   const u = await utilisateurCourant();
   return (
