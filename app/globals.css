@@ -1,0 +1,384 @@
+@import "tailwindcss";
+
+@theme {
+  /* Palette « messagerie » — identité propre (noms de tokens historiques) */
+  --color-teal: #1c3d5a;
+  --color-teal-2: #2e5e8c;
+  --color-vert: #17c3a3;
+  --color-vert-fonce: #0ea88b;
+  --color-fond: #eef2f7;
+  --color-blanc: #ffffff;
+  --color-encre: #111b21;
+  --color-gris: #667781;
+  --color-ligne: #dbe2ea;
+  --color-bulle-sortie: #d9e9ff;
+  --color-bleu-coche: #8aa0b5;
+  --color-danger: #dc3545;
+
+  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  --font-voice: Georgia, "Times New Roman", serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-fond);
+  color: var(--color-encre);
+  font-family: var(--font-sans);
+}
+
+.voice {
+  font-family: var(--font-voice);
+  font-style: italic;
+}
+
+/* Fond « papier peint » du chat WhatsApp : petits motifs très discrets */
+.papier-peint {
+  background-color: var(--color-fond);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160' viewBox='0 0 160 160'%3E%3Cg fill='none' stroke='%231c3d5a' stroke-opacity='0.045' stroke-width='2'%3E%3Ccircle cx='24' cy='30' r='7'/%3E%3Cpath d='M120 20l8 8m0-8l-8 8'/%3E%3Cpath d='M70 62c6-8 16-8 20 0'/%3E%3Crect x='110' y='96' width='14' height='14' rx='4'/%3E%3Cpath d='M30 110c0-6 10-6 10 0s-10 6-10 0z'/%3E%3Cpath d='M64 132l10 4-4-10z'/%3E%3Ccircle cx='142' cy='58' r='4'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* ————— Boutons ————— */
+
+.btn-vert {
+  background: var(--color-vert);
+  color: #06332b;
+  font-weight: 700;
+  border-radius: 999px;
+  box-shadow: 0 4px 14px -4px rgba(14, 168, 139, 0.55);
+  transition: transform 0.15s ease, filter 0.15s ease, box-shadow 0.15s ease;
+}
+
+.btn-vert:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.05);
+  box-shadow: 0 7px 18px -4px rgba(14, 168, 139, 0.6);
+}
+
+.btn-vert:disabled {
+  filter: grayscale(0.5);
+  opacity: 0.5;
+  box-shadow: none;
+  transform: none;
+  cursor: not-allowed;
+}
+
+.btn-blanc {
+  background: var(--color-blanc);
+  color: var(--color-teal);
+  font-weight: 600;
+  border: 1px solid var(--color-ligne);
+  border-radius: 999px;
+  transition: border-color 0.15s, background 0.15s;
+}
+
+.btn-blanc:hover {
+  border-color: var(--color-teal-2);
+  background: #f4fbf8;
+}
+
+.btn-danger {
+  background: #fff5f5;
+  color: var(--color-danger);
+  font-weight: 600;
+  border: 1px solid #f3c2c8;
+  border-radius: 999px;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.btn-danger:hover {
+  background: #ffe9eb;
+  border-color: var(--color-danger);
+}
+
+/* ————— Cartes & champs ————— */
+
+.carte {
+  background: var(--color-blanc);
+  border: 1px solid var(--color-ligne);
+  border-radius: 1rem;
+  box-shadow: 0 1px 2px rgba(17, 27, 33, 0.06);
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.carte-survol:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px -12px rgba(28, 61, 90, 0.35);
+}
+
+.champ {
+  width: 100%;
+  border-radius: 0.9rem;
+  border: 1px solid var(--color-ligne);
+  background: var(--color-blanc);
+  color: var(--color-encre);
+  padding: 0.9rem 1rem;
+  font-size: 0.9rem;
+}
+
+.champ:focus {
+  outline: none;
+  border-color: var(--color-teal-2);
+  box-shadow: 0 0 0 3px rgba(46, 94, 140, 0.15);
+}
+
+.champ::placeholder {
+  color: #a5aeb4;
+}
+
+.puce-type {
+  border-radius: 999px;
+  border: 1px solid var(--color-ligne);
+  background: var(--color-blanc);
+  color: var(--color-gris);
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: border-color 0.15s, color 0.15s, background 0.15s;
+}
+
+.puce-type:hover {
+  border-color: var(--color-vert);
+  color: var(--color-teal);
+}
+
+.puce-type.actif {
+  border-color: var(--color-vert);
+  background: var(--color-bulle-sortie);
+  color: var(--color-teal);
+}
+
+/* ————— Bulles de chat ————— */
+
+.bulle-recue,
+.bulle-envoyee {
+  position: relative;
+  max-width: 88%;
+  border-radius: 0.65rem;
+  padding: 0.55rem 0.75rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  box-shadow: 0 1px 1px rgba(17, 27, 33, 0.12);
+}
+
+.bulle-recue {
+  background: var(--color-blanc);
+  align-self: flex-start;
+  border-top-left-radius: 0;
+}
+
+.bulle-recue::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -7px;
+  border: 7px solid transparent;
+  border-top-color: var(--color-blanc);
+  border-right-color: var(--color-blanc);
+  border-left-width: 0;
+}
+
+.bulle-envoyee {
+  background: var(--color-bulle-sortie);
+  align-self: flex-end;
+  border-top-right-radius: 0;
+}
+
+.bulle-envoyee::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -7px;
+  border: 7px solid transparent;
+  border-top-color: var(--color-bulle-sortie);
+  border-left-color: var(--color-bulle-sortie);
+  border-right-width: 0;
+}
+
+.heure-bulle {
+  float: right;
+  margin: 0.55rem 0 0 0.6rem;
+  font-size: 0.66rem;
+  color: var(--color-gris);
+}
+
+.coches {
+  color: var(--color-bleu-coche);
+  font-size: 0.7rem;
+  margin-left: 2px;
+}
+
+.apparait {
+  opacity: 0;
+  transform: translateY(10px) scale(0.98);
+  animation: apparait 0.4s ease forwards;
+}
+
+@keyframes apparait {
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.points-frappe {
+  display: inline-flex;
+  gap: 3px;
+  align-items: center;
+}
+
+.points-frappe span {
+  width: 6px;
+  height: 6px;
+  border-radius: 999px;
+  background: var(--color-gris);
+  animation: frappe 1.2s infinite;
+}
+
+.points-frappe span:nth-child(2) {
+  animation-delay: 0.18s;
+}
+
+.points-frappe span:nth-child(3) {
+  animation-delay: 0.36s;
+}
+
+@keyframes frappe {
+  0%,
+  60%,
+  100% {
+    transform: translateY(0);
+    opacity: 0.4;
+  }
+  30% {
+    transform: translateY(-3px);
+    opacity: 1;
+  }
+}
+
+.lever {
+  opacity: 0;
+  transform: translateY(14px);
+  animation: lever 0.65s ease forwards;
+}
+
+@keyframes lever {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .lever,
+  .apparait {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+  .points-frappe span {
+    animation: none;
+  }
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* ————— Rendu du rapport ————— */
+
+.rapport h1,
+.rapport h2 {
+  font-family: var(--font-voice);
+  font-style: italic;
+  color: var(--color-teal);
+  margin-top: 1.8rem;
+  margin-bottom: 0.7rem;
+  line-height: 1.25;
+}
+
+.rapport h1 {
+  font-size: 1.55rem;
+  margin-top: 0.25rem;
+}
+
+.rapport h2 {
+  font-size: 1.22rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 2px solid var(--color-bulle-sortie);
+}
+
+.rapport h3 {
+  font-weight: 700;
+  margin-top: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.rapport p {
+  margin-bottom: 0.85rem;
+  line-height: 1.7;
+}
+
+.rapport ul,
+.rapport ol {
+  margin: 0.75rem 0 1rem 1.3rem;
+  list-style: disc;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.rapport ol {
+  list-style: decimal;
+}
+
+.rapport li {
+  line-height: 1.65;
+}
+
+.rapport li::marker {
+  color: var(--color-vert-fonce);
+}
+
+.rapport strong {
+  color: var(--color-teal);
+  font-weight: 700;
+}
+
+.rapport blockquote {
+  border-left: 4px solid var(--color-vert);
+  background: #eefaf7;
+  border-radius: 0 0.6rem 0.6rem 0;
+  padding: 0.7rem 1rem;
+  margin: 1rem 0;
+  color: var(--color-gris);
+}
+
+.rapport blockquote p {
+  margin: 0;
+}
+
+.rapport hr {
+  border-color: var(--color-ligne);
+  margin: 1.5rem 0;
+}
+
+@keyframes clignote {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.curseur::after {
+  content: "▋";
+  color: var(--color-vert-fonce);
+  animation: clignote 1s step-end infinite;
+  margin-left: 2px;
+}
