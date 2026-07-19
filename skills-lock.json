@@ -12,6 +12,12 @@
       "sourceType": "github",
       "skillPath": "marketing-skill/skills/marketing-skills/SKILL.md",
       "computedHash": "01f6fa65c08e04cf9def4af4a0d3bac699cdcf888701e1b9f3d014116704bf1f"
+    },
+    "stop-slop": {
+      "source": "hardikpandya/stop-slop",
+      "sourceType": "github",
+      "skillPath": "SKILL.md",
+      "computedHash": "617bf97d33162a6bd0da4f40a97aac589de58e5a6c9cf011ed6108992210e7cb"
     }
   }
 }
