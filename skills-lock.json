@@ -1,6 +1,12 @@
 {
   "version": 1,
   "skills": {
+    "marketing-context": {
+      "source": "alirezarezvani/claude-skills",
+      "sourceType": "github",
+      "skillPath": "marketing-skill/skills/marketing-context/SKILL.md",
+      "computedHash": "81a4d6474ea9b37c994d71729facf28f5da50f568503cd86d8ea32bed311a9c3"
+    },
     "marketing-skills": {
       "source": "alirezarezvani/claude-skills",
       "sourceType": "github",
