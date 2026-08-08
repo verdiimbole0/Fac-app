@@ -1,53 +1,49 @@
-import { useEffect } from "react";
+import React from "react";
 import "@/App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import axios from "axios";
-import { HOME } from "@/constants/testIds";
-
-const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
-const API = `${BACKEND_URL}/api`;
-
-const Home = () => {
-  const helloWorldApi = async () => {
-    try {
-      const response = await axios.get(`${API}/`);
-      console.log(response.data.message);
-    } catch (e) {
-      console.error(e, `errored out requesting / api`);
-    }
-  };
-
-  useEffect(() => {
-    helloWorldApi();
-  }, []);
-
-  return (
-    <div>
-      <header className="App-header">
-        <a
-          data-testid={HOME.emergentLink}
-          className="App-link"
-          href="https://emergent.sh"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src="https://avatars.githubusercontent.com/in/1201222?s=120&u=2686cf91179bbafbc7a71bfbc43004cf9ae1acea&v=4" />
-        </a>
-        <p className="mt-5">Building something incredible ~!</p>
-      </header>
-    </div>
-  );
-};
+import { StoreProvider } from "@/context/StoreContext";
+import Header from "@/components/layout/Header";
+import Footer from "@/components/layout/Footer";
+import AnnouncementBar from "@/components/layout/AnnouncementBar";
+import CartDrawer from "@/components/cart/CartDrawer";
+import SearchOverlay from "@/components/search/SearchOverlay";
+import Home from "@/pages/Home";
+import Category from "@/pages/Category";
+import ProductDetail from "@/pages/ProductDetail";
+import Wishlist from "@/pages/Wishlist";
+import Checkout from "@/pages/Checkout";
+import { Toaster } from "@/components/ui/sonner";
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />}>
-            <Route index element={<Home />} />
-          </Route>
-        </Routes>
+        <StoreProvider>
+          <AnnouncementBar />
+          <Header />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/c/:slug" element={<Category />} />
+            <Route path="/product/:slug" element={<ProductDetail />} />
+            <Route path="/wishlist" element={<Wishlist />} />
+            <Route path="/checkout" element={<Checkout />} />
+          </Routes>
+          <Footer />
+          <CartDrawer />
+          <SearchOverlay />
+          <Toaster
+            position="bottom-center"
+            toastOptions={{
+              style: {
+                background: "#1a1a1a",
+                color: "#fafaf7",
+                border: "1px solid #333",
+                borderRadius: 0,
+                fontFamily: "Manrope, sans-serif",
+              },
+            }}
+          />
+        </StoreProvider>
       </BrowserRouter>
     </div>
   );
