@@ -53,17 +53,28 @@ Application web e-commerce de niveau professionnel "Billy's Store" — fluide, m
 - [x] Auth playbook `/app/auth_testing.md` + credentials `/app/memory/test_credentials.md`
 - [x] Testing agent iteration 2 : 25/25 backend pass, tous les flows admin/promo vérifiés
 
+## Iteration 3 (2026-02-08) — Stock + Rôles + Emails auto
+- [x] **Décrément stock atomique** : à la création de commande, chaque item décrémente le stock avec `$inc:{stock:-qty}` conditionné à `stock >= qty`. Si un item échoue, rollback des items précédents. Retourne **409 "Insufficient stock for X"**. Testé : commande 999 unités sur produit avec 6 en stock → refusé, stock intact.
+- [x] **Restauration stock** : si le paiement Flutterwave échoue, le stock est restauré via `restore_stock()` dans `finalize_flw_payment()`.
+- [x] **Rôles admin (RBAC serveur)** : 3 rôles (`super_admin`, `products_editor`, `orders_manager`) avec matrice `PERMS`. Dépendance `require_perm(perm)` protège chaque route admin. Testé : editor peut CRUD produits, refusé 403 sur orders/promos/users.
+- [x] **Page `/admin/users` (super_admin only)** : formulaire d'invitation (nom, email, password, rôle avec description contextuelle), liste avec swap de rôle inline + suppression. Impossible de se supprimer soi-même.
+- [x] **Filtrage nav sidebar** par permission via `hasPerm()` — chaque rôle ne voit que ses items.
+- [x] **Emails auto Resend** : `send_order_confirmation_email()` avec HTML premium (Playfair Display + palette site) envoie la confirmation aux clients. Silent skip si `RESEND_API_KEY` vide. **Warn log** si Resend API retourne une erreur.
+- [x] Testing agent iteration 3 : 40/40 backend pytest passing, /admin/users flow validé end-to-end. RBAC corrigé sur POST /admin/products.
+
 ## Backlog / Prioritized Next Steps
 ### P0 (bloquants pour production)
-- Ajouter les vraies clés Flutterwave (`FLW_SECRET_KEY`, `FLW_PUBLIC_KEY`, `FLW_SECRET_HASH`) dans `/app/backend/.env` + configurer webhook Flutterwave URL
-- Décrément du stock au checkout (actuellement le stock n'est pas décrémenté à la commande)
-- Persistance panier/wishlist côté serveur (session ou compte)
+- Coller les vraies clés dans `/app/backend/.env` :
+  - `FLW_SECRET_KEY`, `FLW_PUBLIC_KEY`, `FLW_SECRET_HASH` (Flutterwave)
+  - `RESEND_API_KEY`, `RESEND_FROM_EMAIL` (Resend) — le domaine doit être vérifié dans Resend
+- Persistance panier/wishlist côté serveur (session ou compte client)
 
 ### P1 (haute valeur)
-- Emails transactionnels automatiques (Resend/SendGrid) — actuellement copie manuelle
-- Programme fidélité
+- Programme de fidélité (points par commande, palier de réduction automatique)
 - Système d'avis clients authentifiés avec upload photos réel
-- Multi-comptes admin (rôles: super admin, éditeur produits, gestionnaire commandes)
+- MongoDB transactions pour rendre le decrement_stock atomique multi-items
+- Emails de suivi (expédition, livraison) en plus de la confirmation
+- Password reset flow pour comptes admin invités
 
 ### P2 (améliorations)
 - SEO avancé (SSR/meta OG dynamiques par produit)
@@ -71,3 +82,4 @@ Application web e-commerce de niveau professionnel "Billy's Store" — fluide, m
 - Recommandations personnalisées basées sur historique
 - Multi-devise (EUR/XOF/USD)
 - Blog éditorial ("Journal") pour SEO
+- Audit log des actions admin

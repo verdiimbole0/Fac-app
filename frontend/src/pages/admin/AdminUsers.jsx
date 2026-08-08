@@ -125,7 +125,7 @@ export default function AdminUsers() {
             </div>
             <input
               data-testid="user-password-input"
-              type="text"
+              type="password"
               value={form.password}
               onChange={(e) => setForm({ ...form, password: e.target.value })}
               required

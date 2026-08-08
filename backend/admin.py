@@ -287,7 +287,7 @@ class ProductUpsert(BaseModel):
 
 
 @router.post("/admin/products")
-async def admin_create_product(payload: ProductUpsert, admin: AdminUser = Depends(get_current_admin)):
+async def admin_create_product(payload: ProductUpsert, admin: AdminUser = Depends(require_perm("products"))):
     from server import db
 
     doc = payload.model_dump()
@@ -628,8 +628,15 @@ async def send_order_confirmation_email(order: dict, lang: str = "fr") -> bool:
                     "Content-Type": "application/json",
                 },
             )
+        if r.status_code >= 400:
+            import logging
+            logging.getLogger("billy.email").warning(
+                f"Resend API returned {r.status_code}: {r.text[:200]}"
+            )
         return r.status_code < 400
-    except Exception:
+    except Exception as e:
+        import logging
+        logging.getLogger("billy.email").warning(f"Resend send failed: {e}")
         return False
 
 
