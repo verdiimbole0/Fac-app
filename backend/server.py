@@ -261,6 +261,12 @@ async def create_order(payload: OrderCreate):
         link = await initialize_flutterwave_payment(doc)
         doc["payment_link"] = link
         order.payment_link = link
+    else:
+        # Non-Flutterwave (Mobile Money manual) orders are considered "committed" — bump promo usage
+        if payload.promo_code:
+            await db.promos.update_one(
+                {"code": payload.promo_code}, {"$inc": {"uses": 1}}
+            )
 
     await db.orders.insert_one(doc)
     return order

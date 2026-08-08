@@ -65,6 +65,7 @@ export default function ProductDetail() {
       image: product.images[0],
       quantity: 1,
       slug: product.slug,
+      category: product.category,
       size,
       color,
     });

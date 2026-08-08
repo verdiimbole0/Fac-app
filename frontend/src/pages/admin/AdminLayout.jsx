@@ -22,10 +22,10 @@ export default function AdminLayout() {
   }
 
   const items = [
-    { to: "/admin", end: true, icon: LayoutDashboard, label_fr: "Tableau de bord", label_en: "Dashboard" },
-    { to: "/admin/products", icon: Package, label_fr: "Produits", label_en: "Products" },
-    { to: "/admin/orders", icon: ShoppingBag, label_fr: "Commandes", label_en: "Orders" },
-    { to: "/admin/promos", icon: Tag, label_fr: "Codes promo", label_en: "Promo codes" },
+    { to: "/admin", end: true, icon: LayoutDashboard, key: "dashboard", label_fr: "Tableau de bord", label_en: "Dashboard" },
+    { to: "/admin/products", icon: Package, key: "products", label_fr: "Produits", label_en: "Products" },
+    { to: "/admin/orders", icon: ShoppingBag, key: "orders", label_fr: "Commandes", label_en: "Orders" },
+    { to: "/admin/promos", icon: Tag, key: "promos", label_fr: "Codes promo", label_en: "Promo codes" },
   ];
 
   return (
@@ -45,7 +45,7 @@ export default function AdminLayout() {
               key={it.to}
               to={it.to}
               end={it.end}
-              data-testid={`admin-nav-${it.to.split("/").pop() || "dashboard"}`}
+              data-testid={`admin-nav-${it.key}`}
               className={({ isActive }) =>
                 `flex items-center gap-3 px-3 py-2.5 label-caps ${isActive ? "bg-[#1a1a1a] text-[#fafaf7]" : "text-[#1a1a1a] hover:bg-[#f0ece3]"}`
               }

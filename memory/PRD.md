@@ -43,17 +43,27 @@ Application web e-commerce de niveau professionnel "Billy's Store" — fluide, m
 - [x] Footer avec newsletter, colonnes de liens, socials
 - [x] Backend testé 100% pass ; PDP direct-URL vérifié via screenshot
 
+## Iteration 2 (2026-02-08) — Back-office + Paiement + Promos
+- [x] **Back-office `/admin` bilingue** : login page premium (Google Auth Emergent + JWT email/password), dashboard stats, sidebar navigation
+- [x] **Admin Products CRUD** : liste, création, édition (nom FR/EN, description, images multiples, badges NEW/BESTSELLER, stock, catégorie), suppression avec confirmation
+- [x] **Admin Orders** : table avec status dropdown (pending/paid/shipped/delivered/cancelled/failed), modal détail complet, bouton "Copier l'email de confirmation" pour envoi manuel (template FR/EN dans le presse-papier)
+- [x] **Admin Promo codes** : création (code, %/fixe, min sous-total, catégorie ciblée, max_uses, date d'expiration), liste avec compteur d'usages, suppression
+- [x] **Promo sur checkout** : input dans le récapitulatif, validation live (endpoint `/api/promos/apply`), affichage réduction, X pour retirer. Compteur `uses` s'incrémente à la commande.
+- [x] **Flutterwave Standard v3** : 5ème méthode de paiement dans le checkout, initialisation hosted checkout, webhook signature verification, redirect `/payment/result` avec verify server-side. **Clés API vides pour l'instant** — l'endpoint retourne 503 tant que `FLW_SECRET_KEY` n'est pas dans `.env`.
+- [x] Auth playbook `/app/auth_testing.md` + credentials `/app/memory/test_credentials.md`
+- [x] Testing agent iteration 2 : 25/25 backend pass, tous les flows admin/promo vérifiés
+
 ## Backlog / Prioritized Next Steps
 ### P0 (bloquants pour production)
-- Intégration paiement mobile money réelle (Orange, Wave API) — actuellement UI mock
+- Ajouter les vraies clés Flutterwave (`FLW_SECRET_KEY`, `FLW_PUBLIC_KEY`, `FLW_SECRET_HASH`) dans `/app/backend/.env` + configurer webhook Flutterwave URL
+- Décrément du stock au checkout (actuellement le stock n'est pas décrémenté à la commande)
 - Persistance panier/wishlist côté serveur (session ou compte)
 
 ### P1 (haute valeur)
-- Back-office admin `/admin` (CRUD produits + stock + commandes)
-- Emails transactionnels (confirmation commande, tracking)
-- Programme fidélité / codes promo
+- Emails transactionnels automatiques (Resend/SendGrid) — actuellement copie manuelle
+- Programme fidélité
 - Système d'avis clients authentifiés avec upload photos réel
-- Auth optionnelle (JWT ou Google) pour retrouver commandes
+- Multi-comptes admin (rôles: super admin, éditeur produits, gestionnaire commandes)
 
 ### P2 (améliorations)
 - SEO avancé (SSR/meta OG dynamiques par produit)

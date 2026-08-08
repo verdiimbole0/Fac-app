@@ -10,7 +10,7 @@ import bcrypt
 import jwt
 import httpx
 from fastapi import APIRouter, HTTPException, Request, Response, Header, Depends
-from pydantic import BaseModel, Field, EmailStr
+from pydantic import BaseModel, Field, EmailStr, ConfigDict
 
 JWT_SECRET = os.environ.get("JWT_SECRET", "dev-secret")
 JWT_ALGO = "HS256"
@@ -57,6 +57,8 @@ def decode_jwt(token: str) -> Optional[dict]:
 
 
 class AdminUser(BaseModel):
+    model_config = ConfigDict(extra="ignore")
+
     user_id: str
     email: str
     name: str

@@ -65,8 +65,8 @@ export default function Checkout() {
     setPromoLoading(true);
     try {
       const categoryTotals = cart.reduce((acc, i) => {
-        // We don't have category in the cart items; fetch from slug isn't available client-side quickly.
-        // Instead, keep an aggregate under a placeholder — server treats missing category as 0.
+        const cat = i.category || "unknown";
+        acc[cat] = (acc[cat] || 0) + i.price * i.quantity;
         return acc;
       }, {});
       const r = await axios.post(`${API}/promos/apply`, {

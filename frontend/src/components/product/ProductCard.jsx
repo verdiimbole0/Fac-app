@@ -92,6 +92,7 @@ export default function ProductCard({ product, index = 0 }) {
                     image: product.images[0],
                     quantity: 1,
                     slug: product.slug,
+                    category: product.category,
                     size: product.variants?.sizes?.[0] || null,
                     color: product.variants?.colors?.[0]?.name || null,
                   });
