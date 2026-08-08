@@ -22,6 +22,9 @@ db = client[os.environ["DB_NAME"]]
 app = FastAPI(title="Billy's Store API")
 api_router = APIRouter(prefix="/api")
 
+# Import admin router AFTER db is defined
+from admin import router as admin_router, hash_password, ADMIN_EMAIL, ADMIN_PASSWORD, initialize_flutterwave_payment, FLW_SECRET_KEY
+
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
@@ -100,12 +103,14 @@ class ShippingAddress(BaseModel):
 class OrderCreate(BaseModel):
     contact: Contact
     shipping: ShippingAddress
-    payment_method: str  # orange_money | mtn_momo | wave | moov
-    payment_phone: str
+    payment_method: str  # orange_money | mtn_momo | wave | moov | flutterwave
+    payment_phone: Optional[str] = ""
     items: List[OrderItem]
     subtotal: float
     shipping_cost: float
     total: float
+    promo_code: Optional[str] = None
+    discount: float = 0
 
 
 class Order(OrderCreate):
@@ -114,6 +119,9 @@ class Order(OrderCreate):
     order_number: str = Field(
         default_factory=lambda: "BS-" + uuid.uuid4().hex[:8].upper()
     )
+    tx_ref: str = Field(default_factory=lambda: f"billy-{uuid.uuid4().hex[:16]}")
+    payment_link: Optional[str] = None
+    flutterwave_transaction_id: Optional[str] = None
     created_at: str = Field(
         default_factory=lambda: datetime.now(timezone.utc).isoformat()
     )
@@ -241,7 +249,20 @@ async def related_products(slug: str, limit: int = 4):
 @api_router.post("/orders", response_model=Order)
 async def create_order(payload: OrderCreate):
     order = Order(**payload.model_dump())
-    await db.orders.insert_one(order.model_dump())
+    doc = order.model_dump()
+
+    # If payment method is 'flutterwave', initialize hosted checkout and attach payment_link
+    if payload.payment_method == "flutterwave":
+        if not FLW_SECRET_KEY:
+            raise HTTPException(
+                status_code=503,
+                detail="Flutterwave not configured. Set FLW_SECRET_KEY in backend/.env",
+            )
+        link = await initialize_flutterwave_payment(doc)
+        doc["payment_link"] = link
+        order.payment_link = link
+
+    await db.orders.insert_one(doc)
     return order
 
 
@@ -253,15 +274,32 @@ async def get_order(order_id: str):
     return Order(**doc)
 
 
-# ---------- Startup: seed products ----------
+# ---------- Startup: seed products + admin ----------
 @app.on_event("startup")
-async def seed_products():
+async def seed_startup():
     count = await db.products.count_documents({})
     if count == 0:
         await db.products.insert_many([p.copy() for p in SEED_PRODUCTS])
         logger.info(f"Seeded {len(SEED_PRODUCTS)} products")
     else:
         logger.info(f"Products already seeded ({count} exist)")
+
+    # Seed default admin
+    existing_admin = await db.admin_users.find_one({"email": ADMIN_EMAIL.lower()})
+    if not existing_admin:
+        admin_doc = {
+            "user_id": f"user_{uuid.uuid4().hex[:12]}",
+            "email": ADMIN_EMAIL.lower(),
+            "password_hash": hash_password(ADMIN_PASSWORD),
+            "name": "Billy Admin",
+            "picture": None,
+            "created_at": datetime.now(timezone.utc).isoformat(),
+        }
+        await db.admin_users.insert_one(admin_doc)
+        logger.info(f"Seeded default admin: {ADMIN_EMAIL}")
+    # Indexes
+    await db.orders.create_index("tx_ref", unique=True, sparse=True)
+    await db.promos.create_index("code", unique=True)
 
 
 @app.on_event("shutdown")
@@ -270,6 +308,7 @@ async def shutdown_db_client():
 
 
 app.include_router(api_router)
+app.include_router(admin_router, prefix="/api")
 
 app.add_middleware(
     CORSMiddleware,

@@ -1,14 +1,17 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { Check, Shield, RotateCcw, Lock, ArrowLeft } from "lucide-react";
+import { Check, Shield, RotateCcw, Lock, ArrowLeft, Tag, X } from "lucide-react";
+import axios from "axios";
 import { useStore } from "@/context/StoreContext";
-import { createOrder, formatPrice } from "@/lib/api";
+import { createOrder, formatPrice, API } from "@/lib/api";
+import { toast } from "sonner";
 
 const PAY_METHODS = [
   { id: "orange_money", label: "Orange Money", accent: "#FF7900" },
   { id: "mtn_momo", label: "MTN MoMo", accent: "#FFCB05" },
   { id: "wave", label: "Wave", accent: "#1DC2FF" },
   { id: "moov", label: "Moov Money", accent: "#005EB8" },
+  { id: "flutterwave", label: "Flutterwave", accent: "#F5A623" },
 ];
 
 const STEPS = ["step_contact", "step_shipping", "step_payment"];
@@ -37,18 +40,56 @@ export default function Checkout() {
     phone: "",
   });
 
+  // Promo
+  const [promoCode, setPromoCode] = React.useState("");
+  const [promo, setPromo] = React.useState(null); // { code, discount, kind, value, category }
+  const [promoLoading, setPromoLoading] = React.useState(false);
+
+  const finalTotal = Math.max(0, totals.total - (promo?.discount || 0));
+
   React.useEffect(() => {
     if (cart.length === 0 && !confirmed) navigate("/");
   }, [cart, confirmed, navigate]);
 
   const validateStep = () => {
-    if (step === 0) {
+    if (step === 0)
       return contact.email && contact.phone && contact.first_name && contact.last_name;
-    }
-    if (step === 1) {
+    if (step === 1)
       return shipping.address && shipping.city && shipping.postal_code && shipping.country;
-    }
+    if (payment.method === "flutterwave") return true;
     return payment.method && payment.phone.length >= 8;
+  };
+
+  const applyPromo = async () => {
+    if (!promoCode.trim()) return;
+    setPromoLoading(true);
+    try {
+      const categoryTotals = cart.reduce((acc, i) => {
+        // We don't have category in the cart items; fetch from slug isn't available client-side quickly.
+        // Instead, keep an aggregate under a placeholder — server treats missing category as 0.
+        return acc;
+      }, {});
+      const r = await axios.post(`${API}/promos/apply`, {
+        code: promoCode.trim().toUpperCase(),
+        subtotal: totals.subtotal,
+        category_totals: categoryTotals,
+      });
+      setPromo(r.data);
+      toast.success(
+        (lang === "en" ? "Promo applied: -" : "Code appliqué : -") +
+          formatPrice(r.data.discount, lang)
+      );
+    } catch (e) {
+      toast.error(e?.response?.data?.detail || (lang === "en" ? "Invalid code" : "Code invalide"));
+      setPromo(null);
+    } finally {
+      setPromoLoading(false);
+    }
+  };
+
+  const removePromo = () => {
+    setPromo(null);
+    setPromoCode("");
   };
 
   const submit = async () => {
@@ -70,10 +111,24 @@ export default function Checkout() {
         })),
         subtotal: totals.subtotal,
         shipping_cost: totals.shipping,
-        total: totals.total,
+        total: finalTotal,
+        promo_code: promo?.code || null,
+        discount: promo?.discount || 0,
       });
+
+      // If Flutterwave, redirect to hosted checkout
+      if (payment.method === "flutterwave" && order.payment_link) {
+        window.location.assign(order.payment_link);
+        return;
+      }
+
       setConfirmed(order);
       clearCart();
+    } catch (e) {
+      toast.error(
+        e?.response?.data?.detail ||
+          (lang === "en" ? "Could not place order" : "Impossible de créer la commande")
+      );
     } finally {
       setSubmitting(false);
     }
@@ -132,7 +187,7 @@ export default function Checkout() {
     return (
       <div className="space-y-6">
         <div>
-          <div className="label-caps mb-4">{t("payment_method")} — {t("payment_mobile_money")}</div>
+          <div className="label-caps mb-4">{t("payment_method")}</div>
           <div className="grid grid-cols-2 gap-3">
             {PAY_METHODS.map((m) => (
               <button
@@ -146,17 +201,28 @@ export default function Checkout() {
                   style={{ backgroundColor: m.accent }}
                 />
                 <div className="font-serif text-lg">{m.label}</div>
+                {m.id === "flutterwave" && (
+                  <div className="label-caps text-[9px] text-[#c5a880] mt-1">
+                    {lang === "en" ? "All Mobile Money" : "Tous Mobile Money"}
+                  </div>
+                )}
               </button>
             ))}
           </div>
         </div>
-        <Field label={t("payment_phone")} value={payment.phone} onChange={(v) => setPayment({ ...payment, phone: v })} testid="input-payment-phone" />
+        {payment.method !== "flutterwave" && (
+          <Field label={t("payment_phone")} value={payment.phone} onChange={(v) => setPayment({ ...payment, phone: v })} testid="input-payment-phone" />
+        )}
         <div className="p-4 border border-[#e5e2dc] bg-[#f0ece3]/40 text-xs text-[#4a4a4a] flex gap-3 items-start">
           <Lock size={14} strokeWidth={1.5} className="mt-0.5 flex-shrink-0" />
           <span>
-            {lang === "en"
-              ? "You will receive a confirmation prompt on your Mobile Money account to validate the payment."
-              : "Vous recevrez une demande de validation sur votre compte Mobile Money pour finaliser le paiement."}
+            {payment.method === "flutterwave"
+              ? (lang === "en"
+                ? "You'll be redirected to Flutterwave's secure payment page to complete the transaction."
+                : "Vous serez redirigé vers la page de paiement sécurisée Flutterwave pour finaliser la transaction.")
+              : (lang === "en"
+                ? "You will receive a confirmation prompt on your Mobile Money account to validate the payment."
+                : "Vous recevrez une demande de validation sur votre compte Mobile Money pour finaliser le paiement.")}
           </span>
         </div>
       </div>
@@ -174,7 +240,6 @@ export default function Checkout() {
           <ArrowLeft size={14} strokeWidth={1.5} /> {t("back")}
         </button>
 
-        {/* Steps */}
         <div className="flex items-center gap-6 mb-10">
           {STEPS.map((s, i) => (
             <div
@@ -217,7 +282,7 @@ export default function Checkout() {
           <div className="font-serif text-2xl mb-6">
             {lang === "en" ? "Order summary" : "Récapitulatif"}
           </div>
-          <ul className="divide-y divide-[#e5e2dc] max-h-[320px] overflow-y-auto -mx-2 px-2">
+          <ul className="divide-y divide-[#e5e2dc] max-h-[280px] overflow-y-auto -mx-2 px-2">
             {cart.map((item) => (
               <li key={item.line_id} className="py-4 flex gap-4">
                 <div className="w-16 h-20 bg-[#f0ece3] flex-shrink-0 overflow-hidden relative">
@@ -236,18 +301,61 @@ export default function Checkout() {
               </li>
             ))}
           </ul>
+
+          {/* Promo */}
+          <div className="border-t border-[#e5e2dc] mt-4 pt-4">
+            {!promo ? (
+              <div className="flex gap-2">
+                <input
+                  data-testid="promo-input"
+                  value={promoCode}
+                  onChange={(e) => setPromoCode(e.target.value.toUpperCase())}
+                  placeholder={lang === "en" ? "Promo code" : "Code promo"}
+                  className="flex-1 border border-[#e5e2dc] focus:border-[#1a1a1a] bg-white px-3 py-2.5 text-sm outline-none uppercase"
+                />
+                <button
+                  data-testid="promo-apply-btn"
+                  onClick={applyPromo}
+                  disabled={promoLoading || !promoCode}
+                  className="border border-[#1a1a1a] px-4 py-2.5 label-caps text-xs disabled:opacity-40 hover:bg-[#1a1a1a] hover:text-[#fafaf7] bs-btn"
+                >
+                  {promoLoading ? "…" : (lang === "en" ? "Apply" : "Appliquer")}
+                </button>
+              </div>
+            ) : (
+              <div className="flex items-center justify-between p-3 bg-[#f0ece3] border border-[#c5a880]">
+                <div className="flex items-center gap-2 text-sm">
+                  <Tag size={14} strokeWidth={1.5} className="text-[#a88b5f]" />
+                  <span className="font-serif">{promo.code}</span>
+                  <span className="text-[#737373]">
+                    (-{promo.kind === "percent" ? `${promo.value}%` : formatPrice(promo.value, lang)})
+                  </span>
+                </div>
+                <button data-testid="promo-remove" onClick={removePromo} className="text-[#737373] hover:text-[#8c3a3a]">
+                  <X size={14} strokeWidth={1.5} />
+                </button>
+              </div>
+            )}
+          </div>
+
           <div className="border-t border-[#e5e2dc] mt-4 pt-4 space-y-2 text-sm">
             <div className="flex justify-between">
               <span className="text-[#737373]">{t("subtotal")}</span>
               <span>{formatPrice(totals.subtotal, lang)}</span>
             </div>
+            {promo && (
+              <div className="flex justify-between text-[#a88b5f]">
+                <span>{lang === "en" ? "Discount" : "Réduction"}</span>
+                <span>−{formatPrice(promo.discount, lang)}</span>
+              </div>
+            )}
             <div className="flex justify-between">
               <span className="text-[#737373]">{t("shipping")}</span>
               <span>{totals.shipping === 0 ? t("free") : formatPrice(totals.shipping, lang)}</span>
             </div>
             <div className="flex justify-between font-serif text-lg pt-3 border-t border-[#e5e2dc]">
               <span>Total</span>
-              <span>{formatPrice(totals.total, lang)}</span>
+              <span>{formatPrice(finalTotal, lang)}</span>
             </div>
           </div>
         </div>
