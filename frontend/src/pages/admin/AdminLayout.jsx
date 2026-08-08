@@ -1,11 +1,17 @@
 import React from "react";
 import { NavLink, Outlet, useNavigate } from "react-router-dom";
-import { LayoutDashboard, Package, ShoppingBag, Tag, LogOut, Store } from "lucide-react";
+import { LayoutDashboard, Package, ShoppingBag, Tag, Users, LogOut, Store } from "lucide-react";
 import { useAuth } from "@/context/AuthContext";
 import { useStore } from "@/context/StoreContext";
 
+const ROLE_LABELS = {
+  super_admin: { fr: "Super Admin", en: "Super Admin" },
+  products_editor: { fr: "Éditeur Produits", en: "Products Editor" },
+  orders_manager: { fr: "Gestionnaire Commandes", en: "Orders Manager" },
+};
+
 export default function AdminLayout() {
-  const { admin, loading, logout } = useAuth();
+  const { admin, loading, logout, hasPerm } = useAuth();
   const { lang, setLang } = useStore();
   const navigate = useNavigate();
 
@@ -21,12 +27,16 @@ export default function AdminLayout() {
     );
   }
 
-  const items = [
-    { to: "/admin", end: true, icon: LayoutDashboard, key: "dashboard", label_fr: "Tableau de bord", label_en: "Dashboard" },
-    { to: "/admin/products", icon: Package, key: "products", label_fr: "Produits", label_en: "Products" },
-    { to: "/admin/orders", icon: ShoppingBag, key: "orders", label_fr: "Commandes", label_en: "Orders" },
-    { to: "/admin/promos", icon: Tag, key: "promos", label_fr: "Codes promo", label_en: "Promo codes" },
+  const allItems = [
+    { to: "/admin", end: true, icon: LayoutDashboard, key: "dashboard", perm: null, label_fr: "Tableau de bord", label_en: "Dashboard" },
+    { to: "/admin/products", icon: Package, key: "products", perm: "products", label_fr: "Produits", label_en: "Products" },
+    { to: "/admin/orders", icon: ShoppingBag, key: "orders", perm: "orders", label_fr: "Commandes", label_en: "Orders" },
+    { to: "/admin/promos", icon: Tag, key: "promos", perm: "promos", label_fr: "Codes promo", label_en: "Promo codes" },
+    { to: "/admin/users", icon: Users, key: "users", perm: "users", label_fr: "Équipe", label_en: "Team" },
   ];
+  const items = allItems.filter((it) => !it.perm || hasPerm(it.perm));
+
+  const roleLabel = ROLE_LABELS[admin.role]?.[lang] || admin.role;
 
   return (
     <div className="min-h-screen grid grid-cols-1 lg:grid-cols-[260px_1fr] bg-[#fafaf7]">
@@ -81,7 +91,7 @@ export default function AdminLayout() {
         <div className="flex items-center justify-between mb-8">
           <div>
             <div className="label-caps text-[#a88b5f] text-xs">
-              {lang === "en" ? "Signed in as" : "Connecté en tant que"}
+              {roleLabel}
             </div>
             <div className="font-serif text-lg">{admin.email}</div>
           </div>

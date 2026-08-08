@@ -14,10 +14,13 @@ export default function AdminDashboard() {
   React.useEffect(() => {
     (async () => {
       try {
-        const [orders, products] = await Promise.all([
-          authAxios.get("/admin/orders").then((r) => r.data),
-          fetchProducts({ limit: 200 }),
-        ]);
+        const productsP = fetchProducts({ limit: 200 });
+        // Orders fetch may 403 for products_editor — swallow silently
+        const ordersP = authAxios
+          .get("/admin/orders")
+          .then((r) => r.data)
+          .catch(() => []);
+        const [orders, products] = await Promise.all([ordersP, productsP]);
         const revenue = orders
           .filter((o) => ["paid", "shipped", "delivered"].includes(o.status))
           .reduce((s, o) => s + (o.total || 0), 0);

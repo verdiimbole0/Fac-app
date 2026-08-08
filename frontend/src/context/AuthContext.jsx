@@ -48,17 +48,28 @@ export function AuthProvider({ children }) {
   const loginJwt = async (email, password) => {
     const r = await authAxios.post("/auth/login", { email, password });
     setToken(r.data.access_token);
-    setAdmin({ ...r.data.user, auth_type: "jwt" });
+    // Fetch fresh /auth/me to get role + permissions
+    try {
+      const me = await axios.get(`${API}/auth/me`, {
+        headers: { Authorization: `Bearer ${r.data.access_token}` },
+      });
+      setAdmin(me.data);
+    } catch {
+      setAdmin({ ...r.data.user, auth_type: "jwt" });
+    }
     return r.data.user;
   };
 
   const finishGoogleLogin = async (sessionId) => {
-    const r = await authAxios.post("/auth/google-session", {
-      session_id: sessionId,
-    });
-    setAdmin({ ...r.data.user, auth_type: "google" });
-    return r.data.user;
+    await authAxios.post("/auth/google-session", { session_id: sessionId });
+    // Fetch full /auth/me for role & permissions
+    const me = await authAxios.get("/auth/me");
+    setAdmin(me.data);
+    return me.data;
   };
+
+  const hasPerm = (perm) =>
+    Array.isArray(admin?.permissions) && admin.permissions.includes(perm);
 
   const logout = async () => {
     try {
@@ -70,7 +81,7 @@ export function AuthProvider({ children }) {
 
   return (
     <AuthContext.Provider
-      value={{ admin, loading, loginJwt, finishGoogleLogin, logout, authAxios, token }}
+      value={{ admin, loading, loginJwt, finishGoogleLogin, logout, authAxios, token, hasPerm }}
     >
       {children}
     </AuthContext.Provider>

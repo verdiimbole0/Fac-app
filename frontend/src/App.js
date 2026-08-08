@@ -22,6 +22,7 @@ import AdminProducts from "@/pages/admin/AdminProducts";
 import AdminProductEdit from "@/pages/admin/AdminProductEdit";
 import AdminOrders from "@/pages/admin/AdminOrders";
 import AdminPromos from "@/pages/admin/AdminPromos";
+import AdminUsers from "@/pages/admin/AdminUsers";
 import { Toaster } from "@/components/ui/sonner";
 
 function Shell({ children }) {
@@ -63,6 +64,7 @@ function AppRoutes() {
           <Route path="products/:slug" element={<AdminProductEdit />} />
           <Route path="orders" element={<AdminOrders />} />
           <Route path="promos" element={<AdminPromos />} />
+          <Route path="users" element={<AdminUsers />} />
         </Route>
       </Routes>
     </Shell>

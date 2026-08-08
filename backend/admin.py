@@ -24,6 +24,21 @@ FLW_CURRENCY = os.environ.get("FLW_CURRENCY", "XOF")
 PUBLIC_BACKEND_URL = os.environ.get("PUBLIC_BACKEND_URL", "")
 PUBLIC_FRONTEND_URL = os.environ.get("PUBLIC_FRONTEND_URL", "")
 
+RESEND_API_KEY = os.environ.get("RESEND_API_KEY", "")
+RESEND_FROM_EMAIL = os.environ.get("RESEND_FROM_EMAIL", "orders@billystore.com")
+BRAND_NAME = os.environ.get("BRAND_NAME", "Billy's Store")
+
+# ---------- Roles ----------
+ROLE_SUPER = "super_admin"
+ROLE_PRODUCTS = "products_editor"
+ROLE_ORDERS = "orders_manager"
+ALL_ROLES = {ROLE_SUPER, ROLE_PRODUCTS, ROLE_ORDERS}
+PERMS = {
+    ROLE_SUPER: {"products", "orders", "promos", "users"},
+    ROLE_PRODUCTS: {"products"},
+    ROLE_ORDERS: {"orders"},
+}
+
 EMERGENT_AUTH_URL = "https://demobackend.emergentagent.com/auth/v1/env/oauth/session-data"
 
 
@@ -63,6 +78,7 @@ class AdminUser(BaseModel):
     email: str
     name: str
     picture: Optional[str] = None
+    role: str = ROLE_SUPER
     auth_type: str  # "jwt" | "google"
 
 
@@ -108,6 +124,14 @@ async def get_current_admin(
                     return AdminUser(**user_doc, auth_type="google")
 
     raise HTTPException(status_code=401, detail="Not authenticated")
+
+
+def require_perm(perm: str):
+    async def check(admin: AdminUser = Depends(get_current_admin)) -> AdminUser:
+        if perm not in PERMS.get(admin.role, set()):
+            raise HTTPException(status_code=403, detail=f"Insufficient permissions ({perm})")
+        return admin
+    return check
 
 
 # ---------- Router ----------
@@ -221,6 +245,8 @@ async def auth_me(admin: AdminUser = Depends(get_current_admin)):
         "email": admin.email,
         "name": admin.name,
         "picture": admin.picture,
+        "role": admin.role,
+        "permissions": sorted(PERMS.get(admin.role, set())),
         "auth_type": admin.auth_type,
     }
 
@@ -276,7 +302,7 @@ async def admin_create_product(payload: ProductUpsert, admin: AdminUser = Depend
 
 
 @router.put("/admin/products/{slug}")
-async def admin_update_product(slug: str, payload: ProductUpsert, admin: AdminUser = Depends(get_current_admin)):
+async def admin_update_product(slug: str, payload: ProductUpsert, admin: AdminUser = Depends(require_perm("products"))):
     from server import db
 
     doc = payload.model_dump(exclude={"id"})
@@ -288,7 +314,7 @@ async def admin_update_product(slug: str, payload: ProductUpsert, admin: AdminUs
 
 
 @router.delete("/admin/products/{slug}")
-async def admin_delete_product(slug: str, admin: AdminUser = Depends(get_current_admin)):
+async def admin_delete_product(slug: str, admin: AdminUser = Depends(require_perm("products"))):
     from server import db
 
     r = await db.products.delete_one({"slug": slug})
@@ -299,7 +325,7 @@ async def admin_delete_product(slug: str, admin: AdminUser = Depends(get_current
 
 # ============== ADMIN ORDERS ==============
 @router.get("/admin/orders")
-async def admin_list_orders(admin: AdminUser = Depends(get_current_admin), limit: int = 200):
+async def admin_list_orders(admin: AdminUser = Depends(require_perm("orders")), limit: int = 200):
     from server import db
 
     docs = await db.orders.find({}, {"_id": 0}).sort("created_at", -1).limit(limit).to_list(limit)
@@ -307,7 +333,7 @@ async def admin_list_orders(admin: AdminUser = Depends(get_current_admin), limit
 
 
 @router.patch("/admin/orders/{order_id}/status")
-async def admin_update_order_status(order_id: str, body: dict, admin: AdminUser = Depends(get_current_admin)):
+async def admin_update_order_status(order_id: str, body: dict, admin: AdminUser = Depends(require_perm("orders"))):
     from server import db
 
     new_status = body.get("status")
@@ -332,7 +358,7 @@ class PromoUpsert(BaseModel):
 
 
 @router.get("/admin/promos")
-async def admin_list_promos(admin: AdminUser = Depends(get_current_admin)):
+async def admin_list_promos(admin: AdminUser = Depends(require_perm("promos"))):
     from server import db
 
     docs = await db.promos.find({}, {"_id": 0}).sort("created_at", -1).to_list(200)
@@ -340,7 +366,7 @@ async def admin_list_promos(admin: AdminUser = Depends(get_current_admin)):
 
 
 @router.post("/admin/promos")
-async def admin_create_promo(payload: PromoUpsert, admin: AdminUser = Depends(get_current_admin)):
+async def admin_create_promo(payload: PromoUpsert, admin: AdminUser = Depends(require_perm("promos"))):
     from server import db
 
     doc = payload.model_dump()
@@ -356,7 +382,7 @@ async def admin_create_promo(payload: PromoUpsert, admin: AdminUser = Depends(ge
 
 
 @router.delete("/admin/promos/{code}")
-async def admin_delete_promo(code: str, admin: AdminUser = Depends(get_current_admin)):
+async def admin_delete_promo(code: str, admin: AdminUser = Depends(require_perm("promos"))):
     from server import db
 
     r = await db.promos.delete_one({"code": code.upper()})
@@ -415,6 +441,196 @@ async def apply_promo(payload: ApplyPromoPayload):
         "value": promo["value"],
         "category": promo.get("category"),
     }
+
+
+# ============== ADMIN USERS (super_admin only) ==============
+class AdminUserCreate(BaseModel):
+    email: EmailStr
+    password: str
+    name: str
+    role: str
+
+
+@router.get("/admin/users")
+async def admin_list_users(admin: AdminUser = Depends(require_perm("users"))):
+    from server import db
+
+    docs = await db.admin_users.find({}, {"_id": 0, "password_hash": 0}).to_list(200)
+    return docs
+
+
+@router.post("/admin/users")
+async def admin_create_user(payload: AdminUserCreate, admin: AdminUser = Depends(require_perm("users"))):
+    from server import db
+
+    if payload.role not in ALL_ROLES:
+        raise HTTPException(status_code=400, detail=f"Invalid role. Choose from {sorted(ALL_ROLES)}")
+    email = payload.email.lower()
+    if await db.admin_users.find_one({"email": email}):
+        raise HTTPException(status_code=400, detail="Email already exists")
+    doc = {
+        "user_id": f"user_{uuid.uuid4().hex[:12]}",
+        "email": email,
+        "password_hash": hash_password(payload.password),
+        "name": payload.name,
+        "picture": None,
+        "role": payload.role,
+        "created_at": datetime.now(timezone.utc).isoformat(),
+    }
+    await db.admin_users.insert_one(doc.copy())
+    doc.pop("password_hash", None)
+    doc.pop("_id", None)
+    return doc
+
+
+class RoleUpdate(BaseModel):
+    role: str
+
+
+@router.patch("/admin/users/{user_id}/role")
+async def admin_update_role(user_id: str, payload: RoleUpdate, admin: AdminUser = Depends(require_perm("users"))):
+    from server import db
+
+    if payload.role not in ALL_ROLES:
+        raise HTTPException(status_code=400, detail="Invalid role")
+    r = await db.admin_users.update_one({"user_id": user_id}, {"$set": {"role": payload.role}})
+    if r.matched_count == 0:
+        raise HTTPException(status_code=404, detail="User not found")
+    return {"ok": True}
+
+
+@router.delete("/admin/users/{user_id}")
+async def admin_delete_user(user_id: str, admin: AdminUser = Depends(require_perm("users"))):
+    from server import db
+
+    if admin.user_id == user_id:
+        raise HTTPException(status_code=400, detail="Cannot delete your own account")
+    r = await db.admin_users.delete_one({"user_id": user_id})
+    if r.deleted_count == 0:
+        raise HTTPException(status_code=404, detail="User not found")
+    await db.admin_sessions.delete_many({"user_id": user_id})
+    return {"ok": True}
+
+
+# ============== STOCK MANAGEMENT ==============
+async def decrement_stock(items: list, session=None) -> Optional[str]:
+    """Atomically decrement stock for each item. Returns None on success or item id/name on failure."""
+    from server import db
+
+    consumed = []  # keep track for rollback
+    for it in items:
+        r = await db.products.update_one(
+            {"id": it["product_id"], "stock": {"$gte": it["quantity"]}},
+            {"$inc": {"stock": -it["quantity"]}},
+        )
+        if r.modified_count == 0:
+            # Rollback previously consumed
+            for c in consumed:
+                await db.products.update_one({"id": c["product_id"]}, {"$inc": {"stock": c["quantity"]}})
+            return it.get("name", it["product_id"])
+        consumed.append(it)
+    return None
+
+
+async def restore_stock(items: list):
+    """Restore stock (used when Flutterwave payment fails after order was created)."""
+    from server import db
+
+    for it in items:
+        await db.products.update_one({"id": it["product_id"]}, {"$inc": {"stock": it["quantity"]}})
+
+
+# ============== EMAIL (Resend) ==============
+def _order_email_html(order: dict, lang: str = "fr") -> str:
+    is_en = lang == "en"
+    items_html = "".join(
+        f"""<tr>
+            <td style="padding:12px 0;border-bottom:1px solid #e5e2dc;">
+                <div style="font-family:'Playfair Display',Georgia,serif;font-size:15px;color:#1a1a1a;">{it["name"]}</div>
+                <div style="font-size:12px;color:#737373;margin-top:4px;">
+                    {" · ".join(filter(None, [it.get("size"), it.get("color")]))} · × {it["quantity"]}
+                </div>
+            </td>
+            <td style="padding:12px 0;border-bottom:1px solid #e5e2dc;text-align:right;font-size:14px;color:#1a1a1a;">
+                ${it["price"] * it["quantity"]:.2f}
+            </td>
+        </tr>"""
+        for it in order.get("items", [])
+    )
+    title = "Order confirmed" if is_en else "Commande confirmée"
+    thanks = (
+        f"Thank you {order['contact']['first_name']}, your order is confirmed."
+        if is_en
+        else f"Merci {order['contact']['first_name']}, votre commande est confirmée."
+    )
+    label_order = "Order" if is_en else "Commande"
+    label_total = "Total"
+    label_ship = "Shipping to" if is_en else "Livraison à"
+    ship = order.get("shipping", {})
+    ship_str = f"{ship.get('address','')}, {ship.get('city','')} {ship.get('postal_code','')} {ship.get('country','')}"
+
+    return f"""<!DOCTYPE html>
+<html><body style="margin:0;padding:0;background:#fafaf7;font-family:'Manrope',Arial,sans-serif;color:#1a1a1a;">
+<table width="100%" cellpadding="0" cellspacing="0" style="background:#fafaf7;padding:40px 0;">
+    <tr><td align="center">
+        <table width="560" cellpadding="0" cellspacing="0" style="background:#ffffff;border:1px solid #e5e2dc;">
+            <tr><td style="padding:32px 40px 24px 40px;border-bottom:1px solid #e5e2dc;">
+                <div style="font-family:'Playfair Display',Georgia,serif;font-size:24px;color:#1a1a1a;">
+                    {BRAND_NAME}<span style="color:#c5a880;">.</span>
+                </div>
+            </td></tr>
+            <tr><td style="padding:40px;">
+                <div style="letter-spacing:0.24em;text-transform:uppercase;font-size:11px;color:#a88b5f;margin-bottom:16px;">{title}</div>
+                <h1 style="font-family:'Playfair Display',Georgia,serif;font-size:32px;margin:0 0 16px 0;color:#1a1a1a;line-height:1.2;">
+                    {label_order} {order["order_number"]}
+                </h1>
+                <p style="color:#737373;font-size:14px;line-height:1.6;margin:0 0 32px 0;">{thanks}</p>
+                <table width="100%" cellpadding="0" cellspacing="0">{items_html}</table>
+                <table width="100%" cellpadding="0" cellspacing="0" style="margin-top:16px;">
+                    <tr><td style="padding:12px 0;font-family:'Playfair Display',Georgia,serif;font-size:18px;">{label_total}</td>
+                    <td style="padding:12px 0;text-align:right;font-family:'Playfair Display',Georgia,serif;font-size:18px;">${order["total"]:.2f}</td></tr>
+                </table>
+                <div style="margin-top:32px;padding-top:24px;border-top:1px solid #e5e2dc;">
+                    <div style="letter-spacing:0.24em;text-transform:uppercase;font-size:10px;color:#737373;margin-bottom:8px;">{label_ship}</div>
+                    <div style="font-size:14px;color:#1a1a1a;line-height:1.5;">{ship_str}</div>
+                </div>
+            </td></tr>
+            <tr><td style="padding:24px 40px;background:#1a1a1a;color:#fafaf7;text-align:center;font-size:12px;">
+                © 2026 {BRAND_NAME} — {"All rights reserved" if is_en else "Tous droits réservés"}
+            </td></tr>
+        </table>
+    </td></tr>
+</table></body></html>"""
+
+
+async def send_order_confirmation_email(order: dict, lang: str = "fr") -> bool:
+    """Send order confirmation via Resend. Returns True if sent, False if skipped/failed silently."""
+    if not RESEND_API_KEY:
+        return False
+    try:
+        subject = (
+            f"Order confirmation · {order['order_number']}"
+            if lang == "en"
+            else f"Confirmation de commande · {order['order_number']}"
+        )
+        payload = {
+            "from": f"{BRAND_NAME} <{RESEND_FROM_EMAIL}>",
+            "to": [order["contact"]["email"]],
+            "subject": subject,
+            "html": _order_email_html(order, lang),
+        }
+        async with httpx.AsyncClient(timeout=10) as client:
+            r = await client.post(
+                "https://api.resend.com/emails",
+                json=payload,
+                headers={
+                    "Authorization": f"Bearer {RESEND_API_KEY}",
+                    "Content-Type": "application/json",
+                },
+            )
+        return r.status_code < 400
+    except Exception:
+        return False
 
 
 # ============== FLUTTERWAVE PAYMENTS ==============
@@ -497,11 +713,16 @@ async def finalize_flw_payment(tx_ref: str, transaction_id: str) -> str:
         },
     )
 
-    # Increment promo uses if applicable
-    if new_status == "paid" and order.get("promo_code"):
-        await db.promos.update_one(
-            {"code": order["promo_code"]}, {"$inc": {"uses": 1}}
-        )
+    if new_status == "paid":
+        if order.get("promo_code"):
+            await db.promos.update_one({"code": order["promo_code"]}, {"$inc": {"uses": 1}})
+        try:
+            await send_order_confirmation_email(order, lang="fr")
+        except Exception:
+            pass
+    else:
+        # Payment failed — restore stock that was decremented at order creation
+        await restore_stock(order.get("items", []))
     return new_status
 
 

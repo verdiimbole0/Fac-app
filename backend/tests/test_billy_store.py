@@ -210,7 +210,17 @@ class TestPromos:
 
 
 # ---------- Orders (payment methods) ----------
-def _make_order_payload(payment_method: str, phone: str = "+22501020304"):
+def _fetch_stocked_product():
+    r = requests.get(f"{API}/products?limit=50")
+    for p in r.json():
+        if p.get("stock", 0) >= 5:
+            return p
+    return r.json()[0]
+
+
+def _make_order_payload(payment_method: str, phone: str = "+22501020304", product=None, quantity: int = 1):
+    if product is None:
+        product = _fetch_stocked_product()
     return {
         "contact": {
             "email": "test@example.com",
@@ -226,10 +236,10 @@ def _make_order_payload(payment_method: str, phone: str = "+22501020304"):
         },
         "payment_method": payment_method,
         "payment_phone": phone,
-        "items": [{"product_id": "p1", "name": "Item", "price": 20, "quantity": 1}],
-        "subtotal": 20,
+        "items": [{"product_id": product["id"], "name": product["name_en"], "price": product["price"], "quantity": quantity}],
+        "subtotal": product["price"] * quantity,
         "shipping_cost": 5,
-        "total": 25,
+        "total": product["price"] * quantity + 5,
     }
 
 

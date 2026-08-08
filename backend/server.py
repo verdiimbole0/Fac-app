@@ -23,7 +23,7 @@ app = FastAPI(title="Billy's Store API")
 api_router = APIRouter(prefix="/api")
 
 # Import admin router AFTER db is defined
-from admin import router as admin_router, hash_password, ADMIN_EMAIL, ADMIN_PASSWORD, initialize_flutterwave_payment, FLW_SECRET_KEY
+from admin import router as admin_router, hash_password, ADMIN_EMAIL, ADMIN_PASSWORD, initialize_flutterwave_payment, FLW_SECRET_KEY, decrement_stock, send_order_confirmation_email
 
 logging.basicConfig(
     level=logging.INFO,
@@ -251,24 +251,44 @@ async def create_order(payload: OrderCreate):
     order = Order(**payload.model_dump())
     doc = order.model_dump()
 
-    # If payment method is 'flutterwave', initialize hosted checkout and attach payment_link
-    if payload.payment_method == "flutterwave":
-        if not FLW_SECRET_KEY:
-            raise HTTPException(
-                status_code=503,
-                detail="Flutterwave not configured. Set FLW_SECRET_KEY in backend/.env",
-            )
-        link = await initialize_flutterwave_payment(doc)
-        doc["payment_link"] = link
-        order.payment_link = link
-    else:
-        # Non-Flutterwave (Mobile Money manual) orders are considered "committed" — bump promo usage
-        if payload.promo_code:
-            await db.promos.update_one(
-                {"code": payload.promo_code}, {"$inc": {"uses": 1}}
-            )
+    # 1. Decrement stock atomically (rolls back on failure)
+    items_dicts = [i.model_dump() for i in payload.items]
+    fail_name = await decrement_stock(items_dicts)
+    if fail_name:
+        raise HTTPException(status_code=409, detail=f"Insufficient stock for: {fail_name}")
 
-    await db.orders.insert_one(doc)
+    try:
+        # 2. If payment method is 'flutterwave', initialize hosted checkout
+        if payload.payment_method == "flutterwave":
+            if not FLW_SECRET_KEY:
+                raise HTTPException(
+                    status_code=503,
+                    detail="Flutterwave not configured. Set FLW_SECRET_KEY in backend/.env",
+                )
+            link = await initialize_flutterwave_payment(doc)
+            doc["payment_link"] = link
+            order.payment_link = link
+        else:
+            # Non-Flutterwave (Mobile Money manual) orders are considered "committed" — bump promo usage
+            if payload.promo_code:
+                await db.promos.update_one(
+                    {"code": payload.promo_code}, {"$inc": {"uses": 1}}
+                )
+
+        await db.orders.insert_one(doc)
+    except HTTPException:
+        # Restore stock if Flutterwave init failed
+        from admin import restore_stock
+        await restore_stock(items_dicts)
+        raise
+
+    # 3. Send email for non-Flutterwave orders (fire and forget)
+    if payload.payment_method != "flutterwave":
+        try:
+            await send_order_confirmation_email(doc, lang="fr")
+        except Exception as e:
+            logger.warning(f"Email send failed: {e}")
+
     return order
 
 
@@ -293,16 +313,25 @@ async def seed_startup():
     # Seed default admin
     existing_admin = await db.admin_users.find_one({"email": ADMIN_EMAIL.lower()})
     if not existing_admin:
+        from admin import ROLE_SUPER
         admin_doc = {
             "user_id": f"user_{uuid.uuid4().hex[:12]}",
             "email": ADMIN_EMAIL.lower(),
             "password_hash": hash_password(ADMIN_PASSWORD),
             "name": "Billy Admin",
             "picture": None,
+            "role": ROLE_SUPER,
             "created_at": datetime.now(timezone.utc).isoformat(),
         }
         await db.admin_users.insert_one(admin_doc)
         logger.info(f"Seeded default admin: {ADMIN_EMAIL}")
+    else:
+        # Ensure existing admin has a role assigned (idempotent migration)
+        if not existing_admin.get("role"):
+            from admin import ROLE_SUPER
+            await db.admin_users.update_one(
+                {"email": ADMIN_EMAIL.lower()}, {"$set": {"role": ROLE_SUPER}}
+            )
     # Indexes
     await db.orders.create_index("tx_ref", unique=True, sparse=True)
     await db.promos.create_index("code", unique=True)
