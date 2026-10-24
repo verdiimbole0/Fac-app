@@ -18,11 +18,14 @@ const MODELE = "bytedance/seedance-2.5/text-to-video";
 if (existsSync(".env.local")) process.loadEnvFile(".env.local");
 
 async function main(): Promise<number> {
-  const credentials = process.env.HF_CREDENTIALS;
-  if (!credentials) {
+  const brut = process.env.HF_CREDENTIALS?.trim();
+  if (!brut) {
     console.error("HF_CREDENTIALS est absent : ajoutez-le dans .env.local (format key-id:key-secret).");
     return 1;
   }
+  // Une clé copiée avec un préfixe (« prefixe:key-id:key-secret ») est refusée par le SDK,
+  // qui attend exactement deux segments : on ne garde que les deux derniers.
+  const credentials = brut.split(":").slice(-2).join(":");
 
   const client = createHiggsfieldClient({
     credentials,
