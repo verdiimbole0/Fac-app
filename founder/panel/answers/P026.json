@@ -1,0 +1,13 @@
+{
+  "id": "P026",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "need",
+  "reason": "Mon fer à fil marche encore très bien, et le fil ne me dérange pas vraiment pour repasser ma chemise le matin. 15 $ plus la livraison pour un confort en plus, ce n'est pas une priorité ce mois-ci.",
+  "objection": "Il faut quand même le courant pour chauffer le socle : quand la SNEL coupe le matin, je ne repasse pas plus avec ce fer qu'avec le mien. Et je ne sais pas si ce fer va durer, ni si le socle tient après quelques mois.",
+  "would_change_my_mind": "Que mon fer actuel tombe en panne ; là, à 15 $ avec paiement à la livraison et une garantie, je le prendrais à la place d'un fer ordinaire.",
+  "price_too_cheap": 5,
+  "price_cheap": 10,
+  "price_expensive": 18,
+  "price_too_expensive": 25
+}

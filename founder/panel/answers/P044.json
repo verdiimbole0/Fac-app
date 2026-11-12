@@ -1,0 +1,13 @@
+{
+  "id": "P044",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "need",
+  "reason": "J'ai déjà un fer qui marche, et sans fil ou pas, il faut quand même le courant SNEL pour chauffer, donc ça ne règle pas mon vrai problème. 15 $ plus la livraison, c'est presque une semaine de mon argent pour juste ne plus avoir le fil qui gêne.",
+  "objection": "C'est encore un appareil vendu sur Facebook, sûrement chinois ; le dernier que j'ai acheté a lâché en quelques semaines, et un socle qui chauffe avec nos coupures et nos variations de courant, j'ai peur qu'il grille vite.",
+  "would_change_my_mind": "Que mon vieux fer tombe en panne et qu'une voisine que je connais me montre le sien qui tient depuis des mois, avec une garantie d'échange si ça lâche.",
+  "price_too_cheap": 5,
+  "price_cheap": 8,
+  "price_expensive": 12,
+  "price_too_expensive": 18
+}

@@ -1,0 +1,13 @@
+{
+  "id": "P066",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "need",
+  "reason": "J'ai déjà un fer qui marche et je repasse chaque matin sans problème. Le fil ne me gêne pas assez pour payer 15 $ plus la livraison pour un deuxième fer, surtout qu'il faut quand même le courant pour le chauffer.",
+  "objection": "Sans fil, mais toujours dépendant de la SNEL ou du groupe : quand le courant coupe le matin, je ne peux pas repasser quand même. Et je ne connais pas cette marque, est-ce que le socle va tenir avec nos variations de tension ?",
+  "would_change_my_mind": "Que mon fer actuel tombe en panne, et voir le fer en vrai chez un collègue qui l'utilise depuis des mois sans problème de socle.",
+  "price_too_cheap": 5,
+  "price_cheap": 9,
+  "price_expensive": 15,
+  "price_too_expensive": 22
+}

@@ -1,0 +1,13 @@
+{
+  "id": "P098",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "need",
+  "reason": "Mon fer à fil marche encore très bien pour les uniformes du dimanche soir. Le fil gêne un peu, mais pas assez pour dépenser 15 $ plus la livraison, surtout que ce fer a quand même besoin du courant pour chauffer.",
+  "objection": "Avec les coupures SNEL, le socle doit rester branché comme mon fer à fil, alors je ne vois pas ce que je gagne. Et je ne connais pas ce vendeur : si le socle lâche après deux mois, qui me rembourse ?",
+  "would_change_my_mind": "Que mon fer actuel tombe en panne, et trouver ce fer autour de 9-10 $ livraison comprise chez un vendeur que des gens de mon entourage ont déjà testé.",
+  "price_too_cheap": 5,
+  "price_cheap": 8,
+  "price_expensive": 12,
+  "price_too_expensive": 16
+}

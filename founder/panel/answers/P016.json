@@ -1,0 +1,13 @@
+{
+  "id": "P016",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "Chez moi c'est la domestique qui repasse avec le fer ordinaire qu'on a déjà, il marche. Payer 15 $ plus la livraison juste pour enlever le fil, je ne vois pas l'intérêt, surtout qu'au marché je trouve un fer à fil pour beaucoup moins.",
+  "objection": "Un fer sans fil qu'on pose sur le socle, est-ce qu'il garde assez la chaleur pour les pagnes et les jeans, ou bien il faut le reposer toutes les deux minutes ? Et quand le courant SNEL coupe, il ne sert à rien de plus qu'un fer normal.",
+  "would_change_my_mind": "Voir une vraie vidéo ou un essai devant moi où il repasse un jean épais sans refroidir, et un prix négocié autour de 10 $ livraison comprise.",
+  "price_too_cheap": 5,
+  "price_cheap": 8,
+  "price_expensive": 12,
+  "price_too_expensive": 18
+}

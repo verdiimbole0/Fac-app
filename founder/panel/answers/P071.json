@@ -1,0 +1,13 @@
+{
+  "id": "P071",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Je ne connais pas FerLibre Kin, et personne dans mes groupes WhatsApp ne m'en a parlé. J'ai déjà un fer qui marche, et sans fil ou pas, il faut quand même le courant de la SNEL, qui coupe tout le temps.",
+  "objection": "15 $ plus une livraison dont je ne connais pas le prix, pour un fer d'un vendeur inconnu : si le socle grille avec les coupures et les variations de courant, qui va me le remplacer ?",
+  "would_change_my_mind": "Qu'une amie ou quelqu'un de mon groupe d'église l'achète, l'utilise quelques semaines et me dise qu'il tient bien avec les coupures, avec une garantie claire du vendeur.",
+  "price_too_cheap": 5,
+  "price_cheap": 10,
+  "price_expensive": 18,
+  "price_too_expensive": 25
+}

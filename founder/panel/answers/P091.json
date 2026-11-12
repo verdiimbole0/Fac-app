@@ -1,0 +1,13 @@
+{
+  "id": "P091",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "15 dollars plus la livraison, c'est presque une semaine de ce que je gagne, alors qu'au marché je trouve un fer pour bien moins. Mon fer à fil marche encore, le fil ne me dérange pas au point de payer ça.",
+  "objection": "J'ai déjà acheté un appareil chinois qui a lâché en quelques semaines. Un vendeur que je ne connais pas sur Facebook, un socle qui doit chauffer avec le courant de la SNEL qui coupe tout le temps : si ça casse, qui me rembourse ?",
+  "would_change_my_mind": "Le voir marcher devant moi chez un voisin ou un collègue qui l'utilise depuis des mois, avec une garantie d'échange, et un prix autour de 8 ou 10 dollars livraison comprise.",
+  "price_too_cheap": 4,
+  "price_cheap": 7,
+  "price_expensive": 10,
+  "price_too_expensive": 14
+}

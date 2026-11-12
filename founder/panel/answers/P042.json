@@ -1,0 +1,13 @@
+{
+  "id": "P042",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "15 dollars plus la livraison, c'est presque une semaine de mon salaire pour un fer vendu sur Facebook par quelqu'un que je ne connais pas. J'ai déjà perdu de l'argent avec un appareil chinois qui a lâché en quelques semaines, et mon vieux fer marche encore quand la SNEL donne le courant.",
+  "objection": "Ça va sûrement lâcher vite comme l'autre, et il n'y a rien sur une garantie ou un échange. En plus sans fil ou pas, il faut quand même le courant pour chauffer, donc ça ne règle pas mon vrai problème avec les coupures.",
+  "would_change_my_mind": "Le voir et l'essayer chez un voisin ou un collègue qui l'utilise depuis des mois sans panne, avec une garantie d'échange écrite si ça casse dans les premiers mois.",
+  "price_too_cheap": 5,
+  "price_cheap": 8,
+  "price_expensive": 12,
+  "price_too_expensive": 18
+}

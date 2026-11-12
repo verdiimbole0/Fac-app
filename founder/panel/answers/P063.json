@@ -1,0 +1,13 @@
+{
+  "id": "P063",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Mon vieux fer à fil marche encore, je ne vais pas dépenser 15 $ plus la livraison pour un fer qui fait la même chose sans le fil. Avec ce que je gagne, je change seulement quand l'ancien casse.",
+  "objection": "15 $ plus les frais de moto que je ne connais pas encore, c'est trop pour moi, et je ne sais pas si ce socle va tenir avec le courant du groupe le soir ou les coupures de la SNEL.",
+  "would_change_my_mind": "Que mon vieux fer tombe en panne, et que le prix livraison comprise reste vers 10 $.",
+  "price_too_cheap": 4,
+  "price_cheap": 8,
+  "price_expensive": 12,
+  "price_too_expensive": 17
+}

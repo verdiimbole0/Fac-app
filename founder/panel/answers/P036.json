@@ -1,0 +1,13 @@
+{
+  "id": "P036",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "need",
+  "reason": "J'ai déjà un fer qui marche, et celui-ci a aussi besoin du courant SNEL, donc pendant les coupures je suis bloqué pareil. 15 $ plus la livraison, c'est une grosse part de mon mois juste pour ne plus avoir de fil.",
+  "objection": "Sans fil ou avec fil, quand la SNEL coupe le matin je ne peux pas repasser. Et je ne connais pas ce vendeur, personne de mon entourage ne m'en a parlé.",
+  "would_change_my_mind": "Qu'un collègue ou quelqu'un de mon groupe WhatsApp l'utilise et me dise que le fer garde la chaleur assez longtemps pour finir une tenue après une coupure.",
+  "price_too_cheap": 4,
+  "price_cheap": 7,
+  "price_expensive": 12,
+  "price_too_expensive": 18
+}

@@ -1,0 +1,13 @@
+{
+  "id": "P027",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "need",
+  "reason": "Mon fer à fil marche très bien et je repasse ma chemise en dix minutes le matin ; le fil ne m'a jamais vraiment gêné. Et comme ce fer a aussi besoin du courant pour chauffer, il ne me sauve pas quand la SNEL coupe.",
+  "objection": "Ça ne règle pas mon vrai problème, le courant. Un fer sans fil à 15 $ venu de je ne sais où, je doute qu'il garde la chaleur assez longtemps pour une chemise entière sans revenir sur le socle à chaque manche.",
+  "would_change_my_mind": "Que mon fer actuel tombe en panne, ou une démonstration en vidéo d'un client à Kinshasa montrant qu'il repasse une chemise complète sans retourner sur le socle, avec une garantie d'échange.",
+  "price_too_cheap": 6,
+  "price_cheap": 10,
+  "price_expensive": 22,
+  "price_too_expensive": 35
+}

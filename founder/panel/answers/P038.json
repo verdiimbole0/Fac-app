@@ -1,0 +1,13 @@
+{
+  "id": "P038",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Mon vieux fer à fil marche encore, je repasse les uniformes le dimanche soir et ça me va. Je ne change pas un fer qui ne m'a pas lâché, même si 15 $ ce n'est pas le problème pour moi.",
+  "objection": "Un fer qui chauffe sur un socle puis refroidit pendant que je repasse : avec les coupures de la SNEL, je crains de passer mon temps à le reposer, et je ne connais pas ce vendeur ni la livraison qui s'ajoute.",
+  "would_change_my_mind": "Que mon fer actuel tombe en panne, et voir chez un proche que ce fer sans fil garde bien la chaleur pour toute une pile d'uniformes.",
+  "price_too_cheap": 6,
+  "price_cheap": 10,
+  "price_expensive": 20,
+  "price_too_expensive": 30
+}

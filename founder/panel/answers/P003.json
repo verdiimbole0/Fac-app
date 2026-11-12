@@ -1,0 +1,13 @@
+{
+  "id": "P003",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "quality",
+  "reason": "J'ai déjà un fer à fil qui marche, et le dimanche soir je repasse une pile d'uniformes, de pagnes et de jeans. Un fer sans fil qu'il faut reposer sur le socle tout le temps, je ne vois pas pourquoi payer 15 $ plus la livraison pour ça, surtout quand le courant de la SNEL coupe.",
+  "objection": "Est-ce que ce fer garde vraiment la chaleur assez longtemps pour un jean ou un pagne épais, ou je vais passer ma soirée à le remettre sur le socle ? Et 15 $ plus la moto, c'est cher à côté des fers à 7-8 $ au marché.",
+  "would_change_my_mind": "Que mon fer actuel tombe en panne, et qu'une voisine me montre que celui-ci repasse un jean entier sans refroidir, avec un prix négocié autour de 10 $ livraison comprise.",
+  "price_too_cheap": 5,
+  "price_cheap": 8,
+  "price_expensive": 12,
+  "price_too_expensive": 18
+}

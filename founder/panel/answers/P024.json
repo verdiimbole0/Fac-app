@@ -1,0 +1,13 @@
+{
+  "id": "P024",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Je ne connais pas FerLibre Kin et personne autour de moi ne m'en a parlé. Je n'achète rien que mes proches ou mon groupe WhatsApp n'ont pas déjà essayé, et mon fer actuel marche encore quand on allume le groupe le soir.",
+  "objection": "Un vendeur inconnu sur Facebook, 15 $ plus une livraison dont je ne connais pas le prix : si le socle tombe en panne avec les coupures et le groupe, je fais quoi, et qui le reprend ?",
+  "would_change_my_mind": "Une collègue ou une cousine qui l'utilise depuis quelques semaines avec le groupe et qui me dit que ça tient, avec une livraison pas chère jusqu'à ma commune.",
+  "price_too_cheap": 5,
+  "price_cheap": 10,
+  "price_expensive": 18,
+  "price_too_expensive": 25
+}

@@ -1,0 +1,13 @@
+{
+  "id": "P047",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Je ne connais pas FerLibre Kin, personne de mon entourage ne m'en a parlé, et 15 $ plus la livraison pour un fer qui a quand même besoin du courant, alors qu'au marché un fer coûte moins, ce n'est pas pour cette semaine. Mon fer actuel marche encore.",
+  "objection": "Payer 15 $ plus la moto pour un vendeur inconnu sur Facebook, sans savoir si le socle tient avec les coupures et les variations de la SNEL, et sans garantie si ça grille.",
+  "would_change_my_mind": "Une collègue ou quelqu'un de mon groupe WhatsApp qui l'utilise depuis quelques semaines et me dit qu'il chauffe bien et tient malgré les coupures.",
+  "price_too_cheap": 4,
+  "price_cheap": 8,
+  "price_expensive": 12,
+  "price_too_expensive": 18
+}

@@ -1,0 +1,13 @@
+{
+  "id": "P080",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Mon vieux fer à fil marche encore, je ne vais pas mettre 15 $ plus la livraison, presque une semaine de mon revenu, juste pour ne plus avoir le fil. Je le remplacerai quand il cassera, pas avant.",
+  "objection": "C'est sûrement du chinois qui va lâcher en quelques mois, et avec le courant du groupe le soir je ne sais pas si le socle va tenir ou griller.",
+  "would_change_my_mind": "Que mon fer actuel casse, et qu'un voisin ou un proche me montre le sien qui marche depuis longtemps avec une garantie si ça lâche.",
+  "price_too_cheap": 5,
+  "price_cheap": 8,
+  "price_expensive": 12,
+  "price_too_expensive": 18
+}

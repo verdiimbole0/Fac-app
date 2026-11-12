@@ -1,0 +1,13 @@
+{
+  "id": "P001",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "need",
+  "reason": "Sans fil ou avec fil, il faut le courant SNEL pour chauffer ; quand il y a coupure je ne repasse pas de toute façon. Mon fer ordinaire du marché marche encore, et 15 dollars plus la livraison pour juste enlever le fil, ce n'est pas une priorité ce mois.",
+  "objection": "Il ne règle pas mon vrai problème, les coupures. Et je ne peux pas le toucher ni l'essayer avant : sur WhatsApp on voit de belles photos, puis on reçoit un produit chinois qui lâche après deux mois.",
+  "would_change_my_mind": "Que mon fer actuel tombe en panne et que quelqu'un de mon groupe d'église l'ait acheté, en soit content depuis plusieurs mois, et que je puisse le voir chauffer devant moi avant de payer.",
+  "price_too_cheap": 5,
+  "price_cheap": 8,
+  "price_expensive": 12,
+  "price_too_expensive": 18
+}

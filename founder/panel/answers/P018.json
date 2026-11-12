@@ -1,0 +1,13 @@
+{
+  "id": "P018",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "need",
+  "reason": "Mon fer ordinaire marche déjà quand il y a le courant, et quand la SNEL coupe, celui-ci ne chauffe pas non plus. Payer 15 $ plus la moto juste pour ne plus avoir de fil, ce n'est pas pour moi.",
+  "objection": "J'ai déjà acheté un appareil chinois qui a lâché en quelques semaines. Un vendeur que je ne connais pas, sur Facebook, avec un socle qui peut griller au premier délestage ou au retour du courant : si ça casse, je vais réclamer chez qui ?",
+  "would_change_my_mind": "Qu'une personne de mon groupe d'église ou du quartier l'utilise depuis des mois sans problème, avec une garantie d'échange écrite par le vendeur.",
+  "price_too_cheap": 5,
+  "price_cheap": 8,
+  "price_expensive": 12,
+  "price_too_expensive": 18
+}

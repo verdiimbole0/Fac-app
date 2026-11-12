@@ -1,0 +1,13 @@
+{
+  "id": "P084",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Mon fer marche encore, et je n'achète pas un appareil que je ne peux pas toucher ni marchander. 15 $ plus la moto pour un fer vu sur WhatsApp, c'est trop risqué avec mon budget.",
+  "objection": "C'est sûrement de la camelote chinoise : le socle va griller au premier délestage ou quand le groupe envoie un mauvais courant, et après je ne saurai pas à qui me plaindre.",
+  "would_change_my_mind": "Le voir et l'essayer en vrai au marché ou chez une voisine qui l'utilise depuis des mois, avec une garantie d'échange si le socle lâche.",
+  "price_too_cheap": 5,
+  "price_cheap": 8,
+  "price_expensive": 12,
+  "price_too_expensive": 18
+}

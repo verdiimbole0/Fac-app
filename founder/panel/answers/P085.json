@@ -1,0 +1,13 @@
+{
+  "id": "P085",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "J'ai déjà un fer qui marche, et le sans-fil c'est joli mais pas indispensable. Un vendeur que je ne connais pas sur Facebook, avec un appareil sans marque annoncée, je me suis déjà fait avoir une fois avec un truc chinois qui a lâché en quelques semaines.",
+  "objection": "Rien ne dit que je peux essayer le fer devant le livreur avant de payer, ni ce qui se passe s'il tombe en panne au bout d'un mois. Et le socle sur mon petit groupe le soir, je ne sais pas s'il va tenir.",
+  "would_change_my_mind": "Pouvoir le brancher et le tester chez moi devant le livreur avant de payer, plus une garantie écrite d'échange si ça lâche dans les premiers mois, et une voisine ou collègue qui l'a déjà acheté et en est contente.",
+  "price_too_cheap": 7,
+  "price_cheap": 10,
+  "price_expensive": 18,
+  "price_too_expensive": 25
+}

@@ -1,0 +1,13 @@
+{
+  "id": "P008",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "quality",
+  "reason": "J'ai déjà un fer qui marche, et sans fil ou pas, il me faut quand même le courant ou le groupe pour chauffer. Mettre 15 $ plus la livraison pour un appareil chinois qui risque de lâcher comme le dernier, c'est trop pour moi ce mois-ci.",
+  "objection": "La qualité : rien ne me dit que ce fer ne va pas mourir en quelques semaines, surtout avec les coupures et le courant du groupe, et une page Facebook ne me donne aucune garantie.",
+  "would_change_my_mind": "Une vraie garantie écrite, au moins 3 mois avec échange, et voir le fer marcher chez un voisin ou un collègue que je connais.",
+  "price_too_cheap": 5,
+  "price_cheap": 8,
+  "price_expensive": 13,
+  "price_too_expensive": 18
+}

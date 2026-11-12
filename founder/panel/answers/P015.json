@@ -1,0 +1,13 @@
+{
+  "id": "P015",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "need",
+  "reason": "J'ai déjà un fer qui marche, et sans fil ou avec fil il faut quand même le courant de la SNEL ou mon groupe le soir. Payer 15 $ plus la livraison juste pour enlever le fil, ce n'est pas une priorité pour mon budget.",
+  "objection": "S'il faut du courant quand même, à quoi ça sert avec les coupures SNEL ? Et le socle doit rester branché, ça consomme le carburant du groupe ; en plus je ne connais pas ce vendeur, si le fer tombe en panne après deux semaines, qui va me rembourser ?",
+  "would_change_my_mind": "Que mon vieux fer tombe en panne et qu'on me le laisse à 10 $ livraison comprise, avec une garantie de remplacement.",
+  "price_too_cheap": 5,
+  "price_cheap": 8,
+  "price_expensive": 12,
+  "price_too_expensive": 15
+}

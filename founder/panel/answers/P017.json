@@ -1,0 +1,13 @@
+{
+  "id": "P017",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "need",
+  "reason": "J'ai déjà un fer à la maison, et celui-là a aussi besoin du courant SNEL pour chauffer, donc pendant les coupures il ne m'aide en rien. Ne pas avoir de fil, ce n'est pas mon problème ; mon problème, c'est le courant.",
+  "objection": "S'il faut quand même le courant pour chauffer le socle, à quoi ça sert avec les coupures ? Et ce vendeur, personne de mon entourage ne me l'a recommandé : je ne sais pas si le fer tient la chaleur assez longtemps ni s'il tombe en panne au bout d'un mois.",
+  "would_change_my_mind": "Qu'un collègue ou quelqu'un de mon groupe WhatsApp l'utilise depuis des mois et me confirme qu'il repasse une bonne pile d'habits avec une seule chauffe, pendant les heures où le courant est là.",
+  "price_too_cheap": 5,
+  "price_cheap": 8,
+  "price_expensive": 12,
+  "price_too_expensive": 18
+}

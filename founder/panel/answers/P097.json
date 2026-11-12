@@ -1,0 +1,13 @@
+{
+  "id": "P097",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "quality",
+  "reason": "J'ai déjà un fer qui marche, et un fer sans fil qui doit retourner sur son socle toutes les deux minutes, je ne suis pas sûre qu'il garde la chaleur pour mes pagnes et les jeans des enfants. 15 dollars plus la moto, pour un risque pareil, je préfère garder mon argent.",
+  "objection": "Le fer refroidit vite quand on l'enlève du socle, et avec les coupures de la SNEL je vais passer mon matin à attendre qu'il rechauffe au lieu de repasser.",
+  "would_change_my_mind": "Voir une vidéo ou une démonstration chez une voisine où il repasse un pagne épais d'un coup sans retourner au socle, avec une garantie d'échange si ça ne chauffe pas bien, et un prix négocié autour de 10 dollars livraison comprise.",
+  "price_too_cheap": 5,
+  "price_cheap": 9,
+  "price_expensive": 13,
+  "price_too_expensive": 18
+}

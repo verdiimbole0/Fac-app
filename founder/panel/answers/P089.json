@@ -1,0 +1,13 @@
+{
+  "id": "P089",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "J'ai déjà un fer qui marche, et au marché un fer simple coûte bien moins que 15 $, sans compter la livraison en plus. Le fil ne me gêne pas assez pour payer ce prix juste pour m'en débarrasser.",
+  "objection": "Un fer chinois vendu sur Facebook, j'ai déjà connu : ça lâche en quelques semaines, et avec les coupures de la SNEL je ne sais pas si ce socle va tenir ou garder la chaleur assez longtemps pour ma tenue.",
+  "would_change_my_mind": "Une garantie écrite d'au moins trois mois avec échange, et pouvoir le tester chauffer devant le livreur avant de payer, le tout autour de 10 $ livraison comprise.",
+  "price_too_cheap": 4,
+  "price_cheap": 8,
+  "price_expensive": 12,
+  "price_too_expensive": 16
+}

@@ -1,0 +1,13 @@
+{
+  "id": "P048",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason": "Chez nous c'est la domestique qui repasse, avec le fer qu'on a déjà, et il marche. Un fer sans fil qui a quand même besoin du courant SNEL ou du groupe pour chauffer ne règle pas notre vrai problème, donc je ne vais pas mettre 15 $ plus la livraison là-dedans.",
+  "reason_code": "need",
+  "objection": "Sans fil, mais il faut toujours le courant pour le socle : avec les coupures, ça ne change rien pour moi. Et combien coûte la livraison en plus ? Si le socle ou la batterie lâche, qui le répare ?",
+  "would_change_my_mind": "Que notre fer actuel tombe en panne, et qu'on me montre en vrai, en vidéo sur WhatsApp, qu'il garde la chaleur assez longtemps pour toute une pile de linge, avec une garantie et la livraison incluse dans les 15 $.",
+  "price_too_cheap": 5,
+  "price_cheap": 9,
+  "price_expensive": 15,
+  "price_too_expensive": 22
+}

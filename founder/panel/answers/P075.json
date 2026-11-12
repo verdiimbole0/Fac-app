@@ -1,0 +1,13 @@
+{
+  "id": "P075",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "need",
+  "reason": "Chez nous c'est la domestique ou l'aînée qui repasse pour toute la famille avec le fer qu'on a déjà, ça marche. 15 dollars plus la livraison, c'est presque dix jours de mon revenu pour un fer dont je n'ai pas vraiment besoin.",
+  "objection": "Avec le courant SNEL qui coupe tout le temps, si le fer refroidit vite sur un pagne épais ou un jean, il faut le remettre sur le socle sans arrêt et on n'avance pas. Rien ne me dit qu'il garde la chaleur.",
+  "would_change_my_mind": "Voir une vidéo ou une démonstration où on repasse un pagne et un jean entiers sans reposer le fer, et que notre vieux fer tombe en panne.",
+  "price_too_cheap": 5,
+  "price_cheap": 8,
+  "price_expensive": 13,
+  "price_too_expensive": 18
+}

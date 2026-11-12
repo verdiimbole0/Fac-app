@@ -1,0 +1,13 @@
+{
+  "id": "P093",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "need",
+  "reason": "Mon fer à fil marche encore, et chez nous c'est la domestique ou un aîné qui repasse, pas moi. 15 $ plus la livraison pour enlever un fil, ce n'est pas une dépense que je fais avec mon salaire.",
+  "objection": "Il faut quand même le courant pour chauffer le socle, et avec les coupures de la SNEL je ne vois pas ce que ça change. Et acheter sur WhatsApp sans toucher l'appareil, je ne sais pas si ça va tenir.",
+  "would_change_my_mind": "Que mon vieux fer tombe en panne, et que je puisse le voir et le toucher au marché à un prix proche d'un fer ordinaire.",
+  "price_too_cheap": 4,
+  "price_cheap": 7,
+  "price_expensive": 12,
+  "price_too_expensive": 16
+}

@@ -1,0 +1,13 @@
+{
+  "id": "P062",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "need",
+  "reason": "Mon fer à fil marche encore, je repasse ma tenue chaque matin sans problème. 15 dollars plus la livraison, c'est trop d'argent pour remplacer quelque chose qui n'est pas cassé, surtout chez un vendeur que personne autour de moi ne connaît.",
+  "objection": "Je n'ai pas besoin d'un nouveau fer, et en plus je ne connais pas ce vendeur : aucun proche ni personne de mon groupe WhatsApp ne m'en a parlé, et il faut de toute façon du courant pour le chauffer, donc sans SNEL c'est pareil.",
+  "would_change_my_mind": "Que mon vieux fer tombe en panne et qu'une collègue ou une amie de confiance me montre le sien en disant qu'il chauffe bien et dure.",
+  "price_too_cheap": 4,
+  "price_cheap": 8,
+  "price_expensive": 12,
+  "price_too_expensive": 18
+}

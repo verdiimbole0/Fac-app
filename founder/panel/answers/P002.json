@@ -1,0 +1,13 @@
+{
+  "id": "P002",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Personne de mon entourage ni de mes groupes WhatsApp ne m'a parlé de FerLibre Kin, et je ne mets pas 15 $ plus la livraison, presque une semaine de mon revenu, chez un vendeur que je découvre sur Facebook. Et chez moi la SNEL coupe plusieurs heures par jour, alors un fer qui a besoin du socle branché pour chauffer ne m'arrange pas plus que mon fer actuel.",
+  "objection": "Un fer sans fil se refroidit vite : est-ce qu'il garde assez la chaleur pour un pagne épais ou un jean, ou est-ce que je vais passer mon temps à le reposer sur le socle, et quand le courant part au milieu, je reste avec des habits à moitié repassés ?",
+  "would_change_my_mind": "Qu'un collègue ou un proche l'ait acheté, l'utilise depuis quelques semaines et me dise qu'il repasse bien les jeans et pagnes sans retourner sans arrêt sur le socle.",
+  "price_too_cheap": 5,
+  "price_cheap": 8,
+  "price_expensive": 13,
+  "price_too_expensive": 18
+}

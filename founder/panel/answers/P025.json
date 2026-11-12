@@ -1,0 +1,13 @@
+{
+  "id": "P025",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "need",
+  "reason": "J'ai déjà un fer qui marche pour les uniformes du dimanche soir. Sans fil c'est joli, mais il faut quand même le courant SNEL ou le groupe pour chauffer, donc ça ne règle pas mon vrai problème, et 15 $ plus la livraison c'est une grosse part de ce qui reste dans le mois.",
+  "objection": "Combien coûte la livraison en plus pour ma commune ? Et si le fer refroidit vite pendant une coupure, je dois attendre sur le socle, alors à quoi sert le sans-fil ? Je ne connais pas FerLibre Kin, si le socle grille, qui me rembourse ?",
+  "would_change_my_mind": "Que mon fer actuel tombe en panne, et une livraison gratuite ou à 1 $ avec garantie d'échange si le fer ou le socle ne marche pas.",
+  "price_too_cheap": 5,
+  "price_cheap": 9,
+  "price_expensive": 13,
+  "price_too_expensive": 18
+}

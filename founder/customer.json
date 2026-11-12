@@ -1,0 +1,84 @@
+{
+  "business": "FerLibre Kin (nom de travail) : vente de fers à repasser sans fil livrés à domicile à Kinshasa",
+  "target": "Ménages de la classe moyenne à Kinshasa, 22 à 50 ans, qui repassent eux-mêmes à la maison et achètent déjà sur WhatsApp ou Facebook",
+  "where": "Kinshasa, RDC (Gombe, Limete, Ngaliema, Lemba, Bandalungwa, Kintambo, Masina...)",
+  "age": [
+    22,
+    50
+  ],
+  "segments": [
+    {
+      "name": "Ménage classe moyenne inférieure (salarié, petit commerce)",
+      "share": 0.45,
+      "income": [
+        1000,
+        2500
+      ]
+    },
+    {
+      "name": "Ménage classe moyenne (fonctionnaire cadre, enseignant, employé privé)",
+      "share": 0.4,
+      "income": [
+        2500,
+        6000
+      ]
+    },
+    {
+      "name": "Ménage aisé (cadre ONG, entreprise, diaspora)",
+      "share": 0.15,
+      "income": [
+        6000,
+        15000
+      ]
+    }
+  ],
+  "behaviours": [
+    {
+      "name": "Acheteur au marché",
+      "share": 0.22,
+      "how": "Achète l'électroménager au marché (Zando, Gambela) où il peut toucher et marchander."
+    },
+    {
+      "name": "Chasseur de prix",
+      "share": 0.18,
+      "how": "Compare plusieurs vendeurs WhatsApp et négocie toujours le prix à la baisse."
+    },
+    {
+      "name": "Échaudé par les contrefaçons",
+      "share": 0.15,
+      "how": "A déjà acheté un appareil chinois qui a lâché en quelques semaines; se méfie des annonces Facebook."
+    },
+    {
+      "name": "Acheteur en ligne confiant",
+      "share": 0.15,
+      "how": "Commande régulièrement sur WhatsApp et Facebook, paie à la livraison ou par M-Pesa / Orange Money."
+    },
+    {
+      "name": "Suit les recommandations",
+      "share": 0.15,
+      "how": "N'achète que ce qu'un proche, un collègue ou un groupe WhatsApp de confiance recommande."
+    },
+    {
+      "name": "Fidèle à son vieux fer",
+      "share": 0.15,
+      "how": "A un fer à fil qui marche encore et ne remplace que quand il casse."
+    }
+  ],
+  "objections": [
+    "S'il faut du courant quand même, à quoi ça sert avec les coupures SNEL ?",
+    "Mon fer à fil marche encore, pourquoi en acheter un autre ?",
+    "15 $ c'est cher, au marché un fer coûte moins",
+    "C'est sûrement de la mauvaise qualité chinoise qui va lâcher vite",
+    "Est-ce que le fer garde assez la chaleur pour les gros vêtements, pagnes et jeans ?",
+    "Je ne connais pas ce vendeur, et si le fer ne marche pas à la livraison ?",
+    "Combien coûte la livraison en plus ?"
+  ],
+  "habits": [
+    "le courant SNEL est coupé chez vous plusieurs heures par jour",
+    "vous repassez les uniformes des enfants le dimanche soir",
+    "vous avez un petit groupe électrogène qu'on allume le soir",
+    "vous repassez votre tenue chaque matin avant le travail",
+    "c'est la domestique ou un aîné qui repasse pour toute la famille",
+    "vous êtes dans plusieurs groupes WhatsApp de quartier et d'église"
+  ]
+}

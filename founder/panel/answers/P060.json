@@ -1,0 +1,13 @@
+{
+  "id": "P060",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "need",
+  "reason": "Mon fer à fil marche encore, et le sans-fil demande quand même le courant du groupe le soir comme l'ancien. Je ne vais pas payer 15 $ plus la livraison juste pour ne plus avoir le fil dans la main.",
+  "objection": "Il chauffe sur le socle, donc il faut toujours le courant ; avec le délestage et le groupe qu'on allume seulement le soir, je ne gagne rien, et 15 $ plus le transport moto c'est beaucoup pour un fer.",
+  "would_change_my_mind": "Que mon fer actuel tombe en panne, et un prix négocié autour de 8-10 $ livraison comprise.",
+  "price_too_cheap": 4,
+  "price_cheap": 8,
+  "price_expensive": 12,
+  "price_too_expensive": 18
+}

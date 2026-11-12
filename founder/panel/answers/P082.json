@@ -1,0 +1,13 @@
+{
+  "id": "P082",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "Mon fer ordinaire marche encore et au marché on en trouve à 7 ou 8 dollars ; 15 $ plus la livraison pour un fer qui a quand même besoin du courant SNEL, ça ne règle pas mon vrai problème, c'est juste un fil en moins.",
+  "objection": "Un fer sans fil qui chauffe sur un socle, j'ai peur qu'il refroidisse vite sur les pagnes et les jeans, et avec les coupures je ne pourrai même pas le remettre sur le socle pour le réchauffer.",
+  "would_change_my_mind": "Le voir repasser un jean épais en entier sans retourner au socle, devant moi, et un prix autour de 10 $ livraison comprise.",
+  "price_too_cheap": 4,
+  "price_cheap": 8,
+  "price_expensive": 12,
+  "price_too_expensive": 16
+}

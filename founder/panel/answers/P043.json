@@ -1,0 +1,13 @@
+{
+  "id": "P043",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "quality",
+  "reason": "J'ai déjà un fer à fil qui marche, et un fer sans fil qui doit retourner sur son socle toutes les deux minutes, je ne vois pas comment il va garder la chaleur pour mes pagnes et mes jeans. En plus il faut quand même le courant, donc avec les coupures SNEL je ne gagne rien.",
+  "objection": "Le fer refroidit vite dès qu'on le sort du socle, et sur les gros tissus je vais passer mon temps à attendre qu'il rechauffe. Et 15 $ plus la livraison à moto, alors qu'au marché je trouve un fer ordinaire moins cher.",
+  "would_change_my_mind": "Voir une vraie vidéo ou un voisin de mon groupe WhatsApp repasser un jean épais et un pagne d'un coup avec ce fer, plus un prix négocié autour de 10 $ livraison comprise.",
+  "price_too_cheap": 5,
+  "price_cheap": 9,
+  "price_expensive": 14,
+  "price_too_expensive": 20
+}

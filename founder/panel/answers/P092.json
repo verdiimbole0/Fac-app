@@ -1,0 +1,13 @@
+{
+  "id": "P092",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "need",
+  "reason": "J'ai déjà un fer qui marche à la maison, et le fil ne me gêne pas au point de payer 15 $ plus la livraison pour en changer. Au marché un fer simple coûte moins, donc je ne vois pas pourquoi remplacer le mien maintenant.",
+  "objection": "Avec les coupures de la SNEL, un fer qui doit repartir sur son socle pour chauffer, est-ce qu'il tient vraiment la chaleur assez longtemps pour une chemise ? Et je ne connais pas FerLibre Kin, pas d'avis dans mes groupes.",
+  "would_change_my_mind": "Que mon fer actuel tombe en panne, ou qu'une amie de mon groupe WhatsApp me montre qu'il garde bien la chaleur et tient dans le temps.",
+  "price_too_cheap": 5,
+  "price_cheap": 9,
+  "price_expensive": 15,
+  "price_too_expensive": 22
+}

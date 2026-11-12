@@ -1,0 +1,13 @@
+{
+  "id": "P073",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "need",
+  "reason": "Chez moi c'est la domestique qui repasse, avec le fer qu'on a déjà, et le fil ne gêne personne. Et s'il faut quand même du courant pour chauffer le socle, ça ne règle pas le vrai problème : les coupures SNEL.",
+  "objection": "Sans fil mais il faut toujours le courant : pendant les coupures on reste bloqué pareil. Et un fer que je n'ai pas touché, vendu sur WhatsApp, je ne sais pas s'il tient la chaleur assez longtemps pour une pile de chemises.",
+  "would_change_my_mind": "Qu'il garde la chaleur longtemps sans courant, assez pour finir le linge de la famille pendant une coupure, et que je puisse le voir et l'essayer au marché avant de payer.",
+  "price_too_cheap": 5,
+  "price_cheap": 10,
+  "price_expensive": 20,
+  "price_too_expensive": 30
+}

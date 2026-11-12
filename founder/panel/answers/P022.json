@@ -1,0 +1,13 @@
+{
+  "id": "P022",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "need",
+  "reason": "J'ai déjà un fer qui marche, et de toute façon je ne repasse que le soir quand on allume le groupe, avec ou sans fil. Payer 15 $ plus la livraison pour ne plus avoir de fil, ce n'est pas une priorité pour moi ce mois-ci.",
+  "objection": "Au marché un fer coûte moins cher, et ici il faut encore ajouter la moto. Je ne sais pas non plus si ce socle tient avec les coupures et le courant du groupe qui monte et descend, ni s'il garde la chaleur assez longtemps pour une pile de chemises.",
+  "would_change_my_mind": "Si mon fer actuel tombe en panne et qu'ils me proposent le fer avec livraison incluse autour de 10 $, avec une garantie d'échange si le socle grille à cause du courant.",
+  "price_too_cheap": 4,
+  "price_cheap": 8,
+  "price_expensive": 12,
+  "price_too_expensive": 18
+}

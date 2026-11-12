@@ -1,0 +1,13 @@
+{
+  "id": "P046",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Je ne connais pas ce FerLibre Kin, personne de mon entourage ni de mon groupe WhatsApp ne m'en a parlé. Et 15 $ plus la livraison, c'est plus d'une semaine de mon salaire pour un fer qui a quand même besoin du courant SNEL pour chauffer, alors que j'ai déjà un fer qui marche.",
+  "objection": "C'est sûrement du chinois de mauvaise qualité : avec les coupures et les remontées de tension, le socle va griller en quelques semaines, et après qui va me rembourser ?",
+  "would_change_my_mind": "Qu'un collègue ou un proche l'utilise depuis des mois sans problème malgré les coupures et me le recommande, avec une garantie si le socle lâche.",
+  "price_too_cheap": 5,
+  "price_cheap": 8,
+  "price_expensive": 12,
+  "price_too_expensive": 18
+}

@@ -1,0 +1,13 @@
+{
+  "id": "P076",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Un fer, je l'achète à Zando où je le touche, je le branche devant le vendeur et je marchande. 15 $ plus la livraison pour un fer que je n'ai jamais vu, sur WhatsApp, c'est trop risqué pour mon budget, et avec les coupures SNEL le sans-fil ne m'aide pas vraiment.",
+  "objection": "Je ne peux pas le toucher ni l'essayer avant de payer, et je ne sais pas combien la livraison va ajouter. Si le socle grille avec les variations de courant, à qui je me plains ?",
+  "would_change_my_mind": "Pouvoir le voir et l'essayer avant de payer, avec livraison gratuite ou presque et une garantie claire d'échange si le socle ne marche pas.",
+  "price_too_cheap": 4,
+  "price_cheap": 8,
+  "price_expensive": 12,
+  "price_too_expensive": 18
+}

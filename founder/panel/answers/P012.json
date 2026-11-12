@@ -1,0 +1,13 @@
+{
+  "id": "P012",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "need",
+  "reason": "Mon fer à fil marche encore, et ce fer sans fil a quand même besoin du courant SNEL pour chauffer, donc quand le courant est coupé je ne repasse pas plus qu'avant. Payer 15 $ plus la livraison juste pour ne plus avoir le fil, ce n'est pas une priorité pour mon budget.",
+  "objection": "Il ne règle pas mon vrai problème, les coupures de courant. Et je doute qu'un fer sans fil garde la chaleur assez longtemps pour une chemise entière avant de devoir le reposer sur le socle.",
+  "would_change_my_mind": "Que mon fer actuel tombe en panne, et qu'on me le laisse autour de 10 $ livraison comprise après négociation.",
+  "price_too_cheap": 5,
+  "price_cheap": 8,
+  "price_expensive": 12,
+  "price_too_expensive": 18
+}

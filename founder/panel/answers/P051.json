@@ -1,0 +1,13 @@
+{
+  "id": "P051",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "15 dollars plus la moto, c'est presque une semaine de ma paie, et un fer ordinaire avec fil se trouve à 6 ou 8 dollars au marché. Le sans-fil c'est joli, mais il faut quand même le courant, alors pour moi ça ne change pas grand-chose le soir avec le groupe.",
+  "objection": "Je ne connais pas ce vendeur. Si le socle ne chauffe pas ou grille avec le courant du groupe, qui va me rembourser ? Et les frais de livraison, on ne sait pas combien avant d'écrire.",
+  "would_change_my_mind": "Un prix autour de 9 ou 10 dollars livraison comprise, avec le droit de tester le fer devant le livreur avant de payer.",
+  "price_too_cheap": 4,
+  "price_cheap": 8,
+  "price_expensive": 12,
+  "price_too_expensive": 16
+}

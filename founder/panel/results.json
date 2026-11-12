@@ -1,0 +1,243 @@
+{
+ "business": "FerLibre Kin (nom de travail) : vente de fers à repasser sans fil livrés à domicile à Kinshasa",
+ "seed": 104154,
+ "dealt": 100,
+ "answered": 100,
+ "skipped": [],
+ "buys": 0,
+ "passes": 100,
+ "buy_rate": 0.0,
+ "by_segment": [
+  [
+   "Ménage classe moyenne (fonctionnaire cadre, enseignant, employé privé)",
+   40,
+   0.0
+  ],
+  [
+   "Ménage classe moyenne inférieure (salarié, petit commerce)",
+   45,
+   0.0
+  ],
+  [
+   "Ménage aisé (cadre ONG, entreprise, diaspora)",
+   15,
+   0.0
+  ]
+ ],
+ "by_behaviour": [
+  [
+   "Acheteur au marché",
+   22,
+   0.0
+  ],
+  [
+   "Suit les recommandations",
+   15,
+   0.0
+  ],
+  [
+   "Chasseur de prix",
+   18,
+   0.0
+  ],
+  [
+   "Échaudé par les contrefaçons",
+   15,
+   0.0
+  ],
+  [
+   "Acheteur en ligne confiant",
+   15,
+   0.0
+  ],
+  [
+   "Fidèle à son vieux fer",
+   15,
+   0.0
+  ]
+ ],
+ "by_income": [
+  [
+   "$5,000 and up",
+   36,
+   0.0
+  ],
+  [
+   "$2,000 to $5,000",
+   47,
+   0.0
+  ],
+  [
+   "under $2,000",
+   17,
+   0.0
+  ]
+ ],
+ "why_not": [
+  [
+   "need",
+   44,
+   [
+    "Sans fil ou avec fil, il faut le courant SNEL pour chauffer ; quand il y a coupure je ne repasse pas de toute façon. Mon fer ordinaire du marché marche encore, et 15 dollars plus la livraison pour juste enlever le fil, ce n'est pas une priorité ce mois.",
+    "Mon fer à fil marche encore, je repasse ma tenue chaque matin sans problème. 15 dollars plus la livraison à moto, c'est presque une semaine de ce que je gagne, pour enlever juste un fil qui gêne un peu."
+   ],
+   [
+    "P001",
+    "P004"
+   ]
+  ],
+  [
+   "trust",
+   23,
+   [
+    "Personne de mon entourage ni de mes groupes WhatsApp ne m'a parlé de FerLibre Kin, et je ne mets pas 15 $ plus la livraison, presque une semaine de mon revenu, chez un vendeur que je découvre sur Facebook. Et chez moi la SNEL coupe plusieurs heures par jour, alors un fer qui a besoin du socle branché pour chauffer ne m'arrange pas plus que mon fer actuel.",
+    "J'ai déjà un fer qui marche, et un vendeur que je ne connais pas sur Facebook qui vend un fer sans fil à 15 $, pour moi c'est sûrement du chinois qui va lâcher en quelques semaines, comme mon dernier appareil. Le fil ne me gêne pas assez pour risquer mon argent."
+   ],
+   [
+    "P002",
+    "P005"
+   ]
+  ],
+  [
+   "habit",
+   14,
+   [
+    "Mon vieux fer à fil marche encore, je ne vais pas dépenser 15 $ plus la livraison pour le remplacer. Et sans fil ou pas, quand la SNEL coupe, il ne chauffe pas non plus, donc ça ne règle pas mon vrai problème.",
+    "Mon fer à fil marche encore, je ne remplace pas un fer qui marche. Et 15 $ plus la livraison, c'est une grosse part de ce que je gagne dans le mois, pour un fer qui a quand même besoin du courant SNEL."
+   ],
+   [
+    "P011",
+    "P031"
+   ]
+  ],
+  [
+   "quality",
+   11,
+   [
+    "J'ai déjà un fer à fil qui marche, et le dimanche soir je repasse une pile d'uniformes, de pagnes et de jeans. Un fer sans fil qu'il faut reposer sur le socle tout le temps, je ne vois pas pourquoi payer 15 $ plus la livraison pour ça, surtout quand le courant de la SNEL coupe.",
+    "J'ai déjà un fer qui marche, et sans fil ou pas, il me faut quand même le courant ou le groupe pour chauffer. Mettre 15 $ plus la livraison pour un appareil chinois qui risque de lâcher comme le dernier, c'est trop pour moi ce mois-ci."
+   ],
+   [
+    "P003",
+    "P008"
+   ]
+  ],
+  [
+   "price",
+   8,
+   [
+    "15 dollars plus the moto delivery is almost a week of what I earn, and at the market I find an iron for much less. And this one still needs the current to heat on its base, so when SNEL cuts, it does nothing more than my old iron.",
+    "Chez moi c'est la domestique qui repasse avec le fer ordinaire qu'on a déjà, il marche. Payer 15 $ plus la livraison juste pour enlever le fil, je ne vois pas l'intérêt, surtout qu'au marché je trouve un fer à fil pour beaucoup moins."
+   ],
+   [
+    "P006",
+    "P016"
+   ]
+  ]
+ ],
+ "why_yes": [],
+ "flip": [
+  "Que mon fer actuel tombe en panne et que quelqu'un de mon groupe d'église l'ait acheté, en soit content depuis plusieurs mois, et que je puisse le voir chauffer devant moi avant de payer.",
+  "Qu'un collègue ou un proche l'ait acheté, l'utilise depuis quelques semaines et me dise qu'il repasse bien les jeans et pagnes sans retourner sans arrêt sur le socle.",
+  "Que mon fer actuel tombe en panne, et qu'une voisine me montre que celui-ci repasse un jean entier sans refroidir, avec un prix négocié autour de 10 $ livraison comprise.",
+  "Que mon fer actuel tombe en panne, et un prix autour de 8 dollars livraison comprise.",
+  "Une garantie écrite d'au moins 3 mois avec échange, et pouvoir voir et essayer le fer à la livraison avant de payer, recommandé par quelqu'un que je connais qui l'utilise depuis des mois.",
+  "A price close to the market, around 8 dollars delivery included, with a written guarantee and a real place in Kinshasa where I can bring it back if it breaks.",
+  "Que mon fer actuel tombe en panne, ou pouvoir le voir et l'essayer au marché à Zando avant de payer.",
+  "Une vraie garantie écrite, au moins 3 mois avec échange, et voir le fer marcher chez un voisin ou un collègue que je connais.",
+  "Que mon fer actuel tombe en panne, ou voir une vidéo ou une voisine repasser un jean et un pagne d'un coup sans reposer le fer, avec une garantie d'échange si ça ne chauffe pas bien.",
+  "Que mon fer actuel tombe en panne, ou une garantie écrite avec échange si ça casse, plus une vidéo réelle montrant qu'il repasse une chemise entière sans retourner sur le socle.",
+  "Que mon vieux fer tombe en panne, et qu'on me donne une vraie garantie (échange si ça casse dans les premiers mois) avec des avis de clients que je connais.",
+  "Que mon fer actuel tombe en panne, et qu'on me le laisse autour de 10 $ livraison comprise après négociation.",
+  "Que je puisse le brancher et l'essayer devant le livreur avant de payer, avec une garantie d'échange, et qu'un voisin ou quelqu'un de l'église l'ait déjà acheté et en soit content.",
+  "Qu'une collègue ou quelqu'un de mon groupe WhatsApp de confiance l'achète, me dise qu'il tient bien la chaleur pendant les coupures, et que le vendeur me laisse tester le fer devant le livreur avant de payer.",
+  "Que mon vieux fer tombe en panne et qu'on me le laisse à 10 $ livraison comprise, avec une garantie de remplacement.",
+  "Voir une vraie vidéo ou un essai devant moi où il repasse un jean épais sans refroidir, et un prix négocié autour de 10 $ livraison comprise.",
+  "Qu'un collègue ou quelqu'un de mon groupe WhatsApp l'utilise depuis des mois et me confirme qu'il repasse une bonne pile d'habits avec une seule chauffe, pendant les heures où le courant est là.",
+  "Qu'une personne de mon groupe d'église ou du quartier l'utilise depuis des mois sans problème, avec une garantie d'échange écrite par le vendeur.",
+  "Que mon fer actuel tombe en panne et que celui-ci coûte à peu près le prix d'un fer ordinaire au marché, livraison comprise, avec une garantie si le socle lâche.",
+  "Qu'un voisin du groupe WhatsApp de l'église l'achète et me montre qu'il tient après un mois, avec la livraison gratuite ou presque dans ma commune et le paiement seulement après avoir vu le fer chauffer devant moi.",
+  "Qu'une collègue ou une amie de confiance l'ait acheté et me dise qu'il tient bien la chaleur malgré les coupures.",
+  "Si mon fer actuel tombe en panne et qu'ils me proposent le fer avec livraison incluse autour de 10 $, avec une garantie d'échange si le socle grille à cause du courant.",
+  "Que mon fer actuel tombe en panne, ou une garantie claire d'échange (au moins un mois) avec essai du fer devant le livreur avant de payer.",
+  "Une collègue ou une cousine qui l'utilise depuis quelques semaines avec le groupe et qui me dit que ça tient, avec une livraison pas chère jusqu'à ma commune.",
+  "Que mon fer actuel tombe en panne, et une livraison gratuite ou à 1 $ avec garantie d'échange si le fer ou le socle ne marche pas.",
+  "Que mon fer actuel tombe en panne ; là, à 15 $ avec paiement à la livraison et une garantie, je le prendrais à la place d'un fer ordinaire.",
+  "Que mon fer actuel tombe en panne, ou une démonstration en vidéo d'un client à Kinshasa montrant qu'il repasse une chemise complète sans retourner sur le socle, avec une garantie d'échange.",
+  "Que mon vieux fer tombe en panne, et pouvoir voir et essayer celui-ci au marché à un prix proche de 10 $.",
+  "Que mon fer actuel tombe en panne, et que la livraison soit gratuite ou que le prix total livré ne dépasse pas 12 $, avec une garantie si le socle ne marche pas.",
+  "Le voir fonctionner devant moi sur un jean ou un pagne lors de la livraison, avec le droit de refuser et de ne pas payer s'il ne chauffe pas assez, plus une garantie écrite de quelques mois.",
+  "Que mon vieux fer tombe en panne, et que le prix avec la livraison reste autour de 10 $.",
+  "Une collègue ou quelqu'un de mon groupe WhatsApp qui l'utilise déjà et me dit qu'il garde bien la chaleur pour les pagnes et les jeans.",
+  "Que mon vieux fer tombe en panne, et pouvoir voir et toucher ce fer au marché à Zando, avec une garantie, autour de 8 ou 10 dollars livraison comprise.",
+  "Pouvoir le brancher et le voir chauffer devant le livreur avant de payer, avec une garantie d'échange, et un voisin ou un collègue qui l'a déjà acheté et qui me dit que ça marche.",
+  "Que mon fer actuel tombe en panne et qu'on me le laisse autour de 8 ou 9 $ livraison comprise, avec une garantie si le socle grille.",
+  "Qu'un collègue ou quelqu'un de mon groupe WhatsApp l'utilise et me dise que le fer garde la chaleur assez longtemps pour finir une tenue après une coupure.",
+  "Une garantie claire d'échange si ça tombe en panne dans les premiers mois, plus le voir chauffer et repasser devant moi à la livraison avant de payer.",
+  "Que mon fer actuel tombe en panne, et voir chez un proche que ce fer sans fil garde bien la chaleur pour toute une pile d'uniformes.",
+  "Le voir et l'essayer moi-même au marché ou chez un voisin qui l'a déjà, à un prix autour de 10 $ livraison comprise, avec une garantie d'échange si ça ne chauffe pas bien.",
+  "Que mon fer actuel tombe en panne, et là je comparerais avec les autres vendeurs WhatsApp pour l'avoir autour de 10 $ livraison comprise.",
+  "Le voir chauffer et repasser un jean entier devant moi à la livraison, avec la possibilité de le refuser sur place et une garantie d'échange de quelques mois.",
+  "Le voir et l'essayer chez un voisin ou un collègue qui l'utilise depuis des mois sans panne, avec une garantie d'échange écrite si ça casse dans les premiers mois.",
+  "Voir une vraie vidéo ou un voisin de mon groupe WhatsApp repasser un jean épais et un pagne d'un coup avec ce fer, plus un prix négocié autour de 10 $ livraison comprise.",
+  "Que mon vieux fer tombe en panne et qu'une voisine que je connais me montre le sien qui tient depuis des mois, avec une garantie d'échange si ça lâche.",
+  "Que mon fer actuel tombe en panne, et qu'on me donne une vraie garantie de remplacement si le fer ou le socle lâche dans les premiers mois.",
+  "Qu'un collègue ou un proche l'utilise depuis des mois sans problème malgré les coupures et me le recommande, avec une garantie si le socle lâche.",
+  "Une collègue ou quelqu'un de mon groupe WhatsApp qui l'utilise depuis quelques semaines et me dit qu'il chauffe bien et tient malgré les coupures.",
+  "Que notre fer actuel tombe en panne, et qu'on me montre en vrai, en vidéo sur WhatsApp, qu'il garde la chaleur assez longtemps pour toute une pile de linge, avec une garantie et la livraison incluse dans les 15 $.",
+  "Pouvoir l'essayer devant le livreur sur un jean et un pagne avant de payer, avec une garantie d'échange si le socle ou le fer tombe en panne.",
+  "Une garantie claire (échange si ça tombe en panne dans les 3 mois) et le voir chauffer devant moi à la livraison avant de payer, avec un prix négocié à 10-12 $ livraison comprise.",
+  "Un prix autour de 9 ou 10 dollars livraison comprise, avec le droit de tester le fer devant le livreur avant de payer.",
+  "Que mon fer actuel tombe en panne, et que le vendeur me laisse le tester à la livraison avant de payer, avec une garantie d'échange écrite.",
+  "Que mon vieux fer tombe en panne ; là je comparerais avec un fer à fil au marché, et je pourrais prendre celui-ci si une voisine me montre qu'il chauffe bien et tient la chaleur.",
+  "Une voisine ou quelqu'un de mon groupe d'église qui l'utilise depuis des mois sans problème, et un prix autour de 10 $ livraison comprise.",
+  "Que le livreur me laisse brancher et tester le fer devant moi avant de payer, avec un échange garanti s'il tombe en panne dans le premier mois, et qu'un voisin ou un collègue l'ait déjà acheté sans problème.",
+  "Que mon vieux fer casse, et voir chez une voisine que celui-ci garde bien la chaleur pour les uniformes et les pagnes.",
+  "Que mon fer actuel tombe en panne et qu'une amie du groupe WhatsApp de l'église me dise qu'elle l'utilise depuis des mois et qu'il garde bien la chaleur.",
+  "Que mon vieux fer tombe en panne, et qu'une voisine ou une collègue me montre le sien qui tient depuis des mois.",
+  "Que mon vieux fer tombe en panne et que celui-ci coûte à peu près le prix d'un fer du marché, livraison comprise.",
+  "Que mon fer actuel tombe en panne, et un prix négocié autour de 8-10 $ livraison comprise.",
+  "Que mon fer à fil tombe en panne, et qu'on me le laisse à 10 $ livraison comprise.",
+  "Que mon vieux fer tombe en panne et qu'une collègue ou une amie de confiance me montre le sien en disant qu'il chauffe bien et dure.",
+  "Que mon vieux fer tombe en panne, et que le prix livraison comprise reste vers 10 $.",
+  "Que mon vieux fer tombe en panne, et pouvoir voir le fer chauffer devant moi à la livraison avant de payer, avec une garantie d'échange.",
+  "Qu'il garde la chaleur assez longtemps pour repasser plusieurs habits après la coupure, prouvé devant moi, et que je puisse le voir et le payer à la livraison avec une garantie.",
+  "Que mon fer actuel tombe en panne, et voir le fer en vrai chez un collègue qui l'utilise depuis des mois sans problème de socle.",
+  "Que mon vieux fer se gâte, et qu'on me laisse le voir chauffer devant moi avant de payer, avec la livraison gratuite dans ma commune et une garantie d'échange.",
+  "Une vraie garantie d'échange de plusieurs mois avec une boutique physique à Kinshasa, et voir le fer garder la chaleur assez longtemps pour repasser une pile de linge pendant une coupure.",
+  "Que mon vieux fer tombe en panne ; là je chercherais un remplaçant et je comparerais avec le prix d'un fer à fil au marché.",
+  "Si mon fer actuel tombe en panne et qu'ils livrent gratuitement ou presque dans ma commune, avec la possibilité de l'essayer à la livraison avant de payer.",
+  "Qu'une amie ou quelqu'un de mon groupe d'église l'achète, l'utilise quelques semaines et me dise qu'il tient bien avec les coupures, avec une garantie claire du vendeur.",
+  "Que mon fer actuel tombe en panne et qu'une amie ou une cousine de mon groupe WhatsApp me dise qu'elle l'utilise depuis des mois et que ça repasse bien.",
+  "Qu'il garde la chaleur longtemps sans courant, assez pour finir le linge de la famille pendant une coupure, et que je puisse le voir et l'essayer au marché avant de payer.",
+  "Que mon vieux fer tombe en panne, et qu'on me donne une vraie garantie : si le fer ou le socle lâche dans les premiers mois, on me le remplace.",
+  "Voir une vidéo ou une démonstration où on repasse un pagne et un jean entiers sans reposer le fer, et que notre vieux fer tombe en panne.",
+  "Pouvoir le voir et l'essayer avant de payer, avec livraison gratuite ou presque et une garantie claire d'échange si le socle ne marche pas.",
+  "Que mon vieux fer casse, et qu'un ami de mon groupe WhatsApp d'église me dise qu'il a acheté chez eux et que le fer tient depuis des mois.",
+  "Qu'un collègue ou un proche l'utilise depuis quelques mois sans problème et me le recommande, avec une garantie si le socle tombe en panne.",
+  "Que mon fer actuel tombe en panne et qu'une voisine en ait un de chez eux qui tient depuis des mois, avec une garantie d'échange claire.",
+  "Que mon fer actuel casse, et qu'un voisin ou un proche me montre le sien qui marche depuis longtemps avec une garantie si ça lâche.",
+  "Que mon fer actuel tombe en panne, et pouvoir le tester devant le livreur avant de payer, avec une garantie d'échange.",
+  "Le voir repasser un jean épais en entier sans retourner au socle, devant moi, et un prix autour de 10 $ livraison comprise.",
+  "Que notre vieux fer tombe en panne et que je puisse voir et essayer celui-ci au marché à moins de 10 $, livraison comprise.",
+  "Le voir et l'essayer en vrai au marché ou chez une voisine qui l'utilise depuis des mois, avec une garantie d'échange si le socle lâche.",
+  "Pouvoir le brancher et le tester chez moi devant le livreur avant de payer, plus une garantie écrite d'échange si ça lâche dans les premiers mois, et une voisine ou collègue qui l'a déjà acheté et en est contente.",
+  "Le voir et l'essayer moi-même sur un jean devant le vendeur, avec une garantie de retour s'il ne tient pas la chaleur.",
+  "Si mon fer actuel tombe en panne et qu'on me le fait à 10 $ livraison comprise, avec une garantie si ça casse.",
+  "Voir de mes yeux, ou en vidéo d'un client à Kinshasa, ce fer repasser un jean épais et un pagne sans retourner au socle, avec une garantie d'échange, et un prix autour de 10 $ livraison comprise.",
+  "Une garantie écrite d'au moins trois mois avec échange, et pouvoir le tester chauffer devant le livreur avant de payer, le tout autour de 10 $ livraison comprise.",
+  "Le voir marcher devant moi à la livraison, avec une garantie écrite d'échange au moins 3 mois, et une livraison gratuite ou presque dans ma commune.",
+  "Le voir marcher devant moi chez un voisin ou un collègue qui l'utilise depuis des mois, avec une garantie d'échange, et un prix autour de 8 ou 10 dollars livraison comprise.",
+  "Que mon fer actuel tombe en panne, ou qu'une amie de mon groupe WhatsApp me montre qu'il garde bien la chaleur et tient dans le temps.",
+  "Que mon vieux fer tombe en panne, et que je puisse le voir et le toucher au marché à un prix proche d'un fer ordinaire.",
+  "Une garantie claire avec échange si le fer lâche dans le premier mois, et pouvoir l'essayer devant le livreur avant de payer.",
+  "Que mon fer actuel tombe en panne, et qu'une voisine ou une collègue en ait un depuis des mois sans problème, avec la possibilité de l'essayer devant le livreur avant de payer.",
+  "Que mon vieux fer casse ; là je comparerais le prix avec un fer simple au marché.",
+  "Voir une vidéo ou une démonstration chez une voisine où il repasse un pagne épais d'un coup sans retourner au socle, avec une garantie d'échange si ça ne chauffe pas bien, et un prix négocié autour de 10 dollars livraison comprise.",
+  "Que mon fer actuel tombe en panne, et trouver ce fer autour de 9-10 $ livraison comprise chez un vendeur que des gens de mon entourage ont déjà testé.",
+  "Que mon fer actuel tombe en panne ; ou que ce fer garde la chaleur assez longtemps pour repasser une tenue complète après une coupure, preuve à l'appui d'une connaissance qui l'utilise.",
+  "Qu'un proche ou un collègue en ait un depuis des mois et me dise qu'il tient avec le groupe électrogène, avec une livraison gratuite ou presque."
+ ],
+ "purchases_first_month_per_buyer": null,
+ "price_answers": 100
+}

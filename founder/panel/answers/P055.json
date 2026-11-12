@@ -1,0 +1,13 @@
+{
+  "id": "P055",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Je ne connais pas FerLibre Kin, et l'électroménager je l'achète au marché à Zando, où je touche le fer, je le teste et je marchande. Payer 15 $ plus la livraison pour un fer vu sur WhatsApp, alors que chez nous c'est la domestique qui repasse avec le fer qu'on a déjà, ça ne passe pas.",
+  "objection": "Si le fer arrive et ne chauffe pas bien sur le socle, ou tombe en panne après deux semaines avec les coupures de la SNEL, qui je vais appeler ? Je n'ai vu aucune garantie ni boutique physique.",
+  "would_change_my_mind": "Que le livreur me laisse brancher et tester le fer devant moi avant de payer, avec un échange garanti s'il tombe en panne dans le premier mois, et qu'un voisin ou un collègue l'ait déjà acheté sans problème.",
+  "price_too_cheap": 5,
+  "price_cheap": 9,
+  "price_expensive": 13,
+  "price_too_expensive": 18
+}

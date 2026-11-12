@@ -1,0 +1,13 @@
+{
+  "id": "P078",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Je ne connais pas ce vendeur et personne de mon entourage ou de mes groupes WhatsApp ne me l'a recommandé. 15 dollars plus la livraison, c'est une grosse somme pour moi, et mon vieux fer marche encore.",
+  "objection": "J'ai peur que ce soit de la camelote chinoise : le socle qui grille avec les coupures et les variations de courant de la SNEL, et après je n'ai plus rien et personne pour me rembourser.",
+  "would_change_my_mind": "Qu'un collègue ou un proche l'utilise depuis quelques mois sans problème et me le recommande, avec une garantie si le socle tombe en panne.",
+  "price_too_cheap": 5,
+  "price_cheap": 8,
+  "price_expensive": 12,
+  "price_too_expensive": 18
+}

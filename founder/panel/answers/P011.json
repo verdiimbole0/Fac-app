@@ -1,0 +1,13 @@
+{
+  "id": "P011",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Mon vieux fer à fil marche encore, je ne vais pas dépenser 15 $ plus la livraison pour le remplacer. Et sans fil ou pas, quand la SNEL coupe, il ne chauffe pas non plus, donc ça ne règle pas mon vrai problème.",
+  "objection": "Un fer sans fil à 15 $ vendu sur WhatsApp, c'est sûrement de la camelote chinoise : le socle ou la batterie de chaleur va lâcher en quelques mois et je n'aurai personne pour me rembourser.",
+  "would_change_my_mind": "Que mon vieux fer tombe en panne, et qu'on me donne une vraie garantie (échange si ça casse dans les premiers mois) avec des avis de clients que je connais.",
+  "price_too_cheap": 5,
+  "price_cheap": 9,
+  "price_expensive": 15,
+  "price_too_expensive": 22
+}

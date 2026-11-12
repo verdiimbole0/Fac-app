@@ -1,0 +1,13 @@
+{
+  "id": "P030",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "quality",
+  "reason": "J'ai déjà un fer qui marche, et un fer sans fil à 15 $ vendu sur Facebook, ça me rappelle exactement l'appareil chinois qui m'a lâchée en quelques semaines. Je ne vais pas remplacer un fer fiable par un gadget dont je ne connais ni la marque ni la tenue.",
+  "objection": "Un fer sans fil se refroidit dès qu'on le retire du socle : est-ce qu'il garde assez la chaleur pour un pagne épais ou un jean, ou est-ce que je vais devoir le reposer toutes les trente secondes le matin quand je suis pressée ? Et rien ne dit la marque ni la garantie.",
+  "would_change_my_mind": "Le voir fonctionner devant moi sur un jean ou un pagne lors de la livraison, avec le droit de refuser et de ne pas payer s'il ne chauffe pas assez, plus une garantie écrite de quelques mois.",
+  "price_too_cheap": 8,
+  "price_cheap": 15,
+  "price_expensive": 30,
+  "price_too_expensive": 45
+}

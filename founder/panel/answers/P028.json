@@ -1,0 +1,13 @@
+{
+  "id": "P028",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "need",
+  "reason": "Mon fer à fil marche encore et c'est la domestique qui repasse pour toute la famille, pas moi. Mettre 15 $ plus la livraison pour enlever un fil, avec ce que je gagne, ce n'est pas une priorité.",
+  "objection": "Je n'ai pas besoin d'un deuxième fer, et je ne paie pas un appareil que je n'ai pas touché : au marché à Gambela je le vois, je l'essaie et je marchande, sur WhatsApp je ne sais pas si le socle tient avec les coupures de la SNEL.",
+  "would_change_my_mind": "Que mon vieux fer tombe en panne, et pouvoir voir et essayer celui-ci au marché à un prix proche de 10 $.",
+  "price_too_cheap": 5,
+  "price_cheap": 8,
+  "price_expensive": 13,
+  "price_too_expensive": 18
+}

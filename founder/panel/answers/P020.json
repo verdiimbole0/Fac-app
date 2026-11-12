@@ -1,0 +1,13 @@
+{
+  "id": "P020",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "J'achète mes appareils au marché de Gambela où je touche, j'essaie et je marchande ; un fer que je vois seulement en photo sur WhatsApp, à 15 $ plus une livraison qu'on ne me dit pas, ça ne me convainc pas. Mon fer à fil marche encore et sans courant ce fer-là ne fait rien de plus.",
+  "objection": "Combien coûte la livraison en plus, et si le socle grille avec les coupures et les retours de courant SNEL, qui va me rembourser ? Je ne connais pas ce vendeur.",
+  "would_change_my_mind": "Qu'un voisin du groupe WhatsApp de l'église l'achète et me montre qu'il tient après un mois, avec la livraison gratuite ou presque dans ma commune et le paiement seulement après avoir vu le fer chauffer devant moi.",
+  "price_too_cheap": 5,
+  "price_cheap": 9,
+  "price_expensive": 14,
+  "price_too_expensive": 20
+}

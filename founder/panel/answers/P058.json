@@ -1,0 +1,13 @@
+{
+  "id": "P058",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Mon vieux fer à fil marche encore très bien, je repasse les uniformes le dimanche soir sans problème. Je ne vais pas mettre 15 $ plus la livraison pour un fer alors que le mien n'est pas cassé.",
+  "objection": "Ces fers sans fil, c'est sûrement de la marchandise chinoise qui va lâcher après quelques semaines, et avec les coupures de la SNEL il faut reposer le fer sur le socle tout le temps, donc je ne vois pas ce que je gagne.",
+  "would_change_my_mind": "Que mon vieux fer tombe en panne, et qu'une voisine ou une collègue me montre le sien qui tient depuis des mois.",
+  "price_too_cheap": 5,
+  "price_cheap": 10,
+  "price_expensive": 18,
+  "price_too_expensive": 25
+}

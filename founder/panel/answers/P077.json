@@ -1,0 +1,13 @@
+{
+  "id": "P077",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Mon vieux fer à fil marche encore très bien, je ne vais pas dépenser 15 $ plus la livraison pour un fer alors que le mien n'est pas cassé. Le fil ne me gêne pas au point de payer pour ça.",
+  "objection": "Je ne connais pas ce vendeur : si le fer ne chauffe pas bien ou tombe en panne après deux semaines avec les coupures de la SNEL, qui va me rembourser ?",
+  "would_change_my_mind": "Que mon vieux fer casse, et qu'un ami de mon groupe WhatsApp d'église me dise qu'il a acheté chez eux et que le fer tient depuis des mois.",
+  "price_too_cheap": 5,
+  "price_cheap": 9,
+  "price_expensive": 15,
+  "price_too_expensive": 22
+}

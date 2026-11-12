@@ -1,0 +1,13 @@
+{
+  "id": "P070",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "need",
+  "reason": "J'ai déjà un fer qui marche, et le vrai problème chez moi c'est la SNEL coupée, pas le fil. Sans fil ou pas, je dois quand même attendre le courant pour repasser, donc 15 $ plus la livraison pour ça, non.",
+  "objection": "Il faut toujours le courant pour chauffer le socle, donc ça ne règle rien pendant les coupures, et je ne sais même pas combien coûte la livraison jusque chez moi.",
+  "would_change_my_mind": "Si mon fer actuel tombe en panne et qu'ils livrent gratuitement ou presque dans ma commune, avec la possibilité de l'essayer à la livraison avant de payer.",
+  "price_too_cheap": 5,
+  "price_cheap": 8,
+  "price_expensive": 13,
+  "price_too_expensive": 20
+}

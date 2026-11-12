@@ -1,0 +1,13 @@
+{
+  "id": "P039",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "15 $ plus une livraison que je ne connais pas encore, c'est une grosse partie de mon mois, et je ne paie pas ça pour un fer que je n'ai pas touché. Mon fer avec fil marche déjà ; sans fil, il me faut quand même le courant de la SNEL le matin, donc ça ne règle pas mon vrai problème.",
+  "objection": "Je ne peux pas le voir ni le tester avant, ni marchander. Si le socle lâche ou si le fer ne garde pas la chaleur, à qui je vais me plaindre sur WhatsApp ? Et la livraison s'ajoute en plus.",
+  "would_change_my_mind": "Le voir et l'essayer moi-même au marché ou chez un voisin qui l'a déjà, à un prix autour de 10 $ livraison comprise, avec une garantie d'échange si ça ne chauffe pas bien.",
+  "price_too_cheap": 4,
+  "price_cheap": 8,
+  "price_expensive": 12,
+  "price_too_expensive": 16
+}

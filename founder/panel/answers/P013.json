@@ -1,0 +1,13 @@
+{
+  "id": "P013",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "J'ai déjà un fer qui marche, et 15 dollars plus la moto, c'est presque une semaine de dépenses pour la maison. Acheter ça chez un vendeur WhatsApp que je ne connais pas, sans le toucher ni marchander, non, je préfère Zando.",
+  "objection": "Je ne connais pas ce vendeur : si le fer ne chauffe pas une fois branché, ou si le socle lâche après deux semaines avec les coupures de la SNEL, à qui je vais me plaindre ?",
+  "would_change_my_mind": "Que je puisse le brancher et l'essayer devant le livreur avant de payer, avec une garantie d'échange, et qu'un voisin ou quelqu'un de l'église l'ait déjà acheté et en soit content.",
+  "price_too_cheap": 5,
+  "price_cheap": 8,
+  "price_expensive": 12,
+  "price_too_expensive": 18
+}

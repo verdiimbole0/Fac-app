@@ -1,0 +1,13 @@
+{
+  "id": "P050",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "quality",
+  "reason": "J'ai déjà un fer avec fil qui marche, et un fer sans fil à 15 $ plus la livraison, ça sent le produit chinois qui va lâcher après deux mois. Avec les coupures de la SNEL, il faut de toute façon le courant, alors le sans-fil ne me fait pas gagner grand-chose.",
+  "objection": "Le fer sans fil refroidit vite quand on l'enlève du socle, et si le socle grille je n'ai plus rien. Personne ne me dit combien de temps ça tient, ni s'il y a une garantie.",
+  "would_change_my_mind": "Une garantie claire (échange si ça tombe en panne dans les 3 mois) et le voir chauffer devant moi à la livraison avant de payer, avec un prix négocié à 10-12 $ livraison comprise.",
+  "price_too_cheap": 6,
+  "price_cheap": 10,
+  "price_expensive": 15,
+  "price_too_expensive": 20
+}

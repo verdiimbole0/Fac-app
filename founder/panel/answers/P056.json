@@ -1,0 +1,13 @@
+{
+  "id": "P056",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Mon fer à fil marche encore, je ne vais pas mettre 15 $ plus la livraison dans un nouveau fer tant que l'ancien ne m'a pas lâchée. Le fil ne me gêne pas assez pour ça.",
+  "objection": "Un fer qui chauffe sur un socle puis qu'on enlève, j'ai peur qu'il refroidisse vite sur les pagnes et les jeans, et avec les coupures de la SNEL je devrai le reposer tout le temps sur le socle.",
+  "would_change_my_mind": "Que mon vieux fer casse, et voir chez une voisine que celui-ci garde bien la chaleur pour les uniformes et les pagnes.",
+  "price_too_cheap": 4,
+  "price_cheap": 7,
+  "price_expensive": 12,
+  "price_too_expensive": 18
+}

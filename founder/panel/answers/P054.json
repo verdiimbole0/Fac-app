@@ -1,0 +1,13 @@
+{
+  "id": "P054",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "15 $ plus la livraison, c'est trop pour moi. Au marché de Gambela je trouve un fer simple pour beaucoup moins, je le touche et je marchande. Et sans fil ou pas, il faut quand même le courant de la SNEL pour chauffer.",
+  "objection": "Je ne peux pas voir ni toucher le fer avant de payer, et si le socle tombe en panne après deux semaines avec les coupures et les variations de courant, je fais comment avec un vendeur WhatsApp que je ne connais pas ?",
+  "would_change_my_mind": "Une voisine ou quelqu'un de mon groupe d'église qui l'utilise depuis des mois sans problème, et un prix autour de 10 $ livraison comprise.",
+  "price_too_cheap": 4,
+  "price_cheap": 7,
+  "price_expensive": 11,
+  "price_too_expensive": 15
+}
