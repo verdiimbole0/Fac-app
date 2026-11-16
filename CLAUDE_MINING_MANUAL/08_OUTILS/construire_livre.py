@@ -29,6 +29,7 @@ COURT = {  # auteur abrégé pour les citations dans le texte
     "Committee for Mineral Reserves International Reporting Standards": "CRIRSCO",
     "Global Reporting Initiative": "GRI", "République démocratique du Congo": "RDC",
     "Intergovernmental Forum on Mining, Minerals, Metals and Sustainable Development": "IGF",
+    "Organisation pour l'harmonisation en Afrique du droit des affaires": "OHADA",
 }
 
 def _parse(s):

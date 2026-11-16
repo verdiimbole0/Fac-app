@@ -197,7 +197,7 @@ def eau():
             cu = round(abs(R.gauss(0.05 * f * f, 0.03)), 3); co = round(abs(R.gauss(0.02 * f * f, 0.015)), 3); mes = round(abs(R.gauss(25 * f, 10)), 0)
             if s.startswith("ST-02") and mois in ("2026-02", "2026-03"): cu = round(cu * 4, 3)
             rows.append([mois, s, ph, so4, cu, co, mes])
-    anomalies.append("eau: dépassements Cu au point de rejet ST-02 en février-mars 2026 (limites fictives de l'exercice : Cu 0,5 mg/L)")
+    anomalies.append("eau: hausse du Cu au point de rejet ST-02 en février 2026 et dépassement en mars 2026 (0,548 mg/L ; limite fictive de l'exercice : 0,5 mg/L)")
     wcsv("MCC_suivi_qualite_eau.csv", ["mois", "station", "pH", "SO4_mg_L", "Cu_mg_L", "Co_mg_L", "MES_mg_L"], rows)
 
 # 9. RH ---------------------------------------------------------------------------
@@ -208,7 +208,7 @@ def rh():
     for i in range(120):
         p = R.choice(postes)
         for f in R.sample(forms, 3):
-            exp = dt.date(2026, 1, 1) + dt.timedelta(days=R.randint(-120, 400))
+            exp = dt.date(2026, 11, 16) + dt.timedelta(days=R.randint(-60, 700))
             rows.append([f"MAT-{3000+i}", p, f, (exp - dt.timedelta(days=730)).isoformat(), exp.isoformat()])
     wcsv("MCC_matrice_formations.csv", ["matricule", "poste", "formation", "date_realisation", "date_expiration"], rows)
 
