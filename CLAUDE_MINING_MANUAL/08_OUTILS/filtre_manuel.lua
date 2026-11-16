@@ -101,9 +101,20 @@ function Div(el)
   end
 end
 
+local TOC = '<w:sdt><w:sdtPr><w:docPartObj><w:docPartGallery w:val="Table of Contents" /><w:docPartUnique /></w:docPartObj></w:sdtPr><w:sdtContent>'
+  .. '<w:p><w:pPr><w:pStyle w:val="TOCHeading" /></w:pPr><w:r><w:t xml:space="preserve">Sommaire</w:t></w:r></w:p>'
+  .. '<w:p><w:r><w:fldChar w:fldCharType="begin" w:dirty="true" /><w:instrText xml:space="preserve">TOC \\o &quot;1-2&quot; \\h \\z \\u</w:instrText>'
+  .. '<w:fldChar w:fldCharType="separate" /><w:fldChar w:fldCharType="end" /></w:r></w:p></w:sdtContent></w:sdt>'
+
 function Para(el)
+  if #el.content == 1 and el.content[1].t == "Str" and el.content[1].text == "\\sommaire" then
+    return pandoc.RawBlock("openxml", TOC)
+  end
   if #el.content == 1 and el.content[1].t == "Str" and el.content[1].text == "\\newpage" then
     return pandoc.RawBlock("openxml", PAGEBREAK)
+  end
+  if #el.content == 1 and el.content[1].t == "RawInline" and el.content[1].text:match("\\sommaire") then
+    return pandoc.RawBlock("openxml", TOC)
   end
   if #el.content == 1 and el.content[1].t == "RawInline" and el.content[1].text:match("\\newpage") then
     return pandoc.RawBlock("openxml", PAGEBREAK)
@@ -111,6 +122,9 @@ function Para(el)
 end
 
 function RawBlock(el)
+  if el.format == "tex" and el.text:match("\\sommaire") then
+    return pandoc.RawBlock("openxml", TOC)
+  end
   if el.format == "tex" and el.text:match("\\newpage") then
     return pandoc.RawBlock("openxml", PAGEBREAK)
   end

@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="763.865643pt" height="346.617445pt" viewBox="0 0 763.865643 346.617445" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-16T09:21:18.527917</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 346.617445 
+L 763.865643 346.617445 
+L 763.865643 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 67.242656 299.515332 
+L 442.525571 299.515332 
+L 442.525571 34.987109 
+L 67.242656 34.987109 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 67.242656 287.491322 
+L 409.853882 287.491322 
+L 409.853882 264.969007 
+L 67.242656 264.969007 
+z
+" clip-path="url(#pfc83633ef0)" style="fill: #b8c2cc"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 67.242656 251.165007 
+L 108.744532 251.165007 
+L 108.744532 228.642692 
+L 67.242656 228.642692 
+z
+" clip-path="url(#pfc83633ef0)" style="fill: #0b2545"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 67.242656 214.838693 
+L 124.638867 214.838693 
+L 124.638867 192.316378 
+L 67.242656 192.316378 
+z
+" clip-path="url(#pfc83633ef0)" style="fill: #0b2545"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 67.242656 178.512378 
+L 146.714332 178.512378 
+L 146.714332 155.990063 
+L 67.242656 155.990063 
+z
+" clip-path="url(#pfc83633ef0)" style="fill: #0b2545"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 67.242656 142.186064 
+L 186.45017 142.186064 
+L 186.45017 119.663749 
+L 67.242656 119.663749 
+z
+" clip-path="url(#pfc83633ef0)" style="fill: #0b2545"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 67.242656 105.859749 
+L 208.525636 105.859749 
+L 208.525636 83.337434 
+L 67.242656 83.337434 
+z
+" clip-path="url(#pfc83633ef0)" style="fill: #c9a227"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 67.242656 69.533435 
+L 301.242591 69.533435 
+L 301.242591 47.011119 
+L 67.242656 47.011119 
+z
+" clip-path="url(#pfc83633ef0)" style="fill: #0b2545"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <defs>
+       <path id="m44946ba326" d="M 0 0 
+L 0 3.5 
+" style="stroke: #222831; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#m44946ba326" x="67.242656" y="299.515332" style="fill: #222831; stroke: #222831; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_1">
+      <text style="font-size: 8.5px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: middle; fill: #222831" x="67.242656" y="314.749707" transform="rotate(-0 67.242656 314.749707)">0</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_2">
+      <g>
+       <use xlink:href="#m44946ba326" x="111.393587" y="299.515332" style="fill: #222831; stroke: #222831; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_2">
+      <text style="font-size: 8.5px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: middle; fill: #222831" x="111.393587" y="314.749707" transform="rotate(-0 111.393587 314.749707)">1</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_3">
+      <g>
+       <use xlink:href="#m44946ba326" x="155.544519" y="299.515332" style="fill: #222831; stroke: #222831; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_3">
+      <text style="font-size: 8.5px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: middle; fill: #222831" x="155.544519" y="314.749707" transform="rotate(-0 155.544519 314.749707)">2</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_4">
+      <g>
+       <use xlink:href="#m44946ba326" x="199.69545" y="299.515332" style="fill: #222831; stroke: #222831; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_4">
+      <text style="font-size: 8.5px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: middle; fill: #222831" x="199.69545" y="314.749707" transform="rotate(-0 199.69545 314.749707)">3</text>
+     </g>
+    </g>
+    <g id="xtick_5">
+     <g id="line2d_5">
+      <g>
+       <use xlink:href="#m44946ba326" x="243.846381" y="299.515332" style="fill: #222831; stroke: #222831; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_5">
+      <text style="font-size: 8.5px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: middle; fill: #222831" x="243.846381" y="314.749707" transform="rotate(-0 243.846381 314.749707)">4</text>
+     </g>
+    </g>
+    <g id="xtick_6">
+     <g id="line2d_6">
+      <g>
+       <use xlink:href="#m44946ba326" x="287.997312" y="299.515332" style="fill: #222831; stroke: #222831; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_6">
+      <text style="font-size: 8.5px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: middle; fill: #222831" x="287.997312" y="314.749707" transform="rotate(-0 287.997312 314.749707)">5</text>
+     </g>
+    </g>
+    <g id="xtick_7">
+     <g id="line2d_7">
+      <g>
+       <use xlink:href="#m44946ba326" x="332.148243" y="299.515332" style="fill: #222831; stroke: #222831; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_7">
+      <text style="font-size: 8.5px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: middle; fill: #222831" x="332.148243" y="314.749707" transform="rotate(-0 332.148243 314.749707)">6</text>
+     </g>
+    </g>
+    <g id="xtick_8">
+     <g id="line2d_8">
+      <g>
+       <use xlink:href="#m44946ba326" x="376.299174" y="299.515332" style="fill: #222831; stroke: #222831; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_8">
+      <text style="font-size: 8.5px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: middle; fill: #222831" x="376.299174" y="314.749707" transform="rotate(-0 376.299174 314.749707)">7</text>
+     </g>
+    </g>
+    <g id="xtick_9">
+     <g id="line2d_9">
+      <g>
+       <use xlink:href="#m44946ba326" x="420.450105" y="299.515332" style="fill: #222831; stroke: #222831; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_9">
+      <text style="font-size: 8.5px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: middle; fill: #222831" x="420.450105" y="314.749707" transform="rotate(-0 420.450105 314.749707)">8</text>
+     </g>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_10">
+      <defs>
+       <path id="m90aa3ef67f" d="M 0 0 
+L -3.5 0 
+" style="stroke: #222831; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#m90aa3ef67f" x="67.242656" y="276.230164" style="fill: #222831; stroke: #222831; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_10">
+      <text style="font-size: 8.5px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: end; fill: #222831" x="60.242656" y="280.347352" transform="rotate(-0 60.242656 280.347352)">Autres</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_11">
+      <g>
+       <use xlink:href="#m90aa3ef67f" x="67.242656" y="239.90385" style="fill: #222831; stroke: #222831; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_11">
+      <text style="font-size: 8.5px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: end; fill: #222831" x="60.242656" y="244.021037" transform="rotate(-0 60.242656 244.021037)">Zambie</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_12">
+      <g>
+       <use xlink:href="#m90aa3ef67f" x="67.242656" y="203.577535" style="fill: #222831; stroke: #222831; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_12">
+      <text style="font-size: 8.5px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: end; fill: #222831" x="60.242656" y="207.694723" transform="rotate(-0 60.242656 207.694723)">Russie</text>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_13">
+      <g>
+       <use xlink:href="#m90aa3ef67f" x="67.242656" y="167.251221" style="fill: #222831; stroke: #222831; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_13">
+      <text style="font-size: 8.5px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: end; fill: #222831" x="60.242656" y="171.368408" transform="rotate(-0 60.242656 171.368408)">Chine</text>
+     </g>
+    </g>
+    <g id="ytick_5">
+     <g id="line2d_14">
+      <g>
+       <use xlink:href="#m90aa3ef67f" x="67.242656" y="130.924906" style="fill: #222831; stroke: #222831; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_14">
+      <text style="font-size: 8.5px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: end; fill: #222831" x="60.242656" y="135.042094" transform="rotate(-0 60.242656 135.042094)">Pérou</text>
+     </g>
+    </g>
+    <g id="ytick_6">
+     <g id="line2d_15">
+      <g>
+       <use xlink:href="#m90aa3ef67f" x="67.242656" y="94.598592" style="fill: #222831; stroke: #222831; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_15">
+      <text style="font-size: 8.5px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: end; fill: #222831" x="60.242656" y="98.715779" transform="rotate(-0 60.242656 98.715779)">Congo (RDC)</text>
+     </g>
+    </g>
+    <g id="ytick_7">
+     <g id="line2d_16">
+      <g>
+       <use xlink:href="#m90aa3ef67f" x="67.242656" y="58.272277" style="fill: #222831; stroke: #222831; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_16">
+      <text style="font-size: 8.5px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: end; fill: #222831" x="60.242656" y="62.389465" transform="rotate(-0 60.242656 62.389465)">Chili</text>
+     </g>
+    </g>
+   </g>
+   <g id="patch_10">
+    <path d="M 67.242656 299.515332 
+L 67.242656 34.987109 
+" style="fill: none; stroke: #5b6b7f; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 67.242656 299.515332 
+L 442.525571 299.515332 
+" style="fill: none; stroke: #5b6b7f; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_17">
+    <text style="font-size: 8.5px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: start" x="414.268975" y="279.322205" transform="rotate(-0 414.268975 279.322205)">7,8</text>
+   </g>
+   <g id="text_18">
+    <text style="font-size: 8.5px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: start" x="113.159625" y="242.995891" transform="rotate(-0 113.159625 242.995891)">0,9</text>
+   </g>
+   <g id="text_19">
+    <text style="font-size: 8.5px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: start" x="129.05396" y="206.669576" transform="rotate(-0 129.05396 206.669576)">1,3</text>
+   </g>
+   <g id="text_20">
+    <text style="font-size: 8.5px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: start" x="151.129425" y="170.343262" transform="rotate(-0 151.129425 170.343262)">1,8</text>
+   </g>
+   <g id="text_21">
+    <text style="font-size: 8.5px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: start" x="190.865263" y="134.016947" transform="rotate(-0 190.865263 134.016947)">2,7</text>
+   </g>
+   <g id="text_22">
+    <text style="font-size: 8.5px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: start" x="212.940729" y="97.690633" transform="rotate(-0 212.940729 97.690633)">3,2</text>
+   </g>
+   <g id="text_23">
+    <text style="font-size: 8.5px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: start" x="305.657684" y="61.364318" transform="rotate(-0 305.657684 61.364318)">5,3</text>
+   </g>
+   <g id="text_24">
+    <text style="font-weight: 700; font-size: 10px; font-family: 'Inter', 'DejaVu Sans'; fill: #0b2545" transform="translate(138.559895 16.8875)">Production minière de cuivre, 2025 (estimation)</text>
+    <text style="font-weight: 700; font-size: 10px; font-family: 'Inter', 'DejaVu Sans'; fill: #0b2545" transform="translate(158.202864 28.987109)">en millions de tonnes de cuivre contenu</text>
+   </g>
+  </g>
+  <g id="axes_2">
+   <g id="patch_12">
+    <path d="M 513.58712 172.610475 
+C 514.635399 193.280775 521.725713 213.196236 533.975712 229.878494 
+C 546.225711 246.560752 563.105256 259.287853 582.513785 266.475983 
+C 601.922313 273.664112 623.019889 275.002192 643.181039 270.323706 
+C 663.342189 265.64522 681.694406 255.152636 695.953861 240.151699 
+C 710.213315 225.150761 719.762907 206.290658 723.414243 185.918424 
+C 727.065579 165.546189 724.660642 144.543464 716.498712 125.523919 
+C 708.336782 106.504374 694.771081 90.291111 677.489783 78.901777 
+C 660.208485 67.512443 639.959466 61.439932 619.262601 61.439932 
+L 619.262601 105.880673 
+C 631.266783 105.880673 643.011214 109.40273 653.034367 116.008543 
+C 663.05752 122.614357 670.925626 132.01805 675.659546 143.049386 
+C 680.393465 154.080722 681.788328 166.262302 679.670553 178.078198 
+C 677.552779 189.894094 672.014015 200.832954 663.743532 209.533498 
+C 655.473048 218.234042 644.828762 224.31974 633.135295 227.033262 
+C 621.441828 229.746784 609.205234 228.970698 597.948288 224.801583 
+C 586.691341 220.632467 576.901205 213.250749 569.796205 203.575039 
+C 562.691206 193.89933 558.578824 182.348362 557.970822 170.359588 
+z
+" style="fill: #c9a227; stroke: #ffffff; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_13">
+    <path d="M 548.72706 88.379386 
+C 536.955641 98.906635 527.688925 111.936846 521.60862 126.511452 
+C 515.528314 141.086058 512.787265 156.83868 513.58712 172.610475 
+L 557.970822 170.359588 
+C 557.506907 161.211947 559.096715 152.075427 562.623292 143.622155 
+C 566.149869 135.168884 571.524564 127.611361 578.351987 121.505557 
+z
+" style="fill: #0b2545; stroke: #ffffff; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_14">
+    <path d="M 619.262601 61.439932 
+C 606.359311 61.439932 593.564181 63.800194 581.510129 68.403966 
+C 569.456076 73.007739 558.345185 79.777841 548.72706 88.379386 
+L 578.351987 121.505557 
+C 583.9305 116.51666 590.374817 112.590001 597.366167 109.919813 
+C 604.357518 107.249625 611.778693 105.880673 619.262601 105.880673 
+z
+" style="fill: #b8c2cc; stroke: #ffffff; stroke-linejoin: miter"/>
+   </g>
+   <g id="matplotlib.axis_3"/>
+   <g id="matplotlib.axis_4"/>
+   <g id="text_25">
+    <text style="font-size: 8.5px; font-family: 'Inter', 'DejaVu Sans'" transform="translate(703.622986 245.391453)">Congo (RDC)</text>
+    <text style="font-size: 8.5px; font-family: 'Inter', 'DejaVu Sans'" transform="translate(703.622986 255.676121)">230 000 t</text>
+   </g>
+   <g id="text_26">
+    <text style="font-size: 8.5px; font-family: 'Inter', 'DejaVu Sans'" transform="translate(472.759159 120.387183)">Indonésie</text>
+    <text style="font-size: 8.5px; font-family: 'Inter', 'DejaVu Sans'" transform="translate(477.211034 130.671851)">44 000 t</text>
+   </g>
+   <g id="text_27">
+    <text style="font-size: 8.5px; font-family: 'Inter', 'DejaVu Sans'" transform="translate(529.971522 56.468948)">Autres pays</text>
+    <text style="font-size: 8.5px; font-family: 'Inter', 'DejaVu Sans'" transform="translate(543.562225 66.753616)">36 000 t</text>
+   </g>
+   <g id="text_28">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Inter', 'DejaVu Sans'; fill: #0b2545" transform="translate(598.991039 164.356689)">≈ 73 %</text>
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Inter', 'DejaVu Sans'; fill: #0b2545" transform="translate(606.551039 178.876221)">RDC</text>
+   </g>
+   <g id="text_29">
+    <text style="font-weight: 700; font-size: 10px; font-family: 'Inter', 'DejaVu Sans'; fill: #0b2545" transform="translate(502.867289 16.8875)">Production minière de cobalt, 2025 (estimation)</text>
+    <text style="font-weight: 700; font-size: 10px; font-family: 'Inter', 'DejaVu Sans'; fill: #0b2545" transform="translate(558.776664 28.987109)">total mondial ≈ 310 000 t</text>
+   </g>
+  </g>
+  <g id="text_30">
+   <text style="font-style: italic; font-size: 7.8px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: middle; fill: #5b6b7f" x="392.353906" y="337.536" transform="rotate(-0 392.353906 337.536)">Source des données : U.S. Geological Survey (2026), Mineral Commodity Summaries 2026, fiches « Copper » et « Cobalt ». Graphique réalisé pour cet ouvrage.</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pfc83633ef0">
+   <rect x="67.242656" y="34.987109" width="375.282915" height="264.528223"/>
+  </clipPath>
+ </defs>
+</svg>

@@ -26,6 +26,21 @@ def main(src, dst):
     url = uno.systemPathToFileUrl(os.path.abspath(src))
     doc = desktop.loadComponentFromURL(url, "_blank", 0, (prop("Hidden", True),))
     idx = doc.getDocumentIndexes()
+    if idx.getCount() == 0:
+        # le champ TOC de Word n'est pas converti : on insère un index natif après le titre « Sommaire »
+        text = doc.getText(); enum = text.createEnumeration(); cible = None
+        while enum.hasMoreElements():
+            par = enum.nextElement()
+            if par.supportsService("com.sun.star.text.Paragraph") and par.getString().strip() == "Sommaire":
+                cible = par; break
+        if cible is not None:
+            toc = doc.createInstance("com.sun.star.text.ContentIndex")
+            toc.CreateFromOutline = True; toc.Level = 2; toc.Title = ""
+            cur = text.createTextCursorByRange(cible.getEnd())
+            text.insertControlCharacter(cur, 0, False)  # PARAGRAPH_BREAK
+            text.insertTextContent(cur, toc, False)
+            cible.setString("Sommaire")
+        idx = doc.getDocumentIndexes()
     for i in range(idx.getCount()):
         idx.getByIndex(i).update()
     doc.getTextFields().refresh()

@@ -67,12 +67,18 @@ def add_shading(style, fill):
     if bdr is not None: bdr.addnext(shd)
     else: p.insert(0, shd)
 
+def find(doc, name):
+    for s in doc.styles:
+        if s.name == name or s.name.lower() == name.lower():
+            return s
+    raise KeyError(name)
+
 def get_or_add(doc, name, base="Normal", kind=WD_STYLE_TYPE.PARAGRAPH):
     try:
-        return doc.styles[name]
+        return find(doc, name)
     except KeyError:
         s = doc.styles.add_style(name, kind)
-        if kind == WD_STYLE_TYPE.PARAGRAPH: s.base_style = doc.styles[base]
+        if kind == WD_STYLE_TYPE.PARAGRAPH: s.base_style = find(doc, base)
         s.quick_style = True
         return s
 
@@ -114,7 +120,7 @@ def main(out):
             rr.font.size = Pt(9); rr.font.color.rgb = rgb(NAVY); rr.font.name = HEAD
 
     # --- Styles de base
-    normal = st["Normal"]; set_font(normal, BODY, 10.5, color=INK)
+    normal = find(doc, "Normal"); set_font(normal, BODY, 10.5, color=INK)
     normal.paragraph_format.space_after = Pt(5); normal.paragraph_format.line_spacing = 1.12
     for name in ("Body Text", "First Paragraph", "Compact"):
         s = get_or_add(doc, name); set_font(s, BODY, 10.5, color=INK)
@@ -129,21 +135,21 @@ def main(out):
         "Heading 5": (HEAD, 11, True, INK), "Heading 6": (HEAD, 10.5, True, INK),
     }
     for name, (font, size, bold, color) in heads.items():
-        s = st[name]; set_font(s, font, size, bold, color, italic=False)
+        s = find(doc, name); set_font(s, font, size, bold, color, italic=False)
         s.paragraph_format.keep_with_next = True
-    st["Heading 1"].paragraph_format.space_before = Pt(160)
-    st["Heading 1"].paragraph_format.space_after = Pt(24)
-    page_break_before(st["Heading 1"])
-    add_border(st["Heading 1"], GOLD, sides=("bottom",), sz=24, space=8)
-    st["Heading 2"].paragraph_format.space_before = Pt(0)
-    st["Heading 2"].paragraph_format.space_after = Pt(18)
-    page_break_before(st["Heading 2"])
-    add_border(st["Heading 2"], GOLD, sides=("bottom",), sz=12, space=6)
-    st["Heading 3"].paragraph_format.space_before = Pt(16)
-    st["Heading 3"].paragraph_format.space_after = Pt(6)
-    add_border(st["Heading 3"], TURQ, sides=("left",), sz=24, space=6)
-    st["Heading 4"].paragraph_format.space_before = Pt(10)
-    st["Heading 4"].paragraph_format.space_after = Pt(4)
+    find(doc, "Heading 1").paragraph_format.space_before = Pt(160)
+    find(doc, "Heading 1").paragraph_format.space_after = Pt(24)
+    page_break_before(find(doc, "Heading 1"))
+    add_border(find(doc, "Heading 1"), GOLD, sides=("bottom",), sz=24, space=8)
+    find(doc, "Heading 2").paragraph_format.space_before = Pt(0)
+    find(doc, "Heading 2").paragraph_format.space_after = Pt(18)
+    page_break_before(find(doc, "Heading 2"))
+    add_border(find(doc, "Heading 2"), GOLD, sides=("bottom",), sz=12, space=6)
+    find(doc, "Heading 3").paragraph_format.space_before = Pt(16)
+    find(doc, "Heading 3").paragraph_format.space_after = Pt(6)
+    add_border(find(doc, "Heading 3"), TURQ, sides=("left",), sz=24, space=6)
+    find(doc, "Heading 4").paragraph_format.space_before = Pt(10)
+    find(doc, "Heading 4").paragraph_format.space_after = Pt(4)
 
     # Code / prompts
     sc = get_or_add(doc, "Source Code"); set_font(sc, MONO, 8.5, color="1B263B")
@@ -204,10 +210,7 @@ def main(out):
 
     # Sommaire
     for i in (1, 2, 3):
-        try:
-            s = st[f"TOC {i}"]
-        except KeyError:
-            s = get_or_add(doc, f"TOC {i}")
+        s = get_or_add(doc, f"TOC {i}")
         set_font(s, HEAD, 11 if i == 1 else 10, i == 1, NAVY if i == 1 else INK)
         s.paragraph_format.space_before = Pt(6 if i == 1 else 0); s.paragraph_format.space_after = Pt(1)
     th = get_or_add(doc, "TOC Heading"); set_font(th, HEAD, 20, True, NAVY)

@@ -552,3 +552,24 @@ ALL = [f01_1, f01_2, f02_1, f02_2, f02_3, f03_1, f03_2, f03_3, f03_4, f04_1, f04
 if __name__ == "__main__":
     for f in ALL:
         print(f())
+
+def f01_3():
+    fig, (a1, a2) = plt.subplots(1, 2, figsize=(11, 4.6), gridspec_kw=dict(width_ratios=[1.25, 1]))
+    pays = ["Chili", "Congo (RDC)", "Pérou", "Chine", "Russie", "Zambie", "Autres"]
+    val = [5.3, 3.2, 2.7, 1.8, 1.3, 0.94, 23 - (5.3 + 3.2 + 2.7 + 1.8 + 1.3 + 0.94)]
+    cols = [NAVY, GOLD, NAVY, NAVY, NAVY, NAVY, "#B8C2CC"]
+    a1.barh(pays[::-1], val[::-1], color=cols[::-1], height=0.62)
+    for i, v in enumerate(val[::-1]): a1.text(v + 0.1, i, f"{v:.1f}".replace(".", ","), va="center", fontsize=8.5)
+    a1.set_title("Production minière de cuivre, 2025 (estimation)\nen millions de tonnes de cuivre contenu", fontsize=10)
+    a1.set_xlim(0, 8.5); style_axes(a1, grid=False); a1.tick_params(labelsize=8.5)
+    a2.pie([230, 44, 310 - 274], labels=["Congo (RDC)\n230 000 t", "Indonésie\n44 000 t", "Autres pays\n36 000 t"],
+           colors=[GOLD, NAVY, "#B8C2CC"], startangle=90, counterclock=False, wedgeprops=dict(width=0.42, edgecolor="white"),
+           textprops=dict(fontsize=8.5))
+    a2.text(0, 0, "≈ 73 %\nRDC", ha="center", va="center", fontsize=12, fontweight="bold", color=NAVY)
+    a2.set_title("Production minière de cobalt, 2025 (estimation)\ntotal mondial ≈ 310 000 t", fontsize=10)
+    fig.text(0.5, -0.03, "Source des données : U.S. Geological Survey (2026), Mineral Commodity Summaries 2026, fiches « Copper » et « Cobalt ». "
+             "Graphique réalisé pour cet ouvrage.", ha="center", fontsize=7.8, style="italic", color=MID)
+    fig.tight_layout()
+    return save(fig, "fig01_3_rdc_cuivre_cobalt", "GRAPHIQUES")
+
+ALL.append(f01_3)

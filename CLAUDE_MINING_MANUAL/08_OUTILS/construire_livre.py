@@ -13,12 +13,79 @@ from sources import SOURCES, CONSULTE  # noqa: E402
 
 TITRE = "CLAUDE_ET_IA_INDUSTRIE_MINIERE"
 
+COURT = {  # auteur abrégé pour les citations dans le texte
+    "Anthropic": "Anthropic", "Model Context Protocol": "Model Context Protocol",
+    "National Institute of Standards and Technology": "NIST",
+    "Organisation internationale de normalisation & Commission électrotechnique internationale": "ISO/IEC",
+    "Parlement européen & Conseil de l'Union européenne": "Règlement (UE) 2024/1689",
+    "UNESCO": "UNESCO", "OWASP Foundation": "OWASP",
+    "International Council on Mining and Metals": "ICMM", "Global Tailings Review": "Global Tailings Review",
+    "Programme des Nations Unies pour l'environnement": "PNUE",
+    "Initiative pour la transparence dans les industries extractives": "ITIE",
+    "Extractive Industries Transparency Initiative": "ITIE", "OCDE": "OCDE",
+    "Organisation internationale du Travail": "OIT", "Société financière internationale": "SFI",
+    "Banque mondiale": "Banque mondiale", "U.S. Geological Survey": "USGS",
+    "Agence internationale de l'énergie": "AIE", "Joint Ore Reserves Committee": "JORC",
+    "Committee for Mineral Reserves International Reporting Standards": "CRIRSCO",
+    "Global Reporting Initiative": "GRI", "République démocratique du Congo": "RDC",
+    "Intergovernmental Forum on Mining, Minerals, Metals and Sustainable Development": "IGF",
+}
+
+def _parse(s):
+    """Retourne (auteur_long, annee, date_complement, titre) depuis la chaîne APA."""
+    apa = re.sub(r"\(s\.d\.-[a-z]+\)", "(s.d.)", s["apa"])
+    m = re.match(r"^(.*?)\s\((s\.d\.|\d{4})(,[^)]*)?\)\.\s*(.*)$", apa)
+    auteur, annee, cpl, reste = m.group(1), m.group(2), m.group(3) or "", m.group(4)
+    return auteur.rstrip("."), annee, cpl, reste, apa
+
+def _court(auteur):
+    if auteur in COURT: return COURT[auteur]
+    noms = re.findall(r"([A-ZÀ-Ý][\w'’\-]+), [A-Z]", auteur)
+    if len(noms) >= 3 or "…" in auteur: return f"{noms[0]} et al."
+    if len(noms) == 2: return f"{noms[0]} et {noms[1]}"
+    return noms[0] if noms else auteur
+
+def etiquettes():
+    """Calcule pour chaque source l'étiquette de citation APA, avec suffixes a, b, c."""
+    groupes = {}
+    for s in SOURCES:
+        auteur, annee, cpl, reste, apa = _parse(s)
+        groupes.setdefault((auteur, annee), []).append((re.sub(r"[*_]", "", reste).lower(), s))
+    lab = {}
+    for (auteur, annee), lst in groupes.items():
+        lst.sort()
+        for i, (_, s) in enumerate(lst):
+            lettres = "abcdefghijklmnopqrstuvwxyz"
+            code = (lettres[i // 26 - 1] if i >= 26 else "") + lettres[i % 26]
+            suf = "" if len(lst) == 1 else ("-" if annee == "s.d." else "") + code
+            _, _, cpl, reste, apa = _parse(s)
+            s["_annee"] = annee + suf
+            s["_cite"] = f"{_court(auteur)}, {annee}{suf}"
+            s["_apa"] = f"{auteur}. ({annee}{suf}{cpl}). {reste}" if not auteur.endswith(".") else f"{auteur} ({annee}{suf}{cpl}). {reste}"
+            s["_apa"] = s["_apa"].replace("..", ".")
+    return {s["id"]: s for s in SOURCES}
+
+def citer(texte, index, fichier=""):
+    """Remplace [@ID] / [@ID, p. 3] / [@ID1; @ID2] par (Auteur, année). Signale les clés inconnues."""
+    def rep(m):
+        parts = []
+        for c in m.group(1).split(";"):
+            c = c.strip().lstrip("@")
+            cle, _, loc = c.partition(",")
+            cle = cle.strip()
+            if cle not in index:
+                raise SystemExit(f"Citation inconnue [{cle}] dans {fichier}")
+            index[cle]["_utilisee"] = True
+            parts.append(index[cle]["_cite"] + (f",{loc}" if loc else ""))
+        return "(" + " ; ".join(parts) + ")"
+    return re.sub(r"\[(@[A-Za-z0-9\-]+(?:,[^\]@;]*)?(?:;\s*@[A-Za-z0-9\-]+(?:,[^\]@;]*)?)*)\]", rep, texte)
+
 def sort_key(s):
     """Tri APA : auteur puis année puis titre (sans mise en forme)."""
-    return re.sub(r"[*_]", "", s["apa"]).lower()
+    return re.sub(r"[*_]", "", s.get("_apa", s["apa"])).lower()
 
 def apa_complete(s):
-    ref = s["apa"]
+    ref = s.get("_apa", s["apa"])
     if s.get("doi"):
         ref += f" https://doi.org/{s['doi']}"
     else:
@@ -28,6 +95,7 @@ def apa_complete(s):
     return ref
 
 def generer_sources():
+    etiquettes()
     d = ROOT / "05_BIBLIOGRAPHIE_WEBOGRAPHIE"; d.mkdir(exist_ok=True)
     biblio = sorted([s for s in SOURCES if s["cat"] == "B"], key=sort_key)
     web = sorted([s for s in SOURCES if s["cat"] == "W"], key=sort_key)
@@ -48,18 +116,18 @@ def generer_sources():
             f.write(f"- {'◆' if s['verif']=='D' else '◇'} {apa_complete(s)}\n")
     with open(d / "REGISTRE_SOURCES.csv", "w", encoding="utf-8", newline="") as f:
         w = csv.writer(f, delimiter=";")
-        w.writerow(["id", "categorie", "type", "reference_APA", "url", "doi", "date_consultation", "verification", "usage"])
+        w.writerow(["id", "categorie", "type", "citation_dans_le_texte", "reference_APA", "url", "doi", "date_consultation", "verification", "usage"])
         for s in SOURCES:
-            w.writerow([s["id"], "Bibliographie" if s["cat"] == "B" else "Webographie", s["type"], re.sub(r"[*]", "", s["apa"]),
+            w.writerow([s["id"], "Bibliographie" if s["cat"] == "B" else "Webographie", s["type"], "(" + s["_cite"] + ")", re.sub(r"[*]", "", s["_apa"]),
                         s["url"], s.get("doi", ""), CONSULTE,
                         "Consultation directe" if s["verif"] == "D" else "Recherche documentaire (accès direct indisponible)",
                         s.get("note", "")])
     with open(ROOT / "00_GESTION_PROJET" / "REGISTRE_SOURCES.md", "w", encoding="utf-8") as f:
         f.write("# Registre des sources vérifiées\n\n> Fichier généré automatiquement depuis `08_OUTILS/sources.py` — ne pas éditer à la main.\n\n")
         f.write(f"Date de consultation : {CONSULTE}. D = consultation directe ; R = recherche documentaire.\n\n")
-        f.write("| ID | Cat. | Vérif. | Référence | URL | Usage |\n|---|---|---|---|---|---|\n")
+        f.write("| ID | Cat. | Vérif. | Citation | Référence | URL | Usage |\n|---|---|---|---|---|---|---|\n")
         for s in SOURCES:
-            f.write(f"| {s['id']} | {s['cat']} | {s['verif']} | {s['apa']} | {s['url']} | {s.get('note','')} |\n")
+            f.write(f"| {s['id']} | {s['cat']} | {s['verif']} | ({s['_cite']}) | {s['_apa']} | {s['url']} | {s.get('note','')} |\n")
     print(f"Sources : {len(biblio)} bibliographie, {len(web)} webographie")
 
 def fichiers(partie=None):
@@ -76,11 +144,14 @@ def fichiers(partie=None):
 
 def assembler(files):
     TMP.mkdir(parents=True, exist_ok=True)
+    index = {s["id"]: s for s in SOURCES}
     parts = []
     for fp in files:
         txt = Path(fp).read_text(encoding="utf-8")
-        # chemins d'images relatifs à la racine du projet
+        txt = citer(txt, index, fp)
         parts.append(txt.strip() + "\n\n")
+    non = [s["id"] for s in SOURCES if not s.get("_utilisee")]
+    if non: print("Sources du registre non citées dans le texte :", ", ".join(non))
     combined = TMP / "manuscrit_complet.md"
     combined.write_text("".join(parts), encoding="utf-8")
     return combined
@@ -90,7 +161,7 @@ def pandoc_docx(md, docx):
     subprocess.run([sys.executable, str(ROOT / "08_OUTILS" / "creer_reference_docx.py"), str(ref)], check=True)
     cmd = ["pandoc", str(md), "-f", "markdown+fenced_divs+pipe_tables+grid_tables+implicit_figures+raw_attribute",
            "-o", str(docx), "--reference-doc", str(ref), "--lua-filter", str(ROOT / "08_OUTILS" / "filtre_manuel.lua"),
-           "--toc", "--toc-depth=2", "--resource-path", str(ROOT), "-M", "toc-title=Sommaire",
+           "--resource-path", str(ROOT), "-M", "toc-title=Sommaire",
            "-M", "lang=fr-FR", "-M", "title=Claude et l'intelligence artificielle au service de l'industrie minière"]
     subprocess.run(cmd, check=True, cwd=str(ROOT))
 
