@@ -101,7 +101,7 @@ def generer_sources():
     biblio = sorted([s for s in SOURCES if s["cat"] == "B"], key=sort_key)
     web = sorted([s for s in SOURCES if s["cat"] == "W"], key=sort_key)
     with open(d / "BIBLIOGRAPHIE_WEBOGRAPHIE.md", "w", encoding="utf-8") as f:
-        f.write("# Annexe I — Bibliographie et webographie vérifiées {#annexe-i}\n\n")
+        f.write("## Annexe I — Bibliographie et webographie vérifiées\n\n")
         f.write("Les références ci-dessous ont toutes été identifiées et contrôlées pendant la production de l'ouvrage "
                 f"(consultations du {CONSULTE}). Elles sont présentées selon les normes APA (7e édition), adaptées au français. "
                 "Le symbole ◆ signale une consultation directe du document ou de la page ; le symbole ◇ une référence dont "
@@ -109,10 +109,10 @@ def generer_sources():
                 "ayant été impossible depuis l'environnement de production (pare-feu, document payant ou norme commerciale). "
                 "Le registre complet, avec la méthode de vérification et l'usage de chaque source, figure dans le fichier "
                 "`REGISTRE_SOURCES.csv` livré avec le manuscrit.\n\n")
-        f.write("## Bibliographie\n\n*Ouvrages, rapports institutionnels, normes, textes légaux et articles scientifiques.*\n\n")
+        f.write("### Bibliographie\n\n*Ouvrages, rapports institutionnels, normes, textes légaux et articles scientifiques.*\n\n")
         for s in biblio:
             f.write(f"- {'◆' if s['verif']=='D' else '◇'} {apa_complete(s)}\n")
-        f.write("\n## Webographie\n\n*Documentations en ligne, centres d'aide, pages institutionnelles et annonces officielles.*\n\n")
+        f.write("\n### Webographie\n\n*Documentations en ligne, centres d'aide, pages institutionnelles et annonces officielles.*\n\n")
         for s in web:
             f.write(f"- {'◆' if s['verif']=='D' else '◇'} {apa_complete(s)}\n")
     with open(d / "REGISTRE_SOURCES.csv", "w", encoding="utf-8", newline="") as f:
@@ -139,8 +139,10 @@ def fichiers(partie=None):
         if partie and p != partie and p != "PARTIE_0_LIMINAIRES": continue
         files += sorted(glob.glob(str(m / p / "*.md")))
     if not partie:
-        files += sorted(glob.glob(str(ROOT / "04_ANNEXES" / "*.md")))
-        files.append(str(ROOT / "05_BIBLIOGRAPHIE_WEBOGRAPHIE" / "BIBLIOGRAPHIE_WEBOGRAPHIE.md"))
+        ann = sorted(glob.glob(str(ROOT / "04_ANNEXES" / "*.md")))
+        bib = str(ROOT / "05_BIBLIOGRAPHIE_WEBOGRAPHIE" / "BIBLIOGRAPHIE_WEBOGRAPHIE.md")
+        k = next((i for i, a in enumerate(ann) if Path(a).name.startswith("J_")), len(ann))
+        files += ann[:k] + [bib] + ann[k:]
     return files
 
 def assembler(files):

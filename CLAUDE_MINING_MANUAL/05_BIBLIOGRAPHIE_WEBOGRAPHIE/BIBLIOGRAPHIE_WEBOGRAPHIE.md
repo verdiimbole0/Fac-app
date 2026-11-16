@@ -1,8 +1,8 @@
-# Annexe I — Bibliographie et webographie vérifiées {#annexe-i}
+## Annexe I — Bibliographie et webographie vérifiées
 
 Les références ci-dessous ont toutes été identifiées et contrôlées pendant la production de l'ouvrage (consultations du 16 novembre 2026). Elles sont présentées selon les normes APA (7e édition), adaptées au français. Le symbole ◆ signale une consultation directe du document ou de la page ; le symbole ◇ une référence dont l'existence, le titre, l'éditeur et l'adresse ont été confirmés par recherche documentaire, l'accès direct ayant été impossible depuis l'environnement de production (pare-feu, document payant ou norme commerciale). Le registre complet, avec la méthode de vérification et l'usage de chaque source, figure dans le fichier `REGISTRE_SOURCES.csv` livré avec le manuscrit.
 
-## Bibliographie
+### Bibliographie
 
 *Ouvrages, rapports institutionnels, normes, textes légaux et articles scientifiques.*
 
@@ -32,7 +32,7 @@ Les références ci-dessous ont toutes été identifiées et contrôlées pendan
 - ◇ UNESCO. (2021). *Recommandation sur l'éthique de l'intelligence artificielle*. Adoptée le 23 novembre 2021. https://unesdoc.unesco.org/ark:/48223/pf0000381137 (consulté le 16 novembre 2026)
 - ◇ Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A. N., Kaiser, Ł., & Polosukhin, I. (2017). Attention is all you need. Dans *Advances in Neural Information Processing Systems 30* (p. 5998-6008). https://doi.org/10.48550/arXiv.1706.03762
 
-## Webographie
+### Webographie
 
 *Documentations en ligne, centres d'aide, pages institutionnelles et annonces officielles.*
 

@@ -85,7 +85,7 @@ Termine par la liste de toutes les phrases qui ne sont pas directement issues de
 | 3 h 00 – 5 h 20 | Circulation arrêtée sur R3 | Rapport superviseur |
 | 2 h 00 – 8 h 00 | Fuite constatée sur le flexible de freinage avant gauche | Observations maintenance |
 
-Rubrique 6 (extrait) : hauteur réelle du merlon [à compléter] ; vitesse au moment du freinage (données embarquées) [à compléter] ; lien éventuel avec les interventions hydrauliques de mars (OT-25311, OT-25340) : à instruire par l'enquête.
+Rubrique 6 (extrait) : hauteur réelle du merlon [à compléter] ; vitesse au moment du freinage (données embarquées) [à compléter] ; lien éventuel avec les interventions hydrauliques des 4, 6 et 12 avril (OT-25189, OT-25345, OT-25045) : à instruire par l'enquête.
 
 **9. Contrôle qualité.** Chaque ligne relue contre les documents ; la liste finale « phrases non issues des documents » est examinée et purgée ; aucune cause suggérée.
 

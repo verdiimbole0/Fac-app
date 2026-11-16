@@ -88,7 +88,7 @@ La meilleure protection contre les hallucinations n'est pas une formule magique 
 
 #### C.6. Une matrice pour décider
 
-![Figure 5.2 — Matrice de décision. Croisez les conséquences d'une erreur et la facilité de vérification pour déterminer le niveau d'usage approprié. Le quadrant « conséquences graves, difficile à vérifier » reste hors du champ de délégation. Illustration réalisée pour cet ouvrage.](02_ILLUSTRATIONS/GRAPHIQUES/fig05_2_matrice_risque_verif.png){width=78%}
+![Figure 5.2 — Matrice de décision. Croisez les conséquences d'une erreur et la facilité de vérification pour déterminer le niveau d'usage approprié. Le quadrant « conséquences graves, difficile à vérifier » reste hors du champ de délégation. Illustration réalisée pour cet ouvrage.](02_ILLUSTRATIONS/SCHEMAS/fig05_2_matrice_risque_verif.png){width=78%}
 
 ### D. Démonstration guidée — Transformer une question à risque en question sûre
 

@@ -25,9 +25,24 @@ cd CLAUDE_MINING_MANUAL
 python3 08_OUTILS/generer_donnees.py      # jeux de données d'exercice
 python3 08_OUTILS/generer_figures.py      # schémas et graphiques
 python3 08_OUTILS/construire_livre.py     # DOCX + PDF dans 06_PRODUCTION_FINALE/
+python3 08_OUTILS/controle_qualite.py     # rapport de contrôle qualité + plan éditorial
 ```
 
 Dépendances : Python 3 (matplotlib, openpyxl, python-docx), pandoc ≥ 3, LibreOffice (conversion PDF).
+
+## Livrables
+
+| Livrable | Emplacement |
+|---|---|
+| Manuscrit Word éditable | `06_PRODUCTION_FINALE/CLAUDE_ET_IA_INDUSTRIE_MINIERE.docx` |
+| Manuscrit PDF (391 pages) | `06_PRODUCTION_FINALE/CLAUDE_ET_IA_INDUSTRIE_MINIERE.pdf` |
+| Sources Markdown | `01_MANUSCRIT/`, `04_ANNEXES/` |
+| Illustrations | `02_ILLUSTRATIONS/` (+ `PHOTOGRAPHIES/CREDITS_PHOTOS.json`) |
+| Données d'exercice | `03_EXERCICES_ET_DONNEES/` |
+| Registre bibliographique | `05_BIBLIOGRAPHIE_WEBOGRAPHIE/REGISTRE_SOURCES.csv` |
+| Contrôle qualité | `07_CONTROLE_QUALITE/RAPPORT_CONTROLE_QUALITE.md` |
+
+**Photographies :** les 14 photographies sélectionnées (licences libres, crédits complets) sont des emplacements réservés : Wikimedia a refusé le téléchargement automatisé. Pour les intégrer : `python3 08_OUTILS/photos.py telecharger "MonOutil/1.0 (contact: adresse@exemple.org)"`, puis reconstruire.
 
 ## Avertissement
 

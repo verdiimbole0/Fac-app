@@ -237,7 +237,7 @@ def documents():
         "Rampe boueuse, arrosage effectué à 23h30 malgré la pluie annoncée. Circulation arrêtée sur R3 de 03h00 à 05h20. "
         "Le conducteur a 14 mois d'ancienneté, formation conduite défensive à jour. Alcootest négatif.",
         "## Observations de la maintenance (02h00-08h00)",
-        "Fuite détectée sur le flexible du circuit de freinage de service avant gauche. Le camion CAM-07 avait eu deux interventions hydrauliques en mars (OT-25311, OT-25340).",
+        "Fuite détectée sur le flexible du circuit de freinage de service avant gauche. Le camion CAM-07 avait eu trois interventions hydrauliques au début du mois d'avril (OT-25189 le 4 avril, OT-25345 le 6 avril, OT-25045 le 12 avril).",
         "## Informations manquantes à ce stade",
         "- Hauteur réelle du merlon (norme interne : au moins la moitié du diamètre de la roue du plus gros engin) — non mesurée",
         "- Données du système de suivi embarqué (vitesse au moment du freinage) — non extraites",
