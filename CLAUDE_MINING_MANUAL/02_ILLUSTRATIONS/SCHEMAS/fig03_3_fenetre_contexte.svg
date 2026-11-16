@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="600.3pt" height="335.952pt" viewBox="0 0 600.3 335.952" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-16T09:15:45.427935</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 335.952 
+L 600.3 335.952 
+L 600.3 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 38.448 295.488 
+L 411.192 295.488 
+Q 420.12 295.488 420.12 286.6176 
+L 420.12 60.4224 
+Q 420.12 51.552 411.192 51.552 
+L 38.448 51.552 
+Q 29.52 51.552 29.52 60.4224 
+L 29.52 286.6176 
+Q 29.52 295.488 38.448 295.488 
+z
+" clip-path="url(#p81452570f0)" style="fill: #ffffff; stroke: #0b2545; stroke-width: 2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 50.724 121.4064 
+L 398.916 121.4064 
+Q 403.38 121.4064 403.38 116.9712 
+L 403.38 92.5776 
+Q 403.38 88.1424 398.916 88.1424 
+L 50.724 88.1424 
+Q 46.26 88.1424 46.26 92.5776 
+L 46.26 116.9712 
+Q 46.26 121.4064 50.724 121.4064 
+z
+" clip-path="url(#p81452570f0)" style="fill: #dce4ef; stroke: #5b6b7f; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 50.724 146.9088 
+L 398.916 146.9088 
+Q 403.38 146.9088 403.38 142.4736 
+L 403.38 129.168 
+Q 403.38 124.7328 398.916 124.7328 
+L 50.724 124.7328 
+Q 46.26 124.7328 46.26 129.168 
+L 46.26 142.4736 
+Q 46.26 146.9088 50.724 146.9088 
+z
+" clip-path="url(#p81452570f0)" style="fill: #dce4ef; stroke: #5b6b7f; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 50.724 205.6752 
+L 398.916 205.6752 
+Q 403.38 205.6752 403.38 201.24 
+L 403.38 154.6704 
+Q 403.38 150.2352 398.916 150.2352 
+L 50.724 150.2352 
+Q 46.26 150.2352 46.26 154.6704 
+L 46.26 201.24 
+Q 46.26 205.6752 50.724 205.6752 
+z
+" clip-path="url(#p81452570f0)" style="fill: #f6edcc; stroke: #5b6b7f; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 50.724 253.3536 
+L 398.916 253.3536 
+Q 403.38 253.3536 403.38 248.9184 
+L 403.38 213.4368 
+Q 403.38 209.0016 398.916 209.0016 
+L 50.724 209.0016 
+Q 46.26 209.0016 46.26 213.4368 
+L 46.26 248.9184 
+Q 46.26 253.3536 50.724 253.3536 
+z
+" clip-path="url(#p81452570f0)" style="fill: #eef1f5; stroke: #5b6b7f; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 50.724 278.856 
+L 398.916 278.856 
+Q 403.38 278.856 403.38 274.4208 
+L 403.38 261.1152 
+Q 403.38 256.68 398.916 256.68 
+L 50.724 256.68 
+Q 46.26 256.68 46.26 261.1152 
+L 46.26 274.4208 
+Q 46.26 278.856 50.724 278.856 
+z
+" clip-path="url(#p81452570f0)" style="fill: #d5efec; stroke: #5b6b7f; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 50.724 309.9024 
+L 398.916 309.9024 
+Q 403.38 309.9024 403.38 305.4672 
+L 403.38 286.6176 
+Q 403.38 282.1824 398.916 282.1824 
+L 50.724 282.1824 
+Q 46.26 282.1824 46.26 286.6176 
+L 46.26 305.4672 
+Q 46.26 309.9024 50.724 309.9024 
+z
+" clip-path="url(#p81452570f0)" style="fill: #cdebd9; stroke: #5b6b7f; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 451.368 162.432 
+L 567.432 162.432 
+Q 576.36 162.432 576.36 153.5616 
+L 576.36 82.5984 
+Q 576.36 73.728 567.432 73.728 
+L 451.368 73.728 
+Q 442.44 73.728 442.44 82.5984 
+L 442.44 153.5616 
+Q 442.44 162.432 451.368 162.432 
+z
+" clip-path="url(#p81452570f0)" style="fill: #f5dde1; stroke: #b23a48; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 451.368 284.4 
+L 567.432 284.4 
+Q 576.36 284.4 576.36 275.5296 
+L 576.36 193.4784 
+Q 576.36 184.608 567.432 184.608 
+L 451.368 184.608 
+Q 442.44 184.608 442.44 193.4784 
+L 442.44 275.5296 
+Q 442.44 284.4 451.368 284.4 
+z
+" clip-path="url(#p81452570f0)" style="fill: #eef1f5; stroke: #5b6b7f; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: middle; fill: #0b2545" x="286.2" y="25.425234" transform="rotate(-0 286.2 25.425234)">La fenêtre de contexte : la « mémoire de travail » d'une conversation</text>
+   </g>
+   <g id="text_2">
+    <text style="font-weight: 700; font-size: 9px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: middle; fill: #0b2545" x="224.82" y="65.412" transform="rotate(-0 224.82 65.412)">Fenêtre de contexte (jusqu'à 1 million de tokens selon le modèle)</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 8.6px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: middle; fill: #222831" x="224.82" y="107.155525" transform="rotate(-0 224.82 107.155525)">Instructions système / instructions de projet</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 8.6px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: middle; fill: #222831" x="224.82" y="138.554659" transform="rotate(-0 224.82 138.554659)">Préférences et mémoire (si activées)</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 8.6px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: middle; fill: #222831" x="224.82" y="180.594325" transform="rotate(-0 224.82 180.594325)">Documents joints (PDF, Excel, rapports…)</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 8.6px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: middle; fill: #222831" x="224.82" y="233.531178" transform="rotate(-0 224.82 233.531178)">Historique de la conversation</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 8.6px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: middle; fill: #222831" x="224.82" y="270.121578" transform="rotate(-0 224.82 270.121578)">Votre nouvelle question</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 8.6px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: middle; fill: #222831" x="224.82" y="298.3859" transform="rotate(-0 224.82 298.3859)">Réponse en cours de génération</text>
+   </g>
+   <g id="text_9">
+    <text style="font-weight: 700; font-size: 8.6px; font-family: 'Inter', 'DejaVu Sans'; fill: #222831" transform="translate(475.339969 100.992833)">Ce qui est HORS</text>
+    <text style="font-weight: 700; font-size: 8.6px; font-family: 'Inter', 'DejaVu Sans'; fill: #222831" transform="translate(483.226437 114.828335)">de la fenêtre</text>
+    <text style="font-weight: 700; font-size: 8.6px; font-family: 'Inter', 'DejaVu Sans'; fill: #222831" transform="translate(484.127422 127.006993)">n'existe pas</text>
+    <text style="font-weight: 700; font-size: 8.6px; font-family: 'Inter', 'DejaVu Sans'; fill: #222831" transform="translate(478.30025 140.011386)">pour le modèle</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 8px; font-family: 'Inter', 'DejaVu Sans'; fill: #222831" transform="translate(475.5875 213.301031)">Plus la fenêtre est</text>
+    <text style="font-size: 8px; font-family: 'Inter', 'DejaVu Sans'; fill: #222831" transform="translate(479.35 224.584391)">chargée, plus le</text>
+    <text style="font-size: 8px; font-family: 'Inter', 'DejaVu Sans'; fill: #222831" transform="translate(469.334375 236.684)">modèle peut négliger</text>
+    <text style="font-size: 8px; font-family: 'Inter', 'DejaVu Sans'; fill: #222831" transform="translate(472.505625 248.783609)">des détails : gardez</text>
+    <text style="font-size: 8px; font-family: 'Inter', 'DejaVu Sans'; fill: #222831" transform="translate(470.433125 260.892594)">le contexte pertinent</text>
+   </g>
+   <g id="text_11">
+    <text style="font-style: italic; font-size: 7.5px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: middle; fill: #5b6b7f" x="286.2" y="317.620271" transform="rotate(-0 286.2 317.620271)">Valeur de 1 million de tokens : documentation Anthropic, Models overview (consultée le 16/11/2026). Illustration réalisée pour cet ouvrage.</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p81452570f0">
+   <rect x="7.2" y="7.2" width="585.9" height="321.552"/>
+  </clipPath>
+ </defs>
+</svg>

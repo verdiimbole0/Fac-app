@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="516.6pt" height="359.893354pt" viewBox="0 0 516.6 359.893354" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-16T09:15:44.548813</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 359.893354 
+L 516.6 359.893354 
+L 516.6 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 258.3 339.84 
+C 320.452999 339.84 380.068739 324.067928 424.017545 295.9974 
+C 467.966352 267.926872 492.66 229.849722 492.66 190.152 
+C 492.66 150.454278 467.966352 112.377128 424.017545 84.3066 
+C 380.068739 56.236072 320.452999 40.464 258.3 40.464 
+C 196.147001 40.464 136.531261 56.236072 92.582455 84.3066 
+C 48.633648 112.377128 23.94 150.454278 23.94 190.152 
+C 23.94 229.849722 48.633648 267.926872 92.582455 295.9974 
+C 136.531261 324.067928 196.147001 339.84 258.3 339.84 
+z
+" clip-path="url(#pf8c2b23f85)" style="fill: #dce4ef; stroke: #0b2545; stroke-width: 1.6; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 258.3 328.752 
+C 307.134499 328.752 353.975437 316.484833 388.506643 294.6522 
+C 423.037848 272.819567 442.44 243.204006 442.44 212.328 
+C 442.44 181.451994 423.037848 151.836433 388.506643 130.0038 
+C 353.975437 108.171167 307.134499 95.904 258.3 95.904 
+C 209.465501 95.904 162.624563 108.171167 128.093357 130.0038 
+C 93.562152 151.836433 74.16 181.451994 74.16 212.328 
+C 74.16 243.204006 93.562152 272.819567 128.093357 294.6522 
+C 162.624563 316.484833 209.465501 328.752 258.3 328.752 
+z
+" clip-path="url(#pf8c2b23f85)" style="fill: #c8d6e8; stroke: #0b2545; stroke-width: 1.6; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 258.3 317.664 
+C 293.815999 317.664 327.882136 308.901738 352.99574 293.307 
+C 378.109344 277.712262 392.22 256.55829 392.22 234.504 
+C 392.22 212.44971 378.109344 191.295738 352.99574 175.701 
+C 327.882136 160.106262 293.815999 151.344 258.3 151.344 
+C 222.784001 151.344 188.717864 160.106262 163.60426 175.701 
+C 138.490656 191.295738 124.38 212.44971 124.38 234.504 
+C 124.38 256.55829 138.490656 277.712262 163.60426 293.307 
+C 188.717864 308.901738 222.784001 317.664 258.3 317.664 
+z
+" clip-path="url(#pf8c2b23f85)" style="fill: #d5efec; stroke: #13a89e; stroke-width: 1.6; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 258.3 306.576 
+C 280.497499 306.576 301.788835 301.318643 317.484838 291.9618 
+C 333.18084 282.604957 342 269.912574 342 256.68 
+C 342 243.447426 333.18084 230.755043 317.484838 221.3982 
+C 301.788835 212.041357 280.497499 206.784 258.3 206.784 
+C 236.102501 206.784 214.811165 212.041357 199.115162 221.3982 
+C 183.41916 230.755043 174.6 243.447426 174.6 256.68 
+C 174.6 269.912574 183.41916 282.604957 199.115162 291.9618 
+C 214.811165 301.318643 236.102501 306.576 258.3 306.576 
+z
+" clip-path="url(#pf8c2b23f85)" style="fill: #c9a227; stroke: #8a6d12; stroke-width: 1.6; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 13px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: middle; fill: #0b2545" x="286.2" y="25.789004" transform="rotate(-0 286.2 25.789004)">Des concepts emboîtés</text>
+   </g>
+   <g id="text_2">
+    <text style="font-weight: 700; font-size: 11px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: middle; fill: #0b2545" x="258.3" y="57.096" transform="rotate(-0 258.3 57.096)">Intelligence artificielle</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 8px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: middle; fill: #222831" x="258.3" y="73.728" transform="rotate(-0 258.3 73.728)">systèmes réalisant des tâches associées à l'intelligence humaine</text>
+   </g>
+   <g id="text_4">
+    <text style="font-weight: 700; font-size: 10px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: middle; fill: #0b2545" x="258.3" y="109.764" transform="rotate(-0 258.3 109.764)">Apprentissage automatique (machine learning)</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 8px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: middle" x="258.3" y="125.2872" transform="rotate(-0 258.3 125.2872)">apprend des régularités à partir de données</text>
+   </g>
+   <g id="text_6">
+    <text style="font-weight: 700; font-size: 9.5px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: middle; fill: #13a89e" x="258.3" y="164.6496" transform="rotate(-0 258.3 164.6496)">Apprentissage profond (deep learning)</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 8px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: middle" x="258.3" y="179.064" transform="rotate(-0 258.3 179.064)">réseaux de neurones à nombreuses couches</text>
+   </g>
+   <g id="text_8">
+    <text style="font-weight: 700; font-size: 9.5px; font-family: 'Inter', 'DejaVu Sans'; fill: #0b2545" transform="translate(227.430195 254.388496)">IA générative</text>
+    <text style="font-weight: 700; font-size: 9.5px; font-family: 'Inter', 'DejaVu Sans'; fill: #0b2545" transform="translate(216.773125 265.883125)">LLM (ex. : Claude)</text>
+   </g>
+   <g id="text_9">
+    <text style="font-style: italic; font-size: 7.5px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: middle; fill: #5b6b7f" x="286.2" y="350.884271" transform="rotate(-0 286.2 350.884271)">Illustration réalisée pour cet ouvrage.</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pf8c2b23f85">
+   <rect x="7.2" y="7.2" width="502.2" height="343.728"/>
+  </clipPath>
+ </defs>
+</svg>

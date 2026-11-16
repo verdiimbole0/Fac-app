@@ -1,0 +1,306 @@
+# DONNÉES FICTIVES — Mbiyo Copper Cobalt SA (MCC) — usage pédagogique uniquement
+bc;date;fournisseur;article;quantite;unite;prix_unitaire_USD;montant_USD;delai_livraison_j
+BC-60000;2026-05-16;Copperbelt Spares Ltd (fictif);Filtre hydraulique;30;u;137.25;4117.5;39
+BC-60001;2026-03-30;Tyre & Rim Africa (fictif);Pneu 27.00R49;34;u;38637.17;1313663.78;11
+BC-60002;2026-07-22;Tyre & Rim Africa (fictif);Émulsion explosive;415;t;1108.6;460069.0;34
+BC-60003;2025-08-16;Copperbelt Spares Ltd (fictif);Transport cathodes Dar es Salaam;35;voyage;4478.61;156751.35;60
+BC-60004;2026-04-19;Kisanji Catering (fictif);Extractant SX;209;kg;16.6;3469.4;26
+BC-60005;2025-07-05;Explo-Services RDC (fictif);Extractant SX;468;kg;18.02;8433.36;49
+BC-60006;2025-01-20;Kat-Chem SARL (fictif);Émulsion explosive;440;t;1116.13;491097.2;55
+BC-60007;2025-09-06;Kisanji Catering (fictif);Flexible hydraulique;9;u;363.29;3269.61;31
+BC-60008;2025-10-10;Copperbelt Spares Ltd (fictif);Transport cathodes Dar es Salaam;32;voyage;4024.06;128769.92;27
+BC-60009;2026-02-24;Kat-Chem SARL (fictif);Filtre hydraulique;37;u;154.62;5720.94;55
+BC-60010;2025-05-12;Kisanji Catering (fictif);Acide sulfurique 98 %;611;t;194.52;118851.72;26
+BC-60011;2025-08-28;Kisanji Catering (fictif);Extractant SX;441;kg;19.83;8745.03;10
+BC-60012;2025-01-16;Explo-Services RDC (fictif);Repas cantine;34;jour;6551.78;222760.52;52
+BC-60013;2025-05-07;Explo-Services RDC (fictif);Pneu 27.00R49;8;u;39801.92;318415.36;10
+BC-60014;2025-09-05;Kat-Chem SARL (fictif);Pneu 27.00R49;31;u;39698.57;1230655.67;21
+BC-60015;2025-07-04;Kat-Chem SARL (fictif);Filtre hydraulique;8;u;160.56;1284.48;24
+BC-60016;2025-03-28;Explo-Services RDC (fictif);Émulsion explosive;279;t;1096.23;305848.17;36
+BC-60017;2025-10-26;Kisanji Catering (fictif);Pneu 27.00R49;14;u;40577.22;568081.08;9
+BC-60018;2025-11-28;Copperbelt Spares Ltd (fictif);Transport cathodes Dar es Salaam;13;voyage;4582.57;59573.41;11
+BC-60019;2026-07-08;Explo-Services RDC (fictif);Filtre hydraulique;15;u;140.1;2101.5;9
+BC-60020;2025-12-06;Tyre & Rim Africa (fictif);Filtre hydraulique;39;u;159.46;6218.94;53
+BC-60021;2025-03-23;Lualaba Logistics (fictif);Repas cantine;18;jour;6339.32;114107.76;62
+BC-60022;2025-12-28;Copperbelt Spares Ltd (fictif);Pneu 27.00R49;37;u;40082.91;1483067.67;15
+BC-60023;2025-10-20;Kat-Chem SARL (fictif);Acide sulfurique 98 %;224;t;192.97;43225.28;21
+BC-60024;2025-09-14;Kisanji Catering (fictif);Flexible hydraulique;9;u;370.94;3338.46;57
+BC-60025;2025-07-25;Lualaba Logistics (fictif);Flexible hydraulique;38;u;359.35;13655.3;37
+BC-60026;2025-08-09;Kat-Chem SARL (fictif);Repas cantine;29;jour;6282.52;182193.08;48
+BC-60027;2026-03-12;Explo-Services RDC (fictif);Flexible hydraulique;36;u;428.95;15442.2;15
+BC-60028;2025-08-21;Kat-Chem SARL (fictif);Émulsion explosive;680;t;1274.52;866673.6;31
+BC-60029;2026-03-13;Lualaba Logistics (fictif);Flexible hydraulique;24;u;380.85;9140.4;19
+BC-60030;2026-03-07;Lualaba Logistics (fictif);Acide sulfurique 98 %;712;t;226.21;161061.52;8
+BC-60031;2026-01-08;Kisanji Catering (fictif);Repas cantine;15;jour;5694.49;85417.35;53
+BC-60032;2025-06-11;Kat-Chem SARL (fictif);Filtre hydraulique;40;u;158.64;6345.6;45
+BC-60033;2025-11-25;Explo-Services RDC (fictif);Émulsion explosive;549;t;1217.97;668665.53;44
+BC-60034;2025-03-31;Tyre & Rim Africa (fictif);Extractant SX;502;kg;18.12;9096.24;61
+BC-60035;2026-05-19;Kat-Chem SARL (fictif);Pneu 27.00R49;31;u;35049.72;1086541.32;46
+BC-60036;2025-12-01;Kat-Chem SARL (fictif);Transport cathodes Dar es Salaam;10;voyage;4302.87;43028.7;27
+BC-60037;2025-01-04;Copperbelt Spares Ltd (fictif);Filtre hydraulique;13;u;130.74;1699.62;58
+BC-60038;2026-02-16;Tyre & Rim Africa (fictif);Repas cantine;30;jour;5712.91;171387.3;9
+BC-60039;2025-01-20;Copperbelt Spares Ltd (fictif);Filtre hydraulique;6;u;135.88;815.28;22
+BC-60040;2025-02-15;Tyre & Rim Africa (fictif);Pneu 27.00R49;34;u;38336.92;1303455.28;70
+BC-60041;2026-01-04;Kat-Chem SARL (fictif);Émulsion explosive;678;t;1049.02;711235.56;48
+BC-60042;2025-10-31;Kat-Chem SARL (fictif);Extractant SX;489;kg;19.64;9603.96;33
+BC-60043;2025-07-15;Lualaba Logistics (fictif);Flexible hydraulique;26;u;431.89;11229.14;28
+BC-60044;2025-09-01;Tyre & Rim Africa (fictif);Émulsion explosive;27;t;1219.7;32931.9;9
+BC-60045;2025-10-10;Lualaba Logistics (fictif);Filtre hydraulique;6;u;162.31;973.86;20
+BC-60046;2026-08-21;Lualaba Logistics (fictif);Filtre hydraulique;8;u;138.26;1106.08;61
+BC-60047;2025-11-01;Kat-Chem SARL (fictif);Extractant SX;494;kg;19.17;9469.98;39
+BC-60048;2025-05-03;Kat-Chem SARL (fictif);Pneu 27.00R49;19;u;42359.97;804839.43;65
+BC-60049;2025-05-22;Kisanji Catering (fictif);Acide sulfurique 98 %;449;t;203.73;91474.77;6
+BC-60050;2026-05-17;Kat-Chem SARL (fictif);Émulsion explosive;622;t;1121.87;697803.14;34
+BC-60051;2026-01-06;Tyre & Rim Africa (fictif);Transport cathodes Dar es Salaam;2;voyage;3962.04;7924.08;11
+BC-60052;2025-01-11;Kisanji Catering (fictif);Repas cantine;29;jour;5649.28;163829.12;6
+BC-60053;2026-01-08;Kisanji Catering (fictif);Transport cathodes Dar es Salaam;28;voyage;4420.03;123760.84;63
+BC-60054;2026-01-10;Lualaba Logistics (fictif);Émulsion explosive;667;t;1039.48;693333.16;69
+BC-60055;2025-11-23;Copperbelt Spares Ltd (fictif);Pneu 27.00R49;26;u;35039.15;911017.9;74
+BC-60056;2025-10-05;Copperbelt Spares Ltd (fictif);Filtre hydraulique;20;u;161.62;3232.4;9
+BC-60057;2026-01-06;Kisanji Catering (fictif);Extractant SX;153;kg;19.62;3001.86;58
+BC-60058;2026-01-26;Kisanji Catering (fictif);Extractant SX;568;kg;17.59;9991.12;24
+BC-60059;2025-10-11;Lualaba Logistics (fictif);Acide sulfurique 98 %;351;t;201.29;70652.79;16
+BC-60060;2025-11-08;Kisanji Catering (fictif);Repas cantine;23;jour;5983.76;137626.48;45
+BC-60061;2025-05-13;Lualaba Logistics (fictif);Émulsion explosive;337;t;1119.65;377322.05;23
+BC-60062;2026-07-28;Explo-Services RDC (fictif);Filtre hydraulique;31;u;149.05;4620.55;23
+BC-60063;2026-02-27;Tyre & Rim Africa (fictif);Repas cantine;8;jour;6150.34;49202.72;35
+BC-60064;2026-06-27;Lualaba Logistics (fictif);Extractant SX;464;kg;19.3;8955.2;61
+BC-60065;2026-05-02;Kat-Chem SARL (fictif);Filtre hydraulique;37;u;132.5;4902.5;57
+BC-60066;2026-03-02;Kisanji Catering (fictif);Émulsion explosive;882;t;1097.63;968109.66;23
+BC-60067;2026-08-16;Lualaba Logistics (fictif);Repas cantine;8;jour;5633.55;45068.4;27
+BC-60068;2025-07-17;Kat-Chem SARL (fictif);Flexible hydraulique;5;u;372.45;1862.25;46
+BC-60069;2025-10-27;Copperbelt Spares Ltd (fictif);Flexible hydraulique;37;u;423.01;15651.37;53
+BC-60070;2025-07-25;Lualaba Logistics (fictif);Acide sulfurique 98 %;570;t;204.89;116787.3;34
+BC-60071;2026-04-30;Tyre & Rim Africa (fictif);Flexible hydraulique;30;u;356.73;10701.9;25
+BC-60072;2025-06-20;Tyre & Rim Africa (fictif);Repas cantine;6;jour;6857.28;41143.68;51
+BC-60073;2025-02-03;Explo-Services RDC (fictif);Transport cathodes Dar es Salaam;26;voyage;4371.24;113652.24;20
+BC-60074;2026-02-15;Copperbelt Spares Ltd (fictif);Repas cantine;23;jour;6613.32;152106.36;46
+BC-60075;2026-03-21;Explo-Services RDC (fictif);Émulsion explosive;101;t;1139.62;115101.62;33
+BC-60076;2025-05-02;Tyre & Rim Africa (fictif);Filtre hydraulique;34;u;130.94;4451.96;5
+BC-60077;2025-10-23;Kat-Chem SARL (fictif);Transport cathodes Dar es Salaam;19;voyage;3849.11;73133.09;19
+BC-60078;2025-03-10;Explo-Services RDC (fictif);Repas cantine;19;jour;6868.76;130506.44;48
+BC-60079;2026-07-24;Kat-Chem SARL (fictif);Pneu 27.00R49;3;u;41509.0;124527.0;68
+BC-60080;2025-10-21;Kat-Chem SARL (fictif);Émulsion explosive;638;t;1152.56;735333.28;32
+BC-60081;2025-10-13;Lualaba Logistics (fictif);Émulsion explosive;156;t;1080.82;168607.92;47
+BC-60082;2025-04-26;Tyre & Rim Africa (fictif);Acide sulfurique 98 %;817;t;209.33;171022.61;40
+BC-60083;2026-07-24;Lualaba Logistics (fictif);Émulsion explosive;463;t;1239.22;573758.86;12
+BC-60084;2025-09-26;Copperbelt Spares Ltd (fictif);Extractant SX;614;kg;19.31;11856.34;44
+BC-60085;2025-04-06;Lualaba Logistics (fictif);Repas cantine;30;jour;6303.97;189119.1;45
+BC-60086;2025-10-05;Tyre & Rim Africa (fictif);Flexible hydraulique;13;u;407.72;5300.36;9
+BC-60087;2026-05-03;Copperbelt Spares Ltd (fictif);Flexible hydraulique;15;u;389.29;5839.35;9
+BC-60088;2025-10-20;Kisanji Catering (fictif);Flexible hydraulique;24;u;420.46;10091.04;62
+BC-60089;2026-03-11;Kisanji Catering (fictif);Émulsion explosive;173;t;1053.8;182307.4;53
+BC-60090;2026-07-04;Kisanji Catering (fictif);Pneu 27.00R49;37;u;35105.34;1298897.58;74
+BC-60091;2026-02-11;Kat-Chem SARL (fictif);Émulsion explosive;399;t;1278.24;510017.76;33
+BC-60092;2025-12-17;Explo-Services RDC (fictif);Acide sulfurique 98 %;632;t;200.0;126400.0;62
+BC-60093;2026-01-18;Lualaba Logistics (fictif);Pneu 27.00R49;4;u;36827.87;147311.48;47
+BC-60094;2025-09-17;Lualaba Logistics (fictif);Acide sulfurique 98 %;237;t;200.86;47603.82;13
+BC-60095;2026-06-01;Tyre & Rim Africa (fictif);Repas cantine;15;jour;6233.65;93504.75;38
+BC-60096;2025-04-25;Copperbelt Spares Ltd (fictif);Transport cathodes Dar es Salaam;39;voyage;4466.62;174198.18;31
+BC-60097;2025-11-27;Explo-Services RDC (fictif);Transport cathodes Dar es Salaam;26;voyage;4317.72;112260.72;21
+BC-60098;2025-09-28;Lualaba Logistics (fictif);Acide sulfurique 98 %;208;t;215.86;44898.88;45
+BC-60099;2026-08-08;Copperbelt Spares Ltd (fictif);Transport cathodes Dar es Salaam;32;voyage;4696.67;150293.44;74
+BC-60100;2025-08-01;Kat-Chem SARL (fictif);Filtre hydraulique;4;u;151.65;606.6;16
+BC-60101;2025-09-17;Lualaba Logistics (fictif);Acide sulfurique 98 %;613;t;214.34;131390.42;52
+BC-60102;2026-04-11;Kisanji Catering (fictif);Repas cantine;37;jour;6085.91;225178.67;53
+BC-60103;2026-03-06;Copperbelt Spares Ltd (fictif);Extractant SX;357;kg;20.02;7147.14;25
+BC-60104;2025-09-10;Kat-Chem SARL (fictif);Extractant SX;408;kg;16.2;6609.6;75
+BC-60105;2025-04-19;Copperbelt Spares Ltd (fictif);Acide sulfurique 98 %;124;t;224.28;27810.72;69
+BC-60106;2025-10-17;Kisanji Catering (fictif);Transport cathodes Dar es Salaam;19;voyage;3938.49;74831.31;24
+BC-60107;2025-06-12;Copperbelt Spares Ltd (fictif);Pneu 27.00R49;33;u;40345.41;1331398.53;30
+BC-60108;2025-06-03;Explo-Services RDC (fictif);Transport cathodes Dar es Salaam;27;voyage;4462.97;120500.19;9
+BC-60109;2025-01-19;Explo-Services RDC (fictif);Acide sulfurique 98 %;595;t;212.91;126681.45;7
+BC-60110;2026-04-28;Tyre & Rim Africa (fictif);Repas cantine;22;jour;5730.16;126063.52;20
+BC-60111;2026-02-26;Tyre & Rim Africa (fictif);Flexible hydraulique;9;u;419.52;3775.68;68
+BC-60112;2026-06-15;Copperbelt Spares Ltd (fictif);Extractant SX;829;kg;19.37;16057.73;21
+BC-60113;2025-05-17;Kat-Chem SARL (fictif);Flexible hydraulique;16;u;371.13;5938.08;22
+BC-60114;2025-06-09;Tyre & Rim Africa (fictif);Acide sulfurique 98 %;138;t;218.36;30133.68;53
+BC-60115;2025-05-07;Kisanji Catering (fictif);Pneu 27.00R49;18;u;34695.53;624519.54;9
+BC-60116;2025-02-02;Lualaba Logistics (fictif);Repas cantine;4;jour;6272.12;25088.48;17
+BC-60117;2025-09-08;Explo-Services RDC (fictif);Pneu 27.00R49;22;u;41040.78;902897.16;9
+BC-60118;2025-05-22;Kisanji Catering (fictif);Filtre hydraulique;14;u;141.9;1986.6;67
+BC-60119;2025-12-08;Kisanji Catering (fictif);Émulsion explosive;203;t;1049.92;213133.76;49
+BC-60120;2026-02-05;Tyre & Rim Africa (fictif);Repas cantine;29;jour;5971.98;173187.42;21
+BC-60121;2025-10-03;Kisanji Catering (fictif);Acide sulfurique 98 %;189;t;210.32;39750.48;43
+BC-60122;2025-03-26;Kat-Chem SARL (fictif);Pneu 27.00R49;17;u;40994.53;696907.01;36
+BC-60123;2025-01-25;Copperbelt Spares Ltd (fictif);Transport cathodes Dar es Salaam;2;voyage;4324.27;8648.54;49
+BC-60124;2025-08-17;Kisanji Catering (fictif);Extractant SX;33;kg;17.88;590.04;32
+BC-60125;2025-12-25;Lualaba Logistics (fictif);Émulsion explosive;530;t;1052.34;557740.2;6
+BC-60126;2026-01-27;Lualaba Logistics (fictif);Acide sulfurique 98 %;875;t;216.96;189840.0;6
+BC-60127;2025-04-18;Kat-Chem SARL (fictif);Repas cantine;11;jour;5637.44;62011.84;5
+BC-60128;2026-05-24;Copperbelt Spares Ltd (fictif);Extractant SX;552;kg;16.44;9074.88;51
+BC-60129;2025-03-14;Kat-Chem SARL (fictif);Extractant SX;86;kg;18.83;1619.38;36
+BC-60130;2025-04-15;Copperbelt Spares Ltd (fictif);Pneu 27.00R49;30;u;34834.34;1045030.2;55
+BC-60131;2026-07-21;Kat-Chem SARL (fictif);Extractant SX;342;kg;18.03;6166.26;50
+BC-60132;2026-01-29;Copperbelt Spares Ltd (fictif);Filtre hydraulique;10;u;140.44;1404.4;51
+BC-60133;2025-03-09;Kisanji Catering (fictif);Transport cathodes Dar es Salaam;25;voyage;3911.41;97785.25;32
+BC-60134;2025-08-14;Lualaba Logistics (fictif);Acide sulfurique 98 %;247;t;202.45;50005.15;8
+BC-60135;2026-05-12;Explo-Services RDC (fictif);Extractant SX;571;kg;16.86;9627.06;37
+BC-60136;2026-03-07;Explo-Services RDC (fictif);Acide sulfurique 98 %;827;t;194.38;160752.26;65
+BC-60137;2026-06-27;Kat-Chem SARL (fictif);Flexible hydraulique;3;u;352.16;1056.48;6
+BC-60138;2025-03-27;Lualaba Logistics (fictif);Repas cantine;28;jour;6794.83;190255.24;20
+BC-60139;2025-09-02;Explo-Services RDC (fictif);Filtre hydraulique;40;u;136.56;5462.4;24
+BC-60140;2025-01-23;Kat-Chem SARL (fictif);Transport cathodes Dar es Salaam;39;voyage;3990.93;155646.27;66
+BC-60141;2026-02-16;Copperbelt Spares Ltd (fictif);Acide sulfurique 98 %;70;t;204.91;14343.7;17
+BC-60142;2026-03-25;Kat-Chem SARL (fictif);Émulsion explosive;450;t;1048.33;471748.5;33
+BC-60143;2025-01-11;Tyre & Rim Africa (fictif);Pneu 27.00R49;11;u;34328.38;377612.18;37
+BC-60144;2025-04-10;Tyre & Rim Africa (fictif);Repas cantine;23;jour;6245.35;143643.05;45
+BC-60145;2025-12-07;Explo-Services RDC (fictif);Repas cantine;8;jour;6106.84;48854.72;68
+BC-60146;2025-01-29;Copperbelt Spares Ltd (fictif);Transport cathodes Dar es Salaam;20;voyage;4132.99;82659.8;19
+BC-60147;2025-03-26;Copperbelt Spares Ltd (fictif);Filtre hydraulique;20;u;159.47;3189.4;7
+BC-60148;2025-03-01;Kat-Chem SARL (fictif);Flexible hydraulique;16;u;423.01;6768.16;64
+BC-60149;2026-06-12;Lualaba Logistics (fictif);Émulsion explosive;740;t;1270.45;940133.0;74
+BC-60150;2026-08-08;Lualaba Logistics (fictif);Filtre hydraulique;18;u;141.68;2550.24;69
+BC-60151;2026-04-23;Explo-Services RDC (fictif);Flexible hydraulique;32;u;388.23;12423.36;63
+BC-60152;2026-02-05;Kat-Chem SARL (fictif);Transport cathodes Dar es Salaam;35;voyage;4535.84;158754.4;9
+BC-60153;2025-06-23;Kat-Chem SARL (fictif);Transport cathodes Dar es Salaam;15;voyage;4393.57;65903.55;50
+BC-60154;2026-07-05;Lualaba Logistics (fictif);Transport cathodes Dar es Salaam;27;voyage;4298.92;116070.84;56
+BC-60155;2025-06-07;Explo-Services RDC (fictif);Repas cantine;27;jour;6857.1;185141.7;32
+BC-60156;2025-08-23;Kat-Chem SARL (fictif);Flexible hydraulique;17;u;377.96;6425.32;48
+BC-60157;2025-10-20;Explo-Services RDC (fictif);Émulsion explosive;154;t;1070.89;164917.06;72
+BC-60158;2025-03-22;Copperbelt Spares Ltd (fictif);Émulsion explosive;810;t;1200.14;972113.4;40
+BC-60159;2026-06-02;Kisanji Catering (fictif);Émulsion explosive;173;t;1117.76;193372.48;75
+BC-60160;2025-03-14;Lualaba Logistics (fictif);Filtre hydraulique;13;u;134.67;1750.71;21
+BC-60161;2026-01-30;Lualaba Logistics (fictif);Émulsion explosive;593;t;1169.57;693555.01;12
+BC-60162;2026-05-31;Copperbelt Spares Ltd (fictif);Flexible hydraulique;1;u;373.51;373.51;59
+BC-60163;2026-08-20;Explo-Services RDC (fictif);Pneu 27.00R49;37;u;34673.22;1282909.14;54
+BC-60164;2025-05-29;Kisanji Catering (fictif);Acide sulfurique 98 %;554;t;212.33;117630.82;32
+BC-60165;2026-05-12;Tyre & Rim Africa (fictif);Filtre hydraulique;17;u;136.26;2316.42;32
+BC-60166;2025-04-09;Explo-Services RDC (fictif);Extractant SX;861;kg;19.11;16453.71;19
+BC-60167;2025-11-16;Kisanji Catering (fictif);Émulsion explosive;308;t;1227.5;378070.0;8
+BC-60168;2025-05-09;Explo-Services RDC (fictif);Extractant SX;488;kg;19.1;9320.8;66
+BC-60169;2025-05-28;Lualaba Logistics (fictif);Pneu 27.00R49;37;u;42126.88;1558694.56;45
+BC-60170;2025-03-30;Tyre & Rim Africa (fictif);Filtre hydraulique;3;u;138.89;416.67;24
+BC-60171;2025-11-02;Lualaba Logistics (fictif);Repas cantine;35;jour;6482.69;226894.15;70
+BC-60172;2025-01-25;Tyre & Rim Africa (fictif);Extractant SX;885;kg;18.44;16319.4;36
+BC-60173;2025-09-12;Kisanji Catering (fictif);Pneu 27.00R49;7;u;42364.06;296548.42;12
+BC-60174;2025-07-13;Kisanji Catering (fictif);Transport cathodes Dar es Salaam;32;voyage;3960.7;126742.4;75
+BC-60175;2025-05-05;Explo-Services RDC (fictif);Acide sulfurique 98 %;430;t;215.19;92531.7;65
+BC-60176;2025-04-30;Copperbelt Spares Ltd (fictif);Acide sulfurique 98 %;245;t;206.59;50614.55;46
+BC-60177;2026-07-04;Kisanji Catering (fictif);Acide sulfurique 98 %;236;t;216.68;51136.48;56
+BC-60178;2026-02-11;Copperbelt Spares Ltd (fictif);Acide sulfurique 98 %;285;t;210.98;60129.3;5
+BC-60179;2026-01-14;Lualaba Logistics (fictif);Émulsion explosive;39;t;1264.22;49304.58;6
+BC-60180;2026-08-11;Kat-Chem SARL (fictif);Pneu 27.00R49;35;u;38917.52;1362113.2;29
+BC-60181;2025-09-05;Explo-Services RDC (fictif);Acide sulfurique 98 %;700;t;202.53;141771.0;10
+BC-60182;2026-01-25;Tyre & Rim Africa (fictif);Repas cantine;9;jour;5617.13;50554.17;72
+BC-60183;2025-07-11;Explo-Services RDC (fictif);Flexible hydraulique;4;u;403.14;1612.56;5
+BC-60184;2025-04-10;Copperbelt Spares Ltd (fictif);Pneu 27.00R49;2;u;41638.77;83277.54;27
+BC-60185;2026-04-23;Kisanji Catering (fictif);Extractant SX;42;kg;19.99;839.58;13
+BC-60186;2026-07-25;Kat-Chem SARL (fictif);Émulsion explosive;504;t;1106.43;557640.72;36
+BC-60187;2026-06-20;Lualaba Logistics (fictif);Repas cantine;10;jour;6619.66;66196.6;53
+BC-60188;2025-09-27;Kat-Chem SARL (fictif);Filtre hydraulique;18;u;136.61;2458.98;32
+BC-60189;2025-01-17;Explo-Services RDC (fictif);Acide sulfurique 98 %;802;t;198.03;158820.06;31
+BC-60190;2026-02-05;Explo-Services RDC (fictif);Filtre hydraulique;22;u;153.62;3379.64;13
+BC-60191;2026-08-07;Kat-Chem SARL (fictif);Acide sulfurique 98 %;169;t;190.73;32233.37;50
+BC-60192;2025-07-13;Lualaba Logistics (fictif);Repas cantine;28;jour;5922.04;165817.12;48
+BC-60193;2025-06-30;Lualaba Logistics (fictif);Repas cantine;36;jour;6651.33;239447.88;33
+BC-60194;2026-07-04;Copperbelt Spares Ltd (fictif);Filtre hydraulique;6;u;139.97;839.82;45
+BC-60195;2025-05-22;Tyre & Rim Africa (fictif);Acide sulfurique 98 %;803;t;190.38;152875.14;65
+BC-60196;2026-03-23;Lualaba Logistics (fictif);Pneu 27.00R49;22;u;34280.18;754163.96;58
+BC-60197;2025-12-17;Kisanji Catering (fictif);Filtre hydraulique;3;u;148.98;446.94;43
+BC-60198;2025-12-30;Kisanji Catering (fictif);Filtre hydraulique;2;u;148.26;296.52;16
+BC-60199;2025-09-11;Kisanji Catering (fictif);Filtre hydraulique;19;u;161.63;3070.97;11
+BC-60200;2025-01-13;Copperbelt Spares Ltd (fictif);Filtre hydraulique;2;u;148.0;296.0;12
+BC-60201;2025-08-13;Kat-Chem SARL (fictif);Repas cantine;17;jour;6829.9;116108.3;71
+BC-60202;2025-06-01;Tyre & Rim Africa (fictif);Pneu 27.00R49;26;u;40409.22;1050639.72;30
+BC-60203;2025-04-24;Explo-Services RDC (fictif);Émulsion explosive;517;t;1116.78;577375.26;20
+BC-60204;2025-07-20;Tyre & Rim Africa (fictif);Émulsion explosive;536;t;1248.22;669045.92;73
+BC-60205;2026-04-20;Copperbelt Spares Ltd (fictif);Extractant SX;259;kg;17.26;4470.34;41
+BC-60206;2026-07-07;Tyre & Rim Africa (fictif);Flexible hydraulique;30;u;382.05;11461.5;32
+BC-60207;2026-05-31;Copperbelt Spares Ltd (fictif);Filtre hydraulique;5;u;160.01;800.05;69
+BC-60208;2025-07-07;Copperbelt Spares Ltd (fictif);Pneu 27.00R49;8;u;40469.91;323759.28;46
+BC-60209;2026-06-01;Kisanji Catering (fictif);Acide sulfurique 98 %;431;t;201.24;86734.44;41
+BC-60210;2025-05-27;Tyre & Rim Africa (fictif);Repas cantine;21;jour;5864.08;123145.68;50
+BC-60211;2026-04-15;Tyre & Rim Africa (fictif);Acide sulfurique 98 %;601;t;218.08;131066.08;31
+BC-60212;2026-01-19;Explo-Services RDC (fictif);Repas cantine;21;jour;5694.75;119589.75;66
+BC-60213;2025-06-25;Copperbelt Spares Ltd (fictif);Pneu 27.00R49;23;u;42433.08;975960.84;73
+BC-60214;2026-01-02;Kat-Chem SARL (fictif);Extractant SX;848;kg;17.59;14916.32;61
+BC-60215;2025-10-01;Copperbelt Spares Ltd (fictif);Transport cathodes Dar es Salaam;10;voyage;4249.48;42494.8;18
+BC-60216;2025-01-18;Explo-Services RDC (fictif);Transport cathodes Dar es Salaam;12;voyage;4038.44;48461.28;42
+BC-60217;2026-04-21;Kat-Chem SARL (fictif);Extractant SX;557;kg;19.36;10783.52;34
+BC-60218;2026-07-27;Lualaba Logistics (fictif);Acide sulfurique 98 %;201;t;205.15;41235.15;36
+BC-60219;2025-11-28;Copperbelt Spares Ltd (fictif);Transport cathodes Dar es Salaam;40;voyage;4581.22;183248.8;46
+BC-60220;2026-05-09;Lualaba Logistics (fictif);Émulsion explosive;269;t;1181.01;317691.69;71
+BC-60221;2026-06-15;Kat-Chem SARL (fictif);Pneu 27.00R49;22;u;34423.55;757318.1;55
+BC-60222;2025-09-23;Copperbelt Spares Ltd (fictif);Repas cantine;30;jour;5591.73;167751.9;15
+BC-60223;2025-02-14;Kisanji Catering (fictif);Filtre hydraulique;14;u;154.54;2163.56;70
+BC-60224;2025-09-26;Lualaba Logistics (fictif);Transport cathodes Dar es Salaam;12;voyage;4255.17;51062.04;72
+BC-60225;2025-12-03;Lualaba Logistics (fictif);Pneu 27.00R49;22;u;34494.63;758881.86;25
+BC-60226;2026-05-12;Kat-Chem SARL (fictif);Flexible hydraulique;36;u;378.32;13619.52;44
+BC-60227;2025-05-20;Explo-Services RDC (fictif);Émulsion explosive;876;t;1183.02;1036325.52;64
+BC-60228;2025-08-09;Kat-Chem SARL (fictif);Émulsion explosive;321;t;1280.2;410944.2;14
+BC-60229;2026-05-27;Kat-Chem SARL (fictif);Extractant SX;40;kg;16.27;650.8;28
+BC-60230;2026-05-26;Tyre & Rim Africa (fictif);Pneu 27.00R49;4;u;37291.16;149164.64;56
+BC-60231;2025-02-09;Copperbelt Spares Ltd (fictif);Pneu 27.00R49;30;u;41112.6;1233378.0;75
+BC-60232;2025-03-06;Lualaba Logistics (fictif);Émulsion explosive;884;t;1168.5;1032954.0;17
+BC-60233;2025-03-26;Explo-Services RDC (fictif);Transport cathodes Dar es Salaam;24;voyage;4154.88;99717.12;33
+BC-60234;2026-01-07;Explo-Services RDC (fictif);Émulsion explosive;253;t;1176.55;297667.15;41
+BC-60235;2025-08-07;Explo-Services RDC (fictif);Transport cathodes Dar es Salaam;3;voyage;4692.34;14077.02;74
+BC-60236;2025-08-08;Kat-Chem SARL (fictif);Transport cathodes Dar es Salaam;11;voyage;3946.3;43409.3;46
+BC-60237;2025-11-19;Explo-Services RDC (fictif);Flexible hydraulique;37;u;387.24;14327.88;52
+BC-60238;2025-07-19;Lualaba Logistics (fictif);Transport cathodes Dar es Salaam;34;voyage;4602.86;156497.24;5
+BC-60239;2025-06-12;Kat-Chem SARL (fictif);Flexible hydraulique;33;u;387.29;12780.57;21
+BC-60240;2025-06-04;Kisanji Catering (fictif);Repas cantine;14;jour;5998.02;83972.28;62
+BC-60241;2026-02-03;Tyre & Rim Africa (fictif);Émulsion explosive;591;t;1127.78;666517.98;40
+BC-60242;2025-07-03;Kat-Chem SARL (fictif);Acide sulfurique 98 %;176;t;190.91;33600.16;9
+BC-60243;2025-08-05;Kat-Chem SARL (fictif);Transport cathodes Dar es Salaam;27;voyage;3883.0;104841.0;8
+BC-60244;2025-08-02;Tyre & Rim Africa (fictif);Filtre hydraulique;29;u;146.48;4247.92;6
+BC-60245;2026-04-24;Explo-Services RDC (fictif);Extractant SX;228;kg;18.05;4115.4;42
+BC-60246;2025-02-09;Kisanji Catering (fictif);Extractant SX;651;kg;17.48;11379.48;38
+BC-60247;2025-12-02;Explo-Services RDC (fictif);Filtre hydraulique;40;u;143.52;5740.8;16
+BC-60248;2025-11-09;Kat-Chem SARL (fictif);Extractant SX;846;kg;16.55;14001.3;34
+BC-60249;2025-06-15;Copperbelt Spares Ltd (fictif);Transport cathodes Dar es Salaam;33;voyage;4251.48;140298.84;25
+BC-60250;2026-02-20;Explo-Services RDC (fictif);Acide sulfurique 98 %;486;t;214.91;104446.26;61
+BC-60251;2025-02-26;Tyre & Rim Africa (fictif);Transport cathodes Dar es Salaam;2;voyage;4662.3;9324.6;49
+BC-60252;2025-02-17;Kat-Chem SARL (fictif);Émulsion explosive;401;t;1286.2;515766.2;17
+BC-60253;2025-04-15;Copperbelt Spares Ltd (fictif);Émulsion explosive;343;t;1090.94;374192.42;74
+BC-60254;2025-07-06;Kat-Chem SARL (fictif);Émulsion explosive;205;t;1207.88;247615.4;48
+BC-60255;2026-05-15;Lualaba Logistics (fictif);Acide sulfurique 98 %;843;t;196.27;165455.61;64
+BC-60256;2026-06-28;Lualaba Logistics (fictif);Flexible hydraulique;24;u;356.05;8545.2;57
+BC-60257;2026-01-07;Lualaba Logistics (fictif);Acide sulfurique 98 %;700;t;194.53;136171.0;71
+BC-60258;2025-08-02;Copperbelt Spares Ltd (fictif);Pneu 27.00R49;6;u;40995.87;245975.22;40
+BC-60259;2026-07-10;Kisanji Catering (fictif);Pneu 27.00R49;2;u;36514.69;73029.38;51
+BC-60260;2025-08-18;Explo-Services RDC (fictif);Transport cathodes Dar es Salaam;22;voyage;3985.98;87691.56;30
+BC-60261;2025-08-26;Tyre & Rim Africa (fictif);Acide sulfurique 98 %;378;t;216.49;81833.22;13
+BC-60262;2026-01-27;Copperbelt Spares Ltd (fictif);Flexible hydraulique;33;u;395.44;13049.52;54
+BC-60263;2025-11-26;Lualaba Logistics (fictif);Transport cathodes Dar es Salaam;14;voyage;4647.03;65058.42;43
+BC-60264;2025-02-19;Copperbelt Spares Ltd (fictif);Acide sulfurique 98 %;293;t;207.52;60803.36;55
+BC-60265;2026-05-21;Tyre & Rim Africa (fictif);Filtre hydraulique;33;u;154.65;5103.45;38
+BC-60266;2025-08-08;Lualaba Logistics (fictif);Émulsion explosive;276;t;1265.32;349228.32;37
+BC-60267;2025-03-31;Kat-Chem SARL (fictif);Filtre hydraulique;13;u;154.45;2007.85;22
+BC-60268;2025-04-23;Tyre & Rim Africa (fictif);Extractant SX;744;kg;18.41;13697.04;12
+BC-60269;2025-08-19;Kisanji Catering (fictif);Extractant SX;461;kg;16.91;7795.51;38
+BC-60270;2025-08-11;Kat-Chem SARL (fictif);Flexible hydraulique;31;u;405.04;12556.24;48
+BC-60271;2026-02-21;Lualaba Logistics (fictif);Filtre hydraulique;5;u;147.27;736.35;59
+BC-60272;2026-05-18;Explo-Services RDC (fictif);Transport cathodes Dar es Salaam;39;voyage;4068.79;158682.81;20
+BC-60273;2025-02-06;Copperbelt Spares Ltd (fictif);Pneu 27.00R49;4;u;41173.5;164694.0;60
+BC-60274;2025-06-14;Kat-Chem SARL (fictif);Transport cathodes Dar es Salaam;21;voyage;4284.85;89981.85;10
+BC-60275;2026-03-16;Kat-Chem SARL (fictif);Acide sulfurique 98 %;754;t;226.18;170539.72;70
+BC-60276;2025-01-17;Kisanji Catering (fictif);Acide sulfurique 98 %;219;t;204.35;44752.65;16
+BC-60277;2025-01-02;Lualaba Logistics (fictif);Filtre hydraulique;12;u;138.19;1658.28;50
+BC-60278;2026-06-14;Tyre & Rim Africa (fictif);Pneu 27.00R49;2;u;39257.16;78514.32;24
+BC-60279;2026-08-16;Explo-Services RDC (fictif);Filtre hydraulique;9;u;134.56;1211.04;46
+BC-60280;2026-01-02;Kat-Chem SARL (fictif);Filtre hydraulique;6;u;152.01;912.06;34
+BC-60281;2025-08-31;Lualaba Logistics (fictif);Extractant SX;134;kg;19.11;2560.74;9
+BC-60282;2025-04-27;Tyre & Rim Africa (fictif);Flexible hydraulique;6;u;408.57;2451.42;47
+BC-60283;2025-12-30;Copperbelt Spares Ltd (fictif);Filtre hydraulique;34;u;161.66;5496.44;28
+BC-60284;2026-08-13;Kisanji Catering (fictif);Filtre hydraulique;8;u;158.33;1266.64;6
+BC-60285;2026-07-09;Copperbelt Spares Ltd (fictif);Filtre hydraulique;38;u;156.23;5936.74;23
+BC-60286;2025-02-14;Lualaba Logistics (fictif);Acide sulfurique 98 %;432;t;224.24;96871.68;41
+BC-60287;2026-04-30;Explo-Services RDC (fictif);Filtre hydraulique;13;u;156.33;2032.29;38
+BC-60288;2026-05-28;Lualaba Logistics (fictif);Flexible hydraulique;15;u;379.22;5688.3;73
+BC-60289;2026-07-18;Tyre & Rim Africa (fictif);Flexible hydraulique;9;u;394.33;3548.97;57
+BC-60290;2025-08-16;Kisanji Catering (fictif);Émulsion explosive;615;t;1061.0;652515.0;5
+BC-60291;2025-07-01;Lualaba Logistics (fictif);Flexible hydraulique;11;u;424.08;4664.88;16
+BC-60292;2025-11-14;Lualaba Logistics (fictif);Filtre hydraulique;40;u;144.54;5781.6;54
+BC-60293;2026-08-01;Kisanji Catering (fictif);Extractant SX;255;kg;19.66;5013.3;39
+BC-60294;2025-07-03;Kat-Chem SARL (fictif);Repas cantine;19;jour;6834.68;129858.92;24
+BC-60295;2025-09-11;Kat-Chem SARL (fictif);Extractant SX;389;kg;18.75;7293.75;27
+BC-60296;2026-08-23;Kisanji Catering (fictif);Extractant SX;141;kg;17.26;2433.66;70
+BC-60297;2025-07-20;Copperbelt Spares Ltd (fictif);Extractant SX;611;kg;18.65;11395.15;75
+BC-60298;2026-08-22;Kisanji Catering (fictif);Transport cathodes Dar es Salaam;25;voyage;4032.83;100820.75;72
+BC-60299;2025-05-17;Copperbelt Spares Ltd (fictif);Flexible hydraulique;38;u;364.1;13835.8;33
+BC-60500;2026-03-14;Kisanji Catering (fictif);Prestation diverse;1;forfait;9800.0;9800.0;1
+BC-60501;2026-03-14;Kisanji Catering (fictif);Prestation diverse;1;forfait;9800.0;9800.0;1
+BC-60502;2026-03-14;Kisanji Catering (fictif);Prestation diverse;1;forfait;9800.0;9800.0;1
+BC-60999;2025-01-16;Explo-Services RDC (fictif);Repas cantine;34;jour;6551.78;222760.52;52

@@ -1,0 +1,422 @@
+# DONNÉES FICTIVES — Mbiyo Copper Cobalt SA (MCC) — usage pédagogique uniquement
+ot;equipement;type;systeme;description;debut;duree_arret_h;cout_USD
+OT-25000;CAM-06;Correctif;Hydraulique;Fuite flexible hydraulique vérin de benne;2025-07-09 13:00;10.2;6352.0
+OT-25001;CONC-01;Correctif;Pneumatiques;Crevaison / usure pneu;2026-03-19 11:00;4.4;3546.0
+OT-25002;CAM-05;Correctif;Électrique;Défaut alternateur / faisceau;2026-02-07 12:00;5.0;1723.0
+OT-25003;FOR-03;Préventif;Lubrification;Intervention planifiée;2026-01-01 03:00;2.7;2933.0
+OT-25004;PEL-03;Correctif;Lubrification;Graissage centralisé défaillant;2025-10-19 02:00;1.6;1826.0
+OT-25005;CAM-02;Correctif;Hydraulique;Fuite flexible hydraulique vérin de benne;2025-11-07 20:00;7.3;2552.0
+OT-25006;CAM-08;Préventif;Électrique;Intervention planifiée;2026-01-28 08:00;1.5;1742.0
+OT-25007;PEL-01;Correctif;Hydraulique;Fuite flexible hydraulique vérin de benne;2025-07-16 12:00;6.7;4300.0
+OT-25008;PEL-03;Correctif;Pneumatiques;Crevaison / usure pneu;2025-10-02 16:00;5.5;4690.0
+OT-25009;CAM-09;Correctif;Hydraulique;Fuite flexible hydraulique vérin de benne;2025-09-05 18:00;12.3;6670.0
+OT-25010;CAM-04;Correctif;Freinage;Usure garnitures, test frein échoué;2025-12-12 23:00;4.9;2609.0
+OT-25011;CAM-12;Correctif;Moteur;Surchauffe moteur, radiateur colmaté;2026-02-13 04:00;14.1;5993.0
+OT-25012;POMPE-CCD-02;Correctif;Pneumatiques;Crevaison / usure pneu;2026-04-15 23:00;3.5;1790.0
+OT-25013;CAM-02;Préventif;Transmission;Intervention planifiée;2025-12-27 06:00;20.4;10572.0
+OT-25014;CAM-11;Correctif;Électrique;Défaut alternateur / faisceau;2026-01-07 02:00;4.2;2027.0
+OT-25015;CAM-08;Correctif;Électrique;Défaut alternateur / faisceau;2025-09-01 19:00;3.0;1637.0
+OT-25016;PEL-03;Correctif;Hydraulique;Fuite flexible hydraulique vérin de benne;2025-07-05 07:00;7.8;4215.0
+OT-25017;CAM-01;Préventif;Moteur;Intervention planifiée;2025-12-23 06:00;10.8;4015.0
+OT-25018;CAM-07;Préventif;Hydraulique;Intervention planifiée;2026-02-03 08:00;3.1;1030.0
+OT-25019;CAM-04;Préventif;Hydraulique;Intervention planifiée;2025-12-10 11:00;6.1;3481.0
+OT-25020;CAM-09;Préventif;Pneumatiques;Intervention planifiée;2026-04-26 01:00;0.5;2351.0
+OT-25021;CAM-02;Correctif;Lubrification;Graissage centralisé défaillant;2025-10-12 21:00;4.7;2021.0
+OT-25022;CAM-01;Correctif;Hydraulique;Fuite flexible hydraulique vérin de benne;2026-03-27 08:00;2.1;2772.0
+OT-25023;CAM-01;Préventif;Hydraulique;Intervention planifiée;2025-09-10 05:00;7.1;2870.0
+OT-25024;CAM-08;Préventif;Moteur;Intervention planifiée;2026-03-16 03:00;1.1;2115.0
+OT-25025;POMPE-CCD-02;Préventif;Électrique;Intervention planifiée;2025-12-22 17:00;8.2;2675.0
+OT-25026;CAM-03;Prédictif;Freinage;Intervention planifiée;2025-10-25 02:00;4.4;2328.0
+OT-25027;PEL-03;Correctif;Pneumatiques;Crevaison / usure pneu;2025-08-20 02:00;2.8;1617.0
+OT-25028;PEL-01;Préventif;Lubrification;Intervention planifiée;2026-02-08 18:00;4.2;2992.0
+OT-25029;CAM-02;Préventif;Hydraulique;Intervention planifiée;2026-03-25 13:00;5.1;3177.0
+OT-25030;CONC-01;Correctif;Hydraulique;Fuite flexible hydraulique vérin de benne;2026-04-12 20:00;3.3;2949.0
+OT-25031;PEL-03;Correctif;Électrique;Défaut alternateur / faisceau;2025-12-03 07:00;2.8;2123.0
+OT-25032;PEL-01;Préventif;Transmission;Intervention planifiée;2026-04-25 01:00;11.6;8525.0
+OT-25033;BROY-01;Préventif;Lubrification;Intervention planifiée;2025-08-31 17:00;1.7;2649.0
+OT-25034;CAM-07;Préventif;Hydraulique;Intervention planifiée;2025-12-27 16:00;5.8;2297.0
+OT-25035;CAM-01;Préventif;Moteur;Intervention planifiée;2025-08-17 20:00;11.3;6275.0
+OT-25036;CAM-12;Préventif;Lubrification;Intervention planifiée;2025-12-16 20:00;4.2;1829.0
+OT-25037;CAM-12;Préventif;Hydraulique;Intervention planifiée;2026-02-15 12:00;4.4;3792.0
+OT-25038;CAM-12;Préventif;Moteur;Intervention planifiée;2025-09-18 10:00;10.9;5863.0
+OT-25039;FOR-03;Préventif;Pneumatiques;Intervention planifiée;2026-03-09 21:00;6.2;3288.0
+OT-25040;PEL-03;Préventif;Hydraulique;Intervention planifiée;2025-12-13 14:00;5.1;1013.0
+OT-25041;CAM-04;Correctif;Lubrification;Graissage centralisé défaillant;2025-10-23 13:00;3.1;3208.0
+OT-25042;CONC-01;Correctif;Hydraulique;Fuite flexible hydraulique vérin de benne;2025-09-08 15:00;5.0;4112.0
+OT-25043;CAM-02;Correctif;Pneumatiques;Crevaison / usure pneu;2025-11-12 09:00;7.2;3043.0
+OT-25044;POMPE-CCD-02;Préventif;Électrique;Intervention planifiée;2025-12-03 08:00;3.0;2366.0
+OT-25045;CAM-07;Correctif;Hydraulique;Fuite flexible hydraulique vérin de benne;2026-04-12 07:00;5.6;4361.0
+OT-25046;FOR-03;Préventif;Hydraulique;Intervention planifiée;2025-12-22 19:00;7.1;5143.0
+OT-25047;FOR-02;Correctif;Freinage;Usure garnitures, test frein échoué;2025-09-25 01:00;0.6;876.0
+OT-25048;CAM-02;Correctif;Hydraulique;Fuite flexible hydraulique vérin de benne;2025-09-26 09:00;4.7;3787.0
+OT-25049;FOR-04;Préventif;Hydraulique;Intervention planifiée;2026-04-15 12:00;4.3;1831.0
+OT-25050;CAM-03;Correctif;Hydraulique;Fuite flexible hydraulique vérin de benne;2025-09-05 22:00;4.9;2908.0
+OT-25051;CAM-09;Préventif;Moteur;Intervention planifiée;2026-03-19 07:00;5.6;4229.0
+OT-25052;PEL-03;Préventif;Hydraulique;Intervention planifiée;2025-11-11 12:00;6.9;4308.0
+OT-25053;FOR-04;Préventif;Freinage;Intervention planifiée;2025-07-03 13:00;10.2;3811.0
+OT-25054;CAM-03;Préventif;Pneumatiques;Intervention planifiée;2025-11-21 16:00;6.4;2965.0
+OT-25055;POMPE-CCD-02;Correctif;Freinage;Usure garnitures, test frein échoué;2025-08-10 14:00;3.5;3161.0
+OT-25056;CAM-10;Préventif;Pneumatiques;Intervention planifiée;2025-09-01 15:00;3.8;2545.0
+OT-25057;CAM-10;Préventif;Hydraulique;Intervention planifiée;2025-10-26 06:00;7.9;2919.0
+OT-25058;CAM-04;Correctif;Hydraulique;Fuite flexible hydraulique vérin de benne;2025-09-23 17:00;3.2;1110.0
+OT-25059;PEL-02;Correctif;Moteur;Surchauffe moteur, radiateur colmaté;2026-02-22 06:00;10.9;3384.0
+OT-25060;PEL-03;Correctif;Pneumatiques;Crevaison / usure pneu;2025-08-31 07:00;4.0;2877.0
+OT-25061;FOR-04;Préventif;Lubrification;Intervention planifiée;2025-08-07 06:00;3.6;3324.0
+OT-25062;CONC-01;Correctif;Hydraulique;Fuite flexible hydraulique vérin de benne;2025-09-11 00:00;6.0;4591.0
+OT-25063;PEL-02;Correctif;Pneumatiques;Crevaison / usure pneu;2026-01-28 18:00;2.5;1142.0
+OT-25064;CAM-09;Correctif;Hydraulique;Fuite flexible hydraulique vérin de benne;2025-07-13 14:00;4.3;2183.0
+OT-25065;CAM-01;Préventif;Moteur;Intervention planifiée;2026-01-28 07:00;5.0;1503.0
+OT-25066;CAM-06;Préventif;Transmission;Intervention planifiée;2026-01-11 14:00;2.7;4165.0
+OT-25067;FOR-03;Préventif;Freinage;Intervention planifiée;2026-04-16 09:00;6.1;4109.0
+OT-25068;BROY-01;Préventif;Pneumatiques;Intervention planifiée;2025-09-13 19:00;5.5;1817.0
+OT-25069;CAM-09;Correctif;Lubrification;Graissage centralisé défaillant;2025-08-22 05:00;2.4;2025.0
+OT-25070;PEL-01;Préventif;Moteur;Intervention planifiée;2026-02-16 19:00;6.6;2587.0
+OT-25071;CAM-04;Correctif;Pneumatiques;Crevaison / usure pneu;2025-08-15 17:00;6.4;2964.0
+OT-25072;CAM-08;Correctif;Moteur;Surchauffe moteur, radiateur colmaté;2025-12-10 18:00;7.2;3822.0
+OT-25073;FOR-02;Préventif;Hydraulique;Intervention planifiée;2026-04-16 15:00;8.2;3807.0
+OT-25074;PEL-02;Correctif;Freinage;Usure garnitures, test frein échoué;2025-12-30 04:00;6.8;3810.0
+OT-25075;CAM-07;Préventif;Hydraulique;Intervention planifiée;2026-04-15 18:00;7.3;3117.0
+OT-25076;CAM-11;Correctif;Pneumatiques;Crevaison / usure pneu;2025-12-01 10:00;3.0;2710.0
+OT-25077;POMPE-CCD-02;Correctif;Moteur;Surchauffe moteur, radiateur colmaté;2025-12-05 04:00;-3.0;3018.0
+OT-25078;CAM-07;Correctif;Hydraulique;Fuite flexible hydraulique vérin de benne;2025-08-13 11:00;8.0;2130.0
+OT-25079;CAM-09;Correctif;Hydraulique;Fuite flexible hydraulique vérin de benne;2025-12-29 15:00;8.4;2261.0
+OT-25080;FOR-04;Préventif;Hydraulique;Intervention planifiée;2025-10-15 09:00;8.8;4304.0
+OT-25081;CAM-10;Correctif;Électrique;Défaut alternateur / faisceau;2026-04-18 23:00;9.4;3040.0
+OT-25082;POMPE-CCD-02;Correctif;Freinage;Usure garnitures, test frein échoué;2025-11-17 21:00;13.4;7231.0
+OT-25083;CAM-03;Prédictif;Électrique;Intervention planifiée;2025-12-14 03:00;5.1;3656.0
+OT-25084;FOR-03;Préventif;Hydraulique;Intervention planifiée;2025-11-06 15:00;4.9;1790.0
+OT-25085;CAM-06;Correctif;Moteur;Surchauffe moteur, radiateur colmaté;2026-04-22 10:00;6.7;4445.0
+OT-25086;CAM-02;Correctif;Pneumatiques;Crevaison / usure pneu;2026-02-02 12:00;4.0;1867.0
+OT-25087;CAM-10;Préventif;Électrique;Intervention planifiée;2026-03-25 13:00;3.3;2572.0
+OT-25088;CAM-01;Correctif;Hydraulique;Fuite flexible hydraulique vérin de benne;2026-03-22 13:00;0.8;2271.0
+OT-25089;CAM-12;Préventif;Électrique;Intervention planifiée;2025-12-31 05:00;3.9;2323.0
+OT-25090;CAM-08;Préventif;Hydraulique;Intervention planifiée;2025-08-11 15:00;2.7;961.0
+OT-25091;POMPE-CCD-02;Correctif;Lubrification;Graissage centralisé défaillant;2025-11-10 11:00;4.3;1568.0
+OT-25092;CAM-07;Prédictif;Hydraulique;Intervention planifiée;2025-12-22 18:00;6.5;3392.0
+OT-25093;POMPE-CCD-02;Correctif;Structure;Fissure châssis / benne;2025-09-13 06:00;26.1;14188.0
+OT-25094;CAM-07;Correctif;Hydraulique;Fuite flexible hydraulique vérin de benne;2025-08-31 21:00;4.4;3669.0
+OT-25095;POMPE-CCD-02;Préventif;Électrique;Intervention planifiée;2026-04-02 16:00;4.7;3217.0
+OT-25096;BROY-01;Correctif;Pneumatiques;Crevaison / usure pneu;2025-11-25 05:00;3.3;1953.0
+OT-25097;CAM-09;Correctif;Lubrification;Graissage centralisé défaillant;2025-08-31 04:00;2.7;1770.0
+OT-25098;CAM-02;Correctif;Pneumatiques;Crevaison / usure pneu;2026-03-25 18:00;6.3;4103.0
+OT-25099;PEL-01;Préventif;Électrique;Intervention planifiée;2025-12-09 13:00;5.9;4391.0
+OT-25100;CAM-08;Préventif;Moteur;Intervention planifiée;2025-11-19 13:00;15.3;4024.0
+OT-25101;CAM-03;Correctif;Freinage;Usure garnitures, test frein échoué;2026-02-12 02:00;5.0;3153.0
+OT-25102;CAM-03;Préventif;Électrique;Intervention planifiée;2026-03-13 02:00;4.8;2018.0
+OT-25103;CAM-10;Préventif;Hydraulique;Intervention planifiée;2025-12-12 08:00;7.7;4041.0
+OT-25104;FOR-03;Préventif;Électrique;Intervention planifiée;2026-03-17 10:00;3.8;1325.0
+OT-25105;CAM-11;Correctif;Structure;Fissure châssis / benne;2026-04-01 05:00;18.1;10835.0
+OT-25106;CAM-01;Préventif;Hydraulique;Intervention planifiée;2026-01-20 03:00;7.3;3298.0
+OT-25107;FOR-04;Correctif;Lubrification;Graissage centralisé défaillant;2025-12-08 18:00;3.1;2680.0
+OT-25108;CAM-01;Préventif;Freinage;Intervention planifiée;2025-07-14 22:00;7.5;2405.0
+OT-25109;CONC-01;Correctif;Moteur;Surchauffe moteur, radiateur colmaté;2025-10-25 04:00;12.5;4922.0
+OT-25110;CAM-03;Correctif;Freinage;Usure garnitures, test frein échoué;2026-04-18 07:00;11.0;2451.0
+OT-25111;FOR-04;Prédictif;Électrique;Intervention planifiée;2025-11-19 22:00;4.0;3064.0
+OT-25112;CAM-01;Correctif;Pneumatiques;Crevaison / usure pneu;2026-03-01 18:00;2.1;1147.0
+OT-25113;PEL-03;Correctif;Freinage;Usure garnitures, test frein échoué;2026-01-31 23:00;8.8;1786.0
+OT-25114;FOR-01;Préventif;Freinage;Intervention planifiée;2025-08-11 13:00;4.2;3515.0
+OT-25115;PEL-01;Correctif;Hydraulique;Fuite flexible hydraulique vérin de benne;2026-04-21 01:00;7.4;3798.0
+OT-25116;CAM-01;Préventif;Pneumatiques;Intervention planifiée;2025-08-07 14:00;5.6;4016.0
+OT-25117;PEL-02;Préventif;Électrique;Intervention planifiée;2025-12-29 12:00;6.2;3564.0
+OT-25118;CAM-10;Correctif;Hydraulique;Fuite flexible hydraulique vérin de benne;2025-10-31 19:00;8.8;3561.0
+OT-25119;PEL-01;Préventif;Hydraulique;Intervention planifiée;2025-09-12 23:00;10.0;5083.0
+OT-25120;FOR-01;Préventif;Hydraulique;Intervention planifiée;2025-08-21 10:00;7.1;3282.0
+OT-25121;CAM-12;Correctif;Pneumatiques;Crevaison / usure pneu;2026-04-10 11:00;2.4;802.0
+OT-25122;CONC-01;Correctif;Hydraulique;Fuite flexible hydraulique vérin de benne;2025-12-04 18:00;9.4;4128.0
+OT-25123;CAM-02;Correctif;Lubrification;Graissage centralisé défaillant;2025-09-11 12:00;1.5;2696.0
+OT-25124;BROY-01;Prédictif;Pneumatiques;Intervention planifiée;2026-04-15 00:00;3.1;2904.0
+OT-25125;CAM-02;Correctif;Pneumatiques;Crevaison / usure pneu;2026-02-13 05:00;4.0;3187.0
+OT-25126;CAM-11;Correctif;Hydraulique;Fuite flexible hydraulique vérin de benne;2026-03-15 06:00;3.9;3375.0
+OT-25127;CAM-12;Correctif;Moteur;Surchauffe moteur, radiateur colmaté;2025-12-20 15:00;5.4;3581.0
+OT-25128;FOR-03;Préventif;Freinage;Intervention planifiée;2025-09-20 09:00;4.2;1520.0
+OT-25129;CAM-01;Correctif;Hydraulique;Fuite flexible hydraulique vérin de benne;2025-08-27 20:00;4.9;3129.0
+OT-25130;FOR-01;Correctif;Électrique;Défaut alternateur / faisceau;2025-09-22 12:00;2.0;2916.0
+OT-25131;FOR-04;Correctif;Pneumatiques;Crevaison / usure pneu;2026-01-26 16:00;2.9;1346.0
+OT-25132;FOR-03;Prédictif;Pneumatiques;Intervention planifiée;2026-01-02 21:00;2.4;1962.0
+OT-25133;FOR-02;Préventif;Transmission;Intervention planifiée;2026-02-16 02:00;8.6;14786.0
+OT-25134;CAM-02;Correctif;Pneumatiques;Crevaison / usure pneu;2026-04-04 04:00;2.8;2199.0
+OT-25135;CAM-04;Préventif;Transmission;Intervention planifiée;2025-10-15 21:00;22.7;22258.0
+OT-25136;CAM-11;Prédictif;Transmission;Intervention planifiée;2025-12-12 20:00;16.2;13449.0
+OT-25137;CAM-08;Préventif;Hydraulique;Intervention planifiée;2025-12-26 17:00;0.5;482.0
+OT-25138;CAM-07;Prédictif;Électrique;Intervention planifiée;2025-08-21 10:00;1.3;2068.0
+OT-25139;CAM-08;Préventif;Lubrification;Intervention planifiée;2026-02-14 16:00;1.4;2567.0
+OT-25140;CAM-06;Prédictif;Moteur;Intervention planifiée;2025-09-07 03:00;14.3;5180.0
+OT-25141;CAM-12;Préventif;Freinage;Intervention planifiée;2025-12-30 21:00;4.0;2338.0
+OT-25142;CONC-01;Préventif;Pneumatiques;Intervention planifiée;2025-10-12 08:00;6.3;2709.0
+OT-25143;CAM-10;Correctif;Transmission;Bruit anormal, contamination huile;2026-01-03 01:00;14.0;13425.0
+OT-25144;FOR-02;Correctif;Freinage;Usure garnitures, test frein échoué;2025-08-19 09:00;9.1;4403.0
+OT-25145;FOR-02;Correctif;Pneumatiques;Crevaison / usure pneu;2025-08-10 06:00;6.6;4276.0
+OT-25146;PEL-01;Correctif;Transmission;Bruit anormal, contamination huile;2025-12-14 05:00;19.4;14254.0
+OT-25147;PEL-02;Correctif;Électrique;Défaut alternateur / faisceau;2026-02-05 03:00;4.7;1469.0
+OT-25148;PEL-02;Correctif;Freinage;Usure garnitures, test frein échoué;2025-07-30 21:00;4.6;2945.0
+OT-25149;CAM-08;Correctif;Hydraulique;Fuite flexible hydraulique vérin de benne;2026-01-02 01:00;3.3;1444.0
+OT-25150;CAM-02;Préventif;Hydraulique;Intervention planifiée;2025-07-26 09:00;9.6;3965.0
+OT-25151;POMPE-CCD-02;Préventif;Hydraulique;Intervention planifiée;2025-07-25 12:00;7.4;4303.0
+OT-25152;CAM-06;Prédictif;Transmission;Intervention planifiée;2025-08-18 08:00;13.7;18425.0
+OT-25153;PEL-03;Correctif;Lubrification;Graissage centralisé défaillant;2026-03-03 01:00;1.1;1267.0
+OT-25154;CAM-01;Correctif;Électrique;Défaut alternateur / faisceau;2026-01-25 07:00;5.5;3029.0
+OT-25155;BROY-01;Préventif;Hydraulique;Intervention planifiée;2026-04-07 22:00;8.3;3702.0
+OT-25156;CAM-09;Préventif;Hydraulique;Intervention planifiée;2026-04-12 20:00;9.3;4272.0
+OT-25157;FOR-03;Préventif;Moteur;Intervention planifiée;2025-08-12 14:00;8.1;4278.0
+OT-25158;CAM-04;Préventif;Hydraulique;Intervention planifiée;2025-12-04 16:00;8.6;3742.0
+OT-25159;FOR-02;Correctif;Freinage;Usure garnitures, test frein échoué;2025-12-16 10:00;5.5;3295.0
+OT-25160;BROY-01;Correctif;Hydraulique;Fuite flexible hydraulique vérin de benne;2025-07-28 15:00;3.0;2155.0
+OT-25161;CAM-04;Correctif;Électrique;Défaut alternateur / faisceau;2026-02-15 22:00;4.0;2995.0
+OT-25162;CAM-06;Préventif;Moteur;Intervention planifiée;2025-10-29 05:00;11.7;4799.0
+OT-25163;CAM-05;Correctif;Freinage;Usure garnitures, test frein échoué;2026-04-20 12:00;7.4;2435.0
+OT-25164;FOR-03;Correctif;Lubrification;Graissage centralisé défaillant;2025-11-10 00:00;3.7;3210.0
+OT-25165;FOR-02;Préventif;Électrique;Intervention planifiée;2026-03-21 10:00;7.7;4296.0
+OT-25166;PEL-01;Prédictif;Pneumatiques;Intervention planifiée;2026-02-23 11:00;2.3;3062.0
+OT-25167;FOR-04;Correctif;Électrique;Défaut alternateur / faisceau;2026-01-30 11:00;3.0;2851.0
+OT-25168;PEL-01;Correctif;Électrique;Défaut alternateur / faisceau;2026-02-06 19:00;6.5;3154.0
+OT-25169;PEL-03;Préventif;Pneumatiques;Intervention planifiée;2025-07-11 05:00;4.6;3461.0
+OT-25170;CAM-07;Préventif;Lubrification;Intervention planifiée;2025-11-20 00:00;1.9;2337.0
+OT-25171;PEL-02;Correctif;Lubrification;Graissage centralisé défaillant;2025-12-13 20:00;3.0;3018.0
+OT-25172;FOR-03;Préventif;Moteur;Intervention planifiée;2026-03-17 12:00;16.2;5586.0
+OT-25173;CAM-07;Prédictif;Hydraulique;Intervention planifiée;2025-07-12 23:00;6.0;1777.0
+OT-25174;CAM-06;Correctif;Hydraulique;Fuite flexible hydraulique vérin de benne;2025-12-22 02:00;6.7;2687.0
+OT-25175;PEL-03;Correctif;Pneumatiques;Crevaison / usure pneu;2026-03-25 21:00;5.9;3146.0
+OT-25176;PEL-01;Préventif;Transmission;Intervention planifiée;2025-12-17 19:00;13.5;16961.0
+OT-25177;FOR-04;Correctif;Transmission;Bruit anormal, contamination huile;2026-04-02 08:00;10.0;9673.0
+OT-25178;PEL-03;Préventif;Pneumatiques;Intervention planifiée;2026-01-23 03:00;4.7;2929.0
+OT-25179;FOR-01;Préventif;Lubrification;Intervention planifiée;2025-10-20 14:00;2.4;1368.0
+OT-25180;BROY-01;Correctif;Pneumatiques;Crevaison / usure pneu;2025-12-06 06:00;6.1;4661.0
+OT-25181;CAM-09;Correctif;Pneumatiques;Crevaison / usure pneu;2025-10-20 07:00;4.2;1748.0
+OT-25182;PEL-01;Correctif;Pneumatiques;Crevaison / usure pneu;2026-03-29 09:00;4.1;1677.0
+OT-25183;PEL-02;Préventif;Hydraulique;Intervention planifiée;2026-04-21 00:00;9.4;4154.0
+OT-25184;FOR-04;Correctif;Pneumatiques;Crevaison / usure pneu;2025-07-01 12:00;3.8;1194.0
+OT-25185;CAM-10;Préventif;Hydraulique;Intervention planifiée;2025-09-27 03:00;5.6;3466.0
+OT-25186;CAM-06;Correctif;Pneumatiques;Crevaison / usure pneu;2025-08-20 05:00;3.3;1380.0
+OT-25187;CAM-12;Préventif;Lubrification;Intervention planifiée;2025-11-21 06:00;3.7;1491.0
+OT-25188;CAM-10;Correctif;Pneumatiques;Crevaison / usure pneu;2026-04-16 06:00;1.6;2066.0
+OT-25189;CAM-07;Préventif;Hydraulique;Intervention planifiée;2026-04-04 20:00;4.4;3586.0
+OT-25190;CAM-08;Correctif;Électrique;Défaut alternateur / faisceau;2026-01-07 05:00;5.0;2488.0
+OT-25191;CAM-05;Préventif;Structure;Intervention planifiée;2026-01-09 17:00;20.8;18961.0
+OT-25192;PEL-02;Correctif;Freinage;Usure garnitures, test frein échoué;2025-09-04 08:00;1.8;927.0
+OT-25193;BROY-01;Préventif;Freinage;Intervention planifiée;2026-04-06 22:00;8.2;3480.0
+OT-25194;CAM-07;Correctif;Structure;Fissure châssis / benne;2026-02-14 20:00;10.7;10053.0
+OT-25195;PEL-01;Correctif;Pneumatiques;Crevaison / usure pneu;2025-11-02 16:00;4.5;1879.0
+OT-25196;PEL-02;Préventif;Freinage;Intervention planifiée;2026-02-11 01:00;9.8;4257.0
+OT-25197;PEL-02;Correctif;Hydraulique;Fuite flexible hydraulique vérin de benne;2026-01-24 17:00;1.0;479.0
+OT-25198;CONC-01;Préventif;Lubrification;Intervention planifiée;2025-09-23 17:00;1.4;2103.0
+OT-25199;CONC-01;Correctif;Pneumatiques;Crevaison / usure pneu;2025-11-26 09:00;3.1;2642.0
+OT-25200;CAM-12;Correctif;Transmission;Bruit anormal, contamination huile;2026-01-23 06:00;23.0;21459.0
+OT-25201;POMPE-CCD-02;Correctif;Lubrification;Graissage centralisé défaillant;2025-08-15 12:00;1.9;1664.0
+OT-25202;PEL-03;Correctif;Hydraulique;Fuite flexible hydraulique vérin de benne;2026-01-26 19:00;4.9;1488.0
+OT-25203;CAM-09;Préventif;Moteur;Intervention planifiée;2026-03-16 03:00;1.8;2019.0
+OT-25204;CAM-04;Préventif;Hydraulique;Intervention planifiée;2025-08-11 19:00;1.9;829.0
+OT-25205;POMPE-CCD-02;Préventif;Électrique;Intervention planifiée;2025-07-28 03:00;7.1;4203.0
+OT-25206;CAM-09;Préventif;Freinage;Intervention planifiée;2025-10-07 22:00;3.6;3127.0
+OT-25207;CAM-02;Correctif;Transmission;Bruit anormal, contamination huile;2025-09-12 11:00;25.2;17916.0
+OT-25208;FOR-03;Prédictif;Électrique;Intervention planifiée;2025-12-10 17:00;6.2;3806.0
+OT-25209;FOR-02;Correctif;Freinage;Usure garnitures, test frein échoué;2025-12-21 06:00;8.1;2513.0
+OT-25210;CAM-09;Correctif;Hydraulique;Fuite flexible hydraulique vérin de benne;2025-09-13 11:00;6.0;2292.0
+OT-25211;CAM-10;Préventif;Hydraulique;Intervention planifiée;2026-03-19 18:00;4.0;3136.0
+OT-25212;FOR-01;Correctif;Électrique;Défaut alternateur / faisceau;2025-12-09 11:00;6.4;3795.0
+OT-25213;FOR-03;Correctif;Pneumatiques;Crevaison / usure pneu;2026-04-14 09:00;3.3;919.0
+OT-25214;CAM-05;Préventif;Hydraulique;Intervention planifiée;2025-10-27 12:00;5.1;2714.0
+OT-25215;CAM-12;Préventif;Freinage;Intervention planifiée;2025-10-06 11:00;10.3;2704.0
+OT-25216;FOR-02;Préventif;Pneumatiques;Intervention planifiée;2026-02-06 12:00;3.3;1462.0
+OT-25217;CONC-01;Prédictif;Hydraulique;Intervention planifiée;2025-08-11 11:00;8.1;3484.0
+OT-25218;FOR-04;Préventif;Pneumatiques;Intervention planifiée;2025-07-21 17:00;5.1;4260.0
+OT-25219;BROY-01;Correctif;Structure;Fissure châssis / benne;2025-09-30 05:00;12.3;12436.0
+OT-25220;CAM-10;Prédictif;Freinage;Intervention planifiée;2025-12-22 17:00;14.6;6321.0
+OT-25221;CAM-02;Préventif;Pneumatiques;Intervention planifiée;2025-08-11 06:00;3.2;1231.0
+OT-25222;PEL-02;Préventif;Hydraulique;Intervention planifiée;2026-04-24 23:00;1.3;2493.0
+OT-25223;CAM-06;Préventif;Pneumatiques;Intervention planifiée;2025-07-07 11:00;4.0;2409.0
+OT-25224;CAM-05;Correctif;Transmission;Bruit anormal, contamination huile;2025-12-10 13:00;10.2;17366.0
+OT-25225;CAM-02;Correctif;Hydraulique;Fuite flexible hydraulique vérin de benne;2026-03-11 02:00;9.4;3911.0
+OT-25226;POMPE-CCD-02;Préventif;Pneumatiques;Intervention planifiée;2026-04-13 01:00;3.9;3668.0
+OT-25227;CAM-09;Préventif;Hydraulique;Intervention planifiée;2026-02-25 10:00;4.7;3407.0
+OT-25228;CAM-12;Préventif;Moteur;Intervention planifiée;2026-01-09 08:00;11.5;3529.0
+OT-25229;CAM-09;Correctif;Hydraulique;Fuite flexible hydraulique vérin de benne;2025-09-01 23:00;10.1;4682.0
+OT-25230;CAM-05;Prédictif;Hydraulique;Intervention planifiée;2026-01-02 13:00;9.4;4815.0
+OT-25231;POMPE-CCD-02;Correctif;Pneumatiques;Crevaison / usure pneu;2026-04-26 04:00;3.2;1874.0
+OT-25232;CAM-01;Correctif;Pneumatiques;Crevaison / usure pneu;2025-12-22 00:00;4.1;3737.0
+OT-25233;CONC-01;Préventif;Moteur;Intervention planifiée;2025-07-23 00:00;7.5;4580.0
+OT-25234;CAM-09;Correctif;Moteur;Surchauffe moteur, radiateur colmaté;2026-03-25 19:00;12.1;3370.0
+OT-25235;CAM-06;Préventif;Électrique;Intervention planifiée;2025-10-01 16:00;3.1;2016.0
+OT-25236;CAM-06;Correctif;Hydraulique;Fuite flexible hydraulique vérin de benne;2025-11-28 23:00;5.6;3499.0
+OT-25237;CAM-02;Correctif;Hydraulique;Fuite flexible hydraulique vérin de benne;2025-12-04 22:00;4.7;2194.0
+OT-25238;FOR-04;Préventif;Pneumatiques;Intervention planifiée;2026-04-14 15:00;3.9;2132.0
+OT-25239;PEL-01;Préventif;Électrique;Intervention planifiée;2025-09-13 22:00;4.2;1157.0
+OT-25240;FOR-02;Préventif;Pneumatiques;Intervention planifiée;2025-09-24 03:00;4.8;2358.0
+OT-25241;PEL-03;Préventif;Hydraulique;Intervention planifiée;2025-10-29 21:00;5.6;3432.0
+OT-25242;FOR-03;Préventif;Pneumatiques;Intervention planifiée;2026-01-30 15:00;4.2;2731.0
+OT-25243;BROY-01;Correctif;Hydraulique;Fuite flexible hydraulique vérin de benne;2025-09-26 12:00;3.4;2881.0
+OT-25244;CAM-09;Correctif;Structure;Fissure châssis / benne;2025-11-21 12:00;30.3;15396.0
+OT-25245;CAM-12;Correctif;Pneumatiques;Crevaison / usure pneu;2026-01-01 00:00;5.3;2315.0
+OT-25246;PEL-03;Préventif;Moteur;Intervention planifiée;2025-11-11 10:00;15.1;4227.0
+OT-25247;CAM-10;Correctif;Pneumatiques;Crevaison / usure pneu;2026-03-15 15:00;5.4;3869.0
+OT-25248;CAM-12;Correctif;Électrique;Défaut alternateur / faisceau;2025-07-24 02:00;4.5;2661.0
+OT-25249;FOR-03;Correctif;Hydraulique;Fuite flexible hydraulique vérin de benne;2025-09-06 17:00;7.4;4898.0
+OT-25250;FOR-02;Correctif;Moteur;Surchauffe moteur, radiateur colmaté;2025-11-14 23:00;10.1;4827.0
+OT-25251;PEL-02;Correctif;Hydraulique;Fuite flexible hydraulique vérin de benne;2025-07-16 09:00;8.4;3164.0
+OT-25252;PEL-02;Correctif;Hydraulique;Fuite flexible hydraulique vérin de benne;2025-08-18 12:00;3.2;1379.0
+OT-25253;CAM-11;Préventif;Freinage;Intervention planifiée;2026-03-06 22:00;8.4;3226.0
+OT-25254;CAM-11;Correctif;Hydraulique;Fuite flexible hydraulique vérin de benne;2026-02-22 12:00;7.2;3737.0
+OT-25255;CONC-01;Préventif;Pneumatiques;Intervention planifiée;2026-01-19 04:00;2.8;1039.0
+OT-25256;CAM-06;Correctif;Électrique;Défaut alternateur / faisceau;2025-07-11 23:00;6.2;4049.0
+OT-25257;CAM-08;Correctif;Freinage;Usure garnitures, test frein échoué;2025-07-18 18:00;10.1;4814.0
+OT-25258;CAM-06;Préventif;Pneumatiques;Intervention planifiée;2025-08-11 10:00;3.7;974.0
+OT-25259;PEL-01;Correctif;Électrique;Défaut alternateur / faisceau;2026-02-19 05:00;6.5;3231.0
+OT-25260;PEL-02;Correctif;Lubrification;Graissage centralisé défaillant;2025-08-11 06:00;2.8;3172.0
+OT-25261;POMPE-CCD-02;Préventif;Pneumatiques;Intervention planifiée;2025-09-25 20:00;3.6;2468.0
+OT-25262;CAM-12;Correctif;Pneumatiques;Crevaison / usure pneu;2026-02-05 16:00;3.8;3318.0
+OT-25263;CAM-09;Correctif;Freinage;Usure garnitures, test frein échoué;2025-08-24 00:00;7.5;3075.0
+OT-25264;PEL-02;Préventif;Électrique;Intervention planifiée;2025-10-17 05:00;5.3;2155.0
+OT-25265;CAM-01;Correctif;Freinage;Usure garnitures, test frein échoué;2025-09-15 11:00;10.6;4514.0
+OT-25266;FOR-02;Préventif;Pneumatiques;Intervention planifiée;2025-09-03 22:00;5.9;4072.0
+OT-25267;CAM-08;Préventif;Pneumatiques;Intervention planifiée;2025-12-22 21:00;4.5;1537.0
+OT-25268;CAM-12;Correctif;Hydraulique;Fuite flexible hydraulique vérin de benne;2025-11-16 03:00;8.6;3940.0
+OT-25269;CAM-12;Correctif;Hydraulique;Fuite flexible hydraulique vérin de benne;2025-08-21 18:00;3.1;3115.0
+OT-25270;PEL-01;Correctif;Hydraulique;Fuite flexible hydraulique vérin de benne;2026-01-17 13:00;4.4;2473.0
+OT-25271;CAM-10;Correctif;Lubrification;Graissage centralisé défaillant;2025-12-12 15:00;3.4;1995.0
+OT-25272;CAM-05;Préventif;Pneumatiques;Intervention planifiée;2025-12-29 13:00;2.9;2572.0
+OT-25273;CAM-02;Correctif;Structure;Fissure châssis / benne;2025-08-05 16:00;6.7;10811.0
+OT-25274;FOR-02;Prédictif;Lubrification;Intervention planifiée;2025-09-09 03:00;3.4;2950.0
+OT-25275;FOR-04;Correctif;Pneumatiques;Crevaison / usure pneu;2026-02-04 08:00;3.1;2134.0
+OT-25276;CAM-09;Préventif;Freinage;Intervention planifiée;2025-07-21 20:00;6.8;2407.0
+OT-25277;FOR-01;Prédictif;Pneumatiques;Intervention planifiée;2026-01-17 15:00;5.2;2779.0
+OT-25278;CAM-09;Correctif;Hydraulique;Fuite flexible hydraulique vérin de benne;2025-07-15 07:00;3.9;2713.0
+OT-25279;CAM-04;Correctif;Freinage;Usure garnitures, test frein échoué;2025-11-18 13:00;5.7;3613.0
+OT-25280;CAM-03;Correctif;Hydraulique;Fuite flexible hydraulique vérin de benne;2025-07-20 00:00;8.5;2826.0
+OT-25281;CAM-05;Correctif;Hydraulique;Fuite flexible hydraulique vérin de benne;2025-08-23 17:00;4.5;1767.0
+OT-25282;PEL-01;Correctif;Pneumatiques;Crevaison / usure pneu;2025-08-28 09:00;6.2;4657.0
+OT-25283;CAM-02;Prédictif;Électrique;Intervention planifiée;2026-01-27 06:00;7.8;4317.0
+OT-25284;CAM-11;Correctif;Hydraulique;Fuite flexible hydraulique vérin de benne;2025-11-11 13:00;5.6;3108.0
+OT-25285;CAM-10;Correctif;Moteur;Surchauffe moteur, radiateur colmaté;2026-03-22 00:00;11.8;3389.0
+OT-25286;CAM-06;Préventif;Transmission;Intervention planifiée;2026-03-18 16:00;15.6;17906.0
+OT-25287;FOR-03;Correctif;Hydraulique;Fuite flexible hydraulique vérin de benne;2025-07-28 10:00;9.8;4165.0
+OT-25288;CAM-10;Correctif;Électrique;Défaut alternateur / faisceau;2026-02-14 17:00;1.4;2673.0
+OT-25289;CAM-09;Préventif;Électrique;Intervention planifiée;2025-08-28 21:00;5.0;2846.0
+OT-25290;CAM-10;Correctif;Électrique;Défaut alternateur / faisceau;2026-03-27 03:00;4.8;2889.0
+OT-25291;CAM-08;Préventif;Électrique;Intervention planifiée;2026-01-13 09:00;5.3;2497.0
+OT-25292;FOR-02;Correctif;Pneumatiques;Crevaison / usure pneu;2026-02-03 13:00;3.7;3336.0
+OT-25293;BROY-01;Préventif;Électrique;Intervention planifiée;2026-02-16 08:00;3.6;1529.0
+OT-25294;CAM-07;Préventif;Hydraulique;Intervention planifiée;2025-12-12 21:00;7.8;2737.0
+OT-25295;FOR-02;Préventif;Hydraulique;Intervention planifiée;2026-01-06 05:00;7.0;3813.0
+OT-25296;CAM-08;Correctif;Freinage;Usure garnitures, test frein échoué;2026-03-31 17:00;7.5;4247.0
+OT-25297;FOR-03;Correctif;Électrique;Défaut alternateur / faisceau;2025-08-10 21:00;9.7;4286.0
+OT-25298;BROY-01;Correctif;Électrique;Défaut alternateur / faisceau;2025-09-09 03:00;6.5;1527.0
+OT-25299;FOR-02;Correctif;Lubrification;Graissage centralisé défaillant;2025-09-13 21:00;3.5;2874.0
+OT-25300;PEL-03;Préventif;Lubrification;Intervention planifiée;2025-10-01 12:00;1.9;2797.0
+OT-25301;CAM-09;Correctif;Pneumatiques;Crevaison / usure pneu;2025-11-22 15:00;5.9;3639.0
+OT-25302;CAM-05;Correctif;Lubrification;Graissage centralisé défaillant;2026-04-21 15:00;2.1;2968.0
+OT-25303;CAM-11;Préventif;Pneumatiques;Intervention planifiée;2025-09-08 09:00;3.2;2912.0
+OT-25304;CAM-12;Correctif;Électrique;Défaut alternateur / faisceau;2025-11-18 11:00;4.1;2740.0
+OT-25305;CAM-02;Préventif;Pneumatiques;Intervention planifiée;2025-11-14 10:00;2.8;2283.0
+OT-25306;PEL-03;Correctif;Moteur;Surchauffe moteur, radiateur colmaté;2025-11-29 19:00;7.6;2302.0
+OT-25307;FOR-02;Préventif;Hydraulique;Intervention planifiée;2025-07-01 03:00;7.0;4144.0
+OT-25308;CAM-05;Correctif;Hydraulique;Fuite flexible hydraulique vérin de benne;2025-08-03 22:00;2.8;1358.0
+OT-25309;FOR-04;Prédictif;Pneumatiques;Intervention planifiée;2025-08-06 02:00;3.8;2083.0
+OT-25310;CAM-11;Correctif;Pneumatiques;Crevaison / usure pneu;2025-07-12 02:00;2.8;1752.0
+OT-25311;PEL-03;Correctif;Électrique;Défaut alternateur / faisceau;2025-08-28 02:00;7.4;4108.0
+OT-25312;CAM-06;Correctif;Freinage;Usure garnitures, test frein échoué;2025-08-07 06:00;5.1;3865.0
+OT-25313;PEL-02;Correctif;Hydraulique;Fuite flexible hydraulique vérin de benne;2025-07-19 12:00;8.6;3371.0
+OT-25314;PEL-03;Correctif;Lubrification;Graissage centralisé défaillant;2025-11-09 00:00;3.7;3125.0
+OT-25315;PEL-03;Préventif;Hydraulique;Intervention planifiée;2025-11-11 14:00;1.5;2959.0
+OT-25316;PEL-02;Préventif;Électrique;Intervention planifiée;2026-03-24 22:00;5.5;3276.0
+OT-25317;CAM-01;Préventif;Hydraulique;Intervention planifiée;2026-03-06 05:00;7.0;3439.0
+OT-25318;PEL-01;Prédictif;Électrique;Intervention planifiée;2025-09-25 20:00;6.6;3932.0
+OT-25319;CAM-05;Préventif;Électrique;Intervention planifiée;2025-11-07 02:00;6.7;2190.0
+OT-25320;CAM-06;Préventif;Hydraulique;Intervention planifiée;2026-03-14 19:00;2.5;2469.0
+OT-25321;CAM-12;Préventif;Hydraulique;Intervention planifiée;2025-09-29 02:00;6.4;2096.0
+OT-25322;PEL-03;Correctif;Hydraulique;Fuite flexible hydraulique vérin de benne;2025-09-27 05:00;4.7;2372.0
+OT-25323;CAM-02;Correctif;Électrique;Défaut alternateur / faisceau;2025-12-01 15:00;7.4;3603.0
+OT-25324;CAM-09;Correctif;Lubrification;Graissage centralisé défaillant;2026-02-23 00:00;2.5;1037.0
+OT-25325;CAM-08;Correctif;Transmission;Bruit anormal, contamination huile;2025-12-10 09:00;17.5;12989.0
+OT-25326;CAM-04;Correctif;Freinage;Usure garnitures, test frein échoué;2026-03-20 14:00;6.0;2294.0
+OT-25327;CAM-05;Correctif;Lubrification;Graissage centralisé défaillant;2026-01-05 10:00;3.6;3460.0
+OT-25328;FOR-02;Correctif;Pneumatiques;Crevaison / usure pneu;2025-07-21 20:00;3.4;1587.0
+OT-25329;BROY-01;Correctif;Moteur;Surchauffe moteur, radiateur colmaté;2025-09-06 05:00;14.0;5120.0
+OT-25330;FOR-04;Correctif;Hydraulique;Fuite flexible hydraulique vérin de benne;2025-07-25 01:00;7.0;3408.0
+OT-25331;PEL-03;Correctif;Hydraulique;Fuite flexible hydraulique vérin de benne;2025-10-13 17:00;8.7;4635.0
+OT-25332;CAM-12;Correctif;Lubrification;Graissage centralisé défaillant;2025-12-16 06:00;2.7;1015.0
+OT-25333;CAM-06;Préventif;Hydraulique;Intervention planifiée;2026-02-02 08:00;6.0;4797.0
+OT-25334;CAM-05;Préventif;Hydraulique;Intervention planifiée;2025-08-25 19:00;5.4;4336.0
+OT-25335;BROY-01;Préventif;Hydraulique;Intervention planifiée;2026-04-17 08:00;4.3;2988.0
+OT-25336;CAM-06;Préventif;Lubrification;Intervention planifiée;2025-12-01 18:00;1.6;1647.0
+OT-25337;CAM-01;Prédictif;Pneumatiques;Intervention planifiée;2025-08-17 00:00;5.1;2498.0
+OT-25338;CAM-07;Correctif;Pneumatiques;Crevaison / usure pneu;2025-07-20 16:00;2.5;2814.0
+OT-25339;CAM-09;Préventif;Électrique;Intervention planifiée;2025-10-20 11:00;6.2;3014.0
+OT-25340;CAM-10;Préventif;Hydraulique;Intervention planifiée;2025-08-05 01:00;7.2;3860.0
+OT-25341;BROY-01;Préventif;Hydraulique;Intervention planifiée;2026-01-27 21:00;5.7;4104.0
+OT-25342;CAM-12;Préventif;Électrique;Intervention planifiée;2026-02-24 15:00;2.8;2358.0
+OT-25343;BROY-01;Préventif;Hydraulique;Intervention planifiée;2025-11-03 15:00;3.8;1732.0
+OT-25344;CAM-12;Préventif;Hydraulique;Intervention planifiée;2025-09-29 02:00;3.6;984.0
+OT-25345;CAM-07;Correctif;Hydraulique;Fuite flexible hydraulique vérin de benne;2026-04-06 03:00;4.2;1577.0
+OT-25346;FOR-03;Correctif;Lubrification;Graissage centralisé défaillant;2026-03-19 08:00;3.0;3123.0
+OT-25347;CAM-11;Préventif;Hydraulique;Intervention planifiée;2026-03-30 02:00;7.9;3472.0
+OT-25348;CAM-01;Préventif;Structure;Intervention planifiée;2026-01-15 13:00;22.8;13666.0
+OT-25349;CAM-07;Préventif;Moteur;Intervention planifiée;2025-11-18 09:00;4.3;3753.0
+OT-25350;PEL-01;Correctif;Électrique;Défaut alternateur / faisceau;2025-11-29 16:00;3.3;1612.0
+OT-25351;CONC-01;Préventif;Hydraulique;Intervention planifiée;2026-01-23 10:00;2.4;2434.0
+OT-25352;FOR-04;Préventif;Électrique;Intervention planifiée;2025-10-21 09:00;5.4;2338.0
+OT-25353;CAM-05;Correctif;Pneumatiques;Crevaison / usure pneu;2026-04-16 00:00;2.9;3064.0
+OT-25354;FOR-01;Préventif;Structure;Intervention planifiée;2025-07-29 02:00;23.3;8575.0
+OT-25355;CAM-04;Correctif;Transmission;Bruit anormal, contamination huile;2025-08-24 21:00;8.2;4358.0
+OT-25356;CAM-07;Prédictif;Moteur;Intervention planifiée;2025-10-07 12:00;6.8;3640.0
+OT-25357;CAM-12;Correctif;Transmission;Bruit anormal, contamination huile;2026-02-08 21:00;25.7;14281.0
+OT-25358;CAM-12;Correctif;Pneumatiques;Crevaison / usure pneu;2026-03-14 08:00;2.6;3294.0
+OT-25359;FOR-03;Correctif;Freinage;Usure garnitures, test frein échoué;2025-12-18 00:00;4.0;1759.0
+OT-25360;FOR-03;Préventif;Lubrification;Intervention planifiée;2025-12-14 16:00;3.5;3087.0
+OT-25361;CONC-01;Préventif;Pneumatiques;Intervention planifiée;2025-07-14 01:00;4.9;2475.0
+OT-25362;BROY-01;Préventif;Lubrification;Intervention planifiée;2025-10-21 03:00;4.7;3008.0
+OT-25363;POMPE-CCD-02;Correctif;Pneumatiques;Crevaison / usure pneu;2026-04-19 04:00;3.2;2626.0
+OT-25364;CAM-02;Correctif;Pneumatiques;Crevaison / usure pneu;2026-02-26 04:00;2.6;3105.0
+OT-25365;CAM-11;Correctif;Moteur;Surchauffe moteur, radiateur colmaté;2026-04-26 18:00;12.8;3586.0
+OT-25366;CAM-05;Correctif;Hydraulique;Fuite flexible hydraulique vérin de benne;2025-11-10 03:00;4.4;2563.0
+OT-25367;CAM-04;Prédictif;Pneumatiques;Intervention planifiée;2025-10-17 05:00;3.9;1369.0
+OT-25368;CAM-03;Correctif;Pneumatiques;Crevaison / usure pneu;2025-09-05 09:00;2.9;1830.0
+OT-25369;CAM-04;Correctif;Freinage;Usure garnitures, test frein échoué;2025-10-26 10:00;8.6;3611.0
+OT-25370;POMPE-CCD-02;Correctif;Hydraulique;Fuite flexible hydraulique vérin de benne;2026-01-28 10:00;1.7;1782.0
+OT-25371;PEL-02;Préventif;Électrique;Intervention planifiée;2025-11-15 09:00;6.4;2809.0
+OT-25372;FOR-03;Préventif;Hydraulique;Intervention planifiée;2026-01-16 18:00;7.5;2231.0
+OT-25373;CAM-12;Correctif;Transmission;Bruit anormal, contamination huile;2025-08-07 18:00;11.7;19654.0
+OT-25374;FOR-04;Correctif;Hydraulique;Fuite flexible hydraulique vérin de benne;2026-02-23 22:00;7.6;3629.0
+OT-25375;CAM-08;Préventif;Hydraulique;Intervention planifiée;2025-09-14 20:00;11.3;4510.0
+OT-25376;FOR-04;Correctif;Freinage;Usure garnitures, test frein échoué;2025-09-21 04:00;4.7;3760.0
+OT-25377;FOR-03;Correctif;Pneumatiques;Crevaison / usure pneu;2026-03-11 04:00;6.0;3673.0
+OT-25378;CAM-10;Correctif;Hydraulique;Fuite flexible hydraulique vérin de benne;2026-04-06 22:00;5.6;2825.0
+OT-25379;PEL-03;Correctif;Moteur;Surchauffe moteur, radiateur colmaté;2025-10-08 00:00;10.9;4203.0
+OT-25380;PEL-02;Correctif;Hydraulique;Fuite flexible hydraulique vérin de benne;2025-12-19 04:00;10.0;3715.0
+OT-25381;BROY-01;Correctif;Moteur;Surchauffe moteur, radiateur colmaté;2026-01-24 23:00;7.2;3208.0
+OT-25382;CAM-10;Préventif;Transmission;Intervention planifiée;2026-02-15 12:00;8.9;14012.0
+OT-25383;CAM-04;Préventif;Pneumatiques;Intervention planifiée;2026-02-04 11:00;4.5;1510.0
+OT-25384;FOR-01;Correctif;Pneumatiques;Crevaison / usure pneu;2026-04-06 04:00;4.1;2486.0
+OT-25385;PEL-03;Préventif;Transmission;Intervention planifiée;2025-08-04 13:00;17.1;10055.0
+OT-25386;CAM-07;Correctif;Pneumatiques;Crevaison / usure pneu;2025-10-22 07:00;3.7;3132.0
+OT-25387;PEL-03;Préventif;Hydraulique;Intervention planifiée;2025-12-21 17:00;7.4;2614.0
+OT-25388;FOR-02;Préventif;Électrique;Intervention planifiée;2025-08-14 17:00;0.8;1633.0
+OT-25389;CAM-09;Correctif;Électrique;Défaut alternateur / faisceau;2026-03-16 18:00;2.3;3380.0
+OT-25390;FOR-03;Correctif;Hydraulique;Fuite flexible hydraulique vérin de benne;2025-10-29 10:00;2.9;1202.0
+OT-25391;CAM-03;Correctif;Lubrification;Graissage centralisé défaillant;2026-01-13 06:00;3.4;1905.0
+OT-25392;CAM-03;Correctif;Hydraulique;Fuite flexible hydraulique vérin de benne;2026-01-07 21:00;5.7;2311.0
+OT-25393;CAM-10;Préventif;Pneumatiques;Intervention planifiée;2025-09-02 16:00;2.8;2264.0
+OT-25394;CAM-02;Correctif;Pneumatiques;Crevaison / usure pneu;2025-10-09 02:00;5.6;3163.0
+OT-25395;CAM-02;Préventif;Hydraulique;Intervention planifiée;2025-12-25 06:00;3.3;3212.0
+OT-25396;CAM-12;Correctif;Hydraulique;Fuite flexible hydraulique vérin de benne;2025-11-07 01:00;7.4;3983.0
+OT-25397;CAM-06;Préventif;Hydraulique;Intervention planifiée;2025-09-04 14:00;5.8;3883.0
+OT-25398;CAM-01;Correctif;Pneumatiques;Crevaison / usure pneu;2026-03-05 03:00;6.5;2475.0
+OT-25399;CAM-12;Préventif;Hydraulique;Intervention planifiée;2026-01-18 15:00;6.2;3509.0
+OT-25400;BROY-01;Correctif;Moteur;Surchauffe moteur, radiateur colmaté;2026-02-24 07:00;18.0;5251.0
+OT-25401;CAM-04;Correctif;Pneumatiques;Crevaison / usure pneu;2026-03-13 07:00;4.0;2933.0
+OT-25402;CAM-01;Prédictif;Électrique;Intervention planifiée;2026-01-03 01:00;2.1;2651.0
+OT-25403;POMPE-CCD-02;Correctif;Hydraulique;Fuite flexible hydraulique vérin de benne;2025-12-22 09:00;5.2;2794.0
+OT-25404;CAM-11;Correctif;Hydraulique;Fuite flexible hydraulique vérin de benne;2026-03-30 03:00;9.0;2845.0
+OT-25405;POMPE-CCD-02;Correctif;Pneumatiques;Crevaison / usure pneu;2026-04-24 16:00;3.0;1278.0
+OT-25406;PEL-02;Correctif;Lubrification;Graissage centralisé défaillant;2026-01-30 05:00;4.2;1949.0
+OT-25407;BROY-01;Correctif;Moteur;Surchauffe moteur, radiateur colmaté;2025-11-19 17:00;12.7;4017.0
+OT-25408;BROY-01;Correctif;Moteur;Surchauffe moteur, radiateur colmaté;2025-10-23 07:00;18.5;4769.0
+OT-25409;CAM-11;Correctif;Pneumatiques;Crevaison / usure pneu;2025-07-12 23:00;4.7;2522.0
+OT-25410;CAM-06;Préventif;Pneumatiques;Intervention planifiée;2025-12-09 22:00;6.9;4559.0
+OT-25411;PEL-03;Correctif;Hydraulique;Fuite flexible hydraulique vérin de benne;2026-03-08 03:00;5.3;2098.0
+OT-25412;BROY-01;Préventif;Pneumatiques;Intervention planifiée;2026-03-17 11:00;0.5;1678.0
+OT-25413;PEL-03;Prédictif;Pneumatiques;Intervention planifiée;2026-02-08 16:00;3.3;2869.0
+OT-25414;CAM-08;Préventif;Hydraulique;Intervention planifiée;2025-11-15 18:00;5.3;3416.0
+OT-25415;PEL-01;Préventif;Pneumatiques;Intervention planifiée;2025-12-11 07:00;3.5;2966.0
+OT-25416;CAM-11;Correctif;Transmission;Bruit anormal, contamination huile;2026-01-18 08:00;10.7;12086.0
+OT-25417;CAM-05;Préventif;Moteur;Intervention planifiée;2025-11-26 07:00;10.5;5991.0
+OT-25418;CAM-05;Correctif;Pneumatiques;Crevaison / usure pneu;2025-08-08 07:00;3.6;2904.0
+OT-25419;FOR-01;Correctif;Électrique;Défaut alternateur / faisceau;2025-07-22 16:00;4.2;3170.0

@@ -1,0 +1,97 @@
+# DONNÉES FICTIVES — Mbiyo Copper Cobalt SA (MCC) — usage pédagogique uniquement
+id;date_reception;village;categorie;resume;canal;statut;date_cloture
+PL-0001;2026-03-16;Mwinda;Bruit;Les tirs font trembler les maisons et fissurent les murs;Comité local;Clôturée;2026-06-09
+PL-0002;2025-12-01;Lupanda;Eau;L'eau de la rivière a changé de couleur après les pluies;Orale;En cours;
+PL-0003;2026-03-31;Lupanda;Emploi;Les jeunes du village ne sont pas recrutés par les sous-traitants;Téléphone;Clôturée;2026-06-05
+PL-0004;2025-10-15;Kasongo-Mbiyo;Bruit;Les tirs font trembler les maisons et fissurent les murs;Écrite;Clôturée;2026-01-07
+PL-0005;2025-08-23;Kasongo-Mbiyo;Bruit;Les tirs font trembler les maisons et fissurent les murs;Comité local;Clôturée;2025-11-19
+PL-0006;2025-03-28;Mwinda;Cahier des charges;Le forage d'eau potable promis n'est pas terminé;Comité local;Clôturée;2025-05-19
+PL-0007;2026-04-22;Lupanda;Indemnisation;Paiement promis pour les champs non encore reçu;Écrite;Escaladée;
+PL-0008;2025-12-25;Lupanda;Indemnisation;Paiement promis pour les champs non encore reçu;Orale;Clôturée;2026-03-06
+PL-0009;2025-06-04;Kasongo-Mbiyo;Sécurité routière;Vitesse excessive des camions à la traversée du village;Écrite;Escaladée;
+PL-0010;2026-08-10;Lupanda;Cahier des charges;Le forage d'eau potable promis n'est pas terminé;Écrite;En cours;
+PL-0011;2025-12-19;Kasongo-Mbiyo;Emploi;Les jeunes du village ne sont pas recrutés par les sous-traitants;Écrite;En cours;
+PL-0012;2025-05-17;Kasongo-Mbiyo;Sécurité routière;Vitesse excessive des camions à la traversée du village;Écrite;En cours;
+PL-0013;2025-09-13;Lupanda;Poussière;La poussière des camions couvre les maisons et les cultures près de la route;Écrite;En cours;
+PL-0014;2026-07-12;Kasongo-Mbiyo;Bruit;Les tirs font trembler les maisons et fissurent les murs;Orale;En cours;
+PL-0015;2025-07-26;Lupanda;Cahier des charges;Le forage d'eau potable promis n'est pas terminé;Écrite;Clôturée;2025-08-12
+PL-0016;2026-06-16;Lupanda;Bruit;Les tirs font trembler les maisons et fissurent les murs;Orale;Escaladée;
+PL-0017;2025-03-03;Mwinda;Eau;L'eau de la rivière a changé de couleur après les pluies;Comité local;Escaladée;
+PL-0018;2026-04-16;Kasongo-Mbiyo;Cahier des charges;Le forage d'eau potable promis n'est pas terminé;Téléphone;Clôturée;2026-05-23
+PL-0019;2025-03-27;Mwinda;Emploi;Les jeunes du village ne sont pas recrutés par les sous-traitants;Téléphone;Clôturée;2025-06-06
+PL-0020;2026-04-04;Lupanda;Bruit;Les tirs font trembler les maisons et fissurent les murs;Comité local;Clôturée;2026-04-27
+PL-0021;2025-06-24;Kasongo-Mbiyo;Poussière;La poussière des camions couvre les maisons et les cultures près de la route;Écrite;Escaladée;
+PL-0022;2026-04-08;Mwinda;Indemnisation;Paiement promis pour les champs non encore reçu;Orale;En cours;
+PL-0023;2026-08-24;Mwinda;Bruit;Les tirs font trembler les maisons et fissurent les murs;Comité local;Clôturée;2026-09-04
+PL-0024;2025-07-20;Kasongo-Mbiyo;Eau;L'eau de la rivière a changé de couleur après les pluies;Téléphone;Clôturée;2025-08-24
+PL-0025;2026-07-08;Lupanda;Indemnisation;Paiement promis pour les champs non encore reçu;Téléphone;En cours;
+PL-0026;2025-08-06;Lupanda;Eau;L'eau de la rivière a changé de couleur après les pluies;Orale;Clôturée;2025-10-31
+PL-0027;2025-03-05;Kasongo-Mbiyo;Poussière;La poussière des camions couvre les maisons et les cultures près de la route;Orale;En cours;
+PL-0028;2025-08-10;Kasongo-Mbiyo;Indemnisation;Paiement promis pour les champs non encore reçu;Écrite;Clôturée;2025-08-27
+PL-0029;2025-03-12;Mwinda;Poussière;La poussière des camions couvre les maisons et les cultures près de la route;Téléphone;Escaladée;
+PL-0030;2026-10-04;Kasongo-Mbiyo;Indemnisation;Paiement promis pour les champs non encore reçu;Téléphone;Clôturée;2026-11-27
+PL-0031;2025-07-22;Mwinda;Indemnisation;Paiement promis pour les champs non encore reçu;Orale;Clôturée;2025-10-14
+PL-0032;2025-06-23;Lupanda;Sécurité routière;Vitesse excessive des camions à la traversée du village;Comité local;Escaladée;
+PL-0033;2025-11-11;Kasongo-Mbiyo;Eau;L'eau de la rivière a changé de couleur après les pluies;Téléphone;Clôturée;2026-01-23
+PL-0034;2025-06-28;Lupanda;Emploi;Les jeunes du village ne sont pas recrutés par les sous-traitants;Comité local;Clôturée;2025-08-31
+PL-0035;2025-10-31;Lupanda;Poussière;La poussière des camions couvre les maisons et les cultures près de la route;Téléphone;Clôturée;2025-11-15
+PL-0036;2025-06-27;Lupanda;Eau;L'eau de la rivière a changé de couleur après les pluies;Écrite;Clôturée;2025-07-16
+PL-0037;2025-04-21;Lupanda;Bruit;Les tirs font trembler les maisons et fissurent les murs;Téléphone;Clôturée;2025-07-05
+PL-0038;2025-08-14;Lupanda;Sécurité routière;Vitesse excessive des camions à la traversée du village;Écrite;Clôturée;2025-08-28
+PL-0039;2026-01-15;Mwinda;Emploi;Les jeunes du village ne sont pas recrutés par les sous-traitants;Écrite;Clôturée;2026-02-06
+PL-0040;2026-04-02;Mwinda;Cahier des charges;Le forage d'eau potable promis n'est pas terminé;Téléphone;Escaladée;
+PL-0041;2025-04-25;Kasongo-Mbiyo;Cahier des charges;Le forage d'eau potable promis n'est pas terminé;Orale;Clôturée;2025-05-08
+PL-0042;2026-07-20;Lupanda;Indemnisation;Paiement promis pour les champs non encore reçu;Comité local;Clôturée;2026-08-01
+PL-0043;2026-02-15;Lupanda;Eau;L'eau de la rivière a changé de couleur après les pluies;Écrite;En cours;
+PL-0044;2025-04-07;Mwinda;Poussière;La poussière des camions couvre les maisons et les cultures près de la route;Écrite;Clôturée;2025-05-10
+PL-0045;2025-10-17;Lupanda;Poussière;La poussière des camions couvre les maisons et les cultures près de la route;Téléphone;En cours;
+PL-0046;2026-08-23;Lupanda;Bruit;Les tirs font trembler les maisons et fissurent les murs;Téléphone;Clôturée;2026-09-30
+PL-0047;2026-02-17;Mwinda;Poussière;La poussière des camions couvre les maisons et les cultures près de la route;Écrite;En cours;
+PL-0048;2025-10-12;Mwinda;Poussière;La poussière des camions couvre les maisons et les cultures près de la route;Écrite;Escaladée;
+PL-0049;2025-05-03;Mwinda;Sécurité routière;Vitesse excessive des camions à la traversée du village;Orale;Clôturée;2025-07-08
+PL-0050;2025-03-21;Lupanda;Indemnisation;Paiement promis pour les champs non encore reçu;Écrite;En cours;
+PL-0051;2025-05-07;Lupanda;Sécurité routière;Vitesse excessive des camions à la traversée du village;Téléphone;En cours;
+PL-0052;2025-05-14;Kasongo-Mbiyo;Cahier des charges;Le forage d'eau potable promis n'est pas terminé;Téléphone;Clôturée;2025-07-03
+PL-0053;2026-03-02;Lupanda;Eau;L'eau de la rivière a changé de couleur après les pluies;Comité local;Clôturée;2026-05-23
+PL-0054;2025-10-18;Mwinda;Emploi;Les jeunes du village ne sont pas recrutés par les sous-traitants;Téléphone;Escaladée;
+PL-0055;2025-08-18;Mwinda;Emploi;Les jeunes du village ne sont pas recrutés par les sous-traitants;Orale;Clôturée;2025-11-01
+PL-0056;2026-03-23;Kasongo-Mbiyo;Bruit;Les tirs font trembler les maisons et fissurent les murs;Comité local;Clôturée;2026-04-24
+PL-0057;2026-06-06;Lupanda;Sécurité routière;Vitesse excessive des camions à la traversée du village;Téléphone;En cours;
+PL-0058;2026-01-10;Lupanda;Indemnisation;Paiement promis pour les champs non encore reçu;Téléphone;Escaladée;
+PL-0059;2025-12-22;Lupanda;Emploi;Les jeunes du village ne sont pas recrutés par les sous-traitants;Comité local;Clôturée;2026-02-17
+PL-0060;2026-09-08;Kasongo-Mbiyo;Emploi;Les jeunes du village ne sont pas recrutés par les sous-traitants;Écrite;Clôturée;2026-10-12
+PL-0061;2025-07-01;Kasongo-Mbiyo;Indemnisation;Paiement promis pour les champs non encore reçu;Comité local;Clôturée;2025-08-05
+PL-0062;2025-12-13;Kasongo-Mbiyo;Cahier des charges;Le forage d'eau potable promis n'est pas terminé;Comité local;Escaladée;
+PL-0063;2025-04-29;Lupanda;Sécurité routière;Vitesse excessive des camions à la traversée du village;Comité local;En cours;
+PL-0064;2025-06-27;Kasongo-Mbiyo;Sécurité routière;Vitesse excessive des camions à la traversée du village;Orale;Escaladée;
+PL-0065;2025-10-06;Lupanda;Sécurité routière;Vitesse excessive des camions à la traversée du village;Écrite;Clôturée;2025-11-10
+PL-0066;2026-07-18;Kasongo-Mbiyo;Poussière;La poussière des camions couvre les maisons et les cultures près de la route;Téléphone;Clôturée;2026-08-19
+PL-0067;2026-03-25;Lupanda;Sécurité routière;Vitesse excessive des camions à la traversée du village;Orale;Clôturée;2026-04-01
+PL-0068;2025-06-11;Lupanda;Poussière;La poussière des camions couvre les maisons et les cultures près de la route;Comité local;Escaladée;
+PL-0069;2025-10-14;Mwinda;Poussière;La poussière des camions couvre les maisons et les cultures près de la route;Téléphone;Clôturée;2025-10-23
+PL-0070;2026-05-29;Mwinda;Emploi;Les jeunes du village ne sont pas recrutés par les sous-traitants;Écrite;Clôturée;2026-08-14
+PL-0071;2025-10-18;Lupanda;Eau;L'eau de la rivière a changé de couleur après les pluies;Orale;Escaladée;
+PL-0072;2025-05-02;Kasongo-Mbiyo;Poussière;La poussière des camions couvre les maisons et les cultures près de la route;Comité local;Escaladée;
+PL-0073;2025-03-24;Mwinda;Sécurité routière;Vitesse excessive des camions à la traversée du village;Téléphone;Clôturée;2025-03-29
+PL-0074;2026-06-03;Kasongo-Mbiyo;Cahier des charges;Le forage d'eau potable promis n'est pas terminé;Écrite;En cours;
+PL-0075;2026-03-05;Lupanda;Cahier des charges;Le forage d'eau potable promis n'est pas terminé;Comité local;Escaladée;
+PL-0076;2026-08-29;Mwinda;Cahier des charges;Le forage d'eau potable promis n'est pas terminé;Orale;En cours;
+PL-0077;2026-05-02;Kasongo-Mbiyo;Bruit;Les tirs font trembler les maisons et fissurent les murs;Comité local;Clôturée;2026-05-17
+PL-0078;2026-01-03;Kasongo-Mbiyo;Cahier des charges;Le forage d'eau potable promis n'est pas terminé;Orale;Escaladée;
+PL-0079;2026-10-02;Lupanda;Sécurité routière;Vitesse excessive des camions à la traversée du village;Comité local;Escaladée;
+PL-0080;2026-08-27;Mwinda;Eau;L'eau de la rivière a changé de couleur après les pluies;Téléphone;En cours;
+PL-0081;2025-05-19;Mwinda;Cahier des charges;Le forage d'eau potable promis n'est pas terminé;Comité local;En cours;
+PL-0082;2026-06-20;Lupanda;Indemnisation;Paiement promis pour les champs non encore reçu;Téléphone;En cours;
+PL-0083;2025-03-01;Kasongo-Mbiyo;Emploi;Les jeunes du village ne sont pas recrutés par les sous-traitants;Écrite;Clôturée;2025-04-02
+PL-0084;2025-10-11;Mwinda;Sécurité routière;Vitesse excessive des camions à la traversée du village;Téléphone;Clôturée;2026-01-07
+PL-0085;2025-05-26;Kasongo-Mbiyo;Poussière;La poussière des camions couvre les maisons et les cultures près de la route;Téléphone;Escaladée;
+PL-0086;2026-03-23;Mwinda;Bruit;Les tirs font trembler les maisons et fissurent les murs;Orale;Clôturée;2026-06-18
+PL-0087;2026-07-19;Kasongo-Mbiyo;Bruit;Les tirs font trembler les maisons et fissurent les murs;Téléphone;Clôturée;2026-09-27
+PL-0088;2026-09-16;Lupanda;Bruit;Les tirs font trembler les maisons et fissurent les murs;Téléphone;Clôturée;2026-10-06
+PL-0089;2026-01-16;Lupanda;Indemnisation;Paiement promis pour les champs non encore reçu;Orale;En cours;
+PL-0090;2025-11-18;Mwinda;Bruit;Les tirs font trembler les maisons et fissurent les murs;Comité local;En cours;
+PL-0091;2026-01-05;Kasongo-Mbiyo;Cahier des charges;Le forage d'eau potable promis n'est pas terminé;Écrite;En cours;
+PL-0092;2026-01-18;Lupanda;Indemnisation;Paiement promis pour les champs non encore reçu;Comité local;Escaladée;
+PL-0093;2025-06-22;Mwinda;Sécurité routière;Vitesse excessive des camions à la traversée du village;Téléphone;Clôturée;2025-07-15
+PL-0094;2025-03-19;Mwinda;Emploi;Les jeunes du village ne sont pas recrutés par les sous-traitants;Téléphone;Clôturée;2025-05-28
+PL-0095;2026-02-09;Mwinda;Sécurité routière;Vitesse excessive des camions à la traversée du village;Comité local;En cours;

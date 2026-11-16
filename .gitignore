@@ -42,3 +42,5 @@ next-env.d.ts
 
 # base de données locale (comptes, sessions, rapports)
 /donnees
+CLAUDE_MINING_MANUAL/06_PRODUCTION_FINALE/_build/
+__pycache__/

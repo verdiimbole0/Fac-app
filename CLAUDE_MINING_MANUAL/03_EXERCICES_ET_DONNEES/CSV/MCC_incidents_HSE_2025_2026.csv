@@ -1,0 +1,162 @@
+# DONNÉES FICTIVES — Mbiyo Copper Cobalt SA (MCC) — usage pédagogique uniquement
+id;date;zone;type;gravite_1a5;description;statut_actions
+INC-2025115;2025-01-04;Route d'accès;Environnement;2;Débordement de solution acide dans le caniveau de confinement;Actions en retard
+INC-2025091;2025-01-12;Fosse Nord;Environnement;1;Débordement de solution acide dans le caniveau de confinement;Clôturé
+INC-2025047;2025-01-18;Usine SX-EW;Premiers soins;1;Coupure à la main lors du remplacement d'un filtre;Clôturé
+INC-2025045;2025-01-21;Laboratoire;Soins médicaux;2;Projection d'électrolyte au visage, lunettes non portées;En cours
+INC-2025027;2025-01-25;Laboratoire;Accident avec arrêt;3;Entorse de la cheville en descendant d'un engin;Clôturé
+INC-2025036;2025-01-26;Fosse Nord;Premiers soins;1;Coupure à la main lors du remplacement d'un filtre;Clôturé
+INC-2025001;2025-01-28;Fosse Nord;Presque-accident;3;Camion recule sans signal sonore près d'un piéton;Clôturé
+INC-2025138;2025-01-30;Parc à résidus;Dommage matériel;1;Collision légère entre véhicule léger et chargeuse;Clôturé
+INC-2025099;2025-01-31;Atelier;Presque-accident;1;Camion recule sans signal sonore près d'un piéton;Clôturé
+INC-2025108;2025-02-04;Magasin;Environnement;1;Poussière excessive sur la route près du village de Lupanda;Clôturé
+INC-2025049;2025-02-08;Atelier;Presque-accident;2;Camion recule sans signal sonore près d'un piéton;Clôturé
+INC-2025085;2025-02-09;Fosse Nord;Dommage matériel;2;Collision légère entre véhicule léger et chargeuse;Clôturé
+INC-2025052;2025-02-15;Fosse Sud;Dommage matériel;2;Collision légère entre véhicule léger et chargeuse;Clôturé
+INC-2025074;2025-02-17;Magasin;Environnement;2;Poussière excessive sur la route près du village de Lupanda;Clôturé
+INC-2025031;2025-02-23;Magasin;Presque-accident;1;Camion recule sans signal sonore près d'un piéton;En cours
+INC-2025123;2025-03-02;Usine SX-EW;Accident avec arrêt;3;Entorse de la cheville en descendant d'un engin;Clôturé
+INC-2025048;2025-03-03;Atelier;Premiers soins;1;Coupure à la main lors du remplacement d'un filtre;Clôturé
+INC-2025068;2025-03-03;Atelier;Soins médicaux;2;Projection d'électrolyte au visage, lunettes non portées;Clôturé
+INC-2025092;2025-03-05;Parc à résidus;Presque-accident;1;Camion recule sans signal sonore près d'un piéton;Actions en retard
+INC-2025134;2025-03-07;Fosse Nord;Accident avec arrêt;3;Entorse de la cheville en descendant d'un engin;Actions en retard
+INC-2025011;2025-03-10;Laboratoire;Premiers soins;1;Coupure à la main lors du remplacement d'un filtre;Clôturé
+INC-2025060;2025-03-12;Magasin;Soins médicaux;2;Projection d'électrolyte au visage, lunettes non portées;Actions en retard
+INC-2025086;2025-03-15;Route d'accès;Dommage matériel;1;Collision légère entre véhicule léger et chargeuse;Clôturé
+INC-2025097;2025-03-17;Magasin;Presque-accident;2;Chute de pierre sur rampe après tir;Clôturé
+INC-2025030;2025-03-28;Atelier;Accident avec arrêt;3;Entorse de la cheville en descendant d'un engin;Clôturé
+INC-2025043;2025-03-28;Parc à résidus;Presque-accident;3;Chute de pierre sur rampe après tir;Clôturé
+INC-2025055;2025-04-02;Parc à résidus;Environnement;1;Poussière excessive sur la route près du village de Lupanda;Clôturé
+INC-2025114;2025-04-04;Fosse Nord;Soins médicaux;2;Projection d'électrolyte au visage, lunettes non portées;Clôturé
+INC-2025124;2025-04-20;Route d'accès;Presque-accident;1;Chute de pierre sur rampe après tir;En cours
+INC-2025122;2025-04-23;Laboratoire;Soins médicaux;2;Projection d'électrolyte au visage, lunettes non portées;Clôturé
+INC-2025078;2025-04-24;Fosse Sud;Environnement;2;Débordement de solution acide dans le caniveau de confinement;Clôturé
+INC-2025116;2025-04-25;Magasin;Environnement;2;Poussière excessive sur la route près du village de Lupanda;Clôturé
+INC-2025050;2025-04-28;Magasin;Presque-accident;3;Camion recule sans signal sonore près d'un piéton;Clôturé
+INC-2025087;2025-04-29;Usine SX-EW;Environnement;2;Poussière excessive sur la route près du village de Lupanda;Clôturé
+INC-2025132;2025-04-30;Fosse Nord;Presque-accident;1;Chute de pierre sur rampe après tir;Actions en retard
+INC-2025157;2025-04-30;Magasin;Environnement;2;Poussière excessive sur la route près du village de Lupanda;Clôturé
+INC-2025070;2025-05-05;Route d'accès;Premiers soins;1;Coupure à la main lors du remplacement d'un filtre;Clôturé
+INC-2025129;2025-05-07;Fosse Nord;Accident avec arrêt;3;Entorse de la cheville en descendant d'un engin;Clôturé
+INC-2025012;2025-05-08;Atelier;Environnement;2;Débordement de solution acide dans le caniveau de confinement;Clôturé
+INC-2025021;2025-05-08;Usine SX-EW;Environnement;1;Débordement de solution acide dans le caniveau de confinement;Clôturé
+INC-2025088;2025-05-09;Magasin;Environnement;1;Poussière excessive sur la route près du village de Lupanda;Clôturé
+INC-2025135;2025-05-11;Usine SX-EW;Soins médicaux;2;Projection d'électrolyte au visage, lunettes non portées;Clôturé
+INC-2025061;2025-05-12;Fosse Sud;Presque-accident;2;Chute de pierre sur rampe après tir;En cours
+INC-2025139;2025-05-13;Atelier;Soins médicaux;2;Projection d'électrolyte au visage, lunettes non portées;En cours
+INC-2025155;2025-05-15;Magasin;Presque-accident;3;Chute de pierre sur rampe après tir;Clôturé
+INC-2025063;2025-05-19;Route d'accès;Dommage matériel;2;Collision légère entre véhicule léger et chargeuse;Clôturé
+INC-2025128;2025-06-08;Fosse Sud;Soins médicaux;2;Projection d'électrolyte au visage, lunettes non portées;Clôturé
+INC-2025141;2025-06-08;Atelier;Soins médicaux;2;Projection d'électrolyte au visage, lunettes non portées;En cours
+INC-2025064;2025-06-11;Magasin;Soins médicaux;2;Projection d'électrolyte au visage, lunettes non portées;En cours
+INC-2025062;2025-06-12;Usine SX-EW;Premiers soins;1;Coupure à la main lors du remplacement d'un filtre;Clôturé
+INC-2025151;2025-06-12;Magasin;Presque-accident;2;Camion recule sans signal sonore près d'un piéton;Clôturé
+INC-2025154;2025-06-19;Route d'accès;Premiers soins;1;Coupure à la main lors du remplacement d'un filtre;En cours
+INC-2025112;2025-06-22;Route d'accès;Presque-accident;2;Chute de pierre sur rampe après tir;Clôturé
+INC-2025127;2025-06-26;Fosse Nord;Dommage matériel;1;Collision légère entre véhicule léger et chargeuse;Actions en retard
+INC-2025018;2025-06-27;Usine SX-EW;Environnement;1;Poussière excessive sur la route près du village de Lupanda;Clôturé
+INC-2025093;2025-06-27;Atelier;Accident avec arrêt;3;Entorse de la cheville en descendant d'un engin;Clôturé
+INC-2025090;2025-06-28;Laboratoire;Presque-accident;3;Camion recule sans signal sonore près d'un piéton;Clôturé
+INC-2025137;2025-06-30;Usine SX-EW;Premiers soins;1;Coupure à la main lors du remplacement d'un filtre;Clôturé
+INC-2025058;2025-07-04;Fosse Nord;Accident avec arrêt;3;Entorse de la cheville en descendant d'un engin;Clôturé
+INC-2025159;2025-07-04;Fosse Sud;Presque-accident;1;Chute de pierre sur rampe après tir;En cours
+INC-2025106;2025-07-06;Laboratoire;Presque-accident;1;Chute de pierre sur rampe après tir;Clôturé
+INC-2025010;2025-07-07;Magasin;Presque-accident;2;Chute de pierre sur rampe après tir;Clôturé
+INC-2025041;2025-07-08;Fosse Sud;Accident avec arrêt;3;Entorse de la cheville en descendant d'un engin;Clôturé
+INC-2025013;2025-07-12;Usine SX-EW;Dommage matériel;2;Collision légère entre véhicule léger et chargeuse;Clôturé
+INC-2025096;2025-07-13;Usine SX-EW;Environnement;1;Débordement de solution acide dans le caniveau de confinement;En cours
+INC-2025056;2025-07-14;Route d'accès;Soins médicaux;2;Projection d'électrolyte au visage, lunettes non portées;En cours
+INC-2025033;2025-07-16;Magasin;Presque-accident;2;Camion recule sans signal sonore près d'un piéton;Clôturé
+INC-2025117;2025-07-25;Fosse Sud;Presque-accident;1;Chute de pierre sur rampe après tir;En cours
+INC-2025113;2025-07-29;Route d'accès;Environnement;1;Poussière excessive sur la route près du village de Lupanda;En cours
+INC-2025053;2025-08-09;Fosse Nord;Presque-accident;1;Chute de pierre sur rampe après tir;Actions en retard
+INC-2025148;2025-08-09;Fosse Nord;Premiers soins;1;Coupure à la main lors du remplacement d'un filtre;Clôturé
+INC-2025111;2025-08-15;Laboratoire;Accident avec arrêt;3;Entorse de la cheville en descendant d'un engin;Clôturé
+INC-2025133;2025-08-15;Atelier;Premiers soins;1;Coupure à la main lors du remplacement d'un filtre;Actions en retard
+INC-2025065;2025-08-17;Laboratoire;Presque-accident;2;Camion recule sans signal sonore près d'un piéton;En cours
+INC-2025104;2025-08-19;Magasin;Presque-accident;3;Camion recule sans signal sonore près d'un piéton;Clôturé
+INC-2025006;2025-08-21;Route d'accès;Environnement;1;Débordement de solution acide dans le caniveau de confinement;Clôturé
+INC-2025079;2025-08-25;Parc à résidus;Presque-accident;1;Chute de pierre sur rampe après tir;Clôturé
+INC-2025039;2025-08-27;Atelier;Dommage matériel;2;Collision légère entre véhicule léger et chargeuse;Clôturé
+INC-2025044;2025-08-31;Atelier;Soins médicaux;2;Projection d'électrolyte au visage, lunettes non portées;Clôturé
+INC-2025040;2025-09-03;Parc à résidus;Dommage matériel;1;Collision légère entre véhicule léger et chargeuse;En cours
+INC-2025000;2025-09-10;Laboratoire;Premiers soins;1;Coupure à la main lors du remplacement d'un filtre;En cours
+INC-2025120;2025-09-13;Route d'accès;Environnement;2;Débordement de solution acide dans le caniveau de confinement;Clôturé
+INC-2025103;2025-09-20;Route d'accès;Premiers soins;1;Coupure à la main lors du remplacement d'un filtre;Clôturé
+INC-2025076;2025-09-24;Usine SX-EW;Accident avec arrêt;3;Entorse de la cheville en descendant d'un engin;Clôturé
+INC-2025032;2025-10-03;Usine SX-EW;Environnement;2;Débordement de solution acide dans le caniveau de confinement;En cours
+INC-2025102;2025-10-05;Fosse Nord;Presque-accident;2;Camion recule sans signal sonore près d'un piéton;Clôturé
+INC-2025080;2025-10-10;Laboratoire;Presque-accident;3;Camion recule sans signal sonore près d'un piéton;Clôturé
+INC-2025119;2025-10-11;Fosse Nord;Accident avec arrêt;3;Entorse de la cheville en descendant d'un engin;Clôturé
+INC-2025094;2025-10-17;Parc à résidus;Environnement;2;Poussière excessive sur la route près du village de Lupanda;Actions en retard
+INC-2025100;2025-10-20;Atelier;Soins médicaux;2;Projection d'électrolyte au visage, lunettes non portées;Clôturé
+INC-2025107;2025-10-20;Parc à résidus;Environnement;1;Poussière excessive sur la route près du village de Lupanda;Actions en retard
+INC-2025022;2025-10-24;Laboratoire;Presque-accident;2;Camion recule sans signal sonore près d'un piéton;Clôturé
+INC-2025067;2025-10-25;Fosse Sud;Dommage matériel;1;Collision légère entre véhicule léger et chargeuse;Clôturé
+INC-2025084;2025-10-31;Fosse Nord;Presque-accident;3;Camion recule sans signal sonore près d'un piéton;Clôturé
+INC-2025075;2025-11-06;Atelier;Presque-accident;2;Camion recule sans signal sonore près d'un piéton;Clôturé
+INC-2025136;2025-11-06;Fosse Sud;Dommage matériel;1;Collision légère entre véhicule léger et chargeuse;Actions en retard
+INC-2025026;2025-11-11;Fosse Nord;Environnement;1;Poussière excessive sur la route près du village de Lupanda;Actions en retard
+INC-2025038;2025-11-14;Usine SX-EW;Environnement;2;Poussière excessive sur la route près du village de Lupanda;Clôturé
+INC-2025146;2025-11-20;Atelier;Dommage matériel;2;Collision légère entre véhicule léger et chargeuse;Actions en retard
+INC-2025028;2025-11-21;Magasin;Premiers soins;1;Coupure à la main lors du remplacement d'un filtre;Actions en retard
+INC-2025144;2025-11-21;Route d'accès;Presque-accident;3;Chute de pierre sur rampe après tir;En cours
+INC-2025008;2025-11-22;Atelier;Environnement;1;Débordement de solution acide dans le caniveau de confinement;En cours
+INC-2025073;2025-11-23;Atelier;Premiers soins;1;Coupure à la main lors du remplacement d'un filtre;En cours
+INC-2025081;2025-11-30;Fosse Nord;Environnement;1;Débordement de solution acide dans le caniveau de confinement;Clôturé
+INC-2025023;2025-12-01;Parc à résidus;Environnement;2;Poussière excessive sur la route près du village de Lupanda;Clôturé
+INC-2025145;2025-12-02;Parc à résidus;Premiers soins;1;Coupure à la main lors du remplacement d'un filtre;Actions en retard
+INC-2025046;2025-12-04;Route d'accès;Accident avec arrêt;3;Entorse de la cheville en descendant d'un engin;Clôturé
+INC-2025130;2025-12-14;Parc à résidus;Soins médicaux;2;Projection d'électrolyte au visage, lunettes non portées;En cours
+INC-2025083;2025-12-18;Fosse Sud;Presque-accident;1;Camion recule sans signal sonore près d'un piéton;Clôturé
+INC-2025101;2025-12-30;Parc à résidus;Presque-accident;2;Chute de pierre sur rampe après tir;Clôturé
+INC-2025005;2025-12-31;Laboratoire;Environnement;2;Poussière excessive sur la route près du village de Lupanda;Clôturé
+INC-2025035;2026-01-09;Fosse Nord;Premiers soins;1;Coupure à la main lors du remplacement d'un filtre;Clôturé
+INC-2025125;2026-01-17;Magasin;Presque-accident;1;Camion recule sans signal sonore près d'un piéton;En cours
+INC-2025156;2026-01-18;Route d'accès;Dommage matériel;1;Collision légère entre véhicule léger et chargeuse;En cours
+INC-2025110;2026-01-19;Parc à résidus;Environnement;2;Débordement de solution acide dans le caniveau de confinement;En cours
+INC-2025126;2026-01-19;Parc à résidus;Accident avec arrêt;3;Entorse de la cheville en descendant d'un engin;Clôturé
+INC-2025024;2026-01-20;Laboratoire;Environnement;2;Débordement de solution acide dans le caniveau de confinement;Clôturé
+INC-2025118;2026-01-20;Fosse Sud;Premiers soins;1;Coupure à la main lors du remplacement d'un filtre;Actions en retard
+INC-2025150;2026-01-23;Fosse Sud;Soins médicaux;2;Projection d'électrolyte au visage, lunettes non portées;Clôturé
+INC-2025152;2026-01-23;Magasin;Environnement;2;Poussière excessive sur la route près du village de Lupanda;Clôturé
+INC-2025131;2026-01-28;Usine SX-EW;Environnement;2;Poussière excessive sur la route près du village de Lupanda;Clôturé
+INC-2025037;2026-01-29;Route d'accès;Presque-accident;1;Camion recule sans signal sonore près d'un piéton;Clôturé
+INC-2025017;2026-02-10;Magasin;Dommage matériel;2;Collision légère entre véhicule léger et chargeuse;Clôturé
+INC-2025002;2026-02-12;Fosse Sud;Presque-accident;1;Chute de pierre sur rampe après tir;Clôturé
+INC-2025003;2026-02-18;Atelier;Dommage matériel;1;Collision légère entre véhicule léger et chargeuse;Clôturé
+INC-2025016;2026-02-20;Magasin;Environnement;2;Poussière excessive sur la route près du village de Lupanda;Actions en retard
+INC-2025029;2026-02-20;Route d'accès;Accident avec arrêt;3;Entorse de la cheville en descendant d'un engin;Actions en retard
+INC-2025069;2026-03-03;Fosse Sud;Premiers soins;1;Coupure à la main lors du remplacement d'un filtre;Clôturé
+INC-2025042;2026-03-04;Route d'accès;Dommage matériel;1;Collision légère entre véhicule léger et chargeuse;Clôturé
+INC-2025077;2026-03-11;Laboratoire;Premiers soins;1;Coupure à la main lors du remplacement d'un filtre;Clôturé
+INC-2025015;2026-03-13;Laboratoire;Presque-accident;2;Chute de pierre sur rampe après tir;Clôturé
+INC-2025025;2026-03-18;Parc à résidus;Accident avec arrêt;3;Entorse de la cheville en descendant d'un engin;Clôturé
+INC-2025059;2026-03-19;Fosse Sud;Environnement;1;Débordement de solution acide dans le caniveau de confinement;Actions en retard
+INC-2025051;2026-03-24;Atelier;Presque-accident;2;Chute de pierre sur rampe après tir;Actions en retard
+INC-2025057;2026-04-02;Fosse Nord;Accident avec arrêt;3;Entorse de la cheville en descendant d'un engin;Actions en retard
+INC-2025089;2026-04-02;Parc à résidus;Presque-accident;1;Chute de pierre sur rampe après tir;En cours
+INC-2025034;2026-04-06;Route d'accès;Accident avec arrêt;3;Entorse de la cheville en descendant d'un engin;Clôturé
+INC-2025054;2026-04-07;Usine SX-EW;Environnement;1;Débordement de solution acide dans le caniveau de confinement;Clôturé
+INC-2025105;2026-04-07;Laboratoire;Premiers soins;1;Coupure à la main lors du remplacement d'un filtre;Clôturé
+INC-2025121;2026-04-09;Route d'accès;Presque-accident;3;Camion recule sans signal sonore près d'un piéton;Actions en retard
+INC-2025158;2026-04-09;Parc à résidus;Presque-accident;3;Chute de pierre sur rampe après tir;Actions en retard
+INC-2025082;2026-04-10;Usine SX-EW;Soins médicaux;2;Projection d'électrolyte au visage, lunettes non portées;Actions en retard
+INC-2025007;2026-04-12;Parc à résidus;Accident avec arrêt;3;Entorse de la cheville en descendant d'un engin;Clôturé
+INC-2025098;2026-04-12;Magasin;Presque-accident;1;Camion recule sans signal sonore près d'un piéton;Clôturé
+INC-2025153;2026-04-13;Atelier;Environnement;2;Débordement de solution acide dans le caniveau de confinement;Clôturé
+INC-2025095;2026-04-14;Parc à résidus;Presque-accident;1;Chute de pierre sur rampe après tir;Clôturé
+INC-2025140;2026-04-27;Magasin;Environnement;2;Poussière excessive sur la route près du village de Lupanda;Clôturé
+INC-2025014;2026-04-28;Fosse Nord;Premiers soins;1;Coupure à la main lors du remplacement d'un filtre;Clôturé
+INC-2025143;2026-05-08;Usine SX-EW;Presque-accident;1;Chute de pierre sur rampe après tir;Actions en retard
+INC-2025020;2026-05-14;Fosse Sud;Soins médicaux;2;Projection d'électrolyte au visage, lunettes non portées;Clôturé
+INC-2025019;2026-05-19;Fosse Nord;Environnement;1;Poussière excessive sur la route près du village de Lupanda;Clôturé
+INC-2025142;2026-05-22;Parc à résidus;Dommage matériel;2;Collision légère entre véhicule léger et chargeuse;Clôturé
+INC-2025009;2026-05-23;Route d'accès;Dommage matériel;2;Collision légère entre véhicule léger et chargeuse;Actions en retard
+INC-2025149;2026-05-23;Parc à résidus;Presque-accident;3;Chute de pierre sur rampe après tir;En cours
+INC-2025109;2026-05-27;Usine SX-EW;Accident avec arrêt;3;Entorse de la cheville en descendant d'un engin;En cours
+INC-2025147;2026-05-31;Route d'accès;Presque-accident;1;Chute de pierre sur rampe après tir;Clôturé
+INC-2025072;2026-06-11;Route d'accès;Premiers soins;1;Coupure à la main lors du remplacement d'un filtre;Clôturé
+INC-2025004;2026-06-16;Fosse Sud;Premiers soins;1;Coupure à la main lors du remplacement d'un filtre;Clôturé
+INC-2025066;2026-06-18;Atelier;Presque-accident;3;Camion recule sans signal sonore près d'un piéton;Clôturé
+INC-2025071;2026-06-18;Fosse Nord;Accident avec arrêt;3;Entorse de la cheville en descendant d'un engin;En cours
