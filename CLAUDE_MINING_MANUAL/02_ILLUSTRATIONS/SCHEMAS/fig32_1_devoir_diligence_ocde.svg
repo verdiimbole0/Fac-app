@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="656.1pt" height="269.424pt" viewBox="0 0 656.1 269.424" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-16T09:49:23.075155</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 269.424 
+L 656.1 269.424 
+L 656.1 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 133.520084 95.904 
+Q 138.217179 95.904 140.678207 95.904 
+" clip-path="url(#p03af9016e4)" style="fill: none; stroke: #c9a227; stroke-width: 2; stroke-linecap: round"/>
+    <path d="M 135.078207 93.104 
+L 140.678207 95.904 
+L 135.078207 98.704 
+z
+" clip-path="url(#p03af9016e4)" style="fill: #c9a227; stroke: #c9a227; stroke-width: 2; stroke-linecap: round"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 260.074484 95.904 
+Q 264.771579 95.904 267.232607 95.904 
+" clip-path="url(#p03af9016e4)" style="fill: none; stroke: #c9a227; stroke-width: 2; stroke-linecap: round"/>
+    <path d="M 261.632607 93.104 
+L 267.232607 95.904 
+L 261.632607 98.704 
+z
+" clip-path="url(#p03af9016e4)" style="fill: #c9a227; stroke: #c9a227; stroke-width: 2; stroke-linecap: round"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 386.628884 95.904 
+Q 391.325979 95.904 393.787007 95.904 
+" clip-path="url(#p03af9016e4)" style="fill: none; stroke: #c9a227; stroke-width: 2; stroke-linecap: round"/>
+    <path d="M 388.187007 93.104 
+L 393.787007 95.904 
+L 388.187007 98.704 
+z
+" clip-path="url(#p03af9016e4)" style="fill: #c9a227; stroke: #c9a227; stroke-width: 2; stroke-linecap: round"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 513.183284 95.904 
+Q 517.880379 95.904 520.341407 95.904 
+" clip-path="url(#p03af9016e4)" style="fill: none; stroke: #c9a227; stroke-width: 2; stroke-linecap: round"/>
+    <path d="M 514.741407 93.104 
+L 520.341407 95.904 
+L 514.741407 98.704 
+z
+" clip-path="url(#p03af9016e4)" style="fill: #c9a227; stroke: #c9a227; stroke-width: 2; stroke-linecap: round"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 27.288 123.624 
+L 122.5944 123.624 
+Q 131.5224 123.624 131.5224 114.7536 
+L 131.5224 77.0544 
+Q 131.5224 68.184 122.5944 68.184 
+L 27.288 68.184 
+Q 18.36 68.184 18.36 77.0544 
+L 18.36 114.7536 
+Q 18.36 123.624 27.288 123.624 
+z
+" clip-path="url(#p03af9016e4)" style="fill: #0b2545; stroke: #0b2545; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 153.8424 123.624 
+L 249.1488 123.624 
+Q 258.0768 123.624 258.0768 114.7536 
+L 258.0768 77.0544 
+Q 258.0768 68.184 249.1488 68.184 
+L 153.8424 68.184 
+Q 144.9144 68.184 144.9144 77.0544 
+L 144.9144 114.7536 
+Q 144.9144 123.624 153.8424 123.624 
+z
+" clip-path="url(#p03af9016e4)" style="fill: #0b2545; stroke: #0b2545; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 280.3968 123.624 
+L 375.7032 123.624 
+Q 384.6312 123.624 384.6312 114.7536 
+L 384.6312 77.0544 
+Q 384.6312 68.184 375.7032 68.184 
+L 280.3968 68.184 
+Q 271.4688 68.184 271.4688 77.0544 
+L 271.4688 114.7536 
+Q 271.4688 123.624 280.3968 123.624 
+z
+" clip-path="url(#p03af9016e4)" style="fill: #0b2545; stroke: #0b2545; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 406.9512 123.624 
+L 502.2576 123.624 
+Q 511.1856 123.624 511.1856 114.7536 
+L 511.1856 77.0544 
+Q 511.1856 68.184 502.2576 68.184 
+L 406.9512 68.184 
+Q 398.0232 68.184 398.0232 77.0544 
+L 398.0232 114.7536 
+Q 398.0232 123.624 406.9512 123.624 
+z
+" clip-path="url(#p03af9016e4)" style="fill: #0b2545; stroke: #0b2545; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 533.5056 123.624 
+L 628.812 123.624 
+Q 637.74 123.624 637.74 114.7536 
+L 637.74 77.0544 
+Q 637.74 68.184 628.812 68.184 
+L 533.5056 68.184 
+Q 524.5776 68.184 524.5776 77.0544 
+L 524.5776 114.7536 
+Q 524.5776 123.624 533.5056 123.624 
+z
+" clip-path="url(#p03af9016e4)" style="fill: #0b2545; stroke: #0b2545; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: middle; fill: #0b2545" x="286.2" y="25.425234" transform="rotate(-0 286.2 25.425234)">Le cadre en cinq étapes du devoir de diligence de l'OCDE, et l'appui de Claude</text>
+   </g>
+   <g id="text_2">
+    <text style="font-weight: 700; font-size: 8.8px; font-family: 'Inter', 'DejaVu Sans'; fill: #ffffff" transform="translate(42.94495 91.70909)">1. Systèmes de</text>
+    <text style="font-weight: 700; font-size: 8.8px; font-family: 'Inter', 'DejaVu Sans'; fill: #ffffff" transform="translate(42.3867 104.987035)">gestion solides</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 7.6px; font-family: 'Inter', 'DejaVu Sans'; fill: #222831" transform="translate(42.188169 169.860945)">Claude : rédaction</text>
+    <text style="font-size: 7.6px; font-family: 'Inter', 'DejaVu Sans'; fill: #222831" transform="translate(50.830794 179.056648)">de politiques,</text>
+    <text style="font-size: 7.6px; font-family: 'Inter', 'DejaVu Sans'; fill: #222831" transform="translate(54.420013 188.252352)">procédures</text>
+   </g>
+   <g id="text_4">
+    <text style="font-weight: 700; font-size: 8.8px; font-family: 'Inter', 'DejaVu Sans'; fill: #ffffff" transform="translate(171.50685 92.579465)">2. Identifier et</text>
+    <text style="font-weight: 700; font-size: 8.8px; font-family: 'Inter', 'DejaVu Sans'; fill: #ffffff" transform="translate(161.019038 105.038598)">évaluer les risques</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 7.6px; font-family: 'Inter', 'DejaVu Sans'; fill: #222831" transform="translate(171.836006 169.860945)">Claude : analyse</text>
+    <text style="font-size: 7.6px; font-family: 'Inter', 'DejaVu Sans'; fill: #222831" transform="translate(169.168288 179.056648)">documentaire des</text>
+    <text style="font-size: 7.6px; font-family: 'Inter', 'DejaVu Sans'; fill: #222831" transform="translate(179.110038 188.252352)">fournisseurs</text>
+   </g>
+   <g id="text_6">
+    <text style="font-weight: 700; font-size: 8.8px; font-family: 'Inter', 'DejaVu Sans'; fill: #ffffff" transform="translate(296.924813 91.677465)">3. Stratégie de</text>
+    <text style="font-weight: 700; font-size: 8.8px; font-family: 'Inter', 'DejaVu Sans'; fill: #ffffff" transform="translate(284.439125 105.038598)">réponse aux risques</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 7.6px; font-family: 'Inter', 'DejaVu Sans'; fill: #222831" transform="translate(292.392344 169.860945)">humain : décisions ;</text>
+    <text style="font-size: 7.6px; font-family: 'Inter', 'DejaVu Sans'; fill: #222831" transform="translate(302.566844 179.056648)">Claude : plans</text>
+    <text style="font-size: 7.6px; font-family: 'Inter', 'DejaVu Sans'; fill: #222831" transform="translate(313.591594 188.252352)">d'action</text>
+   </g>
+   <g id="text_8">
+    <text style="font-weight: 700; font-size: 8.8px; font-family: 'Inter', 'DejaVu Sans'; fill: #ffffff" transform="translate(409.619212 91.729027)">4. Audit indépendant</text>
+    <text style="font-weight: 700; font-size: 8.8px; font-family: 'Inter', 'DejaVu Sans'; fill: #ffffff" transform="translate(444.923712 105.889035)">tiers</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 7.6px; font-family: 'Inter', 'DejaVu Sans'; fill: #222831" transform="translate(437.871931 174.458797)">auditeurs</text>
+    <text style="font-size: 7.6px; font-family: 'Inter', 'DejaVu Sans'; fill: #222831" transform="translate(430.191775 183.6545)">indépendants</text>
+   </g>
+   <g id="text_10">
+    <text style="font-weight: 700; font-size: 8.8px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="581.1588" y="98.207125" transform="rotate(-0 581.1588 98.207125)">5. Rapport annuel</text>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 7.6px; font-family: 'Inter', 'DejaVu Sans'; fill: #222831" transform="translate(551.503363 174.458797)">Claude : premier</text>
+    <text style="font-size: 7.6px; font-family: 'Inter', 'DejaVu Sans'; fill: #222831" transform="translate(556.8388 183.6545)">jet du rapport</text>
+   </g>
+   <g id="text_12">
+    <text style="font-style: italic; font-size: 7.5px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: middle; fill: #5b6b7f" x="286.2" y="242.776271" transform="rotate(-0 286.2 242.776271)">Étapes d'après OCDE (2016), Guide sur le devoir de diligence (3e éd.). Rôles de Claude : proposition de l'auteur. Illustration réalisée pour cet ouvrage.</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p03af9016e4">
+   <rect x="7.2" y="7.2" width="641.7" height="255.024"/>
+  </clipPath>
+ </defs>
+</svg>

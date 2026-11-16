@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="656.1pt" height="269.424pt" viewBox="0 0 656.1 269.424" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-16T09:49:21.672708</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 269.424 
+L 656.1 269.424 
+L 656.1 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 112.427684 95.904 
+Q 117.124779 95.904 119.585807 95.904 
+" clip-path="url(#p5e7c0dd8ca)" style="fill: none; stroke: #c9a227; stroke-width: 2; stroke-linecap: round"/>
+    <path d="M 113.985807 93.104 
+L 119.585807 95.904 
+L 113.985807 98.704 
+z
+" clip-path="url(#p5e7c0dd8ca)" style="fill: #c9a227; stroke: #c9a227; stroke-width: 2; stroke-linecap: round"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 217.889684 95.904 
+Q 222.586779 95.904 225.047807 95.904 
+" clip-path="url(#p5e7c0dd8ca)" style="fill: none; stroke: #c9a227; stroke-width: 2; stroke-linecap: round"/>
+    <path d="M 219.447807 93.104 
+L 225.047807 95.904 
+L 219.447807 98.704 
+z
+" clip-path="url(#p5e7c0dd8ca)" style="fill: #c9a227; stroke: #c9a227; stroke-width: 2; stroke-linecap: round"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 323.351684 95.904 
+Q 328.048779 95.904 330.509807 95.904 
+" clip-path="url(#p5e7c0dd8ca)" style="fill: none; stroke: #c9a227; stroke-width: 2; stroke-linecap: round"/>
+    <path d="M 324.909807 93.104 
+L 330.509807 95.904 
+L 324.909807 98.704 
+z
+" clip-path="url(#p5e7c0dd8ca)" style="fill: #c9a227; stroke: #c9a227; stroke-width: 2; stroke-linecap: round"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 428.813684 95.904 
+Q 433.510779 95.904 435.971807 95.904 
+" clip-path="url(#p5e7c0dd8ca)" style="fill: none; stroke: #c9a227; stroke-width: 2; stroke-linecap: round"/>
+    <path d="M 430.371807 93.104 
+L 435.971807 95.904 
+L 430.371807 98.704 
+z
+" clip-path="url(#p5e7c0dd8ca)" style="fill: #c9a227; stroke: #c9a227; stroke-width: 2; stroke-linecap: round"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 534.275684 95.904 
+Q 538.972779 95.904 541.433807 95.904 
+" clip-path="url(#p5e7c0dd8ca)" style="fill: none; stroke: #c9a227; stroke-width: 2; stroke-linecap: round"/>
+    <path d="M 535.833807 93.104 
+L 541.433807 95.904 
+L 535.833807 98.704 
+z
+" clip-path="url(#p5e7c0dd8ca)" style="fill: #c9a227; stroke: #c9a227; stroke-width: 2; stroke-linecap: round"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 27.288 123.624 
+L 101.502 123.624 
+Q 110.43 123.624 110.43 114.7536 
+L 110.43 77.0544 
+Q 110.43 68.184 101.502 68.184 
+L 27.288 68.184 
+Q 18.36 68.184 18.36 77.0544 
+L 18.36 114.7536 
+Q 18.36 123.624 27.288 123.624 
+z
+" clip-path="url(#p5e7c0dd8ca)" style="fill: #2d6a4f; stroke: #2d6a4f; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 132.75 123.624 
+L 206.964 123.624 
+Q 215.892 123.624 215.892 114.7536 
+L 215.892 77.0544 
+Q 215.892 68.184 206.964 68.184 
+L 132.75 68.184 
+Q 123.822 68.184 123.822 77.0544 
+L 123.822 114.7536 
+Q 123.822 123.624 132.75 123.624 
+z
+" clip-path="url(#p5e7c0dd8ca)" style="fill: #13a89e; stroke: #13a89e; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 238.212 123.624 
+L 312.426 123.624 
+Q 321.354 123.624 321.354 114.7536 
+L 321.354 77.0544 
+Q 321.354 68.184 312.426 68.184 
+L 238.212 68.184 
+Q 229.284 68.184 229.284 77.0544 
+L 229.284 114.7536 
+Q 229.284 123.624 238.212 123.624 
+z
+" clip-path="url(#p5e7c0dd8ca)" style="fill: #2d6a4f; stroke: #2d6a4f; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 343.674 123.624 
+L 417.888 123.624 
+Q 426.816 123.624 426.816 114.7536 
+L 426.816 77.0544 
+Q 426.816 68.184 417.888 68.184 
+L 343.674 68.184 
+Q 334.746 68.184 334.746 77.0544 
+L 334.746 114.7536 
+Q 334.746 123.624 343.674 123.624 
+z
+" clip-path="url(#p5e7c0dd8ca)" style="fill: #13a89e; stroke: #13a89e; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 449.136 123.624 
+L 523.35 123.624 
+Q 532.278 123.624 532.278 114.7536 
+L 532.278 77.0544 
+Q 532.278 68.184 523.35 68.184 
+L 449.136 68.184 
+Q 440.208 68.184 440.208 77.0544 
+L 440.208 114.7536 
+Q 440.208 123.624 449.136 123.624 
+z
+" clip-path="url(#p5e7c0dd8ca)" style="fill: #2d6a4f; stroke: #2d6a4f; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 554.598 123.624 
+L 628.812 123.624 
+Q 637.74 123.624 637.74 114.7536 
+L 637.74 77.0544 
+Q 637.74 68.184 628.812 68.184 
+L 554.598 68.184 
+Q 545.67 68.184 545.67 77.0544 
+L 545.67 114.7536 
+Q 545.67 123.624 554.598 123.624 
+z
+" clip-path="url(#p5e7c0dd8ca)" style="fill: #13a89e; stroke: #13a89e; stroke-width: 1.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 12px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: middle; fill: #0b2545" x="286.2" y="25.425234" transform="rotate(-0 286.2 25.425234)">Mécanisme de gestion des plaintes : place de Claude</text>
+   </g>
+   <g id="text_2">
+    <text style="font-weight: 700; font-size: 8.8px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="64.395" y="98.383812" transform="rotate(-0 64.395 98.383812)">Réception</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 7.6px; font-family: 'Inter', 'DejaVu Sans'; fill: #222831" transform="translate(41.939969 169.860945)">orale, écrite,</text>
+    <text style="font-size: 7.6px; font-family: 'Inter', 'DejaVu Sans'; fill: #222831" transform="translate(42.7445 179.056648)">comité local</text>
+    <text style="font-size: 7.6px; font-family: 'Inter', 'DejaVu Sans'; fill: #222831" transform="translate(42.66375 188.252352)">(agent CLO)</text>
+   </g>
+   <g id="text_4">
+    <text style="font-weight: 700; font-size: 8.8px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="169.857" y="98.33225" transform="rotate(-0 169.857 98.33225)">Enregistrement</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 7.6px; font-family: 'Inter', 'DejaVu Sans'; fill: #222831" transform="translate(139.531812 169.860945)">Claude : résumé,</text>
+    <text style="font-size: 7.6px; font-family: 'Inter', 'DejaVu Sans'; fill: #222831" transform="translate(133.679812 179.056648)">catégorie proposée,</text>
+    <text style="font-size: 7.6px; font-family: 'Inter', 'DejaVu Sans'; fill: #222831" transform="translate(151.617594 188.252352)">traduction</text>
+   </g>
+   <g id="text_6">
+    <text style="font-weight: 700; font-size: 8.8px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="275.319" y="100.031062" transform="rotate(-0 275.319 100.031062)">Évaluation</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 7.6px; font-family: 'Inter', 'DejaVu Sans'; fill: #222831" transform="translate(244.824 169.860945)">responsable RC :</text>
+    <text style="font-size: 7.6px; font-family: 'Inter', 'DejaVu Sans'; fill: #222831" transform="translate(244.952844 179.056648)">gravité, urgence,</text>
+    <text style="font-size: 7.6px; font-family: 'Inter', 'DejaVu Sans'; fill: #222831" transform="translate(260.648031 188.252352)">enquête</text>
+   </g>
+   <g id="text_8">
+    <text style="font-weight: 700; font-size: 8.8px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="380.781" y="98.381062" transform="rotate(-0 380.781 98.381062)">Réponse</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 7.6px; font-family: 'Inter', 'DejaVu Sans'; fill: #222831" transform="translate(348.966687 169.860945)">Claude : projet de</text>
+    <text style="font-size: 7.6px; font-family: 'Inter', 'DejaVu Sans'; fill: #222831" transform="translate(345.6025 179.056648)">réponse ; validation</text>
+    <text style="font-size: 7.6px; font-family: 'Inter', 'DejaVu Sans'; fill: #222831" transform="translate(365.444437 188.252352)">humaine</text>
+   </g>
+   <g id="text_10">
+    <text style="font-weight: 700; font-size: 8.8px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="486.243" y="99.23425" transform="rotate(-0 486.243 99.23425)">Suivi &amp; clôture</text>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 7.6px; font-family: 'Inter', 'DejaVu Sans'; fill: #222831" transform="translate(449.489281 169.860945)">accord du plaignant,</text>
+    <text style="font-size: 7.6px; font-family: 'Inter', 'DejaVu Sans'; fill: #222831" transform="translate(457.403375 179.056648)">retour au village</text>
+    <text style="font-size: 7.6px; font-family: 'Inter', 'DejaVu Sans'; fill: #222831" transform="translate(470.350094 188.252352)">(humain)</text>
+   </g>
+   <g id="text_12">
+    <text style="font-weight: 700; font-size: 8.8px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="591.705" y="98.189937" transform="rotate(-0 591.705 98.189937)">Analyse</text>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 7.6px; font-family: 'Inter', 'DejaVu Sans'; fill: #222831" transform="translate(555.9945 174.458797)">Claude : tendances,</text>
+    <text style="font-size: 7.6px; font-family: 'Inter', 'DejaVu Sans'; fill: #222831" transform="translate(559.4145 183.6545)">rapport trimestriel</text>
+   </g>
+   <g id="text_14">
+    <text style="font-style: italic; font-size: 7.5px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: middle; fill: #5b6b7f" x="286.2" y="242.776271" transform="rotate(-0 286.2 242.776271)">La relation avec les communautés reste humaine ; Claude assiste l'enregistrement, la rédaction et l'analyse. Illustration réalisée pour cet ouvrage.</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p5e7c0dd8ca">
+   <rect x="7.2" y="7.2" width="641.7" height="255.024"/>
+  </clipPath>
+ </defs>
+</svg>

@@ -31,7 +31,7 @@ Ce document est la **référence unique** de cohérence. Tout chiffre cité dans
 | Mesurées | 18 | 2,9 | 0,32 |
 | Indiquées | 42 | 2,4 | 0,27 |
 | Présumées | 25 | 2,0 | 0,21 |
-| **Total** | **85** | **2,40** | **0,27** |
+| **Total** | **85** | **2,39** | **0,26** |
 
 **Réserves minérales (fictives)**
 

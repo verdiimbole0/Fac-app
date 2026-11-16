@@ -66,8 +66,8 @@ def sondages():
     # QAQC
     q = []
     for i in range(40):
-        std = R.choice(["CRM-OREAS-A (fictif) 2,15 % Cu", "CRM-B (fictif) 0,85 % Cu", "BLANC"])
-        cert = 2.15 if "A" in std.split()[0][-1] else (0.85 if "B" in std else 0.0)
+        std = R.choice(["CRM-A (fictif) 2,15 % Cu", "CRM-B (fictif) 0,85 % Cu", "BLANC"])
+        cert = 0.0 if std == "BLANC" else (2.15 if std.startswith("CRM-A") else 0.85)
         val = 0.01 + abs(R.gauss(0, 0.004)) if cert == 0 else R.gauss(cert, cert * 0.025)
         q.append([f"Q{i+1:03d}", f"2016-{(i%12)+1:02d}-{(i%27)+1:02d}", std, cert, round(val, 3), f"LOT-{i//5+1:02d}"])
     q[17][4] = round(q[17][3] * 1.12, 3) if q[17][3] else 0.09; anomalies.append(f"QAQC: {q[17][0]} hors tolérance (> 3 écarts-types)")
