@@ -4,7 +4,7 @@
 
 Patrick Ilunga, géologue principal de MCC, prépare la campagne d'exploration 2027 de l'extension « Mbiyo Profond ». Sur son bureau : dix ans de rapports internes, 412 journaux de sondage, des centaines de photos de carottes, des notes de terrain manuscrites numérisées, deux rapports de consultants et une pile d'articles sur les gisements stratiformes du Copperbelt. Il doit produire en trois semaines une note de synthèse, une proposition de programme de sondages et un budget. Le temps manque, non pour réfléchir, mais pour **retrouver, lire et mettre en forme** l'information.
 
-![Figure 17.1 — Foreuse d'exploration en opération au lever du jour. Photographie : ExplorationGeologist, « Where the Earth Meets the Sky », Wikimedia Commons, licence CC BY 4.0, https://commons.wikimedia.org/wiki/File:Where_the_Earth_Meets_the_Sky.jpg (consulté le 16/11/2026). Photographie d'illustration ; elle ne représente pas le site fictif de MCC.](02_ILLUSTRATIONS/PHOTOGRAPHIES/photo_foreuse_exploration.jpg){width=80%}
+![Figure 17.1 — Foreuse d'exploration en opération au lever du jour. PHOTOGRAPHIE À INTÉGRER (emplacement réservé ; téléchargement automatisé refusé par la source) — image retenue : ExplorationGeologist, « Where the Earth Meets the Sky », Wikimedia Commons, licence CC BY 4.0, https://commons.wikimedia.org/wiki/File:Where_the_Earth_Meets_the_Sky.jpg (consulté le 16/11/2026). Photographie d'illustration ; elle ne représente pas le site fictif de MCC.](02_ILLUSTRATIONS/PHOTOGRAPHIES/photo_foreuse_exploration.jpg){width=80%}
 
 ### B. Objectifs d'apprentissage
 

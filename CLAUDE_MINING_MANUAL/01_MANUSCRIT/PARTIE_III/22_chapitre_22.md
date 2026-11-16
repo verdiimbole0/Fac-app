@@ -4,7 +4,7 @@
 
 Didier Mukendi, responsable maintenance de MCC, est convoqué par le directeur des opérations après l'incident de la rampe R3 : le camion CAM-07 a glissé au freinage, et la maintenance a trouvé une fuite sur un flexible du circuit de freinage. « Ce camion a eu combien d'interventions hydrauliques cette année ? Pourquoi n'a-t-on rien vu venir ? » Didier sait que la réponse est dans la GMAO — 420 ordres de travail en dix mois, avec des descriptions en texte libre de qualité variable. Il lui faut une analyse fiable, rapide, et un plan d'action argumenté.
 
-![Figure 22.1 — Camion de transport minier en réparation dans un atelier de maintenance. Photographie : Calistemon, « Haul truck under repair at Brockman 4, September 2018 », Wikimedia Commons, licence CC BY-SA 4.0, https://commons.wikimedia.org/wiki/File:Haul_truck_under_repair_at_Brockman_4,_September_2018.jpg (consulté le 16/11/2026). Photographie d'illustration, sans lien avec MCC.](02_ILLUSTRATIONS/PHOTOGRAPHIES/photo_camion_maintenance.jpg){width=82%}
+![Figure 22.1 — Camion de transport minier en réparation dans un atelier de maintenance. PHOTOGRAPHIE À INTÉGRER (emplacement réservé ; téléchargement automatisé refusé par la source) — image retenue : Calistemon, « Haul truck under repair at Brockman 4, September 2018 », Wikimedia Commons, licence CC BY-SA 4.0, https://commons.wikimedia.org/wiki/File:Haul_truck_under_repair_at_Brockman_4,_September_2018.jpg (consulté le 16/11/2026). Photographie d'illustration, sans lien avec MCC.](02_ILLUSTRATIONS/PHOTOGRAPHIES/photo_camion_maintenance.jpg){width=82%}
 
 ### B. Objectifs d'apprentissage
 

@@ -4,7 +4,7 @@
 
 Sarah Mwamba, ingénieure planification de MCC, doit expliquer au comité de direction pourquoi le minerai traité au premier semestre 2026 est inférieur au budget, et proposer un plan de rattrapage pour le second semestre. Elle dispose des données journalières de production, du plan budgétaire, des rapports mensuels et des comptes rendus de réunions. Le logiciel de planification minière produit les plans ; mais l'analyse des écarts, la rédaction des hypothèses, la comparaison des scénarios et la préparation de la présentation lui prennent l'essentiel de son temps.
 
-![Figure 19.1 — Une grande mine de cuivre à ciel ouvert : les gradins, les rampes et le fond de fosse illustrent l'ampleur des choix de planification. Photographie : Jet6581, « Bingham Canyon Open Pit Copper Mine 2012-09-17 », Wikimedia Commons, licence CC BY-SA 3.0, https://commons.wikimedia.org/wiki/File:Bingham_Canyon_Open_Pit_Copper_Mine_2012-09-17_21-25-59.jpg (consulté le 16/11/2026). Photographie d'illustration, sans lien avec MCC.](02_ILLUSTRATIONS/PHOTOGRAPHIES/photo_fosse_bingham_canyon.jpg){width=88%}
+![Figure 19.1 — Une grande mine de cuivre à ciel ouvert : les gradins, les rampes et le fond de fosse illustrent l'ampleur des choix de planification. PHOTOGRAPHIE À INTÉGRER (emplacement réservé ; téléchargement automatisé refusé par la source) — image retenue : Jet6581, « Bingham Canyon Open Pit Copper Mine 2012-09-17 », Wikimedia Commons, licence CC BY-SA 3.0, https://commons.wikimedia.org/wiki/File:Bingham_Canyon_Open_Pit_Copper_Mine_2012-09-17_21-25-59.jpg (consulté le 16/11/2026). Photographie d'illustration, sans lien avec MCC.](02_ILLUSTRATIONS/PHOTOGRAPHIES/photo_fosse_bingham_canyon.jpg){width=88%}
 
 ### B. Objectifs d'apprentissage
 

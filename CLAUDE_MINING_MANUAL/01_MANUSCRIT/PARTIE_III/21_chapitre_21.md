@@ -4,7 +4,7 @@
 
 Jean-Luc Tshibangu, métallurgiste en chef de MCC, fait face à deux problèmes. Le poste « réactifs » de l'usine dépasse le budget de plus de 20 % depuis avril 2026, et le directeur financier attend une explication chiffrée. Par ailleurs, la procédure opératoire de l'électrolyse doit être mise à jour avant l'audit de certification, car l'usine a modifié ses équipements de ventilation. Jean-Luc a les données, les contrats, les anciennes procédures ; il lui manque le temps de tout croiser et rédiger.
 
-![Figure 21.1 — Salle d'électrolyse du cuivre (raffinerie de Luilu, près de Kolwezi, photographie historique). Photographie : Gécamines, « Room where copper is electrolyzed at the Gecamines Luilu refinery near Kolwezi », Wikimedia Commons, domaine public, https://commons.wikimedia.org/wiki/File:Room_where_copper_is_electrolyzed_at_the_Gecamines_Luilu_refinery_near_Kolwezi.jpg (consulté le 16/11/2026). Photographie d'illustration, sans lien avec MCC.](02_ILLUSTRATIONS/PHOTOGRAPHIES/photo_electrolyse_luilu.jpg){width=82%}
+![Figure 21.1 — Salle d'électrolyse du cuivre (raffinerie de Luilu, près de Kolwezi, photographie historique). PHOTOGRAPHIE À INTÉGRER (emplacement réservé ; téléchargement automatisé refusé par la source) — image retenue : Gécamines, « Room where copper is electrolyzed at the Gecamines Luilu refinery near Kolwezi », Wikimedia Commons, domaine public, https://commons.wikimedia.org/wiki/File:Room_where_copper_is_electrolyzed_at_the_Gecamines_Luilu_refinery_near_Kolwezi.jpg (consulté le 16/11/2026). Photographie d'illustration, sans lien avec MCC.](02_ILLUSTRATIONS/PHOTOGRAPHIES/photo_electrolyse_luilu.jpg){width=82%}
 
 ### B. Objectifs d'apprentissage
 
