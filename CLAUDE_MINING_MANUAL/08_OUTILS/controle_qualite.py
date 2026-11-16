@@ -21,7 +21,7 @@ for f in chap:
     quiz = t.split("### K.")[-1] if "### K." in t else ""
     nq = len(re.findall(r"^\d+\. \*\*\(", quiz, re.M))
     carnet = 'class="carnet"' in t
-    figs = re.findall(r"!\[[^\]]*\]\(([^)]+)\)", t)
+    figs = re.findall(r"\]\((02_ILLUSTRATIONS/[^)\s]+)\)\{width", t)
     absentes = [x for x in figs if not (ROOT / x).exists()]
     cites = re.findall(r"@([A-Za-z0-9\-]+)", t)
     inconnues = sorted({c for c in cites if c not in ids})
@@ -46,7 +46,7 @@ r = ["# Rapport de contrôle qualité automatique\n",
      f"- Annexes : **{len(ann) - 1}** fichiers rédigés (A à H, J à M) + ouverture ; annexe I générée depuis le registre des sources",
      f"- Questions de quiz : **{tot_q}** (minimum 8 par chapitre)",
      f"- Prompts dans les chapitres : **{tot_prompts}** ; bibliothèque de l'Annexe B : **{nb_prompts_b}**",
-     f"- Figures référencées dans les chapitres : **{tot_fig}** ; fichiers de figures produits : **{schemas}** ; emplacements photographiques : **{photos}**",
+     f"- Figures référencées dans les chapitres : **{tot_fig}** ; fichiers de figures produits : **{schemas}** ; photographies intégrées : **{photos}**",
      f"- Sources au registre : **{len(SOURCES)}**",
      f"- Volume (chapitres + corrigés + annexes) : environ **{mots:,}** mots".replace(",", " "),
      f"- Anomalies structurelles détectées : **{len(problemes)}**\n",
@@ -65,12 +65,12 @@ r += ["""
 | Calculs cités dans le texte (pénalité 2 400 USD ; effet prix 258 000 USD ; écart normalisé 4,8 ; TF 4,76 ; besoin de 6 875 t/j) | Recalculés |
 | Informations sur Claude (modèles, prix, contexte, effort, fichiers, projets, artefacts, recherche, mémoire, compétences) | Vérifiées dans la documentation officielle au 16/11/2026 |
 | Interface de Claude | Illustration schématique explicitement signalée ; aucune fausse capture |
-| Photographies | 14 photographies libres sélectionnées, crédits complets ; téléchargement automatisé refusé par Wikimedia → emplacements réservés explicitement marqués « à intégrer » ; script `08_OUTILS/photos.py` fourni |
+| Photographies | 10 photographies libres (Wikimedia Commons) fournies par l'éditeur et intégrées ; légendes avec titre, auteur, source, licence et liens ; récapitulatif à l'Annexe M.5 ; aucune mention « à intégrer » restante |
 | Rendu PDF | Sommaire, en-têtes, pieds de page, encadrés, tableaux, figures et carnets contrôlés visuellement par échantillonnage |
 
 ## Points restant à contrôler par l'éditeur (relecture humaine)
 
-1. Intégrer les 14 photographies (script `photos.py telecharger`, avec un User-Agent comportant le contact de l'éditeur) puis retirer la mention « à intégrer » des légendes.
+1. Vérifier dans la maquette finale le rendu d'impression des photographies (résolution à la taille d'impression retenue).
 2. Relecture orthotypographique complète (espaces insécables, coupures, veuves et orphelines) dans la maquette finale.
 3. Revalidation des informations datées sur Claude (modèles, prix, offres) à la date de publication.
 4. Vérification par un juriste des passages relatifs au droit minier congolais et aux obligations de transparence, et par des praticiens (géologie, HSE, métallurgie, finance) des chapitres métier.

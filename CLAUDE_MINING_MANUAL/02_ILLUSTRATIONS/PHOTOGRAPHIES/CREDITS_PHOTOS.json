@@ -7,37 +7,9 @@
   "page": "https://commons.wikimedia.org/wiki/File:Bingham_Canyon_Open_Pit_Copper_Mine_2012-09-17_21-25-59.jpg",
   "description": "Bingham Canyon Open Pit Copper Mine",
   "consulte": "16 novembre 2026",
-  "statut": "à intégrer (téléchargement automatisé refusé par Wikimedia)"
- },
- {
-  "fichier": "photo_cuprite_kolwezi.jpg",
-  "titre_commons": "File:Cuprite-Kolwezi-RDC.jpg",
-  "auteur": "Ji-Elle",
-  "licence": "CC BY-SA 3.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Cuprite-Kolwezi-RDC.jpg",
-  "description": "Cuprite (chalcotrichite). Kolwezi, Katanga, RDC. Natur Musee, Luxembourg.",
-  "consulte": "16 novembre 2026",
-  "statut": "à intégrer (téléchargement automatisé refusé par Wikimedia)"
- },
- {
-  "fichier": "photo_mine_kamoto_kolwezi.jpg",
-  "titre_commons": "File:Kamoto Mine - panoramio.jpg",
-  "auteur": "Martin Tuchscherer",
-  "licence": "CC BY-SA 3.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Kamoto_Mine_-_panoramio.jpg",
-  "description": "Kamoto Mine",
-  "consulte": "16 novembre 2026",
-  "statut": "à intégrer (téléchargement automatisé refusé par Wikimedia)"
- },
- {
-  "fichier": "photo_kolwezi_1973.jpg",
-  "titre_commons": "File:Kopermijn Kolwezi (1973).jpg",
-  "auteur": "Rob Mieremet / Anefo",
-  "licence": "CC BY 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Kopermijn_Kolwezi_(1973).jpg",
-  "description": "Copper mine Kolwezi",
-  "consulte": "16 novembre 2026",
-  "statut": "à intégrer (téléchargement automatisé refusé par Wikimedia)"
+  "statut": "intégrée (fichier fourni par l'éditeur, redimensionné à 1 800 px max)",
+  "url_licence": "https://creativecommons.org/licenses/by-sa/3.0/deed.fr",
+  "auteur_affiche": "Jet6581"
  },
  {
   "fichier": "photo_electrolyse_luilu.jpg",
@@ -47,7 +19,9 @@
   "page": "https://commons.wikimedia.org/wiki/File:Room_where_copper_is_electrolyzed_at_the_Gecamines_Luilu_refinery_near_Kolwezi.jpg",
   "description": "Room where copper is electrolyzed at the Gecamines Luilu refinery near Kolwezi",
   "consulte": "16 novembre 2026",
-  "statut": "à intégrer (téléchargement automatisé refusé par Wikimedia)"
+  "statut": "intégrée (fichier fourni par l'éditeur, redimensionné à 1 800 px max)",
+  "url_licence": "",
+  "auteur_affiche": "Gécamines"
  },
  {
   "fichier": "photo_pelle_camion.jpg",
@@ -57,7 +31,9 @@
   "page": "https://commons.wikimedia.org/wiki/File:Belaz_haul_truck_and_a_Hitachi_mining_excavator.jpg",
   "description": "A Hitachi mining excavator dumps material in a Belaz haul truck.",
   "consulte": "16 novembre 2026",
-  "statut": "à intégrer (téléchargement automatisé refusé par Wikimedia)"
+  "statut": "intégrée (fichier fourni par l'éditeur, redimensionné à 1 800 px max)",
+  "url_licence": "https://creativecommons.org/licenses/by-sa/3.0/deed.fr",
+  "auteur_affiche": "Sandrerro"
  },
  {
   "fichier": "photo_niosh_camion_recul.jpg",
@@ -67,7 +43,9 @@
   "page": "https://commons.wikimedia.org/wiki/File:Haul_truck_backed_over_a_parked_vehicle.jpg",
   "description": "Haul truck backed over a parked automobile.",
   "consulte": "16 novembre 2026",
-  "statut": "à intégrer (téléchargement automatisé refusé par Wikimedia)"
+  "statut": "intégrée (fichier fourni par l'éditeur, redimensionné à 1 800 px max)",
+  "url_licence": "",
+  "auteur_affiche": "NIOSH (National Institute for Occupational Safety and Health)"
  },
  {
   "fichier": "photo_camion_maintenance.jpg",
@@ -77,7 +55,9 @@
   "page": "https://commons.wikimedia.org/wiki/File:Haul_truck_under_repair_at_Brockman_4,_September_2018.jpg",
   "description": "Haul truck under repair at Brockman 4, September 2018",
   "consulte": "16 novembre 2026",
-  "statut": "à intégrer (téléchargement automatisé refusé par Wikimedia)"
+  "statut": "intégrée (fichier fourni par l'éditeur, redimensionné à 1 800 px max)",
+  "url_licence": "https://creativecommons.org/licenses/by-sa/4.0/deed.fr",
+  "auteur_affiche": "Calistemon"
  },
  {
   "fichier": "photo_refuge_souterrain.jpg",
@@ -87,7 +67,9 @@
   "page": "https://commons.wikimedia.org/wiki/File:Emergency-and-rescue-shelter-for-underground-environment-mines-tunnels-subroca.png",
   "description": "emergency and rescue shelter for underground environments subroca",
   "consulte": "16 novembre 2026",
-  "statut": "à intégrer (téléchargement automatisé refusé par Wikimedia)"
+  "statut": "intégrée (fichier fourni par l'éditeur, redimensionné à 1 800 px max)",
+  "url_licence": "https://creativecommons.org/licenses/by-sa/4.0/deed.fr",
+  "auteur_affiche": "LeaSubroca"
  },
  {
   "fichier": "photo_foreuse_exploration.jpg",
@@ -97,7 +79,9 @@
   "page": "https://commons.wikimedia.org/wiki/File:Where_the_Earth_Meets_the_Sky.jpg",
   "description": "The rig fires up under a rising sun, guided by exploration geologists, it drills deep into the earth in search for hidden mineral deposits",
   "consulte": "16 novembre 2026",
-  "statut": "à intégrer (téléchargement automatisé refusé par Wikimedia)"
+  "statut": "intégrée (fichier fourni par l'éditeur, redimensionné à 1 800 px max)",
+  "url_licence": "https://creativecommons.org/licenses/by/4.0/deed.fr",
+  "auteur_affiche": "ExplorationGeologist"
  },
  {
   "fichier": "photo_parc_residus_mt_isa.jpg",
@@ -107,7 +91,9 @@
   "page": "https://commons.wikimedia.org/wiki/File:StateLibQld_2_257026_Tailings_storage_dam,_Mt._Isa_Mines,_1932.jpg",
   "description": "Tailings storage dam, Mt. Isa Mines, 1932",
   "consulte": "16 novembre 2026",
-  "statut": "à intégrer (téléchargement automatisé refusé par Wikimedia)"
+  "statut": "intégrée (fichier fourni par l'éditeur, redimensionné à 1 800 px max)",
+  "url_licence": "",
+  "auteur_affiche": "L. Plass (State Library of Queensland)"
  },
  {
   "fichier": "photo_revegetation_csiro.jpg",
@@ -117,17 +103,9 @@
   "page": "https://commons.wikimedia.org/wiki/File:CSIRO_ScienceImage_924_Revegetation_project.jpg",
   "description": "Revegetation project in bushland, Keilor, Victoria, 24 May 2008",
   "consulte": "16 novembre 2026",
-  "statut": "à intégrer (téléchargement automatisé refusé par Wikimedia)"
- },
- {
-  "fichier": "photo_rehabilitation_sieniawa.jpg",
-  "titre_commons": "File:Tereny pokopalniane w Sieniawie aerial 2024.jpg",
-  "auteur": "Cyku new",
-  "licence": "CC BY 4.0",
-  "page": "https://commons.wikimedia.org/wiki/File:Tereny_pokopalniane_w_Sieniawie_aerial_2024.jpg",
-  "description": "Rekultywowana odkrywka węgla brunatnego w Sieniawie",
-  "consulte": "16 novembre 2026",
-  "statut": "à intégrer (téléchargement automatisé refusé par Wikimedia)"
+  "statut": "intégrée (fichier fourni par l'éditeur, redimensionné à 1 800 px max)",
+  "url_licence": "https://creativecommons.org/licenses/by/3.0/deed.fr",
+  "auteur_affiche": "Nick Pitsas, CSIRO"
  },
  {
   "fichier": "photo_carottes_sondage.jpg",
@@ -137,6 +115,8 @@
   "page": "https://commons.wikimedia.org/wiki/File:Drill_core_boxes_Onkalo_1.jpg",
   "description": "Drill core boxes, Onkalo",
   "consulte": "16 novembre 2026",
-  "statut": "à intégrer (téléchargement automatisé refusé par Wikimedia)"
+  "statut": "intégrée (fichier fourni par l'éditeur, redimensionné à 1 800 px max)",
+  "url_licence": "https://creativecommons.org/licenses/by-sa/4.0/deed.fr",
+  "auteur_affiche": "kallerna"
  }
 ]

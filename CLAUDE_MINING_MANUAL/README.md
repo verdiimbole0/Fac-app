@@ -42,7 +42,7 @@ Dépendances : Python 3 (matplotlib, openpyxl, python-docx), pandoc ≥ 3, Libre
 | Registre bibliographique | `05_BIBLIOGRAPHIE_WEBOGRAPHIE/REGISTRE_SOURCES.csv` |
 | Contrôle qualité | `07_CONTROLE_QUALITE/RAPPORT_CONTROLE_QUALITE.md` |
 
-**Photographies :** les 14 photographies sélectionnées (licences libres, crédits complets) sont des emplacements réservés : Wikimedia a refusé le téléchargement automatisé. Pour les intégrer : `python3 08_OUTILS/photos.py telecharger "MonOutil/1.0 (contact: adresse@exemple.org)"`, puis reconstruire.
+**Photographies :** 10 photographies sous licence libre (Wikimedia Commons) sont intégrées, avec titre, auteur, source, licence et liens dans chaque légende, et récapitulées à l'Annexe M.5. Elles ont été fournies par l'éditeur et intégrées avec `08_OUTILS/integrer_photos.py`.
 
 ## Avertissement
 

@@ -9,9 +9,9 @@
 - Annexes : **12** fichiers rédigés (A à H, J à M) + ouverture ; annexe I générée depuis le registre des sources
 - Questions de quiz : **430** (minimum 8 par chapitre)
 - Prompts dans les chapitres : **131** ; bibliothèque de l'Annexe B : **124**
-- Figures référencées dans les chapitres : **70** ; fichiers de figures produits : **62** ; emplacements photographiques : **14**
+- Figures référencées dans les chapitres : **70** ; fichiers de figures produits : **62** ; photographies intégrées : **10**
 - Sources au registre : **70**
-- Volume (chapitres + corrigés + annexes) : environ **99 497** mots
+- Volume (chapitres + corrigés + annexes) : environ **100 049** mots
 - Anomalies structurelles détectées : **0**
 
 ## Contrôle par chapitre
@@ -76,12 +76,12 @@
 | Calculs cités dans le texte (pénalité 2 400 USD ; effet prix 258 000 USD ; écart normalisé 4,8 ; TF 4,76 ; besoin de 6 875 t/j) | Recalculés |
 | Informations sur Claude (modèles, prix, contexte, effort, fichiers, projets, artefacts, recherche, mémoire, compétences) | Vérifiées dans la documentation officielle au 16/11/2026 |
 | Interface de Claude | Illustration schématique explicitement signalée ; aucune fausse capture |
-| Photographies | 14 photographies libres sélectionnées, crédits complets ; téléchargement automatisé refusé par Wikimedia → emplacements réservés explicitement marqués « à intégrer » ; script `08_OUTILS/photos.py` fourni |
+| Photographies | 10 photographies libres (Wikimedia Commons) fournies par l'éditeur et intégrées ; légendes avec titre, auteur, source, licence et liens ; récapitulatif à l'Annexe M.5 ; aucune mention « à intégrer » restante |
 | Rendu PDF | Sommaire, en-têtes, pieds de page, encadrés, tableaux, figures et carnets contrôlés visuellement par échantillonnage |
 
 ## Points restant à contrôler par l'éditeur (relecture humaine)
 
-1. Intégrer les 14 photographies (script `photos.py telecharger`, avec un User-Agent comportant le contact de l'éditeur) puis retirer la mention « à intégrer » des légendes.
+1. Vérifier dans la maquette finale le rendu d'impression des photographies (résolution à la taille d'impression retenue).
 2. Relecture orthotypographique complète (espaces insécables, coupures, veuves et orphelines) dans la maquette finale.
 3. Revalidation des informations datées sur Claude (modèles, prix, offres) à la date de publication.
 4. Vérification par un juriste des passages relatifs au droit minier congolais et aux obligations de transparence, et par des praticiens (géologie, HSE, métallurgie, finance) des chapitres métier.

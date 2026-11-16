@@ -4,7 +4,7 @@
 
 Albert Kalenga, superintendant forage-minage de MCC, termine chaque poste de nuit par une heure de « paperasse » : rapport de poste, mise à jour du registre des tirs, réponses aux questions de la planification, préparation de la causerie du matin. Il pilote aussi un sujet délicat : les vibrations ressenties au village de Kasongo-Mbiyo après certains tirs, qui suscitent des plaintes. Il voudrait gagner du temps sur l'écrit pour en passer davantage sur le terrain, et mieux expliquer aux riverains ce que fait la mine.
 
-![Figure 20.1 — Chargement d'un camion de grande capacité par une pelle hydraulique. PHOTOGRAPHIE À INTÉGRER (emplacement réservé ; téléchargement automatisé refusé par la source) — image retenue : Sandrerro, « Belaz haul truck and a Hitachi mining excavator », Wikimedia Commons, licence CC BY-SA 3.0, https://commons.wikimedia.org/wiki/File:Belaz_haul_truck_and_a_Hitachi_mining_excavator.jpg (consulté le 16/11/2026). Photographie d'illustration, sans lien avec MCC.](02_ILLUSTRATIONS/PHOTOGRAPHIES/photo_pelle_camion.jpg){width=82%}
+![Figure 20.1 — Chargement d'un camion de grande capacité par une pelle hydraulique. Titre original : « Belaz haul truck and a Hitachi mining excavator ». Auteur : Sandrerro. Source : Wikimedia Commons, [https://commons.wikimedia.org/wiki/File:Belaz_haul_truck_and_a_Hitachi_mining_excavator.jpg](https://commons.wikimedia.org/wiki/File:Belaz_haul_truck_and_a_Hitachi_mining_excavator.jpg) (consulté le 16/11/2026). Licence : [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/deed.fr) ; image redimensionnée pour l'édition. Photographie d'illustration, sans lien avec l'entreprise fictive MCC.](02_ILLUSTRATIONS/PHOTOGRAPHIES/photo_pelle_camion.jpg){width=78%}
 
 ### B. Objectifs d'apprentissage
 

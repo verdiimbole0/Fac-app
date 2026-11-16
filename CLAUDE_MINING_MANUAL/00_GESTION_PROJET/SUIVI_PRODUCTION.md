@@ -17,7 +17,7 @@
 - ≈ 99 500 mots (chapitres, corrigés, annexes) ; ≈ 105 000 mots avec liminaires et bibliographie.
 - 430 questions de quiz, toutes corrigées et expliquées.
 - 131 prompts commentés dans les chapitres + 124 prompts dans l'Annexe B.
-- 62 figures originales (PNG + SVG) ; 14 emplacements photographiques avec crédits complets.
+- 62 figures originales (PNG + SVG) ; 10 photographies sous licence libre intégrées (crédits complets, Annexe M.5).
 - 10 CSV, 3 XLSX, 4 DOCX, 3 PDF d'exercice + corrigé des anomalies.
 
 ## Chapitres
@@ -37,7 +37,7 @@
 - Citations `[@ID]` converties en APA ; clé inconnue = construction bloquée.
 - Carnet de réflexion généré par gabarit (2 pages par chapitre).
 - Interface Claude : illustrations schématiques uniquement.
-- Photographies : sélection Wikimedia Commons sous licence libre ; emplacements réservés faute de téléchargement autorisé.
+- Photographies : Wikimedia Commons, licences libres ; fichiers fournis par l'éditeur (ZIP) et intégrés par `08_OUTILS/integrer_photos.py`.
 
 ## Difficultés techniques rencontrées
 - Réseau restreint : environnement dédié créé ; certains sites restent bloqués (403) → références ◇.
@@ -45,7 +45,7 @@
 - Champ TOC Word non converti par LibreOffice → index natif inséré par le script UNO ; le DOCX demande la mise à jour du sommaire à l'ouverture.
 
 ## Prochain travail (révision éditoriale)
-1. Intégrer les photographies (`photos.py`), puis retirer « PHOTOGRAPHIE À INTÉGRER » des légendes et reconstruire.
+1. ✅ Photographies intégrées (10/10).
 2. Relecture humaine complète ; validation par des praticiens et un juriste (voir `07_CONTROLE_QUALITE`).
 3. Revalidation des informations datées sur Claude avant publication.
 4. Reconstruction : `python3 08_OUTILS/construire_livre.py` puis `python3 08_OUTILS/controle_qualite.py`.
