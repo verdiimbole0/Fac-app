@@ -20,7 +20,7 @@ Le 14 avril 2026, à 2 h 40, le camion CAM-07 glisse au freinage sur la rampe R3
 
 #### C.1. Le cadre
 
-La Convention n° 176 de l'OIT impose à l'employeur d'évaluer et de maîtriser les risques et reconnaît aux travailleurs des droits, dont celui de se retirer d'une situation de danger grave [@ILO-C176] ; le recueil de directives de l'OIT sur les mines à ciel ouvert détaille les mesures pratiques, notamment pour la circulation des engins, les talus et les explosifs [@ILO-OPENCAST]. L'ICMM promeut la **gestion des contrôles critiques** : identifier, pour chaque événement indésirable majeur, les contrôles qui le préviennent ou en limitent les conséquences, définir leurs normes de performance, les vérifier et en rendre compte [@ICMM-CCM-2015; @ICMM-CCM].
+La Convention n° 176 de l'OIT impose à l'employeur d'évaluer et de maîtriser les risques et reconnaît aux travailleurs des droits, dont celui de se retirer d'une situation de danger grave [@ILO-C176] ; le recueil de directives de l'OIT sur les mines à ciel ouvert détaille les mesures pratiques, notamment pour la circulation des engins, les talus et les explosifs [@ILO-OPENCAST]. L'ICMM promeut la **gestion des contrôles critiques** : identifier, pour chaque événement indésirable majeur, les contrôles qui le préviennent ou en limitent les conséquences, définir leurs normes de performance, les vérifier et en rendre compte [@ICMM-CCM].
 
 *Tableau 23.1 — Profil de l'équipe HSE.*
 
@@ -133,7 +133,7 @@ Commentaire de 150 mots : tendances factuelles, sans attribution de cause.
 
 #### Cas d'usage 23.3 — Vérification des contrôles critiques (condensé)
 
-Pour l'événement majeur « collision ou sortie de route d'un engin sur rampe », l'équipe HSE a identifié des contrôles critiques (merlons conformes, état et arrosage maîtrisé des rampes, limitation de vitesse, freinage conforme, séparation engins-véhicules légers). Claude transforme les normes de performance de chaque contrôle en **check-lists de vérification de terrain**, prépare le tableau de suivi des vérifications et synthétise les résultats saisis par les vérificateurs. Les contrôles critiques eux-mêmes et leurs normes de performance sont définis par les experts, conformément à l'approche de l'ICMM [@ICMM-CCM-2015].
+Pour l'événement majeur « collision ou sortie de route d'un engin sur rampe », l'équipe HSE a identifié des contrôles critiques (merlons conformes, état et arrosage maîtrisé des rampes, limitation de vitesse, freinage conforme, séparation engins-véhicules légers). Claude transforme les normes de performance de chaque contrôle en **check-lists de vérification de terrain**, prépare le tableau de suivi des vérifications et synthétise les résultats saisis par les vérificateurs. Les contrôles critiques eux-mêmes et leurs normes de performance sont définis par les experts, conformément à l'approche de l'ICMM [@ICMM-CCM].
 
 #### Cas d'usage 23.4 — Relecture d'une analyse de risques (condensé)
 

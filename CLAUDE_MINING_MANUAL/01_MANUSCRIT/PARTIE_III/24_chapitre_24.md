@@ -16,7 +16,7 @@ Esther Kalala, responsable environnement de MCC, constate dans le rapport de lab
 
 ### C. Comprendre avant de pratiquer — Profil du métier
 
-Les référentiels internationaux encadrent fortement ce domaine : les **Normes de performance** de la SFI (évaluation et gestion environnementale et sociale, utilisation rationnelle des ressources et prévention de la pollution, biodiversité…) [@IFC-PS] ; la **Norme mondiale de l'industrie sur la gestion des résidus miniers (GISTM)**, publiée en août 2020 à l'issue d'un processus co-organisé par l'ICMM, le PNUE et les PRI, qui couvre notamment la connaissance du site, la conception, la construction, l'exploitation et la surveillance des installations, la gouvernance, la préparation aux urgences et la transparence [@GISTM-2020; @UNEP-GISTM; @ICMM-TAIL] ; et, pour la fermeture, le guide de bonnes pratiques de l'ICMM sur la fermeture intégrée des mines [@ICMM-CLOSURE].
+Les référentiels internationaux encadrent fortement ce domaine : les **Normes de performance** de la SFI (évaluation et gestion environnementale et sociale, utilisation rationnelle des ressources et prévention de la pollution, biodiversité…) [@IFC-PS] ; la **Norme mondiale de l'industrie sur la gestion des résidus miniers (GISTM)**, publiée en août 2020 à l'issue d'un processus co-organisé par l'ICMM, le PNUE et les PRI, qui couvre notamment la connaissance du site, la conception, la construction, l'exploitation et la surveillance des installations, la gouvernance, la préparation aux urgences et la transparence [@GISTM-2020; @ICMM-TAIL].
 
 *Tableau 24.1 — Profil de l'équipe environnement.*
 
@@ -119,7 +119,7 @@ Claude aide l'ingénieur responsable à organiser la documentation exigée par l
 
 #### Cas d'usage 24.4 — Mise à jour du plan de fermeture (condensé)
 
-À partir du plan de fermeture précédent, des changements intervenus (nouvelles installations, extension Mbiyo Profond, attentes des communautés) et du guide de l'ICMM [@ICMM-CLOSURE], Claude propose une structure de mise à jour, un tableau des modifications, la liste des hypothèses de coût à réviser et un projet de résumé non technique pour la consultation des communautés. L'estimation des coûts de fermeture et les choix techniques relèvent des spécialistes ; la provision comptable (88 MUSD dans le scénario) relève de la finance et des auditeurs.
+À partir du plan de fermeture précédent, des changements intervenus (nouvelles installations, extension Mbiyo Profond, attentes des communautés), Claude propose une structure de mise à jour, un tableau des modifications, la liste des hypothèses de coût à réviser et un projet de résumé non technique pour la consultation des communautés. L'estimation des coûts de fermeture et les choix techniques relèvent des spécialistes ; la provision comptable (88 MUSD dans le scénario) relève de la finance et des auditeurs.
 
 ![Figure 24.3 — Revégétalisation d'un site dégradé. Titre original : « CSIRO ScienceImage 924 Revegetation project ». Auteur : Nick Pitsas, CSIRO. Source : Wikimedia Commons, [https://commons.wikimedia.org/wiki/File:CSIRO_ScienceImage_924_Revegetation_project.jpg](https://commons.wikimedia.org/wiki/File:CSIRO_ScienceImage_924_Revegetation_project.jpg) (consulté le 16/11/2026). Licence : [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/deed.fr) ; image redimensionnée pour l'édition. Photographie d'illustration, sans lien avec l'entreprise fictive MCC.](02_ILLUSTRATIONS/PHOTOGRAPHIES/photo_revegetation_csiro.jpg){width=78%}
 

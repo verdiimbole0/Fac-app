@@ -66,7 +66,7 @@ Ce manuel lui-même a été produit avec Claude Code : recherche documentaire, g
 
 #### C.6. Claude in Chrome et les agents de navigation
 
-Les agents capables de naviguer et d'agir dans un navigateur ouvrent des usages puissants, mais exposent à des risques spécifiques, notamment les **injections de prompt** : des instructions malveillantes cachées dans une page Web ou un document, qui tentent de détourner l'agent. Anthropic présente ces risques dans sa communication sur Claude in Chrome [@ANT-CHROME], et le référentiel OWASP classe l'injection de prompt au premier rang des risques des applications fondées sur les grands modèles de langage [@OWASP-LLM]. Nous y reviendrons au chapitre 38.
+Les agents capables de naviguer et d'agir dans un navigateur ouvrent des usages puissants, mais exposent à des risques spécifiques, notamment les **injections de prompt** : des instructions malveillantes cachées dans une page Web ou un document, qui tentent de détourner l'agent. Anthropic présente ces risques dans sa communication sur Claude in Chrome [@ANT-CHROME]. Nous y reviendrons au chapitre 38.
 
 ![Figure 16.2 — Quel outil de l'écosystème pour quel besoin ? Disponibilité selon l'offre et la configuration de l'organisation. Illustration réalisée pour cet ouvrage.](02_ILLUSTRATIONS/SCHEMAS/fig16_2_carte_outils.png){width=100%}
 
@@ -208,6 +208,6 @@ Puis 5 lignes de synthèse.
 7. **(Compréhension)** Quelle différence faites-vous entre un connecteur en lecture et un connecteur en écriture du point de vue du risque ?
 8. **(Application)** Rédigez la phrase de protection contre les injections de prompt à ajouter à vos instructions.
 9. **(Analyse critique)** Pourquoi la combinaison projet + connecteur + compétence est-elle plus robuste qu'un long prompt copié-collé ?
-10. **(QCM)** À quel rang le référentiel OWASP place-t-il l'injection de prompt parmi les risques des applications LLM ? a) 1er ; b) 5e ; c) 10e ; d) non classé.
+10. **(QCM)** Comment appelle-t-on une attaque consistant à cacher des instructions malveillantes dans une page Web lue par un agent ? a) une injection de prompt ; b) une surchauffe ; c) une latence ; d) une tokenisation.
 
 <div class="carnet" titre="Chapitre 16 — Connecter Claude à son environnement professionnel"></div>

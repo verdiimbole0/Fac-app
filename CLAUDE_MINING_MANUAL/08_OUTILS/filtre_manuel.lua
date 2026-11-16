@@ -1,13 +1,13 @@
 -- Filtre pandoc pour le manuel : encadrés, sauts de page, carnets, ouvertures de partie.
 local ENCADRES = {
-  retenir     = {"Retenir",     "À RETENIR"},
-  terrain     = {"Terrain",     "CONSEIL DE TERRAIN"},
-  attention   = {"Attention",   "ATTENTION"},
-  erreur      = {"Erreur",      "ERREUR FRÉQUENTE"},
-  application = {"Application", "APPLICATION PROFESSIONNELLE"},
-  defi        = {"Defi",        "DÉFI PRATIQUE"},
-  setrompe    = {"Setrompe",    "QUAND CLAUDE SE TROMPE"},
-  controle    = {"Controle",    "CONTRÔLE QUALITÉ"},
+  retenir     = {"Retenir",     "À retenir"},
+  terrain     = {"Terrain",     "Conseil de terrain"},
+  attention   = {"Attention",   "Attention"},
+  erreur      = {"Erreur",      "Erreur fréquente"},
+  application = {"Application", "Application professionnelle"},
+  defi        = {"Defi",        "Défi pratique"},
+  setrompe    = {"Setrompe",    "Quand Claude se trompe"},
+  controle    = {"Controle",    "Contrôle qualité"},
 }
 
 local PAGEBREAK = '<w:p><w:r><w:br w:type="page"/></w:r></w:p>'
@@ -81,7 +81,7 @@ function Div(el)
     if cls == "carnet" then
       -- <div class="carnet" titre="Chapitre 3"> : page(s) de réflexion
       local chap = el.attributes["titre"] or ""
-      local out = { para_text("Carnet Titre", "MON CARNET D'APPLICATION ET DE RÉFLEXION") }
+      local out = { para_text("Carnet Titre", "Mon carnet d'application et de réflexion") }
       table.insert(out, styled("Mention Livre", {pandoc.Para({pandoc.Emph({pandoc.Str(chap)})})}))
       local rubriques = {
         "Ce que je viens d'apprendre", "Ce que je comprends mieux maintenant",

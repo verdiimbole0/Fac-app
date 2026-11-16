@@ -9,13 +9,23 @@ from matplotlib.patches import FancyBboxPatch, FancyArrowPatch, Circle, Ellipse,
 ROOT = Path(__file__).resolve().parents[1]
 ILL = ROOT / "02_ILLUSTRATIONS"
 
-NAVY, GOLD, GREY, TURQ, RED, INK = "#0B2545", "#C9A227", "#EEF1F5", "#13A89E", "#B23A48", "#222831"
-LIGHTNAVY, LIGHTTURQ, LIGHTGOLD, LIGHTRED = "#DCE4EF", "#D5EFEC", "#F6EDCC", "#F5DDE1"
-MID = "#5B6B7F"
-ORANGE, PURPLE, GREEN = "#D9822B", "#6A4C93", "#2D6A4F"
+# Palette éditoriale : encre, cuivre, vert de gris, brique — tons sourds d'ouvrage imprimé
+NAVY, GOLD, GREY, TURQ, RED, INK = "#26313A", "#8A5A2B", "#F4F1EC", "#5A6F7E", "#9E3B2F", "#1A1A1A"
+LIGHTNAVY, LIGHTTURQ, LIGHTGOLD, LIGHTRED = "#ECE8E1", "#E4E9EC", "#F2E6D6", "#F3E0DA"
+MID = "#6B6560"
+ORANGE, PURPLE, GREEN = "#B07A45", "#5E5468", "#3F5E48"
+from matplotlib import font_manager as _fm
+_POL = Path(__file__).resolve().parent / "polices"
+for _f in ["/usr/share/fonts/opentype/ebgaramond/EBGaramond12-Regular.otf", "/usr/share/fonts/opentype/ebgaramond/EBGaramond12-Italic.otf",
+           _POL / "EBGaramond12-Bold.ttf", _POL / "EBGaramond12-BoldItalic.ttf"]:
+    try: _fm.fontManager.addfont(str(_f))
+    except Exception: pass
+import dataclasses as _dc
+_fm.fontManager.ttflist = [_dc.replace(e, name="EB Garamond") if e.name.startswith("EB Garamond") else e
+                           for e in _fm.fontManager.ttflist]
 
 plt.rcParams.update({
-    "font.family": ["Inter", "DejaVu Sans"], "font.size": 10, "axes.edgecolor": MID,
+    "font.family": ["EB Garamond", "DejaVu Serif"], "font.size": 10.5, "axes.edgecolor": MID,
     "axes.labelcolor": INK, "xtick.color": INK, "ytick.color": INK, "axes.titleweight": "bold",
     "axes.titlecolor": NAVY, "svg.fonttype": "none",
 })
@@ -26,7 +36,7 @@ def canvas(w=10, h=5.6, xmax=100, ymax=56):
     return fig, ax
 
 def box(ax, x, y, w, h, text="", fc=LIGHTNAVY, ec=NAVY, fs=9.5, color=INK, bold=False, lw=1.4,
-        rounding=1.6, ha="center", va="center", style="round", alpha=1.0, zorder=2):
+        rounding=0.35, ha="center", va="center", style="round", alpha=1.0, zorder=2):
     p = FancyBboxPatch((x, y), w, h, boxstyle=f"{style},pad=0,rounding_size={rounding}" if style == "round" else style,
                        fc=fc, ec=ec, lw=lw, alpha=alpha, zorder=zorder)
     ax.add_patch(p)
@@ -57,4 +67,4 @@ def save(fig, name, sub="SCHEMAS"):
 
 def style_axes(ax, grid=True):
     for s in ("top", "right"): ax.spines[s].set_visible(False)
-    if grid: ax.grid(axis="y", color="#D5DBE3", lw=0.6); ax.set_axisbelow(True)
+    if grid: ax.grid(axis="y", color="#E4DED5", lw=0.6); ax.set_axisbelow(True)

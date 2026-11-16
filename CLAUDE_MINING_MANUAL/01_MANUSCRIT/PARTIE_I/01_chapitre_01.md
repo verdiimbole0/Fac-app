@@ -22,7 +22,7 @@ Aline a besoin de comprendre trois choses avant jeudi : **où** l'intelligence a
 
 #### C.1. Une industrie stratégique, sous pression
 
-L'industrie minière fournit les matières premières de la transition énergétique. Les technologies bas carbone — éolien, solaire, batteries, réseaux électriques — consomment davantage de métaux que les technologies fossiles qu'elles remplacent ; une étude de la Banque mondiale a montré qu'un avenir bas carbone serait « très intensif en minéraux » et que, même avec un recyclage accru, l'extraction minière resterait nécessaire [@WB-MCA-2020]. L'Agence internationale de l'énergie suit, dans ses perspectives annuelles sur les minéraux critiques, la forte concentration géographique de la production et du raffinage de ces substances [@IEA-GCMO2025].
+L'industrie minière fournit les matières premières de la transition énergétique : réseaux électriques, moteurs et batteries font largement appel au cuivre et, pour une partie des batteries, au cobalt.
 
 La République démocratique du Congo occupe une place centrale dans ce paysage. Selon l'Institut d'études géologiques des États-Unis (USGS), le pays était en 2025 la première source mondiale de cobalt extrait, avec environ 73 % de la production mondiale (estimation de 230 000 tonnes sur environ 310 000 tonnes), et le deuxième producteur minier de cuivre après le Chili, avec environ 3,2 millions de tonnes sur 23 millions [@USGS-MCS2026, fiches « Cobalt » et « Copper »].
 
@@ -67,7 +67,7 @@ L'industrie minière n'en est pas à sa première révolution technologique. Pou
 4. **L'IA prédictive** : modèles d'apprentissage automatique qui prédisent une panne, estiment une teneur, optimisent une recette de broyage. Elle exploite des **données structurées** pour produire un **chiffre** ou une **alerte**.
 5. **L'IA générative** : modèles de langage comme Claude, capables de comprendre et de produire du texte, d'analyser des documents et des images, de rédiger du code. Elle agit sur le **travail intellectuel et documentaire**.
 
-Un rapport du Forum intergouvernemental sur l'exploitation minière (IGF) souligne que la numérisation, les mégadonnées et l'automatisation transforment le secteur minier, avec des effets sur l'emploi local, l'approvisionnement local et les recettes publiques [@IGF-2019]. Ces effets concernent aussi l'IA générative : nous y reviendrons au chapitre 39.
+Chacune de ces vagues a modifié les compétences demandées, l'organisation du travail et la relation avec les territoires d'implantation. L'IA générative n'échappe pas à cette règle : nous y reviendrons au chapitre 39.
 
 #### C.4. Ce que l'IA générative change concrètement
 

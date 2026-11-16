@@ -56,7 +56,7 @@ Les interfaces changent souvent. Plutôt que d'apprendre par cœur l'emplacement
 | **Capacités : exécution de code et création de fichiers** | Indispensable pour analyser des tableurs, créer des fichiers et utiliser les artefacts | [@ANT-HC-ARTIFACTS] |
 | **Mémoire et recherche dans les conversations** | Permettre (ou non) à Claude de se souvenir d'éléments de vos conversations précédentes | [@ANT-HC-MEMORY] |
 | **Conversations incognito** | Conversation temporaire, non enregistrée dans l'historique et non utilisée par la mémoire | [@ANT-HC-MEMORY] |
-| **Confidentialité (offres individuelles)** | Choisir si vos conversations peuvent servir à améliorer les modèles | [@ANT-HC-PRIVACY] |
+| **Confidentialité (offres individuelles)** | Choisir si vos conversations peuvent servir à améliorer les modèles | [@ANT-PLANS] |
 
 Le centre d'aide précise par exemple que les artefacts nécessitent l'activation de l'exécution de code et de la création de fichiers dans les réglages des capacités (ou dans ceux de l'organisation pour les offres Team et Enterprise) [@ANT-HC-ARTIFACTS], et que la mémoire peut être consultée, modifiée ou supprimée par thème dans les réglages [@ANT-HC-MEMORY; @ANT-HC-RELEASE].
 

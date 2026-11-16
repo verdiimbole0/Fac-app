@@ -74,8 +74,8 @@ r += ["""
 2. Relecture orthotypographique complète (espaces insécables, coupures, veuves et orphelines) dans la maquette finale.
 3. Revalidation des informations datées sur Claude (modèles, prix, offres) à la date de publication.
 4. Vérification par un juriste des passages relatifs au droit minier congolais et aux obligations de transparence, et par des praticiens (géologie, HSE, métallurgie, finance) des chapitres métier.
-5. Accès direct aux références marquées ◇ (OCDE, OIT/NORMLEX, ISO, OWASP, JORC, CRIRSCO, UNESCO, GRI, IEA) pour confirmation des pages citées.
-6. Mise en page éditeur : format définitif (le manuscrit est en A4), couverture (hors périmètre).
+5. Seules les références contrôlées pendant la rédaction ont été conservées dans la bibliographie (18 ouvrages et textes, 38 ressources en ligne).
+6. Avant impression : ISBN, code-barres et prix à placer sur la 4e de couverture ; calcul du dos selon le papier retenu.
 """]
 (ROOT / "07_CONTROLE_QUALITE").mkdir(exist_ok=True)
 (ROOT / "07_CONTROLE_QUALITE" / "RAPPORT_CONTROLE_QUALITE.md").write_text("\n".join(r), encoding="utf-8")

@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-11-16T10:34:37.718675</dc:date>
+    <dc:date>2026-11-16T13:46:25.424795</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -40,74 +40,74 @@ Q 23.94 51.552 23.94 59.868
 L 23.94 298.26 
 Q 23.94 306.576 32.31 306.576 
 z
-" clip-path="url(#p8c7f8e31fd)" style="fill: #1b263b; stroke: #1b263b; stroke-width: 1.4; stroke-linejoin: miter"/>
+" clip-path="url(#p9a5f8b834f)" style="fill: #26313a; stroke: #26313a; stroke-width: 1.4; stroke-linejoin: miter"/>
    </g>
    <g id="text_1">
-    <text style="font-weight: 700; font-size: 13px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: middle; fill: #0b2545" x="286.2" y="25.789004" transform="rotate(-0 286.2 25.789004)">Anatomie d'une requête à l'API Messages</text>
+    <text style="font-weight: 700; font-size: 13px; font-family: 'EB Garamond', 'DejaVu Serif'; text-anchor: middle; fill: #26313a" x="286.2" y="25.6685" transform="rotate(-0 286.2 25.6685)">Anatomie d'une requête à l'API Messages</text>
    </g>
    <g id="text_2">
-    <text style="font-size: 8.6px; font-family: 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Computer Modern Typewriter', 'Andale Mono', 'Nimbus Mono L', 'Courier New', 'Courier', 'Fixed', 'Terminal', monospace; fill: #e8eef5" transform="translate(40.68 77.414891)">{</text>
-    <text style="font-size: 8.6px; font-family: 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Computer Modern Typewriter', 'Andale Mono', 'Nimbus Mono L', 'Courier New', 'Courier', 'Fixed', 'Terminal', monospace; fill: #e8eef5" transform="translate(40.68 90.574906)">  "model": "claude-opus-5-5",</text>
-    <text style="font-size: 8.6px; font-family: 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Computer Modern Typewriter', 'Andale Mono', 'Nimbus Mono L', 'Courier New', 'Courier', 'Fixed', 'Terminal', monospace; fill: #e8eef5" transform="translate(40.68 103.762469)">  "max_tokens": 4096,</text>
-    <text style="font-size: 8.6px; font-family: 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Computer Modern Typewriter', 'Andale Mono', 'Nimbus Mono L', 'Courier New', 'Courier', 'Fixed', 'Terminal', monospace; fill: #e8eef5" transform="translate(40.68 117.234906)">  "system": "Tu es analyste HSE chez MCC…",</text>
-    <text style="font-size: 8.6px; font-family: 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Computer Modern Typewriter', 'Andale Mono', 'Nimbus Mono L', 'Courier New', 'Courier', 'Fixed', 'Terminal', monospace; fill: #e8eef5" transform="translate(40.68 130.5125)">  "messages": [</text>
-    <text style="font-size: 8.6px; font-family: 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Computer Modern Typewriter', 'Andale Mono', 'Nimbus Mono L', 'Courier New', 'Courier', 'Fixed', 'Terminal', monospace; fill: #e8eef5" transform="translate(40.68 143.894906)">    {"role": "user", "content": "Analyse ce rapport…"}</text>
-    <text style="font-size: 8.6px; font-family: 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Computer Modern Typewriter', 'Andale Mono', 'Nimbus Mono L', 'Courier New', 'Courier', 'Fixed', 'Terminal', monospace; fill: #e8eef5" transform="translate(40.68 157.493656)">  ],</text>
-    <text style="font-size: 8.6px; font-family: 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Computer Modern Typewriter', 'Andale Mono', 'Nimbus Mono L', 'Courier New', 'Courier', 'Fixed', 'Terminal', monospace; fill: #e8eef5" transform="translate(40.68 170.412469)">  "output_config": {"effort": "medium"},</text>
-    <text style="font-size: 8.6px; font-family: 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Computer Modern Typewriter', 'Andale Mono', 'Nimbus Mono L', 'Courier New', 'Courier', 'Fixed', 'Terminal', monospace; fill: #e8eef5" transform="translate(40.68 183.8325)">  "thinking": {"type": "adaptive"},</text>
-    <text style="font-size: 8.6px; font-family: 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Computer Modern Typewriter', 'Andale Mono', 'Nimbus Mono L', 'Courier New', 'Courier', 'Fixed', 'Terminal', monospace; fill: #e8eef5" transform="translate(40.68 197.072469)">  "stop_sequences": ["###FIN"]</text>
-    <text style="font-size: 8.6px; font-family: 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Computer Modern Typewriter', 'Andale Mono', 'Nimbus Mono L', 'Courier New', 'Courier', 'Fixed', 'Terminal', monospace; fill: #e8eef5" transform="translate(40.68 210.714891)">}</text>
+    <text style="font-size: 8.6px; font-family: 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Computer Modern Typewriter', 'Andale Mono', 'Nimbus Mono L', 'Courier New', 'Courier', 'Fixed', 'Terminal', monospace; fill: #f4f1ec" transform="translate(40.68 77.414891)">{</text>
+    <text style="font-size: 8.6px; font-family: 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Computer Modern Typewriter', 'Andale Mono', 'Nimbus Mono L', 'Courier New', 'Courier', 'Fixed', 'Terminal', monospace; fill: #f4f1ec" transform="translate(40.68 90.574906)">  "model": "claude-opus-5-5",</text>
+    <text style="font-size: 8.6px; font-family: 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Computer Modern Typewriter', 'Andale Mono', 'Nimbus Mono L', 'Courier New', 'Courier', 'Fixed', 'Terminal', monospace; fill: #f4f1ec" transform="translate(40.68 103.762469)">  "max_tokens": 4096,</text>
+    <text style="font-size: 8.6px; font-family: 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Computer Modern Typewriter', 'Andale Mono', 'Nimbus Mono L', 'Courier New', 'Courier', 'Fixed', 'Terminal', monospace; fill: #f4f1ec" transform="translate(40.68 117.234906)">  "system": "Tu es analyste HSE chez MCC…",</text>
+    <text style="font-size: 8.6px; font-family: 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Computer Modern Typewriter', 'Andale Mono', 'Nimbus Mono L', 'Courier New', 'Courier', 'Fixed', 'Terminal', monospace; fill: #f4f1ec" transform="translate(40.68 130.5125)">  "messages": [</text>
+    <text style="font-size: 8.6px; font-family: 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Computer Modern Typewriter', 'Andale Mono', 'Nimbus Mono L', 'Courier New', 'Courier', 'Fixed', 'Terminal', monospace; fill: #f4f1ec" transform="translate(40.68 143.894906)">    {"role": "user", "content": "Analyse ce rapport…"}</text>
+    <text style="font-size: 8.6px; font-family: 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Computer Modern Typewriter', 'Andale Mono', 'Nimbus Mono L', 'Courier New', 'Courier', 'Fixed', 'Terminal', monospace; fill: #f4f1ec" transform="translate(40.68 157.493656)">  ],</text>
+    <text style="font-size: 8.6px; font-family: 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Computer Modern Typewriter', 'Andale Mono', 'Nimbus Mono L', 'Courier New', 'Courier', 'Fixed', 'Terminal', monospace; fill: #f4f1ec" transform="translate(40.68 170.412469)">  "output_config": {"effort": "medium"},</text>
+    <text style="font-size: 8.6px; font-family: 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Computer Modern Typewriter', 'Andale Mono', 'Nimbus Mono L', 'Courier New', 'Courier', 'Fixed', 'Terminal', monospace; fill: #f4f1ec" transform="translate(40.68 183.8325)">  "thinking": {"type": "adaptive"},</text>
+    <text style="font-size: 8.6px; font-family: 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Computer Modern Typewriter', 'Andale Mono', 'Nimbus Mono L', 'Courier New', 'Courier', 'Fixed', 'Terminal', monospace; fill: #f4f1ec" transform="translate(40.68 197.072469)">  "stop_sequences": ["###FIN"]</text>
+    <text style="font-size: 8.6px; font-family: 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Computer Modern Typewriter', 'Andale Mono', 'Nimbus Mono L', 'Courier New', 'Courier', 'Fixed', 'Terminal', monospace; fill: #f4f1ec" transform="translate(40.68 210.714891)">}</text>
    </g>
    <g id="text_3">
-    <text style="font-weight: 700; font-size: 9px; font-family: 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Computer Modern Typewriter', 'Andale Mono', 'Nimbus Mono L', 'Courier New', 'Courier', 'Fixed', 'Terminal', monospace; text-anchor: start; fill: #13a89e" x="330.84" y="73.728" transform="rotate(-0 330.84 73.728)">model</text>
+    <text style="font-weight: 700; font-size: 9px; font-family: 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Computer Modern Typewriter', 'Andale Mono', 'Nimbus Mono L', 'Courier New', 'Courier', 'Fixed', 'Terminal', monospace; text-anchor: start; fill: #5a6f7e" x="330.84" y="73.728" transform="rotate(-0 330.84 73.728)">model</text>
    </g>
    <g id="text_4">
-    <text style="font-size: 8.2px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: start; fill: #222831" x="453.6" y="73.728" transform="rotate(-0 453.6 73.728)">quel modèle répond</text>
+    <text style="font-size: 8.2px; font-family: 'EB Garamond', 'DejaVu Serif'; text-anchor: start; fill: #1a1a1a" x="453.6" y="73.728" transform="rotate(-0 453.6 73.728)">quel modèle répond</text>
    </g>
    <g id="text_5">
-    <text style="font-weight: 700; font-size: 9px; font-family: 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Computer Modern Typewriter', 'Andale Mono', 'Nimbus Mono L', 'Courier New', 'Courier', 'Fixed', 'Terminal', monospace; text-anchor: start; fill: #13a89e" x="330.84" y="108.6552" transform="rotate(-0 330.84 108.6552)">max_tokens</text>
+    <text style="font-weight: 700; font-size: 9px; font-family: 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Computer Modern Typewriter', 'Andale Mono', 'Nimbus Mono L', 'Courier New', 'Courier', 'Fixed', 'Terminal', monospace; text-anchor: start; fill: #5a6f7e" x="330.84" y="108.6552" transform="rotate(-0 330.84 108.6552)">max_tokens</text>
    </g>
    <g id="text_6">
-    <text style="font-size: 8.2px; font-family: 'Inter', 'DejaVu Sans'; fill: #222831" transform="translate(453.6 106.67727)">plafond de longueur de la sortie</text>
-    <text style="font-size: 8.2px; font-family: 'Inter', 'DejaVu Sans'; fill: #222831" transform="translate(453.6 116.59895)">(réflexion comprise)</text>
+    <text style="font-size: 8.2px; font-family: 'EB Garamond', 'DejaVu Serif'; fill: #1a1a1a" transform="translate(453.6 106.2772)">plafond de longueur de la sortie</text>
+    <text style="font-size: 8.2px; font-family: 'EB Garamond', 'DejaVu Serif'; fill: #1a1a1a" transform="translate(453.6 114.4772)">(réflexion comprise)</text>
    </g>
    <g id="text_7">
-    <text style="font-weight: 700; font-size: 9px; font-family: 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Computer Modern Typewriter', 'Andale Mono', 'Nimbus Mono L', 'Courier New', 'Courier', 'Fixed', 'Terminal', monospace; text-anchor: start; fill: #13a89e" x="330.84" y="143.5824" transform="rotate(-0 330.84 143.5824)">system</text>
+    <text style="font-weight: 700; font-size: 9px; font-family: 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Computer Modern Typewriter', 'Andale Mono', 'Nimbus Mono L', 'Courier New', 'Courier', 'Fixed', 'Terminal', monospace; text-anchor: start; fill: #5a6f7e" x="330.84" y="143.5824" transform="rotate(-0 330.84 143.5824)">system</text>
    </g>
    <g id="text_8">
-    <text style="font-size: 8.2px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: start; fill: #222831" x="453.6" y="143.5824" transform="rotate(-0 453.6 143.5824)">rôle, règles et contexte permanents</text>
+    <text style="font-size: 8.2px; font-family: 'EB Garamond', 'DejaVu Serif'; text-anchor: start; fill: #1a1a1a" x="453.6" y="143.5824" transform="rotate(-0 453.6 143.5824)">rôle, règles et contexte permanents</text>
    </g>
    <g id="text_9">
-    <text style="font-weight: 700; font-size: 9px; font-family: 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Computer Modern Typewriter', 'Andale Mono', 'Nimbus Mono L', 'Courier New', 'Courier', 'Fixed', 'Terminal', monospace; text-anchor: start; fill: #13a89e" x="330.84" y="178.5096" transform="rotate(-0 330.84 178.5096)">messages</text>
+    <text style="font-weight: 700; font-size: 9px; font-family: 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Computer Modern Typewriter', 'Andale Mono', 'Nimbus Mono L', 'Courier New', 'Courier', 'Fixed', 'Terminal', monospace; text-anchor: start; fill: #5a6f7e" x="330.84" y="178.5096" transform="rotate(-0 330.84 178.5096)">messages</text>
    </g>
    <g id="text_10">
-    <text style="font-size: 8.2px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: start; fill: #222831" x="453.6" y="178.5096" transform="rotate(-0 453.6 178.5096)">la conversation (tours user / assistant)</text>
+    <text style="font-size: 8.2px; font-family: 'EB Garamond', 'DejaVu Serif'; text-anchor: start; fill: #1a1a1a" x="453.6" y="178.5096" transform="rotate(-0 453.6 178.5096)">la conversation (tours user / assistant)</text>
    </g>
    <g id="text_11">
-    <text style="font-weight: 700; font-size: 9px; font-family: 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Computer Modern Typewriter', 'Andale Mono', 'Nimbus Mono L', 'Courier New', 'Courier', 'Fixed', 'Terminal', monospace; text-anchor: start; fill: #13a89e" x="330.84" y="213.4368" transform="rotate(-0 330.84 213.4368)">output_config.effort</text>
+    <text style="font-weight: 700; font-size: 9px; font-family: 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Computer Modern Typewriter', 'Andale Mono', 'Nimbus Mono L', 'Courier New', 'Courier', 'Fixed', 'Terminal', monospace; text-anchor: start; fill: #5a6f7e" x="330.84" y="213.4368" transform="rotate(-0 330.84 213.4368)">output_config.effort</text>
    </g>
    <g id="text_12">
-    <text style="font-size: 8.2px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: start; fill: #222831" x="453.6" y="213.4368" transform="rotate(-0 453.6 213.4368)">intensité de travail : low → max</text>
+    <text style="font-size: 8.2px; font-family: 'EB Garamond', 'DejaVu Serif'; text-anchor: start; fill: #1a1a1a" x="453.6" y="213.4368" transform="rotate(-0 453.6 213.4368)">intensité de travail : low → max</text>
    </g>
    <g id="text_13">
-    <text style="font-weight: 700; font-size: 9px; font-family: 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Computer Modern Typewriter', 'Andale Mono', 'Nimbus Mono L', 'Courier New', 'Courier', 'Fixed', 'Terminal', monospace; text-anchor: start; fill: #13a89e" x="330.84" y="248.364" transform="rotate(-0 330.84 248.364)">thinking</text>
+    <text style="font-weight: 700; font-size: 9px; font-family: 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Computer Modern Typewriter', 'Andale Mono', 'Nimbus Mono L', 'Courier New', 'Courier', 'Fixed', 'Terminal', monospace; text-anchor: start; fill: #5a6f7e" x="330.84" y="248.364" transform="rotate(-0 330.84 248.364)">thinking</text>
    </g>
    <g id="text_14">
-    <text style="font-size: 8.2px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: start; fill: #222831" x="453.6" y="248.364" transform="rotate(-0 453.6 248.364)">mode de réflexion (adaptatif)</text>
+    <text style="font-size: 8.2px; font-family: 'EB Garamond', 'DejaVu Serif'; text-anchor: start; fill: #1a1a1a" x="453.6" y="248.364" transform="rotate(-0 453.6 248.364)">mode de réflexion (adaptatif)</text>
    </g>
    <g id="text_15">
-    <text style="font-weight: 700; font-size: 9px; font-family: 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Computer Modern Typewriter', 'Andale Mono', 'Nimbus Mono L', 'Courier New', 'Courier', 'Fixed', 'Terminal', monospace; text-anchor: start; fill: #13a89e" x="330.84" y="283.2912" transform="rotate(-0 330.84 283.2912)">stop_sequences</text>
+    <text style="font-weight: 700; font-size: 9px; font-family: 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Computer Modern Typewriter', 'Andale Mono', 'Nimbus Mono L', 'Courier New', 'Courier', 'Fixed', 'Terminal', monospace; text-anchor: start; fill: #5a6f7e" x="330.84" y="283.2912" transform="rotate(-0 330.84 283.2912)">stop_sequences</text>
    </g>
    <g id="text_16">
-    <text style="font-size: 8.2px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: start; fill: #222831" x="453.6" y="283.2912" transform="rotate(-0 453.6 283.2912)">chaînes qui arrêtent la génération</text>
+    <text style="font-size: 8.2px; font-family: 'EB Garamond', 'DejaVu Serif'; text-anchor: start; fill: #1a1a1a" x="453.6" y="283.2912" transform="rotate(-0 453.6 283.2912)">chaînes qui arrêtent la génération</text>
    </g>
    <g id="text_17">
-    <text style="font-style: italic; font-size: 7.5px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: middle; fill: #5b6b7f" x="286.2" y="331.480271" transform="rotate(-0 286.2 331.480271)">Exemple simplifié. Paramètres d'après la référence de l'API Messages (Anthropic, consultée le 16/11/2026). Illustration réalisée pour cet ouvrage.</text>
+    <text style="font-style: italic; font-size: 7.5px; font-family: 'EB Garamond', 'DejaVu Serif'; text-anchor: middle; fill: #6b6560" x="286.2" y="330.327" transform="rotate(-0 286.2 330.327)">Exemple simplifié. Paramètres d'après la référence de l'API Messages (Anthropic, consultée le 16/11/2026). Illustration réalisée pour cet ouvrage.</text>
    </g>
   </g>
  </g>
  <defs>
-  <clipPath id="p8c7f8e31fd">
+  <clipPath id="p9a5f8b834f">
    <rect x="7.2" y="7.2" width="613.8" height="332.64"/>
   </clipPath>
  </defs>

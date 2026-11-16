@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
   "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="681.024063pt" height="369.216pt" viewBox="0 0 681.024063 369.216" xmlns="http://www.w3.org/2000/svg" version="1.1">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="628.2pt" height="369.216pt" viewBox="0 0 628.2 369.216" xmlns="http://www.w3.org/2000/svg" version="1.1">
  <metadata>
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-11-16T10:34:38.133996</dc:date>
+    <dc:date>2026-11-16T13:46:25.801847</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -22,8 +22,8 @@
  <g id="figure_1">
   <g id="patch_1">
    <path d="M 0 369.216 
-L 681.024063 369.216 
-L 681.024063 0 
+L 628.2 369.216 
+L 628.2 0 
 L 0 0 
 z
 " style="fill: #ffffff"/>
@@ -32,12 +32,12 @@ z
    <g id="patch_2">
     <path d="M 232.402588 98.676 
 Q 252.720678 98.676 269.684667 98.676 
-" clip-path="url(#p918eaede44)" style="fill: none; stroke: #c9a227; stroke-width: 3; stroke-linecap: round"/>
+" clip-path="url(#pfdedd2eb32)" style="fill: none; stroke: #8a5a2b; stroke-width: 3; stroke-linecap: round"/>
     <path d="M 264.084667 95.876 
 L 269.684667 98.676 
 L 264.084667 101.476 
 z
-" clip-path="url(#p918eaede44)" style="fill: #c9a227; stroke: #c9a227; stroke-width: 3; stroke-linecap: round"/>
+" clip-path="url(#pfdedd2eb32)" style="fill: #8a5a2b; stroke: #8a5a2b; stroke-width: 3; stroke-linecap: round"/>
    </g>
    <g id="patch_3">
     <path d="M 297.36 80.9352 
@@ -50,7 +50,7 @@ C 280.886215 53.134182 278.946 57.788056 278.946 62.64
 C 278.946 67.491944 280.886215 72.145818 284.339336 75.57666 
 C 287.792456 79.007502 292.47655 80.9352 297.36 80.9352 
 z
-" clip-path="url(#p918eaede44)" style="fill: #0b2545"/>
+" clip-path="url(#pfdedd2eb32)" style="fill: #26313a"/>
    </g>
    <g id="patch_4">
     <path d="M 297.36 139.1472 
@@ -63,7 +63,7 @@ C 280.886215 111.346182 278.946 116.000056 278.946 120.852
 C 278.946 125.703944 280.886215 130.357818 284.339336 133.78866 
 C 287.792456 137.219502 292.47655 139.1472 297.36 139.1472 
 z
-" clip-path="url(#p918eaede44)" style="fill: #13a89e"/>
+" clip-path="url(#pfdedd2eb32)" style="fill: #5a6f7e"/>
    </g>
    <g id="patch_5">
     <path d="M 297.36 197.3592 
@@ -76,7 +76,7 @@ C 280.886215 169.558182 278.946 174.212056 278.946 179.064
 C 278.946 183.915944 280.886215 188.569818 284.339336 192.00066 
 C 287.792456 195.431502 292.47655 197.3592 297.36 197.3592 
 z
-" clip-path="url(#p918eaede44)" style="fill: #c9a227"/>
+" clip-path="url(#pfdedd2eb32)" style="fill: #8a5a2b"/>
    </g>
    <g id="patch_6">
     <path d="M 297.36 255.5712 
@@ -89,7 +89,7 @@ C 280.886215 227.770182 278.946 232.424056 278.946 237.276
 C 278.946 242.127944 280.886215 246.781818 284.339336 250.21266 
 C 287.792456 253.643502 292.47655 255.5712 297.36 255.5712 
 z
-" clip-path="url(#p918eaede44)" style="fill: #b23a48"/>
+" clip-path="url(#pfdedd2eb32)" style="fill: #9e3b2f"/>
    </g>
    <g id="patch_7">
     <path d="M 297.36 313.7832 
@@ -102,86 +102,86 @@ C 280.886215 285.982182 278.946 290.636056 278.946 295.488
 C 278.946 300.339944 280.886215 304.993818 284.339336 308.42466 
 C 287.792456 311.855502 292.47655 313.7832 297.36 313.7832 
 z
-" clip-path="url(#p918eaede44)" style="fill: #2d6a4f"/>
+" clip-path="url(#pfdedd2eb32)" style="fill: #3f5e48"/>
    </g>
    <g id="patch_8">
-    <path d="M 27.288 140.256 
-L 221.472 140.256 
-Q 230.4 140.256 230.4 131.3856 
-L 230.4 65.9664 
-Q 230.4 57.096 221.472 57.096 
-L 27.288 57.096 
-Q 18.36 57.096 18.36 65.9664 
-L 18.36 131.3856 
-Q 18.36 140.256 27.288 140.256 
+    <path d="M 20.313 140.256 
+L 228.447 140.256 
+Q 230.4 140.256 230.4 138.3156 
+L 230.4 59.0364 
+Q 230.4 57.096 228.447 57.096 
+L 20.313 57.096 
+Q 18.36 57.096 18.36 59.0364 
+L 18.36 138.3156 
+Q 18.36 140.256 20.313 140.256 
 z
-" clip-path="url(#p918eaede44)" style="fill: #f5dde1; stroke: #b23a48; stroke-width: 1.4; stroke-linejoin: miter"/>
+" clip-path="url(#pfdedd2eb32)" style="fill: #f3e0da; stroke: #9e3b2f; stroke-width: 1.4; stroke-linejoin: miter"/>
    </g>
    <g id="patch_9">
-    <path d="M 27.288 339.84 
-L 221.472 339.84 
-Q 230.4 339.84 230.4 330.9696 
-L 230.4 226.7424 
-Q 230.4 217.872 221.472 217.872 
-L 27.288 217.872 
-Q 18.36 217.872 18.36 226.7424 
-L 18.36 330.9696 
-Q 18.36 339.84 27.288 339.84 
+    <path d="M 20.313 339.84 
+L 228.447 339.84 
+Q 230.4 339.84 230.4 337.8996 
+L 230.4 219.8124 
+Q 230.4 217.872 228.447 217.872 
+L 20.313 217.872 
+Q 18.36 217.872 18.36 219.8124 
+L 18.36 337.8996 
+Q 18.36 339.84 20.313 339.84 
 z
-" clip-path="url(#p918eaede44)" style="fill: #cdebd9; stroke: #2d6a4f; stroke-width: 1.4; stroke-linejoin: miter"/>
+" clip-path="url(#pfdedd2eb32)" style="fill: #e3e9e2; stroke: #3f5e48; stroke-width: 1.4; stroke-linejoin: miter"/>
    </g>
    <g id="text_1">
-    <text style="font-weight: 700; font-size: 13px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: middle; fill: #0b2545" x="286.2" y="25.789004" transform="rotate(-0 286.2 25.789004)">D'une demande vague à une instruction CADRE</text>
+    <text style="font-weight: 700; font-size: 13px; font-family: 'EB Garamond', 'DejaVu Serif'; text-anchor: middle; fill: #26313a" x="286.2" y="25.6685" transform="rotate(-0 286.2 25.6685)">D'une demande vague à une instruction CADRE</text>
    </g>
    <g id="text_2">
-    <text style="font-size: 10.5px; font-family: 'Inter', 'DejaVu Sans'; fill: #222831" transform="translate(71.01293 93.609186)">« Fais-moi un rapport</text>
-    <text style="font-size: 10.5px; font-family: 'Inter', 'DejaVu Sans'; fill: #222831" transform="translate(71.071172 110.499728)">sur l'incident d'hier. »</text>
+    <text style="font-size: 10.5px; font-family: 'EB Garamond', 'DejaVu Serif'; fill: #1a1a1a" transform="translate(79.826367 94.045336)">« Fais-moi un rapport</text>
+    <text style="font-size: 10.5px; font-family: 'EB Garamond', 'DejaVu Serif'; fill: #1a1a1a" transform="translate(80.233242 108.839672)">sur l'incident d'hier. »</text>
    </g>
    <g id="text_3">
-    <text style="font-size: 8px; font-family: 'Inter', 'DejaVu Sans'; fill: #b23a48" transform="translate(64.571875 170.182)">Résultat : générique, incomplet,</text>
-    <text style="font-size: 8px; font-family: 'Inter', 'DejaVu Sans'; fill: #b23a48" transform="translate(55.20625 179.861687)">faits inventés pour combler les vides</text>
+    <text style="font-size: 8px; font-family: 'EB Garamond', 'DejaVu Serif'; fill: #9e3b2f" transform="translate(75.695 168.112)">Résultat : générique, incomplet,</text>
+    <text style="font-size: 8px; font-family: 'EB Garamond', 'DejaVu Serif'; fill: #9e3b2f" transform="translate(70.1275 176.112)">faits inventés pour combler les vides</text>
    </g>
    <g id="text_4">
-    <text style="font-weight: 700; font-size: 12px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="297.36" y="67.005234" transform="rotate(-0 297.36 67.005234)">C</text>
+    <text style="font-weight: 700; font-size: 12px; font-family: 'EB Garamond', 'DejaVu Serif'; text-anchor: middle; fill: #ffffff" x="297.36" y="66.894" transform="rotate(-0 297.36 66.894)">C</text>
    </g>
    <g id="text_5">
-    <text style="font-size: 8.2px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: start; fill: #222831" x="325.26" y="65.62291" transform="rotate(-0 325.26 65.62291)">Je suis responsable HSE chez MCC (mine à ciel ouvert, Cu-Co, RDC).</text>
+    <text style="font-size: 8.2px; font-family: 'EB Garamond', 'DejaVu Serif'; text-anchor: start; fill: #1a1a1a" x="325.26" y="64.362" transform="rotate(-0 325.26 64.362)">Je suis responsable HSE chez MCC (mine à ciel ouvert, Cu-Co, RDC).</text>
    </g>
    <g id="text_6">
-    <text style="font-weight: 700; font-size: 12px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="297.36" y="125.217234" transform="rotate(-0 297.36 125.217234)">A</text>
+    <text style="font-weight: 700; font-size: 12px; font-family: 'EB Garamond', 'DejaVu Serif'; text-anchor: middle; fill: #ffffff" x="297.36" y="125.106" transform="rotate(-0 297.36 125.106)">A</text>
    </g>
    <g id="text_7">
-    <text style="font-size: 8.2px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: start; fill: #222831" x="325.26" y="123.83491" transform="rotate(-0 325.26 123.83491)">Rédige le rapport préliminaire d'incident à soumettre au directeur des opérations.</text>
+    <text style="font-size: 8.2px; font-family: 'EB Garamond', 'DejaVu Serif'; text-anchor: start; fill: #1a1a1a" x="325.26" y="122.574" transform="rotate(-0 325.26 122.574)">Rédige le rapport préliminaire d'incident à soumettre au directeur des opérations.</text>
    </g>
    <g id="text_8">
-    <text style="font-weight: 700; font-size: 12px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="297.36" y="183.429234" transform="rotate(-0 297.36 183.429234)">D</text>
+    <text style="font-weight: 700; font-size: 12px; font-family: 'EB Garamond', 'DejaVu Serif'; text-anchor: middle; fill: #ffffff" x="297.36" y="183.318" transform="rotate(-0 297.36 183.318)">D</text>
    </g>
    <g id="text_9">
-    <text style="font-size: 8.2px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: start; fill: #222831" x="325.26" y="182.04691" transform="rotate(-0 325.26 182.04691)">Données : déclaration du conducteur, rapport du superviseur, photos décrites ci-dessous.</text>
+    <text style="font-size: 8.2px; font-family: 'EB Garamond', 'DejaVu Serif'; text-anchor: start; fill: #1a1a1a" x="325.26" y="180.786" transform="rotate(-0 325.26 180.786)">Données : déclaration du conducteur, rapport du superviseur, photos décrites ci-dessous.</text>
    </g>
    <g id="text_10">
-    <text style="font-weight: 700; font-size: 12px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="297.36" y="241.641234" transform="rotate(-0 297.36 241.641234)">R</text>
+    <text style="font-weight: 700; font-size: 12px; font-family: 'EB Garamond', 'DejaVu Serif'; text-anchor: middle; fill: #ffffff" x="297.36" y="241.53" transform="rotate(-0 297.36 241.53)">R</text>
    </g>
    <g id="text_11">
-    <text style="font-size: 8.2px; font-family: 'Inter', 'DejaVu Sans'; fill: #222831" transform="translate(325.26 235.29807)">N'invente aucun fait ; signale « [à confirmer] » toute information manquante ;</text>
-    <text style="font-size: 8.2px; font-family: 'Inter', 'DejaVu Sans'; fill: #222831" transform="translate(325.26 245.21975)">ne conclus pas sur les causes profondes avant l'enquête.</text>
+    <text style="font-size: 8.2px; font-family: 'EB Garamond', 'DejaVu Serif'; fill: #1a1a1a" transform="translate(325.26 234.898)">N'invente aucun fait ; signale « [à confirmer] » toute information manquante ;</text>
+    <text style="font-size: 8.2px; font-family: 'EB Garamond', 'DejaVu Serif'; fill: #1a1a1a" transform="translate(325.26 243.098)">ne conclus pas sur les causes profondes avant l'enquête.</text>
    </g>
    <g id="text_12">
-    <text style="font-weight: 700; font-size: 12px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="297.36" y="299.853234" transform="rotate(-0 297.36 299.853234)">E</text>
+    <text style="font-weight: 700; font-size: 12px; font-family: 'EB Garamond', 'DejaVu Serif'; text-anchor: middle; fill: #ffffff" x="297.36" y="299.742" transform="rotate(-0 297.36 299.742)">E</text>
    </g>
    <g id="text_13">
-    <text style="font-size: 8.2px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: start; fill: #222831" x="325.26" y="298.47091" transform="rotate(-0 325.26 298.47091)">Format : modèle MCC (6 rubriques), 1 page, ton factuel, liste des actions immédiates.</text>
+    <text style="font-size: 8.2px; font-family: 'EB Garamond', 'DejaVu Serif'; text-anchor: start; fill: #1a1a1a" x="325.26" y="297.21" transform="rotate(-0 325.26 297.21)">Format : modèle MCC (6 rubriques), 1 page, ton factuel, liste des actions immédiates.</text>
    </g>
    <g id="text_14">
-    <text style="font-size: 9px; font-family: 'Inter', 'DejaVu Sans'; fill: #222831" transform="translate(56.757656 261.072519)">Résultat : un brouillon structuré,</text>
-    <text style="font-size: 9px; font-family: 'Inter', 'DejaVu Sans'; fill: #222831" transform="translate(60.469453 274.559423)">factuel, traçable, conforme au</text>
-    <text style="font-size: 9px; font-family: 'Inter', 'DejaVu Sans'; fill: #222831" transform="translate(69.579141 288.29664)">modèle, avec ses lacunes</text>
-    <text style="font-size: 9px; font-family: 'Inter', 'DejaVu Sans'; fill: #222831" transform="translate(74.669766 301.726591)">explicitement signalées</text>
+    <text style="font-size: 9px; font-family: 'EB Garamond', 'DejaVu Serif'; fill: #1a1a1a" transform="translate(67.632891 264.491859)">Résultat : un brouillon structuré,</text>
+    <text style="font-size: 9px; font-family: 'EB Garamond', 'DejaVu Serif'; fill: #1a1a1a" transform="translate(74.067891 275.174437)">factuel, traçable, conforme au</text>
+    <text style="font-size: 9px; font-family: 'EB Garamond', 'DejaVu Serif'; fill: #1a1a1a" transform="translate(83.740781 286.991859)">modèle, avec ses lacunes</text>
+    <text style="font-size: 9px; font-family: 'EB Garamond', 'DejaVu Serif'; fill: #1a1a1a" transform="translate(85.598438 297.5985)">explicitement signalées</text>
    </g>
   </g>
  </g>
  <defs>
-  <clipPath id="p918eaede44">
+  <clipPath id="pfdedd2eb32">
    <rect x="7.2" y="7.2" width="613.8" height="354.816"/>
   </clipPath>
  </defs>

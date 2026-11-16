@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-11-16T10:34:46.274862</dc:date>
+    <dc:date>2026-11-16T13:46:33.791830</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -35,7 +35,7 @@ L 275.04 81.233723
 L 294.57 134.114954 
 L 121.59 134.114954 
 z
-" clip-path="url(#pf4f1deac61)" style="fill: #b23a48; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter"/>
+" clip-path="url(#p9b548ff54e)" style="fill: #9e3b2f; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter"/>
    </g>
    <g id="patch_3">
     <path d="M 107.64 142.047138 
@@ -43,7 +43,7 @@ L 308.52 142.047138
 L 328.05 194.928369 
 L 88.11 194.928369 
 z
-" clip-path="url(#pf4f1deac61)" style="fill: #d9822b; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter"/>
+" clip-path="url(#p9b548ff54e)" style="fill: #b07a45; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter"/>
    </g>
    <g id="patch_4">
     <path d="M 74.16 202.860554 
@@ -51,7 +51,7 @@ L 342 202.860554
 L 361.53 255.741785 
 L 54.63 255.741785 
 z
-" clip-path="url(#pf4f1deac61)" style="fill: #13a89e; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter"/>
+" clip-path="url(#p9b548ff54e)" style="fill: #5a6f7e; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter"/>
    </g>
    <g id="patch_5">
     <path d="M 40.68 263.673969 
@@ -59,111 +59,111 @@ L 375.48 263.673969
 L 395.01 316.5552 
 L 21.15 316.5552 
 z
-" clip-path="url(#pf4f1deac61)" style="fill: #2d6a4f; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter"/>
+" clip-path="url(#p9b548ff54e)" style="fill: #3f5e48; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter"/>
    </g>
    <g id="patch_6">
-    <path d="M 440.208 131.470892 
-L 573.012 131.470892 
-Q 581.94 131.470892 581.94 123.009895 
-L 581.94 92.338782 
-Q 581.94 83.877785 573.012 83.877785 
-L 440.208 83.877785 
-Q 431.28 83.877785 431.28 92.338782 
-L 431.28 123.009895 
-Q 431.28 131.470892 440.208 131.470892 
+    <path d="M 433.233 131.470892 
+L 579.987 131.470892 
+Q 581.94 131.470892 581.94 129.620049 
+L 581.94 85.728628 
+Q 581.94 83.877785 579.987 83.877785 
+L 433.233 83.877785 
+Q 431.28 83.877785 431.28 85.728628 
+L 431.28 129.620049 
+Q 431.28 131.470892 433.233 131.470892 
 z
-" clip-path="url(#pf4f1deac61)" style="fill: #ffffff; stroke: #b23a48; stroke-width: 1.4; stroke-linejoin: miter"/>
+" clip-path="url(#p9b548ff54e)" style="fill: #ffffff; stroke: #9e3b2f; stroke-width: 1.4; stroke-linejoin: miter"/>
    </g>
    <g id="patch_7">
-    <path d="M 440.208 192.284308 
-L 573.012 192.284308 
-Q 581.94 192.284308 581.94 183.823311 
-L 581.94 153.152197 
-Q 581.94 144.6912 573.012 144.6912 
-L 440.208 144.6912 
-Q 431.28 144.6912 431.28 153.152197 
-L 431.28 183.823311 
-Q 431.28 192.284308 440.208 192.284308 
+    <path d="M 433.233 192.284308 
+L 579.987 192.284308 
+Q 581.94 192.284308 581.94 190.433465 
+L 581.94 146.542043 
+Q 581.94 144.6912 579.987 144.6912 
+L 433.233 144.6912 
+Q 431.28 144.6912 431.28 146.542043 
+L 431.28 190.433465 
+Q 431.28 192.284308 433.233 192.284308 
 z
-" clip-path="url(#pf4f1deac61)" style="fill: #ffffff; stroke: #d9822b; stroke-width: 1.4; stroke-linejoin: miter"/>
+" clip-path="url(#p9b548ff54e)" style="fill: #ffffff; stroke: #b07a45; stroke-width: 1.4; stroke-linejoin: miter"/>
    </g>
    <g id="patch_8">
-    <path d="M 440.208 253.097723 
-L 573.012 253.097723 
-Q 581.94 253.097723 581.94 244.636726 
-L 581.94 213.965612 
-Q 581.94 205.504615 573.012 205.504615 
-L 440.208 205.504615 
-Q 431.28 205.504615 431.28 213.965612 
-L 431.28 244.636726 
-Q 431.28 253.097723 440.208 253.097723 
+    <path d="M 433.233 253.097723 
+L 579.987 253.097723 
+Q 581.94 253.097723 581.94 251.24688 
+L 581.94 207.355458 
+Q 581.94 205.504615 579.987 205.504615 
+L 433.233 205.504615 
+Q 431.28 205.504615 431.28 207.355458 
+L 431.28 251.24688 
+Q 431.28 253.097723 433.233 253.097723 
 z
-" clip-path="url(#pf4f1deac61)" style="fill: #ffffff; stroke: #13a89e; stroke-width: 1.4; stroke-linejoin: miter"/>
+" clip-path="url(#p9b548ff54e)" style="fill: #ffffff; stroke: #5a6f7e; stroke-width: 1.4; stroke-linejoin: miter"/>
    </g>
    <g id="patch_9">
-    <path d="M 440.208 313.911138 
-L 573.012 313.911138 
-Q 581.94 313.911138 581.94 305.450142 
-L 581.94 274.779028 
-Q 581.94 266.318031 573.012 266.318031 
-L 440.208 266.318031 
-Q 431.28 266.318031 431.28 274.779028 
-L 431.28 305.450142 
-Q 431.28 313.911138 440.208 313.911138 
+    <path d="M 433.233 313.911138 
+L 579.987 313.911138 
+Q 581.94 313.911138 581.94 312.060295 
+L 581.94 268.168874 
+Q 581.94 266.318031 579.987 266.318031 
+L 433.233 266.318031 
+Q 431.28 266.318031 431.28 268.168874 
+L 431.28 312.060295 
+Q 431.28 313.911138 433.233 313.911138 
 z
-" clip-path="url(#pf4f1deac61)" style="fill: #ffffff; stroke: #2d6a4f; stroke-width: 1.4; stroke-linejoin: miter"/>
+" clip-path="url(#p9b548ff54e)" style="fill: #ffffff; stroke: #3f5e48; stroke-width: 1.4; stroke-linejoin: miter"/>
    </g>
    <g id="text_1">
-    <text style="font-weight: 700; font-size: 12px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: middle; fill: #0b2545" x="286.2" y="24.785542" transform="rotate(-0 286.2 24.785542)">Classification des données de MCC et usage autorisé de Claude</text>
+    <text style="font-weight: 700; font-size: 12px; font-family: 'EB Garamond', 'DejaVu Serif'; text-anchor: middle; fill: #26313a" x="286.2" y="24.674308" transform="rotate(-0 286.2 24.674308)">Classification des données de MCC et usage autorisé de Claude</text>
    </g>
    <g id="text_2">
-    <text style="font-weight: 700; font-size: 9.5px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="208.08" y="97.098092" transform="rotate(-0 208.08 97.098092)">4 — RESTREINT</text>
+    <text style="font-weight: 700; font-size: 9.5px; font-family: 'EB Garamond', 'DejaVu Serif'; text-anchor: middle; fill: #ffffff" x="208.08" y="97.098092" transform="rotate(-0 208.08 97.098092)">4 — RESTREINT</text>
    </g>
    <g id="text_3">
-    <text style="font-size: 7px; font-family: 'Inter', 'DejaVu Sans'; fill: #ffffff" transform="translate(161.394922 118.148545)">stratégie, M&amp;A, contentieux,</text>
-    <text style="font-size: 7px; font-family: 'Inter', 'DejaVu Sans'; fill: #ffffff" transform="translate(136.006797 126.618272)">données de santé, informations privilégiées</text>
+    <text style="font-size: 7px; font-family: 'EB Garamond', 'DejaVu Serif'; fill: #ffffff" transform="translate(169.064844 117.807022)">stratégie, M&amp;A, contentieux,</text>
+    <text style="font-size: 7px; font-family: 'EB Garamond', 'DejaVu Serif'; fill: #ffffff" transform="translate(151.348828 124.807022)">données de santé, informations privilégiées</text>
    </g>
    <g id="text_4">
-    <text style="font-weight: 700; font-size: 7.8px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: middle; fill: #b23a48" x="506.61" y="110.507932" transform="rotate(-0 506.61 110.507932)">INTERDIT dans Claude</text>
+    <text style="font-weight: 700; font-size: 7.8px; font-family: 'EB Garamond', 'DejaVu Serif'; text-anchor: middle; fill: #9e3b2f" x="506.61" y="110.342182" transform="rotate(-0 506.61 110.342182)">INTERDIT dans Claude</text>
    </g>
    <g id="text_5">
-    <text style="font-weight: 700; font-size: 9.5px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="208.08" y="157.911508" transform="rotate(-0 208.08 157.911508)">3 — CONFIDENTIEL</text>
+    <text style="font-weight: 700; font-size: 9.5px; font-family: 'EB Garamond', 'DejaVu Serif'; text-anchor: middle; fill: #ffffff" x="208.08" y="157.911508" transform="rotate(-0 208.08 157.911508)">3 — CONFIDENTIEL</text>
    </g>
    <g id="text_6">
-    <text style="font-size: 7px; font-family: 'Inter', 'DejaVu Sans'; fill: #ffffff" transform="translate(132.861172 178.96196)">contrats, données RH, réserves non publiées,</text>
-    <text style="font-size: 7px; font-family: 'Inter', 'DejaVu Sans'; fill: #ffffff" transform="translate(166.686484 187.431687)">incidents nominatifs, prix</text>
+    <text style="font-size: 7px; font-family: 'EB Garamond', 'DejaVu Serif'; fill: #ffffff" transform="translate(148.359609 178.620437)">contrats, données RH, réserves non publiées,</text>
+    <text style="font-size: 7px; font-family: 'EB Garamond', 'DejaVu Serif'; fill: #ffffff" transform="translate(173.92 185.620437)">incidents nominatifs, prix</text>
    </g>
    <g id="text_7">
-    <text style="font-weight: 700; font-size: 7.8px; font-family: 'Inter', 'DejaVu Sans'; fill: #d9822b" transform="translate(443.328844 164.78721)">Espace d'entreprise uniquement,</text>
-    <text style="font-weight: 700; font-size: 7.8px; font-family: 'Inter', 'DejaVu Sans'; fill: #d9822b" transform="translate(454.592531 176.584329)">autorisation du propriétaire</text>
+    <text style="font-weight: 700; font-size: 7.8px; font-family: 'EB Garamond', 'DejaVu Serif'; fill: #b07a45" transform="translate(453.890531 163.755957)">Espace d'entreprise uniquement,</text>
+    <text style="font-weight: 700; font-size: 7.8px; font-family: 'EB Garamond', 'DejaVu Serif'; fill: #b07a45" transform="translate(460.813031 176.577207)">autorisation du propriétaire</text>
    </g>
    <g id="text_8">
-    <text style="font-weight: 700; font-size: 9.5px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="208.08" y="218.724923" transform="rotate(-0 208.08 218.724923)">2 — USAGE INTERNE</text>
+    <text style="font-weight: 700; font-size: 9.5px; font-family: 'EB Garamond', 'DejaVu Serif'; text-anchor: middle; fill: #ffffff" x="208.08" y="218.724923" transform="rotate(-0 208.08 218.724923)">2 — USAGE INTERNE</text>
    </g>
    <g id="text_9">
-    <text style="font-size: 7px; font-family: 'Inter', 'DejaVu Sans'; fill: #ffffff" transform="translate(157.799766 239.775376)">procédures, rapports internes,</text>
-    <text style="font-size: 7px; font-family: 'Inter', 'DejaVu Sans'; fill: #ffffff" transform="translate(153.278203 248.245102)">données de production agrégées</text>
+    <text style="font-size: 7px; font-family: 'EB Garamond', 'DejaVu Serif'; fill: #ffffff" transform="translate(168.388359 239.433852)">procédures, rapports internes,</text>
+    <text style="font-size: 7px; font-family: 'EB Garamond', 'DejaVu Serif'; fill: #ffffff" transform="translate(165.757891 246.433852)">données de production agrégées</text>
    </g>
    <g id="text_10">
-    <text style="font-weight: 700; font-size: 7.8px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: middle; fill: #13a89e" x="506.61" y="231.499185" transform="rotate(-0 506.61 231.499185)">Espace d'entreprise</text>
+    <text style="font-weight: 700; font-size: 7.8px; font-family: 'EB Garamond', 'DejaVu Serif'; text-anchor: middle; fill: #5a6f7e" x="506.61" y="231.028747" transform="rotate(-0 506.61 231.028747)">Espace d'entreprise</text>
    </g>
    <g id="text_11">
-    <text style="font-weight: 700; font-size: 9.5px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="208.08" y="279.538338" transform="rotate(-0 208.08 279.538338)">1 — PUBLIC</text>
+    <text style="font-weight: 700; font-size: 9.5px; font-family: 'EB Garamond', 'DejaVu Serif'; text-anchor: middle; fill: #ffffff" x="208.08" y="279.538338" transform="rotate(-0 208.08 279.538338)">1 — PUBLIC</text>
    </g>
    <g id="text_12">
-    <text style="font-size: 7px; font-family: 'Inter', 'DejaVu Sans'; fill: #ffffff" transform="translate(154.137891 300.588791)">rapports publiés, textes officiels,</text>
-    <text style="font-size: 7px; font-family: 'Inter', 'DejaVu Sans'; fill: #ffffff" transform="translate(163.723516 309.058518)">communications publiques</text>
+    <text style="font-size: 7px; font-family: 'EB Garamond', 'DejaVu Serif'; fill: #ffffff" transform="translate(165.924687 300.247268)">rapports publiés, textes officiels,</text>
+    <text style="font-size: 7px; font-family: 'EB Garamond', 'DejaVu Serif'; fill: #ffffff" transform="translate(171.619844 307.247268)">communications publiques</text>
    </g>
    <g id="text_13">
-    <text style="font-weight: 700; font-size: 7.8px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: middle; fill: #2d6a4f" x="506.61" y="293.066397" transform="rotate(-0 506.61 293.066397)">Libre</text>
+    <text style="font-weight: 700; font-size: 7.8px; font-family: 'EB Garamond', 'DejaVu Serif'; text-anchor: middle; fill: #3f5e48" x="506.61" y="292.809241" transform="rotate(-0 506.61 292.809241)">Libre</text>
    </g>
    <g id="text_14">
-    <text style="font-style: italic; font-size: 7.5px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: middle; fill: #5b6b7f" x="286.2" y="345.724087" transform="rotate(-0 286.2 345.724087)">Modèle de l'Annexe G (fictif, à adapter). Illustration réalisée pour cet ouvrage.</text>
+    <text style="font-style: italic; font-size: 7.5px; font-family: 'EB Garamond', 'DejaVu Serif'; text-anchor: middle; fill: #6b6560" x="286.2" y="344.570815" transform="rotate(-0 286.2 344.570815)">Modèle de l'Annexe G (fictif, à adapter). Illustration réalisée pour cet ouvrage.</text>
    </g>
   </g>
  </g>
  <defs>
-  <clipPath id="pf4f1deac61">
+  <clipPath id="p9b548ff54e">
    <rect x="7.2" y="7.2" width="585.9" height="343.728"/>
   </clipPath>
  </defs>

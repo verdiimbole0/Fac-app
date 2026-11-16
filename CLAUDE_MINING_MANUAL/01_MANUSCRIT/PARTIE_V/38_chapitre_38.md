@@ -12,13 +12,13 @@ Jean-Luc Tshibangu demande à l'assistant de l'usine de vérifier la conformité
 2. **Expliquer** le mécanisme d'une injection de prompt directe et indirecte.
 3. **Évaluer** les risques avec une matrice probabilité × gravité.
 4. **Mettre en place** des mesures de maîtrise techniques, organisationnelles et humaines.
-5. **S'appuyer** sur des cadres reconnus (NIST AI RMF, ISO/IEC 42001, OWASP).
+5. **S'appuyer** sur des cadres reconnus (NIST AI RMF, ISO/IEC 42001).
 
 ### C. Comprendre avant de pratiquer
 
 #### C.1. Panorama des risques
 
-Le profil de risque de l'IA générative publié par le NIST recense notamment la confabulation (contenus faux présentés avec assurance), les risques pour la sécurité de l'information, la vie privée, la propriété intellectuelle, les contenus dangereux et les biais [@NIST-GAI]. Le référentiel OWASP des risques des applications de grands modèles de langage place l'**injection de prompt** au premier rang [@OWASP-LLM].
+Le profil de risque de l'IA générative publié par le NIST recense notamment la confabulation (contenus faux présentés avec assurance), les risques pour la sécurité de l'information, la vie privée, la propriété intellectuelle, les contenus dangereux et les biais [@NIST-GAI].
 
 | Risque | Description | Exemple à MCC |
 |---|---|---|
@@ -33,7 +33,7 @@ Le profil de risque de l'IA générative publié par le NIST recense notamment l
 
 #### C.2. L'injection de prompt
 
-Une **injection de prompt** consiste à insérer, dans un contenu traité par un modèle, des instructions destinées à détourner son comportement. Elle est **directe** quand l'utilisateur lui-même tente de contourner les règles ; **indirecte** quand les instructions sont cachées dans un document, une page Web ou un courriel que le modèle lit pour accomplir sa tâche [@OWASP-LLM]. Anthropic signale ce risque, en particulier pour les agents qui naviguent et agissent [@ANT-CHROME].
+Une **injection de prompt** consiste à insérer, dans un contenu traité par un modèle, des instructions destinées à détourner son comportement. Elle est **directe** quand l'utilisateur lui-même tente de contourner les règles ; **indirecte** quand les instructions sont cachées dans un document, une page Web ou un courriel que le modèle lit pour accomplir sa tâche. Anthropic signale ce risque, en particulier pour les agents qui naviguent et agissent [@ANT-CHROME].
 
 ![Figure 38.1 — L'injection de prompt indirecte : un paragraphe caché dans un document tente de dicter la réponse de l'assistant. Les parades combinent consignes, moindre privilège, validation humaine et formation. Illustration réalisée pour cet ouvrage.](02_ILLUSTRATIONS/SCHEMAS/fig38_1_injection_prompt.png){width=100%}
 
@@ -125,7 +125,7 @@ actions non voulues, dépendance. La cotation finale sera validée par le comit�
 
 ### K. Quiz
 
-1. **(QCM)** Quel risque l'OWASP place-t-il au premier rang pour les applications LLM ? a) la latence ; b) l'injection de prompt ; c) le coût ; d) la traduction.
+1. **(QCM)** Comment appelle-t-on le fait de cacher, dans un document lu par un assistant, des instructions destinées à le détourner ? a) la latence ; b) l'injection de prompt indirecte ; c) le surapprentissage ; d) la tokenisation.
 2. **(Compréhension)** Différence entre injection directe et indirecte ?
 3. **(Vrai ou faux)** Une consigne de protection rend l'assistant invulnérable aux injections.
 4. **(Application)** Rédigez la règle « contenus lus = données ».

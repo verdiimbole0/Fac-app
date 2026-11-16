@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-11-16T10:34:36.217115</dc:date>
+    <dc:date>2026-11-16T13:46:24.025463</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -32,92 +32,92 @@ z
    <g id="patch_2">
     <path d="M 277.041566 104.22 
 Q 300.151628 104.22 321.025622 104.22 
-" clip-path="url(#pa68e3d0e86)" style="fill: none; stroke: #5b6b7f; stroke-width: 2; stroke-linecap: round"/>
+" clip-path="url(#pb7ec3bf5f3)" style="fill: none; stroke: #6b6560; stroke-width: 2; stroke-linecap: round"/>
     <path d="M 315.425622 101.42 
 L 321.025622 104.22 
 L 315.425622 107.02 
 z
-" clip-path="url(#pa68e3d0e86)" style="fill: #5b6b7f; stroke: #5b6b7f; stroke-width: 2; stroke-linecap: round"/>
+" clip-path="url(#pb7ec3bf5f3)" style="fill: #6b6560; stroke: #6b6560; stroke-width: 2; stroke-linecap: round"/>
    </g>
    <g id="patch_3">
-    <path d="M 32.868 151.344 
-L 266.112 151.344 
-Q 275.04 151.344 275.04 142.4736 
-L 275.04 65.9664 
-Q 275.04 57.096 266.112 57.096 
-L 32.868 57.096 
-Q 23.94 57.096 23.94 65.9664 
-L 23.94 142.4736 
-Q 23.94 151.344 32.868 151.344 
+    <path d="M 25.893 151.344 
+L 273.087 151.344 
+Q 275.04 151.344 275.04 149.4036 
+L 275.04 59.0364 
+Q 275.04 57.096 273.087 57.096 
+L 25.893 57.096 
+Q 23.94 57.096 23.94 59.0364 
+L 23.94 149.4036 
+Q 23.94 151.344 25.893 151.344 
 z
-" clip-path="url(#pa68e3d0e86)" style="fill: #d5efec; stroke: #13a89e; stroke-width: 1.4; stroke-linejoin: miter"/>
+" clip-path="url(#pb7ec3bf5f3)" style="fill: #e4e9ec; stroke: #5a6f7e; stroke-width: 1.4; stroke-linejoin: miter"/>
    </g>
    <g id="patch_4">
-    <path d="M 334.188 173.52 
-L 567.432 173.52 
-Q 576.36 173.52 576.36 164.6496 
-L 576.36 43.7904 
-Q 576.36 34.92 567.432 34.92 
-L 334.188 34.92 
-Q 325.26 34.92 325.26 43.7904 
-L 325.26 164.6496 
-Q 325.26 173.52 334.188 173.52 
+    <path d="M 327.213 173.52 
+L 574.407 173.52 
+Q 576.36 173.52 576.36 171.5796 
+L 576.36 36.8604 
+Q 576.36 34.92 574.407 34.92 
+L 327.213 34.92 
+Q 325.26 34.92 325.26 36.8604 
+L 325.26 171.5796 
+Q 325.26 173.52 327.213 173.52 
 z
-" clip-path="url(#pa68e3d0e86)" style="fill: #f5dde1; stroke: #b23a48; stroke-width: 1.4; stroke-linejoin: miter"/>
+" clip-path="url(#pb7ec3bf5f3)" style="fill: #f3e0da; stroke: #9e3b2f; stroke-width: 1.4; stroke-linejoin: miter"/>
    </g>
    <g id="patch_5">
-    <path d="M 32.868 301.032 
-L 567.432 301.032 
-Q 576.36 301.032 576.36 292.1616 
-L 576.36 199.0224 
-Q 576.36 190.152 567.432 190.152 
-L 32.868 190.152 
-Q 23.94 190.152 23.94 199.0224 
-L 23.94 292.1616 
-Q 23.94 301.032 32.868 301.032 
+    <path d="M 25.893 301.032 
+L 574.407 301.032 
+Q 576.36 301.032 576.36 299.0916 
+L 576.36 192.0924 
+Q 576.36 190.152 574.407 190.152 
+L 25.893 190.152 
+Q 23.94 190.152 23.94 192.0924 
+L 23.94 299.0916 
+Q 23.94 301.032 25.893 301.032 
 z
-" clip-path="url(#pa68e3d0e86)" style="fill: #eef1f5; stroke: #5b6b7f; stroke-width: 1.4; stroke-linejoin: miter"/>
+" clip-path="url(#pb7ec3bf5f3)" style="fill: #f4f1ec; stroke: #6b6560; stroke-width: 1.4; stroke-linejoin: miter"/>
    </g>
    <g id="text_1">
-    <text style="font-weight: 700; font-size: 13px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: middle; fill: #0b2545" x="286.2" y="25.789004" transform="rotate(-0 286.2 25.789004)">Anatomie d'une hallucination</text>
+    <text style="font-weight: 700; font-size: 13px; font-family: 'EB Garamond', 'DejaVu Serif'; text-anchor: middle; fill: #26313a" x="286.2" y="25.6685" transform="rotate(-0 286.2 25.6685)">Anatomie d'une hallucination</text>
    </g>
    <g id="text_2">
-    <text style="font-size: 9px; font-family: 'Inter', 'DejaVu Sans'; fill: #222831" transform="translate(55.863281 100.533735)">Question : « Quel article du Code minier fixe</text>
-    <text style="font-size: 9px; font-family: 'Inter', 'DejaVu Sans'; fill: #222831" transform="translate(59.642578 114.350405)">le taux de redevance du cobalt ? Cite-le. »</text>
+    <text style="font-size: 9px; font-family: 'EB Garamond', 'DejaVu Serif'; fill: #1a1a1a" transform="translate(71.298281 100.313437)">Question : « Quel article du Code minier fixe</text>
+    <text style="font-size: 9px; font-family: 'EB Garamond', 'DejaVu Serif'; fill: #1a1a1a" transform="translate(78.919453 112.918359)">le taux de redevance du cobalt ? Cite-le. »</text>
    </g>
    <g id="text_3">
-    <text style="font-weight: 700; font-size: 9.5px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: middle; fill: #b23a48" x="450.81" y="57.096" transform="rotate(-0 450.81 57.096)">Réponse plausible… mais à vérifier</text>
+    <text style="font-weight: 700; font-size: 9.5px; font-family: 'EB Garamond', 'DejaVu Serif'; text-anchor: middle; fill: #9e3b2f" x="450.81" y="57.096" transform="rotate(-0 450.81 57.096)">Réponse plausible… mais à vérifier</text>
    </g>
    <g id="text_4">
-    <text style="font-size: 8.3px; font-family: 'Inter', 'DejaVu Sans'" transform="translate(375.805883 87.676598)">« L'article 241 bis, alinéa 3, fixe le taux</text>
-    <text style="font-size: 8.3px; font-family: 'Inter', 'DejaVu Sans'" transform="translate(363.73457 97.719273)">à X %. Source : Journal officiel n° 14/2019. »</text>
-    <text style="font-size: 8.3px; font-family: 'Inter', 'DejaVu Sans'" transform="translate(450.81 107.761949)"/>
-    <text style="font-size: 8.3px; font-family: 'Inter', 'DejaVu Sans'" transform="translate(379.221852 117.804625)">→ numéro d'article précis, référence</text>
-    <text style="font-size: 8.3px; font-family: 'Inter', 'DejaVu Sans'" transform="translate(382.692289 127.847301)">officielle, ton assuré… mais rien ne</text>
-    <text style="font-size: 8.3px; font-family: 'Inter', 'DejaVu Sans'" transform="translate(382.418648 137.889977)">garantit que ces éléments existent.</text>
+    <text style="font-size: 8.3px; font-family: 'EB Garamond', 'DejaVu Serif'" transform="translate(391.504555 90.757)">« L'article 241 bis, alinéa 3, fixe le taux</text>
+    <text style="font-size: 8.3px; font-family: 'EB Garamond', 'DejaVu Serif'" transform="translate(381.872664 99.057)">à X %. Source : Journal officiel n° 14/2019. »</text>
+    <text style="font-size: 8.3px; font-family: 'EB Garamond', 'DejaVu Serif'" transform="translate(450.81 107.357)"/>
+    <text style="font-size: 8.3px; font-family: 'EB Garamond', 'DejaVu Serif'" transform="translate(393.945273 115.657)">→ numéro d'article précis, référence</text>
+    <text style="font-size: 8.3px; font-family: 'EB Garamond', 'DejaVu Serif'" transform="translate(397.448781 123.957)">officielle, ton assuré… mais rien ne</text>
+    <text style="font-size: 8.3px; font-family: 'EB Garamond', 'DejaVu Serif'" transform="translate(397.692594 132.257)">garantit que ces éléments existent.</text>
    </g>
    <g id="text_5">
-    <text style="font-weight: 700; font-size: 9.5px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: start; fill: #0b2545" x="35.1" y="209.556" transform="rotate(-0 35.1 209.556)">Signaux d'alerte</text>
+    <text style="font-weight: 700; font-size: 9.5px; font-family: 'EB Garamond', 'DejaVu Serif'; text-anchor: start; fill: #26313a" x="35.1" y="209.556" transform="rotate(-0 35.1 209.556)">Signaux d'alerte</text>
    </g>
    <g id="text_6">
-    <text style="font-size: 8.5px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: start; fill: #222831" x="40.68" y="237.276" transform="rotate(-0 40.68 237.276)">⚠  Précision excessive (numéros, dates, pages)</text>
+    <text style="font-size: 8.5px; font-family: 'EB Garamond', 'DejaVu Serif'; text-anchor: start; fill: #1a1a1a" x="40.68" y="237.276" transform="rotate(-0 40.68 237.276)">—  Précision excessive (numéros, dates, pages)</text>
    </g>
    <g id="text_7">
-    <text style="font-size: 8.5px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: start; fill: #222831" x="308.52" y="237.276" transform="rotate(-0 308.52 237.276)">⚠  Références impossibles à retrouver</text>
+    <text style="font-size: 8.5px; font-family: 'EB Garamond', 'DejaVu Serif'; text-anchor: start; fill: #1a1a1a" x="308.52" y="237.276" transform="rotate(-0 308.52 237.276)">—  Références impossibles à retrouver</text>
    </g>
    <g id="text_8">
-    <text style="font-size: 8.5px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: start; fill: #222831" x="40.68" y="262.7784" transform="rotate(-0 40.68 262.7784)">⚠  Ton très assuré sans source fournie</text>
+    <text style="font-size: 8.5px; font-family: 'EB Garamond', 'DejaVu Serif'; text-anchor: start; fill: #1a1a1a" x="40.68" y="262.7784" transform="rotate(-0 40.68 262.7784)">—  Ton très assuré sans source fournie</text>
    </g>
    <g id="text_9">
-    <text style="font-size: 8.5px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: start; fill: #222831" x="308.52" y="262.7784" transform="rotate(-0 308.52 262.7784)">⚠  Chiffres « ronds » ou trop parfaits</text>
+    <text style="font-size: 8.5px; font-family: 'EB Garamond', 'DejaVu Serif'; text-anchor: start; fill: #1a1a1a" x="308.52" y="262.7784" transform="rotate(-0 308.52 262.7784)">—  Chiffres « ronds » ou trop parfaits</text>
    </g>
    <g id="text_10">
-    <text style="font-size: 8.5px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: start; fill: #222831" x="40.68" y="288.2808" transform="rotate(-0 40.68 288.2808)">⚠  Contradiction avec vos propres documents</text>
+    <text style="font-size: 8.5px; font-family: 'EB Garamond', 'DejaVu Serif'; text-anchor: start; fill: #1a1a1a" x="40.68" y="288.2808" transform="rotate(-0 40.68 288.2808)">—  Contradiction avec vos propres documents</text>
    </g>
   </g>
  </g>
  <defs>
-  <clipPath id="pa68e3d0e86">
+  <clipPath id="pb7ec3bf5f3">
    <rect x="7.2" y="7.2" width="585.9" height="310.464"/>
   </clipPath>
  </defs>

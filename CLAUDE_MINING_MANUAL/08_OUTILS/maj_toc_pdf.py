@@ -51,7 +51,7 @@ def main(src, dst):
             prop("FilterData", uno.Any("[]com.sun.star.beans.PropertyValue", tuple([
                 prop("ExportBookmarks", True), prop("UseTaggedPDF", True),
                 prop("ExportNotes", False), prop("Quality", 90), prop("ReduceImageResolution", True),
-                prop("MaxImageResolution", 220)]))))
+                prop("MaxImageResolution", 220), prop("IsSkipEmptyPages", False)]))))
     doc.storeToURL(uno.systemPathToFileUrl(os.path.abspath(dst)), filt)
     doc.close(True)
     try: desktop.terminate()

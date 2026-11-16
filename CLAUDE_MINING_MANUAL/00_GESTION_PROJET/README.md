@@ -1,6 +1,6 @@
-# CLAUDE ET L'INTELLIGENCE ARTIFICIELLE AU SERVICE DE L'INDUSTRIE MINIÈRE
+# LA MINE AUGMENTÉE
 
-*Le guide pratique pour comprendre, maîtriser et intégrer l'IA dans les métiers et processus de l'industrie minière.*
+*Maîtriser Claude et l'intelligence artificielle générative dans les métiers et les processus miniers.*
 
 Projet éditorial — manuel de formation professionnelle (6 parties, 43 chapitres, 13 annexes).
 
@@ -24,18 +24,26 @@ Projet éditorial — manuel de formation professionnelle (6 parties, 43 chapitr
 cd CLAUDE_MINING_MANUAL
 python3 08_OUTILS/generer_donnees.py      # jeux de données d'exercice
 python3 08_OUTILS/generer_figures.py      # schémas et graphiques
+python3 08_OUTILS/couvertures.py          # 1re et 4e de couverture
 python3 08_OUTILS/construire_livre.py     # DOCX + PDF dans 06_PRODUCTION_FINALE/
 python3 08_OUTILS/controle_qualite.py     # rapport de contrôle qualité + plan éditorial
 ```
 
-Dépendances : Python 3 (matplotlib, openpyxl, python-docx), pandoc ≥ 3, LibreOffice (conversion PDF).
+Dépendances : Python 3 (matplotlib, openpyxl, python-docx, fonttools), pandoc ≥ 3, LibreOffice (conversion PDF), polices EB Garamond (paquet `fonts-ebgaramond`) et césure française (`hyphen-fr`).
+
+**Polices :** le gras d'EB Garamond fourni par Debian est incomplet (pas de lettres accentuées). Installer les fichiers de `08_OUTILS/polices/` (licence OFL, fichier joint) dans `~/.local/share/fonts/`, retirer `EBGaramond12-Bold` du système, puis lancer `fc-cache -f`. Créer l'alias fontconfig `Garamond` → `EB Garamond 12`.
+
+## Maquette
+
+Format 15,5 × 23,5 cm, marges en miroir, titres courants (titre du livre en page paire, chapitre en page impaire), folios centrés, EB Garamond 11 pt, alinéas et justification avec césure, titres sans gras, tableaux à filets, encadrés à filets cuivre sur fond crème. Pages liminaires sans titre courant ; le corps commence en belle page ; la 4e de couverture tombe toujours en page paire.
 
 ## Livrables
 
 | Livrable | Emplacement |
 |---|---|
-| Manuscrit Word éditable | `06_PRODUCTION_FINALE/CLAUDE_ET_IA_INDUSTRIE_MINIERE.docx` |
-| Manuscrit PDF (391 pages) | `06_PRODUCTION_FINALE/CLAUDE_ET_IA_INDUSTRIE_MINIERE.pdf` |
+| Livre Word éditable | `06_PRODUCTION_FINALE/LA_MINE_AUGMENTEE.docx` |
+| Livre PDF (610 pages, couvertures incluses) | `06_PRODUCTION_FINALE/LA_MINE_AUGMENTEE.pdf` |
+| Couverture et 4e de couverture | `02_ILLUSTRATIONS/COUVERTURES/` (PDF vectoriel + PNG 300 dpi) |
 | Sources Markdown | `01_MANUSCRIT/`, `04_ANNEXES/` |
 | Illustrations | `02_ILLUSTRATIONS/` (+ `PHOTOGRAPHIES/CREDITS_PHOTOS.json`) |
 | Données d'exercice | `03_EXERCICES_ET_DONNEES/` |

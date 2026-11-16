@@ -7,7 +7,7 @@
 | Élément | État |
 |---|---|
 | Phase 1 — Préparation (structure, scénario, charte, compétences, plan) | ✅ |
-| Phase 2 — Recherches documentaires (70 sources au registre ; ◆ consultation directe / ◇ recherche documentaire) | ✅ |
+| Phase 2 — Recherches documentaires (registre ramené à 56 sources contrôlées) | ✅ |
 | Phase 3 — Rédaction : liminaires + 43 chapitres + 6 fichiers de corrigés | ✅ |
 | Phase 4 — Annexes A à M (I générée depuis le registre) | ✅ |
 | Phase 5 — Contrôle qualité automatique (0 anomalie structurelle) + corrections de cohérence | ✅ — relecture humaine éditeur à faire |
@@ -40,7 +40,7 @@
 - Photographies : Wikimedia Commons, licences libres ; fichiers fournis par l'éditeur (ZIP) et intégrés par `08_OUTILS/integrer_photos.py`.
 
 ## Difficultés techniques rencontrées
-- Réseau restreint : environnement dédié créé ; certains sites restent bloqués (403) → références ◇.
+- Réseau restreint : environnement dédié créé ; certains sites restent bloqués (403) → références non contrôlables retirées de la bibliographie.
 - Wikimedia : téléchargement automatisé refusé (politique anti-robots exigeant un contact dans l'User-Agent) → script `08_OUTILS/photos.py telecharger "<UA avec contact>"` à lancer par l'éditeur.
 - Champ TOC Word non converti par LibreOffice → index natif inséré par le script UNO ; le DOCX demande la mise à jour du sommaire à l'ouverture.
 
@@ -49,3 +49,12 @@
 2. Relecture humaine complète ; validation par des praticiens et un juriste (voir `07_CONTROLE_QUALITE`).
 3. Revalidation des informations datées sur Claude avant publication.
 4. Reconstruction : `python3 08_OUTILS/construire_livre.py` puis `python3 08_OUTILS/controle_qualite.py`.
+
+
+## Révision « La Mine augmentée » (16 novembre 2026)
+
+- Bibliographie réduite aux seules références contrôlées ; plus de notes ni de symboles avant les références.
+- Nouvelle maquette de livre (15,5 × 23,5 cm, EB Garamond, titres courants, tableaux à filets, encadrés sobres).
+- Figures redessinées dans la palette du livre (encre, cuivre, vert de gris, ardoise).
+- Couverture et quatrième de couverture créées (`08_OUTILS/couvertures.py`).
+- Livrables renommés `LA_MINE_AUGMENTEE.docx/.pdf` (610 pages).

@@ -200,7 +200,7 @@
 1. **b) 5.**
 2. **Faux.**
 3. Des affirmations environnementales ou sociales trompeuses ; Claude peut détecter les affirmations non étayées et proposer des reformulations prudentes.
-4. **b).**
+4. **b)** La Norme ITIE (2023).
 5. Remplacer par une réponse fondée sur les preuves disponibles, ou « à instruire ».
 6. **Faux.**
 7. Relier chaque exigence des référentiels aux données et sources, pour une collecte unique.

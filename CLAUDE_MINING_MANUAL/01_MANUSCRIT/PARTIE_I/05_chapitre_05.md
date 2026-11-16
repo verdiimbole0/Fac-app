@@ -158,7 +158,7 @@ Posez à Claude, **sans lui fournir de source**, les trois questions suivantes, 
 2. « Cite trois articles précis du Code minier congolais relatifs aux obligations environnementales, avec leur contenu. »
 3. « Donne la référence complète (auteurs, titre, revue, année) de trois articles scientifiques sur l'IA générative dans les mines. »
 
-Pour chaque question, classez la réponse : exacte, partiellement exacte, inventée, invérifiable. *Indice : la GISTM a été publiée le 5 août 2020, à l'issue d'un processus co-organisé par l'ICMM, le PNUE et les PRI [@GISTM-2020; @UNEP-GISTM].*
+Pour chaque question, classez la réponse : exacte, partiellement exacte, inventée, invérifiable. *Indice : la GISTM a été publiée le 5 août 2020, à l'issue d'un processus co-organisé par l'ICMM, le PNUE et les PRI [@GISTM-2020].*
 
 **Exercice 5.2 (guidé) — Reformuler avec les techniques anti-hallucination**
 

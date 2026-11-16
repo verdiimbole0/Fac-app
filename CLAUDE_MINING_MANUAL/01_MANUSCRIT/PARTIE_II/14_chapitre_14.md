@@ -53,7 +53,7 @@ Pour un sujet réglementaire ou normatif, la source primaire est le texte lui-m�
 5. **Actualité** : existe-t-il une version plus récente ? (par exemple une nouvelle édition d'une norme)
 
 ::: application
-C'est exactement la méthode utilisée pour constituer la bibliographie de ce livre. Chaque référence a été contrôlée ; le registre indique si elle a été consultée directement (◆) ou confirmée par recherche documentaire lorsque l'accès direct était impossible (◇). Par exemple, la recherche a révélé qu'une 3e édition du guide de l'ICMM sur la fermeture intégrée des mines avait été annoncée : le registre le signale, tout en citant l'édition de 2019 effectivement identifiée [@ICMM-CLOSURE].
+C'est la méthode utilisée pour constituer la bibliographie de ce livre : chaque référence a été contrôlée, et toute référence dont l'édition, la date ou le contenu suscitait un doute a été écartée, même lorsqu'elle paraissait plausible.
 :::
 
 #### C.5. Citer selon les normes APA
@@ -69,11 +69,11 @@ Pour les pages Web susceptibles d'évoluer, indiquez toujours la **date de consu
 
 ### D. Démonstration guidée — La note de Clarisse
 
-**Étape 1 — Cartographier.** Clarisse demande à Claude, sans recherche, la liste des référentiels internationaux pertinents pour un producteur de cobalt (prompt 14.1). Elle obtient une liste de travail (devoir de diligence de l'OCDE, Norme ITIE, GISTM, Normes de performance de la SFI, GRI 14, etc.) qu'elle traite comme une **hypothèse**.
+**Étape 1 — Cartographier.** Clarisse demande à Claude, sans recherche, la liste des référentiels internationaux pertinents pour un producteur de cobalt (prompt 14.1). Elle obtient une liste de travail (devoir de diligence de l'OCDE, Norme ITIE, GISTM, Normes de performance de la SFI, etc.) qu'elle traite comme une **hypothèse**.
 
 **Étape 2 — Rechercher avec sources.** Elle lance une recherche approfondie, en exigeant des sources primaires et la date de chaque document (prompt 14.2).
 
-**Étape 3 — Vérifier.** Pour chaque référence, elle applique les cinq contrôles. Elle constate notamment que la norme de reporting GRI 14 sur le secteur minier, publiée en 2024, s'applique aux rapports publiés à partir du 1er janvier 2026, et qu'une version 1.1 a été publiée ultérieurement [@GRI-14] ; elle choisit de citer la version en vigueur après vérification sur le site de l'éditeur.
+**Étape 3 — Vérifier.** Pour chaque référence, elle applique les cinq contrôles. Elle constate notamment que la norme de l'ITIE en vigueur est l'édition 2023 [@EITI-2023], et écarte une référence de reporting dont deux versions circulaient sans qu'elle puisse établir laquelle était applicable.
 
 **Étape 4 — Registre.** Elle consigne chaque source dans un registre (prompt 14.4).
 
@@ -189,6 +189,6 @@ Lors d'une recherche, Claude cite une page officielle réelle, mais lui attribue
 7. **(Mise en situation)** Claude cite une norme « édition 2018 », mais vous savez qu'une révision existe. Que faites-vous ?
 8. **(Compréhension)** Pourquoi interdire les dates et URL lors d'une cartographie préliminaire sans recherche ?
 9. **(Analyse critique)** Quelle est la limite d'un article de presse qui résume une norme ?
-10. **(QCM)** Dans ce livre, que signifie le symbole ◇ dans la bibliographie ? a) source inventée ; b) source confirmée par recherche documentaire, accès direct impossible ; c) source payante non vérifiée ; d) source secondaire.
+10. **(Vrai ou faux)** Une référence dont on n'a pas pu vérifier l'édition ou le contenu peut figurer dans une bibliographie si elle paraît plausible.
 
 <div class="carnet" titre="Chapitre 14 — Utiliser Claude pour la recherche, la documentation et la vérification des sources"></div>

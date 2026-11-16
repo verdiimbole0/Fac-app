@@ -33,9 +33,9 @@ Albert répond par une question : « As-tu vérifié la fracturation observée s
 
 Plusieurs cadres du secteur minier reposent explicitement sur des personnes qualifiées et responsables :
 
-- Les codes de déclaration des ressources et réserves, comme le code JORC, exigent que les estimations publiées soient fondées sur les travaux d'une **personne compétente**, membre d'une organisation professionnelle reconnue et disposant d'une expérience pertinente [@JORC-2012]. Le gabarit international du CRIRSCO, dont s'inspirent de nombreux codes nationaux, repose sur le même principe [@CRIRSCO].
+- Les codes de déclaration des ressources et réserves, comme le code JORC, exigent que les estimations publiées soient fondées sur les travaux d'une **personne compétente**, membre d'une organisation professionnelle reconnue et disposant d'une expérience pertinente [@JORC-2012].
 - La Convention n° 176 de l'OIT sur la sécurité et la santé dans les mines fait peser sur l'employeur l'obligation d'évaluer et de maîtriser les risques, et reconnaît aux travailleurs des droits, dont celui de se retirer d'une situation de danger grave [@ILO-C176]. Le recueil de directives pratiques de l'OIT sur les mines à ciel ouvert détaille ces responsabilités [@ILO-OPENCAST].
-- La gestion des **contrôles critiques** promue par l'ICMM repose sur l'identification, la vérification et la responsabilité clairement attribuée des contrôles qui préviennent les événements graves [@ICMM-CCM-2015; @ICMM-CCM].
+- La gestion des **contrôles critiques** promue par l'ICMM repose sur l'identification, la vérification et la responsabilité clairement attribuée des contrôles qui préviennent les événements graves [@ICMM-CCM].
 
 Un outil d'IA peut **aider** ces personnes à préparer, documenter et vérifier leur travail. Il ne peut pas **être** ces personnes.
 

@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-11-16T10:34:38.989149</dc:date>
+    <dc:date>2026-11-16T13:46:26.546656</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -35,7 +35,7 @@ L 353.16 84.816
 L 371.016 124.7328 
 L 201.384 124.7328 
 z
-" clip-path="url(#pe174b8d735)" style="fill: #2d6a4f; stroke: #ffffff; stroke-width: 1.5; stroke-linejoin: miter"/>
+" clip-path="url(#p9d42eb1dc7)" style="fill: #3f5e48; stroke: #ffffff; stroke-width: 1.5; stroke-linejoin: miter"/>
    </g>
    <g id="patch_3">
     <path d="M 182.97 130.2768 
@@ -43,7 +43,7 @@ L 389.43 130.2768
 L 407.286 170.1936 
 L 165.114 170.1936 
 z
-" clip-path="url(#pe174b8d735)" style="fill: #13a89e; stroke: #ffffff; stroke-width: 1.5; stroke-linejoin: miter"/>
+" clip-path="url(#p9d42eb1dc7)" style="fill: #5a6f7e; stroke: #ffffff; stroke-width: 1.5; stroke-linejoin: miter"/>
    </g>
    <g id="patch_4">
     <path d="M 146.7 175.7376 
@@ -51,7 +51,7 @@ L 425.7 175.7376
 L 443.556 215.6544 
 L 128.844 215.6544 
 z
-" clip-path="url(#pe174b8d735)" style="fill: #0b2545; stroke: #ffffff; stroke-width: 1.5; stroke-linejoin: miter"/>
+" clip-path="url(#p9d42eb1dc7)" style="fill: #26313a; stroke: #ffffff; stroke-width: 1.5; stroke-linejoin: miter"/>
    </g>
    <g id="patch_5">
     <path d="M 110.43 221.1984 
@@ -59,7 +59,7 @@ L 461.97 221.1984
 L 479.826 261.1152 
 L 92.574 261.1152 
 z
-" clip-path="url(#pe174b8d735)" style="fill: #c9a227; stroke: #ffffff; stroke-width: 1.5; stroke-linejoin: miter"/>
+" clip-path="url(#p9d42eb1dc7)" style="fill: #8a5a2b; stroke: #ffffff; stroke-width: 1.5; stroke-linejoin: miter"/>
    </g>
    <g id="patch_6">
     <path d="M 74.16 266.6592 
@@ -67,7 +67,7 @@ L 498.24 266.6592
 L 516.096 306.576 
 L 56.304 306.576 
 z
-" clip-path="url(#pe174b8d735)" style="fill: #d9822b; stroke: #ffffff; stroke-width: 1.5; stroke-linejoin: miter"/>
+" clip-path="url(#p9d42eb1dc7)" style="fill: #b07a45; stroke: #ffffff; stroke-width: 1.5; stroke-linejoin: miter"/>
    </g>
    <g id="patch_7">
     <path d="M 37.89 312.12 
@@ -75,47 +75,47 @@ L 534.51 312.12
 L 552.366 352.0368 
 L 20.034 352.0368 
 z
-" clip-path="url(#pe174b8d735)" style="fill: #b23a48; stroke: #ffffff; stroke-width: 1.5; stroke-linejoin: miter"/>
+" clip-path="url(#p9d42eb1dc7)" style="fill: #9e3b2f; stroke: #ffffff; stroke-width: 1.5; stroke-linejoin: miter"/>
    </g>
    <g id="text_1">
-    <text style="font-weight: 700; font-size: 12px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: middle; fill: #0b2545" x="286.2" y="25.425234" transform="rotate(-0 286.2 25.425234)">Hiérarchie de fiabilité des sources (à adapter au sujet)</text>
+    <text style="font-weight: 700; font-size: 12px; font-family: 'EB Garamond', 'DejaVu Serif'; text-anchor: middle; fill: #26313a" x="286.2" y="25.314" transform="rotate(-0 286.2 25.314)">Hiérarchie de fiabilité des sources (à adapter au sujet)</text>
    </g>
    <g id="text_2">
-    <text style="font-weight: 700; font-size: 8.1px; font-family: 'Inter', 'DejaVu Sans'; fill: #ffffff" transform="translate(237.459516 102.820591)">Textes officiels, normes,</text>
-    <text style="font-weight: 700; font-size: 8.1px; font-family: 'Inter', 'DejaVu Sans'; fill: #ffffff" transform="translate(219.699 112.621275)">données primaires de l'entreprise</text>
+    <text style="font-weight: 700; font-size: 8.1px; font-family: 'EB Garamond', 'DejaVu Serif'; fill: #ffffff" transform="translate(246.274594 102.3606)">Textes officiels, normes,</text>
+    <text style="font-weight: 700; font-size: 8.1px; font-family: 'EB Garamond', 'DejaVu Serif'; fill: #ffffff" transform="translate(230.600461 112.9311)">données primaires de l'entreprise</text>
    </g>
    <g id="text_3">
-    <text style="font-weight: 700; font-size: 8.1px; font-family: 'Inter', 'DejaVu Sans'; fill: #ffffff" transform="translate(198.627609 148.281391)">Rapports institutionnels (OIT, OCDE, Banque</text>
-    <text style="font-weight: 700; font-size: 8.1px; font-family: 'Inter', 'DejaVu Sans'; fill: #ffffff" transform="translate(225.413297 158.082075)">mondiale, USGS, ICMM, ITIE…)</text>
+    <text style="font-weight: 700; font-size: 8.1px; font-family: 'EB Garamond', 'DejaVu Serif'; fill: #ffffff" transform="translate(207.104766 147.8214)">Rapports institutionnels (OIT, OCDE, Banque</text>
+    <text style="font-weight: 700; font-size: 8.1px; font-family: 'EB Garamond', 'DejaVu Serif'; fill: #ffffff" transform="translate(230.683992 158.3919)">mondiale, USGS, ICMM, ITIE…)</text>
    </g>
    <g id="text_4">
-    <text style="font-weight: 700; font-size: 8.1px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="286.2" y="198.642533" transform="rotate(-0 286.2 198.642533)">Publications scientifiques évaluées par les pairs</text>
+    <text style="font-weight: 700; font-size: 8.1px; font-family: 'EB Garamond', 'DejaVu Serif'; text-anchor: middle; fill: #ffffff" x="286.2" y="198.56745" transform="rotate(-0 286.2 198.56745)">Publications scientifiques évaluées par les pairs</text>
    </g>
    <g id="text_5">
-    <text style="font-weight: 700; font-size: 8.1px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="286.2" y="244.103333" transform="rotate(-0 286.2 244.103333)">Presse spécialisée, cabinets, associations professionnelles</text>
+    <text style="font-weight: 700; font-size: 8.1px; font-family: 'EB Garamond', 'DejaVu Serif'; text-anchor: middle; fill: #ffffff" x="286.2" y="244.02825" transform="rotate(-0 286.2 244.02825)">Presse spécialisée, cabinets, associations professionnelles</text>
    </g>
    <g id="text_6">
-    <text style="font-weight: 700; font-size: 8.1px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="286.2" y="289.564133" transform="rotate(-0 286.2 289.564133)">Blogs, forums, réseaux sociaux, contenus non signés</text>
+    <text style="font-weight: 700; font-size: 8.1px; font-family: 'EB Garamond', 'DejaVu Serif'; text-anchor: middle; fill: #ffffff" x="286.2" y="289.48905" transform="rotate(-0 286.2 289.48905)">Blogs, forums, réseaux sociaux, contenus non signés</text>
    </g>
    <g id="text_7">
-    <text style="font-weight: 700; font-size: 8.1px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="286.2" y="335.024933" transform="rotate(-0 286.2 335.024933)">Réponse de Claude sans source</text>
+    <text style="font-weight: 700; font-size: 8.1px; font-family: 'EB Garamond', 'DejaVu Serif'; text-anchor: middle; fill: #ffffff" x="286.2" y="334.94985" transform="rotate(-0 286.2 334.94985)">Réponse de Claude sans source</text>
    </g>
    <g id="text_8">
-    <text style="font-size: 8px; font-family: 'Inter', 'DejaVu Sans'; fill: #2d6a4f" transform="translate(532.67125 75.136312)">plus</text>
-    <text style="font-size: 8px; font-family: 'Inter', 'DejaVu Sans'; fill: #2d6a4f" transform="translate(527.56875 84.816)">fiable</text>
+    <text style="font-size: 8px; font-family: 'EB Garamond', 'DejaVu Serif'; fill: #3f5e48" transform="translate(535.5875 76.816)">plus</text>
+    <text style="font-size: 8px; font-family: 'EB Garamond', 'DejaVu Serif'; fill: #3f5e48" transform="translate(531.96375 84.816)">fiable</text>
    </g>
    <g id="text_9">
-    <text style="font-size: 8px; font-family: 'Inter', 'DejaVu Sans'; fill: #b23a48" transform="translate(515.06625 314.936625)">à vérifier</text>
-    <text style="font-size: 8px; font-family: 'Inter', 'DejaVu Sans'; fill: #b23a48" transform="translate(508.58 324.616312)">systémati-</text>
-    <text style="font-size: 8px; font-family: 'Inter', 'DejaVu Sans'; fill: #b23a48" transform="translate(515.1525 334.296)">quement</text>
+    <text style="font-size: 8px; font-family: 'EB Garamond', 'DejaVu Serif'; fill: #9e3b2f" transform="translate(522.475 318.296)">à vérifier</text>
+    <text style="font-size: 8px; font-family: 'EB Garamond', 'DejaVu Serif'; fill: #9e3b2f" transform="translate(518.155 326.296)">systémati-</text>
+    <text style="font-size: 8px; font-family: 'EB Garamond', 'DejaVu Serif'; fill: #9e3b2f" transform="translate(520.8675 334.296)">quement</text>
    </g>
    <g id="text_10">
-    <text style="font-style: italic; font-size: 7.5px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: middle; fill: #5b6b7f" x="286.2" y="358.091471" transform="rotate(-0 286.2 358.091471)">Une réponse de Claude n'est pas une source : c'est un point de départ à vérifier. Illustration réalisée pour cet ouvrage.</text>
+    <text style="font-style: italic; font-size: 7.5px; font-family: 'EB Garamond', 'DejaVu Serif'; text-anchor: middle; fill: #6b6560" x="286.2" y="356.9382" transform="rotate(-0 286.2 356.9382)">Une réponse de Claude n'est pas une source : c'est un point de départ à vérifier. Illustration réalisée pour cet ouvrage.</text>
    </g>
   </g>
  </g>
  <defs>
-  <clipPath id="pe174b8d735">
+  <clipPath id="p9d42eb1dc7">
    <rect x="7.2" y="7.2" width="558" height="354.816"/>
   </clipPath>
  </defs>

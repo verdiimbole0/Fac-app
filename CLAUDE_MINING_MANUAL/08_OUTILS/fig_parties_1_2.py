@@ -18,7 +18,7 @@ def f01_1():
     for i, (e, d) in enumerate(etapes):
         x = x0 + i * (w + gap)
         box(ax, x, 33, w, 9, e, fc=NAVY, ec=NAVY, color="white", bold=True, fs=9.5)
-        box(ax, x, 20, w, 11, d, fc=GREY, ec="#B8C2CC", fs=8, color=INK)
+        box(ax, x, 20, w, 11, d, fc=GREY, ec="#CFC8BD", fs=8, color=INK)
         if i < len(etapes) - 1:
             arrow(ax, (x + w, 37.5), (x + w + gap, 37.5), color=GOLD, lw=2)
     box(ax, 2, 4, 106, 13, "", fc=LIGHTTURQ, ec=TURQ)
@@ -36,8 +36,8 @@ def f01_2():
     title(ax, "Plan schématique du site de Mbiyo Copper Cobalt SA (fictif)", y=67)
     # rivière
     xs = np.linspace(0, 100, 200); ys = 12 + 4 * np.sin(xs / 9)
-    ax.plot(xs, ys, color="#6FA8DC", lw=6, solid_capstyle="round", zorder=1)
-    ax.text(88, 8, "Rivière Mbiyo", color="#2F6FA8", fontsize=8.5, style="italic")
+    ax.plot(xs, ys, color="#8FA39A", lw=6, solid_capstyle="round", zorder=1)
+    ax.text(88, 8, "Rivière Mbiyo", color="#4F6F5B", fontsize=8.5, style="italic")
     # permis
     ax.add_patch(Rectangle((8, 18), 84, 44, fc="none", ec=RED, lw=1.6, ls="--", zorder=1))
     ax.text(9, 60, "Limite du permis PE-MCC-001 (fictif)", color=RED, fontsize=8)
@@ -70,9 +70,9 @@ def f02_1():
     fig, ax = canvas(9, 6.2, 90, 62)
     title(ax, "Des concepts emboîtés", y=59.5)
     cercles = [(45, 29, 42, 27, LIGHTNAVY, NAVY, "Intelligence artificielle", "systèmes qui réalisent des tâches\nassociées à l'intelligence humaine"),
-               (45, 25, 33, 21, "#C8D6E8", NAVY, "Apprentissage automatique", "apprend des règles à partir de données"),
+               (45, 25, 33, 21, "#E4DED5", NAVY, "Apprentissage automatique", "apprend des règles à partir de données"),
                (45, 21, 24, 15, LIGHTTURQ, TURQ, "Apprentissage profond", "réseaux de neurones à nombreuses couches"),
-               (45, 17, 15, 9, GOLD, "#8A6D12", "IA générative\n(LLM : Claude)", "")]
+               (45, 17, 15, 9, GOLD, "#7A5634", "IA générative\n(LLM : Claude)", "")]
     for (cx, cy, rx, ry, fc, ec, lab, d) in cercles:
         ax.add_patch(Ellipse((cx, cy), 2 * rx, 2 * ry, fc=fc, ec=ec, lw=1.6))
     ax.text(45, 53, "Intelligence artificielle", ha="center", fontsize=11, fontweight="bold", color=NAVY)
@@ -117,7 +117,7 @@ def f02_3():
     for a, b in zip(pos[:-1], pos[1:]):
         for p in a:
             for q in b:
-                ax.plot([p[0], q[0]], [p[1], q[1]], color="#B8C2CC", lw=0.7, zorder=1)
+                ax.plot([p[0], q[0]], [p[1], q[1]], color="#CFC8BD", lw=0.7, zorder=1)
     cols = [GOLD, NAVY, NAVY, TURQ]
     for li, layer in enumerate(pos):
         for (x, y) in layer:
@@ -166,7 +166,7 @@ def f03_3():
     ax.text(39, 47.5, "Fenêtre de contexte (jusqu'à 1 million de tokens selon le modèle)", ha="center", fontsize=9, color=NAVY, fontweight="bold")
     blocs = [("Instructions système / instructions de projet", LIGHTNAVY, 6), ("Préférences et mémoire (si activées)", LIGHTNAVY, 4),
              ("Documents joints (PDF, Excel, rapports…)", LIGHTGOLD, 10), ("Historique de la conversation", GREY, 8),
-             ("Votre nouvelle question", LIGHTTURQ, 4), ("Réponse en cours de génération", "#CDEBD9", 5)]
+             ("Votre nouvelle question", LIGHTTURQ, 4), ("Réponse en cours de génération", "#E3E9E2", 5)]
     y = 44
     for lab, c, h in blocs:
         y -= h + 0.6
@@ -184,7 +184,7 @@ def f03_4():
              ("3. Réflexion (optionnelle)", "raisonnement interne\nselon l'effort", LIGHTGOLD),
              ("4. Calcul des probabilités", "token par token", LIGHTNAVY),
              ("5. Génération", "réponse assemblée\nprogressivement", LIGHTNAVY),
-             ("6. Votre vérification", "relecture, contrôle,\nvalidation", "#CDEBD9")]
+             ("6. Votre vérification", "relecture, contrôle,\nvalidation", "#E3E9E2")]
     x, w = 2, 16.6
     for i, (h, d, c) in enumerate(steps):
         box(ax, x, 14, w, 18, "", fc=c, ec=NAVY if i != 5 else GREEN)
@@ -247,13 +247,13 @@ def f05_1():
     box(ax, 3, 3, 99, 20, "", fc=GREY, ec=MID)
     ax.text(5, 19.5, "Signaux d'alerte", fontsize=9.5, fontweight="bold", color=NAVY)
     for i, s in enumerate(signes):
-        ax.text(6 + (i % 2) * 48, 14.5 - (i // 2) * 4.6, "⚠  " + s, fontsize=8.5, color=INK)
+        ax.text(6 + (i % 2) * 48, 14.5 - (i // 2) * 4.6, "—  " + s, fontsize=8.5, color=INK)
     return save(fig, "fig05_1_hallucination")
 
 def f05_2():
     fig, ax = plt.subplots(figsize=(8.6, 6.4))
     ax.axhline(0.5, color=MID, lw=1); ax.axvline(0.5, color=MID, lw=1)
-    quads = [(0.25, 0.75, "Usage encouragé\navec relecture", "#CDEBD9", "brouillons, résumés, mise en forme,\nreformulation, plans de rapports"),
+    quads = [(0.25, 0.75, "Usage encouragé\navec relecture", "#E3E9E2", "brouillons, résumés, mise en forme,\nreformulation, plans de rapports"),
              (0.75, 0.75, "Usage encadré\nvérification systématique", LIGHTGOLD, "analyses de données, synthèses\nréglementaires, calculs, traductions\ntechniques"),
              (0.25, 0.25, "Usage libre\n(faible enjeu)", LIGHTTURQ, "idées, brainstorming,\nentraînement, apprentissage"),
              (0.75, 0.25, "Claude ne décide pas\nexpertise humaine requise", LIGHTRED, "plans de tir, stabilité des talus\net digues, urgences, sécurité des\npersonnes, avis juridiques engageants")]
@@ -306,23 +306,23 @@ def f06_2():
         x = 2 + i * 36
         box(ax, x, 38, 34, 8, h, fc=c, ec=c, color="white", bold=True, fs=9.8)
         for j, it in enumerate(items):
-            ax.text(x + 2, 33 - j * 5, "✓ " + it, fontsize=8.8, color=INK, va="center")
+            ax.text(x + 2, 33 - j * 5, "—  " + it, fontsize=8.8, color=INK, va="center")
     return save(fig, "fig06_2_partage_roles")
 
 def f07_1():
     fig, ax = canvas(11, 6.6, 110, 66)
-    ax.add_patch(Rectangle((1, 1), 108, 62, fc="#FBFAF7", ec="#9AA5B1", lw=1.5))
-    ax.add_patch(Rectangle((1, 1), 22, 62, fc="#F0EEE8", ec="#9AA5B1", lw=1))
+    ax.add_patch(Rectangle((1, 1), 108, 62, fc="#FBFAF7", ec="#A39C92", lw=1.5))
+    ax.add_patch(Rectangle((1, 1), 22, 62, fc="#F0EEE8", ec="#A39C92", lw=1))
     for i, t in enumerate(["+ Nouvelle conversation", "Recherche", "Conversations", "Projets", "Artefacts", "Personnalisation"]):
         ax.text(4, 57 - i * 5, t, fontsize=8.5, color=INK, fontweight="bold" if i == 0 else "normal")
     ax.text(4, 20, "Conversations récentes", fontsize=7.5, color=MID)
     for i in range(4): box(ax, 3.5, 15 - i * 3.6, 17, 2.6, "", fc="#E4E1D9", ec="none", rounding=0.6)
     ax.text(4, 3.5, "Profil • Paramètres", fontsize=7.5, color=MID)
     ax.text(66, 50, "Comment puis-je vous aider aujourd'hui ?", ha="center", fontsize=13, color=INK)
-    box(ax, 32, 22, 68, 16, "", fc="white", ec="#B8C2CC", lw=1.4, rounding=2)
+    box(ax, 32, 22, 68, 16, "", fc="white", ec="#CFC8BD", lw=1.4, rounding=2)
     ax.text(35, 33.5, "Écrivez votre message…", fontsize=9.5, color=MID)
     ax.text(35, 25, "+", fontsize=13, color=INK); ax.text(40, 25.3, "outils : fichiers, recherche, connecteurs", fontsize=7.5, color=MID)
-    box(ax, 77, 23.6, 15, 4, "Modèle ▾", fc=GREY, ec="#B8C2CC", fs=8, rounding=1)
+    box(ax, 77, 23.6, 15, 4, "Modèle ▾", fc=GREY, ec="#CFC8BD", fs=8, rounding=1)
     ax.add_patch(Circle((96, 25.6), 2.2, fc=ORANGE, ec="none")); ax.text(96, 25.6, "↑", ha="center", va="center", color="white", fontweight="bold")
     callouts = [((14, 59), (14, 66), "A. Nouvelle conversation"), ((8, 42), (-1, 70), ""), ((50, 24.5), (58, 11), "C. Ajouter fichiers, outils,\nrecherche, connecteurs"),
                 ((84, 23.6), (84, 12), "D. Sélecteur de modèle\net options de réflexion"), ((66, 34), (66, 44.5), "")]
@@ -360,7 +360,7 @@ def f09_1():
     title(ax, "Le paramètre d'effort : du plus économe au plus approfondi", y=41.5, fs=12)
     lv = [("low", "tâches simples,\nrapides, à fort volume"), ("medium", "équilibre vitesse,\ncoût, performance"),
           ("high", "raisonnement complexe,\nanalyses exigeantes"), ("xhigh", "travaux agentiques\nlongs (> 30 min)"), ("max", "capacité maximale,\nsans contrainte de coût")]
-    cmap = ["#9ED9D3", "#5CBFB4", TURQ, "#0F7F78", NAVY]
+    cmap = ["#C9D6CC", "#7E9A86", TURQ, "#3F5E48", NAVY]
     for i, ((n, d), c) in enumerate(zip(lv, cmap)):
         x = 3 + i * 21
         ax.add_patch(Polygon([(x, 18), (x + 19, 18), (x + 21, 25), (x + 19, 32), (x, 32), (x + 2, 25)], fc=c, ec="white"))
@@ -376,8 +376,8 @@ def f09_2():
     code = ('{\n  "model": "claude-opus-5-5",\n  "max_tokens": 4096,\n  "system": "Tu es analyste HSE chez MCC…",\n'
             '  "messages": [\n    {"role": "user", "content": "Analyse ce rapport…"}\n  ],\n  "output_config": {"effort": "medium"},\n'
             '  "thinking": {"type": "adaptive"},\n  "stop_sequences": ["###FIN"]\n}')
-    box(ax, 3, 6, 50, 46, "", fc="#1B263B", ec="#1B263B", rounding=1.5)
-    ax.text(6, 49, code, fontsize=8.6, color="#E8EEF5", family="monospace", va="top", linespacing=1.55)
+    box(ax, 3, 6, 50, 46, "", fc="#26313A", ec="#26313A", rounding=1.5)
+    ax.text(6, 49, code, fontsize=8.6, color="#F4F1EC", family="monospace", va="top", linespacing=1.55)
     exp = [("model", "quel modèle répond"), ("max_tokens", "plafond de longueur de la sortie\n(réflexion comprise)"),
            ("system", "rôle, règles et contexte permanents"), ("messages", "la conversation (tours user / assistant)"),
            ("output_config.effort", "intensité de travail : low → max"), ("thinking", "mode de réflexion (adaptatif)"),
@@ -421,7 +421,7 @@ def f10_2():
         y = 54 - i * 10.5
         ax.add_patch(Circle((52, y), 3.3, fc=c, ec="none")); ax.text(52, y, l, ha="center", va="center", color="white", fontweight="bold", fontsize=12)
         ax.text(57, y, t, va="center", fontsize=8.2, color=INK)
-    box(ax, 2, 4, 38, 22, "Résultat : un brouillon structuré,\nfactuel, traçable, conforme au\nmodèle, avec ses lacunes\nexplicitement signalées", fc="#CDEBD9", ec=GREEN, fs=9)
+    box(ax, 2, 4, 38, 22, "Résultat : un brouillon structuré,\nfactuel, traçable, conforme au\nmodèle, avec ses lacunes\nexplicitement signalées", fc="#E3E9E2", ec=GREEN, fs=9)
     return save(fig, "fig10_2_avant_apres")
 
 def f11_1():
@@ -435,8 +435,8 @@ def f11_1():
         box(ax, x, 22, 19, 13, h, fc=NAVY if i % 2 == 0 else TURQ, ec="white", color="white", bold=True, fs=9.5)
         ax.text(x + 9.5, 15.5, d, ha="center", va="center", fontsize=8, color=INK)
         if i < 4: arrow(ax, (x + 19, 28.5), (x + 22.5, 28.5), color=GOLD, lw=2.2)
-        ax.add_patch(Circle((x + 9.5, 7), 2, fc=GREEN, ec="none")); ax.text(x + 9.5, 7, "✓", ha="center", va="center", color="white", fontsize=9)
-    ax.text(57, 2.5, "✓ = point de contrôle humain possible entre deux étapes", ha="center", fontsize=8.5, color=GREEN)
+        ax.add_patch(Circle((x + 9.5, 7), 2, fc=GREEN, ec="none")); ax.text(x + 9.5, 7, "H", ha="center", va="center", color="white", fontsize=9)
+    ax.text(57, 2.5, "H = point de contrôle humain possible entre deux étapes", ha="center", fontsize=8.5, color=GREEN)
     return save(fig, "fig11_1_chainage")
 
 def f11_2():
@@ -557,13 +557,13 @@ def f01_3():
     fig, (a1, a2) = plt.subplots(1, 2, figsize=(11, 4.6), gridspec_kw=dict(width_ratios=[1.25, 1]))
     pays = ["Chili", "Congo (RDC)", "Pérou", "Chine", "Russie", "Zambie", "Autres"]
     val = [5.3, 3.2, 2.7, 1.8, 1.3, 0.94, 23 - (5.3 + 3.2 + 2.7 + 1.8 + 1.3 + 0.94)]
-    cols = [NAVY, GOLD, NAVY, NAVY, NAVY, NAVY, "#B8C2CC"]
+    cols = [NAVY, GOLD, NAVY, NAVY, NAVY, NAVY, "#CFC8BD"]
     a1.barh(pays[::-1], val[::-1], color=cols[::-1], height=0.62)
     for i, v in enumerate(val[::-1]): a1.text(v + 0.1, i, f"{v:.1f}".replace(".", ","), va="center", fontsize=8.5)
     a1.set_title("Production minière de cuivre, 2025 (estimation)\nen millions de tonnes de cuivre contenu", fontsize=10)
     a1.set_xlim(0, 8.5); style_axes(a1, grid=False); a1.tick_params(labelsize=8.5)
     a2.pie([230, 44, 310 - 274], labels=["Congo (RDC)\n230 000 t", "Indonésie\n44 000 t", "Autres pays\n36 000 t"],
-           colors=[GOLD, NAVY, "#B8C2CC"], startangle=90, counterclock=False, wedgeprops=dict(width=0.42, edgecolor="white"),
+           colors=[GOLD, NAVY, "#CFC8BD"], startangle=90, counterclock=False, wedgeprops=dict(width=0.42, edgecolor="white"),
            textprops=dict(fontsize=8.5))
     a2.text(0, 0, "≈ 73 %\nRDC", ha="center", va="center", fontsize=12, fontweight="bold", color=NAVY)
     a2.set_title("Production minière de cobalt, 2025 (estimation)\ntotal mondial ≈ 310 000 t", fontsize=10)

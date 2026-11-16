@@ -85,7 +85,7 @@ Pour une entreprise, les offres **Team** et **Enterprise** apportent des fonctio
 
 C'est la question que pose toujours un directeur juridique. Les règles diffèrent selon le type d'offre :
 
-- Pour les offres grand public (Free, Pro, Max, Ultra), la page des offres indique que l'utilisation des conversations pour l'entraînement des modèles fonctionne sur le principe de l'**exclusion volontaire** (« opt-out ») [@ANT-PLANS] : un paramètre de confidentialité permet de refuser que les nouvelles conversations servent à améliorer les modèles [@ANT-HC-PRIVACY].
+- Pour les offres grand public (Free, Pro, Max, Ultra), la page des offres indique que l'utilisation des conversations pour l'entraînement des modèles fonctionne sur le principe de l'**exclusion volontaire** (« opt-out ») [@ANT-PLANS].
 - Pour les offres commerciales et l'API, les conditions sont fixées par les **conditions commerciales** et le contrat : le service juridique doit les lire avant tout déploiement.
 - La **politique de confidentialité** d'Anthropic décrit le traitement des données personnelles [@ANT-PRIV-POL].
 

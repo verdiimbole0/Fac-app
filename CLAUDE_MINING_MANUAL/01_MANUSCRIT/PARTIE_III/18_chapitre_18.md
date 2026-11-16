@@ -20,7 +20,7 @@ La mise à jour annuelle des ressources et réserves de MCC doit être publiée 
 
 #### C.1. Ressources, réserves et personne compétente
 
-Les codes de déclaration — le code JORC en Australasie, et plus largement les codes alignés sur le gabarit international du CRIRSCO — distinguent [@JORC-2012; @CRIRSCO] :
+Les codes de déclaration, comme le code JORC, distinguent [@JORC-2012] :
 
 - les **ressources minérales**, classées par niveau croissant de confiance géologique en **présumées**, **indiquées** et **mesurées** ;
 - les **réserves de minerai** (ou réserves minérales), partie économiquement exploitable des ressources indiquées et mesurées après prise en compte des **facteurs modificateurs** (exploitation, métallurgie, économie, marché, juridique, environnement, social, gouvernance), classées en **probables** et **prouvées**.

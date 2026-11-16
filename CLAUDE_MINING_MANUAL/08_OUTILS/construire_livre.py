@@ -11,7 +11,7 @@ TMP = ROOT / "06_PRODUCTION_FINALE" / "_build"
 sys.path.insert(0, str(ROOT / "08_OUTILS"))
 from sources import SOURCES, CONSULTE  # noqa: E402
 
-TITRE = "CLAUDE_ET_IA_INDUSTRIE_MINIERE"
+TITRE = "LA_MINE_AUGMENTEE"
 
 COURT = {  # auteur abrégé pour les citations dans le texte
     "Anthropic": "Anthropic", "Model Context Protocol": "Model Context Protocol",
@@ -101,20 +101,13 @@ def generer_sources():
     biblio = sorted([s for s in SOURCES if s["cat"] == "B"], key=sort_key)
     web = sorted([s for s in SOURCES if s["cat"] == "W"], key=sort_key)
     with open(d / "BIBLIOGRAPHIE_WEBOGRAPHIE.md", "w", encoding="utf-8") as f:
-        f.write("## Annexe I — Bibliographie et webographie vérifiées\n\n")
-        f.write("Les références ci-dessous ont toutes été identifiées et contrôlées pendant la production de l'ouvrage "
-                f"(consultations du {CONSULTE}). Elles sont présentées selon les normes APA (7e édition), adaptées au français. "
-                "Le symbole ◆ signale une consultation directe du document ou de la page ; le symbole ◇ une référence dont "
-                "l'existence, le titre, l'éditeur et l'adresse ont été confirmés par recherche documentaire, l'accès direct "
-                "ayant été impossible depuis l'environnement de production (pare-feu, document payant ou norme commerciale). "
-                "Le registre complet, avec la méthode de vérification et l'usage de chaque source, figure dans le fichier "
-                "`REGISTRE_SOURCES.csv` livré avec le manuscrit.\n\n")
-        f.write("### Bibliographie\n\n*Ouvrages, rapports institutionnels, normes, textes légaux et articles scientifiques.*\n\n")
-        for s in biblio:
-            f.write(f"- {'◆' if s['verif']=='D' else '◇'} {apa_complete(s)}\n")
-        f.write("\n### Webographie\n\n*Documentations en ligne, centres d'aide, pages institutionnelles et annonces officielles.*\n\n")
-        for s in web:
-            f.write(f"- {'◆' if s['verif']=='D' else '◇'} {apa_complete(s)}\n")
+        f.write("## Annexe I — Bibliographie et webographie\n\n")
+        f.write("### Bibliographie\n\n")
+        for s_ in biblio:
+            f.write(f"::: {{custom-style=\"Reference\"}}\n{apa_complete(s_)}\n:::\n\n")
+        f.write("### Webographie\n\n")
+        for s_ in web:
+            f.write(f"::: {{custom-style=\"Reference\"}}\n{apa_complete(s_)}\n:::\n\n")
     with open(d / "REGISTRE_SOURCES.csv", "w", encoding="utf-8", newline="") as f:
         w = csv.writer(f, delimiter=";")
         w.writerow(["id", "categorie", "type", "citation_dans_le_texte", "reference_APA", "url", "doi", "date_consultation", "verification", "usage"])
@@ -168,6 +161,84 @@ def pandoc_docx(md, docx):
            "-M", "lang=fr-FR", "-M", "title=Claude et l'intelligence artificielle au service de l'industrie minière"]
     subprocess.run(cmd, check=True, cwd=str(ROOT))
 
+def couverture_xml(doc, chemin, nom, idx):
+    """Image pleine page ancrée au coin de la page, devant le texte (masque en-tête et folio)."""
+    from docx.shared import Cm
+    from docx.oxml import parse_xml
+    rid, _ = doc.part.get_or_add_image(str(chemin))
+    cx, cy = int(Cm(15.5)), int(Cm(23.5))
+    return parse_xml(f'''<w:r xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"
+ xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing"
+ xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main"
+ xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture"
+ xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"><w:drawing>
+<wp:anchor distT="0" distB="0" distL="0" distR="0" simplePos="0" relativeHeight="{251660000+idx}" behindDoc="0" locked="1" layoutInCell="1" allowOverlap="1">
+<wp:simplePos x="0" y="0"/><wp:positionH relativeFrom="page"><wp:posOffset>0</wp:posOffset></wp:positionH>
+<wp:positionV relativeFrom="page"><wp:posOffset>0</wp:posOffset></wp:positionV>
+<wp:extent cx="{cx}" cy="{cy}"/><wp:effectExtent l="0" t="0" r="0" b="0"/><wp:wrapNone/>
+<wp:docPr id="{90000+idx}" name="{nom}"/><wp:cNvGraphicFramePr><a:graphicFrameLocks noChangeAspect="1"/></wp:cNvGraphicFramePr>
+<a:graphic><a:graphicData uri="http://schemas.openxmlformats.org/drawingml/2006/picture"><pic:pic>
+<pic:nvPicPr><pic:cNvPr id="{90000+idx}" name="{nom}"/><pic:cNvPicPr/></pic:nvPicPr>
+<pic:blipFill><a:blip r:embed="{rid}"/><a:stretch><a:fillRect/></a:stretch></pic:blipFill>
+<pic:spPr><a:xfrm><a:off x="0" y="0"/><a:ext cx="{cx}" cy="{cy}"/></a:xfrm><a:prstGeom prst="rect"><a:avLst/></a:prstGeom></pic:spPr>
+</pic:pic></a:graphicData></a:graphic></wp:anchor></w:drawing></w:r>''')
+
+def couvertures(doc):
+    """1re de couverture en tête du livre, 4e de couverture en dernière page (sur page paire)."""
+    from docx.oxml import OxmlElement
+    from docx.oxml.ns import qn
+    d = ROOT / "02_ILLUSTRATIONS" / "COUVERTURES"
+    body = doc.element.body
+    def para(*runs):
+        p = OxmlElement("w:p")
+        for r in runs: p.append(r)
+        return p
+    def saut():
+        r = OxmlElement("w:r"); br = OxmlElement("w:br"); br.set(qn("w:type"), "page"); r.append(br); return r
+    # avant : couverture puis page blanche (verso) avant la page de titre
+    body.insert(0, para(saut()))
+    body.insert(0, para(couverture_xml(doc, d / "couverture_avant.png", "Couverture", 1), saut()))
+    # arrière : dernière page
+    sect = body.find(qn("w:sectPr"))
+    sect.addprevious(para(saut()))
+    sect.addprevious(para(couverture_xml(doc, d / "couverture_arriere.png", "Quatrieme de couverture", 2)))
+
+def liminaires_sans_entete(doc):
+    """Section distincte pour les pages liminaires (couverture, titre, mentions, sommaire) : ni titre courant ni folio."""
+    import copy
+    from docx.oxml import OxmlElement
+    from docx.oxml.ns import qn
+    body = doc.element.body
+    cible = None
+    for p in body.iter(qn("w:p")):
+        st = p.find(qn("w:pPr") + "/" + qn("w:pStyle"))
+        if st is not None and st.get(qn("w:val")) == "Heading2" and "Avant-propos" in "".join(t.text or "" for t in p.iter(qn("w:t"))):
+            cible = p; break
+    if cible is None: return
+    ancre = cible
+    while ancre.getprevious() is not None and ancre.getprevious().tag == qn("w:bookmarkStart"):
+        ancre = ancre.getprevious()
+    prev = OxmlElement("w:p"); ancre.addprevious(prev)   # paragraphe porteur du saut de section, après le sommaire
+    def poser_type(sect, val):
+        for e in sect.findall(qn("w:type")): sect.remove(e)
+        t = OxmlElement("w:type"); t.set(qn("w:val"), val)
+        sect.find(qn("w:pgSz")).addprevious(t)
+    corps = body.find(qn("w:sectPr"))
+    sect = copy.deepcopy(corps)
+    for tag in ("w:headerReference", "w:footerReference", "w:titlePg"):
+        for e in sect.findall(qn(tag)): sect.remove(e)
+    poser_type(sect, "nextPage")
+    pPr = prev.find(qn("w:pPr"))
+    if pPr is None:
+        pPr = OxmlElement("w:pPr"); prev.insert(0, pPr)
+    pPr.append(sect)
+    s0 = doc.sections[0]
+    assert s0._sectPr is sect
+    for hf in (s0.header, s0.even_page_header, s0.footer, s0.even_page_footer):
+        hf.is_linked_to_previous = False
+        for p in hf.paragraphs: p.text = ""
+    poser_type(corps, "oddPage")   # le corps démarre sur une belle page
+
 def post_traitement(docx):
     from docx import Document
     from docx.shared import Pt, RGBColor
@@ -179,30 +250,38 @@ def post_traitement(docx):
     for p in list(doc.paragraphs[:3]):
         if p.style.name in ("Title",):
             body.remove(p._p)
+    INK, RULE = "1A1A1A", "8A5A2B"
+    def bord(parent, tag, sides):
+        old = parent.find(qn(tag))
+        if old is not None: parent.remove(old)
+        el = OxmlElement(tag)
+        for side, (val, sz, col) in sides.items():
+            e = OxmlElement(f"w:{side}"); e.set(qn("w:val"), val); e.set(qn("w:sz"), str(sz)); e.set(qn("w:space"), "0"); e.set(qn("w:color"), col)
+            el.append(e)
+        parent.append(el)
+    nil = ("nil", 0, "auto")
     for t in doc.tables:
-        tbl = t._tbl
-        tblPr = tbl.tblPr
-        borders = OxmlElement("w:tblBorders")
-        for side in ("top", "left", "bottom", "right", "insideH", "insideV"):
-            e = OxmlElement(f"w:{side}"); e.set(qn("w:val"), "single"); e.set(qn("w:sz"), "4"); e.set(qn("w:color"), "B8C2CC")
-            borders.append(e)
-        old = tblPr.find(qn("w:tblBorders"))
-        if old is not None: tblPr.remove(old)
-        tblPr.append(borders)
+        tblPr = t._tbl.tblPr
+        # filets « booktabs » : filet épais en haut et en bas, filet fin sous l'en-tête, aucune trame
+        bord(tblPr, "w:tblBorders", {"top": ("single", 10, INK), "left": nil, "bottom": ("single", 10, INK),
+                                      "right": nil, "insideH": ("single", 2, "D9D4CC"), "insideV": nil})
         for ri, row in enumerate(t.rows):
             if ri == 0:
                 trPr = row._tr.get_or_add_trPr(); h = OxmlElement("w:tblHeader"); h.set(qn("w:val"), "true"); trPr.append(h)
             for cell in row.cells:
                 tcPr = cell._tc.get_or_add_tcPr()
-                shd = OxmlElement("w:shd"); shd.set(qn("w:val"), "clear"); shd.set(qn("w:color"), "auto")
-                shd.set(qn("w:fill"), "0B2545" if ri == 0 else ("F4F6F9" if ri % 2 == 0 else "FFFFFF"))
-                tcPr.append(shd)
+                for old in tcPr.findall(qn("w:shd")): tcPr.remove(old)
+                if ri == 0:
+                    bord(tcPr, "w:tcBorders", {"bottom": ("single", 6, RULE)})
                 for p in cell.paragraphs:
-                    p.paragraph_format.space_after = Pt(1); p.paragraph_format.alignment = None
+                    pf = p.paragraph_format
+                    pf.space_before = Pt(1.5); pf.space_after = Pt(1.5); pf.first_line_indent = Pt(0); pf.alignment = None
                     for r in p.runs:
                         r.font.size = Pt(8.5)
                         if ri == 0:
-                            r.font.bold = True; r.font.color.rgb = RGBColor(0xFF, 0xFF, 0xFF)
+                            r.font.bold = False; r.font.small_caps = True; r.font.color.rgb = RGBColor(0x1A, 0x1A, 0x1A)
+    liminaires_sans_entete(doc)
+    couvertures(doc)
     # demande à Word de mettre à jour le sommaire à l'ouverture
     settings = doc.settings.element
     uf = OxmlElement("w:updateFields"); uf.set(qn("w:val"), "true"); settings.append(uf)
@@ -225,7 +304,19 @@ def main():
     print(f"Fichiers : {len(files)} — environ {mots:,} mots".replace(",", " "))
     if not sans_pdf:
         pdf = OUT / f"{nom}.pdf"
-        subprocess.run(["/usr/bin/python3", str(ROOT / "08_OUTILS" / "maj_toc_pdf.py"), str(docx), str(pdf)], check=True)
+        exporter = lambda: subprocess.run(["/usr/bin/python3", str(ROOT / "08_OUTILS" / "maj_toc_pdf.py"), str(docx), str(pdf)], check=True)
+        exporter()
+        pages = int(re.search(r"Pages:\s+(\d+)", subprocess.run(["pdfinfo", str(pdf)], capture_output=True, text=True).stdout).group(1))
+        if pages % 2 and not partie:
+            # la 4e de couverture doit tomber sur une page paire (verso) : on ajoute une page blanche
+            from docx import Document
+            from docx.oxml import OxmlElement
+            from docx.oxml.ns import qn
+            d = Document(str(docx)); body = d.element.body
+            dernier = body.find(qn("w:sectPr")).getprevious()
+            p = OxmlElement("w:p"); r = OxmlElement("w:r"); br = OxmlElement("w:br"); br.set(qn("w:type"), "page")
+            r.append(br); p.append(r); dernier.addprevious(p)
+            d.save(str(docx)); exporter()
 
 if __name__ == "__main__":
     main()

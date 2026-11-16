@@ -92,7 +92,7 @@ Les termes sont classés par ordre alphabétique. Le chapitre de référence est
 
 | Français | Anglais | Remarque |
 |---|---|---|
-| Ressources présumées / indiquées / mesurées | Inferred / Indicated / Measured Mineral Resources | Termes des codes alignés sur le CRIRSCO |
+| Ressources présumées / indiquées / mesurées | Inferred / Indicated / Measured Mineral Resources | Terminologie du code JORC (2012) |
 | Réserves probables / prouvées | Probable / Proved Ore Reserves (JORC) | Vérifier la terminologie du code applicable |
 | Personne compétente | Competent Person | |
 | Facteurs modificateurs | Modifying Factors | |

@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-11-16T10:34:46.932253</dc:date>
+    <dc:date>2026-11-16T13:46:34.511759</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -32,211 +32,211 @@ z
    <g id="patch_2">
     <path d="M 314.1 108.991819 
 Q 314.1 120.851925 314.1 130.923176 
-" clip-path="url(#p07faa79fed)" style="fill: none; stroke: #0b2545; stroke-width: 1.6; stroke-linecap: round"/>
+" clip-path="url(#pca4a6d3a6f)" style="fill: none; stroke: #26313a; stroke-width: 1.6; stroke-linecap: round"/>
     <path d="M 316.9 125.323176 
 L 314.1 130.923176 
 L 311.3 125.323176 
 z
-" clip-path="url(#p07faa79fed)" style="fill: #0b2545; stroke: #0b2545; stroke-width: 1.6; stroke-linecap: round"/>
+" clip-path="url(#pca4a6d3a6f)" style="fill: #26313a; stroke: #26313a; stroke-width: 1.6; stroke-linecap: round"/>
    </g>
    <g id="patch_3">
     <path d="M 312.118485 184.879549 
 Q 192.734259 201.240102 74.67925 217.418497 
-" clip-path="url(#p07faa79fed)" style="fill: none; stroke: #c9a227; stroke-width: 1.2; stroke-linecap: round"/>
+" clip-path="url(#pca4a6d3a6f)" style="fill: none; stroke: #8a5a2b; stroke-width: 1.2; stroke-linecap: round"/>
     <path d="M 80.607557 219.432245 
 L 74.67925 217.418497 
 L 79.847233 213.8841 
 z
-" clip-path="url(#p07faa79fed)" style="fill: #c9a227; stroke: #c9a227; stroke-width: 1.2; stroke-linecap: round"/>
+" clip-path="url(#pca4a6d3a6f)" style="fill: #8a5a2b; stroke: #8a5a2b; stroke-width: 1.2; stroke-linecap: round"/>
    </g>
    <g id="patch_4">
     <path d="M 312.170551 185.142977 
 Q 254.113894 201.240307 197.350101 216.979165 
-" clip-path="url(#p07faa79fed)" style="fill: none; stroke: #c9a227; stroke-width: 1.2; stroke-linecap: round"/>
+" clip-path="url(#pca4a6d3a6f)" style="fill: none; stroke: #8a5a2b; stroke-width: 1.2; stroke-linecap: round"/>
     <path d="M 203.494637 218.18111 
 L 197.350101 216.979165 
 L 201.998379 212.784703 
 z
-" clip-path="url(#p07faa79fed)" style="fill: #c9a227; stroke: #c9a227; stroke-width: 1.2; stroke-linecap: round"/>
+" clip-path="url(#pca4a6d3a6f)" style="fill: #8a5a2b; stroke: #8a5a2b; stroke-width: 1.2; stroke-linecap: round"/>
    </g>
    <g id="patch_5">
     <path d="M 314.267223 186.601729 
 Q 315.494889 201.238674 316.610419 214.538673 
-" clip-path="url(#p07faa79fed)" style="fill: none; stroke: #c9a227; stroke-width: 1.2; stroke-linecap: round"/>
+" clip-path="url(#pca4a6d3a6f)" style="fill: none; stroke: #8a5a2b; stroke-width: 1.2; stroke-linecap: round"/>
     <path d="M 318.932568 208.72424 
 L 316.610419 214.538673 
 L 313.352163 209.192294 
 z
-" clip-path="url(#p07faa79fed)" style="fill: #c9a227; stroke: #c9a227; stroke-width: 1.2; stroke-linecap: round"/>
+" clip-path="url(#pca4a6d3a6f)" style="fill: #8a5a2b; stroke: #8a5a2b; stroke-width: 1.2; stroke-linecap: round"/>
    </g>
    <g id="patch_6">
     <path d="M 316.034898 185.120644 
 Q 376.87482 201.239952 436.417848 217.015653 
-" clip-path="url(#p07faa79fed)" style="fill: none; stroke: #c9a227; stroke-width: 1.2; stroke-linecap: round"/>
+" clip-path="url(#pca4a6d3a6f)" style="fill: none; stroke: #8a5a2b; stroke-width: 1.2; stroke-linecap: round"/>
     <path d="M 431.721727 212.874826 
 L 436.417848 217.015653 
 L 430.287513 218.288053 
 z
-" clip-path="url(#p07faa79fed)" style="fill: #c9a227; stroke: #c9a227; stroke-width: 1.2; stroke-linecap: round"/>
+" clip-path="url(#pca4a6d3a6f)" style="fill: #8a5a2b; stroke: #8a5a2b; stroke-width: 1.2; stroke-linecap: round"/>
    </g>
    <g id="patch_7">
     <path d="M 316.0816 184.873458 
 Q 438.25539 201.240052 559.099417 217.428509 
-" clip-path="url(#p07faa79fed)" style="fill: none; stroke: #c9a227; stroke-width: 1.2; stroke-linecap: round"/>
+" clip-path="url(#pca4a6d3a6f)" style="fill: none; stroke: #8a5a2b; stroke-width: 1.2; stroke-linecap: round"/>
     <path d="M 553.92077 213.909757 
 L 559.099417 217.428509 
 L 553.177227 219.460175 
 z
-" clip-path="url(#p07faa79fed)" style="fill: #c9a227; stroke: #c9a227; stroke-width: 1.2; stroke-linecap: round"/>
+" clip-path="url(#pca4a6d3a6f)" style="fill: #8a5a2b; stroke: #8a5a2b; stroke-width: 1.2; stroke-linecap: round"/>
    </g>
    <g id="patch_8">
-    <path d="M 228.168 106.992 
-L 400.032 106.992 
-Q 408.96 106.992 408.96 98.1216 
-L 408.96 65.9664 
-Q 408.96 57.096 400.032 57.096 
-L 228.168 57.096 
-Q 219.24 57.096 219.24 65.9664 
-L 219.24 98.1216 
-Q 219.24 106.992 228.168 106.992 
+    <path d="M 221.193 106.992 
+L 407.007 106.992 
+Q 408.96 106.992 408.96 105.0516 
+L 408.96 59.0364 
+Q 408.96 57.096 407.007 57.096 
+L 221.193 57.096 
+Q 219.24 57.096 219.24 59.0364 
+L 219.24 105.0516 
+Q 219.24 106.992 221.193 106.992 
 z
-" clip-path="url(#p07faa79fed)" style="fill: #0b2545; stroke: #0b2545; stroke-width: 1.4; stroke-linejoin: miter"/>
+" clip-path="url(#pca4a6d3a6f)" style="fill: #26313a; stroke: #26313a; stroke-width: 1.4; stroke-linejoin: miter"/>
    </g>
    <g id="patch_9">
-    <path d="M 228.168 184.608 
-L 400.032 184.608 
-Q 408.96 184.608 408.96 175.7376 
-L 408.96 143.5824 
-Q 408.96 134.712 400.032 134.712 
-L 228.168 134.712 
-Q 219.24 134.712 219.24 143.5824 
-L 219.24 175.7376 
-Q 219.24 184.608 228.168 184.608 
+    <path d="M 221.193 184.608 
+L 407.007 184.608 
+Q 408.96 184.608 408.96 182.6676 
+L 408.96 136.6524 
+Q 408.96 134.712 407.007 134.712 
+L 221.193 134.712 
+Q 219.24 134.712 219.24 136.6524 
+L 219.24 182.6676 
+Q 219.24 184.608 221.193 184.608 
 z
-" clip-path="url(#p07faa79fed)" style="fill: #dce4ef; stroke: #0b2545; stroke-width: 1.4; stroke-linejoin: miter"/>
+" clip-path="url(#pca4a6d3a6f)" style="fill: #ece8e1; stroke: #26313a; stroke-width: 1.4; stroke-linejoin: miter"/>
    </g>
    <g id="patch_10">
-    <path d="M 27.288 273.312 
-L 115.452 273.312 
-Q 124.38 273.312 124.38 264.4416 
-L 124.38 226.7424 
-Q 124.38 217.872 115.452 217.872 
-L 27.288 217.872 
-Q 18.36 217.872 18.36 226.7424 
-L 18.36 264.4416 
-Q 18.36 273.312 27.288 273.312 
+    <path d="M 20.313 273.312 
+L 122.427 273.312 
+Q 124.38 273.312 124.38 271.3716 
+L 124.38 219.8124 
+Q 124.38 217.872 122.427 217.872 
+L 20.313 217.872 
+Q 18.36 217.872 18.36 219.8124 
+L 18.36 271.3716 
+Q 18.36 273.312 20.313 273.312 
 z
-" clip-path="url(#p07faa79fed)" style="fill: #d5efec; stroke: #13a89e; stroke-width: 1.4; stroke-linejoin: miter"/>
+" clip-path="url(#pca4a6d3a6f)" style="fill: #e4e9ec; stroke: #5a6f7e; stroke-width: 1.4; stroke-linejoin: miter"/>
    </g>
    <g id="patch_11">
-    <path d="M 150.048 273.312 
-L 238.212 273.312 
-Q 247.14 273.312 247.14 264.4416 
-L 247.14 226.7424 
-Q 247.14 217.872 238.212 217.872 
-L 150.048 217.872 
-Q 141.12 217.872 141.12 226.7424 
-L 141.12 264.4416 
-Q 141.12 273.312 150.048 273.312 
+    <path d="M 143.073 273.312 
+L 245.187 273.312 
+Q 247.14 273.312 247.14 271.3716 
+L 247.14 219.8124 
+Q 247.14 217.872 245.187 217.872 
+L 143.073 217.872 
+Q 141.12 217.872 141.12 219.8124 
+L 141.12 271.3716 
+Q 141.12 273.312 143.073 273.312 
 z
-" clip-path="url(#p07faa79fed)" style="fill: #d5efec; stroke: #13a89e; stroke-width: 1.4; stroke-linejoin: miter"/>
+" clip-path="url(#pca4a6d3a6f)" style="fill: #e4e9ec; stroke: #5a6f7e; stroke-width: 1.4; stroke-linejoin: miter"/>
    </g>
    <g id="patch_12">
-    <path d="M 272.808 273.312 
-L 360.972 273.312 
-Q 369.9 273.312 369.9 264.4416 
-L 369.9 226.7424 
-Q 369.9 217.872 360.972 217.872 
-L 272.808 217.872 
-Q 263.88 217.872 263.88 226.7424 
-L 263.88 264.4416 
-Q 263.88 273.312 272.808 273.312 
+    <path d="M 265.833 273.312 
+L 367.947 273.312 
+Q 369.9 273.312 369.9 271.3716 
+L 369.9 219.8124 
+Q 369.9 217.872 367.947 217.872 
+L 265.833 217.872 
+Q 263.88 217.872 263.88 219.8124 
+L 263.88 271.3716 
+Q 263.88 273.312 265.833 273.312 
 z
-" clip-path="url(#p07faa79fed)" style="fill: #d5efec; stroke: #13a89e; stroke-width: 1.4; stroke-linejoin: miter"/>
+" clip-path="url(#pca4a6d3a6f)" style="fill: #e4e9ec; stroke: #5a6f7e; stroke-width: 1.4; stroke-linejoin: miter"/>
    </g>
    <g id="patch_13">
-    <path d="M 395.568 273.312 
-L 483.732 273.312 
-Q 492.66 273.312 492.66 264.4416 
-L 492.66 226.7424 
-Q 492.66 217.872 483.732 217.872 
-L 395.568 217.872 
-Q 386.64 217.872 386.64 226.7424 
-L 386.64 264.4416 
-Q 386.64 273.312 395.568 273.312 
+    <path d="M 388.593 273.312 
+L 490.707 273.312 
+Q 492.66 273.312 492.66 271.3716 
+L 492.66 219.8124 
+Q 492.66 217.872 490.707 217.872 
+L 388.593 217.872 
+Q 386.64 217.872 386.64 219.8124 
+L 386.64 271.3716 
+Q 386.64 273.312 388.593 273.312 
 z
-" clip-path="url(#p07faa79fed)" style="fill: #d5efec; stroke: #13a89e; stroke-width: 1.4; stroke-linejoin: miter"/>
+" clip-path="url(#pca4a6d3a6f)" style="fill: #e4e9ec; stroke: #5a6f7e; stroke-width: 1.4; stroke-linejoin: miter"/>
    </g>
    <g id="patch_14">
-    <path d="M 518.328 273.312 
-L 606.492 273.312 
-Q 615.42 273.312 615.42 264.4416 
-L 615.42 226.7424 
-Q 615.42 217.872 606.492 217.872 
-L 518.328 217.872 
-Q 509.4 217.872 509.4 226.7424 
-L 509.4 264.4416 
-Q 509.4 273.312 518.328 273.312 
+    <path d="M 511.353 273.312 
+L 613.467 273.312 
+Q 615.42 273.312 615.42 271.3716 
+L 615.42 219.8124 
+Q 615.42 217.872 613.467 217.872 
+L 511.353 217.872 
+Q 509.4 217.872 509.4 219.8124 
+L 509.4 271.3716 
+Q 509.4 273.312 511.353 273.312 
 z
-" clip-path="url(#p07faa79fed)" style="fill: #d5efec; stroke: #13a89e; stroke-width: 1.4; stroke-linejoin: miter"/>
+" clip-path="url(#pca4a6d3a6f)" style="fill: #e4e9ec; stroke: #5a6f7e; stroke-width: 1.4; stroke-linejoin: miter"/>
    </g>
    <g id="text_1">
-    <text style="font-weight: 700; font-size: 12.5px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: middle; fill: #0b2545" x="286.2" y="25.607119" transform="rotate(-0 286.2 25.607119)">Gouvernance de l'IA à MCC : qui fait quoi ?</text>
+    <text style="font-weight: 700; font-size: 12.5px; font-family: 'EB Garamond', 'DejaVu Serif'; text-anchor: middle; fill: #26313a" x="286.2" y="25.49125" transform="rotate(-0 286.2 25.49125)">Gouvernance de l'IA à MCC : qui fait quoi ?</text>
    </g>
    <g id="text_2">
-    <text style="font-weight: 700; font-size: 8.6px; font-family: 'Inter', 'DejaVu Sans'; fill: #ffffff" transform="translate(262.755312 78.795022)">Conseil d'administration</text>
-    <text style="font-weight: 700; font-size: 8.6px; font-family: 'Inter', 'DejaVu Sans'; fill: #ffffff" transform="translate(240.3765 90.989806)">(orientations, appétence au risque)</text>
+    <text style="font-weight: 700; font-size: 8.6px; font-family: 'EB Garamond', 'DejaVu Serif'; fill: #ffffff" transform="translate(269.199937 77.979156)">Conseil d'administration</text>
+    <text style="font-weight: 700; font-size: 8.6px; font-family: 'EB Garamond', 'DejaVu Serif'; fill: #ffffff" transform="translate(252.361406 90.859672)">(orientations, appétence au risque)</text>
    </g>
    <g id="text_3">
-    <text style="font-weight: 700; font-size: 8.6px; font-family: 'Inter', 'DejaVu Sans'; fill: #222831" transform="translate(269.303406 155.529522)">Comité de pilotage IA</text>
-    <text style="font-weight: 700; font-size: 8.6px; font-family: 'Inter', 'DejaVu Sans'; fill: #222831" transform="translate(249.09475 168.586993)">DG, DAF, HSE, Juridique, IT, RH</text>
+    <text style="font-weight: 700; font-size: 8.6px; font-family: 'EB Garamond', 'DejaVu Serif'; fill: #1a1a1a" transform="translate(274.594422 154.434156)">Comité de pilotage IA</text>
+    <text style="font-weight: 700; font-size: 8.6px; font-family: 'EB Garamond', 'DejaVu Serif'; fill: #1a1a1a" transform="translate(253.259703 168.471641)">DG, DAF, HSE, Juridique, IT, RH</text>
    </g>
    <g id="text_4">
-    <text style="font-weight: 700; font-size: 8px; font-family: 'Inter', 'DejaVu Sans'; fill: #222831" transform="translate(49.593125 242.567195)">Référent IA</text>
-    <text style="font-weight: 700; font-size: 8px; font-family: 'Inter', 'DejaVu Sans'; fill: #222831" transform="translate(44.645625 254.368055)">(K. Mutombo)</text>
+    <text style="font-weight: 700; font-size: 8px; font-family: 'EB Garamond', 'DejaVu Serif'; fill: #1a1a1a" transform="translate(51.393125 241.807)">Référent IA</text>
+    <text style="font-weight: 700; font-size: 8px; font-family: 'EB Garamond', 'DejaVu Serif'; fill: #1a1a1a" transform="translate(47.305625 254.08075)">(K. Mutombo)</text>
    </g>
    <g id="text_5">
-    <text style="font-size: 7.4px; font-family: 'Inter', 'DejaVu Sans'" transform="translate(30.898359 299.247039)">formation, bibliothèque</text>
-    <text style="font-size: 7.4px; font-family: 'Inter', 'DejaVu Sans'" transform="translate(35.797969 308.20075)">de prompts, support</text>
+    <text style="font-size: 7.4px; font-family: 'EB Garamond', 'DejaVu Serif'" transform="translate(37.247906 298.886)">formation, bibliothèque</text>
+    <text style="font-size: 7.4px; font-family: 'EB Garamond', 'DejaVu Serif'" transform="translate(42.371828 306.286)">de prompts, support</text>
    </g>
    <g id="text_6">
-    <text style="font-weight: 700; font-size: 8px; font-family: 'Inter', 'DejaVu Sans'; fill: #222831" transform="translate(168.983125 241.79657)">Informatique</text>
-    <text style="font-weight: 700; font-size: 8px; font-family: 'Inter', 'DejaVu Sans'; fill: #222831" transform="translate(174.476875 254.669305)">&amp; sécurité</text>
+    <text style="font-weight: 700; font-size: 8px; font-family: 'EB Garamond', 'DejaVu Serif'; fill: #1a1a1a" transform="translate(171.72625 240.742625)">Informatique</text>
+    <text style="font-weight: 700; font-size: 8px; font-family: 'EB Garamond', 'DejaVu Serif'; fill: #1a1a1a" transform="translate(177.03375 254.665125)">&amp; sécurité</text>
    </g>
    <g id="text_7">
-    <text style="font-size: 7.4px; font-family: 'Inter', 'DejaVu Sans'" transform="translate(153.993672 299.247039)">comptes, connecteurs,</text>
-    <text style="font-size: 7.4px; font-family: 'Inter', 'DejaVu Sans'" transform="translate(170.778953 308.20075)">journalisation</text>
+    <text style="font-size: 7.4px; font-family: 'EB Garamond', 'DejaVu Serif'" transform="translate(162.919922 298.886)">comptes, connecteurs,</text>
+    <text style="font-size: 7.4px; font-family: 'EB Garamond', 'DejaVu Serif'" transform="translate(174.578391 306.286)">journalisation</text>
    </g>
    <g id="text_8">
-    <text style="font-weight: 700; font-size: 8px; font-family: 'Inter', 'DejaVu Sans'; fill: #222831" transform="translate(294.685625 241.79657)">Juridique &amp;</text>
-    <text style="font-weight: 700; font-size: 8px; font-family: 'Inter', 'DejaVu Sans'; fill: #222831" transform="translate(295.431875 254.669305)">conformité</text>
+    <text style="font-weight: 700; font-size: 8px; font-family: 'EB Garamond', 'DejaVu Serif'; fill: #1a1a1a" transform="translate(296.918125 240.738875)">Juridique &amp;</text>
+    <text style="font-weight: 700; font-size: 8px; font-family: 'EB Garamond', 'DejaVu Serif'; fill: #1a1a1a" transform="translate(298.4025 254.8845)">conformité</text>
    </g>
    <g id="text_9">
-    <text style="font-size: 7.4px; font-family: 'Inter', 'DejaVu Sans'" transform="translate(284.266984 299.247039)">contrats, données,</text>
-    <text style="font-size: 7.4px; font-family: 'Inter', 'DejaVu Sans'" transform="translate(290.677812 308.20075)">réglementation</text>
+    <text style="font-size: 7.4px; font-family: 'EB Garamond', 'DejaVu Serif'" transform="translate(291.36 298.886)">contrats, données,</text>
+    <text style="font-size: 7.4px; font-family: 'EB Garamond', 'DejaVu Serif'" transform="translate(295.503422 306.286)">réglementation</text>
    </g>
    <g id="text_10">
-    <text style="font-weight: 700; font-size: 8px; font-family: 'Inter', 'DejaVu Sans'; fill: #222831" transform="translate(414.3825 241.79657)">Propriétaires</text>
-    <text style="font-weight: 700; font-size: 8px; font-family: 'Inter', 'DejaVu Sans'; fill: #222831" transform="translate(427.055625 254.669305)">métier</text>
+    <text style="font-weight: 700; font-size: 8px; font-family: 'EB Garamond', 'DejaVu Serif'; fill: #1a1a1a" transform="translate(417.745625 240.658875)">Propriétaires</text>
+    <text style="font-weight: 700; font-size: 8px; font-family: 'EB Garamond', 'DejaVu Serif'; fill: #1a1a1a" transform="translate(428.749375 254.692625)">métier</text>
    </g>
    <g id="text_11">
-    <text style="font-size: 7.4px; font-family: 'Inter', 'DejaVu Sans'" transform="translate(398.449922 299.247039)">cas d'usage, validation,</text>
-    <text style="font-size: 7.4px; font-family: 'Inter', 'DejaVu Sans'" transform="translate(427.995 308.20075)">qualité</text>
+    <text style="font-size: 7.4px; font-family: 'EB Garamond', 'DejaVu Serif'" transform="translate(408.155484 298.886)">cas d'usage, validation,</text>
+    <text style="font-size: 7.4px; font-family: 'EB Garamond', 'DejaVu Serif'" transform="translate(429.892406 306.286)">qualité</text>
    </g>
    <g id="text_12">
-    <text style="font-weight: 700; font-size: 8px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: middle; fill: #222831" x="562.41" y="248.6195" transform="rotate(-0 562.41 248.6195)">Audit interne</text>
+    <text style="font-weight: 700; font-size: 8px; font-family: 'EB Garamond', 'DejaVu Serif'; text-anchor: middle; fill: #1a1a1a" x="562.41" y="248.32825" transform="rotate(-0 562.41 248.32825)">Audit interne</text>
    </g>
    <g id="text_13">
-    <text style="font-size: 7.4px; font-family: 'Inter', 'DejaVu Sans'" transform="translate(525.183953 299.247039)">contrôle indépendant</text>
-    <text style="font-size: 7.4px; font-family: 'Inter', 'DejaVu Sans'" transform="translate(541.770938 308.20075)">de la charte</text>
+    <text style="font-size: 7.4px; font-family: 'EB Garamond', 'DejaVu Serif'" transform="translate(531.973453 298.886)">contrôle indépendant</text>
+    <text style="font-size: 7.4px; font-family: 'EB Garamond', 'DejaVu Serif'" transform="translate(546.632391 306.286)">de la charte</text>
    </g>
    <g id="text_14">
-    <text style="font-style: italic; font-size: 7.5px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: middle; fill: #5b6b7f" x="286.2" y="337.024271" transform="rotate(-0 286.2 337.024271)">Organisation fictive, inspirée de la fonction « Gouverner » du NIST AI RMF. Illustration réalisée pour cet ouvrage.</text>
+    <text style="font-style: italic; font-size: 7.5px; font-family: 'EB Garamond', 'DejaVu Serif'; text-anchor: middle; fill: #6b6560" x="286.2" y="335.871" transform="rotate(-0 286.2 335.871)">Organisation fictive, inspirée de la fonction « Gouverner » du NIST AI RMF. Illustration réalisée pour cet ouvrage.</text>
    </g>
   </g>
  </g>
  <defs>
-  <clipPath id="p07faa79fed">
+  <clipPath id="pca4a6d3a6f">
    <rect x="7.2" y="7.2" width="613.8" height="332.64"/>
   </clipPath>
  </defs>

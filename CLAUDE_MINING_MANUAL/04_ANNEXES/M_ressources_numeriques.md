@@ -22,7 +22,6 @@
 
 | Ressource | Adresse |
 |---|---|
-| ICMM — Principes miniers | icmm.com/mining-principles |
 | ICMM — Gestion des contrôles critiques | icmm.com/en-gb/our-work/health-and-safety/critical-control-management |
 | Global Tailings Review (GISTM) | globaltailingsreview.org |
 | ITIE — Norme 2023 et page RDC | eiti.org/eiti-standard ; eiti.org/countries/democratic-republic-congo |
@@ -30,9 +29,7 @@
 | SFI — Normes de performance | ifc.org/en/insights-reports/2012/ifc-performance-standards |
 | OIT — Recueil mines à ciel ouvert | ilo.org/resource/other/code-practice-safety-and-health-opencast-mines |
 | USGS — Mineral Commodity Summaries | pubs.usgs.gov/publication/mcs2026 |
-| Banque mondiale — Climate-Smart Mining | worldbank.org (initiative Climate-Smart Mining) |
-| GRI 14 : secteur minier | globalreporting.org |
-| JORC / CRIRSCO | jorc.org ; crirsco.com |
+| JORC (code 2012) | jorc.org |
 
 ### M.3. Gouvernance et risques de l'IA
 
@@ -40,7 +37,6 @@
 |---|---|
 | NIST AI RMF et profil IA générative | nist.gov/itl/ai-risk-management-framework |
 | ISO/IEC 42001 | iso.org (norme payante) |
-| OWASP Top 10 LLM | genai.owasp.org/llm-top-10 |
 | Règlement (UE) 2024/1689 | eur-lex.europa.eu/eli/reg/2024/1689/oj |
 | UNESCO — Éthique de l'IA | unesco.org (Recommandation de 2021) |
 

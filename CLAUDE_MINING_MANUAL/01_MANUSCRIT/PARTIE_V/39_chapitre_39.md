@@ -32,7 +32,7 @@ La **Recommandation de l'UNESCO sur l'éthique de l'intelligence artificielle**,
 
 #### C.3. L'IA et le travail : ce que l'on sait, ce que l'on ne sait pas
 
-Le Forum intergouvernemental sur l'exploitation minière (IGF) souligne que la numérisation et l'automatisation transforment le secteur minier, avec des effets sur l'emploi local, les compétences demandées, l'approvisionnement local et les recettes publiques, et appelle à des politiques d'accompagnement [@IGF-2019]. Anthropic publie un **Economic Index** qui mesure les usages observés de Claude par types de tâches professionnelles ; ces données décrivent des **usages**, et ne permettent pas, à elles seules, de conclure sur les suppressions ou créations d'emplois [@ANT-ECON].
+La numérisation et l'automatisation transforment depuis plusieurs décennies le secteur minier, avec des effets sur l'emploi local, les compétences demandées et l'approvisionnement local. Anthropic publie un **Economic Index** qui mesure les usages observés de Claude par types de tâches professionnelles ; ces données décrivent des **usages**, et ne permettent pas, à elles seules, de conclure sur les suppressions ou créations d'emplois [@ANT-ECON].
 
 Pour une entreprise comme MCC, l'analyse honnête est la suivante (interprétation de l'auteur) :
 

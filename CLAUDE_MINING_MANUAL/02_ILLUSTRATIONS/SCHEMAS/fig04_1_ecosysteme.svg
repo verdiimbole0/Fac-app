@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-11-16T10:34:35.741446</dc:date>
+    <dc:date>2026-11-16T13:46:23.468292</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -32,241 +32,241 @@ z
    <g id="patch_2">
     <path d="M 116.591786 107.736452 
 Q 213.660383 129.168085 310.72898 150.599717 
-" clip-path="url(#p99f3c90020)" style="fill: none; stroke: #c9a227; stroke-width: 1.3; stroke-linecap: round"/>
+" clip-path="url(#p0802d0bafa)" style="fill: none; stroke: #8a5a2b; stroke-width: 1.3; stroke-linecap: round"/>
     <path d="M 121.45642 111.677942 
 L 116.591786 107.736452 
 L 122.663758 106.209639 
 z
-" clip-path="url(#p99f3c90020)" style="fill: #c9a227; stroke: #c9a227; stroke-width: 1.3; stroke-linecap: round"/>
+" clip-path="url(#p0802d0bafa)" style="fill: #8a5a2b; stroke: #8a5a2b; stroke-width: 1.3; stroke-linecap: round"/>
     <path d="M 305.864346 146.658228 
 L 310.72898 150.599717 
 L 304.657008 152.12653 
 z
-" clip-path="url(#p99f3c90020)" style="fill: #c9a227; stroke: #c9a227; stroke-width: 1.3; stroke-linecap: round"/>
+" clip-path="url(#p0802d0bafa)" style="fill: #8a5a2b; stroke: #8a5a2b; stroke-width: 1.3; stroke-linecap: round"/>
    </g>
    <g id="patch_3">
     <path d="M 314.1 110.44594 
 Q 314.1 129.169172 314.1 147.892404 
-" clip-path="url(#p99f3c90020)" style="fill: none; stroke: #c9a227; stroke-width: 1.3; stroke-linecap: round"/>
+" clip-path="url(#p0802d0bafa)" style="fill: none; stroke: #8a5a2b; stroke-width: 1.3; stroke-linecap: round"/>
     <path d="M 311.3 116.04594 
 L 314.1 110.44594 
 L 316.9 116.04594 
 z
-" clip-path="url(#p99f3c90020)" style="fill: #c9a227; stroke: #c9a227; stroke-width: 1.3; stroke-linecap: round"/>
+" clip-path="url(#p0802d0bafa)" style="fill: #8a5a2b; stroke: #8a5a2b; stroke-width: 1.3; stroke-linecap: round"/>
     <path d="M 316.9 142.292404 
 L 314.1 147.892404 
 L 311.3 142.292404 
 z
-" clip-path="url(#p99f3c90020)" style="fill: #c9a227; stroke: #c9a227; stroke-width: 1.3; stroke-linecap: round"/>
+" clip-path="url(#p0802d0bafa)" style="fill: #8a5a2b; stroke: #8a5a2b; stroke-width: 1.3; stroke-linecap: round"/>
    </g>
    <g id="patch_4">
     <path d="M 511.608214 107.736452 
 Q 414.539617 129.168085 317.47102 150.599717 
-" clip-path="url(#p99f3c90020)" style="fill: none; stroke: #c9a227; stroke-width: 1.3; stroke-linecap: round"/>
+" clip-path="url(#p0802d0bafa)" style="fill: none; stroke: #8a5a2b; stroke-width: 1.3; stroke-linecap: round"/>
     <path d="M 505.536242 106.209639 
 L 511.608214 107.736452 
 L 506.74358 111.677942 
 z
-" clip-path="url(#p99f3c90020)" style="fill: #c9a227; stroke: #c9a227; stroke-width: 1.3; stroke-linecap: round"/>
+" clip-path="url(#p0802d0bafa)" style="fill: #8a5a2b; stroke: #8a5a2b; stroke-width: 1.3; stroke-linecap: round"/>
     <path d="M 323.542992 152.12653 
 L 317.47102 150.599717 
 L 322.335654 146.658228 
 z
-" clip-path="url(#p99f3c90020)" style="fill: #c9a227; stroke: #c9a227; stroke-width: 1.3; stroke-linecap: round"/>
+" clip-path="url(#p0802d0bafa)" style="fill: #8a5a2b; stroke: #8a5a2b; stroke-width: 1.3; stroke-linecap: round"/>
    </g>
    <g id="patch_5">
     <path d="M 116.624832 261.660189 
 Q 213.657528 245.592409 310.690224 229.524629 
-" clip-path="url(#p99f3c90020)" style="fill: none; stroke: #c9a227; stroke-width: 1.3; stroke-linecap: round"/>
+" clip-path="url(#p0802d0bafa)" style="fill: none; stroke: #8a5a2b; stroke-width: 1.3; stroke-linecap: round"/>
     <path d="M 122.607025 263.507718 
 L 116.624832 261.660189 
 L 121.692171 257.982952 
 z
-" clip-path="url(#p99f3c90020)" style="fill: #c9a227; stroke: #c9a227; stroke-width: 1.3; stroke-linecap: round"/>
+" clip-path="url(#p0802d0bafa)" style="fill: #8a5a2b; stroke: #8a5a2b; stroke-width: 1.3; stroke-linecap: round"/>
     <path d="M 304.708031 227.6771 
 L 310.690224 229.524629 
 L 305.622885 233.201866 
 z
-" clip-path="url(#p99f3c90020)" style="fill: #c9a227; stroke: #c9a227; stroke-width: 1.3; stroke-linecap: round"/>
+" clip-path="url(#p0802d0bafa)" style="fill: #8a5a2b; stroke: #8a5a2b; stroke-width: 1.3; stroke-linecap: round"/>
    </g>
    <g id="patch_6">
     <path d="M 314.1 258.768706 
 Q 314.1 245.592823 314.1 232.416939 
-" clip-path="url(#p99f3c90020)" style="fill: none; stroke: #c9a227; stroke-width: 1.3; stroke-linecap: round"/>
+" clip-path="url(#p0802d0bafa)" style="fill: none; stroke: #8a5a2b; stroke-width: 1.3; stroke-linecap: round"/>
     <path d="M 316.9 253.168706 
 L 314.1 258.768706 
 L 311.3 253.168706 
 z
-" clip-path="url(#p99f3c90020)" style="fill: #c9a227; stroke: #c9a227; stroke-width: 1.3; stroke-linecap: round"/>
+" clip-path="url(#p0802d0bafa)" style="fill: #8a5a2b; stroke: #8a5a2b; stroke-width: 1.3; stroke-linecap: round"/>
     <path d="M 311.3 238.016939 
 L 314.1 232.416939 
 L 316.9 238.016939 
 z
-" clip-path="url(#p99f3c90020)" style="fill: #c9a227; stroke: #c9a227; stroke-width: 1.3; stroke-linecap: round"/>
+" clip-path="url(#p0802d0bafa)" style="fill: #8a5a2b; stroke: #8a5a2b; stroke-width: 1.3; stroke-linecap: round"/>
    </g>
    <g id="patch_7">
     <path d="M 511.575168 261.660189 
 Q 414.542472 245.592409 317.509776 229.524629 
-" clip-path="url(#p99f3c90020)" style="fill: none; stroke: #c9a227; stroke-width: 1.3; stroke-linecap: round"/>
+" clip-path="url(#p0802d0bafa)" style="fill: none; stroke: #8a5a2b; stroke-width: 1.3; stroke-linecap: round"/>
     <path d="M 506.507829 257.982952 
 L 511.575168 261.660189 
 L 505.592975 263.507718 
 z
-" clip-path="url(#p99f3c90020)" style="fill: #c9a227; stroke: #c9a227; stroke-width: 1.3; stroke-linecap: round"/>
+" clip-path="url(#p0802d0bafa)" style="fill: #8a5a2b; stroke: #8a5a2b; stroke-width: 1.3; stroke-linecap: round"/>
     <path d="M 322.577115 233.201866 
 L 317.509776 229.524629 
 L 323.491969 227.6771 
 z
-" clip-path="url(#p99f3c90020)" style="fill: #c9a227; stroke: #c9a227; stroke-width: 1.3; stroke-linecap: round"/>
+" clip-path="url(#p0802d0bafa)" style="fill: #8a5a2b; stroke: #8a5a2b; stroke-width: 1.3; stroke-linecap: round"/>
    </g>
    <g id="patch_8">
-    <path d="M 239.328 228.96 
-L 388.872 228.96 
-Q 397.8 228.96 397.8 220.0896 
-L 397.8 160.2144 
-Q 397.8 151.344 388.872 151.344 
-L 239.328 151.344 
-Q 230.4 151.344 230.4 160.2144 
-L 230.4 220.0896 
-Q 230.4 228.96 239.328 228.96 
+    <path d="M 232.353 228.96 
+L 395.847 228.96 
+Q 397.8 228.96 397.8 227.0196 
+L 397.8 153.2844 
+Q 397.8 151.344 395.847 151.344 
+L 232.353 151.344 
+Q 230.4 151.344 230.4 153.2844 
+L 230.4 227.0196 
+Q 230.4 228.96 232.353 228.96 
 z
-" clip-path="url(#p99f3c90020)" style="fill: #0b2545; stroke: #0b2545; stroke-width: 1.4; stroke-linejoin: miter"/>
+" clip-path="url(#p0802d0bafa)" style="fill: #26313a; stroke: #26313a; stroke-width: 1.4; stroke-linejoin: miter"/>
    </g>
    <g id="patch_9">
-    <path d="M 38.448 106.992 
-L 187.992 106.992 
-Q 196.92 106.992 196.92 98.1216 
-L 196.92 38.2464 
-Q 196.92 29.376 187.992 29.376 
-L 38.448 29.376 
-Q 29.52 29.376 29.52 38.2464 
-L 29.52 98.1216 
-Q 29.52 106.992 38.448 106.992 
+    <path d="M 31.473 106.992 
+L 194.967 106.992 
+Q 196.92 106.992 196.92 105.0516 
+L 196.92 31.3164 
+Q 196.92 29.376 194.967 29.376 
+L 31.473 29.376 
+Q 29.52 29.376 29.52 31.3164 
+L 29.52 105.0516 
+Q 29.52 106.992 31.473 106.992 
 z
-" clip-path="url(#p99f3c90020)" style="fill: #d5efec; stroke: #13a89e; stroke-width: 1.4; stroke-linejoin: miter"/>
+" clip-path="url(#p0802d0bafa)" style="fill: #e4e9ec; stroke: #5a6f7e; stroke-width: 1.4; stroke-linejoin: miter"/>
    </g>
    <g id="patch_10">
-    <path d="M 239.328 106.992 
-L 388.872 106.992 
-Q 397.8 106.992 397.8 98.1216 
-L 397.8 38.2464 
-Q 397.8 29.376 388.872 29.376 
-L 239.328 29.376 
-Q 230.4 29.376 230.4 38.2464 
-L 230.4 98.1216 
-Q 230.4 106.992 239.328 106.992 
+    <path d="M 232.353 106.992 
+L 395.847 106.992 
+Q 397.8 106.992 397.8 105.0516 
+L 397.8 31.3164 
+Q 397.8 29.376 395.847 29.376 
+L 232.353 29.376 
+Q 230.4 29.376 230.4 31.3164 
+L 230.4 105.0516 
+Q 230.4 106.992 232.353 106.992 
 z
-" clip-path="url(#p99f3c90020)" style="fill: #d5efec; stroke: #13a89e; stroke-width: 1.4; stroke-linejoin: miter"/>
+" clip-path="url(#p0802d0bafa)" style="fill: #e4e9ec; stroke: #5a6f7e; stroke-width: 1.4; stroke-linejoin: miter"/>
    </g>
    <g id="patch_11">
-    <path d="M 440.208 106.992 
-L 589.752 106.992 
-Q 598.68 106.992 598.68 98.1216 
-L 598.68 38.2464 
-Q 598.68 29.376 589.752 29.376 
-L 440.208 29.376 
-Q 431.28 29.376 431.28 38.2464 
-L 431.28 98.1216 
-Q 431.28 106.992 440.208 106.992 
+    <path d="M 433.233 106.992 
+L 596.727 106.992 
+Q 598.68 106.992 598.68 105.0516 
+L 598.68 31.3164 
+Q 598.68 29.376 596.727 29.376 
+L 433.233 29.376 
+Q 431.28 29.376 431.28 31.3164 
+L 431.28 105.0516 
+Q 431.28 106.992 433.233 106.992 
 z
-" clip-path="url(#p99f3c90020)" style="fill: #d5efec; stroke: #13a89e; stroke-width: 1.4; stroke-linejoin: miter"/>
+" clip-path="url(#p0802d0bafa)" style="fill: #e4e9ec; stroke: #5a6f7e; stroke-width: 1.4; stroke-linejoin: miter"/>
    </g>
    <g id="patch_12">
-    <path d="M 38.448 339.84 
-L 187.992 339.84 
-Q 196.92 339.84 196.92 330.9696 
-L 196.92 271.0944 
-Q 196.92 262.224 187.992 262.224 
-L 38.448 262.224 
-Q 29.52 262.224 29.52 271.0944 
-L 29.52 330.9696 
-Q 29.52 339.84 38.448 339.84 
+    <path d="M 31.473 339.84 
+L 194.967 339.84 
+Q 196.92 339.84 196.92 337.8996 
+L 196.92 264.1644 
+Q 196.92 262.224 194.967 262.224 
+L 31.473 262.224 
+Q 29.52 262.224 29.52 264.1644 
+L 29.52 337.8996 
+Q 29.52 339.84 31.473 339.84 
 z
-" clip-path="url(#p99f3c90020)" style="fill: #dce4ef; stroke: #0b2545; stroke-width: 1.4; stroke-linejoin: miter"/>
+" clip-path="url(#p0802d0bafa)" style="fill: #ece8e1; stroke: #26313a; stroke-width: 1.4; stroke-linejoin: miter"/>
    </g>
    <g id="patch_13">
-    <path d="M 239.328 339.84 
-L 388.872 339.84 
-Q 397.8 339.84 397.8 330.9696 
-L 397.8 271.0944 
-Q 397.8 262.224 388.872 262.224 
-L 239.328 262.224 
-Q 230.4 262.224 230.4 271.0944 
-L 230.4 330.9696 
-Q 230.4 339.84 239.328 339.84 
+    <path d="M 232.353 339.84 
+L 395.847 339.84 
+Q 397.8 339.84 397.8 337.8996 
+L 397.8 264.1644 
+Q 397.8 262.224 395.847 262.224 
+L 232.353 262.224 
+Q 230.4 262.224 230.4 264.1644 
+L 230.4 337.8996 
+Q 230.4 339.84 232.353 339.84 
 z
-" clip-path="url(#p99f3c90020)" style="fill: #dce4ef; stroke: #0b2545; stroke-width: 1.4; stroke-linejoin: miter"/>
+" clip-path="url(#p0802d0bafa)" style="fill: #ece8e1; stroke: #26313a; stroke-width: 1.4; stroke-linejoin: miter"/>
    </g>
    <g id="patch_14">
-    <path d="M 440.208 339.84 
-L 589.752 339.84 
-Q 598.68 339.84 598.68 330.9696 
-L 598.68 271.0944 
-Q 598.68 262.224 589.752 262.224 
-L 440.208 262.224 
-Q 431.28 262.224 431.28 271.0944 
-L 431.28 330.9696 
-Q 431.28 339.84 440.208 339.84 
+    <path d="M 433.233 339.84 
+L 596.727 339.84 
+Q 598.68 339.84 598.68 337.8996 
+L 598.68 264.1644 
+Q 598.68 262.224 596.727 262.224 
+L 433.233 262.224 
+Q 431.28 262.224 431.28 264.1644 
+L 431.28 337.8996 
+Q 431.28 339.84 433.233 339.84 
 z
-" clip-path="url(#p99f3c90020)" style="fill: #dce4ef; stroke: #0b2545; stroke-width: 1.4; stroke-linejoin: miter"/>
+" clip-path="url(#p0802d0bafa)" style="fill: #ece8e1; stroke: #26313a; stroke-width: 1.4; stroke-linejoin: miter"/>
    </g>
    <g id="text_1">
-    <text style="font-weight: 700; font-size: 13px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: middle; fill: #0b2545" x="286.2" y="25.789004" transform="rotate(-0 286.2 25.789004)">L'écosystème Claude (état au 16 novembre 2026)</text>
+    <text style="font-weight: 700; font-size: 13px; font-family: 'EB Garamond', 'DejaVu Serif'; text-anchor: middle; fill: #26313a" x="286.2" y="25.6685" transform="rotate(-0 286.2 25.6685)">L'écosystème Claude (état au 16 novembre 2026)</text>
    </g>
    <g id="text_2">
-    <text style="font-weight: 700; font-size: 10.5px; font-family: 'Inter', 'DejaVu Sans'; fill: #ffffff" transform="translate(272.758711 186.181944)">Modèles Claude</text>
-    <text style="font-weight: 700; font-size: 10.5px; font-family: 'Inter', 'DejaVu Sans'; fill: #ffffff" transform="translate(238.756758 201.051236)">Fable • Opus • Sonnet • Haiku</text>
+    <text style="font-weight: 700; font-size: 10.5px; font-family: 'EB Garamond', 'DejaVu Serif'; fill: #ffffff" transform="translate(279.585352 185.179266)">Modèles Claude</text>
+    <text style="font-weight: 700; font-size: 10.5px; font-family: 'EB Garamond', 'DejaVu Serif'; fill: #ffffff" transform="translate(248.465977 201.041648)">Fable • Opus • Sonnet • Haiku</text>
    </g>
    <g id="text_3">
-    <text style="font-weight: 700; font-size: 9.2px; font-family: 'Inter', 'DejaVu Sans'; fill: #0b2545" transform="translate(67.966781 49.332859)">Applications Claude</text>
-    <text style="font-weight: 700; font-size: 9.2px; font-family: 'Inter', 'DejaVu Sans'; fill: #0b2545" transform="translate(63.088625 60.4645)">Web • Bureau • Mobile</text>
+    <text style="font-weight: 700; font-size: 9.2px; font-family: 'EB Garamond', 'DejaVu Serif'; fill: #26313a" transform="translate(74.14875 48.8104)">Applications Claude</text>
+    <text style="font-weight: 700; font-size: 9.2px; font-family: 'EB Garamond', 'DejaVu Serif'; fill: #26313a" transform="translate(69.850625 60.8164)">Web • Bureau • Mobile</text>
    </g>
    <g id="text_4">
-    <text style="font-size: 7.6px; font-family: 'Inter', 'DejaVu Sans'; fill: #222831" transform="translate(70.190937 81.873997)">conversations, Projects,</text>
-    <text style="font-size: 7.6px; font-family: 'Inter', 'DejaVu Sans'; fill: #222831" transform="translate(61.31675 91.0697)">Artifacts, Research, mémoire</text>
+    <text style="font-size: 7.6px; font-family: 'EB Garamond', 'DejaVu Serif'; fill: #1a1a1a" transform="translate(79.71825 81.5032)">conversations, Projects,</text>
+    <text style="font-size: 7.6px; font-family: 'EB Garamond', 'DejaVu Serif'; fill: #1a1a1a" transform="translate(71.426531 89.1032)">Artifacts, Research, mémoire</text>
    </g>
    <g id="text_5">
-    <text style="font-weight: 700; font-size: 9.2px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: middle; fill: #0b2545" x="314.1" y="54.89868" transform="rotate(-0 314.1 54.89868)">Claude Cowork</text>
+    <text style="font-weight: 700; font-size: 9.2px; font-family: 'EB Garamond', 'DejaVu Serif'; text-anchor: middle; fill: #26313a" x="314.1" y="54.8134" transform="rotate(-0 314.1 54.8134)">Claude Cowork</text>
    </g>
    <g id="text_6">
-    <text style="font-size: 7.6px; font-family: 'Inter', 'DejaVu Sans'; fill: #222831" transform="translate(270.180312 81.873997)">tâches longues, fichiers,</text>
-    <text style="font-size: 7.6px; font-family: 'Inter', 'DejaVu Sans'; fill: #222831" transform="translate(283.687531 91.0697)">tâches planifiées</text>
+    <text style="font-size: 7.6px; font-family: 'EB Garamond', 'DejaVu Serif'; fill: #1a1a1a" transform="translate(280.606562 81.5032)">tâches longues, fichiers,</text>
+    <text style="font-size: 7.6px; font-family: 'EB Garamond', 'DejaVu Serif'; fill: #1a1a1a" transform="translate(291.033406 89.1032)">tâches planifiées</text>
    </g>
    <g id="text_7">
-    <text style="font-weight: 700; font-size: 9.2px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: middle; fill: #0b2545" x="514.98" y="54.89868" transform="rotate(-0 514.98 54.89868)">Claude Code</text>
+    <text style="font-weight: 700; font-size: 9.2px; font-family: 'EB Garamond', 'DejaVu Serif'; text-anchor: middle; fill: #26313a" x="514.98" y="54.8134" transform="rotate(-0 514.98 54.8134)">Claude Code</text>
    </g>
    <g id="text_8">
-    <text style="font-size: 7.6px; font-family: 'Inter', 'DejaVu Sans'; fill: #222831" transform="translate(470.28725 81.873997)">agent de développement</text>
-    <text style="font-size: 7.6px; font-family: 'Inter', 'DejaVu Sans'; fill: #222831" transform="translate(479.833563 91.0697)">(terminal, IDE, web)</text>
+    <text style="font-size: 7.6px; font-family: 'EB Garamond', 'DejaVu Serif'; fill: #1a1a1a" transform="translate(479.833563 81.5032)">agent de développement</text>
+    <text style="font-size: 7.6px; font-family: 'EB Garamond', 'DejaVu Serif'; fill: #1a1a1a" transform="translate(484.868562 89.1032)">(terminal, IDE, web)</text>
    </g>
    <g id="text_9">
-    <text style="font-weight: 700; font-size: 9.2px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: middle; fill: #0b2545" x="113.22" y="287.74668" transform="rotate(-0 113.22 287.74668)">Claude Platform (API)</text>
+    <text style="font-weight: 700; font-size: 9.2px; font-family: 'EB Garamond', 'DejaVu Serif'; text-anchor: middle; fill: #26313a" x="113.22" y="287.6614" transform="rotate(-0 113.22 287.6614)">Claude Platform (API)</text>
    </g>
    <g id="text_10">
-    <text style="font-size: 7.6px; font-family: 'Inter', 'DejaVu Sans'; fill: #222831" transform="translate(55.328187 314.721997)">intégration dans les applications</text>
-    <text style="font-size: 7.6px; font-family: 'Inter', 'DejaVu Sans'; fill: #222831" transform="translate(61.857656 323.9177)">de l'entreprise, agents gérés</text>
+    <text style="font-size: 7.6px; font-family: 'EB Garamond', 'DejaVu Serif'; fill: #1a1a1a" transform="translate(67.090375 314.3512)">intégration dans les applications</text>
+    <text style="font-size: 7.6px; font-family: 'EB Garamond', 'DejaVu Serif'; fill: #1a1a1a" transform="translate(74.573406 321.9512)">de l'entreprise, agents gérés</text>
    </g>
    <g id="text_11">
-    <text style="font-weight: 700; font-size: 9.2px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: middle; fill: #0b2545" x="314.1" y="287.74668" transform="rotate(-0 314.1 287.74668)">Plateformes cloud</text>
+    <text style="font-weight: 700; font-size: 9.2px; font-family: 'EB Garamond', 'DejaVu Serif'; text-anchor: middle; fill: #26313a" x="314.1" y="287.6614" transform="rotate(-0 314.1 287.6614)">Plateformes cloud</text>
    </g>
    <g id="text_12">
-    <text style="font-size: 7.6px; font-family: 'Inter', 'DejaVu Sans'; fill: #222831" transform="translate(255.714187 314.721997)">Amazon Bedrock, Google Cloud,</text>
-    <text style="font-size: 7.6px; font-family: 'Inter', 'DejaVu Sans'; fill: #222831" transform="translate(281.241281 323.9177)">Microsoft Foundry</text>
+    <text style="font-size: 7.6px; font-family: 'EB Garamond', 'DejaVu Serif'; fill: #1a1a1a" transform="translate(265.968844 314.3512)">Amazon Bedrock, Google Cloud,</text>
+    <text style="font-size: 7.6px; font-family: 'EB Garamond', 'DejaVu Serif'; fill: #1a1a1a" transform="translate(286.576719 321.9512)">Microsoft Foundry</text>
    </g>
    <g id="text_13">
-    <text style="font-weight: 700; font-size: 9.2px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: middle; fill: #0b2545" x="514.98" y="287.74668" transform="rotate(-0 514.98 287.74668)">Extensions &amp; outils</text>
+    <text style="font-weight: 700; font-size: 9.2px; font-family: 'EB Garamond', 'DejaVu Serif'; text-anchor: middle; fill: #26313a" x="514.98" y="287.6614" transform="rotate(-0 514.98 287.6614)">Extensions &amp; outils</text>
    </g>
    <g id="text_14">
-    <text style="font-size: 7.6px; font-family: 'Inter', 'DejaVu Sans'; fill: #222831" transform="translate(452.366094 314.721997)">connecteurs (MCP), Skills, plugins,</text>
-    <text style="font-size: 7.6px; font-family: 'Inter', 'DejaVu Sans'; fill: #222831" transform="translate(455.625188 323.9177)">Claude in Chrome, Microsoft 365</text>
+    <text style="font-size: 7.6px; font-family: 'EB Garamond', 'DejaVu Serif'; fill: #1a1a1a" transform="translate(464.098 314.3512)">connecteurs (MCP), Skills, plugins,</text>
+    <text style="font-size: 7.6px; font-family: 'EB Garamond', 'DejaVu Serif'; fill: #1a1a1a" transform="translate(467.069125 321.9512)">Claude in Chrome, Microsoft 365</text>
    </g>
    <g id="text_15">
-    <text style="font-style: italic; font-size: 7.5px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: middle; fill: #5b6b7f" x="286.2" y="359.200271" transform="rotate(-0 286.2 359.200271)">Sources : Anthropic, Models overview ; Claude Help Center ; claude.com/pricing (consultés le 16/11/2026). Illustration réalisée pour cet ouvrage.</text>
+    <text style="font-style: italic; font-size: 7.5px; font-family: 'EB Garamond', 'DejaVu Serif'; text-anchor: middle; fill: #6b6560" x="286.2" y="358.047" transform="rotate(-0 286.2 358.047)">Sources : Anthropic, Models overview ; Claude Help Center ; claude.com/pricing (consultés le 16/11/2026). Illustration réalisée pour cet ouvrage.</text>
    </g>
   </g>
  </g>
  <defs>
-  <clipPath id="p99f3c90020">
+  <clipPath id="p0802d0bafa">
    <rect x="7.2" y="7.2" width="613.8" height="354.816"/>
   </clipPath>
  </defs>

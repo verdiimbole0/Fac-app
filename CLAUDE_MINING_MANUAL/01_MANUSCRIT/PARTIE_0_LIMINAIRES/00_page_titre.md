@@ -1,13 +1,11 @@
 ::: titrelivre
-CLAUDE ET L'INTELLIGENCE ARTIFICIELLE AU SERVICE DE L'INDUSTRIE MINIÈRE
+LA MINE AUGMENTÉE
 
-Le guide pratique pour comprendre, maîtriser et intégrer l'IA dans les métiers et processus de l'industrie minière
+Maîtriser Claude et l'intelligence artificielle générative dans les métiers et les processus miniers
 
-Manuel de formation professionnelle et de développement des compétences
+Guide professionnel
 
-Manuscrit — version de travail destinée à la révision éditoriale finale
-
-État des connaissances sur Claude : 16 novembre 2026
+Édition 2026 — état des connaissances sur Claude au 16 novembre 2026
 :::
 
 \newpage
@@ -24,6 +22,6 @@ Manuscrit — version de travail destinée à la révision éditoriale finale
 
 *Responsabilité.* Ce manuel forme à l'utilisation d'un outil d'assistance. Il ne remplace ni la réglementation applicable, ni les procédures de votre entreprise, ni le jugement des professionnels qualifiés. Aucune décision relative aux tirs et aux explosifs, à la stabilité des ouvrages, aux interventions d'urgence ou à la sécurité des personnes ne doit être déléguée à un système d'intelligence artificielle.
 
-*Sources.* Les références citées figurent dans la bibliographie et la webographie (Annexe I). Elles ont toutes été identifiées et contrôlées pendant la rédaction ; la méthode de vérification de chacune est indiquée.
+*Sources.* Les références citées figurent dans la bibliographie et la webographie (Annexe I). Seules les références contrôlées pendant la rédaction ont été retenues.
 
 *Illustrations.* Sauf mention contraire, les schémas, graphiques et infographies ont été réalisés pour cet ouvrage. Les photographies externes sont utilisées conformément à leur licence, avec le nom de l'auteur, la source et la licence en légende.

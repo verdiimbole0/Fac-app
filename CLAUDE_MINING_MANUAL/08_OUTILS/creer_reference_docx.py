@@ -1,71 +1,20 @@
 # -*- coding: utf-8 -*-
-"""Crée le gabarit Word (reference.docx) utilisé par pandoc : styles, encadrés,
-en-têtes et pieds de page. Usage : python3 creer_reference_docx.py SORTIE.docx"""
-import subprocess, sys, copy
+"""Gabarit Word (reference.docx) — mise en page « livre » : format 15,5 × 23,5 cm,
+marges en miroir, Garamond, titres courants alternés, encadrés sobres à filets.
+Usage : python3 creer_reference_docx.py SORTIE.docx"""
+import subprocess, sys
 from docx import Document
 from docx.shared import Pt, RGBColor, Cm
-from docx.enum.text import WD_ALIGN_PARAGRAPH, WD_BREAK
+from docx.enum.text import WD_ALIGN_PARAGRAPH
 from docx.enum.style import WD_STYLE_TYPE
 from docx.oxml.ns import qn
 from docx.oxml import OxmlElement
 
-NAVY, GOLD, GREY, TURQ, RED, INK = "0B2545", "C9A227", "EEF1F5", "13A89E", "B23A48", "222831"
-BODY, HEAD, MONO = "Cambria", "Calibri", "Consolas"
-
-# type d'encadré -> (couleur de bordure, couleur de fond)
-ENCADRES = {
-    "Retenir":     (NAVY, "E6ECF4"),
-    "Terrain":     (TURQ, "E3F4F2"),
-    "Attention":   (RED,  "F8E6E9"),
-    "Erreur":      ("D9822B", "FBEEDF"),
-    "Application": (GOLD, "FAF4DF"),
-    "Defi":        ("6A4C93", "EFE9F6"),
-    "Setrompe":    ("8C2F39", "F4E4E6"),
-    "Controle":    ("2D6A4F", "E4F1EA"),
-    "Carnet":      (GOLD, "FFFFFF"),
-}
+TITRE_LIVRE = "La Mine augmentée"
+INK, SOFT, ACCENT, RULE, TINT = "1A1A1A", "555555", "8A5A2B", "8A5A2B", "F4F1EC"
+SERIF, MONO = "Garamond", "Consolas"
 
 def rgb(h): return RGBColor.from_string(h)
-
-def set_font(style, name, size=None, bold=None, color=None, italic=None):
-    f = style.font
-    f.name = name
-    rpr = style.element.get_or_add_rPr()
-    rfonts = rpr.find(qn("w:rFonts"))
-    if rfonts is None:
-        rfonts = OxmlElement("w:rFonts"); rpr.append(rfonts)
-    for a in ("w:ascii", "w:hAnsi", "w:cs", "w:eastAsia"):
-        rfonts.set(qn(a), name)
-    for a in ("w:asciiTheme", "w:hAnsiTheme", "w:cstheme", "w:eastAsiaTheme"):
-        if rfonts.get(qn(a)) is not None: del rfonts.attrib[qn(a)]
-    if size: f.size = Pt(size)
-    if bold is not None: f.bold = bold
-    if italic is not None: f.italic = italic
-    if color: f.color.rgb = rgb(color)
-
-def ppr(style):
-    return style.element.get_or_add_pPr()
-
-def add_border(style, color, sides=("top", "left", "bottom", "right"), sz=8, space=6, val="single"):
-    p = ppr(style)
-    old = p.find(qn("w:pBdr"))
-    if old is not None: p.remove(old)
-    bdr = OxmlElement("w:pBdr")
-    for s in sides:
-        e = OxmlElement(f"w:{s}")
-        e.set(qn("w:val"), val); e.set(qn("w:sz"), str(sz)); e.set(qn("w:space"), str(space)); e.set(qn("w:color"), color)
-        bdr.append(e)
-    # pBdr doit précéder shd/spacing/ind dans le schéma : on l'insère en tête
-    p.insert(0, bdr)
-
-def add_shading(style, fill):
-    p = ppr(style)
-    old = p.find(qn("w:shd"))
-    if old is not None: p.remove(old)
-    shd = OxmlElement("w:shd"); shd.set(qn("w:val"), "clear"); shd.set(qn("w:color"), "auto"); shd.set(qn("w:fill"), fill)
-    bdr = p.find(qn("w:pBdr"))
-    if bdr is not None: bdr.addnext(shd)
-    else: p.insert(0, shd)
 
 def find(doc, name):
     for s in doc.styles:
@@ -73,7 +22,7 @@ def find(doc, name):
             return s
     raise KeyError(name)
 
-def get_or_add(doc, name, base="Normal", kind=WD_STYLE_TYPE.PARAGRAPH):
+def get(doc, name, base="Normal", kind=WD_STYLE_TYPE.PARAGRAPH):
     try:
         return find(doc, name)
     except KeyError:
@@ -82,140 +31,180 @@ def get_or_add(doc, name, base="Normal", kind=WD_STYLE_TYPE.PARAGRAPH):
         s.quick_style = True
         return s
 
-def page_break_before(style, on=True):
-    style.paragraph_format.page_break_before = on
+def rpr_set(style, font=SERIF, size=None, bold=None, italic=None, color=None, caps=None, spacing=None):
+    f = style.font; f.name = font
+    rpr = style.element.get_or_add_rPr()
+    rf = rpr.find(qn("w:rFonts"))
+    if rf is None: rf = OxmlElement("w:rFonts"); rpr.append(rf)
+    for a in ("w:ascii", "w:hAnsi", "w:cs", "w:eastAsia"): rf.set(qn(a), font)
+    for a in ("w:asciiTheme", "w:hAnsiTheme", "w:cstheme", "w:eastAsiaTheme"):
+        if rf.get(qn(a)) is not None: del rf.attrib[qn(a)]
+    if size: f.size = Pt(size)
+    if bold is not None: f.bold = bold
+    if italic is not None: f.italic = italic
+    if color: f.color.rgb = rgb(color)
+    if caps is not None: f.small_caps = caps
+    if spacing is not None:
+        sp = rpr.find(qn("w:spacing"))
+        if sp is None: sp = OxmlElement("w:spacing"); rpr.append(sp)
+        sp.set(qn("w:val"), str(int(spacing * 20)))
 
-def field_run(paragraph, instr):
-    r = paragraph.add_run()
-    b = OxmlElement("w:fldChar"); b.set(qn("w:fldCharType"), "begin"); r._r.append(b)
-    r2 = paragraph.add_run(); it = OxmlElement("w:instrText"); it.set(qn("xml:space"), "preserve"); it.text = instr; r2._r.append(it)
-    r3 = paragraph.add_run(); s = OxmlElement("w:fldChar"); s.set(qn("w:fldCharType"), "separate"); r3._r.append(s)
-    r4 = paragraph.add_run("1")
-    r5 = paragraph.add_run(); e = OxmlElement("w:fldChar"); e.set(qn("w:fldCharType"), "end"); r5._r.append(e)
-    return [r, r2, r3, r4, r5]
+def para(style, before=0, after=0, line=None, align=None, indent_first=None, left=None, right=None,
+         keep=None, page_break=None, widow=True):
+    pf = style.paragraph_format
+    pf.space_before, pf.space_after = Pt(before), Pt(after)
+    if line: pf.line_spacing = Pt(line)
+    if align is not None: pf.alignment = align
+    if indent_first is not None: pf.first_line_indent = Cm(indent_first)
+    if left is not None: pf.left_indent = Cm(left)
+    if right is not None: pf.right_indent = Cm(right)
+    if keep is not None: pf.keep_with_next = keep
+    if page_break is not None: pf.page_break_before = page_break
+    pf.widow_control = widow
+
+def clear_borders(style):
+    p = style.element.get_or_add_pPr()
+    for t in ("w:pBdr", "w:shd"):
+        e = p.find(qn(t))
+        if e is not None: p.remove(e)
+
+def borders(style, sides, color=RULE, sz=6, space=4):
+    p = style.element.get_or_add_pPr(); clear_borders(style)
+    b = OxmlElement("w:pBdr")
+    for s in sides:
+        e = OxmlElement(f"w:{s}"); e.set(qn("w:val"), "single"); e.set(qn("w:sz"), str(sz)); e.set(qn("w:space"), str(space)); e.set(qn("w:color"), color)
+        b.append(e)
+    p.insert(0, b)
+
+def shade(style, fill):
+    p = style.element.get_or_add_pPr()
+    s = OxmlElement("w:shd"); s.set(qn("w:val"), "clear"); s.set(qn("w:color"), "auto"); s.set(qn("w:fill"), fill)
+    b = p.find(qn("w:pBdr"))
+    (b.addnext(s) if b is not None else p.insert(0, s))
+
+def field(p, instr, size=9, caps=False, color=SOFT):
+    def run(): r = p.add_run(); r.font.size = Pt(size); r.font.name = SERIF; r.font.small_caps = caps; r.font.color.rgb = rgb(color); return r
+    r = run(); e = OxmlElement("w:fldChar"); e.set(qn("w:fldCharType"), "begin"); r._r.append(e)
+    r = run(); it = OxmlElement("w:instrText"); it.set(qn("xml:space"), "preserve"); it.text = instr; r._r.append(it)
+    r = run(); e = OxmlElement("w:fldChar"); e.set(qn("w:fldCharType"), "separate"); r._r.append(e)
+    run().text = " "
+    r = run(); e = OxmlElement("w:fldChar"); e.set(qn("w:fldCharType"), "end"); r._r.append(e)
+
+def entete(paragraph, text=None, instr=None, align=WD_ALIGN_PARAGRAPH.CENTER):
+    paragraph.text = ""; paragraph.alignment = align
+    if text:
+        r = paragraph.add_run(text); r.font.size = Pt(8.5); r.font.small_caps = True; r.font.name = SERIF; r.font.color.rgb = rgb(SOFT)
+        rpr = r._r.get_or_add_rPr(); sp = OxmlElement("w:spacing"); sp.set(qn("w:val"), "30"); rpr.append(sp)
+    if instr: field(paragraph, instr, size=8.5, caps=True)
 
 def main(out):
-    base = subprocess.run(["pandoc", "-o", out, "--print-default-data-file", "reference.docx"], check=True)
+    subprocess.run(["pandoc", "-o", out, "--print-default-data-file", "reference.docx"], check=True)
     doc = Document(out)
-    st = doc.styles
-
-    # --- Page : A4 (17 x 24 serait l'idéal éditeur ; A4 pour l'impression bureautique)
+    doc.settings.odd_and_even_pages_header_footer = True
+    st = doc.settings.element
+    mm = OxmlElement("w:mirrorMargins"); st.append(mm)
+    hy = OxmlElement("w:autoHyphenation"); hy.set(qn("w:val"), "true"); st.append(hy)
     for sec in doc.sections:
-        sec.page_width, sec.page_height = Cm(21), Cm(29.7)
-        sec.left_margin = sec.right_margin = Cm(2.2)
-        sec.top_margin, sec.bottom_margin = Cm(2.3), Cm(2.2)
-        sec.header_distance = sec.footer_distance = Cm(1.1)
-        # en-tête
-        h = sec.header; hp = h.paragraphs[0] if h.paragraphs else h.add_paragraph()
-        hp.text = ""; r = hp.add_run("CLAUDE ET L'IA AU SERVICE DE L'INDUSTRIE MINIÈRE")
-        r.font.size = Pt(8); r.font.color.rgb = rgb(NAVY); r.font.name = HEAD; r.font.bold = True
-        hp.alignment = WD_ALIGN_PARAGRAPH.RIGHT
-        pb = OxmlElement("w:pBdr"); bt = OxmlElement("w:bottom")
-        for k, v in (("w:val", "single"), ("w:sz", "6"), ("w:space", "4"), ("w:color", GOLD)): bt.set(qn(k), v)
-        pb.append(bt); hp._p.get_or_add_pPr().append(pb)
-        # pied de page : numéro
-        f = sec.footer; fp = f.paragraphs[0] if f.paragraphs else f.add_paragraph()
-        fp.text = ""; fp.alignment = WD_ALIGN_PARAGRAPH.CENTER
-        for rr in field_run(fp, " PAGE "):
-            rr.font.size = Pt(9); rr.font.color.rgb = rgb(NAVY); rr.font.name = HEAD
+        sec.page_width, sec.page_height = Cm(15.5), Cm(23.5)
+        sec.top_margin, sec.bottom_margin = Cm(2.0), Cm(2.1)
+        sec.left_margin, sec.right_margin = Cm(2.1), Cm(1.6)   # intérieur / extérieur (miroir)
+        sec.header_distance, sec.footer_distance = Cm(1.0), Cm(1.0)
+        # Titres courants : verso = titre du livre ; recto = titre du chapitre en cours
+        entete(sec.even_page_header.paragraphs[0], text=TITRE_LIVRE)
+        entete(sec.header.paragraphs[0], instr=' STYLEREF "Heading 2" ')
+        for f in (sec.footer, sec.even_page_footer):
+            fp = f.paragraphs[0]; fp.text = ""; fp.alignment = WD_ALIGN_PARAGRAPH.CENTER
+            field(fp, " PAGE ", size=9.5, color=INK)
 
-    # --- Styles de base
-    normal = find(doc, "Normal"); set_font(normal, BODY, 10.5, color=INK)
-    normal.paragraph_format.space_after = Pt(5); normal.paragraph_format.line_spacing = 1.12
-    for name in ("Body Text", "First Paragraph", "Compact"):
-        s = get_or_add(doc, name); set_font(s, BODY, 10.5, color=INK)
-        s.paragraph_format.space_after = Pt(5 if name != "Compact" else 2)
-        s.paragraph_format.space_before = Pt(0)
-        s.paragraph_format.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY if name != "Compact" else None
+    # Corps du texte
+    n = find(doc, "Normal"); rpr_set(n, size=11, color=INK); para(n, line=14.5)
+    lang = n.element.get_or_add_rPr(); l = OxmlElement("w:lang"); l.set(qn("w:val"), "fr-FR"); lang.append(l)
+    for name in ("Body Text", "First Paragraph"):
+        s = get(doc, name); rpr_set(s, size=11, color=INK)
+        para(s, after=0, line=14.5, align=WD_ALIGN_PARAGRAPH.JUSTIFY, indent_first=0 if name == "First Paragraph" else 0.6)
+    c = get(doc, "Compact"); rpr_set(c, size=11, color=INK); para(c, after=1, line=14.5, align=WD_ALIGN_PARAGRAPH.LEFT)
 
-    heads = {
-        "Title": (HEAD, 28, True, NAVY), "Subtitle": (HEAD, 14, False, GOLD),
-        "Heading 1": (HEAD, 26, True, NAVY), "Heading 2": (HEAD, 20, True, NAVY),
-        "Heading 3": (HEAD, 14, True, NAVY), "Heading 4": (HEAD, 12, True, TURQ),
-        "Heading 5": (HEAD, 11, True, INK), "Heading 6": (HEAD, 10.5, True, INK),
-    }
-    for name, (font, size, bold, color) in heads.items():
-        s = find(doc, name); set_font(s, font, size, bold, color, italic=False)
-        s.paragraph_format.keep_with_next = True
-    find(doc, "Heading 1").paragraph_format.space_before = Pt(160)
-    find(doc, "Heading 1").paragraph_format.space_after = Pt(24)
-    page_break_before(find(doc, "Heading 1"))
-    add_border(find(doc, "Heading 1"), GOLD, sides=("bottom",), sz=24, space=8)
-    find(doc, "Heading 2").paragraph_format.space_before = Pt(0)
-    find(doc, "Heading 2").paragraph_format.space_after = Pt(18)
-    page_break_before(find(doc, "Heading 2"))
-    add_border(find(doc, "Heading 2"), GOLD, sides=("bottom",), sz=12, space=6)
-    find(doc, "Heading 3").paragraph_format.space_before = Pt(16)
-    find(doc, "Heading 3").paragraph_format.space_after = Pt(6)
-    add_border(find(doc, "Heading 3"), TURQ, sides=("left",), sz=24, space=6)
-    find(doc, "Heading 4").paragraph_format.space_before = Pt(10)
-    find(doc, "Heading 4").paragraph_format.space_after = Pt(4)
+    # Titres
+    h1 = find(doc, "Heading 1")   # Parties
+    rpr_set(h1, size=24, bold=False, italic=False, color=INK, caps=True, spacing=2); clear_borders(h1)
+    para(h1, before=150, after=30, line=32, align=WD_ALIGN_PARAGRAPH.CENTER, keep=True, page_break=True)
+    h2 = find(doc, "Heading 2")   # Chapitres
+    rpr_set(h2, size=21, bold=False, italic=False, color=INK, caps=False); clear_borders(h2)
+    para(h2, before=70, after=28, line=25, align=WD_ALIGN_PARAGRAPH.LEFT, keep=True, page_break=True)
+    borders(h2, ["bottom"], color=RULE, sz=4, space=10)
+    h3 = find(doc, "Heading 3")   # Sections A–L
+    rpr_set(h3, size=11.5, bold=True, italic=False, color=INK, caps=True, spacing=0.6); clear_borders(h3)
+    para(h3, before=20, after=6, keep=True, align=WD_ALIGN_PARAGRAPH.LEFT)
+    h4 = find(doc, "Heading 4")
+    rpr_set(h4, size=11.5, bold=False, italic=True, color=INK); clear_borders(h4)
+    para(h4, before=12, after=3, keep=True, align=WD_ALIGN_PARAGRAPH.LEFT)
+    for k in ("Heading 5", "Heading 6"):
+        s = find(doc, k); rpr_set(s, size=11, bold=False, italic=True, color=INK); clear_borders(s)
+    for k in ("Title", "Subtitle"):
+        s = find(doc, k); rpr_set(s, size=24, color=INK); clear_borders(s)
 
-    # Code / prompts
-    sc = get_or_add(doc, "Source Code"); set_font(sc, MONO, 8.5, color="1B263B")
-    sc.paragraph_format.space_after = Pt(0); sc.paragraph_format.line_spacing = 1.0
-    add_border(sc, "9AA5B1", sides=("left",), sz=18, space=6); add_shading(sc, "F2F4F7")
-    vt = get_or_add(doc, "Verbatim Char", kind=WD_STYLE_TYPE.CHARACTER); set_font(vt, MONO, 9, color="1B263B")
+    # Code et prompts : bloc teinté, sans filet coloré
+    sc = get(doc, "Source Code"); rpr_set(sc, font=MONO, size=8, color="2B2B2B")
+    para(sc, before=0, after=0, line=10.5, left=0.3, right=0.1, align=WD_ALIGN_PARAGRAPH.LEFT)
+    clear_borders(sc); borders(sc, ["top", "bottom", "left", "right"], color=TINT, sz=4, space=4); shade(sc, TINT)
+    vc = get(doc, "Verbatim Char", kind=WD_STYLE_TYPE.CHARACTER); rpr_set(vc, font=MONO, size=8.5, color="2B2B2B")
 
     # Légendes et figures
     for name in ("Image Caption", "Table Caption", "Caption"):
-        s = get_or_add(doc, name); set_font(s, HEAD, 8.5, False, "4A5568", italic=True)
-        s.paragraph_format.alignment = WD_ALIGN_PARAGRAPH.CENTER
-        s.paragraph_format.space_after = Pt(10)
-    cf = get_or_add(doc, "Captioned Figure"); cf.paragraph_format.alignment = WD_ALIGN_PARAGRAPH.CENTER; cf.paragraph_format.keep_with_next = True
-    fg = get_or_add(doc, "Figure"); fg.paragraph_format.alignment = WD_ALIGN_PARAGRAPH.CENTER; fg.paragraph_format.keep_with_next = True
+        s = get(doc, name); rpr_set(s, size=8.5, italic=True, color=SOFT)
+        para(s, before=3, after=12, line=11, align=WD_ALIGN_PARAGRAPH.LEFT)
+    for name in ("Captioned Figure", "Figure"):
+        s = get(doc, name); para(s, before=10, after=2, align=WD_ALIGN_PARAGRAPH.CENTER, keep=True)
+        s.paragraph_format.line_spacing = 1.0   # interligne simple : une image ne doit pas être rognée par un interligne exact
 
-    # Citations
-    bq = get_or_add(doc, "Block Text"); set_font(bq, BODY, 10, italic=True, color="34495E")
-    add_border(bq, GOLD, sides=("left",), sz=18, space=8); bq.paragraph_format.left_indent = Cm(0.6)
+    bq = get(doc, "Block Text"); rpr_set(bq, size=11, italic=True, color=INK); clear_borders(bq)
+    para(bq, before=8, after=8, line=14.5, left=1.0, right=1.0, align=WD_ALIGN_PARAGRAPH.JUSTIFY)
 
-    # Encadrés : style corps + style titre par type
-    for key, (bc, fill) in ENCADRES.items():
-        body = get_or_add(doc, f"Encadre {key}"); set_font(body, BODY, 10, color=INK)
-        body.paragraph_format.left_indent = Cm(0.3); body.paragraph_format.right_indent = Cm(0.3)
-        body.paragraph_format.space_after = Pt(3); body.paragraph_format.space_before = Pt(0)
-        add_border(body, bc, sz=8, space=5); add_shading(body, fill)
-        title = get_or_add(doc, f"Encadre {key} Titre", base=f"Encadre {key}")
-        set_font(title, HEAD, 10, True, bc)
-        title.paragraph_format.keep_with_next = True; title.paragraph_format.space_before = Pt(8)
+    # Encadrés : filets haut/bas couleur cuivre, fond très léger, titre en petites capitales
+    for key in ("Retenir", "Terrain", "Attention", "Erreur", "Application", "Defi", "Setrompe", "Controle"):
+        body = get(doc, f"Encadre {key}"); rpr_set(body, size=10, color=INK)
+        para(body, before=0, after=2, line=13, left=0.25, right=0.25, align=WD_ALIGN_PARAGRAPH.LEFT)
+        borders(body, ["top", "bottom", "left", "right"], color=TINT, sz=4, space=6); shade(body, TINT)
+        bb = body.element.get_or_add_pPr().find(qn("w:pBdr")).find(qn("w:bottom")); bb.set(qn("w:color"), RULE); bb.set(qn("w:sz"), "8")
+        t = get(doc, f"Encadre {key} Titre", base=f"Encadre {key}")
+        rpr_set(t, size=8.5, bold=True, color=ACCENT, caps=True, spacing=1.2)
+        para(t, before=12, after=0, line=13, left=0.25, right=0.25, keep=True)
+        borders(t, ["top", "left", "right"], color=TINT, sz=4, space=6)
+        p = t.element.get_or_add_pPr(); b = p.find(qn("w:pBdr")); top = b.find(qn("w:top"))
+        top.set(qn("w:color"), RULE); top.set(qn("w:sz"), "8")
+        shade(t, TINT)
 
-    # Carnet : lignes d'écriture
-    ligne = get_or_add(doc, "Carnet Ligne"); set_font(ligne, BODY, 11, color="FFFFFF")
-    ligne.paragraph_format.space_after = Pt(0); ligne.paragraph_format.line_spacing = Pt(22)
-    add_border(ligne, "B8C2CC", sides=("bottom",), sz=4, space=1, val="dotted")
-    cq = get_or_add(doc, "Carnet Rubrique"); set_font(cq, HEAD, 10, True, NAVY)
-    cq.paragraph_format.space_before = Pt(8); cq.paragraph_format.keep_with_next = True
-    ct = get_or_add(doc, "Carnet Titre"); set_font(ct, HEAD, 16, True, GOLD)
-    ct.paragraph_format.page_break_before = True; ct.paragraph_format.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    ct.paragraph_format.space_after = Pt(4)
-    add_border(ct, GOLD, sides=("bottom",), sz=8, space=4)
-    cad = get_or_add(doc, "Carnet Cadre"); set_font(cad, BODY, 11, color="FFFFFF")
-    add_border(cad, "B8C2CC", sz=6, space=4); cad.paragraph_format.space_after = Pt(0)
+    # Carnet de réflexion
+    cl = get(doc, "Carnet Ligne"); rpr_set(cl, size=11, color="FFFFFF"); para(cl, line=22)
+    borders(cl, ["bottom"], color="BDB7AE", sz=2, space=1)
+    p = cl.element.get_or_add_pPr(); p.find(qn("w:pBdr")).find(qn("w:bottom")).set(qn("w:val"), "dotted")
+    cr = get(doc, "Carnet Rubrique"); rpr_set(cr, size=10, italic=True, color=INK); para(cr, before=9, after=0, keep=True)
+    ct = get(doc, "Carnet Titre"); rpr_set(ct, size=14, color=INK, caps=True, spacing=1.5)
+    para(ct, before=24, after=4, align=WD_ALIGN_PARAGRAPH.CENTER, page_break=True); clear_borders(ct)
+    cc = get(doc, "Carnet Cadre"); rpr_set(cc, size=11, color="FFFFFF"); para(cc, line=16)
+    borders(cc, ["top", "bottom", "left", "right"], color="BDB7AE", sz=2, space=4)
 
-    # Ouverture de partie
-    po = get_or_add(doc, "Partie Intro"); set_font(po, BODY, 12, italic=True, color=NAVY)
-    po.paragraph_format.alignment = WD_ALIGN_PARAGRAPH.LEFT; po.paragraph_format.space_after = Pt(8)
-    pc = get_or_add(doc, "Partie Chapitres"); set_font(pc, HEAD, 11, False, INK)
-    pc.paragraph_format.left_indent = Cm(0.6); pc.paragraph_format.space_after = Pt(2)
+    # Ouvertures de parties
+    pi = get(doc, "Partie Intro"); rpr_set(pi, size=11.5, italic=True, color=INK)
+    para(pi, before=0, after=8, line=15, left=0.8, right=0.8, align=WD_ALIGN_PARAGRAPH.JUSTIFY)
+    pc = get(doc, "Partie Chapitres"); rpr_set(pc, size=10, color=SOFT); para(pc, after=1, left=0.8, align=WD_ALIGN_PARAGRAPH.LEFT)
 
     # Page de titre
-    for name, (font, size, bold, color, align) in {
-        "Titre Livre": (HEAD, 30, True, NAVY, WD_ALIGN_PARAGRAPH.LEFT),
-        "Sous-titre Livre": (HEAD, 15, False, GOLD, WD_ALIGN_PARAGRAPH.LEFT),
-        "Mention Livre": (BODY, 10, False, "4A5568", WD_ALIGN_PARAGRAPH.LEFT),
-    }.items():
-        s = get_or_add(doc, name); set_font(s, font, size, bold, color); s.paragraph_format.alignment = align
-        s.paragraph_format.space_after = Pt(10)
-    get_or_add(doc, "Titre Livre").paragraph_format.space_before = Pt(180)
+    for name, size, it, caps, before, after in [("Titre Livre", 30, False, True, 140, 14), ("Sous-titre Livre", 13.5, True, False, 0, 40),
+                                               ("Mention Livre", 10, False, True, 0, 4)]:
+        s = get(doc, name); rpr_set(s, size=size, italic=it, caps=caps, color=INK, spacing=2 if name == "Titre Livre" else None)
+        para(s, before=before, after=after, line={"Titre Livre": 40, "Sous-titre Livre": 18}.get(name, 13), align=WD_ALIGN_PARAGRAPH.CENTER)
+
+    # Bibliographie : retrait suspendu
+    ref = get(doc, "Reference"); rpr_set(ref, size=10, color=INK)
+    para(ref, after=5, line=13, left=0.8, indent_first=-0.8, align=WD_ALIGN_PARAGRAPH.LEFT)
 
     # Sommaire
+    th = get(doc, "TOC Heading"); rpr_set(th, size=20, color=INK, caps=True, spacing=2); para(th, before=40, after=24, align=WD_ALIGN_PARAGRAPH.CENTER)
     for i in (1, 2, 3):
-        s = get_or_add(doc, f"TOC {i}")
-        set_font(s, HEAD, 11 if i == 1 else 10, i == 1, NAVY if i == 1 else INK)
-        s.paragraph_format.space_before = Pt(6 if i == 1 else 0); s.paragraph_format.space_after = Pt(1)
-    th = get_or_add(doc, "TOC Heading"); set_font(th, HEAD, 20, True, NAVY)
-
-    # Listes à puces : légère réduction d'espacement
+        s = get(doc, f"TOC {i}")
+        rpr_set(s, size=10.5 if i == 1 else 10, bold=False, color=INK, caps=(i == 1), spacing=0.8 if i == 1 else None)
+        para(s, before=10 if i == 1 else 1, after=1, left=0 if i == 1 else 0.5)
     doc.save(out)
     print("reference.docx créé :", out)
 

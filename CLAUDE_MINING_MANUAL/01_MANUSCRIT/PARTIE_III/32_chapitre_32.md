@@ -20,8 +20,7 @@ Plusieurs référentiels encadrent ce domaine :
 
 - le **Guide de l'OCDE sur le devoir de diligence** pour des chaînes d'approvisionnement responsables en minerais provenant de zones de conflit ou à haut risque, qui propose un cadre en cinq étapes [@OECD-DDG] ;
 - la **Norme ITIE 2023**, pour la transparence des revenus, des contrats et de la propriété effective [@EITI-2023] ;
-- la norme sectorielle **GRI 14 : secteur minier 2024**, applicable aux rapports publiés à partir du 1er janvier 2026 pour les organisations qui établissent leur rapport selon les normes GRI [@GRI-14] ;
-- les **Normes de performance** de la SFI et les principes de l'**ICMM** [@IFC-PS; @ICMM-PRINC] ;
+- les **Normes de performance** de la SFI [@IFC-PS] ;
 - la **GISTM** pour les résidus [@GISTM-2020].
 
 La place de la RDC dans la production mondiale de cobalt — environ 73 % de la production minière en 2025 selon l'USGS [@USGS-MCS2026] — explique l'attention particulière portée à la traçabilité de ce métal, notamment au regard de l'exploitation artisanale.
@@ -91,7 +90,7 @@ Ne déduis pas une pratique d'une politique : une politique n'est pas la preuve 
 
 #### Cas d'usage 32.2 — Table de correspondance entre référentiels
 
-**1. Problème.** Les mêmes données servent à plusieurs référentiels (GRI 14, ITIE, exigences clients, ICMM), sous des formulations différentes.
+**1. Problème.** Les mêmes données servent à plusieurs référentiels (normes de reporting de durabilité, ITIE, exigences clients, ICMM), sous des formulations différentes.
 
 **2. Méthode habituelle.** Tableaux ad hoc, doublons de collecte.
 
@@ -103,7 +102,7 @@ Ne déduis pas une pratique d'une politique : une politique n'est pas la preuve 
 
 ```text
 Voici trois listes d'exigences extraites des référentiels (textes officiels fournis) :
-<gri14> … </gri14> <itie> … </itie> <client> … </client>.
+<reporting> … </reporting> <itie> … </itie> <client> … </client>.
 Voici notre inventaire de données ESG : <inventaire> … </inventaire>.
 Construis une table : exigence (référentiel, numéro) | donnée de l'inventaire correspondante |
 source | responsable | statut (disponible / partielle / manquante).
@@ -186,7 +185,7 @@ Pour combler une réponse vide, un assistant peut écrire : « MCC applique une 
 1. **(QCM)** Combien d'étapes comporte le cadre de devoir de diligence de l'OCDE ? a) 3 ; b) 5 ; c) 7 ; d) 10.
 2. **(Vrai ou faux)** Une politique écrite suffit à prouver qu'une pratique est appliquée.
 3. **(Compréhension)** Qu'est-ce que l'écoblanchiment, et comment Claude peut-il aider à le prévenir ?
-4. **(QCM)** À partir de quelle date GRI 14 s'applique-t-elle aux rapports établis selon les normes GRI ? a) 2020 ; b) 1er janvier 2026 ; c) 2030 ; d) jamais.
+4. **(QCM)** Quelle norme internationale porte sur la transparence des revenus, des contrats et de la propriété effective dans les industries extractives ? a) la GISTM ; b) la Norme ITIE ; c) le code JORC ; d) l'ISO/IEC 42001.
 5. **(Mise en situation)** Claude propose « aucun risque de minerai artisanal ». Que faites-vous ?
 6. **(Vrai ou faux)** L'audit tiers d'un rapport de diligence peut être remplacé par une relecture de Claude.
 7. **(Compréhension)** À quoi sert une table de correspondance entre référentiels ?

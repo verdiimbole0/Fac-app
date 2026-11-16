@@ -10,53 +10,53 @@
 - Questions de quiz : **430** (minimum 8 par chapitre)
 - Prompts dans les chapitres : **131** ; bibliothèque de l'Annexe B : **124**
 - Figures référencées dans les chapitres : **70** ; fichiers de figures produits : **62** ; photographies intégrées : **10**
-- Sources au registre : **70**
-- Volume (chapitres + corrigés + annexes) : environ **100 049** mots
+- Sources au registre : **56**
+- Volume (chapitres + corrigés + annexes) : environ **99 690** mots
 - Anomalies structurelles détectées : **0**
 
 ## Contrôle par chapitre
 
 | Ch. | État | Sections manquantes | Questions | Carnet | Figures | Sources citées | Prompts |
 |---|---|---|---|---|---|---|---|
-| 1 | ✅ | — | 10 | oui | 2 | 8 | 3 |
+| 1 | ✅ | — | 10 | oui | 2 | 5 | 3 |
 | 2 | ✅ | — | 10 | oui | 3 | 2 | 4 |
 | 3 | ✅ | — | 10 | oui | 4 | 10 | 4 |
-| 4 | ✅ | — | 10 | oui | 2 | 14 | 2 |
-| 5 | ✅ | — | 10 | oui | 2 | 6 | 5 |
-| 6 | ✅ | — | 10 | oui | 2 | 7 | 3 |
-| 7 | ✅ | — | 10 | oui | 1 | 5 | 2 |
+| 4 | ✅ | — | 10 | oui | 2 | 13 | 2 |
+| 5 | ✅ | — | 10 | oui | 2 | 5 | 5 |
+| 6 | ✅ | — | 10 | oui | 2 | 5 | 3 |
+| 7 | ✅ | — | 10 | oui | 1 | 4 | 2 |
 | 8 | ✅ | — | 10 | oui | 1 | 4 | 2 |
 | 9 | ✅ | — | 10 | oui | 2 | 8 | 3 |
 | 10 | ✅ | — | 10 | oui | 2 | 1 | 9 |
 | 11 | ✅ | — | 10 | oui | 2 | 2 | 5 |
 | 12 | ✅ | — | 10 | oui | 1 | 2 | 4 |
 | 13 | ✅ | — | 10 | oui | 1 | 4 | 4 |
-| 14 | ✅ | — | 10 | oui | 1 | 10 | 4 |
+| 14 | ✅ | — | 10 | oui | 1 | 8 | 4 |
 | 15 | ✅ | — | 10 | oui | 1 | 3 | 3 |
-| 16 | ✅ | — | 10 | oui | 2 | 12 | 3 |
+| 16 | ✅ | — | 10 | oui | 2 | 11 | 3 |
 | 17 | ✅ | — | 10 | oui | 2 | 0 | 4 |
-| 18 | ✅ | — | 10 | oui | 3 | 2 | 3 |
+| 18 | ✅ | — | 10 | oui | 3 | 1 | 3 |
 | 19 | ✅ | — | 10 | oui | 2 | 0 | 3 |
 | 20 | ✅ | — | 10 | oui | 2 | 1 | 3 |
 | 21 | ✅ | — | 10 | oui | 3 | 0 | 3 |
 | 22 | ✅ | — | 10 | oui | 2 | 0 | 3 |
-| 23 | ✅ | — | 10 | oui | 4 | 4 | 3 |
-| 24 | ✅ | — | 10 | oui | 3 | 5 | 3 |
-| 25 | ✅ | — | 10 | oui | 2 | 2 | 3 |
+| 23 | ✅ | — | 10 | oui | 4 | 3 | 3 |
+| 24 | ✅ | — | 10 | oui | 3 | 3 | 3 |
+| 25 | ✅ | — | 10 | oui | 2 | 1 | 3 |
 | 26 | ✅ | — | 10 | oui | 1 | 0 | 3 |
 | 27 | ✅ | — | 10 | oui | 1 | 4 | 3 |
 | 28 | ✅ | — | 10 | oui | 1 | 2 | 3 |
 | 29 | ✅ | — | 10 | oui | 1 | 2 | 3 |
 | 30 | ✅ | — | 10 | oui | 1 | 1 | 3 |
 | 31 | ✅ | — | 10 | oui | 1 | 0 | 3 |
-| 32 | ✅ | — | 10 | oui | 1 | 7 | 3 |
+| 32 | ✅ | — | 10 | oui | 1 | 5 | 3 |
 | 33 | ✅ | — | 10 | oui | 1 | 0 | 2 |
 | 34 | ✅ | — | 10 | oui | 1 | 2 | 3 |
 | 35 | ✅ | — | 10 | oui | 1 | 4 | 2 |
 | 36 | ✅ | — | 10 | oui | 1 | 2 | 2 |
-| 37 | ✅ | — | 10 | oui | 1 | 4 | 2 |
-| 38 | ✅ | — | 10 | oui | 2 | 5 | 2 |
-| 39 | ✅ | — | 10 | oui | 0 | 4 | 2 |
+| 37 | ✅ | — | 10 | oui | 1 | 3 | 2 |
+| 38 | ✅ | — | 10 | oui | 2 | 4 | 2 |
+| 39 | ✅ | — | 10 | oui | 0 | 3 | 2 |
 | 40 | ✅ | — | 10 | oui | 2 | 6 | 2 |
 | 41 | ✅ | — | 10 | oui | 0 | 0 | 1 |
 | 42 | ✅ | — | 10 | oui | 1 | 0 | 2 |
@@ -85,5 +85,5 @@
 2. Relecture orthotypographique complète (espaces insécables, coupures, veuves et orphelines) dans la maquette finale.
 3. Revalidation des informations datées sur Claude (modèles, prix, offres) à la date de publication.
 4. Vérification par un juriste des passages relatifs au droit minier congolais et aux obligations de transparence, et par des praticiens (géologie, HSE, métallurgie, finance) des chapitres métier.
-5. Accès direct aux références marquées ◇ (OCDE, OIT/NORMLEX, ISO, OWASP, JORC, CRIRSCO, UNESCO, GRI, IEA) pour confirmation des pages citées.
-6. Mise en page éditeur : format définitif (le manuscrit est en A4), couverture (hors périmètre).
+5. Seules les références contrôlées pendant la rédaction ont été conservées dans la bibliographie (18 ouvrages et textes, 38 ressources en ligne).
+6. Avant impression : ISBN, code-barres et prix à placer sur la 4e de couverture ; calcul du dos selon le papier retenu.

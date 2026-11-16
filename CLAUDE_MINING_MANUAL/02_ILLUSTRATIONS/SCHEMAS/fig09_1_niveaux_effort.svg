@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-11-16T10:34:37.546456</dc:date>
+    <dc:date>2026-11-16T13:46:25.226469</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -37,7 +37,7 @@ L 129.96 73.728
 L 23.94 73.728 
 L 35.1 112.536 
 z
-" clip-path="url(#p73062f3ab8)" style="fill: #9ed9d3; stroke: #ffffff; stroke-linejoin: miter"/>
+" clip-path="url(#p60e0411acc)" style="fill: #c9d6cc; stroke: #ffffff; stroke-linejoin: miter"/>
    </g>
    <g id="patch_3">
     <path d="M 141.12 151.344 
@@ -47,7 +47,7 @@ L 247.14 73.728
 L 141.12 73.728 
 L 152.28 112.536 
 z
-" clip-path="url(#p73062f3ab8)" style="fill: #5cbfb4; stroke: #ffffff; stroke-linejoin: miter"/>
+" clip-path="url(#p60e0411acc)" style="fill: #7e9a86; stroke: #ffffff; stroke-linejoin: miter"/>
    </g>
    <g id="patch_4">
     <path d="M 258.3 151.344 
@@ -57,7 +57,7 @@ L 364.32 73.728
 L 258.3 73.728 
 L 269.46 112.536 
 z
-" clip-path="url(#p73062f3ab8)" style="fill: #13a89e; stroke: #ffffff; stroke-linejoin: miter"/>
+" clip-path="url(#p60e0411acc)" style="fill: #5a6f7e; stroke: #ffffff; stroke-linejoin: miter"/>
    </g>
    <g id="patch_5">
     <path d="M 375.48 151.344 
@@ -67,7 +67,7 @@ L 481.5 73.728
 L 375.48 73.728 
 L 386.64 112.536 
 z
-" clip-path="url(#p73062f3ab8)" style="fill: #0f7f78; stroke: #ffffff; stroke-linejoin: miter"/>
+" clip-path="url(#p60e0411acc)" style="fill: #3f5e48; stroke: #ffffff; stroke-linejoin: miter"/>
    </g>
    <g id="patch_6">
     <path d="M 492.66 151.344 
@@ -77,59 +77,59 @@ L 598.68 73.728
 L 492.66 73.728 
 L 503.82 112.536 
 z
-" clip-path="url(#p73062f3ab8)" style="fill: #0b2545; stroke: #ffffff; stroke-linejoin: miter"/>
+" clip-path="url(#p60e0411acc)" style="fill: #26313a; stroke: #ffffff; stroke-linejoin: miter"/>
    </g>
    <g id="text_1">
-    <text style="font-weight: 700; font-size: 12px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: middle; fill: #0b2545" x="286.2" y="25.425234" transform="rotate(-0 286.2 25.425234)">Le paramètre d'effort : du plus économe au plus approfondi</text>
+    <text style="font-weight: 700; font-size: 12px; font-family: 'EB Garamond', 'DejaVu Serif'; text-anchor: middle; fill: #26313a" x="286.2" y="25.314" transform="rotate(-0 286.2 25.314)">Le paramètre d'effort : du plus économe au plus approfondi</text>
    </g>
    <g id="text_2">
-    <text style="font-weight: 700; font-size: 12px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="82.53" y="116.901234" transform="rotate(-0 82.53 116.901234)">low</text>
+    <text style="font-weight: 700; font-size: 12px; font-family: 'EB Garamond', 'DejaVu Serif'; text-anchor: middle; fill: #ffffff" x="82.53" y="116.79" transform="rotate(-0 82.53 116.79)">low</text>
    </g>
    <g id="text_3">
-    <text style="font-size: 8.2px; font-family: 'Inter', 'DejaVu Sans'; fill: #222831" transform="translate(52.40525 188.17407)">tâches simples,</text>
-    <text style="font-size: 8.2px; font-family: 'Inter', 'DejaVu Sans'; fill: #222831" transform="translate(40.285906 198.09575)">rapides, à fort volume</text>
+    <text style="font-size: 8.2px; font-family: 'EB Garamond', 'DejaVu Serif'; fill: #1a1a1a" transform="translate(59.717344 187.774)">tâches simples,</text>
+    <text style="font-size: 8.2px; font-family: 'EB Garamond', 'DejaVu Serif'; fill: #1a1a1a" transform="translate(48.757531 195.974)">rapides, à fort volume</text>
    </g>
    <g id="text_4">
-    <text style="font-weight: 700; font-size: 12px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="199.71" y="116.901234" transform="rotate(-0 199.71 116.901234)">medium</text>
+    <text style="font-weight: 700; font-size: 12px; font-family: 'EB Garamond', 'DejaVu Serif'; text-anchor: middle; fill: #ffffff" x="199.71" y="116.79" transform="rotate(-0 199.71 116.79)">medium</text>
    </g>
    <g id="text_5">
-    <text style="font-size: 8.2px; font-family: 'Inter', 'DejaVu Sans'; fill: #222831" transform="translate(166.988156 188.17407)">équilibre vitesse,</text>
-    <text style="font-size: 8.2px; font-family: 'Inter', 'DejaVu Sans'; fill: #222831" transform="translate(163.788875 198.09575)">coût, performance</text>
+    <text style="font-size: 8.2px; font-family: 'EB Garamond', 'DejaVu Serif'; fill: #1a1a1a" transform="translate(174.047844 187.774)">équilibre vitesse,</text>
+    <text style="font-size: 8.2px; font-family: 'EB Garamond', 'DejaVu Serif'; fill: #1a1a1a" transform="translate(171.099047 195.974)">coût, performance</text>
    </g>
    <g id="text_6">
-    <text style="font-weight: 700; font-size: 12px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="316.89" y="116.901234" transform="rotate(-0 316.89 116.901234)">high</text>
+    <text style="font-weight: 700; font-size: 12px; font-family: 'EB Garamond', 'DejaVu Serif'; text-anchor: middle; fill: #ffffff" x="316.89" y="116.79" transform="rotate(-0 316.89 116.79)">high</text>
    </g>
    <g id="text_7">
-    <text style="font-size: 8.2px; font-family: 'Inter', 'DejaVu Sans'; fill: #222831" transform="translate(269.384453 188.17407)">raisonnement complexe,</text>
-    <text style="font-size: 8.2px; font-family: 'Inter', 'DejaVu Sans'; fill: #222831" transform="translate(277.619687 198.09575)">analyses exigeantes</text>
+    <text style="font-size: 8.2px; font-family: 'EB Garamond', 'DejaVu Serif'; fill: #1a1a1a" transform="translate(278.825344 187.774)">raisonnement complexe,</text>
+    <text style="font-size: 8.2px; font-family: 'EB Garamond', 'DejaVu Serif'; fill: #1a1a1a" transform="translate(287.947844 195.974)">analyses exigeantes</text>
    </g>
    <g id="text_8">
-    <text style="font-weight: 700; font-size: 12px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="434.07" y="116.901234" transform="rotate(-0 434.07 116.901234)">xhigh</text>
+    <text style="font-weight: 700; font-size: 12px; font-family: 'EB Garamond', 'DejaVu Serif'; text-anchor: middle; fill: #ffffff" x="434.07" y="116.79" transform="rotate(-0 434.07 116.79)">xhigh</text>
    </g>
    <g id="text_9">
-    <text style="font-size: 8.2px; font-family: 'Inter', 'DejaVu Sans'; fill: #222831" transform="translate(397.088 188.17407)">travaux agentiques</text>
-    <text style="font-size: 8.2px; font-family: 'Inter', 'DejaVu Sans'; fill: #222831" transform="translate(402.229656 198.09575)">longs (&gt; 30 min)</text>
+    <text style="font-size: 8.2px; font-family: 'EB Garamond', 'DejaVu Serif'; fill: #1a1a1a" transform="translate(404.983063 187.774)">travaux agentiques</text>
+    <text style="font-size: 8.2px; font-family: 'EB Garamond', 'DejaVu Serif'; fill: #1a1a1a" transform="translate(408.355312 195.974)">longs (&gt; 30 min)</text>
    </g>
    <g id="text_10">
-    <text style="font-weight: 700; font-size: 12px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="551.25" y="116.901234" transform="rotate(-0 551.25 116.901234)">max</text>
+    <text style="font-weight: 700; font-size: 12px; font-family: 'EB Garamond', 'DejaVu Serif'; text-anchor: middle; fill: #ffffff" x="551.25" y="116.79" transform="rotate(-0 551.25 116.79)">max</text>
    </g>
    <g id="text_11">
-    <text style="font-size: 8.2px; font-family: 'Inter', 'DejaVu Sans'; fill: #222831" transform="translate(513.948328 188.17407)">capacité maximale,</text>
-    <text style="font-size: 8.2px; font-family: 'Inter', 'DejaVu Sans'; fill: #222831" transform="translate(505.753453 198.09575)">sans contrainte de coût</text>
+    <text style="font-size: 8.2px; font-family: 'EB Garamond', 'DejaVu Serif'; fill: #1a1a1a" transform="translate(522.150891 187.774)">capacité maximale,</text>
+    <text style="font-size: 8.2px; font-family: 'EB Garamond', 'DejaVu Serif'; fill: #1a1a1a" transform="translate(515.554375 195.974)">sans contrainte de coût</text>
    </g>
    <g id="text_12">
-    <text style="font-size: 8.5px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: start; fill: #5b6b7f" x="23.94" y="51.552" transform="rotate(-0 23.94 51.552)">◄ plus rapide, moins de tokens</text>
+    <text style="font-size: 8.5px; font-family: 'EB Garamond', 'DejaVu Serif'; text-anchor: start; fill: #6b6560" x="23.94" y="51.552" transform="rotate(-0 23.94 51.552)">◄ plus rapide, moins de tokens</text>
    </g>
    <g id="text_13">
-    <text style="font-size: 8.5px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: end; fill: #5b6b7f" x="604.26" y="51.552" transform="rotate(-0 604.26 51.552)">plus de réflexion, plus de tokens ►</text>
+    <text style="font-size: 8.5px; font-family: 'EB Garamond', 'DejaVu Serif'; text-anchor: end; fill: #6b6560" x="604.26" y="51.552" transform="rotate(-0 604.26 51.552)">plus de réflexion, plus de tokens ►</text>
    </g>
    <g id="text_14">
-    <text style="font-style: italic; font-size: 7.5px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: middle; fill: #5b6b7f" x="286.2" y="240.004271" transform="rotate(-0 286.2 240.004271)">Valeur par défaut via l'API : medium sur Opus 5.5 et Haiku 5.5 ; high sur Fable 5.2 et Sonnet 5.5. Source : Anthropic, Effort (consulté le 16/11/2026).</text>
+    <text style="font-style: italic; font-size: 7.5px; font-family: 'EB Garamond', 'DejaVu Serif'; text-anchor: middle; fill: #6b6560" x="286.2" y="238.851" transform="rotate(-0 286.2 238.851)">Valeur par défaut via l'API : medium sur Opus 5.5 et Haiku 5.5 ; high sur Fable 5.2 et Sonnet 5.5. Source : Anthropic, Effort (consulté le 16/11/2026).</text>
    </g>
   </g>
  </g>
  <defs>
-  <clipPath id="p73062f3ab8">
+  <clipPath id="p60e0411acc">
    <rect x="7.2" y="7.2" width="613.8" height="243.936"/>
   </clipPath>
  </defs>

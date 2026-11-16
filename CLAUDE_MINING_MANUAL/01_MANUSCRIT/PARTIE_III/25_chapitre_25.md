@@ -16,7 +16,7 @@ Joseph Banza, responsable des relations communautaires de MCC, gère un registre
 
 ### C. Comprendre avant de pratiquer — Profil du métier
 
-Les Normes de performance de la SFI exigent notamment un mécanisme de gestion des plaintes accessible aux communautés affectées, la consultation et la participation éclairée, et traitent de la santé et de la sécurité des communautés et de la réinstallation [@IFC-PS]. Les principes et attentes de performance de l'ICMM couvrent également l'engagement avec les communautés et le respect des droits humains [@ICMM-PRINC].
+Les Normes de performance de la SFI exigent notamment un mécanisme de gestion des plaintes accessible aux communautés affectées, la consultation et la participation éclairée, et traitent de la santé et de la sécurité des communautés et de la réinstallation [@IFC-PS].
 
 *Tableau 25.1 — Profil de l'équipe relations communautaires.*
 

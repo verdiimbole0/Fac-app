@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-11-16T10:34:34.657830</dc:date>
+    <dc:date>2026-11-16T13:46:22.222585</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -30,113 +30,113 @@ z
   </g>
   <g id="axes_1">
    <g id="patch_2">
-    <path d="M 27.288 95.904 
-L 294.012 95.904 
-Q 302.94 95.904 302.94 87.0336 
-L 302.94 60.4224 
-Q 302.94 51.552 294.012 51.552 
-L 27.288 51.552 
-Q 18.36 51.552 18.36 60.4224 
-L 18.36 87.0336 
-Q 18.36 95.904 27.288 95.904 
+    <path d="M 20.313 95.904 
+L 300.987 95.904 
+Q 302.94 95.904 302.94 93.9636 
+L 302.94 53.4924 
+Q 302.94 51.552 300.987 51.552 
+L 20.313 51.552 
+Q 18.36 51.552 18.36 53.4924 
+L 18.36 93.9636 
+Q 18.36 95.904 20.313 95.904 
 z
-" clip-path="url(#p6b55141504)" style="fill: #0b2545; stroke: #0b2545; stroke-width: 1.4; stroke-linejoin: miter"/>
+" clip-path="url(#p44a39c0897)" style="fill: #26313a; stroke: #26313a; stroke-width: 1.4; stroke-linejoin: miter"/>
    </g>
    <g id="patch_3">
-    <path d="M 27.288 301.032 
-L 294.012 301.032 
-Q 302.94 301.032 302.94 292.1616 
-L 302.94 243.3744 
-Q 302.94 234.504 294.012 234.504 
-L 27.288 234.504 
-Q 18.36 234.504 18.36 243.3744 
-L 18.36 292.1616 
-Q 18.36 301.032 27.288 301.032 
+    <path d="M 20.313 301.032 
+L 300.987 301.032 
+Q 302.94 301.032 302.94 299.0916 
+L 302.94 236.4444 
+Q 302.94 234.504 300.987 234.504 
+L 20.313 234.504 
+Q 18.36 234.504 18.36 236.4444 
+L 18.36 299.0916 
+Q 18.36 301.032 20.313 301.032 
 z
-" clip-path="url(#p6b55141504)" style="fill: #dce4ef; stroke: #0b2545; stroke-width: 1.4; stroke-linejoin: miter"/>
+" clip-path="url(#p44a39c0897)" style="fill: #ece8e1; stroke: #26313a; stroke-width: 1.4; stroke-linejoin: miter"/>
    </g>
    <g id="patch_4">
-    <path d="M 334.188 95.904 
-L 600.912 95.904 
-Q 609.84 95.904 609.84 87.0336 
-L 609.84 60.4224 
-Q 609.84 51.552 600.912 51.552 
-L 334.188 51.552 
-Q 325.26 51.552 325.26 60.4224 
-L 325.26 87.0336 
-Q 325.26 95.904 334.188 95.904 
+    <path d="M 327.213 95.904 
+L 607.887 95.904 
+Q 609.84 95.904 609.84 93.9636 
+L 609.84 53.4924 
+Q 609.84 51.552 607.887 51.552 
+L 327.213 51.552 
+Q 325.26 51.552 325.26 53.4924 
+L 325.26 93.9636 
+Q 325.26 95.904 327.213 95.904 
 z
-" clip-path="url(#p6b55141504)" style="fill: #13a89e; stroke: #13a89e; stroke-width: 1.4; stroke-linejoin: miter"/>
+" clip-path="url(#p44a39c0897)" style="fill: #5a6f7e; stroke: #5a6f7e; stroke-width: 1.4; stroke-linejoin: miter"/>
    </g>
    <g id="patch_5">
-    <path d="M 334.188 301.032 
-L 600.912 301.032 
-Q 609.84 301.032 609.84 292.1616 
-L 609.84 243.3744 
-Q 609.84 234.504 600.912 234.504 
-L 334.188 234.504 
-Q 325.26 234.504 325.26 243.3744 
-L 325.26 292.1616 
-Q 325.26 301.032 334.188 301.032 
+    <path d="M 327.213 301.032 
+L 607.887 301.032 
+Q 609.84 301.032 609.84 299.0916 
+L 609.84 236.4444 
+Q 609.84 234.504 607.887 234.504 
+L 327.213 234.504 
+Q 325.26 234.504 325.26 236.4444 
+L 325.26 299.0916 
+Q 325.26 301.032 327.213 301.032 
 z
-" clip-path="url(#p6b55141504)" style="fill: #d5efec; stroke: #13a89e; stroke-width: 1.4; stroke-linejoin: miter"/>
+" clip-path="url(#p44a39c0897)" style="fill: #e4e9ec; stroke: #5a6f7e; stroke-width: 1.4; stroke-linejoin: miter"/>
    </g>
    <g id="text_1">
-    <text style="font-weight: 700; font-size: 12px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: middle; fill: #0b2545" x="286.2" y="25.425234" transform="rotate(-0 286.2 25.425234)">IA « classique » (prédictive) et IA générative : deux familles complémentaires</text>
+    <text style="font-weight: 700; font-size: 12px; font-family: 'EB Garamond', 'DejaVu Serif'; text-anchor: middle; fill: #26313a" x="286.2" y="25.314" transform="rotate(-0 286.2 25.314)">IA « classique » (prédictive) et IA générative : deux familles complémentaires</text>
    </g>
    <g id="text_2">
-    <text style="font-weight: 700; font-size: 11px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="160.65" y="76.806281" transform="rotate(-0 160.65 76.806281)">IA prédictive / analytique</text>
+    <text style="font-weight: 700; font-size: 11px; font-family: 'EB Garamond', 'DejaVu Serif'; text-anchor: middle; fill: #ffffff" x="160.65" y="76.026828" transform="rotate(-0 160.65 76.026828)">IA prédictive / analytique</text>
    </g>
    <g id="text_3">
-    <text style="font-size: 8.8px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: start; fill: #222831" x="32.31" y="126.825172" transform="rotate(-0 32.31 126.825172)">• Entrée : données structurées (capteurs,</text>
+    <text style="font-size: 8.8px; font-family: 'EB Garamond', 'DejaVu Serif'; text-anchor: start; fill: #1a1a1a" x="32.31" y="125.472" transform="rotate(-0 32.31 125.472)">• Entrée : données structurées (capteurs,</text>
    </g>
    <g id="text_4">
-    <text style="font-size: 8.8px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: start; fill: #222831" x="32.31" y="146.783572" transform="rotate(-0 32.31 146.783572)">   tableaux, historiques)</text>
+    <text style="font-size: 8.8px; font-family: 'EB Garamond', 'DejaVu Serif'; text-anchor: start; fill: #1a1a1a" x="32.31" y="145.4304" transform="rotate(-0 32.31 145.4304)">   tableaux, historiques)</text>
    </g>
    <g id="text_5">
-    <text style="font-size: 8.8px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: start; fill: #222831" x="32.31" y="166.741972" transform="rotate(-0 32.31 166.741972)">• Sortie : un nombre, une classe, une alerte</text>
+    <text style="font-size: 8.8px; font-family: 'EB Garamond', 'DejaVu Serif'; text-anchor: start; fill: #1a1a1a" x="32.31" y="165.3888" transform="rotate(-0 32.31 165.3888)">• Sortie : un nombre, une classe, une alerte</text>
    </g>
    <g id="text_6">
-    <text style="font-size: 8.8px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: start; fill: #222831" x="32.31" y="186.700372" transform="rotate(-0 32.31 186.700372)">• Entraînée pour UNE tâche précise</text>
+    <text style="font-size: 8.8px; font-family: 'EB Garamond', 'DejaVu Serif'; text-anchor: start; fill: #1a1a1a" x="32.31" y="185.3472" transform="rotate(-0 32.31 185.3472)">• Entraînée pour UNE tâche précise</text>
    </g>
    <g id="text_7">
-    <text style="font-size: 8.8px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: start; fill: #222831" x="32.31" y="206.658772" transform="rotate(-0 32.31 206.658772)">• Évaluée par des métriques (erreur, précision)</text>
+    <text style="font-size: 8.8px; font-family: 'EB Garamond', 'DejaVu Serif'; text-anchor: start; fill: #1a1a1a" x="32.31" y="205.868662" transform="rotate(-0 32.31 205.868662)">• Évaluée par des métriques (erreur, précision)</text>
    </g>
    <g id="text_8">
-    <text style="font-size: 8.4px; font-family: 'Inter', 'DejaVu Sans'; fill: #222831" transform="translate(82.387594 257.401629)">Ex. mine : prédire la panne d'un camion</text>
-    <text style="font-size: 8.4px; font-family: 'Inter', 'DejaVu Sans'; fill: #222831" transform="translate(80.514 270.106219)">à partir des vibrations ; estimer la teneur</text>
-    <text style="font-size: 8.4px; font-family: 'Inter', 'DejaVu Sans'; fill: #222831" transform="translate(89.664094 282.722215)">par krigeage ; tri optique du minerai</text>
+    <text style="font-size: 8.4px; font-family: 'EB Garamond', 'DejaVu Serif'; fill: #1a1a1a" transform="translate(97.498406 259.032)">Ex. mine : prédire la panne d'un camion</text>
+    <text style="font-size: 8.4px; font-family: 'EB Garamond', 'DejaVu Serif'; fill: #1a1a1a" transform="translate(97.130906 269.532)">à partir des vibrations ; estimer la teneur</text>
+    <text style="font-size: 8.4px; font-family: 'EB Garamond', 'DejaVu Serif'; fill: #1a1a1a" transform="translate(103.384312 280.011)">par krigeage ; tri optique du minerai</text>
    </g>
    <g id="text_9">
-    <text style="font-weight: 700; font-size: 11px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="467.55" y="77.039172" transform="rotate(-0 467.55 77.039172)">IA générative (LLM)</text>
+    <text style="font-weight: 700; font-size: 11px; font-family: 'EB Garamond', 'DejaVu Serif'; text-anchor: middle; fill: #ffffff" x="467.55" y="76.020812" transform="rotate(-0 467.55 76.020812)">IA générative (LLM)</text>
    </g>
    <g id="text_10">
-    <text style="font-size: 8.8px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: start; fill: #222831" x="339.21" y="126.825172" transform="rotate(-0 339.21 126.825172)">• Entrée : langage, documents, images</text>
+    <text style="font-size: 8.8px; font-family: 'EB Garamond', 'DejaVu Serif'; text-anchor: start; fill: #1a1a1a" x="339.21" y="125.472" transform="rotate(-0 339.21 125.472)">• Entrée : langage, documents, images</text>
    </g>
    <g id="text_11">
-    <text style="font-size: 8.8px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: start; fill: #222831" x="339.21" y="146.783572" transform="rotate(-0 339.21 146.783572)">• Sortie : du texte, du code, des tableaux,</text>
+    <text style="font-size: 8.8px; font-family: 'EB Garamond', 'DejaVu Serif'; text-anchor: start; fill: #1a1a1a" x="339.21" y="145.4304" transform="rotate(-0 339.21 145.4304)">• Sortie : du texte, du code, des tableaux,</text>
    </g>
    <g id="text_12">
-    <text style="font-size: 8.8px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: start; fill: #222831" x="339.21" y="166.741972" transform="rotate(-0 339.21 166.741972)">   des documents nouveaux</text>
+    <text style="font-size: 8.8px; font-family: 'EB Garamond', 'DejaVu Serif'; text-anchor: start; fill: #1a1a1a" x="339.21" y="165.3888" transform="rotate(-0 339.21 165.3888)">   des documents nouveaux</text>
    </g>
    <g id="text_13">
-    <text style="font-size: 8.8px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: start; fill: #222831" x="339.21" y="186.700372" transform="rotate(-0 339.21 186.700372)">• Polyvalente : rédiger, résumer, analyser,</text>
+    <text style="font-size: 8.8px; font-family: 'EB Garamond', 'DejaVu Serif'; text-anchor: start; fill: #1a1a1a" x="339.21" y="185.3472" transform="rotate(-0 339.21 185.3472)">• Polyvalente : rédiger, résumer, analyser,</text>
    </g>
    <g id="text_14">
-    <text style="font-size: 8.8px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: start; fill: #222831" x="339.21" y="206.658772" transform="rotate(-0 339.21 206.658772)">   traduire, raisonner, programmer</text>
+    <text style="font-size: 8.8px; font-family: 'EB Garamond', 'DejaVu Serif'; text-anchor: start; fill: #1a1a1a" x="339.21" y="205.3056" transform="rotate(-0 339.21 205.3056)">   traduire, raisonner, programmer</text>
    </g>
    <g id="text_15">
-    <text style="font-size: 8.4px; font-family: 'Inter', 'DejaVu Sans'; fill: #222831" transform="translate(389.02575 257.35241)">Ex. mine : rédiger un rapport d'incident,</text>
-    <text style="font-size: 8.4px; font-family: 'Inter', 'DejaVu Sans'; fill: #222831" transform="translate(390.125625 270.106219)">résumer une étude d'impact, comparer</text>
-    <text style="font-size: 8.4px; font-family: 'Inter', 'DejaVu Sans'; fill: #222831" transform="translate(379.422188 282.76159)">deux contrats, expliquer un écart budgétaire</text>
+    <text style="font-size: 8.4px; font-family: 'EB Garamond', 'DejaVu Serif'; fill: #1a1a1a" transform="translate(403.700812 259.007062)">Ex. mine : rédiger un rapport d'incident,</text>
+    <text style="font-size: 8.4px; font-family: 'EB Garamond', 'DejaVu Serif'; fill: #1a1a1a" transform="translate(406.152562 269.528062)">résumer une étude d'impact, comparer</text>
+    <text style="font-size: 8.4px; font-family: 'EB Garamond', 'DejaVu Serif'; fill: #1a1a1a" transform="translate(397.528781 280.011)">deux contrats, expliquer un écart budgétaire</text>
    </g>
    <g id="text_16">
-    <text style="font-weight: 700; font-size: 30px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: middle; fill: #c9a227" x="314.1" y="162.257086" transform="rotate(-0 314.1 162.257086)">≠</text>
+    <text style="font-weight: 700; font-size: 30px; font-family: 'EB Garamond', 'DejaVu Serif'; text-anchor: middle; fill: #8a5a2b" x="314.1" y="161.979" transform="rotate(-0 314.1 161.979)">≠</text>
    </g>
   </g>
  </g>
  <defs>
-  <clipPath id="p6b55141504">
+  <clipPath id="p44a39c0897">
    <rect x="7.2" y="7.2" width="613.8" height="310.464"/>
   </clipPath>
  </defs>

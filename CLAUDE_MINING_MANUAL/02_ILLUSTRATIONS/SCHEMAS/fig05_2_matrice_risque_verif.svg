@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
   "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="545.1675pt" height="434.802445pt" viewBox="0 0 545.1675 434.802445" xmlns="http://www.w3.org/2000/svg" version="1.1">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="539.353984pt" height="435.642pt" viewBox="0 0 539.353984 435.642" xmlns="http://www.w3.org/2000/svg" version="1.1">
  <metadata>
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-11-16T10:34:36.446848</dc:date>
+    <dc:date>2026-11-16T13:46:24.264117</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -21,78 +21,78 @@
  </defs>
  <g id="figure_1">
   <g id="patch_1">
-   <path d="M 0 434.802445 
-L 545.1675 434.802445 
-L 545.1675 0 
+   <path d="M 0 435.642 
+L 539.353984 435.642 
+L 539.353984 0 
 L 0 0 
 z
 " style="fill: #ffffff"/>
   </g>
   <g id="axes_1">
    <g id="patch_2">
-    <path d="M 58.0875 379.641 
-L 537.9675 379.641 
-L 537.9675 24.825 
-L 58.0875 24.825 
+    <path d="M 52.273984 380.1 
+L 532.153984 380.1 
+L 532.153984 25.284 
+L 52.273984 25.284 
 z
 " style="fill: #ffffff"/>
    </g>
    <g id="patch_3">
-    <path d="M 58.0875 202.233 
-L 298.0275 202.233 
-L 298.0275 24.825 
-L 58.0875 24.825 
+    <path d="M 52.273984 202.692 
+L 292.213984 202.692 
+L 292.213984 25.284 
+L 52.273984 25.284 
 z
-" clip-path="url(#p6e42e6224f)" style="fill: #cdebd9; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter"/>
+" clip-path="url(#pc2befa4c5e)" style="fill: #e3e9e2; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter"/>
    </g>
    <g id="patch_4">
-    <path d="M 298.0275 202.233 
-L 537.9675 202.233 
-L 537.9675 24.825 
-L 298.0275 24.825 
+    <path d="M 292.213984 202.692 
+L 532.153984 202.692 
+L 532.153984 25.284 
+L 292.213984 25.284 
 z
-" clip-path="url(#p6e42e6224f)" style="fill: #f6edcc; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter"/>
+" clip-path="url(#pc2befa4c5e)" style="fill: #f2e6d6; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter"/>
    </g>
    <g id="patch_5">
-    <path d="M 58.0875 379.641 
-L 298.0275 379.641 
-L 298.0275 202.233 
-L 58.0875 202.233 
+    <path d="M 52.273984 380.1 
+L 292.213984 380.1 
+L 292.213984 202.692 
+L 52.273984 202.692 
 z
-" clip-path="url(#p6e42e6224f)" style="fill: #d5efec; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter"/>
+" clip-path="url(#pc2befa4c5e)" style="fill: #e4e9ec; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter"/>
    </g>
    <g id="patch_6">
-    <path d="M 298.0275 379.641 
-L 537.9675 379.641 
-L 537.9675 202.233 
-L 298.0275 202.233 
+    <path d="M 292.213984 380.1 
+L 532.153984 380.1 
+L 532.153984 202.692 
+L 292.213984 202.692 
 z
-" clip-path="url(#p6e42e6224f)" style="fill: #f5dde1; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter"/>
+" clip-path="url(#pc2befa4c5e)" style="fill: #f3e0da; stroke: #ffffff; stroke-width: 2; stroke-linejoin: miter"/>
    </g>
    <g id="matplotlib.axis_1">
     <g id="xtick_1">
      <g id="line2d_1">
       <defs>
-       <path id="m0fa0ded0c6" d="M 0 0 
+       <path id="m7001bd93e1" d="M 0 0 
 L 0 3.5 
-" style="stroke: #222831; stroke-width: 0.8"/>
+" style="stroke: #1a1a1a; stroke-width: 0.8"/>
       </defs>
       <g>
-       <use xlink:href="#m0fa0ded0c6" x="178.0575" y="379.641" style="fill: #222831; stroke: #222831; stroke-width: 0.8"/>
+       <use xlink:href="#m7001bd93e1" x="172.243984" y="380.1" style="fill: #1a1a1a; stroke: #1a1a1a; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_1">
-      <text style="font-size: 10px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: middle; fill: #222831" x="178.0575" y="396.3285" transform="rotate(-0 178.0575 396.3285)">Conséquences d'une erreur : faibles</text>
+      <text style="font-size: 10.5px; font-family: 'EB Garamond', 'DejaVu Serif'; text-anchor: middle; fill: #1a1a1a" x="172.243984" y="394.555" transform="rotate(-0 172.243984 394.555)">Conséquences d'une erreur : faibles</text>
      </g>
     </g>
     <g id="xtick_2">
      <g id="line2d_2">
       <g>
-       <use xlink:href="#m0fa0ded0c6" x="417.9975" y="379.641" style="fill: #222831; stroke: #222831; stroke-width: 0.8"/>
+       <use xlink:href="#m7001bd93e1" x="412.183984" y="380.1" style="fill: #1a1a1a; stroke: #1a1a1a; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_2">
-      <text style="font-size: 10px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: middle; fill: #222831" x="417.9975" y="396.3285" transform="rotate(-0 417.9975 396.3285)">Conséquences d'une erreur : graves</text>
+      <text style="font-size: 10.5px; font-family: 'EB Garamond', 'DejaVu Serif'; text-anchor: middle; fill: #1a1a1a" x="412.183984" y="394.555" transform="rotate(-0 412.183984 394.555)">Conséquences d'une erreur : graves</text>
      </g>
     </g>
    </g>
@@ -100,86 +100,86 @@ L 0 3.5
     <g id="ytick_1">
      <g id="line2d_3">
       <defs>
-       <path id="me540fe8a60" d="M 0 0 
+       <path id="m61978b4ac1" d="M 0 0 
 L -3.5 0 
-" style="stroke: #222831; stroke-width: 0.8"/>
+" style="stroke: #1a1a1a; stroke-width: 0.8"/>
       </defs>
       <g>
-       <use xlink:href="#me540fe8a60" x="58.0875" y="290.937" style="fill: #222831; stroke: #222831; stroke-width: 0.8"/>
+       <use xlink:href="#m61978b4ac1" x="52.273984" y="291.396" style="fill: #1a1a1a; stroke: #1a1a1a; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_3">
-      <text style="font-size: 10px; font-family: 'Inter', 'DejaVu Sans'; fill: #222831" transform="translate(7.2 289.730945)">Difficile à</text>
-      <text style="font-size: 10px; font-family: 'Inter', 'DejaVu Sans'; fill: #222831" transform="translate(17.773438 301.830555)">vérifier</text>
+      <text style="font-size: 10.5px; font-family: 'EB Garamond', 'DejaVu Serif'; fill: #1a1a1a" transform="translate(7.2 289.8735)">Difficile à</text>
+      <text style="font-size: 10.5px; font-family: 'EB Garamond', 'DejaVu Serif'; fill: #1a1a1a" transform="translate(17.458828 300.3735)">vérifier</text>
      </g>
     </g>
     <g id="ytick_2">
      <g id="line2d_4">
       <g>
-       <use xlink:href="#me540fe8a60" x="58.0875" y="113.529" style="fill: #222831; stroke: #222831; stroke-width: 0.8"/>
+       <use xlink:href="#m61978b4ac1" x="52.273984" y="113.988" style="fill: #1a1a1a; stroke: #1a1a1a; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_4">
-      <text style="font-size: 10px; font-family: 'Inter', 'DejaVu Sans'; fill: #222831" transform="translate(14.998438 112.322945)">Facile à</text>
-      <text style="font-size: 10px; font-family: 'Inter', 'DejaVu Sans'; fill: #222831" transform="translate(17.773438 124.422555)">vérifier</text>
+      <text style="font-size: 10.5px; font-family: 'EB Garamond', 'DejaVu Serif'; fill: #1a1a1a" transform="translate(16.586016 112.4655)">Facile à</text>
+      <text style="font-size: 10.5px; font-family: 'EB Garamond', 'DejaVu Serif'; fill: #1a1a1a" transform="translate(17.458828 122.9655)">vérifier</text>
      </g>
     </g>
    </g>
    <g id="line2d_5">
-    <path d="M 58.0875 202.233 
-L 537.9675 202.233 
-" clip-path="url(#p6e42e6224f)" style="fill: none; stroke: #5b6b7f; stroke-linecap: square"/>
+    <path d="M 52.273984 202.692 
+L 532.153984 202.692 
+" clip-path="url(#pc2befa4c5e)" style="fill: none; stroke: #6b6560; stroke-linecap: square"/>
    </g>
    <g id="line2d_6">
-    <path d="M 298.0275 379.641 
-L 298.0275 24.825 
-" clip-path="url(#p6e42e6224f)" style="fill: none; stroke: #5b6b7f; stroke-linecap: square"/>
+    <path d="M 292.213984 380.1 
+L 292.213984 25.284 
+" clip-path="url(#pc2befa4c5e)" style="fill: none; stroke: #6b6560; stroke-linecap: square"/>
    </g>
    <g id="text_5">
-    <text style="font-weight: 700; font-size: 10px; font-family: 'Inter', 'DejaVu Sans'; fill: #0b2545" transform="translate(135.150469 79.183451)">Usage encouragé</text>
-    <text style="font-weight: 700; font-size: 10px; font-family: 'Inter', 'DejaVu Sans'; fill: #0b2545" transform="translate(143.220781 91.28306)">avec relecture</text>
+    <text style="font-weight: 700; font-size: 10px; font-family: 'EB Garamond', 'DejaVu Serif'; fill: #26313a" transform="translate(137.939297 79.07456)">Usage encouragé</text>
+    <text style="font-weight: 700; font-size: 10px; font-family: 'EB Garamond', 'DejaVu Serif'; fill: #26313a" transform="translate(144.234609 92.12456)">avec relecture</text>
    </g>
    <g id="text_6">
-    <text style="font-size: 8px; font-family: 'Inter', 'DejaVu Sans'; fill: #222831" transform="translate(110.696875 147.080913)">brouillons, résumés, mise en forme,</text>
-    <text style="font-size: 8px; font-family: 'Inter', 'DejaVu Sans'; fill: #222831" transform="translate(117.38625 156.7606)">reformulation, plans de rapports</text>
+    <text style="font-size: 8px; font-family: 'EB Garamond', 'DejaVu Serif'; fill: #1a1a1a" transform="translate(118.504609 147.1496)">brouillons, résumés, mise en forme,</text>
+    <text style="font-size: 8px; font-family: 'EB Garamond', 'DejaVu Serif'; fill: #1a1a1a" transform="translate(122.873984 155.1496)">reformulation, plans de rapports</text>
    </g>
    <g id="text_7">
-    <text style="font-weight: 700; font-size: 10px; font-family: 'Inter', 'DejaVu Sans'; fill: #0b2545" transform="translate(381.281875 79.183451)">Usage encadré</text>
-    <text style="font-weight: 700; font-size: 10px; font-family: 'Inter', 'DejaVu Sans'; fill: #0b2545" transform="translate(355.586562 91.28306)">vérification systématique</text>
+    <text style="font-weight: 700; font-size: 10px; font-family: 'EB Garamond', 'DejaVu Serif'; fill: #26313a" transform="translate(382.958984 79.07456)">Usage encadré</text>
+    <text style="font-weight: 700; font-size: 10px; font-family: 'EB Garamond', 'DejaVu Serif'; fill: #26313a" transform="translate(360.230078 92.12456)">vérification systématique</text>
    </g>
    <g id="text_8">
-    <text style="font-size: 8px; font-family: 'Inter', 'DejaVu Sans'; fill: #222831" transform="translate(356.410625 142.241069)">analyses de données, synthèses</text>
-    <text style="font-size: 8px; font-family: 'Inter', 'DejaVu Sans'; fill: #222831" transform="translate(350.713125 151.920756)">réglementaires, calculs, traductions</text>
-    <text style="font-size: 8px; font-family: 'Inter', 'DejaVu Sans'; fill: #222831" transform="translate(397.15625 161.600444)">techniques</text>
+    <text style="font-size: 8px; font-family: 'EB Garamond', 'DejaVu Serif'; fill: #1a1a1a" transform="translate(366.353359 143.1496)">analyses de données, synthèses</text>
+    <text style="font-size: 8px; font-family: 'EB Garamond', 'DejaVu Serif'; fill: #1a1a1a" transform="translate(359.418359 151.1496)">réglementaires, calculs, traductions</text>
+    <text style="font-size: 8px; font-family: 'EB Garamond', 'DejaVu Serif'; fill: #1a1a1a" transform="translate(395.659609 159.1496)">techniques</text>
    </g>
    <g id="text_9">
-    <text style="font-weight: 700; font-size: 10px; font-family: 'Inter', 'DejaVu Sans'; fill: #0b2545" transform="translate(150.618437 256.591451)">Usage libre</text>
-    <text style="font-weight: 700; font-size: 10px; font-family: 'Inter', 'DejaVu Sans'; fill: #0b2545" transform="translate(145.930156 268.69106)">(faible enjeu)</text>
+    <text style="font-weight: 700; font-size: 10px; font-family: 'EB Garamond', 'DejaVu Serif'; fill: #26313a" transform="translate(149.258047 256.48256)">Usage libre</text>
+    <text style="font-weight: 700; font-size: 10px; font-family: 'EB Garamond', 'DejaVu Serif'; fill: #26313a" transform="translate(145.488516 269.53256)">(faible enjeu)</text>
    </g>
    <g id="text_10">
-    <text style="font-size: 8px; font-family: 'Inter', 'DejaVu Sans'; fill: #222831" transform="translate(138.264375 324.488913)">idées, brainstorming,</text>
-    <text style="font-size: 8px; font-family: 'Inter', 'DejaVu Sans'; fill: #222831" transform="translate(124.0425 334.1686)">entraînement, apprentissage</text>
+    <text style="font-size: 8px; font-family: 'EB Garamond', 'DejaVu Serif'; fill: #1a1a1a" transform="translate(140.312109 324.5576)">idées, brainstorming,</text>
+    <text style="font-size: 8px; font-family: 'EB Garamond', 'DejaVu Serif'; fill: #1a1a1a" transform="translate(129.506484 332.5576)">entraînement, apprentissage</text>
    </g>
    <g id="text_11">
-    <text style="font-weight: 700; font-size: 10px; font-family: 'Inter', 'DejaVu Sans'; fill: #0b2545" transform="translate(365.692031 256.591451)">Claude ne décide pas</text>
-    <text style="font-weight: 700; font-size: 10px; font-family: 'Inter', 'DejaVu Sans'; fill: #0b2545" transform="translate(353.192031 268.69106)">expertise humaine requise</text>
+    <text style="font-weight: 700; font-size: 10px; font-family: 'EB Garamond', 'DejaVu Serif'; fill: #26313a" transform="translate(369.244141 256.48256)">Claude ne décide pas</text>
+    <text style="font-weight: 700; font-size: 10px; font-family: 'EB Garamond', 'DejaVu Serif'; fill: #26313a" transform="translate(358.088672 269.53256)">expertise humaine requise</text>
    </g>
    <g id="text_12">
-    <text style="font-size: 8px; font-family: 'Inter', 'DejaVu Sans'; fill: #222831" transform="translate(362.211875 319.649069)">plans de tir, stabilité des talus</text>
-    <text style="font-size: 8px; font-family: 'Inter', 'DejaVu Sans'; fill: #222831" transform="translate(355.0675 329.328756)">et digues, urgences, sécurité des</text>
-    <text style="font-size: 8px; font-family: 'Inter', 'DejaVu Sans'; fill: #222831" transform="translate(345.2325 339.008444)">personnes, avis juridiques engageants</text>
+    <text style="font-size: 8px; font-family: 'EB Garamond', 'DejaVu Serif'; fill: #1a1a1a" transform="translate(368.050859 320.5576)">plans de tir, stabilité des talus</text>
+    <text style="font-size: 8px; font-family: 'EB Garamond', 'DejaVu Serif'; fill: #1a1a1a" transform="translate(364.947734 328.5576)">et digues, urgences, sécurité des</text>
+    <text style="font-size: 8px; font-family: 'EB Garamond', 'DejaVu Serif'; fill: #1a1a1a" transform="translate(356.083359 336.5576)">personnes, avis juridiques engageants</text>
    </g>
    <g id="text_13">
-    <text style="font-weight: 700; font-size: 12px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: middle; fill: #0b2545" x="298.0275" y="18.825" transform="rotate(-0 298.0275 18.825)">Matrice de décision : quand et comment utiliser Claude ?</text>
+    <text style="font-weight: 700; font-size: 12px; font-family: 'EB Garamond', 'DejaVu Serif'; text-anchor: middle; fill: #26313a" x="292.213984" y="19.284" transform="rotate(-0 292.213984 19.284)">Matrice de décision : quand et comment utiliser Claude ?</text>
    </g>
   </g>
   <g id="text_14">
-   <text style="font-style: italic; font-size: 7.8px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: middle; fill: #5b6b7f" x="290.2875" y="425.721" transform="rotate(-0 290.2875 425.721)">Lecture : le quadrant inférieur droit est hors du champ de délégation à l'IA. Illustration réalisée pour cet ouvrage.</text>
+   <text style="font-style: italic; font-size: 7.8px; font-family: 'EB Garamond', 'DejaVu Serif'; text-anchor: middle; fill: #6b6560" x="284.473984" y="426.18" transform="rotate(-0 284.473984 426.18)">Lecture : le quadrant inférieur droit est hors du champ de délégation à l'IA. Illustration réalisée pour cet ouvrage.</text>
   </g>
  </g>
  <defs>
-  <clipPath id="p6e42e6224f">
-   <rect x="58.0875" y="24.825" width="479.88" height="354.816"/>
+  <clipPath id="pc2befa4c5e">
+   <rect x="52.273984" y="25.284" width="479.88" height="354.816"/>
   </clipPath>
  </defs>
 </svg>
