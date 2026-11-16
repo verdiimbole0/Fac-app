@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-11-16T09:15:45.427935</dc:date>
+    <dc:date>2026-11-16T10:34:35.369028</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -40,7 +40,7 @@ Q 29.52 51.552 29.52 60.4224
 L 29.52 286.6176 
 Q 29.52 295.488 38.448 295.488 
 z
-" clip-path="url(#p81452570f0)" style="fill: #ffffff; stroke: #0b2545; stroke-width: 2; stroke-linejoin: miter"/>
+" clip-path="url(#p4e9c79a516)" style="fill: #ffffff; stroke: #0b2545; stroke-width: 2; stroke-linejoin: miter"/>
    </g>
    <g id="patch_3">
     <path d="M 50.724 121.4064 
@@ -53,7 +53,7 @@ Q 46.26 88.1424 46.26 92.5776
 L 46.26 116.9712 
 Q 46.26 121.4064 50.724 121.4064 
 z
-" clip-path="url(#p81452570f0)" style="fill: #dce4ef; stroke: #5b6b7f; stroke-width: 1.4; stroke-linejoin: miter"/>
+" clip-path="url(#p4e9c79a516)" style="fill: #dce4ef; stroke: #5b6b7f; stroke-width: 1.4; stroke-linejoin: miter"/>
    </g>
    <g id="patch_4">
     <path d="M 50.724 146.9088 
@@ -66,7 +66,7 @@ Q 46.26 124.7328 46.26 129.168
 L 46.26 142.4736 
 Q 46.26 146.9088 50.724 146.9088 
 z
-" clip-path="url(#p81452570f0)" style="fill: #dce4ef; stroke: #5b6b7f; stroke-width: 1.4; stroke-linejoin: miter"/>
+" clip-path="url(#p4e9c79a516)" style="fill: #dce4ef; stroke: #5b6b7f; stroke-width: 1.4; stroke-linejoin: miter"/>
    </g>
    <g id="patch_5">
     <path d="M 50.724 205.6752 
@@ -79,7 +79,7 @@ Q 46.26 150.2352 46.26 154.6704
 L 46.26 201.24 
 Q 46.26 205.6752 50.724 205.6752 
 z
-" clip-path="url(#p81452570f0)" style="fill: #f6edcc; stroke: #5b6b7f; stroke-width: 1.4; stroke-linejoin: miter"/>
+" clip-path="url(#p4e9c79a516)" style="fill: #f6edcc; stroke: #5b6b7f; stroke-width: 1.4; stroke-linejoin: miter"/>
    </g>
    <g id="patch_6">
     <path d="M 50.724 253.3536 
@@ -92,7 +92,7 @@ Q 46.26 209.0016 46.26 213.4368
 L 46.26 248.9184 
 Q 46.26 253.3536 50.724 253.3536 
 z
-" clip-path="url(#p81452570f0)" style="fill: #eef1f5; stroke: #5b6b7f; stroke-width: 1.4; stroke-linejoin: miter"/>
+" clip-path="url(#p4e9c79a516)" style="fill: #eef1f5; stroke: #5b6b7f; stroke-width: 1.4; stroke-linejoin: miter"/>
    </g>
    <g id="patch_7">
     <path d="M 50.724 278.856 
@@ -105,7 +105,7 @@ Q 46.26 256.68 46.26 261.1152
 L 46.26 274.4208 
 Q 46.26 278.856 50.724 278.856 
 z
-" clip-path="url(#p81452570f0)" style="fill: #d5efec; stroke: #5b6b7f; stroke-width: 1.4; stroke-linejoin: miter"/>
+" clip-path="url(#p4e9c79a516)" style="fill: #d5efec; stroke: #5b6b7f; stroke-width: 1.4; stroke-linejoin: miter"/>
    </g>
    <g id="patch_8">
     <path d="M 50.724 309.9024 
@@ -118,7 +118,7 @@ Q 46.26 282.1824 46.26 286.6176
 L 46.26 305.4672 
 Q 46.26 309.9024 50.724 309.9024 
 z
-" clip-path="url(#p81452570f0)" style="fill: #cdebd9; stroke: #5b6b7f; stroke-width: 1.4; stroke-linejoin: miter"/>
+" clip-path="url(#p4e9c79a516)" style="fill: #cdebd9; stroke: #5b6b7f; stroke-width: 1.4; stroke-linejoin: miter"/>
    </g>
    <g id="patch_9">
     <path d="M 451.368 162.432 
@@ -131,7 +131,7 @@ Q 442.44 73.728 442.44 82.5984
 L 442.44 153.5616 
 Q 442.44 162.432 451.368 162.432 
 z
-" clip-path="url(#p81452570f0)" style="fill: #f5dde1; stroke: #b23a48; stroke-width: 1.4; stroke-linejoin: miter"/>
+" clip-path="url(#p4e9c79a516)" style="fill: #f5dde1; stroke: #b23a48; stroke-width: 1.4; stroke-linejoin: miter"/>
    </g>
    <g id="patch_10">
     <path d="M 451.368 284.4 
@@ -144,7 +144,7 @@ Q 442.44 184.608 442.44 193.4784
 L 442.44 275.5296 
 Q 442.44 284.4 451.368 284.4 
 z
-" clip-path="url(#p81452570f0)" style="fill: #eef1f5; stroke: #5b6b7f; stroke-width: 1.4; stroke-linejoin: miter"/>
+" clip-path="url(#p4e9c79a516)" style="fill: #eef1f5; stroke: #5b6b7f; stroke-width: 1.4; stroke-linejoin: miter"/>
    </g>
    <g id="text_1">
     <text style="font-weight: 700; font-size: 12px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: middle; fill: #0b2545" x="286.2" y="25.425234" transform="rotate(-0 286.2 25.425234)">La fenêtre de contexte : la « mémoire de travail » d'une conversation</text>
@@ -189,7 +189,7 @@ z
   </g>
  </g>
  <defs>
-  <clipPath id="p81452570f0">
+  <clipPath id="p4e9c79a516">
    <rect x="7.2" y="7.2" width="585.9" height="321.552"/>
   </clipPath>
  </defs>

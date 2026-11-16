@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-11-16T09:15:46.217506</dc:date>
+    <dc:date>2026-11-16T10:34:36.217115</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -32,12 +32,12 @@ z
    <g id="patch_2">
     <path d="M 277.041566 104.22 
 Q 300.151628 104.22 321.025622 104.22 
-" clip-path="url(#p259ad2d02d)" style="fill: none; stroke: #5b6b7f; stroke-width: 2; stroke-linecap: round"/>
+" clip-path="url(#pa68e3d0e86)" style="fill: none; stroke: #5b6b7f; stroke-width: 2; stroke-linecap: round"/>
     <path d="M 315.425622 101.42 
 L 321.025622 104.22 
 L 315.425622 107.02 
 z
-" clip-path="url(#p259ad2d02d)" style="fill: #5b6b7f; stroke: #5b6b7f; stroke-width: 2; stroke-linecap: round"/>
+" clip-path="url(#pa68e3d0e86)" style="fill: #5b6b7f; stroke: #5b6b7f; stroke-width: 2; stroke-linecap: round"/>
    </g>
    <g id="patch_3">
     <path d="M 32.868 151.344 
@@ -50,7 +50,7 @@ Q 23.94 57.096 23.94 65.9664
 L 23.94 142.4736 
 Q 23.94 151.344 32.868 151.344 
 z
-" clip-path="url(#p259ad2d02d)" style="fill: #d5efec; stroke: #13a89e; stroke-width: 1.4; stroke-linejoin: miter"/>
+" clip-path="url(#pa68e3d0e86)" style="fill: #d5efec; stroke: #13a89e; stroke-width: 1.4; stroke-linejoin: miter"/>
    </g>
    <g id="patch_4">
     <path d="M 334.188 173.52 
@@ -63,7 +63,7 @@ Q 325.26 34.92 325.26 43.7904
 L 325.26 164.6496 
 Q 325.26 173.52 334.188 173.52 
 z
-" clip-path="url(#p259ad2d02d)" style="fill: #f5dde1; stroke: #b23a48; stroke-width: 1.4; stroke-linejoin: miter"/>
+" clip-path="url(#pa68e3d0e86)" style="fill: #f5dde1; stroke: #b23a48; stroke-width: 1.4; stroke-linejoin: miter"/>
    </g>
    <g id="patch_5">
     <path d="M 32.868 301.032 
@@ -76,7 +76,7 @@ Q 23.94 190.152 23.94 199.0224
 L 23.94 292.1616 
 Q 23.94 301.032 32.868 301.032 
 z
-" clip-path="url(#p259ad2d02d)" style="fill: #eef1f5; stroke: #5b6b7f; stroke-width: 1.4; stroke-linejoin: miter"/>
+" clip-path="url(#pa68e3d0e86)" style="fill: #eef1f5; stroke: #5b6b7f; stroke-width: 1.4; stroke-linejoin: miter"/>
    </g>
    <g id="text_1">
     <text style="font-weight: 700; font-size: 13px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: middle; fill: #0b2545" x="286.2" y="25.789004" transform="rotate(-0 286.2 25.789004)">Anatomie d'une hallucination</text>
@@ -117,7 +117,7 @@ z
   </g>
  </g>
  <defs>
-  <clipPath id="p259ad2d02d">
+  <clipPath id="pa68e3d0e86">
    <rect x="7.2" y="7.2" width="585.9" height="310.464"/>
   </clipPath>
  </defs>

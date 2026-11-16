@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-11-16T10:18:30.188398</dc:date>
+    <dc:date>2026-11-16T10:34:47.433374</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -77,7 +77,7 @@ L 178.731259 309.519475
 L 249.294859 288.851875 
 L 284.576659 274.237675 
 z
-" clip-path="url(#p116a298960)" style="fill: #5b6b7f; opacity: 0.2; stroke: #5b6b7f; stroke-linejoin: miter"/>
+" clip-path="url(#pcb292fe8bc)" style="fill: #5b6b7f; opacity: 0.2; stroke: #5b6b7f; stroke-linejoin: miter"/>
    </g>
    <g id="patch_4">
     <path d="M 448.878859 238.955875 
@@ -89,14 +89,14 @@ L 143.44946 344.801275
 L 249.294859 438.539875 
 L 355.140259 344.801275 
 z
-" clip-path="url(#p116a298960)" style="fill: #13a89e; opacity: 0.2; stroke: #13a89e; stroke-linejoin: miter"/>
+" clip-path="url(#pcb292fe8bc)" style="fill: #13a89e; opacity: 0.2; stroke: #13a89e; stroke-linejoin: miter"/>
    </g>
    <g id="matplotlib.axis_1">
     <g id="xtick_1">
      <g id="line2d_1">
       <path d="M 249.294859 238.955875 
 L 448.878859 238.955875 
-" clip-path="url(#p116a298960)" style="fill: none; stroke: #b0b0b0; stroke-width: 0.8; stroke-linecap: square"/>
+" clip-path="url(#pcb292fe8bc)" style="fill: none; stroke: #b0b0b0; stroke-width: 0.8; stroke-linecap: square"/>
      </g>
      <g id="text_1">
       <text style="font-size: 8.5px; font-family: 'Inter', 'DejaVu Sans'; fill: #222831" transform="translate(431.744953 236.905582)">C1 Comprendre</text>
@@ -107,7 +107,7 @@ L 448.878859 238.955875
      <g id="line2d_2">
       <path d="M 249.294859 238.955875 
 L 390.422059 97.828675 
-" clip-path="url(#p116a298960)" style="fill: none; stroke: #b0b0b0; stroke-width: 0.8; stroke-linecap: square"/>
+" clip-path="url(#pcb292fe8bc)" style="fill: none; stroke: #b0b0b0; stroke-width: 0.8; stroke-linecap: square"/>
      </g>
      <g id="text_2">
       <text style="font-size: 8.5px; font-family: 'Inter', 'DejaVu Sans'; fill: #222831" transform="translate(363.329953 85.878887)">C2 Environnement</text>
@@ -118,7 +118,7 @@ L 390.422059 97.828675
      <g id="line2d_3">
       <path d="M 249.294859 238.955875 
 L 249.294859 39.371875 
-" clip-path="url(#p116a298960)" style="fill: none; stroke: #b0b0b0; stroke-width: 0.8; stroke-linecap: square"/>
+" clip-path="url(#pcb292fe8bc)" style="fill: none; stroke: #b0b0b0; stroke-width: 0.8; stroke-linecap: square"/>
      </g>
      <g id="text_3">
       <text style="font-size: 8.5px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: middle; fill: #222831" x="249.294859" y="28.463916" transform="rotate(-0 249.294859 28.463916)">C3 CADRE</text>
@@ -128,7 +128,7 @@ L 249.294859 39.371875
      <g id="line2d_4">
       <path d="M 249.294859 238.955875 
 L 108.16766 97.828675 
-" clip-path="url(#p116a298960)" style="fill: none; stroke: #b0b0b0; stroke-width: 0.8; stroke-linecap: square"/>
+" clip-path="url(#pcb292fe8bc)" style="fill: none; stroke: #b0b0b0; stroke-width: 0.8; stroke-linecap: square"/>
      </g>
      <g id="text_4">
       <text style="font-size: 8.5px; font-family: 'Inter', 'DejaVu Sans'; fill: #222831" transform="translate(68.362774 85.878887)">C4 Documents</text>
@@ -139,7 +139,7 @@ L 108.16766 97.828675
      <g id="line2d_5">
       <path d="M 249.294859 238.955875 
 L 49.710859 238.955875 
-" clip-path="url(#p116a298960)" style="fill: none; stroke: #b0b0b0; stroke-width: 0.8; stroke-linecap: square"/>
+" clip-path="url(#pcb292fe8bc)" style="fill: none; stroke: #b0b0b0; stroke-width: 0.8; stroke-linecap: square"/>
      </g>
      <g id="text_5">
       <text style="font-size: 8.5px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: middle; fill: #222831" x="35.710859" y="242.047916" transform="rotate(-0 35.710859 242.047916)">C5 Cas métier</text>
@@ -149,7 +149,7 @@ L 49.710859 238.955875
      <g id="line2d_6">
       <path d="M 249.294859 238.955875 
 L 108.16766 380.083075 
-" clip-path="url(#p116a298960)" style="fill: none; stroke: #b0b0b0; stroke-width: 0.8; stroke-linecap: square"/>
+" clip-path="url(#pcb292fe8bc)" style="fill: none; stroke: #b0b0b0; stroke-width: 0.8; stroke-linecap: square"/>
      </g>
      <g id="text_6">
       <text style="font-size: 8.5px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: middle; fill: #222831" x="98.268165" y="393.074611" transform="rotate(-0 98.268165 393.074611)">C6 Livrables</text>
@@ -159,7 +159,7 @@ L 108.16766 380.083075
      <g id="line2d_7">
       <path d="M 249.294859 238.955875 
 L 249.294859 438.539875 
-" clip-path="url(#p116a298960)" style="fill: none; stroke: #b0b0b0; stroke-width: 0.8; stroke-linecap: square"/>
+" clip-path="url(#pcb292fe8bc)" style="fill: none; stroke: #b0b0b0; stroke-width: 0.8; stroke-linecap: square"/>
      </g>
      <g id="text_7">
       <text style="font-size: 8.5px; font-family: 'Inter', 'DejaVu Sans'; fill: #222831" transform="translate(228.020289 450.489582)">C7 Vérifier</text>
@@ -170,7 +170,7 @@ L 249.294859 438.539875
      <g id="line2d_8">
       <path d="M 249.294859 238.955875 
 L 390.422059 380.083075 
-" clip-path="url(#p116a298960)" style="fill: none; stroke: #b0b0b0; stroke-width: 0.8; stroke-linecap: square"/>
+" clip-path="url(#pcb292fe8bc)" style="fill: none; stroke: #b0b0b0; stroke-width: 0.8; stroke-linecap: square"/>
      </g>
      <g id="text_8">
       <text style="font-size: 8.5px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: middle; fill: #222831" x="400.321554" y="393.074611" transform="rotate(-0 400.321554 393.074611)">C8 Workflows</text>
@@ -197,7 +197,7 @@ C 255.847142 288.851875 262.335712 287.561218 268.389232 285.053768
 C 274.442752 282.546318 279.943496 278.870838 284.576659 274.237675 
 C 289.209823 269.604511 292.885303 264.103767 295.392753 258.050248 
 C 297.900203 251.996728 299.190859 245.508158 299.190859 238.955875 
-" clip-path="url(#p116a298960)" style="fill: none; stroke: #b0b0b0; stroke-width: 0.8; stroke-linecap: square"/>
+" clip-path="url(#pcb292fe8bc)" style="fill: none; stroke: #b0b0b0; stroke-width: 0.8; stroke-linecap: square"/>
      </g>
      <g id="text_9">
       <text style="font-size: 7px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: start; fill: #222831" x="295.392753" y="218.173026" transform="rotate(-0 295.392753 218.173026)">1</text>
@@ -222,7 +222,7 @@ C 262.399425 338.747875 275.376565 336.166561 287.483604 331.151661
 C 299.590644 326.136761 310.592132 318.785802 319.858459 309.519475 
 C 329.124786 300.253148 336.475746 289.25166 341.490646 277.14462 
 C 346.505546 265.03758 349.086859 252.06044 349.086859 238.955875 
-" clip-path="url(#p116a298960)" style="fill: none; stroke: #b0b0b0; stroke-width: 0.8; stroke-linecap: square"/>
+" clip-path="url(#pcb292fe8bc)" style="fill: none; stroke: #b0b0b0; stroke-width: 0.8; stroke-linecap: square"/>
      </g>
      <g id="text_10">
       <text style="font-size: 7px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: start; fill: #222831" x="341.490646" y="199.078653" transform="rotate(-0 341.490646 199.078653)">2</text>
@@ -247,7 +247,7 @@ C 268.951707 388.643875 288.417417 384.771905 306.577977 377.249554
 C 324.738537 369.727204 341.240769 358.700765 355.140259 344.801275 
 C 369.03975 330.901784 380.066189 314.399552 387.588539 296.238993 
 C 395.110889 278.078433 398.982859 258.612723 398.982859 238.955875 
-" clip-path="url(#p116a298960)" style="fill: none; stroke: #b0b0b0; stroke-width: 0.8; stroke-linecap: square"/>
+" clip-path="url(#pcb292fe8bc)" style="fill: none; stroke: #b0b0b0; stroke-width: 0.8; stroke-linecap: square"/>
      </g>
      <g id="text_11">
       <text style="font-size: 7px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: start; fill: #222831" x="387.588539" y="179.984281" transform="rotate(-0 387.588539 179.984281)">3</text>
@@ -272,7 +272,7 @@ C 275.50399 438.539875 301.45827 433.377248 325.67235 423.347448
 C 349.886429 413.317648 371.889405 398.615729 390.422059 380.083075 
 C 408.954713 361.550421 423.656632 339.547445 433.686432 315.333365 
 C 443.716232 291.119286 448.878859 265.165006 448.878859 238.955875 
-" clip-path="url(#p116a298960)" style="fill: none; stroke: #b0b0b0; stroke-width: 0.8; stroke-linecap: square"/>
+" clip-path="url(#pcb292fe8bc)" style="fill: none; stroke: #b0b0b0; stroke-width: 0.8; stroke-linecap: square"/>
      </g>
      <g id="text_12">
       <text style="font-size: 7px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: start; fill: #222831" x="433.686432" y="160.889908" transform="rotate(-0 433.686432 160.889908)">4</text>
@@ -289,7 +289,7 @@ L 178.731259 309.519475
 L 249.294859 288.851875 
 L 284.576659 274.237675 
 L 349.086859 238.955875 
-" clip-path="url(#p116a298960)" style="fill: none; stroke: #5b6b7f; stroke-width: 2; stroke-linecap: square"/>
+" clip-path="url(#pcb292fe8bc)" style="fill: none; stroke: #5b6b7f; stroke-width: 2; stroke-linecap: square"/>
    </g>
    <g id="line2d_14">
     <path d="M 448.878859 238.955875 
@@ -301,7 +301,7 @@ L 143.44946 344.801275
 L 249.294859 438.539875 
 L 355.140259 344.801275 
 L 448.878859 238.955875 
-" clip-path="url(#p116a298960)" style="fill: none; stroke: #13a89e; stroke-width: 2; stroke-linecap: square"/>
+" clip-path="url(#pcb292fe8bc)" style="fill: none; stroke: #13a89e; stroke-width: 2; stroke-linecap: square"/>
    </g>
    <g id="patch_5">
     <path d="M 448.878859 238.955875 
@@ -349,7 +349,7 @@ L 196.43482 493.723142
   </g>
  </g>
  <defs>
-  <clipPath id="p116a298960">
+  <clipPath id="pcb292fe8bc">
    <path d="M 448.878859 238.955875 
 C 448.878859 212.746744 443.716232 186.792464 433.686432 162.578385 
 C 423.656632 138.364305 408.954713 116.361329 390.422059 97.828675 

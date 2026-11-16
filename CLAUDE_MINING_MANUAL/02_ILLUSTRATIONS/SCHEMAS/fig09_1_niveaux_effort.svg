@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-11-16T09:15:47.437324</dc:date>
+    <dc:date>2026-11-16T10:34:37.546456</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -37,7 +37,7 @@ L 129.96 73.728
 L 23.94 73.728 
 L 35.1 112.536 
 z
-" clip-path="url(#p3e1952c0b8)" style="fill: #9ed9d3; stroke: #ffffff; stroke-linejoin: miter"/>
+" clip-path="url(#p73062f3ab8)" style="fill: #9ed9d3; stroke: #ffffff; stroke-linejoin: miter"/>
    </g>
    <g id="patch_3">
     <path d="M 141.12 151.344 
@@ -47,7 +47,7 @@ L 247.14 73.728
 L 141.12 73.728 
 L 152.28 112.536 
 z
-" clip-path="url(#p3e1952c0b8)" style="fill: #5cbfb4; stroke: #ffffff; stroke-linejoin: miter"/>
+" clip-path="url(#p73062f3ab8)" style="fill: #5cbfb4; stroke: #ffffff; stroke-linejoin: miter"/>
    </g>
    <g id="patch_4">
     <path d="M 258.3 151.344 
@@ -57,7 +57,7 @@ L 364.32 73.728
 L 258.3 73.728 
 L 269.46 112.536 
 z
-" clip-path="url(#p3e1952c0b8)" style="fill: #13a89e; stroke: #ffffff; stroke-linejoin: miter"/>
+" clip-path="url(#p73062f3ab8)" style="fill: #13a89e; stroke: #ffffff; stroke-linejoin: miter"/>
    </g>
    <g id="patch_5">
     <path d="M 375.48 151.344 
@@ -67,7 +67,7 @@ L 481.5 73.728
 L 375.48 73.728 
 L 386.64 112.536 
 z
-" clip-path="url(#p3e1952c0b8)" style="fill: #0f7f78; stroke: #ffffff; stroke-linejoin: miter"/>
+" clip-path="url(#p73062f3ab8)" style="fill: #0f7f78; stroke: #ffffff; stroke-linejoin: miter"/>
    </g>
    <g id="patch_6">
     <path d="M 492.66 151.344 
@@ -77,7 +77,7 @@ L 598.68 73.728
 L 492.66 73.728 
 L 503.82 112.536 
 z
-" clip-path="url(#p3e1952c0b8)" style="fill: #0b2545; stroke: #ffffff; stroke-linejoin: miter"/>
+" clip-path="url(#p73062f3ab8)" style="fill: #0b2545; stroke: #ffffff; stroke-linejoin: miter"/>
    </g>
    <g id="text_1">
     <text style="font-weight: 700; font-size: 12px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: middle; fill: #0b2545" x="286.2" y="25.425234" transform="rotate(-0 286.2 25.425234)">Le paramètre d'effort : du plus économe au plus approfondi</text>
@@ -129,7 +129,7 @@ z
   </g>
  </g>
  <defs>
-  <clipPath id="p3e1952c0b8">
+  <clipPath id="p73062f3ab8">
    <rect x="7.2" y="7.2" width="613.8" height="243.936"/>
   </clipPath>
  </defs>

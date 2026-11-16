@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-11-16T09:15:46.863057</dc:date>
+    <dc:date>2026-11-16T10:34:36.813493</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -40,7 +40,7 @@ Q 18.36 51.552 18.36 60.4224
 L 18.36 87.0336 
 Q 18.36 95.904 27.288 95.904 
 z
-" clip-path="url(#p7ffbca67ae)" style="fill: #13a89e; stroke: #13a89e; stroke-width: 1.4; stroke-linejoin: miter"/>
+" clip-path="url(#p50d0b7a1ba)" style="fill: #13a89e; stroke: #13a89e; stroke-width: 1.4; stroke-linejoin: miter"/>
    </g>
    <g id="patch_3">
     <path d="M 228.168 95.904 
@@ -53,7 +53,7 @@ Q 219.24 51.552 219.24 60.4224
 L 219.24 87.0336 
 Q 219.24 95.904 228.168 95.904 
 z
-" clip-path="url(#p7ffbca67ae)" style="fill: #0b2545; stroke: #0b2545; stroke-width: 1.4; stroke-linejoin: miter"/>
+" clip-path="url(#p50d0b7a1ba)" style="fill: #0b2545; stroke: #0b2545; stroke-width: 1.4; stroke-linejoin: miter"/>
    </g>
    <g id="patch_4">
     <path d="M 429.048 95.904 
@@ -66,7 +66,7 @@ Q 420.12 51.552 420.12 60.4224
 L 420.12 87.0336 
 Q 420.12 95.904 429.048 95.904 
 z
-" clip-path="url(#p7ffbca67ae)" style="fill: #c9a227; stroke: #c9a227; stroke-width: 1.4; stroke-linejoin: miter"/>
+" clip-path="url(#p50d0b7a1ba)" style="fill: #c9a227; stroke: #c9a227; stroke-width: 1.4; stroke-linejoin: miter"/>
    </g>
    <g id="text_1">
     <text style="font-weight: 700; font-size: 12px; font-family: 'Inter', 'DejaVu Sans'; text-anchor: middle; fill: #0b2545" x="286.2" y="25.425234" transform="rotate(-0 286.2 25.425234)">Qui fait quoi ? Répartition des rôles entre Claude et l'expert</text>
@@ -137,7 +137,7 @@ z
   </g>
  </g>
  <defs>
-  <clipPath id="p7ffbca67ae">
+  <clipPath id="p50d0b7a1ba">
    <rect x="7.2" y="7.2" width="613.8" height="299.376"/>
   </clipPath>
  </defs>
