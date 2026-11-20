@@ -1,6 +1,6 @@
-# Annexe 9 — Registre des outils IA utilisés
+# Annexe 9 : Registre des outils IA utilisés
 
-*ASBL augmentée — © 2026 Verdi Imbole. Reproduction autorisée pour l'usage interne de l'organisation de l'acheteur.*
+*ASBL augmentée : © 2026 Verdi Imbole. Reproduction autorisée pour l'usage interne de l'organisation de l'acheteur.*
 
 ## Objectif
 

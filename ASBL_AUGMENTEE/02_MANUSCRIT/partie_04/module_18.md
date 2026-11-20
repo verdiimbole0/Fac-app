@@ -1,4 +1,4 @@
-# Module 18 — Gestion des bénéficiaires et opérations de terrain
+# Module 18 : Gestion des bénéficiaires et opérations de terrain
 
 ## 18.1 Mise en situation
 
@@ -8,7 +8,7 @@ Ce dernier point est le plus grave. Il montre que l'enjeu n'est pas seulement l'
 
 ## 18.2 Problématique
 
-La relation avec les bénéficiaires est le cœur de la mission : enregistrement, réponse aux demandes, enquêtes, gestion des plaintes, suivi des interventions, rapports de terrain. Ces activités se déroulent souvent dans des contextes multilingues, à faible connectivité, auprès de personnes vulnérables, avec des données sensibles. L'IA peut aider à transcrire, traduire, classer et synthétiser — mais toute erreur, fuite ou automatisation inadaptée peut nuire directement aux personnes. La redevabilité envers les populations, au cœur de la Norme humanitaire fondamentale (CHS, édition 2024), exige des mécanismes de retour fiables et une réponse humaine.
+La relation avec les bénéficiaires est le cœur de la mission : enregistrement, réponse aux demandes, enquêtes, gestion des plaintes, suivi des interventions, rapports de terrain. Ces activités se déroulent souvent dans des contextes multilingues, à faible connectivité, auprès de personnes vulnérables, avec des données sensibles. L'IA peut aider à transcrire, traduire, classer et synthétiser, mais toute erreur, fuite ou automatisation inadaptée peut nuire directement aux personnes. La redevabilité envers les populations, au cœur de la Norme humanitaire fondamentale (CHS, édition 2024), exige des mécanismes de retour fiables et une réponse humaine.
 
 ## 18.3 Objectifs d'apprentissage
 
@@ -19,7 +19,7 @@ La relation avec les bénéficiaires est le cœur de la mission : enregistrement
 3. concevoir un mécanisme de plaintes et de réclamations avec classification assistée et traitement humain prioritaire des cas sensibles ;
 4. conduire des enquêtes et analyser des réponses ouvertes ;
 5. suivre les interventions et produire des rapports de terrain ;
-6. évaluer l'opportunité — et les limites — d'assistants communautaires automatisés ;
+6. évaluer l'opportunité, et les limites, d'assistants communautaires automatisés ;
 7. protéger les bénéficiaires à chaque étape.
 
 ## 18.4 Notions et définitions
@@ -32,15 +32,15 @@ La relation avec les bénéficiaires est le cœur de la mission : enregistrement
 
 ## 18.5 Explications détaillées
 
-![Figure 18.1 — La boucle de redevabilité envers les communautés](03_ILLUSTRATIONS/figures/fig_18_1.svg)
+![Figure 18.1 : La boucle de redevabilité envers les communautés](03_ILLUSTRATIONS/figures/fig_18_1.svg)
 
 ### Enregistrement
 
-Questions à poser avant de concevoir un formulaire d'enregistrement : quelles données sont **réellement nécessaires** pour fournir le service ? qui y aura accès ? combien de temps seront-elles conservées ? les personnes sont-elles informées, dans leur langue, de l'usage qui en sera fait ? Les formulaires mobiles hors ligne réduisent les erreurs et sécurisent la transmission (chiffrement, synchronisation, effacement des données sur le téléphone après envoi). Les données biométriques, de localisation précise, d'ethnie, de religion ou de statut migratoire ne sont collectées que si elles sont indispensables, légales et protégées — dans la plupart des cas, elles ne le sont pas.
+Questions à poser avant de concevoir un formulaire d'enregistrement : quelles données sont **réellement nécessaires** pour fournir le service ? qui y aura accès ? combien de temps seront-elles conservées ? les personnes sont-elles informées, dans leur langue, de l'usage qui en sera fait ? Les formulaires mobiles hors ligne réduisent les erreurs et sécurisent la transmission (chiffrement, synchronisation, effacement des données sur le téléphone après envoi). Les données biométriques, de localisation précise, d'ethnie, de religion ou de statut migratoire ne sont collectées que si elles sont indispensables, légales et protégées : dans la plupart des cas, elles ne le sont pas.
 
 ### Demandes et multilinguisme
 
-Les demandes arrivent sous forme orale, écrite, dans plusieurs langues. La transcription et la traduction automatiques peuvent aider à les **enregistrer** et à les **orienter** plus vite — avec des limites importantes : qualité inégale selon les langues (souvent faible pour les langues peu dotées en ressources numériques), erreurs sur les noms propres, risques de contresens. Une validation par un locuteur de la langue reste nécessaire pour toute information importante.
+Les demandes arrivent sous forme orale, écrite, dans plusieurs langues. La transcription et la traduction automatiques peuvent aider à les **enregistrer** et à les **orienter** plus vite, avec des limites importantes : qualité inégale selon les langues (souvent faible pour les langues peu dotées en ressources numériques), erreurs sur les noms propres, risques de contresens. Une validation par un locuteur de la langue reste nécessaire pour toute information importante.
 
 ### Plaintes, réclamations et retours communautaires
 
@@ -48,7 +48,7 @@ Un mécanisme de plaintes efficace :
 
 1. offre **plusieurs canaux** adaptés aux publics (en personne, téléphone, messagerie, boîte, agents de confiance, y compris pour les personnes ne sachant pas lire) ;
 2. est **connu** des communautés (information répétée, dans les langues locales) ;
-3. **enregistre** chaque retour avec un numéro, la date, le canal, la catégorie, le niveau de sensibilité — en minimisant les données ;
+3. **enregistre** chaque retour avec un numéro, la date, le canal, la catégorie, le niveau de sensibilité : en minimisant les données ;
 4. **oriente** vers le service compétent dans un délai annoncé ;
 5. **répond** à la personne (quand c'est possible et sûr) ;
 6. **analyse** les tendances et **ajuste** le programme ;
@@ -56,7 +56,7 @@ Un mécanisme de plaintes efficace :
 
 L'IA intervient en **appui** : transcription et traduction des messages, proposition de catégorie et de niveau d'urgence, détection de mots ou d'expressions signalant un cas sensible, synthèse mensuelle des tendances.
 
-> **🛑 Contrôle humain obligatoire** — Tout message pouvant relever d'un cas sensible (abus, exploitation, violence, harcèlement, menace, détresse grave) est transmis **immédiatement** à la personne référente formée, **sans attendre** une classification automatique, et n'est jamais traité dans un outil non autorisé. Les règles de classification automatique doivent être réglées pour **sur-détecter** (mieux vaut transmettre à tort que manquer un cas), et tout message non classé est examiné par un humain. Le message vocal de la mise en situation aurait dû être écouté le jour même.
+> **🛑 Contrôle humain obligatoire** : Tout message pouvant relever d'un cas sensible (abus, exploitation, violence, harcèlement, menace, détresse grave) est transmis **immédiatement** à la personne référente formée, **sans attendre** une classification automatique, et n'est jamais traité dans un outil non autorisé. Les règles de classification automatique doivent être réglées pour **sur-détecter** (mieux vaut transmettre à tort que manquer un cas), et tout message non classé est examiné par un humain. Le message vocal de la mise en situation aurait dû être écouté le jour même.
 
 ### Assistants communautaires automatisés
 
@@ -74,7 +74,7 @@ Les agents de terrain saisissent leurs visites et observations dans des formulai
 
 En complément du module 8 : analyse des risques de chaque traitement de données avant sa mise en place ; accès minimal ; chiffrement des appareils de terrain ; procédure en cas de perte ou de vol d'un téléphone ; vigilance sur les contextes où des données pourraient être exigées par des autorités ou des groupes armés (se référer au *Handbook on Data Protection in Humanitarian Action* du CICR) ; formation des agents ; respect des politiques de protection de l'enfance et de PEAS.
 
-> **📶 Faible connectivité** — Les formulaires mobiles hors ligne, la transcription différée et les synchronisations planifiées permettent d'utiliser les outils sans connexion permanente. Les cas sensibles, eux, ne doivent jamais attendre la prochaine synchronisation : prévoyez un canal téléphonique direct vers la personne référente.
+> **📶 Faible connectivité** : Les formulaires mobiles hors ligne, la transcription différée et les synchronisations planifiées permettent d'utiliser les outils sans connexion permanente. Les cas sensibles, eux, ne doivent jamais attendre la prochaine synchronisation : prévoyez un canal téléphonique direct vers la personne référente.
 
 ## 18.6 Application métier : un mécanisme de plaintes multilingue à Horizons Partagés
 
@@ -86,7 +86,7 @@ En complément du module 8 : analyse des risques de chaque traitement de donnée
 **F. Faiblesses.** Risque grave pour la protection des personnes ; perte de confiance ; non-conformité aux exigences des bailleurs.
 **G. Résultat recherché.** 100 % des retours enregistrés sous 48 heures ; cas sensibles transmis au référent sous 24 heures ; réponse aux personnes dans le délai annoncé ; synthèse mensuelle.
 **H. Pertinence de l'IA.** Utile pour transcrire, traduire, proposer une catégorie, détecter des signaux, synthétiser ; jamais pour traiter les cas sensibles.
-**I. Alternatives sans IA.** Registre papier ou tableur, écoute quotidienne des messages, classification manuelle — indispensable de toute façon en premier niveau.
+**I. Alternatives sans IA.** Registre papier ou tableur, écoute quotidienne des messages, classification manuelle : indispensable de toute façon en premier niveau.
 **J. Solution.** Procédure écrite + référent PEAS + registre numérique + écoute quotidienne + classification assistée (outil validé) + synthèse mensuelle + retour communautaire.
 **K. Niveau.** Débutant à Intermédiaire.
 **L. Outils.** Téléphone dédié, registre (formulaire mobile ou tableur à accès restreint), outil de transcription/traduction validé, assistant validé pour la classification et la synthèse.
@@ -122,7 +122,7 @@ En complément du module 8 : analyse des risques de chaque traitement de donnée
 
 ## 18.7 Prompts prêts à l'emploi
 
-### Fiche P18.1 — Classifier et synthétiser des retours communautaires
+### Fiche P18.1 : Classifier et synthétiser des retours communautaires
 
 **A. Titre.** Classification assistée et synthèse des retours.
 
@@ -166,7 +166,7 @@ N'interprète pas au-delà du texte.
 
 **K. Amélioration.** « Compare les tendances de ce mois à celles du mois précédent (fournies) et signale les évolutions significatives. »
 
-### Fiche P18.2 — Rapport de terrain structuré à partir de notes
+### Fiche P18.2 : Rapport de terrain structuré à partir de notes
 
 **A. Titre.** Rapport de visite ou de mission.
 
@@ -212,7 +212,7 @@ Données de bénéficiaires minimales et protégées ; retours enregistrés, tra
 
 ## 18.9 Contrôles humains
 
-> **🛑 Contrôle humain obligatoire** — Tri et traitement des cas sensibles ; toute décision affectant l'accès d'une personne à un service ; réponses aux plaignants ; validation des catégories ; usage des données de bénéficiaires. Un assistant communautaire automatisé ne donne jamais de conseil médical, juridique ou d'éligibilité individuelle et permet toujours de joindre un humain.
+> **🛑 Contrôle humain obligatoire** : Tri et traitement des cas sensibles ; toute décision affectant l'accès d'une personne à un service ; réponses aux plaignants ; validation des catégories ; usage des données de bénéficiaires. Un assistant communautaire automatisé ne donne jamais de conseil médical, juridique ou d'éligibilité individuelle et permet toujours de joindre un humain.
 
 ## 18.10 Risques et erreurs à éviter
 
@@ -237,7 +237,7 @@ Données de bénéficiaires minimales et protégées ; retours enregistrés, tra
 - L'IA transcrit, traduit, classe et synthétise, sous supervision.
 - Les assistants automatisés se limitent aux questions fréquentes non sensibles, avec accès à un humain.
 
-## 18.13 QCM — Module 18
+## 18.13 QCM : Module 18
 
 **Q1.** (une seule réponse) Un message vocal évoquant un comportement inapproprié d'un agent doit être :
 
@@ -281,14 +281,14 @@ b) est toujours fiable.
 c) est interdite.
 d) remplace les agents bilingues.
 
-**Q7.** (mise en situation — une seule réponse) Un bailleur suggère de collecter les empreintes digitales de tous les bénéficiaires « pour éviter les doublons ». Votre réponse ?
+**Q7.** (mise en situation, une seule réponse) Un bailleur suggère de collecter les empreintes digitales de tous les bénéficiaires « pour éviter les doublons ». Votre réponse ?
 
 a) Accepter, c'est plus moderne.
 b) Accepter si les données sont stockées dans le cloud.
 c) Refuser sans discussion.
 d) Analyser la nécessité, la base légale, les risques et les alternatives ; les données biométriques sont très sensibles.
 
-**Q8.** (mise en situation — une seule réponse) La synthèse des retours montre que 17 personnes âgées signalent l'éloignement d'un point de distribution. Que faites-vous ?
+**Q8.** (mise en situation, une seule réponse) La synthèse des retours montre que 17 personnes âgées signalent l'éloignement d'un point de distribution. Que faites-vous ?
 
 a) Rien, c'est une minorité.
 b) Supprimer ces retours.
@@ -309,7 +309,7 @@ b) taux de retours clos.
 c) part des retours ayant conduit à un ajustement.
 d) nombre de messages traités par l'IA sans relecture.
 
-## 18.14 Corrigé détaillé — Module 18
+## 18.14 Corrigé détaillé : Module 18
 
 **Q1 : b.** Aucun délai de traitement automatisé ne s'applique aux cas sensibles.
 

@@ -1,6 +1,6 @@
-# Annexe 21 — Modèle de mesure des performances
+# Annexe 21 : Modèle de mesure des performances
 
-*ASBL augmentée — © 2026 Verdi Imbole. Reproduction autorisée pour l'usage interne de l'organisation de l'acheteur.*
+*ASBL augmentée : © 2026 Verdi Imbole. Reproduction autorisée pour l'usage interne de l'organisation de l'acheteur.*
 
 ## Objectif
 

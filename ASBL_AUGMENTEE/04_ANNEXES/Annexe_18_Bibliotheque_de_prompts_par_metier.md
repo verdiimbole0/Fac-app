@@ -1,6 +1,6 @@
-# Annexe 18 — Bibliothèque de prompts par métier
+# Annexe 18 : Bibliothèque de prompts par métier
 
-*ASBL augmentée — © 2026 Verdi Imbole. Reproduction autorisée pour l'usage interne de l'organisation de l'acheteur.*
+*ASBL augmentée : © 2026 Verdi Imbole. Reproduction autorisée pour l'usage interne de l'organisation de l'acheteur.*
 
 ## Objectif
 
@@ -14,7 +14,7 @@ Rassembler les fiches prompts de l'ouvrage pour une réutilisation immédiate, a
 
 ## Fiches
 
-### P1.1 — Préparer une note de sensibilisation sur l'IA pour un organe de gouvernance (module 1)
+### P1.1 : Préparer une note de sensibilisation sur l'IA pour un organe de gouvernance (module 1)
 
 **Objectif.** Obtenir un premier projet de note claire, équilibrée et non technique, qui présente opportunités, risques et propositions de démarche, sans exagération.
 
@@ -55,7 +55,7 @@ Exigences :
 
 **Précautions.** Données de couleur verte uniquement (voir la classification du module 8). Pas d'information sur des personnes. La note reste un projet : elle est validée par la direction avant diffusion.
 
-### P2.1 — Tester les limites d'un assistant avant usage professionnel (module 2)
+### P2.1 : Tester les limites d'un assistant avant usage professionnel (module 2)
 
 **Objectif.** Observer comment l'outil se comporte face à l'absence d'information, aux documents fournis, aux calculs, à l'actualité et aux prémisses fausses.
 
@@ -87,7 +87,7 @@ rédige un message aux bénévoles pour le leur rappeler.
 
 **Précautions.** N'utilisez que des documents non sensibles pour le test. Refaites le test après chaque changement d'outil ou de version majeure.
 
-### P3.1 — Synthèse fidèle d'un document (module 3)
+### P3.1 : Synthèse fidèle d'un document (module 3)
 
 **Objectif.** Obtenir une synthèse courte, fidèle et vérifiable d'un document long, orientée vers une décision.
 
@@ -114,7 +114,7 @@ maximum hors tableau.
 
 **Précautions.** Respectez la classification du document (module 8). Un rapport contenant des données individuelles de bénéficiaires ne doit pas être soumis à un outil non validé.
 
-### P3.2 — Analyser un tableau de données sans se tromper dans les calculs (module 3)
+### P3.2 : Analyser un tableau de données sans se tromper dans les calculs (module 3)
 
 **Objectif.** Obtenir des formules de tableur fiables et une lecture des tendances, en laissant les calculs au tableur.
 
@@ -141,7 +141,7 @@ d'arguments « ; ».
 
 **Précautions.** Jamais de données nominatives d'élèves ou de bénéficiaires dans un outil non validé. Le code élève doit être non signifiant (pas d'initiales + date de naissance).
 
-### P3.3 — Traduction contrôlée d'un support destiné aux communautés (module 3)
+### P3.3 : Traduction contrôlée d'un support destiné aux communautés (module 3)
 
 **Objectif.** Produire un premier jet de traduction compréhensible par le public visé, et identifier les passages à faire valider par un locuteur natif.
 
@@ -167,7 +167,7 @@ et signale-le.
 
 **Précautions.** Une traduction automatique non relue ne doit jamais être diffusée pour un message de santé, de sécurité ou de droits.
 
-### P4.1 — Cartographier les parties prenantes (module 4)
+### P4.1 : Cartographier les parties prenantes (module 4)
 
 **Objectif.** Obtenir un premier inventaire structuré des parties prenantes, classées selon leur influence et leur intérêt, avec les attentes de chacune vis-à-vis d'un projet numérique.
 
@@ -196,7 +196,7 @@ des catégories génériques.
 
 **Précautions.** Ne pas transmettre d'informations confidentielles sur les relations avec les partenaires ou les conflits en cours.
 
-### P5.1 — Transformer des notes d'entretien en carte de processus (module 5)
+### P5.1 : Transformer des notes d'entretien en carte de processus (module 5)
 
 **Objectif.** Structurer des notes d'entretien en une liste d'étapes par acteur, avec durées, documents, contrôles et points de blocage, prête à être dessinée et validée.
 
@@ -228,7 +228,7 @@ tu déduis.
 
 **Précautions.** Les notes d'entretien contiennent souvent des jugements sur des collègues : supprimez-les ou neutralisez-les avant traitement. Classification orange au minimum (module 8).
 
-### P6.1 — Rédiger une fiche d'opportunité (module 6)
+### P6.1 : Rédiger une fiche d'opportunité (module 6)
 
 **Objectif.** Transformer une idée en cas d'usage structuré, évaluable et comparable.
 
@@ -263,7 +263,7 @@ Indique « à estimer » lorsqu'une donnée chiffrée manque.
 
 **Précautions.** Ne pas soumettre de données réelles ; décrire les types de données.
 
-### P7.1 — Nettoyer un fichier de suivi pseudonymisé (module 7)
+### P7.1 : Nettoyer un fichier de suivi pseudonymisé (module 7)
 
 **Objectif.** Obtenir des règles de nettoyage, des formules et une liste de contrôles, appliquées ensuite par vous dans le tableur.
 
@@ -293,7 +293,7 @@ suppose pas que deux lignes similaires désignent la même personne.
 
 **Précautions.** Jamais de noms, dates de naissance complètes, adresses, numéros de téléphone ou informations de santé dans l'outil. Les données d'enfants appellent une vigilance renforcée.
 
-### P8.1 — Anonymiser un texte avant traitement (module 8)
+### P8.1 : Anonymiser un texte avant traitement (module 8)
 
 **Objectif.** Identifier et remplacer les informations permettant d'identifier des personnes, **avant** d'utiliser un texte avec un outil d'IA externe.
 
@@ -322,7 +322,7 @@ Limites : ne résume pas, ne reformule pas le reste du texte.
 
 **Précautions.** L'anonymisation automatique n'est jamais parfaite. Pour des données particulièrement sensibles (violences, santé, statut migratoire), privilégiez une anonymisation manuelle par une personne formée, ou n'utilisez pas d'outil externe.
 
-### P8.2 — Revue de biais d'un contenu ou d'un outil (module 8)
+### P8.2 : Revue de biais d'un contenu ou d'un outil (module 8)
 
 **Objectif.** Repérer stéréotypes, exclusions et traitements inéquitables dans un contenu (texte, campagne) ou dans les règles d'un outil (grille, formulaire, critères).
 
@@ -351,7 +351,7 @@ Limites : distingue les problèmes certains des problèmes possibles.
 
 **Précautions.** L'outil lui-même peut être biaisé ; il ne remplace pas la consultation des personnes concernées.
 
-### P9.1 — Préparer un questionnaire fournisseur (module 9)
+### P9.1 : Préparer un questionnaire fournisseur (module 9)
 
 **Objectif.** Obtenir un questionnaire complet, adapté au cas d'usage, pour comparer objectivement des fournisseurs.
 
@@ -381,7 +381,7 @@ certificats, clauses).
 
 **Précautions.** Ne transmettez pas de données réelles aux fournisseurs avant la signature d'un accord de confidentialité ; utilisez des documents anonymisés pour les démonstrations.
 
-### P10.1 — Projet de procès-verbal à partir de notes (module 10)
+### P10.1 : Projet de procès-verbal à partir de notes (module 10)
 
 **Objectif.** Transformer des notes de séance en projet de PV conforme au modèle de l'organisation, sans rien inventer.
 
@@ -404,7 +404,7 @@ Règles impératives :
    MOT POUR MOT le texte de la décision figurant dans les notes),
    « Vote » (pour/contre/abstention tels que notés).
 2. Si une décision, un vote, une heure ou un quorum ne figure pas dans
-   les notes, écris [À COMPLÉTER] — n'invente rien.
+   les notes, écris [À COMPLÉTER] : n'invente rien.
 3. Si une discussion n'a pas abouti à une décision, écris « Aucune
    décision n'a été prise sur ce point ».
 4. Termine par un tableau « N° | Décision | Responsable | Échéance »
@@ -418,7 +418,7 @@ Style : neutre, concis, au passé composé.
 
 **Précautions.** Ne pas soumettre les points à huis clos, les questions individuelles de personnel ni les informations sur des bénéficiaires identifiables. Supprimer l'enregistrement et la transcription après adoption, selon la règle fixée.
 
-### P10.2 — Alimenter le registre des décisions (module 10)
+### P10.2 : Alimenter le registre des décisions (module 10)
 
 **Objectif.** Produire les lignes du registre des décisions à partir d'un PV adopté.
 
@@ -442,7 +442,7 @@ séparateur.
 
 **Précautions.** Le registre est un document orange ; droits d'accès limités au CA et à la direction.
 
-### P10.3 — Préparer l'ordre du jour (module 10)
+### P10.3 : Préparer l'ordre du jour (module 10)
 
 **Objectif.** Ne rien oublier : décisions à échéance, obligations statutaires, mandats, rapports attendus.
 
@@ -470,7 +470,7 @@ points pour décision avant les points pour information.
 
 **Précautions.** Données orange.
 
-### P11.1 — Projet d'arbre à problèmes à partir de données de terrain (module 11)
+### P11.1 : Projet d'arbre à problèmes à partir de données de terrain (module 11)
 
 **Objectif.** Organiser les données disponibles en un arbre à problèmes provisoire, servant de support de discussion.
 
@@ -498,7 +498,7 @@ culpabilisent les populations.
 
 **Précautions.** Ne pas inclure de noms de personnes ni de lieux sensibles. Veiller à ce que la formulation n'attribue pas le problème à la « négligence » des familles.
 
-### P11.2 — Projet de cadre logique (module 11)
+### P11.2 : Projet de cadre logique (module 11)
 
 **Objectif.** Produire un cadre logique cohérent, avec indicateurs SMART et hypothèses, conforme au modèle du bailleur.
 
@@ -528,7 +528,7 @@ sans les signaler comme « proposition à valider ».
 
 **Précautions.** Données vertes ou orange.
 
-### P11.3 — Rapport d'avancement fidèle (module 11)
+### P11.3 : Rapport d'avancement fidèle (module 11)
 
 **Objectif.** Rédiger un rapport d'avancement qui compare prévu et réalisé et explique les écarts, sans embellissement.
 
@@ -557,7 +557,7 @@ Règles :
 
 **Précautions.** Aucune donnée individuelle de bénéficiaire.
 
-### P12.1 — Extraire les données d'une facture (module 12)
+### P12.1 : Extraire les données d'une facture (module 12)
 
 **Objectif.** Obtenir les champs d'une facture dans un format prêt à importer, avec signalement des incertitudes.
 
@@ -586,7 +586,7 @@ Limites : si un champ est illisible ou absent, écris « ILLISIBLE » ou
 
 **Précautions.** Ne pas soumettre de pièces contenant des données personnelles sensibles (notes de frais avec informations médicales, bulletins de paie) à un outil non validé. Ne jamais recopier des coordonnées bancaires dans un outil externe.
 
-### P12.2 — Proposer une imputation comptable et analytique (module 12)
+### P12.2 : Proposer une imputation comptable et analytique (module 12)
 
 **Objectif.** Obtenir une proposition d'imputation conforme **à votre** plan comptable et **à votre** plan analytique, avec justification et niveau de confiance.
 
@@ -612,7 +612,7 @@ ADAPTÉ » ; si l'affectation à un projet est incertaine, propose
 
 **Précautions.** Données orange. La décision d'imputation reste celle de la comptable.
 
-### P12.3 — Analyse narrative des écarts budgétaires (module 12)
+### P12.3 : Analyse narrative des écarts budgétaires (module 12)
 
 **Objectif.** Rédiger une analyse claire des écarts à partir de taux déjà calculés et des explications des responsables.
 
@@ -643,7 +643,7 @@ chiffres fournis.
 
 **Précautions.** Données orange.
 
-### P13.1 — Concevoir les tests analytiques d'un fichier de dépenses (module 13)
+### P13.1 : Concevoir les tests analytiques d'un fichier de dépenses (module 13)
 
 **Objectif.** Obtenir les formules ou les étapes pour exécuter des tests ciblés sur toute une population de dépenses.
 
@@ -674,7 +674,7 @@ nécessitent un tri préalable.
 
 **Précautions.** Les fichiers de dépenses sont orange ; noms de personnes physiques à remplacer par des fonctions.
 
-### P13.2 — Rédiger une feuille de travail (module 13)
+### P13.2 : Rédiger une feuille de travail (module 13)
 
 **Objectif.** Documenter les travaux de façon complète et revue.
 
@@ -699,7 +699,7 @@ constatés et hypothèses ; n'emploie pas le mot « fraude » : écris
 
 **Précautions.** Données orange, voire rouges en cas d'indices de fraude : outil validé exclusivement, ou rédaction manuelle.
 
-### P13.3 — Formuler des recommandations actionnables (module 13)
+### P13.3 : Formuler des recommandations actionnables (module 13)
 
 **Objectif.** Transformer des constats en recommandations claires, priorisées, attribuées et vérifiables.
 
@@ -723,7 +723,7 @@ du conseil d'administration.
 
 **Précautions.** Ne pas désigner de personnes nommément dans le document de travail.
 
-### P14.1 — Fiche de poste et annonce inclusives (module 14)
+### P14.1 : Fiche de poste et annonce inclusives (module 14)
 
 **Objectif.** Produire une fiche de poste claire et une annonce inclusive, distinguant exigences indispensables et souhaitables.
 
@@ -750,7 +750,7 @@ situation familiale ou à l'apparence ; formulation inclusive.
 
 **Précautions.** Données vertes à orange (pas de données personnelles).
 
-### P14.2 — Guide d'entretien structuré (module 14)
+### P14.2 : Guide d'entretien structuré (module 14)
 
 **Objectif.** Garantir des entretiens équitables, comparables et centrés sur les compétences.
 
@@ -773,7 +773,7 @@ religion, origine…) ; une fiche d'évaluation individuelle vierge.
 
 **Précautions.** Aucune donnée de candidat dans la consigne.
 
-### P14.3 — Planning hebdomadaire des bénévoles (module 14)
+### P14.3 : Planning hebdomadaire des bénévoles (module 14)
 
 **Objectif.** Obtenir un premier planning respectant les contraintes, à ajuster par le coordinateur.
 
@@ -799,7 +799,7 @@ signale toute règle impossible à respecter.
 
 **Précautions.** Aucun nom, adresse, information de santé ou de dépendance dans l'outil.
 
-### P15.1 — Analyser un appel à projets et vérifier l'éligibilité (module 15)
+### P15.1 : Analyser un appel à projets et vérifier l'éligibilité (module 15)
 
 **Objectif.** Extraire de façon exhaustive les informations clés et les critères d'éligibilité, avec référence au texte.
 
@@ -810,16 +810,16 @@ Contexte : [NOM DE L'ASBL], profil : <profil>[STATUT, ANNÉE
 D'ENREGISTREMENT, PAYS, SECTEURS, BUDGET ANNUEL, ZONES]</profil>
 Appel : <appel>[TEXTE INTÉGRAL ET ANNEXES]</appel>
 Tâche :
-Partie 1 — Fiche d'analyse : bailleur ; objet ; priorités
+Partie 1 : Fiche d'analyse : bailleur ; objet ; priorités
 thématiques ; zones ; montants min/max ; durée ; cofinancement ;
 coûts indirects autorisés ; dates (questions, soumission, décision) ;
 procédure (une ou deux étapes) ; documents exigés ; critères
 d'évaluation et pondération ; règles sur l'usage de l'IA dans la
 préparation du dossier, s'il y en a.
-Partie 2 — Éligibilité : tableau « Critère (citation exacte) | Page
+Partie 2 : Éligibilité : tableau « Critère (citation exacte) | Page
 ou section | Notre situation selon le profil | Preuve à fournir |
 Statut (rempli / non rempli / à vérifier) ».
-Partie 3 — Points d'attention et questions à poser au bailleur.
+Partie 3 : Points d'attention et questions à poser au bailleur.
 Règles : cite exactement le texte pour chaque critère ; si une
 information est absente de l'appel, écris « non précisé » ; ne
 conclus pas à l'éligibilité globale : laisse ce jugement à
@@ -830,7 +830,7 @@ l'organisation.
 
 **Précautions.** Le profil ne doit contenir que des informations administratives non sensibles.
 
-### P15.2 — Note conceptuelle à partir du dossier de matière première (module 15)
+### P15.2 : Note conceptuelle à partir du dossier de matière première (module 15)
 
 **Objectif.** Mettre en forme une note conceptuelle conforme au modèle du bailleur, fondée sur la matière première de l'organisation.
 
@@ -861,7 +861,7 @@ Style : précis, concret, sans superlatifs.
 
 **Précautions.** Pas de données personnelles ; témoignages anonymisés et utilisés avec consentement ; respect des règles du bailleur sur l'IA.
 
-### P15.3 — Vérifier la cohérence budget–activités–règles (module 15)
+### P15.3 : Vérifier la cohérence budget–activités–règles (module 15)
 
 **Objectif.** Repérer les incohérences entre budget, activités et règles du bailleur avant soumission.
 
@@ -887,7 +887,7 @@ Tâche : vérifie la cohérence.
 
 **Précautions.** Données orange.
 
-### P16.1 — Normaliser des offres hétérogènes dans un tableau comparatif (module 16)
+### P16.1 : Normaliser des offres hétérogènes dans un tableau comparatif (module 16)
 
 **Objectif.** Extraire et présenter les offres de façon homogène, avec les écarts par rapport aux spécifications.
 
@@ -914,7 +914,7 @@ fournisseurs (selon le règlement de consultation).
 
 **Précautions.** Les offres sont confidentielles ; outil validé exclusivement. Aucune transmission d'une offre à un autre fournisseur.
 
-### P16.2 — Rapprochement commande / livraison / facture (module 16)
+### P16.2 : Rapprochement commande / livraison / facture (module 16)
 
 **Objectif.** Repérer les écarts de quantités, de prix et de références avant paiement.
 
@@ -935,7 +935,7 @@ formule que je dois appliquer.
 
 **Précautions.** Données orange ; coordonnées bancaires non recopiées.
 
-### P17.1 — Calendrier éditorial à partir d'un programme réel (module 17)
+### P17.1 : Calendrier éditorial à partir d'un programme réel (module 17)
 
 **Objectif.** Planifier des contenus reliés aux activités réelles, aux publics et aux objectifs.
 
@@ -961,7 +961,7 @@ signale les semaines sans activité à valoriser.
 
 **Précautions.** Pas de noms ni de lieux précis de bénéficiaires ; codes pour les témoins.
 
-### P17.2 — Déclinaison multicanal fidèle (module 17)
+### P17.2 : Déclinaison multicanal fidèle (module 17)
 
 **Objectif.** Adapter un contenu vérifié à plusieurs canaux et publics sans altérer les faits.
 
@@ -982,7 +982,7 @@ respecte la charte ; termine par la liste des faits utilisés.
 
 **Précautions.** Contenus verts une fois validés.
 
-### P18.1 — Classifier et synthétiser des retours communautaires (module 18)
+### P18.1 : Classifier et synthétiser des retours communautaires (module 18)
 
 **Objectif.** Proposer une catégorie et un niveau d'urgence pour des retours **déjà triés** (cas sensibles exclus), et synthétiser les tendances.
 
@@ -1012,7 +1012,7 @@ N'interprète pas au-delà du texte.
 
 **Précautions.** Aucune donnée identifiante ; outil validé ; les sorties sont des données orange à rouges selon le contenu.
 
-### P18.2 — Rapport de terrain structuré à partir de notes (module 18)
+### P18.2 : Rapport de terrain structuré à partir de notes (module 18)
 
 **Objectif.** Transformer des notes brutes (écrites ou transcrites) en rapport structuré et factuel.
 
@@ -1038,7 +1038,7 @@ TRANSMETTRE AU RÉFÉRENT ».
 
 **Précautions.** Pseudonymisation ; pas de photos de personnes dans l'outil.
 
-### P19.1 — Cahier des charges simplifié et consignes système (module 19)
+### P19.1 : Cahier des charges simplifié et consignes système (module 19)
 
 **Objectif.** Produire un cahier des charges fonctionnel structuré et un projet de consignes système pour l'assistant.
 
@@ -1069,7 +1069,7 @@ Limites : ne propose pas de solution commerciale nommée.
 
 **Précautions.** Ne pas inclure de données personnelles dans le cahier des charges.
 
-### P19.2 — Construire un jeu de tests (module 19)
+### P19.2 : Construire un jeu de tests (module 19)
 
 **Objectif.** Disposer d'un ensemble de questions avec réponses de référence et comportements attendus, pour évaluer l'assistant avant et après chaque modification.
 
@@ -1094,7 +1094,7 @@ paraphrases fidèles des documents, avec la section exacte.
 
 **Précautions.** Questions anonymisées.
 
-### P20.1 — Construire un plan de formation (module 20)
+### P20.1 : Construire un plan de formation (module 20)
 
 **Objectif.** Obtenir un plan de formation par rôle, progressif et réaliste.
 
@@ -1121,7 +1121,7 @@ données et la vérification des réponses.
 
 **Précautions.** Données agrégées uniquement.
 
-### P22.1 — Construire la feuille de route à 90 jours (module 22)
+### P22.1 : Construire la feuille de route à 90 jours (module 22)
 
 **Objectif.** Transformer un diagnostic et des priorités en plan daté, budgété, attribué et mesurable.
 

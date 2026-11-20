@@ -1,6 +1,6 @@
-# Annexe 15 — Modèle de tableau de bord
+# Annexe 15 : Modèle de tableau de bord
 
-*ASBL augmentée — © 2026 Verdi Imbole. Reproduction autorisée pour l'usage interne de l'organisation de l'acheteur.*
+*ASBL augmentée : © 2026 Verdi Imbole. Reproduction autorisée pour l'usage interne de l'organisation de l'acheteur.*
 
 ## Objectif
 

@@ -1,4 +1,4 @@
-# Module 17 — Communication, marketing et plaidoyer
+# Module 17 : Communication, marketing et plaidoyer
 
 ## 17.1 Mise en situation
 
@@ -31,7 +31,7 @@ La communication d'une ASBL repose sur la **confiance** : authenticité des réc
 
 ## 17.5 Explications détaillées
 
-![Figure 17.1 — La chaîne éditoriale assistée](03_ILLUSTRATIONS/figures/fig_17_1.svg)
+![Figure 17.1 : La chaîne éditoriale assistée](03_ILLUSTRATIONS/figures/fig_17_1.svg)
 
 ### Stratégie et identité
 
@@ -51,7 +51,7 @@ L'IA aide à structurer une présentation (message principal d'abord, trois idé
 
 ### Traduction et accessibilité
 
-Voir la fiche P3.3 : traduction avec glossaire, relecture par un locuteur natif, rétro-traduction pour les messages critiques. L'accessibilité numérique — textes alternatifs pour les images, contrastes suffisants, sous-titres des vidéos, langage clair — s'appuie utilement sur les règles WCAG 2.2 du W3C. L'IA peut proposer des textes alternatifs et des sous-titres, à vérifier.
+Voir la fiche P3.3 : traduction avec glossaire, relecture par un locuteur natif, rétro-traduction pour les messages critiques. L'accessibilité numérique (textes alternatifs pour les images, contrastes suffisants, sous-titres des vidéos, langage clair) s'appuie utilement sur les règles WCAG 2.2 du W3C. L'IA peut proposer des textes alternatifs et des sous-titres, à vérifier.
 
 ### Valorisation des activités et communication avec les bailleurs
 
@@ -69,7 +69,7 @@ Un message de sensibilisation efficace est simple, concret, adapté au public et
 4. **Transparence** : signaler les images ou contenus générés lorsqu'ils pourraient être pris pour réels ; respecter les règles des plateformes et, le cas échéant, les obligations légales de transparence sur les contenus synthétiques.
 5. **Droits** : vérifier les droits sur les images, musiques et textes utilisés.
 
-> **🔎 À retenir** — Une communication assistée par l'IA reste une communication **de l'organisation**. Elle engage sa crédibilité à chaque publication.
+> **🔎 À retenir** : Une communication assistée par l'IA reste une communication **de l'organisation**. Elle engage sa crédibilité à chaque publication.
 
 ## 17.6 Application métier : du programme décrit au calendrier éditorial de trois mois
 
@@ -115,7 +115,7 @@ Un message de sensibilisation efficace est simple, concret, adapté au public et
 
 ## 17.7 Prompts prêts à l'emploi
 
-### Fiche P17.1 — Calendrier éditorial à partir d'un programme réel
+### Fiche P17.1 : Calendrier éditorial à partir d'un programme réel
 
 **A. Titre.** Calendrier éditorial trimestriel.
 
@@ -147,7 +147,7 @@ signale les semaines sans activité à valoriser.
 
 **G. Résultat attendu.** Un calendrier de 13 semaines, chaque ligne reliée à une source.
 
-**H. Exemple d'application (illustratif).** Semaine 4 : « réseau social — grand public — informer — "Traiter l'eau à la maison : 3 gestes simples" — carrousel illustré (dessins) — source : activité 1.1, séance du 12 octobre — consentement : non (pas de personne représentée) ».
+**H. Exemple d'application (illustratif).** Semaine 4 : « réseau social, grand public, informer ("Traiter l'eau à la maison : 3 gestes simples") carrousel illustré (dessins) (source : activité 1.1, séance du 12 octobre) consentement : non (pas de personne représentée) ».
 
 **I. Méthode de vérification.** Chaque ligne renvoie à un élément vérifié de la fiche programme.
 
@@ -155,7 +155,7 @@ signale les semaines sans activité à valoriser.
 
 **K. Amélioration.** « Ajoute pour chaque contenu un indicateur de succès et la manière de le mesurer. »
 
-### Fiche P17.2 — Déclinaison multicanal fidèle
+### Fiche P17.2 : Déclinaison multicanal fidèle
 
 **A. Titre.** Déclinaisons d'un contenu pivot.
 
@@ -182,7 +182,7 @@ respecte la charte ; termine par la liste des faits utilisés.
 
 **G. Résultat attendu.** Des déclinaisons cohérentes et la liste des faits repris.
 
-**H. Exemple d'application (illustratif).** À partir d'un article sur la réhabilitation de 40 latrines, la version facile à lire propose : « Dans trois villages, 40 familles ont des toilettes réparées. Les enfants tombent moins malades. » — la seconde phrase n'étant **pas** dans le pivot, elle est supprimée lors de la relecture : c'est une affirmation d'impact non démontrée.
+**H. Exemple d'application (illustratif).** À partir d'un article sur la réhabilitation de 40 latrines, la version facile à lire propose : « Dans trois villages, 40 familles ont des toilettes réparées. Les enfants tombent moins malades. » : la seconde phrase n'étant **pas** dans le pivot, elle est supprimée lors de la relecture : c'est une affirmation d'impact non démontrée.
 
 **I. Méthode de vérification.** Comparaison des faits avec le pivot ; vigilance sur les glissements vers l'impact non prouvé.
 
@@ -196,7 +196,7 @@ Une communication régulière, authentique, exacte, accessible, et cohérente av
 
 ## 17.9 Contrôles humains
 
-> **🛑 Contrôle humain obligatoire** — Relecture et validation de chaque publication ; vérification des consentements ; décision sur l'usage d'images générées ; validation des positions de plaidoyer par la direction et, si nécessaire, par le conseil.
+> **🛑 Contrôle humain obligatoire** : Relecture et validation de chaque publication ; vérification des consentements ; décision sur l'usage d'images générées ; validation des positions de plaidoyer par la direction et, si nécessaire, par le conseil.
 
 ## 17.10 Risques et erreurs à éviter
 
@@ -210,7 +210,7 @@ Une communication régulière, authentique, exacte, accessible, et cohérente av
 
 **Consigne (2 heures).** (1) Rédigez une charte éditoriale d'une page. (2) Établissez une fiche programme vérifiée pour une activité réelle. (3) Appliquez P17.1 pour quatre semaines. (4) Appliquez P17.2 à un contenu pivot et relevez toute dérive factuelle.
 
-**Éléments de correction.** La charte fixe la manière de parler des personnes accompagnées ; chaque ligne du calendrier renvoie à un fait vérifié ; au moins une dérive factuelle est généralement repérée dans les déclinaisons — c'est l'objet de l'exercice.
+**Éléments de correction.** La charte fixe la manière de parler des personnes accompagnées ; chaque ligne du calendrier renvoie à un fait vérifié ; au moins une dérive factuelle est généralement repérée dans les déclinaisons : c'est l'objet de l'exercice.
 
 ## 17.12 Synthèse
 
@@ -219,7 +219,7 @@ Une communication régulière, authentique, exacte, accessible, et cohérente av
 - L'IA décline, adapte et traduit ; elle ne fournit pas les faits.
 - Dignité, exactitude, transparence et accessibilité sont non négociables.
 
-## 17.13 QCM — Module 17
+## 17.13 QCM : Module 17
 
 **Q1.** (une seule réponse) La charte éditoriale sert principalement à :
 
@@ -263,7 +263,7 @@ b) des émotions uniquement.
 c) des rumeurs.
 d) des preuves sourcées et des propositions précises.
 
-**Q7.** (mise en situation — une seule réponse) Un donateur vous reproche des messages « interchangeables ». Votre première action ?
+**Q7.** (mise en situation, une seule réponse) Un donateur vous reproche des messages « interchangeables ». Votre première action ?
 
 a) Publier davantage.
 b) Changer d'outil d'IA.
@@ -284,14 +284,14 @@ b) sous-titres des vidéos.
 c) contrastes suffisants.
 d) texte intégralement dans des images.
 
-**Q10.** (mise en situation — une seule réponse) Un partenaire demande d'utiliser vos photos de bénéficiaires dans sa campagne. Que vérifiez-vous d'abord ?
+**Q10.** (mise en situation, une seule réponse) Un partenaire demande d'utiliser vos photos de bénéficiaires dans sa campagne. Que vérifiez-vous d'abord ?
 
 a) La résolution des photos.
 b) La couleur de sa charte.
 c) Rien, les photos vous appartiennent.
 d) Que les consentements couvrent cet usage par un tiers.
 
-## 17.14 Corrigé détaillé — Module 17
+## 17.14 Corrigé détaillé : Module 17
 
 **Q1 : a.** Elle fixe la voix et les règles de représentation.
 

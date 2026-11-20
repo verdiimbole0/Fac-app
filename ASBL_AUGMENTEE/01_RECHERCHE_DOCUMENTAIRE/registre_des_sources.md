@@ -1,4 +1,4 @@
-# Registre des sources — ASBL AUGMENTÉE
+# Registre des sources : ASBL AUGMENTÉE
 
 Date d'établissement : 20 novembre 2026
 Responsable éditorial : Verdi Imbole (validation finale requise)
@@ -38,7 +38,7 @@ Chaque source a été recherchée en ligne le 20 novembre 2026 afin de confirmer
 | Le profil IA générative du NIST (juillet 2024) identifie 12 risques | S04 | M8 |
 | ISO/IEC 42001:2023 spécifie les exigences d'un système de management de l'IA et est certifiable | S05 | M8, M20 |
 | Le règlement (UE) 2024/1689 est entré en vigueur le 1er août 2024 ; ses obligations s'appliquent de façon échelonnée | S06 | M8 |
-| Un règlement « omnibus » de 2026 a reporté certaines obligations relatives aux systèmes à haut risque | S07 (V1) | M8 — formulation prudente |
+| Un règlement « omnibus » de 2026 a reporté certaines obligations relatives aux systèmes à haut risque | S07 (V1) | M8 : formulation prudente |
 | Le cadre COSO 2013 comprend cinq composantes et dix-sept principes | S11 | M5, M13 |
 | Les Normes internationales d'audit interne de l'IIA sont en vigueur depuis le 9 janvier 2025 | S12 | M13 |
 | Un référentiel comptable international pour les OSBL (INPAS) a été lancé en octobre 2025 ; il est volontaire sauf adoption locale | S13 | M12 |

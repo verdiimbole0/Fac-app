@@ -1,4 +1,4 @@
-# Architecture éditoriale détaillée — ASBL AUGMENTÉE
+# Architecture éditoriale détaillée : ASBL AUGMENTÉE
 
 *Document de travail interne. Il n'est pas inclus dans le manuscrit compilé.*
 
@@ -54,7 +54,7 @@ A. Contexte · B. Problème · C. Symptômes · D. Causes profondes · E. Proces
 
 | Module | Démonstration principale | Fiches prompts | Figures |
 |---|---|---|---|
-| **Liminaires** | Parcours de lecture | — | Fig. 0.1 Carte des parcours |
+| **Liminaires** | Parcours de lecture | Néant | Fig. 0.1 Carte des parcours |
 | **M1** IA : comprendre une révolution | Une journée de Mariam, coordinatrice, avant/après | P1.1 Expliquer l'IA à son conseil | 1.1 Frise ; 1.2 Familles d'IA |
 | **M2** Fonctionnement réel | Suivre une question à travers un LLM et un RAG | P2.1 Tester les limites d'un assistant | 2.1 De la donnée au modèle ; 2.2 Architecture RAG |
 | **M3** Utiliser et maîtriser les outils | Méthode CADRE de rédaction de prompts | P3.1 Synthèse de document ; P3.2 Analyse de tableur ; P3.3 Traduction contrôlée | 3.1 Anatomie d'un prompt ; 3.2 Boucle de vérification |
@@ -75,7 +75,7 @@ A. Contexte · B. Problème · C. Symptômes · D. Causes profondes · E. Proces
 | **M18** Bénéficiaires et terrain | Mécanisme de plaintes multilingue | P18.1 Classification des retours ; P18.2 Rapport de terrain | 18.1 Boucle de redevabilité |
 | **M19** Déploiement de bout en bout | Projet « assistant de procédures » d'Horizons Partagés | P19.1 Cahier des charges ; P19.2 Jeu de tests | 19.1 Cycle projet IA |
 | **M20** Changement et pérennité | Adoption, gouvernance, maintenance | P20.1 Plan de formation | 20.1 Courbe d'adoption ; 20.2 Comité IA |
-| **M21** 10 études de cas | Cas 1 à 10 | — | 21.1 Synthèse des cas |
+| **M21** 10 études de cas | Cas 1 à 10 | Néant | 21.1 Synthèse des cas |
 | **M22** Plan de transformation | Plan 90 jours de Lumière des Collines | P22.1 Feuille de route | 22.1 Plan 90 jours |
 
 ## 5. Transitions entre parties

@@ -59,7 +59,7 @@
   },
   {
    "module": 6,
-   "mots": 3067,
+   "mots": 3071,
    "questions": 10,
    "corrigés": 10,
    "fiches": [
@@ -104,7 +104,7 @@
   },
   {
    "module": 10,
-   "mots": 4195,
+   "mots": 4198,
    "questions": 10,
    "corrigés": 10,
    "fiches": [
@@ -117,7 +117,7 @@
   },
   {
    "module": 11,
-   "mots": 3844,
+   "mots": 3846,
    "questions": 10,
    "corrigés": 10,
    "fiches": [
@@ -130,7 +130,7 @@
   },
   {
    "module": 12,
-   "mots": 5717,
+   "mots": 5733,
    "questions": 10,
    "corrigés": 10,
    "fiches": [
@@ -169,7 +169,7 @@
   },
   {
    "module": 15,
-   "mots": 3499,
+   "mots": 3500,
    "questions": 10,
    "corrigés": 10,
    "fiches": [
@@ -250,7 +250,7 @@
   },
   {
    "module": 22,
-   "mots": 2410,
+   "mots": 2415,
    "questions": 10,
    "corrigés": 10,
    "fiches": [
@@ -261,7 +261,7 @@
   }
  ],
  "alertes": [],
- "total_mots_modules": 78470,
+ "total_mots_modules": 78501,
  "total_questions": 220,
  "total_fiches": 40
 }

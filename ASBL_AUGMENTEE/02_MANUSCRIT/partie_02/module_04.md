@@ -1,8 +1,8 @@
-# Partie II — Comprendre son ASBL et identifier les problèmes {.partie}
+# Partie II : Comprendre son ASBL et identifier les problèmes {.partie}
 
-*Vous savez désormais ce que l'IA peut et ne peut pas faire. Encore faut-il savoir où elle serait utile chez vous. Cette partie vous apprend à regarder votre organisation comme un système : ses organes, ses métiers, ses cycles, ses processus — et ses dysfonctionnements. C'est la condition pour choisir les bonnes priorités.*
+*Vous savez désormais ce que l'IA peut et ne peut pas faire. Encore faut-il savoir où elle serait utile chez vous. Cette partie vous apprend à regarder votre organisation comme un système : ses organes, ses métiers, ses cycles, ses processus, et ses dysfonctionnements. C'est la condition pour choisir les bonnes priorités.*
 
-# Module 4 — Comprendre le fonctionnement d'une ASBL moderne
+# Module 4 : Comprendre le fonctionnement d'une ASBL moderne
 
 ## 4.1 Mise en situation
 
@@ -27,7 +27,7 @@ Les projets numériques échouent souvent parce qu'ils sont conçus pour un serv
 
 ## 4.4 Notions et définitions
 
-- **Mission** : raison d'être de l'organisation — ce qu'elle fait, pour qui et pourquoi.
+- **Mission** : raison d'être de l'organisation : ce qu'elle fait, pour qui et pourquoi.
 - **Vision** : situation future que l'organisation souhaite contribuer à créer.
 - **Valeurs** : principes qui guident les comportements et les décisions.
 - **Gouvernance** : ensemble des règles et organes qui orientent, contrôlent et rendent compte (assemblée générale, conseil d'administration, comités).
@@ -35,7 +35,7 @@ Les projets numériques échouent souvent parce qu'ils sont conçus pour un serv
 - **Partie prenante** : personne ou organisation qui influence l'ASBL ou est affectée par ses actions.
 - **Processus** : enchaînement d'activités qui transforme des entrées en résultats pour un destinataire (par exemple : « payer un fournisseur »).
 
-> **⚖️ Adaptation réglementaire** — Le nom, la composition et les pouvoirs des organes (assemblée générale, conseil d'administration, bureau, conseil de surveillance, *board of trustees*…) dépendent du droit applicable et des statuts. Vérifiez toujours vos statuts et la loi de votre pays avant de modifier un circuit de décision.
+> **⚖️ Adaptation réglementaire** : Le nom, la composition et les pouvoirs des organes (assemblée générale, conseil d'administration, bureau, conseil de surveillance, *board of trustees*…) dépendent du droit applicable et des statuts. Vérifiez toujours vos statuts et la loi de votre pays avant de modifier un circuit de décision.
 
 ## 4.5 Explications détaillées
 
@@ -45,7 +45,7 @@ La mission n'est pas un texte décoratif. Elle fournit le premier critère de s�
 
 ### Gouvernance et organes dirigeants
 
-![Figure 4.1 — Organigramme type d'une ASBL de taille moyenne](03_ILLUSTRATIONS/figures/fig_4_1.svg)
+![Figure 4.1 : Organigramme type d'une ASBL de taille moyenne](03_ILLUSTRATIONS/figures/fig_4_1.svg)
 
 Dans la plupart des ASBL, on retrouve trois niveaux.
 
@@ -55,7 +55,7 @@ Dans la plupart des ASBL, on retrouve trois niveaux.
 | Orientation et contrôle | Conseil d'administration, éventuellement comités (audit, finances, programmes) | Fixe la stratégie, adopte le budget et les politiques, contrôle la direction | Adoption d'une politique d'utilisation de l'IA |
 | Exécution | Direction exécutive et équipes | Met en œuvre, gère, rend compte | Choix d'un outil dans l'enveloppe budgétaire votée |
 
-Dans les très petites associations, ces niveaux se confondent souvent : le président est aussi trésorier et coordinateur. Ce n'est pas un problème en soi, mais cela affaiblit le contrôle interne (module 13) et rend l'organisation dépendante de quelques personnes — un risque que l'IA peut aider à réduire en documentant les connaissances.
+Dans les très petites associations, ces niveaux se confondent souvent : le président est aussi trésorier et coordinateur. Ce n'est pas un problème en soi, mais cela affaiblit le contrôle interne (module 13) et rend l'organisation dépendante de quelques personnes : un risque que l'IA peut aider à réduire en documentant les connaissances.
 
 ### Organigramme, départements et métiers
 
@@ -75,7 +75,7 @@ Une ASBL est au centre d'un réseau de relations :
 
 - **les bénéficiaires**, qui doivent être au cœur des choix, y compris technologiques : sont-ils informés ? leur consentement est-il recueilli ? peuvent-ils réclamer ?
 - **les bailleurs et donateurs**, qui imposent souvent des exigences de reporting, de procédures et de protection des données ;
-- **les partenaires opérationnels**, avec lesquels on partage des données — ce qui suppose des accords ;
+- **les partenaires opérationnels**, avec lesquels on partage des données : ce qui suppose des accords ;
 - **les autorités**, qui fixent des obligations déclaratives et réglementaires ;
 - **les fournisseurs**, y compris les fournisseurs de solutions numériques, qui deviennent des partenaires critiques.
 
@@ -83,7 +83,7 @@ Les **ressources** comprennent les financements (affectés ou non affectés), le
 
 ### Les cycles de fonctionnement
 
-![Figure 4.2 — Les cycles de fonctionnement d'une ASBL](03_ILLUSTRATIONS/figures/fig_4_2.svg)
+![Figure 4.2 : Les cycles de fonctionnement d'une ASBL](03_ILLUSTRATIONS/figures/fig_4_2.svg)
 
 Quatre cycles s'emboîtent :
 
@@ -117,7 +117,7 @@ Samuel décide de construire, en trois semaines, une « radiographie » de l'org
 
 ## 4.7 Prompt prêt à l'emploi
 
-### Fiche P4.1 — Cartographier les parties prenantes
+### Fiche P4.1 : Cartographier les parties prenantes
 
 **A. Titre.** Matrice des parties prenantes d'une ASBL.
 
@@ -152,7 +152,7 @@ des catégories génériques.
 
 **G. Résultat attendu.** Un tableau de 12 à 20 lignes et une liste priorisée.
 
-**H. Exemple d'application (illustratif).** Pour Horizons Partagés, le tableau fait notamment apparaître : « Agents de santé communautaires — interne/terrain — influence moyenne — intérêt fort — attente : moins de saisie double — crainte : surveillance de leur travail — mode : associer ». Cette dernière crainte, que la direction n'avait pas anticipée, sera confirmée en entretien.
+**H. Exemple d'application (illustratif).** Pour Horizons Partagés, le tableau fait notamment apparaître : « Agents de santé communautaires, interne/terrain, influence moyenne, intérêt fort, attente : moins de saisie double (crainte : surveillance de leur travail) mode : associer ». Cette dernière crainte, que la direction n'avait pas anticipée, sera confirmée en entretien.
 
 **I. Méthode de vérification.** Confrontez la liste aux conventions, à l'organigramme et aux registres de partenaires. Validez les hypothèses d'attentes et de craintes par 3 à 5 entretiens.
 
@@ -166,7 +166,7 @@ Un dossier de référence, un organigramme fonctionnel validé, une matrice des 
 
 ## 4.9 Contrôles humains
 
-> **🛑 Contrôle humain obligatoire** — La représentation de l'organisation (organigramme, circuits de décision) doit être validée par les responsables concernés et, pour les pouvoirs des organes, confrontée aux statuts. Un document de gouvernance erroné peut conduire à des décisions prises par un organe non compétent.
+> **🛑 Contrôle humain obligatoire** : La représentation de l'organisation (organigramme, circuits de décision) doit être validée par les responsables concernés et, pour les pouvoirs des organes, confrontée aux statuts. Un document de gouvernance erroné peut conduire à des décisions prises par un organe non compétent.
 
 ## 4.10 Risques et erreurs à éviter
 
@@ -187,10 +187,10 @@ Un dossier de référence, un organigramme fonctionnel validé, une matrice des 
 - La mission et les valeurs sont les premiers critères de choix technologiques.
 - Gouvernance, direction et exécution ont des rôles distincts, même dans une petite structure.
 - L'organigramme hiérarchique doit être complété par une vision fonctionnelle (métiers, données, documents).
-- Les parties prenantes — bénéficiaires en tête — doivent être identifiées et impliquées.
+- Les parties prenantes, bénéficiaires en tête, doivent être identifiées et impliquées.
 - Les cycles de fonctionnement révèlent les tâches répétitives, premiers gisements pour l'IA.
 
-## 4.13 QCM — Module 4
+## 4.13 QCM : Module 4
 
 **Q1.** (une seule réponse) La mission d'une ASBL :
 
@@ -234,14 +234,14 @@ b) la validation des comptes.
 c) les tâches de collecte, de consolidation et de mise en forme.
 d) l'élection des administrateurs.
 
-**Q7.** (mise en situation — une seule réponse) Dans une association de cinq personnes, la présidente est aussi trésorière et coordinatrice. Le principal risque à signaler est :
+**Q7.** (mise en situation, une seule réponse) Dans une association de cinq personnes, la présidente est aussi trésorière et coordinatrice. Le principal risque à signaler est :
 
 a) un excès de contrôle.
 b) un affaiblissement du contrôle interne et une forte dépendance à une personne.
 c) l'impossibilité d'utiliser un tableur.
 d) l'interdiction légale de cumuler ces fonctions dans tous les pays.
 
-**Q8.** (mise en situation — une seule réponse) Un assistant propose une matrice des parties prenantes mentionnant les « craintes des agents de terrain ». Comment traiter cette information ?
+**Q8.** (mise en situation, une seule réponse) Un assistant propose une matrice des parties prenantes mentionnant les « craintes des agents de terrain ». Comment traiter cette information ?
 
 a) La traiter comme une hypothèse à vérifier par des entretiens.
 b) La considérer comme établie.
@@ -262,7 +262,7 @@ b) Pour tenir compte des interactions entre services.
 c) Pour identifier les circuits de décision compétents.
 d) Pour choisir le fournisseur le moins cher.
 
-## 4.14 Corrigé détaillé — Module 4
+## 4.14 Corrigé détaillé : Module 4
 
 **Q1 : d.** La mission dit quoi, pour qui et pourquoi ; elle oriente les choix.
 

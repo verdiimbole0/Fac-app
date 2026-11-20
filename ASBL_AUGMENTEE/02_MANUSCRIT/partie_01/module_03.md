@@ -1,4 +1,4 @@
-# Module 3 — Apprendre à utiliser et maîtriser les outils d'IA
+# Module 3 : Apprendre à utiliser et maîtriser les outils d'IA
 
 ## 3.1 Mise en situation
 
@@ -44,19 +44,19 @@ L'efficacité d'un outil d'IA dépend largement de la qualité de la consigne et
 | Transcription | Outils de transcription audio | Comptes rendus, entretiens | Consentement ; erreurs sur les noms propres |
 | Automatisation | Plateformes d'automatisation sans code | Enchaîner des actions entre applications | Erreurs reproduites à grande échelle |
 
-> **📶 Faible connectivité** — Les assistants en ligne exigent une connexion. Préparez vos consignes et documents hors ligne, regroupez vos demandes en une seule session de connexion, et privilégiez les outils capables de travailler sur des fichiers que vous enregistrez ensuite localement. Certains modèles plus petits peuvent fonctionner sur un ordinateur sans connexion (niveau Avancé, module 9), au prix de performances moindres.
+> **📶 Faible connectivité** : Les assistants en ligne exigent une connexion. Préparez vos consignes et documents hors ligne, regroupez vos demandes en une seule session de connexion, et privilégiez les outils capables de travailler sur des fichiers que vous enregistrez ensuite localement. Certains modèles plus petits peuvent fonctionner sur un ordinateur sans connexion (niveau Avancé, module 9), au prix de performances moindres.
 
 ### La méthode CADRE
 
-![Figure 3.1 — Anatomie d'un prompt efficace : la méthode CADRE](03_ILLUSTRATIONS/figures/fig_3_1.svg)
+![Figure 3.1 : Anatomie d'un prompt efficace : la méthode CADRE](03_ILLUSTRATIONS/figures/fig_3_1.svg)
 
 Une bonne consigne répond à cinq questions. Retenez l'acronyme **CADRE** :
 
-- **C — Contexte** : qui je suis, pour qui je travaille, dans quelle situation.
-- **A — Action** : ce que l'outil doit faire, avec un verbe précis (résumer, comparer, extraire, rédiger, classer, vérifier, reformuler).
-- **D — Données** : ce que je fournis, clairement délimité, et la consigne de ne s'appuyer que sur ces données lorsque c'est nécessaire.
-- **R — Résultat attendu** : format, longueur, structure, ton, langue, public.
-- **E — Exigences et limites** : ce qu'il ne faut pas faire ; comment signaler un doute ou une information manquante.
+- **C : Contexte** : qui je suis, pour qui je travaille, dans quelle situation.
+- **A : Action** : ce que l'outil doit faire, avec un verbe précis (résumer, comparer, extraire, rédiger, classer, vérifier, reformuler).
+- **D : Données** : ce que je fournis, clairement délimité, et la consigne de ne s'appuyer que sur ces données lorsque c'est nécessaire.
+- **R : Résultat attendu** : format, longueur, structure, ton, langue, public.
+- **E : Exigences et limites** : ce qu'il ne faut pas faire ; comment signaler un doute ou une information manquante.
 
 Comparons deux consignes pour la même tâche.
 
@@ -81,7 +81,7 @@ obtenus par rapport aux objectifs, les difficultés et les décisions
 chiffres du rapport.
 ```
 
-La seconde consigne est plus longue à écrire — une minute de plus — mais elle produit un résultat directement exploitable, vérifiable, et réutilisable comme modèle.
+La seconde consigne est plus longue à écrire, une minute de plus, mais elle produit un résultat directement exploitable, vérifiable, et réutilisable comme modèle.
 
 ### Techniques complémentaires
 
@@ -95,14 +95,14 @@ La seconde consigne est plus longue à écrire — une minute de plus — mais e
 
 ### La boucle de vérification « 6 V »
 
-![Figure 3.2 — La boucle de vérification d'une réponse d'IA](03_ILLUSTRATIONS/figures/fig_3_2.svg)
+![Figure 3.2 : La boucle de vérification d'une réponse d'IA](03_ILLUSTRATIONS/figures/fig_3_2.svg)
 
 1. **Formuler** avec CADRE.
 2. **Lire la réponse en entier**, pas seulement le début.
 3. **Vérifier les faits, chiffres, noms, dates**, un par un.
 4. **Confronter aux sources originales** (le document fourni, le texte officiel, le tableur).
 5. **Corriger ou reformuler** la consigne si nécessaire.
-6. **Valider et documenter** : qui a vérifié, quand, avec quelle source — en particulier pour les documents externes.
+6. **Valider et documenter** : qui a vérifié, quand, avec quelle source, en particulier pour les documents externes.
 
 Le niveau de vérification doit être proportionné à l'enjeu : un brouillon de message interne demande une relecture ; un rapport financier à un bailleur, une vérification ligne par ligne.
 
@@ -120,7 +120,7 @@ Les trois fiches suivantes couvrent les usages les plus fréquents : synthèse d
 
 ## 3.7 Prompts prêts à l'emploi
 
-### Fiche P3.1 — Synthèse fidèle d'un document
+### Fiche P3.1 : Synthèse fidèle d'un document
 
 **A. Titre.** Synthèse décisionnelle d'un rapport.
 
@@ -161,7 +161,7 @@ maximum hors tableau.
 
 **K. Amélioration.** *V1* : « Résume ce rapport. » → réponse générique, sans référence, impossible à vérifier. *V2* : la fiche ci-dessus. *Si la synthèse reste trop longue* : « Réduis à 150 mots en gardant uniquement ce qui influence la décision. »
 
-### Fiche P3.2 — Analyser un tableau de données sans se tromper dans les calculs
+### Fiche P3.2 : Analyser un tableau de données sans se tromper dans les calculs
 
 **A. Titre.** Analyse assistée d'un tableau de suivi.
 
@@ -202,7 +202,7 @@ d'arguments « ; ».
 
 **K. Amélioration.** Si les formules ne fonctionnent pas, transmettez le message d'erreur exact et la version de votre logiciel : « La formule renvoie #NOM?. J'utilise [LOGICIEL ET VERSION] en français. »
 
-### Fiche P3.3 — Traduction contrôlée d'un support destiné aux communautés
+### Fiche P3.3 : Traduction contrôlée d'un support destiné aux communautés
 
 **A. Titre.** Traduction adaptée et contrôlée.
 
@@ -244,11 +244,11 @@ et signale-le.
 
 ## 3.8 Exercices progressifs
 
-**Niveau 1 — Découverte (20 minutes).** Rédigez avec CADRE une consigne demandant un message de remerciement à des bénévoles après une journée de collecte. Comparez le résultat avec celui d'une consigne d'une seule ligne.
+**Niveau 1 : Découverte (20 minutes).** Rédigez avec CADRE une consigne demandant un message de remerciement à des bénévoles après une journée de collecte. Comparez le résultat avec celui d'une consigne d'une seule ligne.
 
-**Niveau 2 — Pratique (40 minutes).** Prenez un rapport public de votre organisation. Appliquez la fiche P3.1. Vérifiez chaque chiffre. Notez le temps passé à vérifier.
+**Niveau 2 : Pratique (40 minutes).** Prenez un rapport public de votre organisation. Appliquez la fiche P3.1. Vérifiez chaque chiffre. Notez le temps passé à vérifier.
 
-**Niveau 3 — Maîtrise (60 minutes).** Construisez une bibliothèque de trois consignes pour votre métier, testez chacune trois fois, notez la stabilité des résultats, et rédigez pour chacune la méthode de vérification.
+**Niveau 3 : Maîtrise (60 minutes).** Construisez une bibliothèque de trois consignes pour votre métier, testez chacune trois fois, notez la stabilité des résultats, et rédigez pour chacune la méthode de vérification.
 
 **Éléments de correction.** Le niveau 1 doit faire apparaître des différences nettes (ton, longueur, personnalisation). Le niveau 2 révèle généralement au moins une imprécision à corriger : c'est l'objectif de l'exercice. Le niveau 3 est réussi si chaque consigne comporte les cinq blocs CADRE, une méthode de vérification et une indication des données à ne pas utiliser.
 
@@ -258,7 +258,7 @@ Une pratique plus régulière et plus sûre ; une bibliothèque de consignes par
 
 ## 3.10 Contrôles humains
 
-> **🛑 Contrôle humain obligatoire** — Tout document produit avec l'IA et destiné à l'extérieur (bailleur, autorités, partenaires, communautés, public) est relu et validé par une personne habilitée, qui en assume le contenu.
+> **🛑 Contrôle humain obligatoire** : Tout document produit avec l'IA et destiné à l'extérieur (bailleur, autorités, partenaires, communautés, public) est relu et validé par une personne habilitée, qui en assume le contenu.
 
 ## 3.11 Risques et erreurs à éviter
 
@@ -276,7 +276,7 @@ Une pratique plus régulière et plus sûre ; une bibliothèque de consignes par
 - La boucle « 6 V » garantit une vérification proportionnée à l'enjeu.
 - Les meilleures consignes se partagent et se capitalisent.
 
-## 3.13 QCM — Module 3
+## 3.13 QCM : Module 3
 
 **Q1.** (une seule réponse) Dans la méthode CADRE, la lettre D désigne :
 
@@ -320,14 +320,14 @@ b) Confronter aux sources originales.
 c) Publier immédiatement.
 d) Valider et documenter.
 
-**Q7.** (mise en situation — une seule réponse) L'assistant propose une formule de tableur qui renvoie une erreur. La meilleure réaction est :
+**Q7.** (mise en situation, une seule réponse) L'assistant propose une formule de tableur qui renvoie une erreur. La meilleure réaction est :
 
 a) transmettre le message d'erreur exact et la version du logiciel, puis tester la nouvelle formule sur des lignes connues.
 b) abandonner le tableur.
 c) recopier les résultats calculés par l'assistant.
 d) changer d'outil d'IA sans rien préciser.
 
-**Q8.** (mise en situation — une seule réponse) Une collègue veut diffuser aux familles une traduction automatique d'un message sur la vaccination, sans relecture, « car c'est urgent ». Vous recommandez :
+**Q8.** (mise en situation, une seule réponse) Une collègue veut diffuser aux familles une traduction automatique d'un message sur la vaccination, sans relecture, « car c'est urgent ». Vous recommandez :
 
 a) de diffuser, l'urgence prime.
 b) de diffuser en ajoutant « traduction automatique ».
@@ -348,13 +348,13 @@ b) les données à ne pas utiliser.
 c) le nom de la personne qui l'a écrite, à l'exclusion de toute autre information.
 d) un exemple d'utilisation.
 
-## 3.14 Corrigé détaillé — Module 3
+## 3.14 Corrigé détaillé : Module 3
 
 **Q1 : c.** D = Données : ce qui est fourni, délimité, avec éventuellement la consigne de s'y limiter.
 
 **Q2 : b.** Les modèles de langage ne sont pas fiables pour les calculs exacts ; le tableur l'est. L'IA peut aider à écrire la formule.
 
-**Q3 : a, b, c.** Une réponse plus longue (d) n'est pas plus fiable — souvent l'inverse.
+**Q3 : a, b, c.** Une réponse plus longue (d) n'est pas plus fiable, souvent l'inverse.
 
 **Q4 : d.** Les délimiteurs évitent que l'outil confonde vos instructions et le contenu à traiter, et limitent l'effet d'instructions cachées dans les données.
 

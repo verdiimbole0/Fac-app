@@ -1,4 +1,4 @@
-# Module 12 — Comptabilité, gestion financière et budgétaire
+# Module 12 : Comptabilité, gestion financière et budgétaire
 
 ## 12.1 Mise en situation
 
@@ -8,7 +8,7 @@ Ibrahim, le responsable financier, a lu qu'« il existe des outils d'IA qui trai
 
 ## 12.2 Problématique
 
-La fonction financière d'une ASBL combine trois exigences : **exactitude** (chaque écriture est juste et justifiée), **traçabilité** (chaque montant peut être relié à une pièce et à une autorisation) et **redevabilité multiple** (bailleurs, organes de gouvernance, autorités, auditeurs, public). Elle est aussi l'une des plus chargées en tâches répétitives : réception, saisie, imputation, rapprochements, consolidation, mise en forme. L'IA peut alléger fortement ces tâches — à condition de ne jamais affaiblir le contrôle interne ni la piste d'audit.
+La fonction financière d'une ASBL combine trois exigences : **exactitude** (chaque écriture est juste et justifiée), **traçabilité** (chaque montant peut être relié à une pièce et à une autorisation) et **redevabilité multiple** (bailleurs, organes de gouvernance, autorités, auditeurs, public). Elle est aussi l'une des plus chargées en tâches répétitives : réception, saisie, imputation, rapprochements, consolidation, mise en forme. L'IA peut alléger fortement ces tâches, à condition de ne jamais affaiblir le contrôle interne ni la piste d'audit.
 
 ## 12.3 Objectifs d'apprentissage
 
@@ -34,7 +34,7 @@ La fonction financière d'une ASBL combine trois exigences : **exactitude** (cha
 - **Piste d'audit** : capacité à remonter de chaque montant des états financiers jusqu'à la pièce et à l'autorisation, et inversement.
 - **Seuil de confiance** : niveau de certitude au-dessous duquel une proposition de l'IA est automatiquement soumise à un examen renforcé.
 
-> **⚖️ Adaptation réglementaire** — Il n'existe pas de référentiel comptable universel pour les organisations à but non lucratif. Selon les pays, s'appliquent un plan comptable national, un référentiel spécifique aux entités à but non lucratif ou aux associations, des règles particulières (par exemple, à titre d'illustration et à vérifier selon votre situation : le système comptable des entités à but non lucratif dans l'espace OHADA, le règlement de l'ANC applicable aux personnes morales de droit privé à but non lucratif en France, le *Charities SORP* au Royaume-Uni, les normes du FASB pour les *not-for-profit entities* aux États-Unis). En octobre 2025, un référentiel international volontaire dédié, l'*International Non-Profit Accounting Standard* (INPAS), a été lancé à l'issue du projet IFR4NPO ; il ne s'impose que s'il est adopté par une juridiction ou exigé par un bailleur. Les numéros de comptes cités dans ce module sont donc des **exemples** : utilisez votre plan comptable.
+> **⚖️ Adaptation réglementaire** : Il n'existe pas de référentiel comptable universel pour les organisations à but non lucratif. Selon les pays, s'appliquent un plan comptable national, un référentiel spécifique aux entités à but non lucratif ou aux associations, des règles particulières (par exemple, à titre d'illustration et à vérifier selon votre situation : le système comptable des entités à but non lucratif dans l'espace OHADA, le règlement de l'ANC applicable aux personnes morales de droit privé à but non lucratif en France, le *Charities SORP* au Royaume-Uni, les normes du FASB pour les *not-for-profit entities* aux États-Unis). En octobre 2025, un référentiel international volontaire dédié, l'*International Non-Profit Accounting Standard* (INPAS), a été lancé à l'issue du projet IFR4NPO ; il ne s'impose que s'il est adopté par une juridiction ou exigé par un bailleur. Les numéros de comptes cités dans ce module sont donc des **exemples** : utilisez votre plan comptable.
 
 ## 12.5 Explications détaillées
 
@@ -49,78 +49,78 @@ Avant d'automatiser, quatre fondations doivent être en place :
 
 ### Le traitement d'une facture en 14 étapes
 
-![Figure 12.1 — Traitement d'une facture en 14 étapes : qui fait quoi ?](03_ILLUSTRATIONS/figures/fig_12_1.svg)
+![Figure 12.1 : Traitement d'une facture en 14 étapes : qui fait quoi ?](03_ILLUSTRATIONS/figures/fig_12_1.svg)
 
 Suivons une facture réelle (fictive) d'un bout à l'autre.
 
 *La pièce :* facture n° F-2026-0412 de « Papeterie du Centre », datée du 12 mars 2026, adressée à la Fondation Horizons Partagés : 40 rames de papier à 6,50 UM = 260 UM ; 20 cartouches d'encre à 22,00 UM = 440 UM ; **total 700 UM** (l'organisation n'est pas assujettie à une taxe sur la valeur ajoutée dans cet exemple). Référence du bon de commande : BC-2026-077. Matériel destiné aux sessions de formation des agents de santé du projet PRJ-SANTE-07.
 
-**Étape 1 — Réception.** La facture arrive par courriel au bureau de terrain.
+**Étape 1 : Réception.** La facture arrive par courriel au bureau de terrain.
 *Logiciel :* une adresse électronique dédiée (par exemple factures@…) centralise toutes les factures. *Humain :* les factures remises en main propre sont numérisées le jour même. *Règle :* aucune facture ne circule en dehors de ce canal.
 
-**Étape 2 — Numérisation ou photographie.** Le PDF est conservé tel quel ; une facture papier est scannée ou photographiée avec une application de numérisation (document à plat, lumière suffisante, quatre coins visibles).
+**Étape 2 : Numérisation ou photographie.** Le PDF est conservé tel quel ; une facture papier est scannée ou photographiée avec une application de numérisation (document à plat, lumière suffisante, quatre coins visibles).
 *Contrôle :* lisibilité de tous les montants avant envoi.
 
-**Étape 3 — Extraction des informations.**
+**Étape 3 : Extraction des informations.**
 *IA :* un outil d'extraction (OCR et modèle d'extraction) lit la pièce et propose les champs : fournisseur, numéro, date, montant total, lignes (désignation, quantité, prix unitaire, montant), référence du bon de commande, coordonnées bancaires éventuelles. Il associe à chaque champ un niveau de confiance.
 *Logiciel :* les champs extraits sont stockés dans un enregistrement relié à l'image de la pièce.
 
-**Étape 4 — Contrôle des données extraites.**
-*Logiciel :* contrôles automatiques simples — somme des lignes = total (260 + 440 = 700 ✓) ; date plausible ; fournisseur existant dans le fichier fournisseurs ; numéro de facture non déjà enregistré pour ce fournisseur.
+**Étape 4 : Contrôle des données extraites.**
+*Logiciel :* contrôles automatiques simples : somme des lignes = total (260 + 440 = 700 ✓) ; date plausible ; fournisseur existant dans le fichier fournisseurs ; numéro de facture non déjà enregistré pour ce fournisseur.
 *Humain :* l'assistante administrative compare les champs à faible confiance avec l'image (ici, le « 6,50 » a été lu « 6,60 » avec une confiance de 71 % : elle corrige). Toute modification des **coordonnées bancaires** d'un fournisseur est bloquée et transmise au responsable financier (risque de fraude au changement de RIB).
 
-**Étape 5 — Identification de la nature de la dépense.**
+**Étape 5 : Identification de la nature de la dépense.**
 *IA :* à partir des libellés (« rames de papier », « cartouches d'encre ») et de l'historique, le système propose la nature « fournitures de bureau et consommables de formation ».
 
-**Étape 6 — Proposition d'imputation.**
+**Étape 6 : Proposition d'imputation.**
 *IA :* proposition d'imputation comptable (compte de charges « Fournitures de bureau » de votre plan comptable) et analytique (projet PRJ-SANTE-07, activité 1.1 « Sessions de formation », ligne budgétaire 2 « Activités »), en s'appuyant sur la référence du bon de commande BC-2026-077, qui portait déjà ces codes. Confiance : 94 %.
 
-**Étape 7 — Vérification que le compte proposé est approprié.**
+**Étape 7 : Vérification que le compte proposé est approprié.**
 *Humain :* la comptable vérifie : la nature de la dépense correspond-elle au compte ? Le projet et la ligne correspondent-ils au bon de commande approuvé ? La dépense est-elle éligible selon la convention du bailleur (période, nature, plafond) ? *Règle :* toute proposition avec une confiance inférieure au seuil (par exemple 85 %) ou concernant un compte sensible (immobilisations, salaires, avances) est examinée ligne par ligne.
 
-**Étape 8 — Rapprochement avec le budget concerné.**
+**Étape 8 : Rapprochement avec le budget concerné.**
 *Logiciel :* le système calcule le disponible de la ligne : budget annuel de la ligne 2 du projet = 28 400 UM ; engagé et réalisé à date = 19 650 UM ; disponible avant cette facture = 8 750 UM ; après = 8 050 UM. Aucun dépassement.
-*Logiciel :* rapprochement à trois voies — commande BC-2026-077 (700 UM), bon de livraison signé (40 rames et 20 cartouches reçues), facture (700 UM) : concordance.
+*Logiciel :* rapprochement à trois voies : commande BC-2026-077 (700 UM), bon de livraison signé (40 rames et 20 cartouches reçues), facture (700 UM) : concordance.
 
-**Étape 9 — Détection d'anomalies.**
+**Étape 9 : Détection d'anomalies.**
 *IA et règles :* le système signale : « Une facture du même fournisseur, d'un montant identique (700 UM), numéro F-2026-0411, a été enregistrée le 26 février. Doublon possible. »
 *Humain :* la comptable vérifie : les deux factures correspondent à deux commandes distinctes (BC-2026-061 et BC-2026-077), deux livraisons signées. Ce n'est pas un doublon. Elle consigne l'explication dans le commentaire de l'alerte.
 
-**Étape 10 — Soumission au responsable habilité.**
+**Étape 10 : Soumission au responsable habilité.**
 *Logiciel :* le workflow transmet automatiquement la dépense au responsable habilité selon le seuil (ici, moins de 1 000 UM : coordinatrice du projet) avec la pièce, la proposition d'imputation, le contrôle budgétaire et les alertes traitées.
 *Humain :* la coordinatrice approuve dans l'outil. L'approbation est horodatée et nominative.
 
-**Étape 11 — Validation et enregistrement de l'écriture.**
+**Étape 11 : Validation et enregistrement de l'écriture.**
 *Logiciel :* l'écriture est générée (débit du compte de charges « Fournitures de bureau » 700 UM ; crédit du compte fournisseur « Papeterie du Centre » 700 UM ; axes analytiques PRJ-SANTE-07 / 1.1 / ligne 2).
 *Humain :* la comptable valide l'écriture. Une écriture n'est jamais comptabilisée sans validation humaine. Au paiement, une seconde écriture soldera le compte fournisseur par le compte bancaire, après approbation du paiement selon la procédure.
 
-**Étape 12 — Actualisation des tableaux de bord et du suivi budgétaire.**
+**Étape 12 : Actualisation des tableaux de bord et du suivi budgétaire.**
 *Logiciel :* le tableau de bord du projet est mis à jour (exécution de la ligne 2 : 20 350 / 28 400, soit 71,7 %).
 
-**Étape 13 — Conservation des pièces et de la piste d'audit.**
+**Étape 13 : Conservation des pièces et de la piste d'audit.**
 *Logiciel :* la pièce est archivée sous le nom `2026-03-12_FACT_PapeterieDuCentre_F-2026-0412.pdf`, liée à l'écriture, avec l'historique : qui a extrait, corrigé, proposé, approuvé, validé, et quand. La facture papier d'origine est classée selon les règles de conservation applicables.
 
-**Étape 14 — Traitement des erreurs et cas exceptionnels.**
+**Étape 14 : Traitement des erreurs et cas exceptionnels.**
 *Humain :* une procédure écrite couvre : pièce illisible (demande d'un duplicata) ; facture sans bon de commande (régularisation selon la procédure, signalement) ; dépense inéligible (réimputation sur fonds non affectés, après décision) ; avoir ou annulation ; facture en devise étrangère (taux de conversion selon la politique de l'organisation) ; erreur d'imputation découverte après clôture (écriture de correction documentée, jamais de suppression).
 
 | Étape | IA | Logiciel | Professionnel |
 |---|---|---|---|
-| 1. Réception | — | Boîte dédiée | Numérise les pièces papier |
-| 2. Numérisation | — | Application de numérisation | Vérifie la lisibilité |
-| 3. Extraction | Lit et propose les champs, avec confiance | Stocke champs + image | — |
-| 4. Contrôle des données | — | Contrôles arithmétiques et de cohérence | Corrige les champs à faible confiance ; bloque les changements de RIB |
-| 5. Nature | Propose la nature | — | — |
-| 6. Imputation | Propose comptes et axes | — | — |
-| 7. Vérification du compte | — | — | **Vérifie et décide** |
-| 8. Budget | — | Calcule le disponible ; rapprochement 3 voies | Examine les dépassements |
+| 1. Réception | Néant | Boîte dédiée | Numérise les pièces papier |
+| 2. Numérisation | Néant | Application de numérisation | Vérifie la lisibilité |
+| 3. Extraction | Lit et propose les champs, avec confiance | Stocke champs + image | Néant |
+| 4. Contrôle des données | Néant | Contrôles arithmétiques et de cohérence | Corrige les champs à faible confiance ; bloque les changements de RIB |
+| 5. Nature | Propose la nature | Néant | Néant |
+| 6. Imputation | Propose comptes et axes | Néant | Néant |
+| 7. Vérification du compte | Néant | Néant | **Vérifie et décide** |
+| 8. Budget | Néant | Calcule le disponible ; rapprochement 3 voies | Examine les dépassements |
 | 9. Anomalies | Signale doublons, inhabituels | Applique les règles | **Instruit et conclut** |
-| 10. Approbation | — | Workflow | **Approuve** (personne habilitée) |
-| 11. Écriture | — | Génère l'écriture | **Valide** |
-| 12. Tableaux de bord | — | Met à jour | Analyse |
+| 10. Approbation | Néant | Workflow | **Approuve** (personne habilitée) |
+| 11. Écriture | Néant | Génère l'écriture | **Valide** |
+| 12. Tableaux de bord | Néant | Met à jour | Analyse |
 | 13. Archivage | Indexe | Archive et trace | Classe le papier |
-| 14. Exceptions | — | — | **Traite selon procédure** |
+| 14. Exceptions | Néant | Néant | **Traite selon procédure** |
 
-> **🔎 À retenir** — L'IA **propose et signale** ; le logiciel **enregistre, calcule et trace** ; le professionnel **vérifie, décide et valide**. Ce partage des rôles est la condition d'une automatisation compatible avec l'audit.
+> **🔎 À retenir** : L'IA **propose et signale** ; le logiciel **enregistre, calcule et trace** ; le professionnel **vérifie, décide et valide**. Ce partage des rôles est la condition d'une automatisation compatible avec l'audit.
 
 ### Caisse et banque
 
@@ -150,7 +150,7 @@ La **table de correspondance** est l'outil central : pour chaque bailleur, elle 
 
 ### Écarts budgétaires
 
-![Figure 12.2 — Tableau de bord fictif : exécution budgétaire par ligne](03_ILLUSTRATIONS/figures/fig_12_2.svg)
+![Figure 12.2 : Tableau de bord fictif : exécution budgétaire par ligne](03_ILLUSTRATIONS/figures/fig_12_2.svg)
 
 Au 30 septembre (75 % de l'année écoulée), le tableau de bord du programme pluriannuel de santé communautaire (PRG-SANTE, qui regroupe plusieurs projets) fait apparaître (en milliers d'UM) :
 
@@ -187,7 +187,7 @@ Une comptabilité dont chaque écriture est liée à sa pièce et à son approba
 **F. Points de faiblesse.** Ressaisie, classement papier, approbations hors système, aucune détection de doublons.
 **G. Résultat recherché.** Temps de traitement par pièce divisé par deux ; 100 % des pièces liées aux écritures ; clôture mensuelle à J+10 ; zéro paiement en double.
 **H. Pertinence de l'IA.** Forte pour l'extraction et la proposition d'imputation (documents variés, libellés libres) ; complémentaire de règles automatiques (contrôles arithmétiques, seuils, doublons).
-**I. Alternatives sans IA.** Saisie directe dans un formulaire numérique par le demandeur ; centralisation des pièces ; classement normalisé — à mettre en place de toute façon.
+**I. Alternatives sans IA.** Saisie directe dans un formulaire numérique par le demandeur ; centralisation des pièces ; classement normalisé : à mettre en place de toute façon.
 **J. Solution recommandée.** Canal unique de réception + outil d'extraction de documents relié au logiciel comptable (ou fonction intégrée au logiciel) + workflow d'approbation + archivage lié.
 **K. Niveau.** Intermédiaire.
 **L. Outils nécessaires.** Logiciel comptable acceptant l'import ou disposant d'une fonction de capture de documents ; outil d'extraction (intégré ou externe, évalué selon le module 9) ; workflow d'approbation ; stockage documentaire.
@@ -223,7 +223,7 @@ Une comptabilité dont chaque écriture est liée à sa pièce et à son approba
 
 ## 12.7 Prompts prêts à l'emploi
 
-### Fiche P12.1 — Extraire les données d'une facture
+### Fiche P12.1 : Extraire les données d'une facture
 
 **A. Titre.** Extraction structurée d'une pièce justificative.
 
@@ -258,7 +258,7 @@ Limites : si un champ est illisible ou absent, écris « ILLISIBLE » ou
 
 **G. Résultat attendu.** Un tableau de champs, des certitudes, les résultats des contrôles arithmétiques.
 
-**H. Exemple d'application (illustratif).** Pour la facture F-2026-0412, le tableau obtenu indique « prix unitaire ligne 1 : 6,60 — certitude moyenne — remarque : le 5 et le 6 sont peu distincts » et « contrôle : 40 × 6,60 = 264 ≠ 260 indiqué ; incohérence ». La comptable vérifie l'image : 6,50. Le contrôle arithmétique a permis de détecter l'erreur de lecture.
+**H. Exemple d'application (illustratif).** Pour la facture F-2026-0412, le tableau obtenu indique « prix unitaire ligne 1 : 6,60, certitude moyenne, remarque : le 5 et le 6 sont peu distincts » et « contrôle : 40 × 6,60 = 264 ≠ 260 indiqué ; incohérence ». La comptable vérifie l'image : 6,50. Le contrôle arithmétique a permis de détecter l'erreur de lecture.
 
 **I. Méthode de vérification.** Comparez chaque champ à certitude non élevée à l'image ; recalculez les totaux dans le tableur ; vérifiez que le numéro de facture n'existe pas déjà pour ce fournisseur.
 
@@ -266,7 +266,7 @@ Limites : si un champ est illisible ou absent, écris « ILLISIBLE » ou
 
 **K. Amélioration.** Si l'outil confond prix unitaires et montants : « Pour chaque ligne, vérifie que quantité × prix unitaire = montant de la ligne et signale toute différence. »
 
-### Fiche P12.2 — Proposer une imputation comptable et analytique
+### Fiche P12.2 : Proposer une imputation comptable et analytique
 
 **A. Titre.** Proposition d'imputation justifiée.
 
@@ -298,7 +298,7 @@ ADAPTÉ » ; si l'affectation à un projet est incertaine, propose
 
 **G. Résultat attendu.** Une proposition par ligne de facture, justifiée, avec points de vigilance.
 
-**H. Exemple d'application (illustratif).** Proposition obtenue : « Ligne 1 et 2 — compte "Fournitures de bureau" — PRJ-SANTE-07 / 1.1 / ligne 2 — justification : bon de commande BC-2026-077 codé sur l'activité 1.1 ; consommables pour sessions de formation — confiance élevée — vérifier : la convention autorise les consommables de formation sur la ligne Activités (art. 6.2 fourni) ».
+**H. Exemple d'application (illustratif).** Proposition obtenue : « Ligne 1 et 2, compte "Fournitures de bureau", PRJ-SANTE-07 / 1.1 / ligne 2 (justification : bon de commande BC-2026-077 codé sur l'activité 1.1 ; consommables pour sessions de formation) confiance élevée : vérifier : la convention autorise les consommables de formation sur la ligne Activités (art. 6.2 fourni) ».
 
 **I. Méthode de vérification.** Vérifiez que le compte existe dans votre plan et correspond à la nature ; que le codage analytique correspond au bon de commande approuvé ; que la règle d'éligibilité citée figure bien dans la convention.
 
@@ -306,7 +306,7 @@ ADAPTÉ » ; si l'affectation à un projet est incertaine, propose
 
 **K. Amélioration.** Pour un usage récurrent, ajoutez 10 exemples d'imputations validées (« exemples guidés ») afin d'aligner les propositions sur vos pratiques.
 
-### Fiche P12.3 — Analyse narrative des écarts budgétaires
+### Fiche P12.3 : Analyse narrative des écarts budgétaires
 
 **A. Titre.** Note d'analyse des écarts budgétaires.
 
@@ -357,7 +357,7 @@ Pièces centralisées et liées aux écritures ; propositions d'imputation contr
 
 ## 12.9 Contrôles humains
 
-> **🛑 Contrôle humain obligatoire** — Validation des écritures ; approbation des dépenses et des paiements par les personnes habilitées ; vérification de l'éligibilité ; toute modification de coordonnées bancaires de fournisseurs (vérifiée par un second canal) ; revue et signature des rapprochements bancaires ; comptage physique de la caisse ; arrêté des comptes et rapports financiers. L'IA ne valide, n'approuve et ne paie jamais.
+> **🛑 Contrôle humain obligatoire** : Validation des écritures ; approbation des dépenses et des paiements par les personnes habilitées ; vérification de l'éligibilité ; toute modification de coordonnées bancaires de fournisseurs (vérifiée par un second canal) ; revue et signature des rapprochements bancaires ; comptage physique de la caisse ; arrêté des comptes et rapports financiers. L'IA ne valide, n'approuve et ne paie jamais.
 
 ## 12.10 Risques et erreurs à éviter
 
@@ -388,7 +388,7 @@ Pièces centralisées et liées aux écritures ; propositions d'imputation contr
 - Le suivi multi-axes et les tables de correspondance permettent de produire les rapports de chaque bailleur à partir d'une seule comptabilité.
 - Il n'existe pas de référentiel comptable universel : adaptez-vous au droit applicable.
 
-## 12.13 QCM — Module 12
+## 12.13 QCM : Module 12
 
 **Q1.** (une seule réponse) Dans le traitement assisté d'une facture, le rôle de l'IA est principalement de :
 
@@ -432,14 +432,14 @@ b) peuvent couvrir toute dépense de l'organisation.
 c) exigent un suivi distinct.
 d) peuvent devoir être restitués en cas de non-utilisation conforme.
 
-**Q7.** (mise en situation — une seule réponse) L'outil signale un doublon possible : même fournisseur, même montant, deux numéros de facture différents. Que faites-vous ?
+**Q7.** (mise en situation, une seule réponse) L'outil signale un doublon possible : même fournisseur, même montant, deux numéros de facture différents. Que faites-vous ?
 
 a) Supprimer la seconde facture.
 b) Vérifier les bons de commande et de livraison avant de conclure, et documenter la conclusion.
 c) Payer les deux sans vérification.
 d) Désactiver l'alerte.
 
-**Q8.** (mise en situation — une seule réponse) Une ligne « Déplacements » atteint 118 % de son budget à 75 % de la période. Première action ?
+**Q8.** (mise en situation, une seule réponse) Une ligne « Déplacements » atteint 118 % de son budget à 75 % de la période. Première action ?
 
 a) Analyser l'écart, vérifier la règle de flexibilité de la convention et soumettre une décision à la direction.
 b) Réimputer discrètement l'excédent sur une autre ligne.
@@ -460,7 +460,7 @@ b) taux de propositions d'imputation acceptées sans modification.
 c) délai de clôture mensuelle.
 d) nombre de logiciels installés.
 
-## 12.14 Corrigé détaillé — Module 12
+## 12.14 Corrigé détaillé : Module 12
 
 **Q1 : d.** L'IA propose et signale ; elle ne valide ni n'approuve.
 
@@ -486,5 +486,5 @@ d) nombre de logiciels installés.
 
 ## Références du module
 
-- COSO. (2013). *Internal Control — Integrated Framework*.
+- COSO. (2013). *Internal Control : Integrated Framework*.
 - International Non-Profit Reporting Foundation (INPRF) / projet IFR4NPO (CIPFA et Humentum). (2025). *International Non-Profit Accounting Standard (INPAS)*.

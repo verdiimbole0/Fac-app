@@ -1,14 +1,14 @@
-# Module 13 — Audit, contrôle interne, gestion des risques et conformité
+# Module 13 : Audit, contrôle interne, gestion des risques et conformité
 
 ## 13.1 Mise en situation
 
-Au Réseau Citoyen pour l'Eau (RCE), Fatou est contrôleuse interne. Le comité d'audit lui demande une revue des dépenses du premier trimestre du projet « Eau et assainissement » et du siège. Elle dispose de l'extraction du grand livre (40 dépenses, 31 890,50 UM), du fichier fournisseurs, des pièces numérisées et du manuel de procédures. Avec la méthode classique — sélection d'un échantillon, vérification des pièces — elle aurait examiné une quinzaine d'opérations. Avec des tests analytiques assistés, elle peut examiner **toute la population**, puis concentrer son temps d'expert sur les opérations les plus risquées.
+Au Réseau Citoyen pour l'Eau (RCE), Fatou est contrôleuse interne. Le comité d'audit lui demande une revue des dépenses du premier trimestre du projet « Eau et assainissement » et du siège. Elle dispose de l'extraction du grand livre (40 dépenses, 31 890,50 UM), du fichier fournisseurs, des pièces numérisées et du manuel de procédures. Avec la méthode classique (sélection d'un échantillon, vérification des pièces) elle aurait examiné une quinzaine d'opérations. Avec des tests analytiques assistés, elle peut examiner **toute la population**, puis concentrer son temps d'expert sur les opérations les plus risquées.
 
 Ce module suit sa démarche, du fichier brut à la feuille de travail et aux recommandations. Les tests présentés ont été **réellement exécutés** sur le fichier fictif fourni en annexe (`depenses_RCE_T1_2026.csv`) à l'aide d'un script reproductible (`tests_audit.py`) ; les résultats chiffrés de ce module en sont issus. Les conclusions des vérifications de pièces et d'entretiens, elles, relèvent du scénario pédagogique.
 
 ## 13.2 Problématique
 
-Les ASBL sont exposées à des risques de fraude, d'erreur et de non-conformité, souvent avec des fonctions de contrôle réduites. Dans l'étude mondiale de l'ACFE sur 1 921 cas de fraude interne survenus entre janvier 2022 et septembre 2023 dans 138 pays et territoires, 43 % des fraudes ont été détectées grâce à un signalement — davantage que par tout autre moyen (ACFE, 2024) : les contrôles formels, à eux seuls, en détectent une part bien moindre. L'IA et l'analyse de données permettent d'étendre les contrôles à l'ensemble des opérations, mais elles produisent aussi des faux positifs et ne remplacent ni le jugement professionnel, ni les dispositifs de signalement, ni le scepticisme de l'auditeur.
+Les ASBL sont exposées à des risques de fraude, d'erreur et de non-conformité, souvent avec des fonctions de contrôle réduites. Dans l'étude mondiale de l'ACFE sur 1 921 cas de fraude interne survenus entre janvier 2022 et septembre 2023 dans 138 pays et territoires, 43 % des fraudes ont été détectées grâce à un signalement : davantage que par tout autre moyen (ACFE, 2024) : les contrôles formels, à eux seuls, en détectent une part bien moindre. L'IA et l'analyse de données permettent d'étendre les contrôles à l'ensemble des opérations, mais elles produisent aussi des faux positifs et ne remplacent ni le jugement professionnel, ni les dispositifs de signalement, ni le scepticisme de l'auditeur.
 
 ## 13.3 Objectifs d'apprentissage
 
@@ -41,7 +41,7 @@ L'environnement de contrôle est la base des autres composantes : intégrité et
 
 ### La cartographie des risques
 
-![Figure 13.2 — Carte thermique des risques](03_ILLUSTRATIONS/figures/fig_13_2.svg)
+![Figure 13.2 : Carte thermique des risques](03_ILLUSTRATIONS/figures/fig_13_2.svg)
 
 Pour chaque processus (achats, paiements, avances, caisse, paie, subventions), on identifie les risques, on les évalue (probabilité × impact, de 1 à 5), on recense les contrôles existants, puis on estime le risque résiduel. L'IA aide à **proposer des risques** à partir de la description d'un processus et à **mettre en forme** la cartographie ; l'évaluation relève des responsables et de l'auditeur.
 
@@ -55,7 +55,7 @@ Pour chaque processus (achats, paiements, avances, caisse, paie, subventions), o
 
 ### Les tests analytiques
 
-![Figure 13.1 — Entonnoir des tests analytiques assistés](03_ILLUSTRATIONS/figures/fig_13_1.svg)
+![Figure 13.1 : Entonnoir des tests analytiques assistés](03_ILLUSTRATIONS/figures/fig_13_1.svg)
 
 | Test | Règle | Risque visé |
 |---|---|---|
@@ -90,10 +90,10 @@ Seuil d'autorisation et de bon de commande retenu dans le cas : 1 000 UM.
 
 Vingt-deux opérations sur quarante : c'est beaucoup trop pour tout examiner en détail, et beaucoup sont des **faux positifs**. Le test T7 (week-end) est peu discriminant pour une organisation qui mène des activités de terrain le samedi. Les « doublons » D03/D39 (hôtel, 270 UM) concernent deux missions de projets et de dates différents ; D06/D35 et D15/D31 correspondent à des dépenses récurrentes de même montant (carburant, hébergement). L'auditrice **priorise** donc :
 
-- **priorité 1** — opérations cumulant plusieurs alertes fortes (T2, T3, T8, T9) : D24, D33 ;
-- **priorité 2** — doublon portant sur le **même bon de commande** (D01/D13, BC-101) ; fractionnement avec pièce manquante (D16, D17, D18) ;
-- **priorité 3** — pièce manquante isolée (D31) ;
-- **traitement global** — auto-approbations récurrentes (T4) : faiblesse de conception du contrôle, à examiner au niveau de la procédure plutôt qu'opération par opération.
+- **priorité 1** : opérations cumulant plusieurs alertes fortes (T2, T3, T8, T9) : D24, D33 ;
+- **priorité 2** : doublon portant sur le **même bon de commande** (D01/D13, BC-101) ; fractionnement avec pièce manquante (D16, D17, D18) ;
+- **priorité 3** : pièce manquante isolée (D31) ;
+- **traitement global** : auto-approbations récurrentes (T4) : faiblesse de conception du contrôle, à examiner au niveau de la procédure plutôt qu'opération par opération.
 
 Soit **8 opérations prioritaires** examinées en détail (D01, D13, D16, D17, D18, D24, D31, D33).
 
@@ -107,7 +107,7 @@ Soit **8 opérations prioritaires** examinées en détail (D01, D13, D16, D17, D
 | D31 | Facture d'hôtel retrouvée dans la messagerie de l'agent, non jointe | Régularisée : pièce archivée. Pas de constat, mais point d'attention sur la collecte des pièces de mission |
 | T4 (global) | La procédure autorise le logisticien à approuver ses propres achats de carburant en caisse | **Faiblesse de contrôle** : séparation des tâches insuffisante |
 
-> **🛑 Contrôle humain obligatoire** — Une alerte n'est pas une preuve. Aucune conclusion de fraude, aucun nom, aucune sanction ne découle d'un résultat automatique. Les soupçons de fraude suivent la politique de l'organisation et, le cas échéant, les obligations légales, sous la responsabilité de personnes habilitées.
+> **🛑 Contrôle humain obligatoire** : Une alerte n'est pas une preuve. Aucune conclusion de fraude, aucun nom, aucune sanction ne découle d'un résultat automatique. Les soupçons de fraude suivent la politique de l'organisation et, le cas échéant, les obligations légales, sous la responsabilité de personnes habilitées.
 
 ### La feuille de travail
 
@@ -115,9 +115,9 @@ Une feuille de travail comporte : référence ; objectif ; population et source 
 
 ### Constats et recommandations
 
-Un constat bien rédigé suit le schéma **critère — constat — cause — conséquence — recommandation**. Exemple pour le constat 2 :
+Un constat bien rédigé suit le schéma **critère, constat, cause, conséquence, recommandation**. Exemple pour le constat 2 :
 
-- *Critère* : manuel de procédures, § 5.3 — tout achat d'un montant cumulé supérieur à 1 000 UM auprès d'un même fournisseur pour un même besoin fait l'objet d'une consultation d'au moins trois fournisseurs et d'une approbation de la direction.
+- *Critère* : manuel de procédures, § 5.3 : tout achat d'un montant cumulé supérieur à 1 000 UM auprès d'un même fournisseur pour un même besoin fait l'objet d'une consultation d'au moins trois fournisseurs et d'une approbation de la direction.
 - *Constat* : trois achats de fournitures de bureau (990, 985 et 995 UM ; total 2 970 UM) ont été effectués auprès du même fournisseur du 3 au 5 février, payés en caisse et approuvés par la demandeuse ; la pièce de l'un d'eux est manquante.
 - *Cause* : absence de contrôle du cumul par fournisseur ; possibilité d'auto-approbation en caisse.
 - *Conséquence* : contournement de la mise en concurrence et de l'approbation ; risque de surcoût et de dépenses non justifiées ; risque de non-éligibilité auprès du bailleur.
@@ -181,7 +181,7 @@ L'usage de l'IA par l'auditeur doit respecter la confidentialité des données (
 
 ## 13.7 Prompts prêts à l'emploi
 
-### Fiche P13.1 — Concevoir les tests analytiques d'un fichier de dépenses
+### Fiche P13.1 : Concevoir les tests analytiques d'un fichier de dépenses
 
 **A. Titre.** Bibliothèque de tests analytiques pour un tableur.
 
@@ -226,7 +226,7 @@ nécessitent un tri préalable.
 
 **K. Amélioration.** « Le test week-end produit trop de faux positifs pour nos activités de terrain. Propose un test plus discriminant pour les opérations atypiques (par exemple, dépenses saisies hors des jours d'activité planifiés). »
 
-### Fiche P13.2 — Rédiger une feuille de travail
+### Fiche P13.2 : Rédiger une feuille de travail
 
 **A. Titre.** Projet de feuille de travail d'audit.
 
@@ -265,7 +265,7 @@ constatés et hypothèses ; n'emploie pas le mot « fraude » : écris
 
 **K. Amélioration.** « Ajoute un tableau de traçabilité "Constat → pièces examinées → référence d'archivage". »
 
-### Fiche P13.3 — Formuler des recommandations actionnables
+### Fiche P13.3 : Formuler des recommandations actionnables
 
 **A. Titre.** Recommandations SMART à partir des constats.
 
@@ -295,7 +295,7 @@ du conseil d'administration.
 
 **G. Résultat attendu.** Un tableau de recommandations prêtes à être discutées.
 
-**H. Exemple d'application (illustratif).** Pour la faiblesse T4, la proposition obtenue : « Modifier la procédure de caisse : approbation des dépenses de carburant par le coordinateur de projet ; alerte mensuelle automatique des auto-approbations — responsable : DAF — échéance : 31 mai — preuve : procédure révisée et rapport d'alertes de juin ».
+**H. Exemple d'application (illustratif).** Pour la faiblesse T4, la proposition obtenue : « Modifier la procédure de caisse : approbation des dépenses de carburant par le coordinateur de projet ; alerte mensuelle automatique des auto-approbations (responsable : DAF) échéance : 31 mai : preuve : procédure révisée et rapport d'alertes de juin ».
 
 **I. Méthode de vérification.** Chaque recommandation est-elle reliée à une cause ? réaliste ? vérifiable ?
 
@@ -309,7 +309,7 @@ Couverture complète de la population ; priorisation documentée ; trois constat
 
 ## 13.9 Contrôles humains
 
-> **🛑 Contrôle humain obligatoire** — Priorisation, examen des pièces, conclusions, rédaction finale des constats, traitement des soupçons de fraude et suivi des recommandations relèvent du jugement de l'auditeur et des personnes habilitées. Les résultats des tests ne sont jamais diffusés comme des accusations.
+> **🛑 Contrôle humain obligatoire** : Priorisation, examen des pièces, conclusions, rédaction finale des constats, traitement des soupçons de fraude et suivi des recommandations relèvent du jugement de l'auditeur et des personnes habilitées. Les résultats des tests ne sont jamais diffusés comme des accusations.
 
 ## 13.10 Risques et erreurs à éviter
 
@@ -331,10 +331,10 @@ Couverture complète de la population ; priorisation documentée ; trois constat
 - Le contrôle interne s'apprécie d'abord par son environnement ; la cartographie des risques oriente les travaux.
 - Les tests analytiques couvrent toute la population ; ils produisent des alertes, dont beaucoup sont des faux positifs.
 - La priorisation, l'examen des pièces et les conclusions relèvent du jugement professionnel.
-- Les constats suivent le schéma critère — constat — cause — conséquence — recommandation.
+- Les constats suivent le schéma critère, constat, cause, conséquence, recommandation.
 - Les recommandations sont suivies dans un registre et un tableau de bord des risques.
 
-## 13.13 QCM — Module 13
+## 13.13 QCM : Module 13
 
 **Q1.** (une seule réponse) Les *Global Internal Audit Standards* de l'IIA sont en vigueur depuis :
 
@@ -378,14 +378,14 @@ b) la cause.
 c) la conséquence.
 d) le nom de la personne fautive.
 
-**Q7.** (mise en situation — une seule réponse) Deux dépenses de 5 500 UM au total, sans pièce, auprès d'un fournisseur absent de la base, approuvées par le demandeur. Que fait l'auditrice ?
+**Q7.** (mise en situation, une seule réponse) Deux dépenses de 5 500 UM au total, sans pièce, auprès d'un fournisseur absent de la base, approuvées par le demandeur. Que fait l'auditrice ?
 
 a) Elle conclut à une fraude dans son rapport.
 b) Elle interroge immédiatement le demandeur devant l'équipe.
 c) Elle applique la politique de lutte contre la fraude : information confidentielle des personnes habilitées, préservation des preuves, pas de conclusion hâtive.
 d) Elle ignore l'alerte faute de preuve.
 
-**Q8.** (mise en situation — une seule réponse) Le test « week-end » signale 12 opérations, presque toutes liées à des activités de terrain normales. Que faites-vous ?
+**Q8.** (mise en situation, une seule réponse) Le test « week-end » signale 12 opérations, presque toutes liées à des activités de terrain normales. Que faites-vous ?
 
 a) Vous examinez quand même les 12 en détail chaque trimestre.
 b) Vous documentez sa faible pertinence et le remplacez ou l'affinez.
@@ -406,7 +406,7 @@ b) rapprocher des noms de fournisseurs proches.
 c) rédiger un projet de feuille de travail.
 d) conclure sur la culpabilité d'une personne.
 
-## 13.14 Corrigé détaillé — Module 13
+## 13.14 Corrigé détaillé : Module 13
 
 **Q1 : a.** Publiées le 9 janvier 2024, elles sont en vigueur depuis le 9 janvier 2025.
 
@@ -433,5 +433,5 @@ d) conclure sur la culpabilité d'une personne.
 ## Références du module
 
 - Association of Certified Fraud Examiners. (2024). *Occupational Fraud 2024: A Report to the Nations*.
-- COSO. (2013). *Internal Control — Integrated Framework*.
+- COSO. (2013). *Internal Control : Integrated Framework*.
 - The Institute of Internal Auditors. (2024). *Global Internal Audit Standards*.

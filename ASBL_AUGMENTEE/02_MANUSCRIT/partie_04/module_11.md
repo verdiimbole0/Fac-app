@@ -1,14 +1,14 @@
-# Module 11 — Gestion des programmes et des projets
+# Module 11 : Gestion des programmes et des projets
 
 ## 11.1 Mise en situation
 
-Dans trois villages où intervient Horizons Partagés, les agents de santé communautaires signalent une hausse des consultations pour diarrhées chez les jeunes enfants. La coordinatrice, Mariam, doit concevoir rapidement une intervention, la présenter à un bailleur, puis la suivre. Elle dispose d'un registre du centre de santé, de notes de réunions communautaires, d'une ancienne évaluation et de beaucoup de bonne volonté — mais de peu de temps.
+Dans trois villages où intervient Horizons Partagés, les agents de santé communautaires signalent une hausse des consultations pour diarrhées chez les jeunes enfants. La coordinatrice, Mariam, doit concevoir rapidement une intervention, la présenter à un bailleur, puis la suivre. Elle dispose d'un registre du centre de santé, de notes de réunions communautaires, d'une ancienne évaluation et de beaucoup de bonne volonté, mais de peu de temps.
 
 Ce module suit Mariam pas à pas : du problème communautaire au cadre logique, au budget, aux indicateurs, puis au suivi et au rapport.
 
 ## 11.2 Problématique
 
-La conception et le suivi de projets mobilisent énormément d'analyse et de rédaction : analyses de besoins, arbres à problèmes, cadres logiques, chronogrammes, budgets, plans de suivi-évaluation, rapports. Les équipes y consacrent un temps considérable, souvent au détriment du terrain. L'IA peut accélérer ces travaux — mais elle peut aussi produire des projets « hors sol », génériques, déconnectés des réalités et des voix des communautés.
+La conception et le suivi de projets mobilisent énormément d'analyse et de rédaction : analyses de besoins, arbres à problèmes, cadres logiques, chronogrammes, budgets, plans de suivi-évaluation, rapports. Les équipes y consacrent un temps considérable, souvent au détriment du terrain. L'IA peut accélérer ces travaux, mais elle peut aussi produire des projets « hors sol », génériques, déconnectés des réalités et des voix des communautés.
 
 ## 11.3 Objectifs d'apprentissage
 
@@ -32,7 +32,7 @@ La conception et le suivi de projets mobilisent énormément d'analyse et de ré
 - **Indicateur SMART** : spécifique, mesurable, atteignable, réaliste (ou pertinent) et temporellement défini.
 - **Critères d'évaluation du CAD de l'OCDE** : pertinence, cohérence, efficacité, efficience, impact, viabilité (OCDE, 2019).
 
-> **🔎 À retenir** — Les modèles de cadre logique, les formats de budget et les exigences de rapport varient selon les bailleurs. Utilisez toujours le modèle et le guide du bailleur concerné.
+> **🔎 À retenir** : Les modèles de cadre logique, les formats de budget et les exigences de rapport varient selon les bailleurs. Utilisez toujours le modèle et le guide du bailleur concerné.
 
 ## 11.5 Explications détaillées
 
@@ -40,17 +40,17 @@ La conception et le suivi de projets mobilisent énormément d'analyse et de ré
 
 Les sources d'une analyse des besoins sont multiples : données administratives (registres de santé, statistiques scolaires), enquêtes, entretiens, groupes de discussion, observations, évaluations antérieures. L'IA peut **organiser** ces sources : regrouper des retours par thème, résumer des rapports, proposer des causes possibles. Elle ne peut pas **remplacer** l'écoute des communautés : ce qu'elle propose est une hypothèse à discuter.
 
-![Figure 11.1 — De l'arbre à problèmes à l'arbre à objectifs](03_ILLUSTRATIONS/figures/fig_11_1.svg)
+![Figure 11.1 : De l'arbre à problèmes à l'arbre à objectifs](03_ILLUSTRATIONS/figures/fig_11_1.svg)
 
 ### Le cadre logique
 
 | | Logique d'intervention | Indicateurs | Sources de vérification | Hypothèses |
 |---|---|---|---|---|
-| **Objectif global** | Contribuer à la réduction de la morbidité infantile dans la zone | Incidence des diarrhées chez les < 5 ans | Registre du centre de santé | — |
+| **Objectif global** | Contribuer à la réduction de la morbidité infantile dans la zone | Incidence des diarrhées chez les < 5 ans | Registre du centre de santé | Néant |
 | **Objectif spécifique** | Les ménages des 3 villages adoptent des pratiques d'eau, d'assainissement et d'hygiène sûres | % de ménages traitant l'eau de boisson ; % de ménages disposant de latrines fonctionnelles | Enquêtes de base et finale | Stabilité sécuritaire ; disponibilité des produits de traitement sur le marché local |
 | **Résultat 1** | Les ménages traitent l'eau à domicile | Nb de ménages formés et équipés | Listes de distribution, rapports de séance | Acceptation culturelle du produit |
 | **Résultat 2** | Les latrines familiales sont fonctionnelles | Nb de latrines réhabilitées et utilisées | Fiches de suivi, visites | Participation des ménages aux travaux |
-| **Résultat 3** | Le lavage des mains aux moments clés est pratiqué | % de ménages disposant d'un dispositif de lavage avec savon | Observation par échantillon | — |
+| **Résultat 3** | Le lavage des mains aux moments clés est pratiqué | % de ménages disposant d'un dispositif de lavage avec savon | Observation par échantillon | Néant |
 | **Activités** | 1.1 Séances de sensibilisation ; 1.2 Distribution de kits ; 2.1 Réhabilitation de latrines ; 3.1 Installation de dispositifs de lavage ; 3.2 Animations scolaires | Moyens : personnel, kits, matériaux | Budget, rapports financiers | Engagement des leaders communautaires |
 
 **Contrôles de cohérence d'un cadre logique :**
@@ -60,7 +60,7 @@ Les sources d'une analyse des besoins sont multiples : données administratives 
 3. **Sources** : chaque indicateur a une source réaliste et budgétée.
 4. **Hypothèses** : extérieures au projet, importantes, ni certaines ni impossibles.
 
-![Figure 11.2 — Chaîne de résultats et indicateurs](03_ILLUSTRATIONS/figures/fig_11_2.svg)
+![Figure 11.2 : Chaîne de résultats et indicateurs](03_ILLUSTRATIONS/figures/fig_11_2.svg)
 
 ### Planification et calendrier
 
@@ -83,7 +83,7 @@ Le budget traduit les activités en ressources. *Exemple (fictif) sur 12 mois :*
 
 **Règles :** construire le budget dans un tableur avec des formules (quantité × coût unitaire × durée), jamais en saisissant des totaux à la main ; documenter chaque coût unitaire (devis, grille salariale, historique) ; vérifier l'éligibilité des dépenses et le taux de coûts indirects selon les règles du bailleur ; relier chaque ligne à une activité du cadre logique.
 
-> **🛑 Contrôle humain obligatoire** — Les coûts unitaires proposés par une IA ne sont jamais fiables : ils doivent provenir de devis, de grilles internes ou de données historiques de l'organisation.
+> **🛑 Contrôle humain obligatoire** : Les coûts unitaires proposés par une IA ne sont jamais fiables : ils doivent provenir de devis, de grilles internes ou de données historiques de l'organisation.
 
 ### Indicateurs et plan de suivi-évaluation
 
@@ -153,7 +153,7 @@ Un rapport d'avancement fidèle compare prévu et réalisé, explique les écart
 
 ## 11.7 Prompts prêts à l'emploi
 
-### Fiche P11.1 — Projet d'arbre à problèmes à partir de données de terrain
+### Fiche P11.1 : Projet d'arbre à problèmes à partir de données de terrain
 
 **A. Titre.** Arbre à problèmes à valider avec les communautés.
 
@@ -195,7 +195,7 @@ culpabilisent les populations.
 
 **K. Amélioration.** « Ajoute une colonne indiquant, pour chaque cause, si l'ASBL a la capacité d'agir dessus (oui/partiellement/non). »
 
-### Fiche P11.2 — Projet de cadre logique
+### Fiche P11.2 : Projet de cadre logique
 
 **A. Titre.** Cadre logique à partir d'un arbre à objectifs validé.
 
@@ -239,7 +239,7 @@ sans les signaler comme « proposition à valider ».
 
 **K. Amélioration.** « Réécris les indicateurs pour qu'ils soient désagrégés par sexe et par tranche d'âge, et propose un indicateur qualitatif. »
 
-### Fiche P11.3 — Rapport d'avancement fidèle
+### Fiche P11.3 : Rapport d'avancement fidèle
 
 **A. Titre.** Rapport trimestriel fondé sur les données.
 
@@ -288,7 +288,7 @@ Propositions plus rapides et plus cohérentes, construites avec les communautés
 
 ## 11.9 Contrôles humains
 
-> **🛑 Contrôle humain obligatoire** — Les priorités d'intervention sont définies avec les communautés et l'équipe ; les coûts unitaires proviennent de sources documentées ; chaque chiffre d'un rapport est pointé avec sa source ; la proposition est validée par la direction et le responsable financier.
+> **🛑 Contrôle humain obligatoire** : Les priorités d'intervention sont définies avec les communautés et l'équipe ; les coûts unitaires proviennent de sources documentées ; chaque chiffre d'un rapport est pointé avec sa source ; la proposition est validée par la direction et le responsable financier.
 
 ## 11.10 Risques et erreurs à éviter
 
@@ -313,7 +313,7 @@ Propositions plus rapides et plus cohérentes, construites avec les communautés
 - Les rapports sont fidèles : chaque chiffre est traçable, chaque écart expliqué.
 - L'impact se mesure avec prudence et méthode.
 
-## 11.13 QCM — Module 11
+## 11.13 QCM : Module 11
 
 **Q1.** (une seule réponse) Dans un cadre logique, les hypothèses sont :
 
@@ -357,14 +357,14 @@ b) documenter les coûts unitaires.
 c) reprendre les coûts unitaires proposés par l'IA.
 d) vérifier l'éligibilité selon les règles du bailleur.
 
-**Q7.** (mise en situation — une seule réponse) L'IA propose comme cause « le manque d'hygiène des mères ». Que faites-vous ?
+**Q7.** (mise en situation, une seule réponse) L'IA propose comme cause « le manque d'hygiène des mères ». Que faites-vous ?
 
 a) Vous la reformulez de façon factuelle et non culpabilisante et la soumettez comme hypothèse à l'atelier.
 b) Vous la gardez telle quelle.
 c) Vous la retirez sans discussion.
 d) Vous l'ajoutez aux effets.
 
-**Q8.** (mise en situation — une seule réponse) Le rapport généré mentionne « 85 % de satisfaction des bénéficiaires », chiffre absent de vos données. Que faites-vous ?
+**Q8.** (mise en situation, une seule réponse) Le rapport généré mentionne « 85 % de satisfaction des bénéficiaires », chiffre absent de vos données. Que faites-vous ?
 
 a) Vous le gardez car il est plausible.
 b) Vous l'arrondissez à 80 %.
@@ -385,7 +385,7 @@ b) Liste nominative des ménages visités.
 c) Notes de terrain anonymisées, si la politique de l'ASBL l'autorise.
 d) Modèle de cadre logique du bailleur, s'il est public.
 
-## 11.14 Corrigé détaillé — Module 11
+## 11.14 Corrigé détaillé : Module 11
 
 **Q1 : c.** Les hypothèses sont extérieures au contrôle du projet.
 

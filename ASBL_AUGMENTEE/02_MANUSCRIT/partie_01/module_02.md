@@ -1,4 +1,4 @@
-# Module 2 — Comment fonctionne réellement l'intelligence artificielle ?
+# Module 2 : Comment fonctionne réellement l'intelligence artificielle ?
 
 ## 2.1 Mise en situation
 
@@ -37,7 +37,7 @@ Beaucoup d'utilisateurs se représentent l'IA comme une « super base de donnée
 
 ### L'apprentissage automatique : apprendre à partir d'exemples
 
-![Figure 2.1 — Du jeu de données au modèle, puis à la prédiction](03_ILLUSTRATIONS/figures/fig_2_1.svg)
+![Figure 2.1 : Du jeu de données au modèle, puis à la prédiction](03_ILLUSTRATIONS/figures/fig_2_1.svg)
 
 Imaginons que la trésorière d'Horizons Partagés veuille un outil qui classe automatiquement les dépenses dans la bonne catégorie (« transport », « fournitures », « restauration »…). Deux approches existent.
 
@@ -70,9 +70,9 @@ Les modèles actuels reposent sur l'architecture **Transformer** (Vaswani et al.
 
 **Ce que cela implique pour vous :**
 
-- **Le modèle ne consulte pas une base de faits.** Il produit ce qui est plausible. Dans l'histoire de Joseph, « 15 UM par trajet, conformément à votre politique interne » est une phrase plausible — pas une information.
+- **Le modèle ne consulte pas une base de faits.** Il produit ce qui est plausible. Dans l'histoire de Joseph, « 15 UM par trajet, conformément à votre politique interne » est une phrase plausible, pas une information.
 - **Il ne connaît pas vos documents** sauf si vous les lui fournissez, ou si l'outil est relié à vos fichiers.
-- **Il ne connaît pas l'actualité** au-delà de sa date de coupure, sauf si l'outil effectue des recherches en ligne — auquel cas il faut vérifier les sources consultées.
+- **Il ne connaît pas l'actualité** au-delà de sa date de coupure, sauf si l'outil effectue des recherches en ligne, auquel cas il faut vérifier les sources consultées.
 - **Ses réponses varient** d'une fois sur l'autre pour la même question.
 - **Il calcule mal de tête.** Pour des calculs, demandez-lui d'utiliser un outil de calcul s'il en dispose, ou faites les calculs dans un tableur.
 - **Sa fenêtre de contexte est limitée.** Un document très long peut être partiellement ignoré ; mieux vaut le découper.
@@ -91,7 +91,7 @@ Points de vigilance : la qualité de la photo (lumière, angle, netteté) déter
 
 L'IA prédictive estime une valeur ou une probabilité : risque d'abandon scolaire, besoin de trésorerie du mois prochain, probabilité qu'un donateur renouvelle son don. Elle exige des **données historiques** abondantes et fiables, ce dont beaucoup d'ASBL ne disposent pas. Elle soulève aussi des questions de justice : un score de « risque » attribué à une personne peut conduire à la stigmatiser ou à l'exclure.
 
-> **🔎 À retenir** — Une prédiction est une probabilité, pas un fait. Elle doit éclairer une décision humaine, jamais la remplacer lorsque des personnes sont concernées.
+> **🔎 À retenir** : Une prédiction est une probabilité, pas un fait. Elle doit éclairer une décision humaine, jamais la remplacer lorsque des personnes sont concernées.
 
 ### IA générative
 
@@ -107,7 +107,7 @@ Un **agent** est un système fondé sur un modèle de langage auquel on donne un
 
 ### Bases de connaissances et RAG
 
-![Figure 2.2 — Architecture RAG (génération augmentée par la recherche)](03_ILLUSTRATIONS/figures/fig_2_2.svg)
+![Figure 2.2 : Architecture RAG (génération augmentée par la recherche)](03_ILLUSTRATIONS/figures/fig_2_2.svg)
 
 Comment obtenir d'un modèle de langage des réponses fondées sur **vos** documents ? Deux approches simples existent, et une approche avancée.
 
@@ -131,7 +131,7 @@ Une **hallucination** est un contenu produit par une IA générative qui paraît
 | Injection de prompt | Un document contient « ignore les consignes précédentes et… » | Ne pas donner de droits d'action à l'outil sur des contenus non fiables ; validation humaine |
 | Biais | Des descriptions stéréotypées de certains groupes | Revue de biais (module 8) |
 
-Les risques des grands modèles de langage — biais hérités des données, coûts environnementaux, illusion de compréhension — ont été analysés de façon critique dans la littérature scientifique (Bender et al., 2021). Ils ne signifient pas qu'il faut renoncer à ces outils, mais qu'il faut les utiliser en connaissant leurs limites.
+Les risques des grands modèles de langage (biais hérités des données, coûts environnementaux, illusion de compréhension) ont été analysés de façon critique dans la littérature scientifique (Bender et al., 2021). Ils ne signifient pas qu'il faut renoncer à ces outils, mais qu'il faut les utiliser en connaissant leurs limites.
 
 ## 2.6 Application professionnelle : tester un assistant avant de l'adopter
 
@@ -154,7 +154,7 @@ Avant de recommander un outil à ses collègues, Joseph décide de le tester mé
 
 ## 2.7 Prompt prêt à l'emploi
 
-### Fiche P2.1 — Tester les limites d'un assistant avant usage professionnel
+### Fiche P2.1 : Tester les limites d'un assistant avant usage professionnel
 
 **A. Titre.** Protocole de test en cinq questions.
 
@@ -214,7 +214,7 @@ Une fiche d'évaluation de l'outil, partagée avec l'équipe, indiquant les usag
 
 ## 2.9 Contrôles humains
 
-> **🛑 Contrôle humain obligatoire** — Toute réponse d'IA portant sur une règle interne, un montant, une obligation légale ou une personne doit être vérifiée sur la source originale avant d'être utilisée ou transmise.
+> **🛑 Contrôle humain obligatoire** : Toute réponse d'IA portant sur une règle interne, un montant, une obligation légale ou une personne doit être vérifiée sur la source originale avant d'être utilisée ou transmise.
 
 ## 2.10 Risques et erreurs à éviter
 
@@ -238,7 +238,7 @@ Une fiche d'évaluation de l'outil, partagée avec l'équipe, indiquant les usag
 - Le RAG permet de faire répondre un modèle à partir de vos documents, avec citation des sources ; sa qualité dépend de votre gestion documentaire.
 - Les hallucinations, les erreurs de calcul, la complaisance et l'injection de prompt sont des limites connues : on s'en protège par la méthode.
 
-## 2.13 QCM — Module 2
+## 2.13 QCM : Module 2
 
 **Q1.** (une seule réponse) Dans l'apprentissage supervisé, les exemples d'entraînement :
 
@@ -289,14 +289,14 @@ b) La possibilité de mettre à jour les connaissances sans réentraîner le mod
 c) La garantie absolue de réponses exactes, quelle que soit la base documentaire.
 d) Des réponses fondées sur les documents propres à l'organisation.
 
-**Q8.** (mise en situation — une seule réponse) Un assistant cite « l'article 14 de votre manuel de procédures » alors que vous ne lui avez fourni aucun document. Il s'agit très probablement :
+**Q8.** (mise en situation, une seule réponse) Un assistant cite « l'article 14 de votre manuel de procédures » alors que vous ne lui avez fourni aucun document. Il s'agit très probablement :
 
 a) d'une preuve qu'il a accès à vos serveurs.
 b) d'une information fiable.
 c) d'une hallucination.
 d) d'une injection de prompt.
 
-**Q9.** (mise en situation — une seule réponse) Vous envisagez un agent IA qui lirait les courriels entrants et paierait automatiquement les factures reçues. La recommandation principale est :
+**Q9.** (mise en situation, une seule réponse) Vous envisagez un agent IA qui lirait les courriels entrants et paierait automatiquement les factures reçues. La recommandation principale est :
 
 a) de le déployer, car il fera gagner du temps.
 b) de limiter ses droits et d'imposer une validation humaine avant tout paiement.
@@ -310,7 +310,7 @@ b) Demander des citations exactes des documents fournis.
 c) Formuler les questions de manière neutre.
 d) Croire la réponse si elle est formulée avec assurance.
 
-## 2.14 Corrigé détaillé — Module 2
+## 2.14 Corrigé détaillé : Module 2
 
 **Q1 : b.** L'étiquette est la bonne réponse associée à chaque exemple. L'absence d'étiquette caractérise l'apprentissage non supervisé.
 

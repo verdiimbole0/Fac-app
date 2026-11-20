@@ -1,6 +1,6 @@
-# Annexe 17 — Feuille de route sur 90 jours
+# Annexe 17 : Feuille de route sur 90 jours
 
-*ASBL augmentée — © 2026 Verdi Imbole. Reproduction autorisée pour l'usage interne de l'organisation de l'acheteur.*
+*ASBL augmentée : © 2026 Verdi Imbole. Reproduction autorisée pour l'usage interne de l'organisation de l'acheteur.*
 
 ## Objectif
 

@@ -1,4 +1,4 @@
-# Module 14 — Ressources humaines et gestion des bénévoles
+# Module 14 : Ressources humaines et gestion des bénévoles
 
 ## 14.1 Mise en situation
 
@@ -8,7 +8,7 @@ Horizons Partagés doit recruter un ou une chargé(e) de suivi-évaluation. La d
 
 ## 14.2 Problématique
 
-Les fonctions RH et bénévolat combinent une forte charge administrative (annonces, tri, plannings, formations, documents) et des décisions particulièrement sensibles, qui touchent directement des personnes : recrutement, évaluation, rémunération, sanctions. L'IA peut alléger la première ; elle ne doit pas s'approprier les secondes. Les systèmes de tri automatique de candidatures peuvent reproduire des discriminations, et de nombreuses législations encadrent les décisions automatisées en matière d'emploi — le règlement européen sur l'IA range d'ailleurs certains systèmes d'IA utilisés pour le recrutement et la gestion du personnel parmi les systèmes à haut risque.
+Les fonctions RH et bénévolat combinent une forte charge administrative (annonces, tri, plannings, formations, documents) et des décisions particulièrement sensibles, qui touchent directement des personnes : recrutement, évaluation, rémunération, sanctions. L'IA peut alléger la première ; elle ne doit pas s'approprier les secondes. Les systèmes de tri automatique de candidatures peuvent reproduire des discriminations, et de nombreuses législations encadrent les décisions automatisées en matière d'emploi : le règlement européen sur l'IA range d'ailleurs certains systèmes d'IA utilisés pour le recrutement et la gestion du personnel parmi les systèmes à haut risque.
 
 ## 14.3 Objectifs d'apprentissage
 
@@ -30,11 +30,11 @@ Les fonctions RH et bénévolat combinent une forte charge administrative (annon
 - **Référentiel de compétences** : liste des compétences attendues par fonction, avec niveaux.
 - **Biais de recrutement** : préférences non liées aux compétences (âge, sexe, origine, école, nom, apparence, handicap, situation familiale) qui influencent les décisions.
 
-> **⚖️ Adaptation réglementaire** — Le droit du travail, le droit de la non-discrimination, les règles relatives aux bénévoles (assurance, remboursement de frais, statut) et la protection des données des candidats et du personnel diffèrent selon les pays. Les durées de conservation des candidatures non retenues, en particulier, sont souvent encadrées.
+> **⚖️ Adaptation réglementaire** : Le droit du travail, le droit de la non-discrimination, les règles relatives aux bénévoles (assurance, remboursement de frais, statut) et la protection des données des candidats et du personnel diffèrent selon les pays. Les durées de conservation des candidatures non retenues, en particulier, sont souvent encadrées.
 
 ## 14.5 Explications détaillées
 
-![Figure 14.1 — Recrutement assisté : où l'IA aide, où l'humain décide](03_ILLUSTRATIONS/figures/fig_14_1.svg)
+![Figure 14.1 : Recrutement assisté : où l'IA aide, où l'humain décide](03_ILLUSTRATIONS/figures/fig_14_1.svg)
 
 ### Fiches de poste et annonces
 
@@ -49,7 +49,7 @@ L'IA est utile pour structurer une fiche de poste à partir des besoins exprimé
 5. **Anonymisation partielle** possible au premier tri (masquer nom, âge, photo, adresse) pour limiter les biais.
 6. **Réponse à tous les candidats**, y compris non retenus, dans un délai annoncé.
 
-> **🛑 Contrôle humain obligatoire** — Aucune candidature n'est écartée par un système automatique. Les personnes chargées du recrutement lisent les candidatures, appliquent la grille et motivent leurs décisions.
+> **🛑 Contrôle humain obligatoire** : Aucune candidature n'est écartée par un système automatique. Les personnes chargées du recrutement lisent les candidatures, appliquent la grille et motivent leurs décisions.
 
 ### Entretiens
 
@@ -127,7 +127,7 @@ Un assistant RH interne peut répondre aux questions générales du personnel et
 
 ## 14.7 Prompts prêts à l'emploi
 
-### Fiche P14.1 — Fiche de poste et annonce inclusives
+### Fiche P14.1 : Fiche de poste et annonce inclusives
 
 **A. Titre.** Fiche de poste et annonce.
 
@@ -168,7 +168,7 @@ situation familiale ou à l'apparence ; formulation inclusive.
 
 **K. Amélioration.** « Rédige une version courte (80 mots) pour les réseaux sociaux et une version audio de 45 secondes pour la radio communautaire. »
 
-### Fiche P14.2 — Guide d'entretien structuré
+### Fiche P14.2 : Guide d'entretien structuré
 
 **A. Titre.** Guide d'entretien structuré et échelle d'évaluation.
 
@@ -205,7 +205,7 @@ religion, origine…) ; une fiche d'évaluation individuelle vierge.
 
 **K. Amélioration.** « Adapte le guide pour un entretien à distance avec une connexion instable (questions envoyées à l'avance, durée réduite). »
 
-### Fiche P14.3 — Planning hebdomadaire des bénévoles
+### Fiche P14.3 : Planning hebdomadaire des bénévoles
 
 **A. Titre.** Proposition de planning à partir de disponibilités pseudonymisées.
 
@@ -251,7 +251,7 @@ Recrutements plus rapides, équitables et traçables ; candidats informés ; pla
 
 ## 14.9 Contrôles humains
 
-> **🛑 Contrôle humain obligatoire** — Présélection, entretiens, décisions de recrutement, évaluations, rémunérations, sanctions, acceptation ou exclusion de bénévoles : décisions exclusivement humaines, motivées et traçables. Aucune analyse automatisée de la voix, du visage, de la personnalité ou des communications du personnel.
+> **🛑 Contrôle humain obligatoire** : Présélection, entretiens, décisions de recrutement, évaluations, rémunérations, sanctions, acceptation ou exclusion de bénévoles : décisions exclusivement humaines, motivées et traçables. Aucune analyse automatisée de la voix, du visage, de la personnalité ou des communications du personnel.
 
 ## 14.10 Risques et erreurs à éviter
 
@@ -275,7 +275,7 @@ Recrutements plus rapides, équitables et traçables ; candidats informés ; pla
 - Les données des candidats, du personnel et des bénévoles sont protégées et minimisées.
 - La transmission des connaissances se prépare avant les départs.
 
-## 14.13 QCM — Module 14
+## 14.13 QCM : Module 14
 
 **Q1.** (une seule réponse) Une grille de sélection doit être définie :
 
@@ -319,14 +319,14 @@ b) accéder aux dossiers individuels pour répondre précisément.
 c) traiter les signalements de harcèlement.
 d) décider des congés.
 
-**Q7.** (mise en situation — une seule réponse) Un prestataire propose un classement automatique des 260 candidatures. Votre réponse ?
+**Q7.** (mise en situation, une seule réponse) Un prestataire propose un classement automatique des 260 candidatures. Votre réponse ?
 
 a) Accepter pour gagner du temps.
 b) Accepter si le prestataire garantit l'absence de biais.
 c) Ne retenir que les 20 premiers.
 d) Refuser le classement automatique ; éventuellement utiliser un outil pour organiser l'information factuelle, l'examen restant humain selon la grille.
 
-**Q8.** (mise en situation — une seule réponse) Pour planifier les visites, le coordinateur veut coller la liste des personnes âgées avec adresses et pathologies dans un assistant. Que recommandez-vous ?
+**Q8.** (mise en situation, une seule réponse) Pour planifier les visites, le coordinateur veut coller la liste des personnes âgées avec adresses et pathologies dans un assistant. Que recommandez-vous ?
 
 a) Le faire si l'outil est payant.
 b) Le faire puis supprimer la conversation.
@@ -347,7 +347,7 @@ b) liste des dossiers en cours et des contacts clés.
 c) transfert ou fermeture des accès.
 d) conservation des mots de passe personnels du partant.
 
-## 14.14 Corrigé détaillé — Module 14
+## 14.14 Corrigé détaillé : Module 14
 
 **Q1 : b.** Définie à l'avance, elle limite les biais et garantit l'égalité de traitement.
 

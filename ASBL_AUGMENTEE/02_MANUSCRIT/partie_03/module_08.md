@@ -1,10 +1,10 @@
-# Module 8 — Éthique, responsabilité, sécurité et réglementation de l'IA
+# Module 8 : Éthique, responsabilité, sécurité et réglementation de l'IA
 
 ## 8.1 Mise en situation
 
 La Maison des Aînés Solidaires accompagne des personnes âgées isolées. Pour mieux organiser les visites, Thomas, coordinateur des bénévoles, a eu une idée : enregistrer les appels téléphoniques des personnes accompagnées, les faire transcrire et résumer par un assistant gratuit, puis demander à l'outil d'identifier « les personnes qui montrent des signes de déclin cognitif » afin de leur envoyer plus de visites.
 
-L'intention est généreuse. Pourtant, le projet cumule presque tous les risques que ce module va examiner : des données de santé déduites sans base médicale, des personnes vulnérables enregistrées sans consentement éclairé, un outil gratuit dont les conditions de traitement des données n'ont pas été lues, une forme de profilage, et des décisions — l'intensité de l'accompagnement — qui dépendraient d'un résultat automatique non vérifiable.
+L'intention est généreuse. Pourtant, le projet cumule presque tous les risques que ce module va examiner : des données de santé déduites sans base médicale, des personnes vulnérables enregistrées sans consentement éclairé, un outil gratuit dont les conditions de traitement des données n'ont pas été lues, une forme de profilage, et des décisions (l'intensité de l'accompagnement) qui dépendraient d'un résultat automatique non vérifiable.
 
 Ce module ne vise pas à décourager l'innovation. Il vise à donner à chacun les réflexes qui permettent d'innover sans nuire.
 
@@ -84,11 +84,11 @@ Les personnes ont le droit de savoir quand un système d'IA intervient dans une 
 - signaler qu'un assistant en ligne est automatisé et offrir un contact humain ;
 - mentionner, dans les politiques de confidentialité, les traitements assistés par l'IA ;
 - indiquer, en interne et selon les règles de l'organisation, quand un document a été produit avec une aide de l'IA ;
-- pour toute décision affectant une personne, pouvoir en expliquer les motifs en termes compréhensibles — ce qui suppose que la décision ait été prise par un humain capable de la justifier.
+- pour toute décision affectant une personne, pouvoir en expliquer les motifs en termes compréhensibles : ce qui suppose que la décision ait été prise par un humain capable de la justifier.
 
 ### Confidentialité et protection des données
 
-![Figure 8.1 — Le feu tricolore de classification des données](03_ILLUSTRATIONS/figures/fig_8_1.svg)
+![Figure 8.1 : Le feu tricolore de classification des données](03_ILLUSTRATIONS/figures/fig_8_1.svg)
 
 Les grands principes de protection des données, communs à de nombreuses législations, sont :
 
@@ -108,7 +108,7 @@ Les grands principes de protection des données, communs à de nombreuses légis
 | 🟠 **Orange** | Information interne, non personnelle ou agrégée | Budget non publié, procédures, PV de CA, statistiques agrégées | Outils professionnels validés par l'organisation (contrat prévoyant la confidentialité et l'absence d'utilisation des données pour l'entraînement), après minimisation |
 | 🔴 **Rouge** | Données personnelles identifiantes, données sensibles, informations confidentielles | Listes nominatives de bénéficiaires, données de santé, données d'enfants, salaires, dossiers disciplinaires, coordonnées bancaires, signalements d'abus | Interdit dans tout outil non validé spécifiquement. Anonymisation préalable, base légale, accord du responsable, outil sécurisé |
 
-> **⚖️ Adaptation réglementaire** — Les lois de protection des données diffèrent selon les pays : définitions des données sensibles, bases légales, droits des personnes, règles de transfert international, obligations de déclaration. Dans l'Union européenne, le règlement (UE) 2016/679 (RGPD) s'applique ; d'autres pays disposent de lois proches ; certains États ont ratifié la Convention 108+ du Conseil de l'Europe. Lorsque vous utilisez un outil en ligne, vos données peuvent être traitées dans un autre pays : vérifiez la localisation des serveurs et les conditions de transfert.
+> **⚖️ Adaptation réglementaire** : Les lois de protection des données diffèrent selon les pays : définitions des données sensibles, bases légales, droits des personnes, règles de transfert international, obligations de déclaration. Dans l'Union européenne, le règlement (UE) 2016/679 (RGPD) s'applique ; d'autres pays disposent de lois proches ; certains États ont ratifié la Convention 108+ du Conseil de l'Europe. Lorsque vous utilisez un outil en ligne, vos données peuvent être traitées dans un autre pays : vérifiez la localisation des serveurs et les conditions de transfert.
 
 **Avant d'utiliser un outil en ligne avec des données internes, vérifiez au minimum :**
 
@@ -118,7 +118,7 @@ Les grands principes de protection des données, communs à de nombreuses légis
 - l'existence d'une offre professionnelle avec engagement contractuel de confidentialité ;
 - la possibilité de supprimer ses données.
 
-> **🔎 À retenir** — Les offres gratuites ne sont pas nécessairement dangereuses, mais elles n'offrent généralement pas les garanties contractuelles nécessaires pour des données internes ou personnelles. Par défaut : vert uniquement.
+> **🔎 À retenir** : Les offres gratuites ne sont pas nécessairement dangereuses, mais elles n'offrent généralement pas les garanties contractuelles nécessaires pour des données internes ou personnelles. Par défaut : vert uniquement.
 
 ### Le consentement
 
@@ -138,11 +138,11 @@ L'IA introduit des risques de sécurité nouveaux, en plus des risques classique
 
 ### Supervision humaine et décisions automatisées
 
-![Figure 8.2 — Trois modes de supervision humaine](03_ILLUSTRATIONS/figures/fig_8_2.svg)
+![Figure 8.2 : Trois modes de supervision humaine](03_ILLUSTRATIONS/figures/fig_8_2.svg)
 
 La supervision humaine doit être **réelle** : une personne qui valide 200 propositions par heure sans les lire ne supervise rien (c'est le « biais d'automatisation », tendance à faire excessivement confiance à la machine). Elle suppose du temps, des compétences, le droit de refuser, et une trace de la validation.
 
-> **⚖️ Adaptation réglementaire** — Plusieurs textes encadrent les décisions fondées exclusivement sur un traitement automatisé et produisant des effets importants pour les personnes : par exemple l'article 22 du RGPD dans l'Union européenne, ou la Convention 108+. Le règlement européen sur l'IA classe en « haut risque » certains usages, notamment dans l'emploi, l'éducation ou l'accès à des services essentiels, avec des obligations renforcées ; son calendrier d'application a été modifié en 2026 par un règlement dit « omnibus », qui a reporté certaines échéances relatives aux systèmes à haut risque — vérifiez les dates en vigueur sur le site officiel EUR-Lex à la date de votre projet.
+> **⚖️ Adaptation réglementaire** : Plusieurs textes encadrent les décisions fondées exclusivement sur un traitement automatisé et produisant des effets importants pour les personnes : par exemple l'article 22 du RGPD dans l'Union européenne, ou la Convention 108+. Le règlement européen sur l'IA classe en « haut risque » certains usages, notamment dans l'emploi, l'éducation ou l'accès à des services essentiels, avec des obligations renforcées ; son calendrier d'application a été modifié en 2026 par un règlement dit « omnibus », qui a reporté certaines échéances relatives aux systèmes à haut risque : vérifiez les dates en vigueur sur le site officiel EUR-Lex à la date de votre projet.
 
 **Décisions qui doivent impérativement rester sous contrôle humain dans une ASBL :**
 
@@ -175,7 +175,7 @@ Les enfants, les personnes âgées dépendantes, les personnes en situation de h
 - aucune donnée les concernant dans un outil non validé ;
 - prudence extrême sur toute forme de profilage ou de « score » ;
 - attention aux risques de réidentification à partir de données apparemment anonymes (un village, un âge et une situation familiale peuvent suffire à identifier une personne) ;
-- dans les contextes de crise, prise en compte des risques d'accès aux données par des acteurs hostiles — un enjeu détaillé par le *Handbook on Data Protection in Humanitarian Action* du CICR (Marelli, 2024), y compris pour les données hébergées chez des prestataires de cloud.
+- dans les contextes de crise, prise en compte des risques d'accès aux données par des acteurs hostiles : un enjeu détaillé par le *Handbook on Data Protection in Humanitarian Action* du CICR (Marelli, 2024), y compris pour les données hébergées chez des prestataires de cloud.
 
 ### Impact environnemental
 
@@ -201,7 +201,7 @@ Reprenons la mise en situation et appliquons la démarche.
 | Décision ? | Automatique (score) | Humaine : le coordinateur et l'infirmière référente, si un besoin de santé est exprimé |
 | Recours ? | Aucun | Les personnes peuvent demander plus ou moins de visites à tout moment |
 
-Le projet révisé conserve l'objectif — mieux accompagner — sans profilage ni données de santé déduites.
+Le projet révisé conserve l'objectif, mieux accompagner, sans profilage ni données de santé déduites.
 
 ### Processus de mise en œuvre d'un examen éthique simplifié (pour tout nouveau cas d'usage)
 
@@ -225,7 +225,7 @@ Le projet révisé conserve l'objectif — mieux accompagner — sans profilage 
 
 ## 8.7 Prompts prêts à l'emploi
 
-### Fiche P8.1 — Anonymiser un texte avant traitement
+### Fiche P8.1 : Anonymiser un texte avant traitement
 
 **A. Titre.** Repérage des éléments identifiants dans un texte.
 
@@ -233,7 +233,7 @@ Le projet révisé conserve l'objectif — mieux accompagner — sans profilage 
 
 **C. Contexte d'utilisation.** Rapports de terrain, comptes rendus, retours de bénéficiaires.
 
-**D. Données nécessaires.** Le texte. **Important :** cette fiche s'utilise avec un outil **validé par l'organisation** pour des données orange ou rouges (outil interne, offre professionnelle avec garanties) — ou bien elle sert de liste de contrôle pour une anonymisation manuelle. Elle ne doit pas être utilisée avec un outil grand public sur un texte contenant des données personnelles : ce serait divulguer précisément ce que l'on veut protéger.
+**D. Données nécessaires.** Le texte. **Important :** cette fiche s'utilise avec un outil **validé par l'organisation** pour des données orange ou rouges (outil interne, offre professionnelle avec garanties), ou bien elle sert de liste de contrôle pour une anonymisation manuelle. Elle ne doit pas être utilisée avec un outil grand public sur un texte contenant des données personnelles : ce serait divulguer précisément ce que l'on veut protéger.
 
 **E. Prompt complet.**
 
@@ -268,7 +268,7 @@ Limites : ne résume pas, ne reformule pas le reste du texte.
 
 **K. Amélioration.** Si des identifiants indirects subsistent : « Applique une généralisation plus forte : remplace les âges par des tranches de 20 ans et les lieux par la région. »
 
-### Fiche P8.2 — Revue de biais d'un contenu ou d'un outil
+### Fiche P8.2 : Revue de biais d'un contenu ou d'un outil
 
 **A. Titre.** Revue de biais et d'inclusion.
 
@@ -317,7 +317,7 @@ Une politique d'utilisation de l'IA (annexe 10), une classification des données
 
 ## 8.9 Contrôles humains
 
-> **🛑 Contrôle humain obligatoire** — Toute décision qui affecte les droits, l'accès à un service, l'emploi, la sécurité ou la réputation d'une personne est prise par un humain compétent, qui peut l'expliquer, et contre laquelle un recours est possible. Toute situation de protection (abus, exploitation, danger) est traitée immédiatement par un référent humain, en dehors de tout circuit automatisé.
+> **🛑 Contrôle humain obligatoire** : Toute décision qui affecte les droits, l'accès à un service, l'emploi, la sécurité ou la réputation d'une personne est prise par un humain compétent, qui peut l'expliquer, et contre laquelle un recours est possible. Toute situation de protection (abus, exploitation, danger) est traitée immédiatement par un référent humain, en dehors de tout circuit automatisé.
 
 ## 8.10 Risques et erreurs à éviter
 
@@ -344,7 +344,7 @@ Une politique d'utilisation de l'IA (annexe 10), une classification des données
 - Cybersécurité, droit d'auteur, environnement et protection des personnes vulnérables complètent l'analyse.
 - Les obligations juridiques dépendent des pays : identifiez-les et faites-vous conseiller.
 
-## 8.13 QCM — Module 8
+## 8.13 QCM : Module 8
 
 **Q1.** (une seule réponse) La Recommandation de l'UNESCO sur l'éthique de l'IA (2021) est :
 
@@ -388,14 +388,14 @@ b) un biais dans les données d'entraînement.
 c) la tendance des humains à faire excessivement confiance aux résultats d'une machine.
 d) la lenteur des automatisations.
 
-**Q7.** (mise en situation — une seule réponse) Un message vocal imitant la voix du directeur demande au comptable un virement urgent. Que faire ?
+**Q7.** (mise en situation, une seule réponse) Un message vocal imitant la voix du directeur demande au comptable un virement urgent. Que faire ?
 
 a) Exécuter, la voix est reconnaissable.
 b) Vérifier par un second canal convenu avant tout paiement inhabituel.
 c) Demander à un assistant d'IA si la voix est authentique.
 d) Exécuter puis prévenir le directeur.
 
-**Q8.** (mise en situation — une seule réponse) Un partenaire propose un outil qui attribue un « score de vulnérabilité » à chaque ménage pour décider automatiquement de l'attribution de l'aide. Votre position ?
+**Q8.** (mise en situation, une seule réponse) Un partenaire propose un outil qui attribue un « score de vulnérabilité » à chaque ménage pour décider automatiquement de l'attribution de l'aide. Votre position ?
 
 a) Refuser toute décision automatique ; l'outil peut au mieux éclairer une décision humaine motivée, après examen des biais, de la base légale et avec un recours.
 b) Accepter, c'est plus objectif.
@@ -416,7 +416,7 @@ b) la localisation des traitements.
 c) la durée de conservation des conversations.
 d) le nombre d'abonnés de l'outil sur les réseaux sociaux.
 
-## 8.14 Corrigé détaillé — Module 8
+## 8.14 Corrigé détaillé : Module 8
 
 **Q1 : d.** C'est un instrument normatif adopté par les États, qui n'impose pas directement d'obligations juridiques aux organisations.
 
@@ -445,7 +445,7 @@ d) le nombre d'abonnés de l'outil sur les réseaux sociaux.
 - Agence internationale de l'énergie (AIE/IEA). (2025). *Energy and AI*.
 - Conseil de l'Europe. (2018). *Protocole d'amendement à la Convention 108* (STCE n° 223).
 - Conseil de l'Europe. (2024). *Convention-cadre sur l'intelligence artificielle et les droits de l'homme, la démocratie et l'État de droit* (STCE n° 225).
-- ISO/IEC. (2023). *ISO/IEC 42001:2023 — Artificial intelligence — Management system*.
+- ISO/IEC. (2023). *ISO/IEC 42001:2023, Artificial intelligence, Management system*.
 - Marelli, M. (dir.). (2024). *Handbook on Data Protection in Humanitarian Action* (3e éd.). Cambridge University Press / CICR. https://doi.org/10.1017/9781009414630
 - NIST. (2023). *AI Risk Management Framework 1.0* (NIST AI 100-1). https://doi.org/10.6028/NIST.AI.100-1
 - NIST. (2024). *Generative AI Profile* (NIST AI 600-1). https://doi.org/10.6028/NIST.AI.600-1

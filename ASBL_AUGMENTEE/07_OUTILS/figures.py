@@ -8,9 +8,10 @@ Usage : python3 figures.py <dossier_sortie>
 import os, sys, csv
 from xml.sax.saxutils import escape
 
-NAVY, GOLD, LIGHT, TEAL, WHITE = "#102849", "#C7A34F", "#EAF0F5", "#167D73", "#FFFFFF"
-GREY, LGOLD, LTEAL, RED, LRED, AMBER = "#4A5A70", "#F5ECD4", "#D7ECE9", "#A8413A", "#F4DAD6", "#D9A21B"
-FONT = "'Source Sans 3', 'Source Sans Pro', 'Inter', Arial, sans-serif"
+NAVY, GOLD, LIGHT, TEAL, WHITE = "#241A6B", "#7B6CF0", "#F1EFFB", "#3F5BD8", "#FFFFFF"
+GREY, LGOLD, LTEAL, RED, LRED, AMBER = "#6E6A85", "#E9E5FD", "#E1E9FB", "#C0392B", "#F8DEDB", "#E0A526"
+FONT = "'Inter', Arial, sans-serif"
+TFONT = "'Outfit', 'Inter', Arial, sans-serif"
 
 FIGS = []  # (id, titre, alt)
 
@@ -23,16 +24,16 @@ class SVG:
     def add(self, s):
         self.items.append(s)
 
-    def rect(self, x, y, w, h, fill=LIGHT, stroke=NAVY, sw=1.2, rx=8, dash=None):
+    def rect(self, x, y, w, h, fill=LIGHT, stroke=NAVY, sw=1.2, rx=10, dash=None):
         d = f' stroke-dasharray="{dash}"' if dash else ""
         self.add(f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{rx}" fill="{fill}" stroke="{stroke}" stroke-width="{sw}"{d}/>')
 
-    def text(self, x, y, s, size=13, color=NAVY, weight="normal", anchor="middle", lh=1.25, italic=False):
+    def text(self, x, y, s, size=13, color=NAVY, weight="normal", anchor="middle", lh=1.25, italic=False, family=None):
         lines = s.split("\n")
         st = ' font-style="italic"' if italic else ""
         y0 = y - (len(lines) - 1) * size * lh / 2
         for i, ln in enumerate(lines):
-            self.add(f'<text x="{x}" y="{y0 + i*size*lh:.1f}" font-family="{FONT}" font-size="{size}" fill="{color}" font-weight="{weight}" text-anchor="{anchor}" dominant-baseline="middle"{st}>{escape(ln)}</text>')
+            self.add(f'<text x="{x}" y="{y0 + i*size*lh:.1f}" font-family="{family or FONT}" font-size="{size}" fill="{color}" font-weight="{weight}" text-anchor="{anchor}" dominant-baseline="middle"{st}>{escape(ln)}</text>')
 
     def box(self, x, y, w, h, s, fill=LIGHT, color=NAVY, size=13, weight="normal", stroke=NAVY, rx=8, dash=None):
         self.rect(x, y, w, h, fill, stroke, rx=rx, dash=dash)
@@ -53,8 +54,8 @@ class SVG:
         self.add(f'<circle cx="{cx}" cy="{cy}" r="{r}" fill="{fill}" stroke="{stroke}" stroke-width="{sw}"/>')
 
     def header(self, s, sub=None):
-        self.add(f'<rect x="0" y="0" width="{self.w}" height="6" fill="{GOLD}"/>')
-        self.text(24, 30, s, 17, NAVY, "bold", "start")
+        self.add(f'<rect x="24" y="12" width="44" height="5" rx="2.5" fill="{GOLD}"/>')
+        self.text(24, 34, s, 18, NAVY, "800", "start", family=TFONT)
         if sub:
             self.text(24, 52, sub, 12, GREY, "normal", "start", italic=True)
 
@@ -85,7 +86,7 @@ def fig(fid, title, alt, w=900, h=520):
 def f01(s):
     s.header("Carte des parcours de lecture", "Le socle commun d'abord, puis votre métier, puis le laboratoire")
     s.box(30, 80, 840, 120, "", LIGHT)
-    s.text(450, 98, "SOCLE COMMUN — à lire par tous", 14, NAVY, "bold")
+    s.text(450, 98, "SOCLE COMMUN : à lire par tous", 14, NAVY, "bold")
     items = [("M1–M3", "Fondamentaux\nde l'IA"), ("M4–M6", "Comprendre et\ndiagnostiquer l'ASBL"),
              ("M8", "Éthique et\nsécurité"), ("M7, M9", "Données et outils\n(recommandé)"), ("M19–M20", "Déployer et\npérenniser")]
     for i, (a, b) in enumerate(items):
@@ -94,7 +95,7 @@ def f01(s):
     roles = [("Dirigeants, CA", "M10"), ("Comptables,\ntrésoriers", "M12"), ("Auditeurs,\ncontrôleurs", "M13"),
              ("Chefs de projet,\nS&E", "M11"), ("RH, bénévolat", "M14"), ("Financements", "M15"),
              ("Logistique,\nachats", "M16"), ("Communication", "M17"), ("Agents de\nterrain", "M18")]
-    s.text(450, 228, "PARCOURS SPÉCIALISÉS — choisissez votre métier", 14, TEAL, "bold")
+    s.text(450, 228, "PARCOURS SPÉCIALISÉS : choisissez votre métier", 14, TEAL, "bold")
     for i, (r, m) in enumerate(roles):
         x = 30 + i*94
         s.arrow(450, 205, x+43, 250, GREY, 1)
@@ -102,7 +103,7 @@ def f01(s):
         s.box(x+13, 330, 60, 34, m, TEAL, WHITE, 13, "bold", TEAL)
         s.arrow(x+43, 314, x+43, 330, TEAL, 1.2)
         s.arrow(x+43, 364, 450, 420, GREY, 1)
-    s.box(250, 420, 400, 70, "LABORATOIRE — M21 : 10 études de cas\nM22 : votre plan de transformation à 90 jours", LGOLD, NAVY, 13, "bold", GOLD)
+    s.box(250, 420, 400, 70, "LABORATOIRE : M21 : 10 études de cas\nM22 : votre plan de transformation à 90 jours", LGOLD, NAVY, 13, "bold", GOLD)
     s.text(450, 525, "Transformer toute l'organisation ? Lisez les 22 modules dans l'ordre.", 13, GREY, italic=True)
     s.text(450, 550, "Les dirigeants complètent M10 par M5, M6, M20 et M22.", 12, GREY, italic=True)
 
@@ -175,7 +176,7 @@ def f22(s):
     s.box(240, 260, 180, 130, "Base documentaire\nde l'ASBL\nManuel de procédures\nPolitiques, conventions\n(versions validées)", LGOLD, NAVY, 11.5, "normal", GOLD)
     s.box(480, 90, 180, 110, "Question\n+ 3 passages\npertinents\n(avec références)", WHITE)
     s.box(720, 90, 150, 110, "Modèle de\nlangage (LLM)", NAVY, WHITE, 13, "bold")
-    s.box(700, 270, 190, 110, "Réponse sourcée :\n« 300 UM — Manuel\nfinancier §4.2 (v3) »\n+ vérification humaine", LTEAL, NAVY, 11.5)
+    s.box(700, 270, 190, 110, "Réponse sourcée :\n« 300 UM : Manuel\nfinancier §4.2 (v3) »\n+ vérification humaine", LTEAL, NAVY, 11.5)
     s.arrow(180, 145, 240, 145); s.arrow(330, 260, 330, 200, GOLD, 1.6, None, None)
     s.text(380, 230, "extraits", 11, GREY)
     s.arrow(420, 145, 480, 145); s.arrow(660, 145, 720, 145); s.arrow(795, 200, 795, 270)
@@ -257,7 +258,7 @@ def f42(s):
 @fig("5.1", "Cartographie « tel quel » du circuit des dépenses",
      "Diagramme en couloirs : demandeur, coordination, comptabilité, direction. Les étapes sont reliées par des flèches ; quatre points de blocage sont signalés en rouge : formulaires papier incomplets, attente de signature, ressaisie manuelle, classement non retrouvable.", 940, 470)
 def f51(s):
-    s.header("Processus « tel quel » : circuit des dépenses", "Fondation Horizons Partagés — points de blocage en rouge")
+    s.header("Processus « tel quel » : circuit des dépenses", "Fondation Horizons Partagés : points de blocage en rouge")
     lanes = ["Demandeur", "Coordination", "Comptabilité", "Direction"]
     for i, l in enumerate(lanes):
         y = 70 + i*95
@@ -377,9 +378,9 @@ def f72(s):
      "Trois catégories : vert (public, utilisable avec un outil grand public), orange (interne, utilisable avec un outil professionnel encadré, après minimisation), rouge (confidentiel ou sensible : interdit dans les outils non validés, anonymisation et validation obligatoires).", 900, 440)
 def f81(s):
     s.header("Feu tricolore des données", "Avant chaque usage d'une IA : quelle couleur ?")
-    cat = [("VERT — Public", "Rapport annuel publié, article\nde site web, appel à projets public", "Outils grand public autorisés.\nVérifier les sorties.", TEAL, LTEAL),
-           ("ORANGE — Interne", "Budget non publié, procédures,\nPV de CA, données agrégées", "Outil professionnel encadré\n(contrat, pas d'entraînement\nsur vos données). Minimiser.", AMBER, LGOLD),
-           ("ROUGE — Confidentiel / sensible", "Données nominatives de\nbénéficiaires, santé, enfants,\nsalaires, dossiers disciplinaires,\nRIB, signalements", "Interdit dans tout outil non\nvalidé. Anonymiser, base légale,\nvalidation du responsable.", RED, LRED)]
+    cat = [("VERT : Public", "Rapport annuel publié, article\nde site web, appel à projets public", "Outils grand public autorisés.\nVérifier les sorties.", "#2E9E5B", "#DDF2E5"),
+           ("ORANGE : Interne", "Budget non publié, procédures,\nPV de CA, données agrégées", "Outil professionnel encadré\n(contrat, pas d'entraînement\nsur vos données). Minimiser.", AMBER, LGOLD),
+           ("ROUGE : Confidentiel / sensible", "Données nominatives de\nbénéficiaires, santé, enfants,\nsalaires, dossiers disciplinaires,\nRIB, signalements", "Interdit dans tout outil non\nvalidé. Anonymiser, base légale,\nvalidation du responsable.", RED, LRED)]
     for i, (t, ex, r, c, lc) in enumerate(cat):
         x = 30 + i*285
         s.circle(x+135, 110, 30, c, WHITE, 3)
@@ -407,10 +408,10 @@ def f82(s):
 @fig("9.1", "Trois niveaux d'implémentation",
      "Escalier à trois marches : Débutant (assistant conversationnel, tableur, formulaires, procédures assistées), Intermédiaire (no-code, intégrations, gestion documentaire, assistants sur documents), Avancé (API, bases de données, ERP, RAG, agents, supervision).", 900, 460)
 def f91(s):
-    s.header("Trois niveaux d'implémentation", "On peut commencer petit — et monter d'une marche quand les bases sont solides")
-    lv = [("NIVEAU 1 — DÉBUTANT", "Assistant conversationnel · tableur\nformulaires numériques · modèles\nprocédures manuelles assistées\n\nCompétences : bureautique\nCoûts : faibles, souvent gratuits\n(limites des offres gratuites)", LTEAL),
-          ("NIVEAU 2 — INTERMÉDIAIRE", "Logiciels métier · no-code/low-code\nautomatisations entre applications\ngestion documentaire · tableaux de bord\nassistants sur documents internes\n\nCompétences : « référent numérique »\nCoûts : abonnements, paramétrage", LGOLD),
-          ("NIVEAU 3 — AVANCÉ", "API · bases de données · ERP\nRAG · agents IA · hébergement\ngestion des accès · supervision\n\nCompétences : spécialistes\nCoûts : développement, hébergement,\nmaintenance, sécurité", LIGHT)]
+    s.header("Trois niveaux d'implémentation", "On peut commencer petit : et monter d'une marche quand les bases sont solides")
+    lv = [("NIVEAU 1 : DÉBUTANT", "Assistant conversationnel · tableur\nformulaires numériques · modèles\nprocédures manuelles assistées\n\nCompétences : bureautique\nCoûts : faibles, souvent gratuits\n(limites des offres gratuites)", LTEAL),
+          ("NIVEAU 2 : INTERMÉDIAIRE", "Logiciels métier · no-code/low-code\nautomatisations entre applications\ngestion documentaire · tableaux de bord\nassistants sur documents internes\n\nCompétences : « référent numérique »\nCoûts : abonnements, paramétrage", LGOLD),
+          ("NIVEAU 3 : AVANCÉ", "API · bases de données · ERP\nRAG · agents IA · hébergement\ngestion des accès · supervision\n\nCompétences : spécialistes\nCoûts : développement, hébergement,\nmaintenance, sécurité", LIGHT)]
     for i, (t, d, c) in enumerate(lv):
         x, y = 30 + i*285, 340 - i*120
         s.box(x, y, 270, 40, t, [TEAL, GOLD, NAVY][i], WHITE, 13, "bold", [TEAL, GOLD, NAVY][i])
@@ -503,7 +504,7 @@ def f121(s):
 @fig("12.2", "Tableau de bord fictif : exécution budgétaire par ligne",
      "Histogramme horizontal comparant budget et réalisé pour six lignes budgétaires d'un projet, avec taux d'exécution ; deux lignes dépassent 100 % (déplacements 118 %, communication 104 %) et une est sous-exécutée (formation 41 %). Données fictives.", 900, 470)
 def f122(s):
-    s.header("Tableau de bord budgétaire — programme PRG-SANTE (données fictives)", "Budget annuel vs réalisé au 30 septembre, en milliers d'UM")
+    s.header("Tableau de bord budgétaire : programme PRG-SANTE (données fictives)", "Budget annuel vs réalisé au 30 septembre, en milliers d'UM")
     data = [("Personnel", 420, 318), ("Déplacements", 60, 71), ("Formation", 85, 35), ("Équipements", 140, 126), ("Communication", 25, 26), ("Frais de structure", 70, 52)]
     mx = 450; x0 = 200; W = 520
     for i, (n, b, r) in enumerate(data):
@@ -536,7 +537,7 @@ def f131(s):
 @fig("13.2", "Carte thermique des risques",
      "Matrice 5 × 5 probabilité × impact avec cinq risques positionnés : paiements en double, avances non justifiées, fractionnement des achats, fuite de données via IA, dépendance à un fournisseur.", 820, 540)
 def f132(s):
-    s.header("Cartographie des risques (exemple)", "Probabilité × impact, échelle de 1 à 5 — avant mesures de maîtrise")
+    s.header("Cartographie des risques (exemple)", "Probabilité × impact, échelle de 1 à 5 : avant mesures de maîtrise")
     x0, y0, c = 140, 80, 82
     for i in range(5):
         for j in range(5):
@@ -715,7 +716,7 @@ def f211(s):
 @fig("22.1", "Plan de transformation sur 90 jours",
      "Diagramme de Gantt sur 13 semaines : diagnostic (semaines 1–3), politique d'IA et règles de données (2–5), formation socle (3–6), deux cas d'usage pilotes (5–10), évaluation (10–11), décision et feuille de route annuelle (12–13).", 940, 440)
 def f221(s):
-    s.header("Plan à 90 jours — Lumière des Collines", "Commencer petit, mesurer, décider")
+    s.header("Plan à 90 jours : Lumière des Collines", "Commencer petit, mesurer, décider")
     x0, W = 260, 650
     for w in range(13):
         x = x0 + w*W/13
@@ -741,7 +742,7 @@ def main():
         w.writerow(["figure", "fichier", "titre", "texte_alternatif", "auteur", "nature", "licence", "date", "modifications"])
         for fid, title, alt, _ in FIGS:
             w.writerow([fid, f"fig_{fid.replace('.', '_')}.svg", title, alt, "Verdi Imbole (création originale, génération assistée)",
-                        "Schéma original SVG", "© 2026 Verdi Imbole – tous droits réservés", "2026-11-20", "—"])
+                        "Schéma original SVG", "© 2026 Verdi Imbole – tous droits réservés", "2026-11-20", "Néant"])
     print(f"{len(FIGS)} figures générées")
 
 

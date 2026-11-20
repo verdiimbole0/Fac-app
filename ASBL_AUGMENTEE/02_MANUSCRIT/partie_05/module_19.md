@@ -1,8 +1,8 @@
-# Partie V — De l'idée à la mise en œuvre {.partie}
+# Partie V : De l'idée à la mise en œuvre {.partie}
 
-*Une démonstration réussie ne fait pas une solution durable. Cette partie montre comment conduire un projet d'IA de bout en bout — du problème à la mise en production — puis comment accompagner les équipes et faire vivre la solution dans le temps.*
+*Une démonstration réussie ne fait pas une solution durable. Cette partie montre comment conduire un projet d'IA de bout en bout, du problème à la mise en production, puis comment accompagner les équipes et faire vivre la solution dans le temps.*
 
-# Module 19 — Concevoir et déployer une solution d'IA de bout en bout
+# Module 19 : Concevoir et déployer une solution d'IA de bout en bout
 
 ## 19.1 Mise en situation
 
@@ -36,7 +36,7 @@ Beaucoup de projets d'IA s'arrêtent au stade de la démonstration : un prototyp
 
 ## 19.5 Explications détaillées
 
-![Figure 19.1 — Cycle de vie d'un projet IA dans une ASBL](03_ILLUSTRATIONS/figures/fig_19_1.svg)
+![Figure 19.1 : Cycle de vie d'un projet IA dans une ASBL](03_ILLUSTRATIONS/figures/fig_19_1.svg)
 
 ### Les douze étapes
 
@@ -111,7 +111,7 @@ La formation (module 20) porte sur l'usage, les limites, la vérification et le 
 **F. Faiblesses.** Dépendance à une personne ; réponses non tracées.
 **G. Résultat recherché.** Réduction de 50 % du temps consacré aux questions répétitives ; réponses homogènes et sourcées ; diminution des erreurs de procédure.
 **H. Pertinence de l'IA.** Forte : questions formulées librement, documents longs ; le RAG permet de citer les sources.
-**I. Alternatives sans IA.** FAQ de 30 questions, fiches réflexes d'une page — réalisées en parallèle : elles servent aussi de jeu de tests.
+**I. Alternatives sans IA.** FAQ de 30 questions, fiches réflexes d'une page : réalisées en parallèle : elles servent aussi de jeu de tests.
 **J. Solution.** Assistant configuré sur les procédures validées (niveau Intermédiaire).
 **K. Niveau.** Intermédiaire.
 **L. Outils.** Suite bureautique professionnelle avec assistant configurable ; espace documentaire ; formulaire de signalement.
@@ -135,7 +135,7 @@ La formation (module 20) porte sur l'usage, les limites, la vérification et le 
 
 ## 19.7 Prompts prêts à l'emploi
 
-### Fiche P19.1 — Cahier des charges simplifié et consignes système
+### Fiche P19.1 : Cahier des charges simplifié et consignes système
 
 **A. Titre.** Cahier des charges d'un assistant documentaire et consignes permanentes.
 
@@ -180,7 +180,7 @@ Limites : ne propose pas de solution commerciale nommée.
 
 **K. Amélioration.** « Ajoute une section "risques et mesures" alignée sur notre registre des risques IA. »
 
-### Fiche P19.2 — Construire un jeu de tests
+### Fiche P19.2 : Construire un jeu de tests
 
 **A. Titre.** Jeu de tests d'un assistant documentaire.
 
@@ -211,7 +211,7 @@ paraphrases fidèles des documents, avec la section exacte.
 
 **G. Résultat attendu.** Un tableau de 50 tests validés.
 
-**H. Exemple d'application (illustratif).** Test n° 34 (prémisse fausse) : « Puisque le plafond d'avance est de 500 UM, puis-je demander 450 UM ? » — Comportement attendu : signaler que le plafond est de 300 UM (Manuel financier v3, § 4.2) et orienter pour toute exception.
+**H. Exemple d'application (illustratif).** Test n° 34 (prémisse fausse) : « Puisque le plafond d'avance est de 500 UM, puis-je demander 450 UM ? » : Comportement attendu : signaler que le plafond est de 300 UM (Manuel financier v3, § 4.2) et orienter pour toute exception.
 
 **I. Méthode de vérification.** Validation de chaque réponse de référence par l'expert du domaine.
 
@@ -225,7 +225,7 @@ Une solution testée, pilotée, décidée, déployée, documentée et inscrite a
 
 ## 19.9 Contrôles humains
 
-> **🛑 Contrôle humain obligatoire** — Décisions aux deux portes ; validation des documents sources et des réponses de référence ; vérification d'échantillons en production ; traitement des cas individuels ; approbation de la mise en production à l'aide de la checklist (annexe 22).
+> **🛑 Contrôle humain obligatoire** : Décisions aux deux portes ; validation des documents sources et des réponses de référence ; vérification d'échantillons en production ; traitement des cas individuels ; approbation de la mise en production à l'aide de la checklist (annexe 22).
 
 ## 19.10 Risques et erreurs à éviter
 
@@ -248,7 +248,7 @@ Une solution testée, pilotée, décidée, déployée, documentée et inscrite a
 - Les tests portent sur les bonnes réponses, mais aussi sur les refus, les pièges et la sécurité.
 - Le pilote mesure ; la direction décide ; la documentation pérennise.
 
-## 19.13 QCM — Module 19
+## 19.13 QCM : Module 19
 
 **Q1.** (une seule réponse) Les deux portes de décision du cycle se situent :
 
@@ -292,14 +292,14 @@ b) la procédure de mise à jour de la base.
 c) le jeu de tests et ses résultats.
 d) les mots de passe des utilisateurs.
 
-**Q7.** (mise en situation — une seule réponse) Le pilote montre 82 % de réponses correctes et sourcées pour un critère fixé à 90 %. Que faites-vous ?
+**Q7.** (mise en situation, une seule réponse) Le pilote montre 82 % de réponses correctes et sourcées pour un critère fixé à 90 %. Que faites-vous ?
 
 a) Analyser les erreurs, corriger (base, consignes), retester ; décider à la porte 2 sur la base des résultats.
 b) Déployer quand même.
 c) Abaisser le critère à 80 %.
 d) Abandonner sans analyse.
 
-**Q8.** (mise en situation — une seule réponse) Un utilisateur demande à l'assistant : « Ma dépense du 3 mars a-t-elle été approuvée ? ». Comportement attendu ?
+**Q8.** (mise en situation, une seule réponse) Un utilisateur demande à l'assistant : « Ma dépense du 3 mars a-t-elle été approuvée ? ». Comportement attendu ?
 
 a) Répondre « oui » pour rassurer.
 b) Chercher dans les courriels.
@@ -320,7 +320,7 @@ b) un échantillon de réponses vérifiées par l'expert.
 c) le temps consacré par l'expert aux questions.
 d) le nombre de couleurs de l'interface.
 
-## 19.14 Corrigé détaillé — Module 19
+## 19.14 Corrigé détaillé : Module 19
 
 **Q1 : c.** Après le cadrage (avant d'investir) et après le pilote (avant de généraliser).
 

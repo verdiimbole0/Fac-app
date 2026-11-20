@@ -2,7 +2,7 @@
 
 Au début de ce livre, une trésorière cherchait une facture à 18 h 40, un coordinateur recopiait trois fois les mêmes chiffres, une chargée de communication s'interrogeait sur des consentements, un président se demandait si son organisation était en retard.
 
-Vous savez désormais que la réponse à leurs difficultés ne se trouve pas d'abord dans un outil. Elle commence par une compréhension lucide de ce qu'est l'intelligence artificielle — un ensemble de techniques statistiques puissantes, utiles pour des tâches précises, sujettes à l'erreur, et dépourvues de jugement. Elle se poursuit par une connaissance fine de son organisation : ses processus réels, ses causes profondes de dysfonctionnement, ses risques, ses personnes. Elle exige des fondations : des données ordonnées, des règles éthiques et de sécurité, des outils proportionnés. Elle se concrétise, métier par métier, dans des processus où chacun sait ce que fait l'IA, ce que fait le logiciel, ce que fait le professionnel — et ce qui doit être vérifié. Elle ne dure que si elle est accompagnée, gouvernée, maintenue et évaluée.
+Vous savez désormais que la réponse à leurs difficultés ne se trouve pas d'abord dans un outil. Elle commence par une compréhension lucide de ce qu'est l'intelligence artificielle (un ensemble de techniques statistiques puissantes, utiles pour des tâches précises, sujettes à l'erreur, et dépourvues de jugement. Elle se poursuit par une connaissance fine de son organisation : ses processus réels, ses causes profondes de dysfonctionnement, ses risques, ses personnes. Elle exige des fondations : des données ordonnées, des règles éthiques et de sécurité, des outils proportionnés. Elle se concrétise, métier par métier, dans des processus où chacun sait ce que fait l'IA, ce que fait le logiciel, ce que fait le professionnel) et ce qui doit être vérifié. Elle ne dure que si elle est accompagnée, gouvernée, maintenue et évaluée.
 
 Trois convictions traversent l'ouvrage.
 
@@ -12,9 +12,9 @@ Trois convictions traversent l'ouvrage.
 
 **La troisième : commencer petit, mesurer, décider.** Un plan de quatre-vingt-dix jours, deux pilotes bien suivis, des indicateurs avec une valeur de départ et une décision explicite valent mieux qu'une transformation spectaculaire annoncée et jamais réalisée.
 
-Les outils changeront — probablement très vite. Les fonctionnalités décrites aujourd'hui comme avancées deviendront banales, et de nouveaux risques apparaîtront. Les méthodes de ce livre, elles, resteront valables : diagnostiquer, prioriser, protéger, expérimenter, contrôler, apprendre.
+Les outils changeront : probablement très vite. Les fonctionnalités décrites aujourd'hui comme avancées deviendront banales, et de nouveaux risques apparaîtront. Les méthodes de ce livre, elles, resteront valables : diagnostiquer, prioriser, protéger, expérimenter, contrôler, apprendre.
 
-Le moment est venu de passer à l'action. Ouvrez l'annexe 1, réalisez votre autodiagnostic, réunissez deux ou trois collègues, et construisez votre plan. Votre organisation n'a pas besoin de devenir une entreprise technologique. Elle a besoin de rester fidèle à sa mission — avec un peu plus de temps, un peu plus de rigueur, et un peu plus de moyens pour les personnes qu'elle sert.
+Le moment est venu de passer à l'action. Ouvrez l'annexe 1, réalisez votre autodiagnostic, réunissez deux ou trois collègues, et construisez votre plan. Votre organisation n'a pas besoin de devenir une entreprise technologique. Elle a besoin de rester fidèle à sa mission, avec un peu plus de temps, un peu plus de rigueur, et un peu plus de moyens pour les personnes qu'elle sert.
 
 # Feuille de route de transformation {.unnumbered}
 

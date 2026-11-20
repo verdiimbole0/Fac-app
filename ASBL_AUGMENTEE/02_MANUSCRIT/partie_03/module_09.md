@@ -1,4 +1,4 @@
-# Module 9 — Choisir et mettre en place les bons outils
+# Module 9 : Choisir et mettre en place les bons outils
 
 ## 9.1 Mise en situation
 
@@ -8,7 +8,7 @@ Les deux organisations se posent, à des échelles différentes, la même questi
 
 ## 9.2 Problématique
 
-Le marché des outils d'IA évolue très vite, avec des promesses parfois spectaculaires et des modèles économiques variés (gratuit, abonnement par utilisateur, paiement à l'usage, licence). Un mauvais choix coûte cher : abonnements inutilisés, doubles saisies, données prisonnières d'un outil, risques de sécurité. Le choix doit découler du cas d'usage, de la maturité de l'organisation et d'une analyse des risques — jamais d'une démonstration commerciale.
+Le marché des outils d'IA évolue très vite, avec des promesses parfois spectaculaires et des modèles économiques variés (gratuit, abonnement par utilisateur, paiement à l'usage, licence). Un mauvais choix coûte cher : abonnements inutilisés, doubles saisies, données prisonnières d'un outil, risques de sécurité. Le choix doit découler du cas d'usage, de la maturité de l'organisation et d'une analyse des risques, jamais d'une démonstration commerciale.
 
 ## 9.3 Objectifs d'apprentissage
 
@@ -36,9 +36,9 @@ Le marché des outils d'IA évolue très vite, avec des promesses parfois specta
 
 ### Trois niveaux d'implémentation
 
-![Figure 9.1 — Trois niveaux d'implémentation](03_ILLUSTRATIONS/figures/fig_9_1.svg)
+![Figure 9.1 : Trois niveaux d'implémentation](03_ILLUSTRATIONS/figures/fig_9_1.svg)
 
-| | Niveau 1 — Débutant | Niveau 2 — Intermédiaire | Niveau 3 — Avancé |
+| | Niveau 1 : Débutant | Niveau 2 : Intermédiaire | Niveau 3 : Avancé |
 |---|---|---|---|
 | Pour qui | Petites ASBL, peu de moyens techniques | ASBL disposant déjà d'outils numériques | Moyennes et grandes organisations, processus complexes |
 | Outils types | Assistant conversationnel, tableur, formulaires, modèles de documents, classement documentaire simple | Suite bureautique professionnelle avec IA intégrée, logiciels métier, plateformes d'automatisation sans code, gestion électronique de documents, tableaux de bord, assistants configurés sur documents internes | API de modèles, bases de données, ERP, architecture RAG, agents, hébergement dédié ou local, gestion des identités, journalisation et supervision |
@@ -46,7 +46,7 @@ Le marché des outils d'IA évolue très vite, avec des promesses parfois specta
 | Coûts | Nuls à faibles | Abonnements par utilisateur, paramétrage | Développement, licences, hébergement, maintenance, sécurité |
 | Limites | Offres gratuites : quotas, conditions de confidentialité souvent inadaptées aux données internes, absence de contrat | Dépendance à plusieurs fournisseurs, automatisations à maintenir | Complexité, coût récurrent, besoin d'une gouvernance solide |
 
-> **🔎 À retenir** — Le bon niveau n'est pas le plus élevé, mais celui que l'organisation peut **utiliser, contrôler et maintenir** durablement.
+> **🔎 À retenir** : Le bon niveau n'est pas le plus élevé, mais celui que l'organisation peut **utiliser, contrôler et maintenir** durablement.
 
 ### Gratuit ou payant ?
 
@@ -63,7 +63,7 @@ Les offres gratuites conviennent à l'apprentissage et aux données publiques (v
 | Connectivité | Indispensable | Fonctionne hors ligne |
 | Maintenance | Assurée par le fournisseur | À votre charge |
 
-> **📶 Faible connectivité** — Pour une organisation qui travaille en zone peu connectée, une approche hybride est souvent la plus réaliste : collecte et travail hors ligne (formulaires mobiles, tableurs), synchronisation périodique, et usage du cloud pour les traitements lourds lorsque la connexion est disponible. Des modèles de langage dits « ouverts » peuvent être installés sur un ordinateur portable récent pour des tâches simples hors ligne ; leur installation et leur sécurisation relèvent du niveau Avancé.
+> **📶 Faible connectivité** : Pour une organisation qui travaille en zone peu connectée, une approche hybride est souvent la plus réaliste : collecte et travail hors ligne (formulaires mobiles, tableurs), synchronisation périodique, et usage du cloud pour les traitements lourds lorsque la connexion est disponible. Des modèles de langage dits « ouverts » peuvent être installés sur un ordinateur portable récent pour des tâches simples hors ligne ; leur installation et leur sécurisation relèvent du niveau Avancé.
 
 ### No-code, low-code et développement
 
@@ -110,7 +110,7 @@ Reprenez la méthode du coût total sur trois ans (module 6) : licences et abonn
 
 ### La grille de sélection
 
-*Exemple (fictif) — RCE compare trois options pour un assistant de questions-réponses sur ses procédures :*
+*Exemple (fictif) : RCE compare trois options pour un assistant de questions-réponses sur ses procédures :*
 
 | Critère (poids) | A. Assistant configuré dans la suite bureautique (documents joints) | B. Module IA de l'ERP | C. Développement RAG sur mesure |
 |---|---|---|---|
@@ -148,7 +148,7 @@ Décision de RCE : démarrer avec l'option A en pilote sur un périmètre restre
 
 ## 9.7 Prompt prêt à l'emploi
 
-### Fiche P9.1 — Préparer un questionnaire fournisseur
+### Fiche P9.1 : Préparer un questionnaire fournisseur
 
 **A. Titre.** Questionnaire d'évaluation d'un fournisseur de solution d'IA.
 
@@ -198,7 +198,7 @@ Une décision documentée, un outil inscrit au registre (annexe 9) avec son resp
 
 ## 9.9 Contrôles humains
 
-> **🛑 Contrôle humain obligatoire** — La souscription d'un outil traitant des données internes ou personnelles est approuvée par la direction après examen des clauses de protection des données. Les paramètres de confidentialité sont configurés par un administrateur désigné, et non laissés au choix de chaque utilisateur.
+> **🛑 Contrôle humain obligatoire** : La souscription d'un outil traitant des données internes ou personnelles est approuvée par la direction après examen des clauses de protection des données. Les paramètres de confidentialité sont configurés par un administrateur désigné, et non laissés au choix de chaque utilisateur.
 
 ## 9.10 Risques et erreurs à éviter
 
@@ -222,7 +222,7 @@ Une décision documentée, un outil inscrit au registre (annexe 9) avec son resp
 - L'évaluation d'un fournisseur porte sur la fonction, mais aussi sur les données, la sécurité, la réversibilité et les coûts complets.
 - Une grille pondérée, des tests sur des cas réels et la lecture des contrats fondent une décision solide.
 
-## 9.13 QCM — Module 9
+## 9.13 QCM : Module 9
 
 **Q1.** (une seule réponse) La réversibilité désigne :
 
@@ -266,14 +266,14 @@ b) 3,40
 c) 19
 d) 3,15
 
-**Q7.** (mise en situation — une seule réponse) Un commercial affirme oralement que « vos données ne servent jamais à l'entraînement ». Que faites-vous ?
+**Q7.** (mise en situation, une seule réponse) Un commercial affirme oralement que « vos données ne servent jamais à l'entraînement ». Que faites-vous ?
 
 a) Vous le croyez.
 b) Vous demandez la même chose à un assistant d'IA.
 c) Vous exigez que cela figure dans le contrat ou l'accord de traitement des données.
 d) Vous ne posez plus de question.
 
-**Q8.** (mise en situation — une seule réponse) Une petite association en zone peu connectée veut améliorer la collecte de données de terrain. Approche la plus réaliste ?
+**Q8.** (mise en situation, une seule réponse) Une petite association en zone peu connectée veut améliorer la collecte de données de terrain. Approche la plus réaliste ?
 
 a) Un agent IA dans le cloud en continu.
 b) Formulaires mobiles hors ligne, synchronisation périodique, traitements assistés lors des connexions.
@@ -294,7 +294,7 @@ b) peuvent reproduire une erreur à grande échelle.
 c) ne nécessitent jamais de maintenance.
 d) font transiter des données par la plateforme, qui doit être évaluée.
 
-## 9.14 Corrigé détaillé — Module 9
+## 9.14 Corrigé détaillé : Module 9
 
 **Q1 : a.** C'est la garantie contre la dépendance.
 

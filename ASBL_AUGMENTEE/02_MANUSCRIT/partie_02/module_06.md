@@ -1,4 +1,4 @@
-# Module 6 — Identifier les opportunités d'IA et choisir les bonnes priorités
+# Module 6 : Identifier les opportunités d'IA et choisir les bonnes priorités
 
 ## 6.1 Mise en situation
 
@@ -8,7 +8,7 @@ Comment choisir sans céder à l'idée la plus séduisante ou à la personne la 
 
 ## 6.2 Problématique
 
-Les organisations qui échouent avec l'IA ont souvent commencé par un projet trop ambitieux, mal défini, sur des données insuffisantes ou à risque élevé. À l'inverse, celles qui réussissent commencent par des cas d'usage précis, à valeur visible, réalisables avec leurs moyens, et dont les risques sont maîtrisables. Le choix des priorités est donc une décision décisive — et elle peut se faire avec méthode.
+Les organisations qui échouent avec l'IA ont souvent commencé par un projet trop ambitieux, mal défini, sur des données insuffisantes ou à risque élevé. À l'inverse, celles qui réussissent commencent par des cas d'usage précis, à valeur visible, réalisables avec leurs moyens, et dont les risques sont maîtrisables. Le choix des priorités est donc une décision décisive, et elle peut se faire avec méthode.
 
 ## 6.3 Objectifs d'apprentissage
 
@@ -27,12 +27,12 @@ Les organisations qui échouent avec l'IA ont souvent commencé par un projet tr
 - **Résultat attendu** : changement concret visé (temps, qualité, délai, accessibilité, satisfaction).
 - **Indicateur** : mesure qui permet de vérifier l'atteinte du résultat.
 - **Faisabilité** : capacité réelle à mettre en œuvre le cas d'usage avec les données, compétences, outils et budget disponibles.
-- **Coût total de possession** : ensemble des coûts sur la durée — acquisition, paramétrage, formation, abonnements, maintenance, temps de contrôle.
+- **Coût total de possession** : ensemble des coûts sur la durée : acquisition, paramétrage, formation, abonnements, maintenance, temps de contrôle.
 - **Gain rapide** : cas d'usage à forte valeur et à forte faisabilité, réalisable en quelques semaines.
 
 ## 6.5 Explications détaillées
 
-### Étape 1 — Partir des problèmes, pas des outils
+### Étape 1 : Partir des problèmes, pas des outils
 
 Chaque idée doit être reformulée en problème. « Un chatbot pour les bénéficiaires » n'est pas un problème. « Les bénéficiaires attendent en moyenne quatre jours une réponse à des questions simples sur les horaires et les documents à apporter » en est un. Cette reformulation fait souvent apparaître des solutions plus simples (une affiche, un message vocal enregistré, une FAQ imprimée).
 
@@ -40,13 +40,13 @@ Chaque idée doit être reformulée en problème. « Un chatbot pour les bénéf
 
 > Pour **[ACTEUR]**, dans le processus **[PROCESSUS]**, le problème est **[PROBLÈME OBSERVÉ, CHIFFRÉ SI POSSIBLE]**, ce qui entraîne **[CONSÉQUENCE]**. Nous voulons **[RÉSULTAT ATTENDU]**, mesuré par **[INDICATEUR]**.
 
-### Étape 2 — Définir les résultats attendus
+### Étape 2 : Définir les résultats attendus
 
 Un résultat attendu doit être **observable**. Évitez « améliorer l'efficacité ». Préférez « ramener le délai de production du procès-verbal de dix à trois jours » ou « réduire de moitié le nombre d'imputations corrigées lors de la revue mensuelle ». Notez la **valeur de départ** (issue du diagnostic) et la **valeur cible**.
 
-### Étape 3 — Automatisation classique ou IA ?
+### Étape 3 : Automatisation classique ou IA ?
 
-![Figure 6.2 — Arbre de décision : faut-il de l'IA, une automatisation classique ou rien ?](03_ILLUSTRATIONS/figures/fig_6_2.svg)
+![Figure 6.2 : Arbre de décision : faut-il de l'IA, une automatisation classique ou rien ?](03_ILLUSTRATIONS/figures/fig_6_2.svg)
 
 | Critère | Automatisation classique | IA |
 |---|---|---|
@@ -58,7 +58,7 @@ Un résultat attendu doit être **observable**. Évitez « améliorer l'efficaci
 
 **Règle d'or :** si une règle simple, une formule de tableur ou un modèle de document suffit, ce sont eux qu'il faut utiliser. L'IA se justifie quand la variabilité des entrées rend les règles impossibles à écrire.
 
-### Étape 4 — Évaluer la faisabilité
+### Étape 4 : Évaluer la faisabilité
 
 Cinq questions :
 
@@ -68,33 +68,33 @@ Cinq questions :
 4. **Intégration** : la solution s'insère-t-elle dans le processus existant sans créer de double saisie ?
 5. **Acceptabilité** : les utilisateurs et les personnes concernées accepteront-ils la solution ?
 
-### Étape 5 — Estimer coûts et bénéfices
+### Étape 5 : Estimer coûts et bénéfices
 
 Estimez les coûts sur **trois ans**, pas seulement l'année de lancement.
 
-*Exemple (fictif) — extraction assistée des factures à Horizons Partagés :*
+*Exemple (fictif) : extraction assistée des factures à Horizons Partagés :*
 
 | Poste | Année 1 | Année 2 | Année 3 |
 |---|---|---|---|
 | Abonnement outil d'extraction | 1 800 UM | 1 800 UM | 1 800 UM |
-| Paramétrage et intégration (prestataire) | 2 500 UM | — | — |
+| Paramétrage et intégration (prestataire) | 2 500 UM | Néant | Néant |
 | Formation (temps interne valorisé) | 600 UM | 200 UM | 200 UM |
 | Temps de contrôle humain | 1 200 UM | 1 200 UM | 1 200 UM |
 | **Total des coûts** | **6 100 UM** | **3 200 UM** | **3 200 UM** |
 
-Bénéfices estimés : la comptable traite environ 350 factures par mois ; la saisie manuelle prend en moyenne 6 minutes par facture, soit 35 heures par mois. Si l'outil ramène ce temps à 2,5 minutes (contrôle compris), le gain est d'environ 20 heures par mois, soit 240 heures par an. Valorisées à 15 UM de l'heure (coût complet fictif), cela représente 3 600 UM par an — à comparer aux 3 200 UM de coûts récurrents.
+Bénéfices estimés : la comptable traite environ 350 factures par mois ; la saisie manuelle prend en moyenne 6 minutes par facture, soit 35 heures par mois. Si l'outil ramène ce temps à 2,5 minutes (contrôle compris), le gain est d'environ 20 heures par mois, soit 240 heures par an. Valorisées à 15 UM de l'heure (coût complet fictif), cela représente 3 600 UM par an : à comparer aux 3 200 UM de coûts récurrents.
 
-Conclusion : le gain financier direct est modeste. Le cas d'usage se justifie surtout par des **bénéfices qualitatifs** — réduction des erreurs, pièces retrouvables, clôture plus rapide, réduction de la dépendance à une personne — qui doivent être explicités et mesurés. Ce type d'analyse honnête évite les désillusions.
+Conclusion : le gain financier direct est modeste. Le cas d'usage se justifie surtout par des **bénéfices qualitatifs** (réduction des erreurs, pièces retrouvables, clôture plus rapide, réduction de la dépendance à une personne) qui doivent être explicités et mesurés. Ce type d'analyse honnête évite les désillusions.
 
-> **🔎 À retenir** — Le temps « gagné » n'est un bénéfice que s'il est réaffecté à quelque chose d'utile. Précisez à quoi il servira.
+> **🔎 À retenir** : Le temps « gagné » n'est un bénéfice que s'il est réaffecté à quelque chose d'utile. Précisez à quoi il servira.
 
-### Étape 6 — Évaluer les risques
+### Étape 6 : Évaluer les risques
 
-Pour chaque cas d'usage, évaluez : la sensibilité des données (vert, orange, rouge — module 8) ; l'impact d'une erreur sur des personnes ou sur l'organisation ; le risque de biais ; la dépendance au fournisseur ; le risque d'image. Un cas d'usage qui implique des décisions sur des personnes vulnérables avec des données sensibles n'est jamais un « gain rapide ».
+Pour chaque cas d'usage, évaluez : la sensibilité des données (vert, orange, rouge ; voir le module 8) ; l'impact d'une erreur sur des personnes ou sur l'organisation ; le risque de biais ; la dépendance au fournisseur ; le risque d'image. Un cas d'usage qui implique des décisions sur des personnes vulnérables avec des données sensibles n'est jamais un « gain rapide ».
 
-### Étape 7 — Prioriser avec la matrice de sélection
+### Étape 7 : Prioriser avec la matrice de sélection
 
-![Figure 6.1 — Matrice de priorisation valeur × faisabilité](03_ILLUSTRATIONS/figures/fig_6_1.svg)
+![Figure 6.1 : Matrice de priorisation valeur × faisabilité](03_ILLUSTRATIONS/figures/fig_6_1.svg)
 
 La matrice de sélection (annexe 3) note chaque cas d'usage sur des critères pondérés :
 
@@ -122,11 +122,11 @@ La matrice de sélection (annexe 3) note chaque cas d'usage sur des critères po
 
 *Détail du calcul pour le cas 1 :* 3 × 0,25 + 4 × 0,20 + 5 × 0,15 + 5 × 0,15 + 5 × 0,10 + 4 × 0,15 = 0,75 + 0,80 + 0,75 + 0,75 + 0,50 + 0,60 = **4,15**.
 
-> **🔎 À retenir** — Faites toujours les calculs d'une matrice dans un tableur (formule `SOMMEPROD` entre la ligne des notes et la ligne des poids). Lors de la préparation de cet exemple, un premier calcul « de tête » comportait deux erreurs d'arrondi : c'est précisément le type d'erreur que le tableur évite.
+> **🔎 À retenir** : Faites toujours les calculs d'une matrice dans un tableur (formule `SOMMEPROD` entre la ligne des notes et la ligne des poids). Lors de la préparation de cet exemple, un premier calcul « de tête » comportait deux erreurs d'arrondi : c'est précisément le type d'erreur que le tableur évite.
 
 **Lecture :** les cas 1 et 2 sont des gains rapides. Le cas 6 arrive en troisième position, mais avec une faible contribution à la mission : il peut être mené en parallèle à faible coût. Le cas 4 (assistant RAG) a une forte valeur mais une faible faisabilité : c'est un **projet structurant**, à préparer en commençant par la gestion documentaire. Le cas 7 est écarté en raison de son niveau de risque (décisions sur des personnes, risque de discrimination).
 
-> **🔎 À retenir** — La matrice éclaire la décision ; elle ne la remplace pas. Un cas d'usage peut être retenu malgré un score moyen pour une raison stratégique explicite, ou écarté malgré un bon score pour une raison éthique. Consignez ces raisons.
+> **🔎 À retenir** : La matrice éclaire la décision ; elle ne la remplace pas. Un cas d'usage peut être retenu malgré un score moyen pour une raison stratégique explicite, ou écarté malgré un bon score pour une raison éthique. Consignez ces raisons.
 
 ## 6.6 Application professionnelle : sélectionner deux projets pilotes
 
@@ -150,7 +150,7 @@ La matrice de sélection (annexe 3) note chaque cas d'usage sur des critères po
 
 ## 6.7 Prompt prêt à l'emploi
 
-### Fiche P6.1 — Rédiger une fiche d'opportunité
+### Fiche P6.1 : Rédiger une fiche d'opportunité
 
 **A. Titre.** Fiche d'opportunité d'un cas d'usage d'IA.
 
@@ -205,7 +205,7 @@ Une liste de cas d'usage reformulés, une fiche d'opportunité par cas, une matr
 
 ## 6.9 Contrôles humains
 
-> **🛑 Contrôle humain obligatoire** — La sélection des projets est une décision de direction, documentée, qui tient compte de considérations stratégiques et éthiques que la matrice ne capture pas entièrement. Les cas d'usage touchant des décisions sur des personnes sont soumis à un examen éthique préalable (module 8).
+> **🛑 Contrôle humain obligatoire** : La sélection des projets est une décision de direction, documentée, qui tient compte de considérations stratégiques et éthiques que la matrice ne capture pas entièrement. Les cas d'usage touchant des décisions sur des personnes sont soumis à un examen éthique préalable (module 8).
 
 ## 6.10 Risques et erreurs à éviter
 
@@ -229,7 +229,7 @@ Une liste de cas d'usage reformulés, une fiche d'opportunité par cas, une matr
 - Prioriser avec une matrice pondérée, notée en groupe, calculée dans un tableur.
 - Commencer par un gain rapide et préparer un projet structurant.
 
-## 6.13 QCM — Module 6
+## 6.13 QCM : Module 6
 
 **Q1.** (une seule réponse) Lequel est un cas d'usage bien formulé ?
 
@@ -273,14 +273,14 @@ b) Il présente un risque de discrimination.
 c) Il est techniquement impossible.
 d) Son score de risque était très défavorable.
 
-**Q7.** (mise en situation — une seule réponse) Le calcul d'un projet montre un gain financier direct faible, mais une forte réduction des erreurs et des pièces perdues. Que faites-vous ?
+**Q7.** (mise en situation, une seule réponse) Le calcul d'un projet montre un gain financier direct faible, mais une forte réduction des erreurs et des pièces perdues. Que faites-vous ?
 
 a) Abandonner le projet.
 b) Gonfler les gains de temps pour justifier le projet.
 c) Lancer le projet sans analyse.
 d) Expliciter et mesurer les bénéfices qualitatifs dans la décision.
 
-**Q8.** (mise en situation — une seule réponse) Une responsable propose « un chatbot pour les bénéficiaires ». Première étape ?
+**Q8.** (mise en situation, une seule réponse) Une responsable propose « un chatbot pour les bénéficiaires ». Première étape ?
 
 a) Choisir un fournisseur.
 b) Lancer un appel d'offres.
@@ -301,7 +301,7 @@ b) calculer les scores dans un tableur.
 c) consigner les raisons d'un choix qui s'écarte du classement.
 d) laisser l'outil d'IA décider seul.
 
-## 6.14 Corrigé détaillé — Module 6
+## 6.14 Corrigé détaillé : Module 6
 
 **Q1 : b.** Il précise l'acteur, le processus, le résultat et l'indicateur.
 

@@ -1,4 +1,4 @@
-# Module 15 — Recherche de financements, partenariats et relations avec les bailleurs
+# Module 15 : Recherche de financements, partenariats et relations avec les bailleurs
 
 ## 15.1 Mise en situation
 
@@ -49,7 +49,7 @@ Une stratégie de diversification fixe des objectifs (par exemple : aucun baille
 
 ### La veille
 
-![Figure 15.1 — Entonnoir des opportunités de financement](03_ILLUSTRATIONS/figures/fig_15_1.svg)
+![Figure 15.1 : Entonnoir des opportunités de financement](03_ILLUSTRATIONS/figures/fig_15_1.svg)
 
 Une veille efficace combine : abonnements aux lettres d'information des bailleurs et des plateformes d'appels ; alertes de recherche ; réseaux et plateformes de coordination sectorielle ; contacts réguliers avec les bailleurs. L'IA aide à **traiter le volume** : résumer chaque appel en une fiche standard (objet, zones, montants, éligibilité, échéances), le comparer au profil de l'organisation, et alimenter un tableau de veille. Elle ne remplace pas la lecture des documents officiels de l'appel avant toute décision.
 
@@ -61,7 +61,7 @@ L'éligibilité est **binaire** et souvent éliminatoire. Toute erreur coûte un
 |---|---|---|---|
 | Organisation enregistrée depuis au moins 3 ans | Enregistrée en 2018 | Récépissé d'enregistrement | ✅ |
 | Budget annuel moyen ≥ 500 000 UM sur les 3 derniers exercices | 3 200 000 UM | Comptes certifiés | ✅ |
-| Intervention dans au moins 2 des pays listés | 1 seul pays | — | ❌ éliminatoire sans partenaire |
+| Intervention dans au moins 2 des pays listés | 1 seul pays | Néant | ❌ éliminatoire sans partenaire |
 | Cofinancement d'au moins 10 % | À confirmer | Lettre d'engagement d'un autre bailleur | ⚠️ |
 
 ### Décision go / no-go
@@ -70,9 +70,9 @@ Une grille simple aide à décider : éligibilité (éliminatoire) ; alignement 
 
 ### Note conceptuelle et proposition
 
-L'IA est précieuse pour : structurer la note selon le modèle du bailleur ; reformuler et condenser ; vérifier la cohérence entre narration, cadre logique et budget ; adapter le style aux attentes. Mais **la substance** — analyse du contexte, preuves, choix d'intervention, partenariats, enseignements des projets passés — doit venir de l'organisation. Une bonne méthode : rédiger d'abord un **dossier de matière première** (données, enseignements, témoignages anonymisés, résultats passés, partenaires), puis demander à l'IA de le mettre en forme selon le modèle.
+L'IA est précieuse pour : structurer la note selon le modèle du bailleur ; reformuler et condenser ; vérifier la cohérence entre narration, cadre logique et budget ; adapter le style aux attentes. Mais **la substance** (analyse du contexte, preuves, choix d'intervention, partenariats, enseignements des projets passés) doit venir de l'organisation. Une bonne méthode : rédiger d'abord un **dossier de matière première** (données, enseignements, témoignages anonymisés, résultats passés, partenaires), puis demander à l'IA de le mettre en forme selon le modèle.
 
-> **🔎 À retenir** — Un dossier généré à partir d'une consigne vague ressemble à des centaines d'autres. La valeur de votre proposition tient à ce que vous seul pouvez apporter : votre connaissance du terrain et vos résultats.
+> **🔎 À retenir** : Un dossier généré à partir d'une consigne vague ressemble à des centaines d'autres. La valeur de votre proposition tient à ce que vous seul pouvez apporter : votre connaissance du terrain et vos résultats.
 
 ### Budgets
 
@@ -132,7 +132,7 @@ Un reporting de qualité, ponctuel et honnête, est le meilleur argument pour un
 
 ## 15.7 Prompts prêts à l'emploi
 
-### Fiche P15.1 — Analyser un appel à projets et vérifier l'éligibilité
+### Fiche P15.1 : Analyser un appel à projets et vérifier l'éligibilité
 
 **A. Titre.** Fiche d'analyse d'appel et checklist d'éligibilité.
 
@@ -149,16 +149,16 @@ Contexte : [NOM DE L'ASBL], profil : <profil>[STATUT, ANNÉE
 D'ENREGISTREMENT, PAYS, SECTEURS, BUDGET ANNUEL, ZONES]</profil>
 Appel : <appel>[TEXTE INTÉGRAL ET ANNEXES]</appel>
 Tâche :
-Partie 1 — Fiche d'analyse : bailleur ; objet ; priorités
+Partie 1 : Fiche d'analyse : bailleur ; objet ; priorités
 thématiques ; zones ; montants min/max ; durée ; cofinancement ;
 coûts indirects autorisés ; dates (questions, soumission, décision) ;
 procédure (une ou deux étapes) ; documents exigés ; critères
 d'évaluation et pondération ; règles sur l'usage de l'IA dans la
 préparation du dossier, s'il y en a.
-Partie 2 — Éligibilité : tableau « Critère (citation exacte) | Page
+Partie 2 : Éligibilité : tableau « Critère (citation exacte) | Page
 ou section | Notre situation selon le profil | Preuve à fournir |
 Statut (rempli / non rempli / à vérifier) ».
-Partie 3 — Points d'attention et questions à poser au bailleur.
+Partie 3 : Points d'attention et questions à poser au bailleur.
 Règles : cite exactement le texte pour chaque critère ; si une
 information est absente de l'appel, écris « non précisé » ; ne
 conclus pas à l'éligibilité globale : laisse ce jugement à
@@ -169,7 +169,7 @@ l'organisation.
 
 **G. Résultat attendu.** Une fiche d'une à deux pages et une checklist sourcée.
 
-**H. Exemple d'application (illustratif).** L'analyse révèle, en annexe 2 de l'appel, un critère que l'équipe n'avait pas vu : « les organisations doivent avoir fait l'objet d'un audit externe au cours des deux derniers exercices ». Statut : rempli (audit 2025) — preuve : rapport d'audit.
+**H. Exemple d'application (illustratif).** L'analyse révèle, en annexe 2 de l'appel, un critère que l'équipe n'avait pas vu : « les organisations doivent avoir fait l'objet d'un audit externe au cours des deux derniers exercices ». Statut : rempli (audit 2025) : preuve : rapport d'audit.
 
 **I. Méthode de vérification.** Pour chaque critère, retrouvez la citation à la page indiquée ; vérifiez l'exhaustivité en relisant la section « éligibilité » de l'appel.
 
@@ -177,7 +177,7 @@ l'organisation.
 
 **K. Amélioration.** « Ajoute une évaluation de notre adéquation aux critères d'évaluation (forte / moyenne / faible) avec, pour chacun, les éléments de notre expérience à mettre en avant. »
 
-### Fiche P15.2 — Note conceptuelle à partir du dossier de matière première
+### Fiche P15.2 : Note conceptuelle à partir du dossier de matière première
 
 **A. Titre.** Note conceptuelle spécifique et sourcée.
 
@@ -214,7 +214,7 @@ Style : précis, concret, sans superlatifs.
 
 **G. Résultat attendu.** Une note conforme, spécifique, avec traçabilité des chiffres.
 
-**H. Exemple d'application (illustratif).** La rubrique « Expérience pertinente » obtenue cite : « De 2023 à 2025, nos 48 agents de santé communautaires ont mené 6 400 visites à domicile dans 3 districts (rapports annuels 2023-2025) » — chiffres présents dans la matière première et vérifiés.
+**H. Exemple d'application (illustratif).** La rubrique « Expérience pertinente » obtenue cite : « De 2023 à 2025, nos 48 agents de santé communautaires ont mené 6 400 visites à domicile dans 3 districts (rapports annuels 2023-2025) » : chiffres présents dans la matière première et vérifiés.
 
 **I. Méthode de vérification.** Pointage de chaque affirmation chiffrée ; relecture de cohérence avec le budget et le cadre logique ; vérification des engagements (partenaires, cofinancement) avec les personnes concernées.
 
@@ -222,7 +222,7 @@ Style : précis, concret, sans superlatifs.
 
 **K. Amélioration.** « Joue le rôle d'un évaluateur du bailleur : note la note conceptuelle selon chaque critère (sur 5), justifie, et propose trois améliorations prioritaires. »
 
-### Fiche P15.3 — Vérifier la cohérence budget–activités–règles
+### Fiche P15.3 : Vérifier la cohérence budget–activités–règles
 
 **A. Titre.** Contrôle de cohérence d'un budget de proposition.
 
@@ -268,7 +268,7 @@ Veille anticipée ; décisions go/no-go documentées ; zéro rejet administratif
 
 ## 15.9 Contrôles humains
 
-> **🛑 Contrôle humain obligatoire** — Décision de candidature, contenu et engagements du projet, budget, déclaration éventuelle de l'usage de l'IA, signature et soumission relèvent de la direction. Chaque critère d'éligibilité est vérifié sur le texte officiel.
+> **🛑 Contrôle humain obligatoire** : Décision de candidature, contenu et engagements du projet, budget, déclaration éventuelle de l'usage de l'IA, signature et soumission relèvent de la direction. Chaque critère d'éligibilité est vérifié sur le texte officiel.
 
 ## 15.10 Risques et erreurs à éviter
 
@@ -292,7 +292,7 @@ Veille anticipée ; décisions go/no-go documentées ; zéro rejet administratif
 - L'IA met en forme une matière première riche et propre à l'organisation ; elle ne la remplace pas.
 - Les obligations des conventions alimentent le calendrier, la comptabilité et le reporting.
 
-## 15.13 QCM — Module 15
+## 15.13 QCM : Module 15
 
 **Q1.** (une seule réponse) Un critère d'éligibilité est :
 
@@ -336,14 +336,14 @@ b) extraire ses obligations dans une fiche, vérifiée sur le texte, qui aliment
 c) ignorer les clauses d'audit.
 d) la traduire automatiquement sans relecture.
 
-**Q7.** (mise en situation — une seule réponse) Le résumé de l'IA indique « organisations de toute ancienneté éligibles », mais vous n'en trouvez pas trace dans l'appel. Que faites-vous ?
+**Q7.** (mise en situation, une seule réponse) Le résumé de l'IA indique « organisations de toute ancienneté éligibles », mais vous n'en trouvez pas trace dans l'appel. Que faites-vous ?
 
 a) Vous cherchez le critère exact dans le texte et ses annexes, et traitez le résumé comme non fiable sur ce point.
 b) Vous vous fiez au résumé.
 c) Vous soumettez sans vérifier.
 d) Vous demandez à un autre outil.
 
-**Q8.** (mise en situation — une seule réponse) La note conceptuelle générée mentionne « 92 % des bénéficiaires satisfaits », chiffre absent de votre matière première. Que faites-vous ?
+**Q8.** (mise en situation, une seule réponse) La note conceptuelle générée mentionne « 92 % des bénéficiaires satisfaits », chiffre absent de votre matière première. Que faites-vous ?
 
 a) Vous le gardez, il valorise le dossier.
 b) Vous l'arrondissez.
@@ -364,7 +364,7 @@ b) nombre de rejets administratifs.
 c) part du premier bailleur dans le budget.
 d) nombre de pages produites par l'IA.
 
-## 15.14 Corrigé détaillé — Module 15
+## 15.14 Corrigé détaillé : Module 15
 
 **Q1 : c.** L'éligibilité conditionne la recevabilité.
 

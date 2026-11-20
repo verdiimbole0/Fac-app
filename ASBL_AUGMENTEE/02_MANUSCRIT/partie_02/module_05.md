@@ -1,4 +1,4 @@
-# Module 5 — Diagnostiquer les dysfonctionnements et cartographier les processus
+# Module 5 : Diagnostiquer les dysfonctionnements et cartographier les processus
 
 ## 5.1 Mise en situation
 
@@ -29,7 +29,7 @@ On confond souvent le **symptôme** (« les rapports sont en retard »), le **pr
 - **Processus « tel quel » (*as-is*)** : description du processus tel qu'il se déroule réellement, et non tel qu'il est prévu dans les procédures.
 - **Processus cible (*to-be*)** : processus amélioré que l'on souhaite mettre en place.
 - **Point de blocage** : étape où le flux ralentit, s'arrête ou génère des erreurs.
-- **Contrôle interne** : dispositifs qui donnent une assurance raisonnable sur l'atteinte des objectifs, la fiabilité de l'information et la conformité. Le référentiel COSO (2013) l'organise en cinq composantes — environnement de contrôle, évaluation des risques, activités de contrôle, information et communication, pilotage — déclinées en dix-sept principes.
+- **Contrôle interne** : dispositifs qui donnent une assurance raisonnable sur l'atteinte des objectifs, la fiabilité de l'information et la conformité. Le référentiel COSO (2013) l'organise en cinq composantes (environnement de contrôle, évaluation des risques, activités de contrôle, information et communication, pilotage) déclinées en dix-sept principes.
 
 ## 5.5 Explications détaillées
 
@@ -47,21 +47,21 @@ Un diagnostic utile combine **trois types de preuves** : ce que disent les perso
 
 ### Des symptômes aux causes profondes
 
-![Figure 5.2 — Arbre des causes : retards de reporting financier](03_ILLUSTRATIONS/figures/fig_5_2.svg)
+![Figure 5.2 : Arbre des causes : retards de reporting financier](03_ILLUSTRATIONS/figures/fig_5_2.svg)
 
 Deux techniques simples suffisent la plupart du temps.
 
 **Les « 5 pourquoi ».** On pose la question « pourquoi ? » jusqu'à atteindre une cause sur laquelle on peut agir.
 
-1. Pourquoi les rapports financiers sont-ils en retard ? — Parce que la clôture mensuelle n'est pas terminée.
-2. Pourquoi ? — Parce que des dépenses ne sont pas encore saisies.
-3. Pourquoi ? — Parce que les demandes de paiement attendent la signature du directeur.
-4. Pourquoi ? — Parce qu'il est le seul habilité à signer, quel que soit le montant.
-5. Pourquoi ? — Parce que la délégation de signature n'a jamais été formalisée.
+1. Pourquoi les rapports financiers sont-ils en retard ? : Parce que la clôture mensuelle n'est pas terminée.
+2. Pourquoi ? : Parce que des dépenses ne sont pas encore saisies.
+3. Pourquoi ? : Parce que les demandes de paiement attendent la signature du directeur.
+4. Pourquoi ? : Parce qu'il est le seul habilité à signer, quel que soit le montant.
+5. Pourquoi ? : Parce que la délégation de signature n'a jamais été formalisée.
 
 La cause profonde est organisationnelle : **absence de délégation de signature par seuil.** La solution relève du conseil d'administration, pas d'un logiciel. Une fois cette cause traitée, un workflow de validation électronique (module 12) devient pertinent.
 
-**Le diagramme causes-effet** (ou « en arête de poisson ») classe les causes par familles — méthodes, outils, personnes, données, environnement — et évite de s'arrêter à une seule explication.
+**Le diagramme causes-effet** (ou « en arête de poisson ») classe les causes par familles (méthodes, outils, personnes, données, environnement) et évite de s'arrêter à une seule explication.
 
 ### Repérer les tâches répétitives
 
@@ -77,13 +77,13 @@ Une méthode simple consiste à faire tenir à chaque personne, pendant deux sem
 
 ### Cartographier un processus
 
-![Figure 5.1 — Cartographie « tel quel » du circuit des dépenses](03_ILLUSTRATIONS/figures/fig_5_1.svg)
+![Figure 5.1 : Cartographie « tel quel » du circuit des dépenses](03_ILLUSTRATIONS/figures/fig_5_1.svg)
 
 La cartographie en **couloirs** (une ligne par acteur) est la plus lisible. Pour la construire :
 
 1. **Délimiter** le processus : événement déclencheur (« un besoin de dépense apparaît ») et résultat final (« la dépense est payée, enregistrée et archivée »).
 2. **Lister les acteurs** : chaque acteur a son couloir.
-3. **Décrire les étapes réelles** dans l'ordre, en interrogeant les personnes qui les exécutent — pas seulement les responsables.
+3. **Décrire les étapes réelles** dans l'ordre, en interrogeant les personnes qui les exécutent, pas seulement les responsables.
 4. **Noter pour chaque étape** : durée, outil, document, règle, contrôle.
 5. **Marquer les points de blocage** : attentes, ressaisies, allers-retours, pertes d'information.
 6. **Faire valider** la carte par les acteurs.
@@ -100,7 +100,7 @@ Lors de la cartographie, posez systématiquement les questions suivantes, inspir
 | Information et communication | L'information est-elle fiable, à jour et accessible aux bonnes personnes ? | Budget suivi dans des fichiers personnels non partagés |
 | Pilotage | Les contrôles sont-ils eux-mêmes vérifiés ? | Rapprochements bancaires non revus |
 
-> **🔎 À retenir** — Un diagnostic n'est pas un audit à charge. Son but est de comprendre pour améliorer. Présentez-le ainsi aux équipes : vous obtiendrez des informations plus sincères.
+> **🔎 À retenir** : Un diagnostic n'est pas un audit à charge. Son but est de comprendre pour améliorer. Présentez-le ainsi aux équipes : vous obtiendrez des informations plus sincères.
 
 ## 5.6 Application professionnelle : diagnostic du circuit des dépenses d'Horizons Partagés
 
@@ -118,7 +118,7 @@ Lors de la cartographie, posez systématiquement les questions suivantes, inspir
 
 **G. Résultat recherché.** Rapports remis dans les délais contractuels ; 100 % des pièces retrouvables en moins de cinq minutes ; délai moyen de traitement d'une dépense ramené à cinq jours ouvrables.
 
-**H. Pertinence de l'IA.** Partielle : l'extraction de données des pièces et le classement peuvent être assistés (module 12) ; mais les deux causes principales — délégation de signature et formulaires incomplets — sont organisationnelles.
+**H. Pertinence de l'IA.** Partielle : l'extraction de données des pièces et le classement peuvent être assistés (module 12) ; mais les deux causes principales, délégation de signature et formulaires incomplets, sont organisationnelles.
 
 **I. Alternatives sans IA.** Délégation de signature par seuils adoptée par le CA ; formulaire numérique avec champs obligatoires ; plan de classement et règle de nommage (module 7) ; calendrier de clôture.
 
@@ -156,7 +156,7 @@ Lors de la cartographie, posez systématiquement les questions suivantes, inspir
 
 ## 5.7 Prompt prêt à l'emploi
 
-### Fiche P5.1 — Transformer des notes d'entretien en carte de processus
+### Fiche P5.1 : Transformer des notes d'entretien en carte de processus
 
 **A. Titre.** Du récit à la carte de processus en couloirs.
 
@@ -208,7 +208,7 @@ Un rapport de diagnostic de 5 à 10 pages comprenant : carte « tel quel », arb
 
 ## 5.9 Contrôles humains
 
-> **🛑 Contrôle humain obligatoire** — Les conclusions d'un diagnostic engagent des personnes et des services. Elles sont validées par la direction, présentées aux équipes concernées, et ne citent jamais de personne nommément comme cause d'un dysfonctionnement.
+> **🛑 Contrôle humain obligatoire** : Les conclusions d'un diagnostic engagent des personnes et des services. Elles sont validées par la direction, présentées aux équipes concernées, et ne citent jamais de personne nommément comme cause d'un dysfonctionnement.
 
 ## 5.10 Risques et erreurs à éviter
 
@@ -232,7 +232,7 @@ Un rapport de diagnostic de 5 à 10 pages comprenant : carte « tel quel », arb
 - Les cinq composantes du COSO offrent une grille simple pour repérer les faiblesses de contrôle interne.
 - Beaucoup de causes sont organisationnelles : elles se traitent avant ou à côté de l'IA.
 
-## 5.13 QCM — Module 5
+## 5.13 QCM : Module 5
 
 **Q1.** (une seule réponse) « Les rapports financiers arrivent en retard » est :
 
@@ -276,14 +276,14 @@ b) la lenteur d'internet.
 c) le nombre de bailleurs.
 d) l'absence de délégation de signature formalisée.
 
-**Q7.** (mise en situation — une seule réponse) Au bureau de terrain, la même personne commande, réceptionne et paie les fournitures. Quelle composante du contrôle interne est principalement concernée ?
+**Q7.** (mise en situation, une seule réponse) Au bureau de terrain, la même personne commande, réceptionne et paie les fournitures. Quelle composante du contrôle interne est principalement concernée ?
 
 a) Pilotage.
 b) Information et communication.
 c) Activités de contrôle (séparation des tâches).
 d) Aucune.
 
-**Q8.** (mise en situation — une seule réponse) Deux entretiens décrivent différemment la même étape. Que faites-vous ?
+**Q8.** (mise en situation, une seule réponse) Deux entretiens décrivent différemment la même étape. Que faites-vous ?
 
 a) Retenir la version du responsable hiérarchique.
 b) Suivre une transaction réelle pour établir les faits.
@@ -304,7 +304,7 @@ b) neutraliser les jugements sur des collègues.
 c) vérifier que l'outil est autorisé pour ce niveau de confidentialité.
 d) ajouter les coordonnées des personnes interrogées.
 
-## 5.14 Corrigé détaillé — Module 5
+## 5.14 Corrigé détaillé : Module 5
 
 **Q1 : a.** C'est la manifestation visible ; les causes sont à rechercher en amont.
 
@@ -330,4 +330,4 @@ d) ajouter les coordonnées des personnes interrogées.
 
 ## Références du module
 
-- Committee of Sponsoring Organizations of the Treadway Commission (COSO). (2013). *Internal Control — Integrated Framework*.
+- Committee of Sponsoring Organizations of the Treadway Commission (COSO). (2013). *Internal Control : Integrated Framework*.

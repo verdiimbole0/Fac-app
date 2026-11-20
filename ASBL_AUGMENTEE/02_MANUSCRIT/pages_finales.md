@@ -1,10 +1,8 @@
 # Bibliographie {.unnumbered}
 
-*Références présentées selon les principes de l'APA (7e édition), adaptées au français. Les ouvrages de la section « Inspiration éditoriale » ont servi à étudier des principes généraux de clarté et de pédagogie ; aucun texte n'en est reproduit. Le niveau de vérification de chaque référence figure dans le registre documentaire joint au manuscrit.*
-
 ## Normes, cadres et instruments internationaux {.unnumbered}
 
-Committee of Sponsoring Organizations of the Treadway Commission. (2013). *Internal control — Integrated framework*. COSO.
+Committee of Sponsoring Organizations of the Treadway Commission. (2013). *Internal control : Integrated framework*. COSO.
 
 Conseil de l'Europe. (2018). *Protocole d'amendement à la Convention pour la protection des personnes à l'égard du traitement automatisé des données à caractère personnel* (STCE n° 223).
 
@@ -14,7 +12,7 @@ CHS Alliance, Groupe URD, & Sphere. (2024). *Core humanitarian standard on quali
 
 International Non-Profit Reporting Foundation. (2025). *International non-profit accounting standard (INPAS)*. Projet IFR4NPO, CIPFA et Humentum.
 
-ISO/IEC. (2023). *ISO/IEC 42001:2023 — Information technology — Artificial intelligence — Management system*. Organisation internationale de normalisation et Commission électrotechnique internationale.
+ISO/IEC. (2023). *ISO/IEC 42001:2023, Information technology, Artificial intelligence : Management system*. Organisation internationale de normalisation et Commission électrotechnique internationale.
 
 National Institute of Standards and Technology. (2023). *Artificial intelligence risk management framework (AI RMF 1.0)* (NIST AI 100-1). https://doi.org/10.6028/NIST.AI.100-1
 
@@ -88,8 +86,6 @@ Zinsser, W. *On writing well*. Harper. [Première édition 1976 ; édition à pr
 
 # Webographie {.unnumbered}
 
-*Ressources en ligne d'institutions de référence. Date de consultation : 20 novembre 2026. Les adresses peuvent évoluer ; en cas de lien rompu, recherchez le titre sur le site de l'institution.*
-
 | Ressource | Institution | Adresse |
 |---|---|---|
 | Principes de l'OCDE sur l'IA | OCDE | https://oecd.ai/en/principles |
@@ -109,7 +105,7 @@ Zinsser, W. *On writing well*. Harper. [Première édition 1976 ; édition à pr
 | Energy and AI | AIE | https://www.iea.org/reports/energy-and-ai |
 | Occupational Fraud 2024 | ACFE | https://legacy.acfe.com/report-to-the-nations/2024/ |
 | IFR4NPO / INPAS | CIPFA et Humentum | https://www.ifr4npo.org |
-| AI Ethics for Nonprofits — Toolkit | NetHope (catalogue OCDE.AI) | https://oecd.ai/en/catalogue/tools/artificial-intelligence-ai-ethics-for-nonprofits |
+| AI Ethics for Nonprofits : Toolkit | NetHope (catalogue OCDE.AI) | https://oecd.ai/en/catalogue/tools/artificial-intelligence-ai-ethics-for-nonprofits |
 
 # Annexes et modèles téléchargeables {.unnumbered}
 
@@ -146,7 +142,7 @@ Données d'exercice : `04_ANNEXES/donnees_exercices/` (fichier fictif de 40 dép
 
 Comprendre les possibilités de l'intelligence artificielle est une première étape. La véritable transformation commence lorsque ces connaissances sont intégrées aux processus, aux outils et aux pratiques quotidiennes de votre organisation.
 
-Verdi Imbole, auteur indépendant, auditeur financier et consultant freelance en intelligence artificielle, accompagne les organisations à but non lucratif dans leur modernisation et l'amélioration de leurs pratiques de gestion.
+Nous accompagnons les organisations à but non lucratif dans la modernisation et l'amélioration de leur pratique de gestion.
 
 Les accompagnements proposés portent notamment sur :
 
@@ -160,12 +156,8 @@ Les accompagnements proposés portent notamment sur :
 
 ## L'auteur {.unnumbered}
 
-**Verdi Imbole** — Auteur indépendant · Auditeur financier · Consultant freelance en intelligence artificielle.
+**Verdi Imbole**, auteur indépendant, auditeur financier et consultant freelance en intelligence artificielle.
 
 ## Coordonnées {.unnumbered}
 
-Pour toute demande d'information ou d'accompagnement :
-
-**Verdi Imbole**
-Auteur indépendant – Auditeur financier – Consultant freelance en intelligence artificielle
-Contact : verdiimbole0@gmail.com
+verdiimbole0@gmail.com

@@ -12,9 +12,7 @@ ASBL AUGMENTÉE
 
 **Comment implémenter l'IA dans vos processus**
 
-Manuel pratique pour les associations, ONG, fondations et organisations à but non lucratif
-
-Édition de l'auteur — 2026
+Édition 2026
 :::
 
 ::: saut
@@ -23,8 +21,6 @@ Manuel pratique pour les associations, ONG, fondations et organisations à but n
 ## L'auteur {.unnumbered}
 
 **Verdi Imbole** est auteur indépendant, auditeur financier et consultant freelance en intelligence artificielle.
-
-Il accompagne les organisations à but non lucratif dans le diagnostic et la transformation numérique, le choix et l'implémentation de solutions d'intelligence artificielle, l'amélioration de la gouvernance institutionnelle, le renforcement des systèmes comptables et financiers, du contrôle interne et de la gestion des risques, ainsi que dans la formation des dirigeants et des collaborateurs.
 
 Contact : verdiimbole0@gmail.com
 
@@ -51,7 +47,7 @@ Pour toute demande d'autorisation : verdiimbole0@gmail.com.
 
 *Polices.* L'ouvrage est composé en Source Serif 4 et Source Sans 3 (licence SIL Open Font License 1.1).
 
-Édition de l'auteur. Première version de travail du manuscrit : novembre 2026.
+Édition 2026.
 
 ::: saut
 :::
@@ -106,7 +102,7 @@ Vous n'avez pas besoin d'être informaticien pour lire ce livre. Vous avez seule
 
 ## Présentation de l'ouvrage {.unnumbered}
 
-### Ce que ce livre est — et ce qu'il n'est pas
+### Ce que ce livre est : et ce qu'il n'est pas
 
 *ASBL augmentée* est un manuel de formation et d'action. Il n'est ni un catalogue d'outils, ni un recueil de prompts à copier sans comprendre, ni un traité théorique sur l'intelligence artificielle.
 
@@ -149,10 +145,10 @@ Chaque module suit la même structure, afin que vous sachiez toujours où trouve
 
 Quatre encadrés ponctuent le texte, avec parcimonie :
 
-- **🔎 À retenir** — l'idée essentielle à mémoriser ;
-- **⚖️ Adaptation réglementaire** — ce qui dépend de la loi de votre pays ;
-- **🛑 Contrôle humain obligatoire** — une décision qui ne doit jamais être déléguée à une machine ;
-- **📶 Faible connectivité** — comment faire quand internet est lent ou intermittent.
+- **🔎 À retenir** : l'idée essentielle à mémoriser ;
+- **⚖️ Adaptation réglementaire** : ce qui dépend de la loi de votre pays ;
+- **🛑 Contrôle humain obligatoire** : une décision qui ne doit jamais être déléguée à une machine ;
+- **📶 Faible connectivité** : comment faire quand internet est lent ou intermittent.
 
 ### Les fiches prompts
 
@@ -191,7 +187,7 @@ Les modules 7 (données) et 9 (choix des outils) sont vivement recommandés à t
 
 Terminez toujours par le **laboratoire** : le module 21 (dix études de cas) et le module 22 (votre plan de transformation à 90 jours).
 
-![Figure 0.1 — Carte des parcours de lecture](03_ILLUSTRATIONS/figures/fig_0_1.svg)
+![Figure 0.1 : Carte des parcours de lecture](03_ILLUSTRATIONS/figures/fig_0_1.svg)
 
 ## Public cible {.unnumbered}
 
@@ -259,83 +255,83 @@ Il a été écrit pour trois profils de lecteurs à la fois : **ceux qui découv
 
 ## Glossaire {.unnumbered}
 
-**Agent IA** — Système qui ne se contente pas de répondre : il planifie et enchaîne des actions (rechercher, remplir un formulaire, envoyer un message) pour atteindre un objectif, en utilisant des outils auxquels on lui a donné accès. Plus un agent a de droits, plus les contrôles doivent être stricts.
+**Agent IA** : système qui ne se contente pas de répondre : il planifie et enchaîne des actions (rechercher, remplir un formulaire, envoyer un message) pour atteindre un objectif, en utilisant des outils auxquels on lui a donné accès. Plus un agent a de droits, plus les contrôles doivent être stricts.
 
-**Algorithme** — Suite d'instructions permettant de résoudre un problème ou d'accomplir une tâche. Une recette de cuisine est un algorithme.
+**Algorithme** : suite d'instructions permettant de résoudre un problème ou d'accomplir une tâche. Une recette de cuisine est un algorithme.
 
-**Anonymisation** — Traitement qui rend impossible, de façon irréversible et par des moyens raisonnables, la réidentification d'une personne. À distinguer de la pseudonymisation.
+**Anonymisation** : traitement qui rend impossible, de façon irréversible et par des moyens raisonnables, la réidentification d'une personne. À distinguer de la pseudonymisation.
 
-**API** — « Prise » logicielle qui permet à deux programmes d'échanger des données automatiquement (par exemple, un formulaire en ligne qui envoie ses réponses à un tableur).
+**API** : « Prise » logicielle qui permet à deux programmes d'échanger des données automatiquement (par exemple, un formulaire en ligne qui envoie ses réponses à un tableur).
 
-**Apprentissage automatique (*machine learning*)** — Famille de méthodes où un système apprend à partir d'exemples plutôt qu'à partir de règles écrites à la main.
+**Apprentissage automatique (*machine learning*)** : Famille de méthodes où un système apprend à partir d'exemples plutôt qu'à partir de règles écrites à la main.
 
-**Apprentissage profond (*deep learning*)** — Forme d'apprentissage automatique utilisant des réseaux de neurones artificiels à nombreuses couches ; à la base de la reconnaissance d'images, de la voix et des modèles de langage modernes.
+**Apprentissage profond (*deep learning*)** : Forme d'apprentissage automatique utilisant des réseaux de neurones artificiels à nombreuses couches ; à la base de la reconnaissance d'images, de la voix et des modèles de langage modernes.
 
-**Assistant conversationnel** — Application avec laquelle on échange par écrit ou oralement, en langage naturel, et qui s'appuie généralement sur un grand modèle de langage.
+**Assistant conversationnel** : application avec laquelle on échange par écrit ou oralement, en langage naturel, et qui s'appuie généralement sur un grand modèle de langage.
 
-**Base de connaissances** — Ensemble organisé de documents de référence (procédures, politiques, FAQ) qu'un système peut consulter.
+**Base de connaissances** : ensemble organisé de documents de référence (procédures, politiques, FAQ) qu'un système peut consulter.
 
-**Biais** — Écart systématique qui conduit un système à produire des résultats injustes ou inexacts pour certains groupes ou situations, souvent parce que les données d'apprentissage sont déséquilibrées.
+**Biais** : écart systématique qui conduit un système à produire des résultats injustes ou inexacts pour certains groupes ou situations, souvent parce que les données d'apprentissage sont déséquilibrées.
 
-**Cadre logique** — Matrice de planification de projet reliant objectifs, résultats, activités, indicateurs, sources de vérification et hypothèses.
+**Cadre logique** : matrice de planification de projet reliant objectifs, résultats, activités, indicateurs, sources de vérification et hypothèses.
 
-**Cloud (informatique en nuage)** — Utilisation de logiciels, de stockage ou de puissance de calcul fournis à distance par un prestataire, via internet.
+**Cloud (informatique en nuage)** : utilisation de logiciels, de stockage ou de puissance de calcul fournis à distance par un prestataire, via internet.
 
-**Contexte (fenêtre de)** — Quantité de texte qu'un modèle de langage peut prendre en compte en une fois (consigne, documents fournis et conversation).
+**Contexte (fenêtre de)** : quantité de texte qu'un modèle de langage peut prendre en compte en une fois (consigne, documents fournis et conversation).
 
-**Contrôle interne** — Ensemble des dispositifs (règles, séparation des tâches, autorisations, vérifications) qui donnent une assurance raisonnable que l'organisation atteint ses objectifs, protège ses ressources et produit une information fiable.
+**Contrôle interne** : ensemble des dispositifs (règles, séparation des tâches, autorisations, vérifications) qui donnent une assurance raisonnable que l'organisation atteint ses objectifs, protège ses ressources et produit une information fiable.
 
-**Donnée personnelle** — Toute information se rapportant à une personne identifiée ou identifiable, directement ou indirectement.
+**Donnée personnelle** : toute information se rapportant à une personne identifiée ou identifiable, directement ou indirectement.
 
-**Données structurées / non structurées** — Les premières sont organisées en lignes et colonnes (tableur, base de données) ; les secondes ne le sont pas (courriels, PDF, photos, enregistrements).
+**Données structurées / non structurées** : les premières sont organisées en lignes et colonnes (tableur, base de données) ; les secondes ne le sont pas (courriels, PDF, photos, enregistrements).
 
-**Explicabilité** — Capacité à rendre compréhensibles, pour les personnes concernées, les raisons d'un résultat produit par un système.
+**Explicabilité** : capacité à rendre compréhensibles, pour les personnes concernées, les raisons d'un résultat produit par un système.
 
-**Hallucination** — Contenu produit par une IA générative qui paraît plausible mais qui est faux, inventé ou non fidèle aux sources fournies.
+**Hallucination** : contenu produit par une IA générative qui paraît plausible mais qui est faux, inventé ou non fidèle aux sources fournies.
 
-**IA générative** — IA qui produit de nouveaux contenus (texte, image, son, code) à partir d'une consigne.
+**IA générative** : IA qui produit de nouveaux contenus (texte, image, son, code) à partir d'une consigne.
 
-**IA prédictive** — IA qui estime une valeur ou une probabilité future (par exemple un risque d'abandon) à partir de données passées.
+**IA prédictive** : IA qui estime une valeur ou une probabilité future (par exemple un risque d'abandon) à partir de données passées.
 
-**Imputation** — En comptabilité, affectation d'une opération à un compte, et en comptabilité analytique ou budgétaire, à un projet, une ligne budgétaire ou un bailleur.
+**Imputation** : en comptabilité, affectation d'une opération à un compte, et en comptabilité analytique ou budgétaire, à un projet, une ligne budgétaire ou un bailleur.
 
-**Inférence** — Utilisation d'un modèle déjà entraîné pour produire une réponse à partir d'une nouvelle donnée.
+**Inférence** : utilisation d'un modèle déjà entraîné pour produire une réponse à partir d'une nouvelle donnée.
 
-**Injection de prompt** — Attaque consistant à insérer, dans un texte lu par l'IA (courriel, page web, document), des instructions cachées destinées à détourner son comportement.
+**Injection de prompt** : attaque consistant à insérer, dans un texte lu par l'IA (courriel, page web, document), des instructions cachées destinées à détourner son comportement.
 
-**Low-code / no-code** — Outils permettant de construire des applications ou des automatisations avec peu ou pas de programmation, par assemblage de blocs.
+**Low-code / no-code** : outils permettant de construire des applications ou des automatisations avec peu ou pas de programmation, par assemblage de blocs.
 
-**Métadonnées** — Données décrivant d'autres données : date, auteur, type de document, projet, niveau de confidentialité.
+**Métadonnées** : données décrivant d'autres données : date, auteur, type de document, projet, niveau de confidentialité.
 
-**Modèle** — Résultat de l'apprentissage : un ensemble de paramètres qui permet de produire des prédictions ou des contenus.
+**Modèle** : résultat de l'apprentissage : un ensemble de paramètres qui permet de produire des prédictions ou des contenus.
 
-**Modèle de langage (grand, LLM)** — Modèle entraîné sur de très grandes quantités de textes pour prédire la suite la plus probable d'un texte ; à la base des assistants conversationnels.
+**Modèle de langage (grand, LLM)** : modèle entraîné sur de très grandes quantités de textes pour prédire la suite la plus probable d'un texte ; à la base des assistants conversationnels.
 
-**OCR** — Reconnaissance optique de caractères : transformation d'une image de texte (scan, photo) en texte exploitable.
+**OCR** : reconnaissance optique de caractères : transformation d'une image de texte (scan, photo) en texte exploitable.
 
-**Piste d'audit** — Ensemble des traces permettant de reconstituer une opération de son origine à son enregistrement final (qui, quoi, quand, sur quelle pièce).
+**Piste d'audit** : ensemble des traces permettant de reconstituer une opération de son origine à son enregistrement final (qui, quoi, quand, sur quelle pièce).
 
-**Prompt** — Consigne rédigée en langage naturel et adressée à un outil d'IA.
+**Prompt** : consigne rédigée en langage naturel et adressée à un outil d'IA.
 
-**Pseudonymisation** — Remplacement des identifiants directs (nom, numéro) par un code ; la réidentification reste possible avec une table de correspondance, qui doit être protégée. Les données pseudonymisées restent des données personnelles.
+**Pseudonymisation** : remplacement des identifiants directs (nom, numéro) par un code ; la réidentification reste possible avec une table de correspondance, qui doit être protégée. Les données pseudonymisées restent des données personnelles.
 
-**RAG** — Technique qui consiste à rechercher, dans une base documentaire, les passages pertinents pour une question, puis à les fournir au modèle de langage afin qu'il réponde à partir de ces documents.
+**RAG** : technique qui consiste à rechercher, dans une base documentaire, les passages pertinents pour une question, puis à les fournir au modèle de langage afin qu'il réponde à partir de ces documents.
 
-**Rapprochement bancaire** — Comparaison entre les écritures de la comptabilité et le relevé bancaire, afin d'expliquer et de corriger les écarts.
+**Rapprochement bancaire** : comparaison entre les écritures de la comptabilité et le relevé bancaire, afin d'expliquer et de corriger les écarts.
 
-**RPA** — Logiciel qui reproduit les clics et saisies d'un utilisateur sur des applications, selon des règles fixes.
+**RPA** : logiciel qui reproduit les clics et saisies d'un utilisateur sur des applications, selon des règles fixes.
 
-**Séparation des tâches** — Principe de contrôle interne selon lequel une même personne ne doit pas cumuler des fonctions incompatibles (par exemple, commander, réceptionner et payer).
+**Séparation des tâches** : principe de contrôle interne selon lequel une même personne ne doit pas cumuler des fonctions incompatibles (par exemple, commander, réceptionner et payer).
 
-**Supervision humaine** — Capacité, organisée et documentée, pour des personnes compétentes de contrôler, corriger, interrompre ou refuser le résultat d'un système d'IA.
+**Supervision humaine** : capacité, organisée et documentée, pour des personnes compétentes de contrôler, corriger, interrompre ou refuser le résultat d'un système d'IA.
 
-**Système de management de l'IA** — Ensemble de politiques, de rôles, de processus et de contrôles qu'une organisation met en place pour gouverner ses usages de l'IA (voir ISO/IEC 42001:2023).
+**Système de management de l'IA** : ensemble de politiques, de rôles, de processus et de contrôles qu'une organisation met en place pour gouverner ses usages de l'IA (voir ISO/IEC 42001:2023).
 
-**Token (jeton)** — Unité de texte (souvent un fragment de mot) traitée par un modèle de langage ; les limites et la facturation des outils sont fréquemment exprimées en jetons.
+**Token (jeton)** : unité de texte (souvent un fragment de mot) traitée par un modèle de langage ; les limites et la facturation des outils sont fréquemment exprimées en jetons.
 
-**Traitement du langage naturel** — Domaine de l'IA consacré à la compréhension et à la production du langage humain.
+**Traitement du langage naturel** : domaine de l'IA consacré à la compréhension et à la production du langage humain.
 
-**Workflow** — Enchaînement d'étapes d'un processus, avec ses acteurs, ses règles de passage et ses validations.
+**Workflow** : enchaînement d'étapes d'un processus, avec ses acteurs, ses règles de passage et ses validations.
 
 ::: tdm
 :::

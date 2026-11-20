@@ -1,8 +1,8 @@
-# Module 20 — Gérer le changement et assurer la pérennité des solutions
+# Module 20 : Gérer le changement et assurer la pérennité des solutions
 
 ## 20.1 Mise en situation
 
-Six mois après le déploiement de l'assistant de procédures, Horizons Partagés fait le point. Au siège, l'outil est utilisé quotidiennement. Dans deux bureaux de terrain, presque personne ne l'utilise : « on n'a pas eu le temps », « je préfère appeler Ibrahim », « une fois il s'est trompé ». Le référent numérique qui avait paramétré l'outil a quitté l'organisation ; personne n'a mis à jour la base depuis la révision de la politique de voyage ; l'abonnement a augmenté. La solution est en train de mourir doucement — un scénario fréquent.
+Six mois après le déploiement de l'assistant de procédures, Horizons Partagés fait le point. Au siège, l'outil est utilisé quotidiennement. Dans deux bureaux de terrain, presque personne ne l'utilise : « on n'a pas eu le temps », « je préfère appeler Ibrahim », « une fois il s'est trompé ». Le référent numérique qui avait paramétré l'outil a quitté l'organisation ; personne n'a mis à jour la base depuis la révision de la politique de voyage ; l'abonnement a augmenté. La solution est en train de mourir doucement : un scénario fréquent.
 
 ## 20.2 Problématique
 
@@ -31,9 +31,9 @@ Une solution d'IA n'est pas un achat ponctuel : c'est un **changement de pratiqu
 
 ### Comprendre la résistance
 
-La résistance au changement a souvent des causes légitimes : peur de perdre son emploi ou sa compétence, crainte d'être surveillé, mauvaise expérience avec l'outil, surcharge de travail, absence de sens. La traiter suppose d'écouter, d'expliquer, d'associer — et parfois d'adapter le projet.
+La résistance au changement a souvent des causes légitimes : peur de perdre son emploi ou sa compétence, crainte d'être surveillé, mauvaise expérience avec l'outil, surcharge de travail, absence de sens. La traiter suppose d'écouter, d'expliquer, d'associer, et parfois d'adapter le projet.
 
-![Figure 20.2 — Facteurs d'adoption d'un nouvel outil](03_ILLUSTRATIONS/figures/fig_20_2.svg)
+![Figure 20.2 : Facteurs d'adoption d'un nouvel outil](03_ILLUSTRATIONS/figures/fig_20_2.svg)
 
 Les modèles d'acceptation de la technologie, largement étudiés en sciences de gestion, mettent en avant quelques déterminants : l'**utilité perçue** et la **facilité d'utilisation perçue** (Davis, 1989), auxquelles le modèle UTAUT ajoute l'**influence sociale** et les **conditions facilitantes** (Venkatesh et al., 2003). Traduction pratique :
 
@@ -66,7 +66,7 @@ Les petites habitudes répétées comptent davantage que les grandes formations 
 
 ### Gouvernance de l'IA
 
-![Figure 20.1 — Gouvernance de l'IA dans l'ASBL](03_ILLUSTRATIONS/figures/fig_20_1.svg)
+![Figure 20.1 : Gouvernance de l'IA dans l'ASBL](03_ILLUSTRATIONS/figures/fig_20_1.svg)
 
 Une gouvernance proportionnée à la taille de l'organisation comprend :
 
@@ -93,7 +93,7 @@ Les indicateurs définis dans le cahier des charges sont suivis dans le temps. O
 
 ### Audit des systèmes
 
-Une fois par an (ou à chaque changement important), un audit — interne ou externe — examine : conformité à la politique et aux lois ; exactitude des registres ; efficacité des contrôles humains (sont-ils réellement exercés ?) ; résultats des tests ; sécurité et droits d'accès ; gestion des incidents ; coûts et bénéfices.
+Une fois par an (ou à chaque changement important), un audit, interne ou externe, examine : conformité à la politique et aux lois ; exactitude des registres ; efficacité des contrôles humains (sont-ils réellement exercés ?) ; résultats des tests ; sécurité et droits d'accès ; gestion des incidents ; coûts et bénéfices.
 
 ### Coûts récurrents
 
@@ -101,7 +101,7 @@ Les coûts d'une solution évoluent : nombre d'utilisateurs, volumes, hausses ta
 
 ### Amélioration continue
 
-Le cycle **planifier — faire — vérifier — agir** s'applique : analyser les incidents et les signalements ; exploiter les questions sans réponse ; mettre à jour la base et les consignes ; enrichir les jeux de tests ; partager les bonnes pratiques ; décider chaque année de poursuivre, d'étendre, de modifier ou d'arrêter.
+Le cycle **planifier, faire, vérifier : agir** s'applique : analyser les incidents et les signalements ; exploiter les questions sans réponse ; mettre à jour la base et les consignes ; enrichir les jeux de tests ; partager les bonnes pratiques ; décider chaque année de poursuivre, d'étendre, de modifier ou d'arrêter.
 
 ## 20.6 Application : relancer l'assistant de procédures
 
@@ -123,7 +123,7 @@ Le cycle **planifier — faire — vérifier — agir** s'applique : analyser le
 
 ## 20.7 Prompt prêt à l'emploi
 
-### Fiche P20.1 — Construire un plan de formation
+### Fiche P20.1 : Construire un plan de formation
 
 **A. Titre.** Plan de formation à l'usage responsable de l'IA.
 
@@ -170,7 +170,7 @@ Des équipes formées et outillées ; une adoption mesurée et soutenue ; une go
 
 ## 20.9 Contrôles humains
 
-> **🛑 Contrôle humain obligatoire** — Le conseil adopte la politique et reçoit le bilan annuel ; la direction décide de poursuivre, d'étendre ou d'arrêter chaque solution ; le référent IA valide les nouveaux usages ; l'audit est réalisé par une personne indépendante de la gestion de la solution.
+> **🛑 Contrôle humain obligatoire** : Le conseil adopte la politique et reçoit le bilan annuel ; la direction décide de poursuivre, d'étendre ou d'arrêter chaque solution ; le référent IA valide les nouveaux usages ; l'audit est réalisé par une personne indépendante de la gestion de la solution.
 
 ## 20.10 Risques et erreurs à éviter
 
@@ -195,7 +195,7 @@ Des équipes formées et outillées ; une adoption mesurée et soutenue ; une go
 - Maintenance, évaluation, audit et suivi des coûts font vivre la solution.
 - L'amélioration continue inclut la possibilité d'arrêter.
 
-## 20.13 QCM — Module 20
+## 20.13 QCM : Module 20
 
 **Q1.** (une seule réponse) Selon le modèle de Davis (1989), deux déterminants majeurs de l'acceptation d'une technologie sont :
 
@@ -239,14 +239,14 @@ b) changer de fournisseur.
 c) relancer le jeu de tests.
 d) supprimer la base documentaire.
 
-**Q7.** (mise en situation — une seule réponse) Le référent qui a paramétré l'outil quitte l'organisation sans suppléant. Le risque principal est :
+**Q7.** (mise en situation, une seule réponse) Le référent qui a paramétré l'outil quitte l'organisation sans suppléant. Le risque principal est :
 
 a) une hausse de l'adoption.
 b) l'abandon progressif de la maintenance et la dégradation de la solution.
 c) une baisse des coûts.
 d) aucun.
 
-**Q8.** (mise en situation — une seule réponse) Des agents disent préférer appeler le responsable financier « car l'outil s'est trompé une fois ». Que faites-vous ?
+**Q8.** (mise en situation, une seule réponse) Des agents disent préférer appeler le responsable financier « car l'outil s'est trompé une fois ». Que faites-vous ?
 
 a) Expliquer l'erreur et sa correction, rappeler la vérification, montrer des exemples réussis.
 b) Rendre l'outil obligatoire.
@@ -267,7 +267,7 @@ b) incidents et signalements.
 c) coûts réels comparés au budget et à la valeur.
 d) nombre de messages promotionnels du fournisseur.
 
-## 20.14 Corrigé détaillé — Module 20
+## 20.14 Corrigé détaillé : Module 20
 
 **Q1 : d.** Ce sont les deux construits fondateurs du modèle d'acceptation de la technologie.
 

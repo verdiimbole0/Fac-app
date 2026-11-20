@@ -1,6 +1,6 @@
-# Annexe 3 — Matrice de sélection des cas d'usage IA
+# Annexe 3 : Matrice de sélection des cas d'usage IA
 
-*ASBL augmentée — © 2026 Verdi Imbole. Reproduction autorisée pour l'usage interne de l'organisation de l'acheteur.*
+*ASBL augmentée : © 2026 Verdi Imbole. Reproduction autorisée pour l'usage interne de l'organisation de l'acheteur.*
 
 ## Objectif
 

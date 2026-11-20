@@ -14,9 +14,7 @@ ASBL AUGMENTÉE
 
 **Comment implémenter l'IA dans vos processus**
 
-Manuel pratique pour les associations, ONG, fondations et organisations à but non lucratif
-
-Édition de l'auteur — 2026
+Édition 2026
 :::
 
 ::: saut
@@ -25,8 +23,6 @@ Manuel pratique pour les associations, ONG, fondations et organisations à but n
 ## L'auteur {.unnumbered}
 
 **Verdi Imbole** est auteur indépendant, auditeur financier et consultant freelance en intelligence artificielle.
-
-Il accompagne les organisations à but non lucratif dans le diagnostic et la transformation numérique, le choix et l'implémentation de solutions d'intelligence artificielle, l'amélioration de la gouvernance institutionnelle, le renforcement des systèmes comptables et financiers, du contrôle interne et de la gestion des risques, ainsi que dans la formation des dirigeants et des collaborateurs.
 
 Contact : verdiimbole0@gmail.com
 
@@ -53,7 +49,7 @@ Pour toute demande d'autorisation : verdiimbole0@gmail.com.
 
 *Polices.* L'ouvrage est composé en Source Serif 4 et Source Sans 3 (licence SIL Open Font License 1.1).
 
-Édition de l'auteur. Première version de travail du manuscrit : novembre 2026.
+Édition 2026.
 
 ::: saut
 :::
@@ -108,7 +104,7 @@ Vous n'avez pas besoin d'être informaticien pour lire ce livre. Vous avez seule
 
 ## Présentation de l'ouvrage {.unnumbered}
 
-### Ce que ce livre est — et ce qu'il n'est pas
+### Ce que ce livre est : et ce qu'il n'est pas
 
 *ASBL augmentée* est un manuel de formation et d'action. Il n'est ni un catalogue d'outils, ni un recueil de prompts à copier sans comprendre, ni un traité théorique sur l'intelligence artificielle.
 
@@ -134,7 +130,7 @@ Les encadrés « ⚖️ Adaptation réglementaire » signalent les points où la
 | V. De l'idée à la mise en œuvre | Comment déployer et faire durer ? | 19 et 20 |
 | VI. Laboratoire | Comment résoudre des cas complets et bâtir son plan ? | 21 et 22 |
 
-Table: Tableau 0.1 — Présentation de l'ouvrage
+Table: Tableau 0.1 : Présentation de l'ouvrage
 
 ### Les organisations du fil rouge
 
@@ -147,7 +143,7 @@ Quatre organisations fictives accompagnent le lecteur tout au long de l'ouvrage.
 | **Réseau Citoyen pour l'Eau (RCE)** | Eau et assainissement ; 300 salariés ; 3 pays ; progiciel de gestion intégré (ERP) | Solutions de niveau Avancé ; achats, audit, assistants documentaires |
 | **Maison des Aînés Solidaires** | Services aux personnes âgées ; 12 salariés et 80 bénévoles ; grande ville d'un pays à revenu élevé | Bénévolat, données sensibles, réglementation stricte |
 
-Table: Tableau 0.2 — Présentation de l'ouvrage
+Table: Tableau 0.2 : Présentation de l'ouvrage
 
 ### Les rubriques récurrentes
 
@@ -155,10 +151,10 @@ Chaque module suit la même structure, afin que vous sachiez toujours où trouve
 
 Quatre encadrés ponctuent le texte, avec parcimonie :
 
-- **🔎 À retenir** — l'idée essentielle à mémoriser ;
-- **⚖️ Adaptation réglementaire** — ce qui dépend de la loi de votre pays ;
-- **🛑 Contrôle humain obligatoire** — une décision qui ne doit jamais être déléguée à une machine ;
-- **📶 Faible connectivité** — comment faire quand internet est lent ou intermittent.
+- **🔎 À retenir** : l'idée essentielle à mémoriser ;
+- **⚖️ Adaptation réglementaire** : ce qui dépend de la loi de votre pays ;
+- **🛑 Contrôle humain obligatoire** : une décision qui ne doit jamais être déléguée à une machine ;
+- **📶 Faible connectivité** : comment faire quand internet est lent ou intermittent.
 
 ### Les fiches prompts
 
@@ -195,11 +191,11 @@ Les modules 7 (données) et 9 (choix des outils) sont vivement recommandés à t
 | Chargé de communication | Module 17 | Module 15 |
 | Agent de terrain | Module 18 | Modules 8 et 11 |
 
-Table: Tableau 0.3 — Guide de lecture
+Table: Tableau 0.3 : Guide de lecture
 
 Terminez toujours par le **laboratoire** : le module 21 (dix études de cas) et le module 22 (votre plan de transformation à 90 jours).
 
-![Figure 0.1 — Carte des parcours de lecture](03_ILLUSTRATIONS/figures/fig_0_1.svg){#fig-0-1}
+![Figure 0.1 : Carte des parcours de lecture](03_ILLUSTRATIONS/figures/fig_0_1.svg){#fig-0-1}
 
 ## Public cible {.unnumbered}
 
@@ -265,97 +261,97 @@ Il a été écrit pour trois profils de lecteurs à la fois : **ceux qui découv
 | UNESCO | Organisation des Nations unies pour l'éducation, la science et la culture |
 | WCAG | *Web Content Accessibility Guidelines* (règles d'accessibilité des contenus web) |
 
-Table: Tableau 0.4 — Liste des abréviations
+Table: Tableau 0.4 : Liste des abréviations
 
 ## Glossaire {.unnumbered}
 
-**Agent IA** — Système qui ne se contente pas de répondre : il planifie et enchaîne des actions (rechercher, remplir un formulaire, envoyer un message) pour atteindre un objectif, en utilisant des outils auxquels on lui a donné accès. Plus un agent a de droits, plus les contrôles doivent être stricts.
+**Agent IA** : système qui ne se contente pas de répondre : il planifie et enchaîne des actions (rechercher, remplir un formulaire, envoyer un message) pour atteindre un objectif, en utilisant des outils auxquels on lui a donné accès. Plus un agent a de droits, plus les contrôles doivent être stricts.
 
-**Algorithme** — Suite d'instructions permettant de résoudre un problème ou d'accomplir une tâche. Une recette de cuisine est un algorithme.
+**Algorithme** : suite d'instructions permettant de résoudre un problème ou d'accomplir une tâche. Une recette de cuisine est un algorithme.
 
-**Anonymisation** — Traitement qui rend impossible, de façon irréversible et par des moyens raisonnables, la réidentification d'une personne. À distinguer de la pseudonymisation.
+**Anonymisation** : traitement qui rend impossible, de façon irréversible et par des moyens raisonnables, la réidentification d'une personne. À distinguer de la pseudonymisation.
 
-**API** — « Prise » logicielle qui permet à deux programmes d'échanger des données automatiquement (par exemple, un formulaire en ligne qui envoie ses réponses à un tableur).
+**API** : « Prise » logicielle qui permet à deux programmes d'échanger des données automatiquement (par exemple, un formulaire en ligne qui envoie ses réponses à un tableur).
 
-**Apprentissage automatique (*machine learning*)** — Famille de méthodes où un système apprend à partir d'exemples plutôt qu'à partir de règles écrites à la main.
+**Apprentissage automatique (*machine learning*)** : Famille de méthodes où un système apprend à partir d'exemples plutôt qu'à partir de règles écrites à la main.
 
-**Apprentissage profond (*deep learning*)** — Forme d'apprentissage automatique utilisant des réseaux de neurones artificiels à nombreuses couches ; à la base de la reconnaissance d'images, de la voix et des modèles de langage modernes.
+**Apprentissage profond (*deep learning*)** : Forme d'apprentissage automatique utilisant des réseaux de neurones artificiels à nombreuses couches ; à la base de la reconnaissance d'images, de la voix et des modèles de langage modernes.
 
-**Assistant conversationnel** — Application avec laquelle on échange par écrit ou oralement, en langage naturel, et qui s'appuie généralement sur un grand modèle de langage.
+**Assistant conversationnel** : application avec laquelle on échange par écrit ou oralement, en langage naturel, et qui s'appuie généralement sur un grand modèle de langage.
 
-**Base de connaissances** — Ensemble organisé de documents de référence (procédures, politiques, FAQ) qu'un système peut consulter.
+**Base de connaissances** : ensemble organisé de documents de référence (procédures, politiques, FAQ) qu'un système peut consulter.
 
-**Biais** — Écart systématique qui conduit un système à produire des résultats injustes ou inexacts pour certains groupes ou situations, souvent parce que les données d'apprentissage sont déséquilibrées.
+**Biais** : écart systématique qui conduit un système à produire des résultats injustes ou inexacts pour certains groupes ou situations, souvent parce que les données d'apprentissage sont déséquilibrées.
 
-**Cadre logique** — Matrice de planification de projet reliant objectifs, résultats, activités, indicateurs, sources de vérification et hypothèses.
+**Cadre logique** : matrice de planification de projet reliant objectifs, résultats, activités, indicateurs, sources de vérification et hypothèses.
 
-**Cloud (informatique en nuage)** — Utilisation de logiciels, de stockage ou de puissance de calcul fournis à distance par un prestataire, via internet.
+**Cloud (informatique en nuage)** : utilisation de logiciels, de stockage ou de puissance de calcul fournis à distance par un prestataire, via internet.
 
-**Contexte (fenêtre de)** — Quantité de texte qu'un modèle de langage peut prendre en compte en une fois (consigne, documents fournis et conversation).
+**Contexte (fenêtre de)** : quantité de texte qu'un modèle de langage peut prendre en compte en une fois (consigne, documents fournis et conversation).
 
-**Contrôle interne** — Ensemble des dispositifs (règles, séparation des tâches, autorisations, vérifications) qui donnent une assurance raisonnable que l'organisation atteint ses objectifs, protège ses ressources et produit une information fiable.
+**Contrôle interne** : ensemble des dispositifs (règles, séparation des tâches, autorisations, vérifications) qui donnent une assurance raisonnable que l'organisation atteint ses objectifs, protège ses ressources et produit une information fiable.
 
-**Donnée personnelle** — Toute information se rapportant à une personne identifiée ou identifiable, directement ou indirectement.
+**Donnée personnelle** : toute information se rapportant à une personne identifiée ou identifiable, directement ou indirectement.
 
-**Données structurées / non structurées** — Les premières sont organisées en lignes et colonnes (tableur, base de données) ; les secondes ne le sont pas (courriels, PDF, photos, enregistrements).
+**Données structurées / non structurées** : les premières sont organisées en lignes et colonnes (tableur, base de données) ; les secondes ne le sont pas (courriels, PDF, photos, enregistrements).
 
-**Explicabilité** — Capacité à rendre compréhensibles, pour les personnes concernées, les raisons d'un résultat produit par un système.
+**Explicabilité** : capacité à rendre compréhensibles, pour les personnes concernées, les raisons d'un résultat produit par un système.
 
-**Hallucination** — Contenu produit par une IA générative qui paraît plausible mais qui est faux, inventé ou non fidèle aux sources fournies.
+**Hallucination** : contenu produit par une IA générative qui paraît plausible mais qui est faux, inventé ou non fidèle aux sources fournies.
 
-**IA générative** — IA qui produit de nouveaux contenus (texte, image, son, code) à partir d'une consigne.
+**IA générative** : IA qui produit de nouveaux contenus (texte, image, son, code) à partir d'une consigne.
 
-**IA prédictive** — IA qui estime une valeur ou une probabilité future (par exemple un risque d'abandon) à partir de données passées.
+**IA prédictive** : IA qui estime une valeur ou une probabilité future (par exemple un risque d'abandon) à partir de données passées.
 
-**Imputation** — En comptabilité, affectation d'une opération à un compte, et en comptabilité analytique ou budgétaire, à un projet, une ligne budgétaire ou un bailleur.
+**Imputation** : en comptabilité, affectation d'une opération à un compte, et en comptabilité analytique ou budgétaire, à un projet, une ligne budgétaire ou un bailleur.
 
-**Inférence** — Utilisation d'un modèle déjà entraîné pour produire une réponse à partir d'une nouvelle donnée.
+**Inférence** : utilisation d'un modèle déjà entraîné pour produire une réponse à partir d'une nouvelle donnée.
 
-**Injection de prompt** — Attaque consistant à insérer, dans un texte lu par l'IA (courriel, page web, document), des instructions cachées destinées à détourner son comportement.
+**Injection de prompt** : attaque consistant à insérer, dans un texte lu par l'IA (courriel, page web, document), des instructions cachées destinées à détourner son comportement.
 
-**Low-code / no-code** — Outils permettant de construire des applications ou des automatisations avec peu ou pas de programmation, par assemblage de blocs.
+**Low-code / no-code** : outils permettant de construire des applications ou des automatisations avec peu ou pas de programmation, par assemblage de blocs.
 
-**Métadonnées** — Données décrivant d'autres données : date, auteur, type de document, projet, niveau de confidentialité.
+**Métadonnées** : données décrivant d'autres données : date, auteur, type de document, projet, niveau de confidentialité.
 
-**Modèle** — Résultat de l'apprentissage : un ensemble de paramètres qui permet de produire des prédictions ou des contenus.
+**Modèle** : résultat de l'apprentissage : un ensemble de paramètres qui permet de produire des prédictions ou des contenus.
 
-**Modèle de langage (grand, LLM)** — Modèle entraîné sur de très grandes quantités de textes pour prédire la suite la plus probable d'un texte ; à la base des assistants conversationnels.
+**Modèle de langage (grand, LLM)** : modèle entraîné sur de très grandes quantités de textes pour prédire la suite la plus probable d'un texte ; à la base des assistants conversationnels.
 
-**OCR** — Reconnaissance optique de caractères : transformation d'une image de texte (scan, photo) en texte exploitable.
+**OCR** : reconnaissance optique de caractères : transformation d'une image de texte (scan, photo) en texte exploitable.
 
-**Piste d'audit** — Ensemble des traces permettant de reconstituer une opération de son origine à son enregistrement final (qui, quoi, quand, sur quelle pièce).
+**Piste d'audit** : ensemble des traces permettant de reconstituer une opération de son origine à son enregistrement final (qui, quoi, quand, sur quelle pièce).
 
-**Prompt** — Consigne rédigée en langage naturel et adressée à un outil d'IA.
+**Prompt** : consigne rédigée en langage naturel et adressée à un outil d'IA.
 
-**Pseudonymisation** — Remplacement des identifiants directs (nom, numéro) par un code ; la réidentification reste possible avec une table de correspondance, qui doit être protégée. Les données pseudonymisées restent des données personnelles.
+**Pseudonymisation** : remplacement des identifiants directs (nom, numéro) par un code ; la réidentification reste possible avec une table de correspondance, qui doit être protégée. Les données pseudonymisées restent des données personnelles.
 
-**RAG** — Technique qui consiste à rechercher, dans une base documentaire, les passages pertinents pour une question, puis à les fournir au modèle de langage afin qu'il réponde à partir de ces documents.
+**RAG** : technique qui consiste à rechercher, dans une base documentaire, les passages pertinents pour une question, puis à les fournir au modèle de langage afin qu'il réponde à partir de ces documents.
 
-**Rapprochement bancaire** — Comparaison entre les écritures de la comptabilité et le relevé bancaire, afin d'expliquer et de corriger les écarts.
+**Rapprochement bancaire** : comparaison entre les écritures de la comptabilité et le relevé bancaire, afin d'expliquer et de corriger les écarts.
 
-**RPA** — Logiciel qui reproduit les clics et saisies d'un utilisateur sur des applications, selon des règles fixes.
+**RPA** : logiciel qui reproduit les clics et saisies d'un utilisateur sur des applications, selon des règles fixes.
 
-**Séparation des tâches** — Principe de contrôle interne selon lequel une même personne ne doit pas cumuler des fonctions incompatibles (par exemple, commander, réceptionner et payer).
+**Séparation des tâches** : principe de contrôle interne selon lequel une même personne ne doit pas cumuler des fonctions incompatibles (par exemple, commander, réceptionner et payer).
 
-**Supervision humaine** — Capacité, organisée et documentée, pour des personnes compétentes de contrôler, corriger, interrompre ou refuser le résultat d'un système d'IA.
+**Supervision humaine** : capacité, organisée et documentée, pour des personnes compétentes de contrôler, corriger, interrompre ou refuser le résultat d'un système d'IA.
 
-**Système de management de l'IA** — Ensemble de politiques, de rôles, de processus et de contrôles qu'une organisation met en place pour gouverner ses usages de l'IA (voir ISO/IEC 42001:2023).
+**Système de management de l'IA** : ensemble de politiques, de rôles, de processus et de contrôles qu'une organisation met en place pour gouverner ses usages de l'IA (voir ISO/IEC 42001:2023).
 
-**Token (jeton)** — Unité de texte (souvent un fragment de mot) traitée par un modèle de langage ; les limites et la facturation des outils sont fréquemment exprimées en jetons.
+**Token (jeton)** : unité de texte (souvent un fragment de mot) traitée par un modèle de langage ; les limites et la facturation des outils sont fréquemment exprimées en jetons.
 
-**Traitement du langage naturel** — Domaine de l'IA consacré à la compréhension et à la production du langage humain.
+**Traitement du langage naturel** : domaine de l'IA consacré à la compréhension et à la production du langage humain.
 
-**Workflow** — Enchaînement d'étapes d'un processus, avec ses acteurs, ses règles de passage et ses validations.
+**Workflow** : enchaînement d'étapes d'un processus, avec ses acteurs, ses règles de passage et ses validations.
 
 ::: tdm
 :::
 
 
-# Partie I — Comprendre l'intelligence artificielle {#h1 .partie}
+# Partie I : Comprendre l'intelligence artificielle {#h1 .partie}
 
 *Avant de transformer des processus, il faut comprendre l'outil. Cette première partie explique ce qu'est l'intelligence artificielle, comment elle fonctionne réellement et comment l'utiliser de façon efficace et sûre. Aucune connaissance technique préalable n'est nécessaire.*
 
-# Module 1 — L'intelligence artificielle : comprendre une révolution qui nous concerne tous {#h2}
+# Module 1 : L'intelligence artificielle : comprendre une révolution qui nous concerne tous {#h2}
 
 ## 1.1 Mise en situation
 
@@ -391,9 +387,9 @@ Entre les deux, il existe une voie : comprendre ce que l'IA sait faire, ce qu'el
 
 ### Une définition de travail
 
-Il n'existe pas de définition unique de l'intelligence artificielle. Pour ce livre, nous retiendrons une définition pratique, proche de celle qu'utilisent les Principes de l'OCDE sur l'IA — dont la définition de « système d'IA » a été actualisée en 2023 et reprise par le règlement européen sur l'IA (OCDE, 2019/2024 ; règlement (UE) 2024/1689) :
+Il n'existe pas de définition unique de l'intelligence artificielle. Pour ce livre, nous retiendrons une définition pratique, proche de celle qu'utilisent les Principes de l'OCDE sur l'IA, dont la définition de « système d'IA » a été actualisée en 2023 et reprise par le règlement européen sur l'IA (OCDE, 2019/2024 ; règlement (UE) 2024/1689) :
 
-> Un **système d'IA** est un système informatique qui, à partir des données qu'il reçoit, produit des résultats — prédictions, contenus, recommandations ou décisions — capables d'influencer un environnement physique ou numérique, avec des degrés variables d'autonomie.
+> Un **système d'IA** est un système informatique qui, à partir des données qu'il reçoit, produit des résultats (prédictions, contenus, recommandations ou décisions) capables d'influencer un environnement physique ou numérique, avec des degrés variables d'autonomie.
 
 Retenez trois idées de cette définition :
 
@@ -403,19 +399,19 @@ Retenez trois idées de cette définition :
 
 ### Ce que l'IA n'est pas
 
-L'IA n'est pas une intelligence au sens humain. Elle n'a ni intention, ni conscience, ni compréhension du monde comparable à la nôtre. Les systèmes actuels repèrent des régularités statistiques dans d'immenses quantités de données et les exploitent pour produire des résultats. Cela peut donner une impression saisissante de compréhension — surtout avec les assistants conversationnels, qui manient la langue avec aisance — mais cette aisance ne garantit ni la vérité ni le bon jugement.
+L'IA n'est pas une intelligence au sens humain. Elle n'a ni intention, ni conscience, ni compréhension du monde comparable à la nôtre. Les systèmes actuels repèrent des régularités statistiques dans d'immenses quantités de données et les exploitent pour produire des résultats. Cela peut donner une impression saisissante de compréhension (surtout avec les assistants conversationnels, qui manient la langue avec aisance) mais cette aisance ne garantit ni la vérité ni le bon jugement.
 
 ## 1.5 Explications détaillées
 
 ### Une histoire faite d'accélérations et de désillusions
 
-![Figure 1.1 — Repères historiques de l'intelligence artificielle](03_ILLUSTRATIONS/figures/fig_1_1.svg){#fig-1-1}
+![Figure 1.1 : Repères historiques de l'intelligence artificielle](03_ILLUSTRATIONS/figures/fig_1_1.svg){#fig-1-1}
 
 L'histoire de l'IA n'est pas une progression régulière. Elle alterne promesses et désillusions.
 
 - **Les fondations (années 1950).** En 1950, le mathématicien Alan Turing pose la question de savoir si une machine peut penser et propose un test pour en juger. En 1956, une conférence organisée au Dartmouth College, aux États-Unis, popularise l'expression « intelligence artificielle ».
 - **Les systèmes à règles (années 1970–1980).** On tente de reproduire l'expertise humaine sous forme de règles « si… alors… ». Ces « systèmes experts » fonctionnent dans des domaines étroits, mais deviennent ingérables quand les règles se multiplient. Les promesses non tenues entraînent des périodes de désintérêt et de baisse des financements, que l'on appelle les « hivers de l'IA ».
-- **L'apprentissage à partir des données (années 1990–2010).** Plutôt que d'écrire les règles, on laisse la machine les déduire d'exemples. En 1997, un ordinateur bat le champion du monde d'échecs. À partir de 2012 environ, l'**apprentissage profond** — rendu possible par la puissance de calcul et l'abondance de données — fait progresser spectaculairement la reconnaissance d'images et de la parole.
+- **L'apprentissage à partir des données (années 1990–2010).** Plutôt que d'écrire les règles, on laisse la machine les déduire d'exemples. En 1997, un ordinateur bat le champion du monde d'échecs. À partir de 2012 environ, l'**apprentissage profond**, rendu possible par la puissance de calcul et l'abondance de données, fait progresser spectaculairement la reconnaissance d'images et de la parole.
 - **L'ère des modèles de langage (depuis 2017).** En 2017, des chercheurs publient l'architecture « Transformer » (Vaswani et al., 2017), qui permet d'entraîner des modèles de langage beaucoup plus grands. Fin 2022, les assistants conversationnels deviennent accessibles au grand public et se diffusent à une vitesse inédite.
 - **L'ère de l'encadrement (depuis le début des années 2020).** Les organisations internationales et les États adoptent des cadres : la Recommandation de l'UNESCO sur l'éthique de l'IA (2021), la révision des Principes de l'OCDE (2024), le cadre de gestion des risques du NIST (2023), la norme ISO/IEC 42001 (2023), le règlement européen sur l'IA (2024) et la Convention-cadre du Conseil de l'Europe sur l'IA (2024). Le module 8 y revient en détail.
 
@@ -423,7 +419,7 @@ Pourquoi cette histoire vous concerne-t-elle ? Parce qu'elle enseigne la prudenc
 
 ### Les grandes familles d'IA
 
-![Figure 1.2 — Les grandes familles d'intelligence artificielle](03_ILLUSTRATIONS/figures/fig_1_2.svg){#fig-1-2}
+![Figure 1.2 : Les grandes familles d'intelligence artificielle](03_ILLUSTRATIONS/figures/fig_1_2.svg){#fig-1-2}
 
 On peut se représenter les familles d'IA comme des ensembles emboîtés.
 
@@ -434,7 +430,7 @@ On peut se représenter les familles d'IA comme des ensembles emboîtés.
 | **Apprentissage profond** | Réseaux de neurones à nombreuses couches | Lire une facture photographiée (OCR moderne) ; transcrire une réunion | Très performant sur les images, le son et le texte ; peu explicable. |
 | **IA générative** | Produit de nouveaux contenus | Rédiger un projet de lettre, résumer un rapport, traduire un support | Fluide et polyvalente ; peut produire des erreurs plausibles (« hallucinations »). |
 
-Table: Tableau 1.1 — Explications détaillées
+Table: Tableau 1.1 : Explications détaillées
 
 ### IA traditionnelle et IA générative : la différence qui compte
 
@@ -457,7 +453,7 @@ Les deux se combinent souvent. Dans le traitement d'une facture (module 12), l'O
 | « L'IA est neutre. » | Elle reflète les données sur lesquelles elle a été entraînée, y compris leurs biais. Elle peut désavantager certains groupes. |
 | « Une fois installée, l'IA fonctionne seule. » | Toute solution exige un suivi, des mises à jour, une vérification régulière et une personne responsable (module 20). |
 
-Table: Tableau 1.2 — Explications détaillées
+Table: Tableau 1.2 : Explications détaillées
 
 ### Opportunités pour les ASBL
 
@@ -500,9 +496,9 @@ Le scepticisme n'est pas un obstacle à vaincre : c'est souvent une forme de vig
 | « On n'a pas les moyens. » | Les solutions avancées coûtent cher. | Le niveau Débutant est accessible ; l'important est de choisir un problème précis. |
 | « Ce n'est pas notre culture. » | La mission repose sur la relation humaine. | Justement : l'IA doit libérer du temps pour la relation, pas la remplacer. |
 
-Table: Tableau 1.3 — Explications détaillées
+Table: Tableau 1.3 : Explications détaillées
 
-> **🔎 À retenir** — L'IA est un outil statistique puissant, pas une intelligence humaine. Elle est utile pour des tâches précises, à condition de fournir de bonnes données, de vérifier ses résultats et de garder les décisions importantes sous contrôle humain.
+> **🔎 À retenir** : L'IA est un outil statistique puissant, pas une intelligence humaine. Elle est utile pour des tâches précises, à condition de fournir de bonnes données, de vérifier ses résultats et de garder les décisions importantes sous contrôle humain.
 
 ## 1.6 Application professionnelle : expliquer l'IA à son conseil d'administration
 
@@ -513,7 +509,7 @@ Après la réunion du conseil, la directrice d'Horizons Partagés demande à Mar
 ### Processus de mise en œuvre
 
 1. **Recenser les usages existants.** Mariam envoie un questionnaire anonyme de cinq questions à l'équipe : utilisez-vous déjà un outil d'IA ? lequel ? pour quelles tâches ? avec quelles données ? qu'est-ce qui vous inquiète ?
-2. **Rédiger un projet de note** avec l'aide d'un assistant conversationnel, à partir d'informations publiques et des résultats agrégés du questionnaire — sans aucune donnée nominative.
+2. **Rédiger un projet de note** avec l'aide d'un assistant conversationnel, à partir d'informations publiques et des résultats agrégés du questionnaire, sans aucune donnée nominative.
 3. **Vérifier chaque affirmation** factuelle (dates, cadres de référence) auprès des sources officielles.
 4. **Faire relire** la note par la directrice et par un administrateur sceptique, afin de tester sa solidité.
 5. **Présenter** la note au conseil avec une proposition de décision : adopter des règles provisoires d'usage et lancer un diagnostic (modules 5 et 6).
@@ -526,7 +522,7 @@ Après la réunion du conseil, la directrice d'Horizons Partagés demande à Mar
 | Intermédiaire | Même démarche avec un assistant inclus dans la suite bureautique professionnelle de l'ASBL, dont les conditions contractuelles ont été vérifiées | Suite bureautique avec assistant intégré | Abonnement | Vérifier les paramètres de confidentialité et la localisation des données |
 | Avancé | Atelier de sensibilisation pour le conseil, appuyé sur un auto-diagnostic structuré et des démonstrations sur des cas réels anonymisés | Supports de formation, environnement de démonstration | Temps de préparation, éventuellement intervenant externe | Exige une préparation solide pour rester factuel |
 
-Table: Tableau 1.4 — Application professionnelle : expliquer l'IA à son conseil d'administration
+Table: Tableau 1.4 : Application professionnelle : expliquer l'IA à son conseil d'administration
 
 ### Outils nécessaires
 
@@ -534,7 +530,7 @@ Un formulaire (papier ou numérique), un assistant conversationnel, un traitemen
 
 ## 1.7 Prompt prêt à l'emploi
 
-### Fiche P1.1 — Préparer une note de sensibilisation sur l'IA pour un organe de gouvernance
+### Fiche P1.1 : Préparer une note de sensibilisation sur l'IA pour un organe de gouvernance
 
 **A. Titre.** Note de sensibilisation sur l'IA pour le conseil d'administration.
 
@@ -606,7 +602,7 @@ Exigences :
 
 ## 1.9 Contrôles humains
 
-> **🛑 Contrôle humain obligatoire** — La position de l'organisation sur l'IA est une décision de gouvernance. Elle est prise par l'organe compétent, après débat, et non par un outil. La note produite avec l'IA n'est qu'un support de discussion.
+> **🛑 Contrôle humain obligatoire** : La position de l'organisation sur l'IA est une décision de gouvernance. Elle est prise par l'organe compétent, après débat, et non par un outil. La note produite avec l'IA n'est qu'un support de discussion.
 
 Contrôles à effectuer : exactitude des faits ; absence de données internes sensibles dans les échanges avec l'outil ; validation de la note par la direction ; consignation de la décision dans le procès-verbal.
 
@@ -634,11 +630,11 @@ Contrôles à effectuer : exactitude des faits ; absence de données internes se
 - Un système d'IA produit des résultats à partir de données ; ses résultats ont des effets ; son autonomie varie.
 - L'histoire de l'IA alterne accélérations et désillusions : la prudence est de mise face aux promesses.
 - On distingue systèmes à règles, apprentissage automatique, apprentissage profond et IA générative. Pour une ASBL, la distinction la plus utile est entre IA analytique (réponses fermées, mesurables) et IA générative (contenus ouverts, à relire).
-- Les opportunités sont réelles — temps, qualité, accès, décision — mais les risques aussi — erreurs, fuites, biais, dépendance, réputation.
+- Les opportunités sont réelles (temps, qualité, accès, décision) mais les risques aussi : erreurs, fuites, biais, dépendance, réputation.
 - Les ASBL sont particulièrement concernées : forte charge administrative, données sensibles, redevabilité multiple.
 - Le scepticisme est une ressource : il oblige à justifier chaque usage.
 
-## 1.13 QCM — Module 1
+## 1.13 QCM : Module 1
 
 *Pour chaque question, la consigne précise s'il y a une seule ou plusieurs bonnes réponses. Le corrigé figure après la dernière question.*
 
@@ -691,14 +687,14 @@ b) Une redevabilité envers de multiples parties prenantes.
 c) L'absence totale de tâches administratives.
 d) Une charge administrative relative souvent élevée.
 
-**Q8.** (mise en situation — une seule réponse) Un bénévole veut copier la liste nominative des familles suivies dans un assistant gratuit pour « faire un tableau plus joli ». Que faites-vous ?
+**Q8.** (mise en situation, une seule réponse) Un bénévole veut copier la liste nominative des familles suivies dans un assistant gratuit pour « faire un tableau plus joli ». Que faites-vous ?
 
 a) Vous l'encouragez, car l'outil est gratuit.
 b) Vous l'arrêtez : ces données sont sensibles ; on travaille sur une version anonymisée ou avec un outil validé, selon les règles de l'ASBL.
 c) Vous le laissez faire si la liste compte moins de 50 noms.
 d) Vous lui demandez d'utiliser plutôt son téléphone personnel.
 
-**Q9.** (mise en situation — une seule réponse) Un administrateur affirme que l'IA « remplacera la moitié du personnel administratif d'ici deux ans ». La réponse la plus appropriée est :
+**Q9.** (mise en situation, une seule réponse) Un administrateur affirme que l'IA « remplacera la moitié du personnel administratif d'ici deux ans ». La réponse la plus appropriée est :
 
 a) de demander la source et de rappeler que les études disponibles montrent surtout une transformation des tâches, variable selon leur nature.
 b) de confirmer, car c'est l'avis général.
@@ -712,7 +708,7 @@ b) Commencer par des usages sur des données publiques ou anonymisées.
 c) Imposer un outil sans explication pour gagner du temps.
 d) Expliquer comment le temps gagné sera réinvesti dans la mission.
 
-## 1.14 Corrigé détaillé — Module 1
+## 1.14 Corrigé détaillé : Module 1
 
 **Q1 : a.** La définition met l'accent sur les résultats produits à partir de données et sur leurs effets. Ni conscience (b), ni forme physique (c), ni absence d'intervention humaine (d) ne sont requises.
 
@@ -728,7 +724,7 @@ d) Expliquer comment le temps gagné sera réinvesti dans la mission.
 
 **Q7 : a, b, d.** Les ASBL ont au contraire une charge administrative importante (c est faux).
 
-**Q8 : b.** Une liste nominative de familles suivies relève des données confidentielles (rouge, module 8). Ni la gratuité, ni la taille de la liste, ni l'usage d'un appareil personnel ne changent ce constat — l'appareil personnel l'aggrave même.
+**Q8 : b.** Une liste nominative de familles suivies relève des données confidentielles (rouge, module 8). Ni la gratuité, ni la taille de la liste, ni l'usage d'un appareil personnel ne changent ce constat : l'appareil personnel l'aggrave même.
 
 **Q9 : a.** Demander la source et nuancer est la réponse rigoureuse. Les réponses b et c sont des affirmations non étayées ; d est disproportionnée.
 
@@ -747,7 +743,7 @@ d) Expliquer comment le temps gagné sera réinvesti dans la mission.
 - Vaswani, A., et al. (2017). Attention is all you need. *Advances in Neural Information Processing Systems, 30*.
 
 
-# Module 2 — Comment fonctionne réellement l'intelligence artificielle ? {#h3}
+# Module 2 : Comment fonctionne réellement l'intelligence artificielle ? {#h3}
 
 ## 2.1 Mise en situation
 
@@ -782,13 +778,13 @@ Beaucoup d'utilisateurs se représentent l'IA comme une « super base de donnée
 | **Jeton (token)** | Fragment de texte traité par un modèle de langage | Les syllabes d'un mot |
 | **Fenêtre de contexte** | Quantité de texte que le modèle peut considérer à la fois | La page que l'on a sous les yeux |
 
-Table: Tableau 2.1 — Notions et définitions
+Table: Tableau 2.1 : Notions et définitions
 
 ## 2.5 Explications détaillées
 
 ### L'apprentissage automatique : apprendre à partir d'exemples
 
-![Figure 2.1 — Du jeu de données au modèle, puis à la prédiction](03_ILLUSTRATIONS/figures/fig_2_1.svg){#fig-2-1}
+![Figure 2.1 : Du jeu de données au modèle, puis à la prédiction](03_ILLUSTRATIONS/figures/fig_2_1.svg){#fig-2-1}
 
 Imaginons que la trésorière d'Horizons Partagés veuille un outil qui classe automatiquement les dépenses dans la bonne catégorie (« transport », « fournitures », « restauration »…). Deux approches existent.
 
@@ -821,9 +817,9 @@ Les modèles actuels reposent sur l'architecture **Transformer** (Vaswani et al.
 
 **Ce que cela implique pour vous :**
 
-- **Le modèle ne consulte pas une base de faits.** Il produit ce qui est plausible. Dans l'histoire de Joseph, « 15 UM par trajet, conformément à votre politique interne » est une phrase plausible — pas une information.
+- **Le modèle ne consulte pas une base de faits.** Il produit ce qui est plausible. Dans l'histoire de Joseph, « 15 UM par trajet, conformément à votre politique interne » est une phrase plausible, pas une information.
 - **Il ne connaît pas vos documents** sauf si vous les lui fournissez, ou si l'outil est relié à vos fichiers.
-- **Il ne connaît pas l'actualité** au-delà de sa date de coupure, sauf si l'outil effectue des recherches en ligne — auquel cas il faut vérifier les sources consultées.
+- **Il ne connaît pas l'actualité** au-delà de sa date de coupure, sauf si l'outil effectue des recherches en ligne, auquel cas il faut vérifier les sources consultées.
 - **Ses réponses varient** d'une fois sur l'autre pour la même question.
 - **Il calcule mal de tête.** Pour des calculs, demandez-lui d'utiliser un outil de calcul s'il en dispose, ou faites les calculs dans un tableur.
 - **Sa fenêtre de contexte est limitée.** Un document très long peut être partiellement ignoré ; mieux vaut le découper.
@@ -842,7 +838,7 @@ Points de vigilance : la qualité de la photo (lumière, angle, netteté) déter
 
 L'IA prédictive estime une valeur ou une probabilité : risque d'abandon scolaire, besoin de trésorerie du mois prochain, probabilité qu'un donateur renouvelle son don. Elle exige des **données historiques** abondantes et fiables, ce dont beaucoup d'ASBL ne disposent pas. Elle soulève aussi des questions de justice : un score de « risque » attribué à une personne peut conduire à la stigmatiser ou à l'exclure.
 
-> **🔎 À retenir** — Une prédiction est une probabilité, pas un fait. Elle doit éclairer une décision humaine, jamais la remplacer lorsque des personnes sont concernées.
+> **🔎 À retenir** : Une prédiction est une probabilité, pas un fait. Elle doit éclairer une décision humaine, jamais la remplacer lorsque des personnes sont concernées.
 
 ### IA générative
 
@@ -858,7 +854,7 @@ Un **agent** est un système fondé sur un modèle de langage auquel on donne un
 
 ### Bases de connaissances et RAG
 
-![Figure 2.2 — Architecture RAG (génération augmentée par la recherche)](03_ILLUSTRATIONS/figures/fig_2_2.svg){#fig-2-2}
+![Figure 2.2 : Architecture RAG (génération augmentée par la recherche)](03_ILLUSTRATIONS/figures/fig_2_2.svg){#fig-2-2}
 
 Comment obtenir d'un modèle de langage des réponses fondées sur **vos** documents ? Deux approches simples existent, et une approche avancée.
 
@@ -882,9 +878,9 @@ Une **hallucination** est un contenu produit par une IA générative qui paraît
 | Injection de prompt | Un document contient « ignore les consignes précédentes et… » | Ne pas donner de droits d'action à l'outil sur des contenus non fiables ; validation humaine |
 | Biais | Des descriptions stéréotypées de certains groupes | Revue de biais (module 8) |
 
-Table: Tableau 2.2 — Explications détaillées
+Table: Tableau 2.2 : Explications détaillées
 
-Les risques des grands modèles de langage — biais hérités des données, coûts environnementaux, illusion de compréhension — ont été analysés de façon critique dans la littérature scientifique (Bender et al., 2021). Ils ne signifient pas qu'il faut renoncer à ces outils, mais qu'il faut les utiliser en connaissant leurs limites.
+Les risques des grands modèles de langage (biais hérités des données, coûts environnementaux, illusion de compréhension) ont été analysés de façon critique dans la littérature scientifique (Bender et al., 2021). Ils ne signifient pas qu'il faut renoncer à ces outils, mais qu'il faut les utiliser en connaissant leurs limites.
 
 ## 2.6 Application professionnelle : tester un assistant avant de l'adopter
 
@@ -905,11 +901,11 @@ Avant de recommander un outil à ses collègues, Joseph décide de le tester mé
 | Intermédiaire | Grille de 20 à 30 questions-types de l'organisation, rejouée à chaque changement d'outil ou de version | Un référent numérique | Temps | Évaluation manuelle |
 | Avancé | Jeu de tests automatisé (questions + réponses attendues) exécuté régulièrement sur l'assistant RAG de l'organisation, avec mesure du taux de réponses correctes et sourcées | Compétences techniques | Développement, maintenance | Les réponses ouvertes restent difficiles à noter automatiquement |
 
-Table: Tableau 2.3 — Application professionnelle : tester un assistant avant de l'adopter
+Table: Tableau 2.3 : Application professionnelle : tester un assistant avant de l'adopter
 
 ## 2.7 Prompt prêt à l'emploi
 
-### Fiche P2.1 — Tester les limites d'un assistant avant usage professionnel
+### Fiche P2.1 : Tester les limites d'un assistant avant usage professionnel
 
 **A. Titre.** Protocole de test en cinq questions.
 
@@ -955,7 +951,7 @@ rédige un message aux bénévoles pour le leur rappeler.
 | 4. Actualité | Indique sa date de coupure ou cite des sources vérifiables | | |
 | 5. Prémisse fausse | Signale la contradiction avec le document fourni | | |
 
-Table: Tableau 2.4 — Prompt prêt à l'emploi
+Table: Tableau 2.4 : Prompt prêt à l'emploi
 
 **H. Exemple d'application (illustratif).** Joseph obtient : test 1, l'outil invente un montant (échec) ; test 2, réponse juste et citation exacte (réussite) ; test 3, total juste mais sans détail (à surveiller) ; test 4, l'outil indique ne pas disposer d'informations récentes (réussite) ; test 5, l'outil rédige le message avec le montant faux sans signaler la contradiction (échec). Conclusion de Joseph : « Utilisable pour reformuler et résumer des documents que nous fournissons ; jamais pour répondre de mémoire sur nos règles ; toujours relire les montants. »
 
@@ -971,7 +967,7 @@ Une fiche d'évaluation de l'outil, partagée avec l'équipe, indiquant les usag
 
 ## 2.9 Contrôles humains
 
-> **🛑 Contrôle humain obligatoire** — Toute réponse d'IA portant sur une règle interne, un montant, une obligation légale ou une personne doit être vérifiée sur la source originale avant d'être utilisée ou transmise.
+> **🛑 Contrôle humain obligatoire** : Toute réponse d'IA portant sur une règle interne, un montant, une obligation légale ou une personne doit être vérifiée sur la source originale avant d'être utilisée ou transmise.
 
 ## 2.10 Risques et erreurs à éviter
 
@@ -995,7 +991,7 @@ Une fiche d'évaluation de l'outil, partagée avec l'équipe, indiquant les usag
 - Le RAG permet de faire répondre un modèle à partir de vos documents, avec citation des sources ; sa qualité dépend de votre gestion documentaire.
 - Les hallucinations, les erreurs de calcul, la complaisance et l'injection de prompt sont des limites connues : on s'en protège par la méthode.
 
-## 2.13 QCM — Module 2
+## 2.13 QCM : Module 2
 
 **Q1.** (une seule réponse) Dans l'apprentissage supervisé, les exemples d'entraînement :
 
@@ -1046,14 +1042,14 @@ b) La possibilité de mettre à jour les connaissances sans réentraîner le mod
 c) La garantie absolue de réponses exactes, quelle que soit la base documentaire.
 d) Des réponses fondées sur les documents propres à l'organisation.
 
-**Q8.** (mise en situation — une seule réponse) Un assistant cite « l'article 14 de votre manuel de procédures » alors que vous ne lui avez fourni aucun document. Il s'agit très probablement :
+**Q8.** (mise en situation, une seule réponse) Un assistant cite « l'article 14 de votre manuel de procédures » alors que vous ne lui avez fourni aucun document. Il s'agit très probablement :
 
 a) d'une preuve qu'il a accès à vos serveurs.
 b) d'une information fiable.
 c) d'une hallucination.
 d) d'une injection de prompt.
 
-**Q9.** (mise en situation — une seule réponse) Vous envisagez un agent IA qui lirait les courriels entrants et paierait automatiquement les factures reçues. La recommandation principale est :
+**Q9.** (mise en situation, une seule réponse) Vous envisagez un agent IA qui lirait les courriels entrants et paierait automatiquement les factures reçues. La recommandation principale est :
 
 a) de le déployer, car il fera gagner du temps.
 b) de limiter ses droits et d'imposer une validation humaine avant tout paiement.
@@ -1067,7 +1063,7 @@ b) Demander des citations exactes des documents fournis.
 c) Formuler les questions de manière neutre.
 d) Croire la réponse si elle est formulée avec assurance.
 
-## 2.14 Corrigé détaillé — Module 2
+## 2.14 Corrigé détaillé : Module 2
 
 **Q1 : b.** L'étiquette est la bonne réponse associée à chaque exemple. L'absence d'étiquette caractérise l'apprentissage non supervisé.
 
@@ -1101,7 +1097,7 @@ d) Croire la réponse si elle est formulée avec assurance.
 - Vaswani, A., et al. (2017). Attention is all you need. *Advances in Neural Information Processing Systems, 30*.
 
 
-# Module 3 — Apprendre à utiliser et maîtriser les outils d'IA {#h4}
+# Module 3 : Apprendre à utiliser et maîtriser les outils d'IA {#h4}
 
 ## 3.1 Mise en situation
 
@@ -1147,21 +1143,21 @@ L'efficacité d'un outil d'IA dépend largement de la qualité de la consigne et
 | Transcription | Outils de transcription audio | Comptes rendus, entretiens | Consentement ; erreurs sur les noms propres |
 | Automatisation | Plateformes d'automatisation sans code | Enchaîner des actions entre applications | Erreurs reproduites à grande échelle |
 
-Table: Tableau 3.1 — Explications détaillées
+Table: Tableau 3.1 : Explications détaillées
 
-> **📶 Faible connectivité** — Les assistants en ligne exigent une connexion. Préparez vos consignes et documents hors ligne, regroupez vos demandes en une seule session de connexion, et privilégiez les outils capables de travailler sur des fichiers que vous enregistrez ensuite localement. Certains modèles plus petits peuvent fonctionner sur un ordinateur sans connexion (niveau Avancé, module 9), au prix de performances moindres.
+> **📶 Faible connectivité** : Les assistants en ligne exigent une connexion. Préparez vos consignes et documents hors ligne, regroupez vos demandes en une seule session de connexion, et privilégiez les outils capables de travailler sur des fichiers que vous enregistrez ensuite localement. Certains modèles plus petits peuvent fonctionner sur un ordinateur sans connexion (niveau Avancé, module 9), au prix de performances moindres.
 
 ### La méthode CADRE
 
-![Figure 3.1 — Anatomie d'un prompt efficace : la méthode CADRE](03_ILLUSTRATIONS/figures/fig_3_1.svg){#fig-3-1}
+![Figure 3.1 : Anatomie d'un prompt efficace : la méthode CADRE](03_ILLUSTRATIONS/figures/fig_3_1.svg){#fig-3-1}
 
 Une bonne consigne répond à cinq questions. Retenez l'acronyme **CADRE** :
 
-- **C — Contexte** : qui je suis, pour qui je travaille, dans quelle situation.
-- **A — Action** : ce que l'outil doit faire, avec un verbe précis (résumer, comparer, extraire, rédiger, classer, vérifier, reformuler).
-- **D — Données** : ce que je fournis, clairement délimité, et la consigne de ne s'appuyer que sur ces données lorsque c'est nécessaire.
-- **R — Résultat attendu** : format, longueur, structure, ton, langue, public.
-- **E — Exigences et limites** : ce qu'il ne faut pas faire ; comment signaler un doute ou une information manquante.
+- **C : Contexte** : qui je suis, pour qui je travaille, dans quelle situation.
+- **A : Action** : ce que l'outil doit faire, avec un verbe précis (résumer, comparer, extraire, rédiger, classer, vérifier, reformuler).
+- **D : Données** : ce que je fournis, clairement délimité, et la consigne de ne s'appuyer que sur ces données lorsque c'est nécessaire.
+- **R : Résultat attendu** : format, longueur, structure, ton, langue, public.
+- **E : Exigences et limites** : ce qu'il ne faut pas faire ; comment signaler un doute ou une information manquante.
 
 Comparons deux consignes pour la même tâche.
 
@@ -1186,7 +1182,7 @@ obtenus par rapport aux objectifs, les difficultés et les décisions
 chiffres du rapport.
 ```
 
-La seconde consigne est plus longue à écrire — une minute de plus — mais elle produit un résultat directement exploitable, vérifiable, et réutilisable comme modèle.
+La seconde consigne est plus longue à écrire, une minute de plus, mais elle produit un résultat directement exploitable, vérifiable, et réutilisable comme modèle.
 
 ### Techniques complémentaires
 
@@ -1200,14 +1196,14 @@ La seconde consigne est plus longue à écrire — une minute de plus — mais e
 
 ### La boucle de vérification « 6 V »
 
-![Figure 3.2 — La boucle de vérification d'une réponse d'IA](03_ILLUSTRATIONS/figures/fig_3_2.svg){#fig-3-2}
+![Figure 3.2 : La boucle de vérification d'une réponse d'IA](03_ILLUSTRATIONS/figures/fig_3_2.svg){#fig-3-2}
 
 1. **Formuler** avec CADRE.
 2. **Lire la réponse en entier**, pas seulement le début.
 3. **Vérifier les faits, chiffres, noms, dates**, un par un.
 4. **Confronter aux sources originales** (le document fourni, le texte officiel, le tableur).
 5. **Corriger ou reformuler** la consigne si nécessaire.
-6. **Valider et documenter** : qui a vérifié, quand, avec quelle source — en particulier pour les documents externes.
+6. **Valider et documenter** : qui a vérifié, quand, avec quelle source, en particulier pour les documents externes.
 
 Le niveau de vérification doit être proportionné à l'enjeu : un brouillon de message interne demande une relecture ; un rapport financier à un bailleur, une vérification ligne par ligne.
 
@@ -1223,11 +1219,11 @@ Les trois fiches suivantes couvrent les usages les plus fréquents : synthèse d
 | Intermédiaire | Assistant intégré à la suite bureautique professionnelle ; bibliothèque partagée de consignes ; documents internes autorisés selon la classification | Suite bureautique avec IA, espace documentaire partagé | Référent numérique, règles d'usage | Abonnements par utilisateur | Vérifier le contrat (non-utilisation des données pour l'entraînement, localisation) |
 | Avancé | Assistants configurés par métier, reliés à la base documentaire (RAG), consignes standardisées et journalisées | Plateforme d'IA d'entreprise, API | Compétences techniques, gouvernance | Licences, intégration, maintenance | Complexité, dépendance au fournisseur |
 
-Table: Tableau 3.2 — Application professionnelle : trois usages quotidiens maîtrisés
+Table: Tableau 3.2 : Application professionnelle : trois usages quotidiens maîtrisés
 
 ## 3.7 Prompts prêts à l'emploi
 
-### Fiche P3.1 — Synthèse fidèle d'un document
+### Fiche P3.1 : Synthèse fidèle d'un document
 
 **A. Titre.** Synthèse décisionnelle d'un rapport.
 
@@ -1268,7 +1264,7 @@ maximum hors tableau.
 
 **K. Amélioration.** *V1* : « Résume ce rapport. » → réponse générique, sans référence, impossible à vérifier. *V2* : la fiche ci-dessus. *Si la synthèse reste trop longue* : « Réduis à 150 mots en gardant uniquement ce qui influence la décision. »
 
-### Fiche P3.2 — Analyser un tableau de données sans se tromper dans les calculs
+### Fiche P3.2 : Analyser un tableau de données sans se tromper dans les calculs
 
 **A. Titre.** Analyse assistée d'un tableau de suivi.
 
@@ -1309,7 +1305,7 @@ d'arguments « ; ».
 
 **K. Amélioration.** Si les formules ne fonctionnent pas, transmettez le message d'erreur exact et la version de votre logiciel : « La formule renvoie #NOM?. J'utilise [LOGICIEL ET VERSION] en français. »
 
-### Fiche P3.3 — Traduction contrôlée d'un support destiné aux communautés
+### Fiche P3.3 : Traduction contrôlée d'un support destiné aux communautés
 
 **A. Titre.** Traduction adaptée et contrôlée.
 
@@ -1351,11 +1347,11 @@ et signale-le.
 
 ## 3.8 Exercices progressifs
 
-**Niveau 1 — Découverte (20 minutes).** Rédigez avec CADRE une consigne demandant un message de remerciement à des bénévoles après une journée de collecte. Comparez le résultat avec celui d'une consigne d'une seule ligne.
+**Niveau 1 : Découverte (20 minutes).** Rédigez avec CADRE une consigne demandant un message de remerciement à des bénévoles après une journée de collecte. Comparez le résultat avec celui d'une consigne d'une seule ligne.
 
-**Niveau 2 — Pratique (40 minutes).** Prenez un rapport public de votre organisation. Appliquez la fiche P3.1. Vérifiez chaque chiffre. Notez le temps passé à vérifier.
+**Niveau 2 : Pratique (40 minutes).** Prenez un rapport public de votre organisation. Appliquez la fiche P3.1. Vérifiez chaque chiffre. Notez le temps passé à vérifier.
 
-**Niveau 3 — Maîtrise (60 minutes).** Construisez une bibliothèque de trois consignes pour votre métier, testez chacune trois fois, notez la stabilité des résultats, et rédigez pour chacune la méthode de vérification.
+**Niveau 3 : Maîtrise (60 minutes).** Construisez une bibliothèque de trois consignes pour votre métier, testez chacune trois fois, notez la stabilité des résultats, et rédigez pour chacune la méthode de vérification.
 
 **Éléments de correction.** Le niveau 1 doit faire apparaître des différences nettes (ton, longueur, personnalisation). Le niveau 2 révèle généralement au moins une imprécision à corriger : c'est l'objectif de l'exercice. Le niveau 3 est réussi si chaque consigne comporte les cinq blocs CADRE, une méthode de vérification et une indication des données à ne pas utiliser.
 
@@ -1365,7 +1361,7 @@ Une pratique plus régulière et plus sûre ; une bibliothèque de consignes par
 
 ## 3.10 Contrôles humains
 
-> **🛑 Contrôle humain obligatoire** — Tout document produit avec l'IA et destiné à l'extérieur (bailleur, autorités, partenaires, communautés, public) est relu et validé par une personne habilitée, qui en assume le contenu.
+> **🛑 Contrôle humain obligatoire** : Tout document produit avec l'IA et destiné à l'extérieur (bailleur, autorités, partenaires, communautés, public) est relu et validé par une personne habilitée, qui en assume le contenu.
 
 ## 3.11 Risques et erreurs à éviter
 
@@ -1383,7 +1379,7 @@ Une pratique plus régulière et plus sûre ; une bibliothèque de consignes par
 - La boucle « 6 V » garantit une vérification proportionnée à l'enjeu.
 - Les meilleures consignes se partagent et se capitalisent.
 
-## 3.13 QCM — Module 3
+## 3.13 QCM : Module 3
 
 **Q1.** (une seule réponse) Dans la méthode CADRE, la lettre D désigne :
 
@@ -1427,14 +1423,14 @@ b) Confronter aux sources originales.
 c) Publier immédiatement.
 d) Valider et documenter.
 
-**Q7.** (mise en situation — une seule réponse) L'assistant propose une formule de tableur qui renvoie une erreur. La meilleure réaction est :
+**Q7.** (mise en situation, une seule réponse) L'assistant propose une formule de tableur qui renvoie une erreur. La meilleure réaction est :
 
 a) transmettre le message d'erreur exact et la version du logiciel, puis tester la nouvelle formule sur des lignes connues.
 b) abandonner le tableur.
 c) recopier les résultats calculés par l'assistant.
 d) changer d'outil d'IA sans rien préciser.
 
-**Q8.** (mise en situation — une seule réponse) Une collègue veut diffuser aux familles une traduction automatique d'un message sur la vaccination, sans relecture, « car c'est urgent ». Vous recommandez :
+**Q8.** (mise en situation, une seule réponse) Une collègue veut diffuser aux familles une traduction automatique d'un message sur la vaccination, sans relecture, « car c'est urgent ». Vous recommandez :
 
 a) de diffuser, l'urgence prime.
 b) de diffuser en ajoutant « traduction automatique ».
@@ -1455,13 +1451,13 @@ b) les données à ne pas utiliser.
 c) le nom de la personne qui l'a écrite, à l'exclusion de toute autre information.
 d) un exemple d'utilisation.
 
-## 3.14 Corrigé détaillé — Module 3
+## 3.14 Corrigé détaillé : Module 3
 
 **Q1 : c.** D = Données : ce qui est fourni, délimité, avec éventuellement la consigne de s'y limiter.
 
 **Q2 : b.** Les modèles de langage ne sont pas fiables pour les calculs exacts ; le tableur l'est. L'IA peut aider à écrire la formule.
 
-**Q3 : a, b, c.** Une réponse plus longue (d) n'est pas plus fiable — souvent l'inverse.
+**Q3 : a, b, c.** Une réponse plus longue (d) n'est pas plus fiable, souvent l'inverse.
 
 **Q4 : d.** Les délimiteurs évitent que l'outil confonde vos instructions et le contenu à traiter, et limitent l'effet d'instructions cachées dans les données.
 
@@ -1485,11 +1481,11 @@ d) un exemple d'utilisation.
 - Ji, Z., et al. (2023). Survey of hallucination in natural language generation. *ACM Computing Surveys, 55*(12), article 248.
 
 
-# Partie II — Comprendre son ASBL et identifier les problèmes {#h5 .partie}
+# Partie II : Comprendre son ASBL et identifier les problèmes {#h5 .partie}
 
-*Vous savez désormais ce que l'IA peut et ne peut pas faire. Encore faut-il savoir où elle serait utile chez vous. Cette partie vous apprend à regarder votre organisation comme un système : ses organes, ses métiers, ses cycles, ses processus — et ses dysfonctionnements. C'est la condition pour choisir les bonnes priorités.*
+*Vous savez désormais ce que l'IA peut et ne peut pas faire. Encore faut-il savoir où elle serait utile chez vous. Cette partie vous apprend à regarder votre organisation comme un système : ses organes, ses métiers, ses cycles, ses processus, et ses dysfonctionnements. C'est la condition pour choisir les bonnes priorités.*
 
-# Module 4 — Comprendre le fonctionnement d'une ASBL moderne {#h6}
+# Module 4 : Comprendre le fonctionnement d'une ASBL moderne {#h6}
 
 ## 4.1 Mise en situation
 
@@ -1514,7 +1510,7 @@ Les projets numériques échouent souvent parce qu'ils sont conçus pour un serv
 
 ## 4.4 Notions et définitions
 
-- **Mission** : raison d'être de l'organisation — ce qu'elle fait, pour qui et pourquoi.
+- **Mission** : raison d'être de l'organisation : ce qu'elle fait, pour qui et pourquoi.
 - **Vision** : situation future que l'organisation souhaite contribuer à créer.
 - **Valeurs** : principes qui guident les comportements et les décisions.
 - **Gouvernance** : ensemble des règles et organes qui orientent, contrôlent et rendent compte (assemblée générale, conseil d'administration, comités).
@@ -1522,7 +1518,7 @@ Les projets numériques échouent souvent parce qu'ils sont conçus pour un serv
 - **Partie prenante** : personne ou organisation qui influence l'ASBL ou est affectée par ses actions.
 - **Processus** : enchaînement d'activités qui transforme des entrées en résultats pour un destinataire (par exemple : « payer un fournisseur »).
 
-> **⚖️ Adaptation réglementaire** — Le nom, la composition et les pouvoirs des organes (assemblée générale, conseil d'administration, bureau, conseil de surveillance, *board of trustees*…) dépendent du droit applicable et des statuts. Vérifiez toujours vos statuts et la loi de votre pays avant de modifier un circuit de décision.
+> **⚖️ Adaptation réglementaire** : Le nom, la composition et les pouvoirs des organes (assemblée générale, conseil d'administration, bureau, conseil de surveillance, *board of trustees*…) dépendent du droit applicable et des statuts. Vérifiez toujours vos statuts et la loi de votre pays avant de modifier un circuit de décision.
 
 ## 4.5 Explications détaillées
 
@@ -1532,7 +1528,7 @@ La mission n'est pas un texte décoratif. Elle fournit le premier critère de s�
 
 ### Gouvernance et organes dirigeants
 
-![Figure 4.1 — Organigramme type d'une ASBL de taille moyenne](03_ILLUSTRATIONS/figures/fig_4_1.svg){#fig-4-1}
+![Figure 4.1 : Organigramme type d'une ASBL de taille moyenne](03_ILLUSTRATIONS/figures/fig_4_1.svg){#fig-4-1}
 
 Dans la plupart des ASBL, on retrouve trois niveaux.
 
@@ -1542,9 +1538,9 @@ Dans la plupart des ASBL, on retrouve trois niveaux.
 | Orientation et contrôle | Conseil d'administration, éventuellement comités (audit, finances, programmes) | Fixe la stratégie, adopte le budget et les politiques, contrôle la direction | Adoption d'une politique d'utilisation de l'IA |
 | Exécution | Direction exécutive et équipes | Met en œuvre, gère, rend compte | Choix d'un outil dans l'enveloppe budgétaire votée |
 
-Table: Tableau 4.1 — Explications détaillées
+Table: Tableau 4.1 : Explications détaillées
 
-Dans les très petites associations, ces niveaux se confondent souvent : le président est aussi trésorier et coordinateur. Ce n'est pas un problème en soi, mais cela affaiblit le contrôle interne (module 13) et rend l'organisation dépendante de quelques personnes — un risque que l'IA peut aider à réduire en documentant les connaissances.
+Dans les très petites associations, ces niveaux se confondent souvent : le président est aussi trésorier et coordinateur. Ce n'est pas un problème en soi, mais cela affaiblit le contrôle interne (module 13) et rend l'organisation dépendante de quelques personnes : un risque que l'IA peut aider à réduire en documentant les connaissances.
 
 ### Organigramme, départements et métiers
 
@@ -1558,7 +1554,7 @@ L'organigramme montre les liens hiérarchiques. Pour un projet d'IA, il faut le 
 | Communication et partenariats | Chargé de communication, chargé de partenariats | Contacts, contenus, conventions | Publications, propositions, conventions |
 | Gouvernance | Président, secrétaire, administrateurs | Décisions, mandats | PV, registres, rapports annuels |
 
-Table: Tableau 4.2 — Explications détaillées
+Table: Tableau 4.2 : Explications détaillées
 
 ### Bénéficiaires, partenaires et ressources
 
@@ -1566,7 +1562,7 @@ Une ASBL est au centre d'un réseau de relations :
 
 - **les bénéficiaires**, qui doivent être au cœur des choix, y compris technologiques : sont-ils informés ? leur consentement est-il recueilli ? peuvent-ils réclamer ?
 - **les bailleurs et donateurs**, qui imposent souvent des exigences de reporting, de procédures et de protection des données ;
-- **les partenaires opérationnels**, avec lesquels on partage des données — ce qui suppose des accords ;
+- **les partenaires opérationnels**, avec lesquels on partage des données : ce qui suppose des accords ;
 - **les autorités**, qui fixent des obligations déclaratives et réglementaires ;
 - **les fournisseurs**, y compris les fournisseurs de solutions numériques, qui deviennent des partenaires critiques.
 
@@ -1574,7 +1570,7 @@ Les **ressources** comprennent les financements (affectés ou non affectés), le
 
 ### Les cycles de fonctionnement
 
-![Figure 4.2 — Les cycles de fonctionnement d'une ASBL](03_ILLUSTRATIONS/figures/fig_4_2.svg){#fig-4-2}
+![Figure 4.2 : Les cycles de fonctionnement d'une ASBL](03_ILLUSTRATIONS/figures/fig_4_2.svg){#fig-4-2}
 
 Quatre cycles s'emboîtent :
 
@@ -1598,7 +1594,7 @@ Samuel décide de construire, en trois semaines, une « radiographie » de l'org
 | 5 | Calendrier des cycles | Calendrier annuel des échéances | Extraction des échéances des conventions | Vérification des dates sur les conventions signées |
 | 6 | Restitution | Présentation de 10 diapositives | Aide à la structure | Présentation et débat |
 
-Table: Tableau 4.3 — Application professionnelle : radiographie d'Horizons Partagés
+Table: Tableau 4.3 : Application professionnelle : radiographie d'Horizons Partagés
 
 ### Solutions selon le niveau
 
@@ -1608,11 +1604,11 @@ Table: Tableau 4.3 — Application professionnelle : radiographie d'Horizons Par
 | Intermédiaire | Transcription des entretiens (avec consentement), synthèse dans un outil professionnel, cartographie partagée sur un tableau blanc numérique | Outil de transcription, suite collaborative | Abonnements | Confidentialité des enregistrements |
 | Avancé | Référentiel d'organisation (rôles, processus, applications, données) tenu dans un outil de modélisation, alimentant la base documentaire de l'assistant interne | Outil de cartographie d'entreprise, RAG | Licences, compétences | Exige une mise à jour continue |
 
-Table: Tableau 4.4 — Application professionnelle : radiographie d'Horizons Partagés
+Table: Tableau 4.4 : Application professionnelle : radiographie d'Horizons Partagés
 
 ## 4.7 Prompt prêt à l'emploi
 
-### Fiche P4.1 — Cartographier les parties prenantes
+### Fiche P4.1 : Cartographier les parties prenantes
 
 **A. Titre.** Matrice des parties prenantes d'une ASBL.
 
@@ -1647,7 +1643,7 @@ des catégories génériques.
 
 **G. Résultat attendu.** Un tableau de 12 à 20 lignes et une liste priorisée.
 
-**H. Exemple d'application (illustratif).** Pour Horizons Partagés, le tableau fait notamment apparaître : « Agents de santé communautaires — interne/terrain — influence moyenne — intérêt fort — attente : moins de saisie double — crainte : surveillance de leur travail — mode : associer ». Cette dernière crainte, que la direction n'avait pas anticipée, sera confirmée en entretien.
+**H. Exemple d'application (illustratif).** Pour Horizons Partagés, le tableau fait notamment apparaître : « Agents de santé communautaires, interne/terrain, influence moyenne, intérêt fort, attente : moins de saisie double (crainte : surveillance de leur travail) mode : associer ». Cette dernière crainte, que la direction n'avait pas anticipée, sera confirmée en entretien.
 
 **I. Méthode de vérification.** Confrontez la liste aux conventions, à l'organigramme et aux registres de partenaires. Validez les hypothèses d'attentes et de craintes par 3 à 5 entretiens.
 
@@ -1661,7 +1657,7 @@ Un dossier de référence, un organigramme fonctionnel validé, une matrice des 
 
 ## 4.9 Contrôles humains
 
-> **🛑 Contrôle humain obligatoire** — La représentation de l'organisation (organigramme, circuits de décision) doit être validée par les responsables concernés et, pour les pouvoirs des organes, confrontée aux statuts. Un document de gouvernance erroné peut conduire à des décisions prises par un organe non compétent.
+> **🛑 Contrôle humain obligatoire** : La représentation de l'organisation (organigramme, circuits de décision) doit être validée par les responsables concernés et, pour les pouvoirs des organes, confrontée aux statuts. Un document de gouvernance erroné peut conduire à des décisions prises par un organe non compétent.
 
 ## 4.10 Risques et erreurs à éviter
 
@@ -1682,10 +1678,10 @@ Un dossier de référence, un organigramme fonctionnel validé, une matrice des 
 - La mission et les valeurs sont les premiers critères de choix technologiques.
 - Gouvernance, direction et exécution ont des rôles distincts, même dans une petite structure.
 - L'organigramme hiérarchique doit être complété par une vision fonctionnelle (métiers, données, documents).
-- Les parties prenantes — bénéficiaires en tête — doivent être identifiées et impliquées.
+- Les parties prenantes, bénéficiaires en tête, doivent être identifiées et impliquées.
 - Les cycles de fonctionnement révèlent les tâches répétitives, premiers gisements pour l'IA.
 
-## 4.13 QCM — Module 4
+## 4.13 QCM : Module 4
 
 **Q1.** (une seule réponse) La mission d'une ASBL :
 
@@ -1729,14 +1725,14 @@ b) la validation des comptes.
 c) les tâches de collecte, de consolidation et de mise en forme.
 d) l'élection des administrateurs.
 
-**Q7.** (mise en situation — une seule réponse) Dans une association de cinq personnes, la présidente est aussi trésorière et coordinatrice. Le principal risque à signaler est :
+**Q7.** (mise en situation, une seule réponse) Dans une association de cinq personnes, la présidente est aussi trésorière et coordinatrice. Le principal risque à signaler est :
 
 a) un excès de contrôle.
 b) un affaiblissement du contrôle interne et une forte dépendance à une personne.
 c) l'impossibilité d'utiliser un tableur.
 d) l'interdiction légale de cumuler ces fonctions dans tous les pays.
 
-**Q8.** (mise en situation — une seule réponse) Un assistant propose une matrice des parties prenantes mentionnant les « craintes des agents de terrain ». Comment traiter cette information ?
+**Q8.** (mise en situation, une seule réponse) Un assistant propose une matrice des parties prenantes mentionnant les « craintes des agents de terrain ». Comment traiter cette information ?
 
 a) La traiter comme une hypothèse à vérifier par des entretiens.
 b) La considérer comme établie.
@@ -1757,7 +1753,7 @@ b) Pour tenir compte des interactions entre services.
 c) Pour identifier les circuits de décision compétents.
 d) Pour choisir le fournisseur le moins cher.
 
-## 4.14 Corrigé détaillé — Module 4
+## 4.14 Corrigé détaillé : Module 4
 
 **Q1 : d.** La mission dit quoi, pour qui et pourquoi ; elle oriente les choix.
 
@@ -1782,7 +1778,7 @@ d) Pour choisir le fournisseur le moins cher.
 **Barème.** 2 points par question (tout ou rien pour les réponses multiples). Total sur 20. **Niveau de maîtrise :** 0–9 à consolider · 10–13 en progression · 14–17 maîtrise opérationnelle · 18–20 maîtrise avancée.
 
 
-# Module 5 — Diagnostiquer les dysfonctionnements et cartographier les processus {#h7}
+# Module 5 : Diagnostiquer les dysfonctionnements et cartographier les processus {#h7}
 
 ## 5.1 Mise en situation
 
@@ -1813,7 +1809,7 @@ On confond souvent le **symptôme** (« les rapports sont en retard »), le **pr
 - **Processus « tel quel » (*as-is*)** : description du processus tel qu'il se déroule réellement, et non tel qu'il est prévu dans les procédures.
 - **Processus cible (*to-be*)** : processus amélioré que l'on souhaite mettre en place.
 - **Point de blocage** : étape où le flux ralentit, s'arrête ou génère des erreurs.
-- **Contrôle interne** : dispositifs qui donnent une assurance raisonnable sur l'atteinte des objectifs, la fiabilité de l'information et la conformité. Le référentiel COSO (2013) l'organise en cinq composantes — environnement de contrôle, évaluation des risques, activités de contrôle, information et communication, pilotage — déclinées en dix-sept principes.
+- **Contrôle interne** : dispositifs qui donnent une assurance raisonnable sur l'atteinte des objectifs, la fiabilité de l'information et la conformité. Le référentiel COSO (2013) l'organise en cinq composantes (environnement de contrôle, évaluation des risques, activités de contrôle, information et communication, pilotage) déclinées en dix-sept principes.
 
 ## 5.5 Explications détaillées
 
@@ -1827,27 +1823,27 @@ On confond souvent le **symptôme** (« les rapports sont en retard »), le **pr
 | **Comptable** | Les écritures sont-elles complètes, justifiées et à jour ? Les rapprochements sont-ils faits ? | Grand livre, rapprochements bancaires, échantillon de pièces |
 | **Opérationnel** | Les activités sont-elles suivies ? Les données de terrain sont-elles fiables et à temps ? | Bases de suivi, rapports d'activité, visites de terrain |
 
-Table: Tableau 5.1 — Explications détaillées
+Table: Tableau 5.1 : Explications détaillées
 
 Un diagnostic utile combine **trois types de preuves** : ce que disent les personnes (entretiens), ce que montrent les documents, et ce que l'on observe (suivre une facture du début à la fin, par exemple).
 
 ### Des symptômes aux causes profondes
 
-![Figure 5.2 — Arbre des causes : retards de reporting financier](03_ILLUSTRATIONS/figures/fig_5_2.svg){#fig-5-2}
+![Figure 5.2 : Arbre des causes : retards de reporting financier](03_ILLUSTRATIONS/figures/fig_5_2.svg){#fig-5-2}
 
 Deux techniques simples suffisent la plupart du temps.
 
 **Les « 5 pourquoi ».** On pose la question « pourquoi ? » jusqu'à atteindre une cause sur laquelle on peut agir.
 
-1. Pourquoi les rapports financiers sont-ils en retard ? — Parce que la clôture mensuelle n'est pas terminée.
-2. Pourquoi ? — Parce que des dépenses ne sont pas encore saisies.
-3. Pourquoi ? — Parce que les demandes de paiement attendent la signature du directeur.
-4. Pourquoi ? — Parce qu'il est le seul habilité à signer, quel que soit le montant.
-5. Pourquoi ? — Parce que la délégation de signature n'a jamais été formalisée.
+1. Pourquoi les rapports financiers sont-ils en retard ? : Parce que la clôture mensuelle n'est pas terminée.
+2. Pourquoi ? : Parce que des dépenses ne sont pas encore saisies.
+3. Pourquoi ? : Parce que les demandes de paiement attendent la signature du directeur.
+4. Pourquoi ? : Parce qu'il est le seul habilité à signer, quel que soit le montant.
+5. Pourquoi ? : Parce que la délégation de signature n'a jamais été formalisée.
 
 La cause profonde est organisationnelle : **absence de délégation de signature par seuil.** La solution relève du conseil d'administration, pas d'un logiciel. Une fois cette cause traitée, un workflow de validation électronique (module 12) devient pertinent.
 
-**Le diagramme causes-effet** (ou « en arête de poisson ») classe les causes par familles — méthodes, outils, personnes, données, environnement — et évite de s'arrêter à une seule explication.
+**Le diagramme causes-effet** (ou « en arête de poisson ») classe les causes par familles (méthodes, outils, personnes, données, environnement) et évite de s'arrêter à une seule explication.
 
 ### Repérer les tâches répétitives
 
@@ -1863,13 +1859,13 @@ Une méthode simple consiste à faire tenir à chaque personne, pendant deux sem
 
 ### Cartographier un processus
 
-![Figure 5.1 — Cartographie « tel quel » du circuit des dépenses](03_ILLUSTRATIONS/figures/fig_5_1.svg){#fig-5-1}
+![Figure 5.1 : Cartographie « tel quel » du circuit des dépenses](03_ILLUSTRATIONS/figures/fig_5_1.svg){#fig-5-1}
 
 La cartographie en **couloirs** (une ligne par acteur) est la plus lisible. Pour la construire :
 
 1. **Délimiter** le processus : événement déclencheur (« un besoin de dépense apparaît ») et résultat final (« la dépense est payée, enregistrée et archivée »).
 2. **Lister les acteurs** : chaque acteur a son couloir.
-3. **Décrire les étapes réelles** dans l'ordre, en interrogeant les personnes qui les exécutent — pas seulement les responsables.
+3. **Décrire les étapes réelles** dans l'ordre, en interrogeant les personnes qui les exécutent, pas seulement les responsables.
 4. **Noter pour chaque étape** : durée, outil, document, règle, contrôle.
 5. **Marquer les points de blocage** : attentes, ressaisies, allers-retours, pertes d'information.
 6. **Faire valider** la carte par les acteurs.
@@ -1886,9 +1882,9 @@ Lors de la cartographie, posez systématiquement les questions suivantes, inspir
 | Information et communication | L'information est-elle fiable, à jour et accessible aux bonnes personnes ? | Budget suivi dans des fichiers personnels non partagés |
 | Pilotage | Les contrôles sont-ils eux-mêmes vérifiés ? | Rapprochements bancaires non revus |
 
-Table: Tableau 5.2 — Explications détaillées
+Table: Tableau 5.2 : Explications détaillées
 
-> **🔎 À retenir** — Un diagnostic n'est pas un audit à charge. Son but est de comprendre pour améliorer. Présentez-le ainsi aux équipes : vous obtiendrez des informations plus sincères.
+> **🔎 À retenir** : Un diagnostic n'est pas un audit à charge. Son but est de comprendre pour améliorer. Présentez-le ainsi aux équipes : vous obtiendrez des informations plus sincères.
 
 ## 5.6 Application professionnelle : diagnostic du circuit des dépenses d'Horizons Partagés
 
@@ -1906,7 +1902,7 @@ Table: Tableau 5.2 — Explications détaillées
 
 **G. Résultat recherché.** Rapports remis dans les délais contractuels ; 100 % des pièces retrouvables en moins de cinq minutes ; délai moyen de traitement d'une dépense ramené à cinq jours ouvrables.
 
-**H. Pertinence de l'IA.** Partielle : l'extraction de données des pièces et le classement peuvent être assistés (module 12) ; mais les deux causes principales — délégation de signature et formulaires incomplets — sont organisationnelles.
+**H. Pertinence de l'IA.** Partielle : l'extraction de données des pièces et le classement peuvent être assistés (module 12) ; mais les deux causes principales, délégation de signature et formulaires incomplets, sont organisationnelles.
 
 **I. Alternatives sans IA.** Délégation de signature par seuils adoptée par le CA ; formulaire numérique avec champs obligatoires ; plan de classement et règle de nommage (module 7) ; calendrier de clôture.
 
@@ -1942,11 +1938,11 @@ Table: Tableau 5.2 — Explications détaillées
 | Intermédiaire | Formulaire en ligne pour le journal des tâches ; outil de diagramme ; synthèse assistée des entretiens | Formulaire, outil de diagramme, suite bureautique avec IA | Abonnements modestes | Confidentialité des entretiens |
 | Avancé | Analyse des journaux d'événements des logiciels (dates de création, de validation, de paiement) pour mesurer les délais réels (« fouille de processus ») | Outil d'analyse de processus, extraction de données ERP | Licences, compétences | Exige des données horodatées fiables |
 
-Table: Tableau 5.3 — Application professionnelle : diagnostic du circuit des dépenses d'Horizons Partagés
+Table: Tableau 5.3 : Application professionnelle : diagnostic du circuit des dépenses d'Horizons Partagés
 
 ## 5.7 Prompt prêt à l'emploi
 
-### Fiche P5.1 — Transformer des notes d'entretien en carte de processus
+### Fiche P5.1 : Transformer des notes d'entretien en carte de processus
 
 **A. Titre.** Du récit à la carte de processus en couloirs.
 
@@ -1998,7 +1994,7 @@ Un rapport de diagnostic de 5 à 10 pages comprenant : carte « tel quel », arb
 
 ## 5.9 Contrôles humains
 
-> **🛑 Contrôle humain obligatoire** — Les conclusions d'un diagnostic engagent des personnes et des services. Elles sont validées par la direction, présentées aux équipes concernées, et ne citent jamais de personne nommément comme cause d'un dysfonctionnement.
+> **🛑 Contrôle humain obligatoire** : Les conclusions d'un diagnostic engagent des personnes et des services. Elles sont validées par la direction, présentées aux équipes concernées, et ne citent jamais de personne nommément comme cause d'un dysfonctionnement.
 
 ## 5.10 Risques et erreurs à éviter
 
@@ -2022,7 +2018,7 @@ Un rapport de diagnostic de 5 à 10 pages comprenant : carte « tel quel », arb
 - Les cinq composantes du COSO offrent une grille simple pour repérer les faiblesses de contrôle interne.
 - Beaucoup de causes sont organisationnelles : elles se traitent avant ou à côté de l'IA.
 
-## 5.13 QCM — Module 5
+## 5.13 QCM : Module 5
 
 **Q1.** (une seule réponse) « Les rapports financiers arrivent en retard » est :
 
@@ -2066,14 +2062,14 @@ b) la lenteur d'internet.
 c) le nombre de bailleurs.
 d) l'absence de délégation de signature formalisée.
 
-**Q7.** (mise en situation — une seule réponse) Au bureau de terrain, la même personne commande, réceptionne et paie les fournitures. Quelle composante du contrôle interne est principalement concernée ?
+**Q7.** (mise en situation, une seule réponse) Au bureau de terrain, la même personne commande, réceptionne et paie les fournitures. Quelle composante du contrôle interne est principalement concernée ?
 
 a) Pilotage.
 b) Information et communication.
 c) Activités de contrôle (séparation des tâches).
 d) Aucune.
 
-**Q8.** (mise en situation — une seule réponse) Deux entretiens décrivent différemment la même étape. Que faites-vous ?
+**Q8.** (mise en situation, une seule réponse) Deux entretiens décrivent différemment la même étape. Que faites-vous ?
 
 a) Retenir la version du responsable hiérarchique.
 b) Suivre une transaction réelle pour établir les faits.
@@ -2094,7 +2090,7 @@ b) neutraliser les jugements sur des collègues.
 c) vérifier que l'outil est autorisé pour ce niveau de confidentialité.
 d) ajouter les coordonnées des personnes interrogées.
 
-## 5.14 Corrigé détaillé — Module 5
+## 5.14 Corrigé détaillé : Module 5
 
 **Q1 : a.** C'est la manifestation visible ; les causes sont à rechercher en amont.
 
@@ -2120,10 +2116,10 @@ d) ajouter les coordonnées des personnes interrogées.
 
 ## Références du module
 
-- Committee of Sponsoring Organizations of the Treadway Commission (COSO). (2013). *Internal Control — Integrated Framework*.
+- Committee of Sponsoring Organizations of the Treadway Commission (COSO). (2013). *Internal Control : Integrated Framework*.
 
 
-# Module 6 — Identifier les opportunités d'IA et choisir les bonnes priorités {#h8}
+# Module 6 : Identifier les opportunités d'IA et choisir les bonnes priorités {#h8}
 
 ## 6.1 Mise en situation
 
@@ -2133,7 +2129,7 @@ Comment choisir sans céder à l'idée la plus séduisante ou à la personne la 
 
 ## 6.2 Problématique
 
-Les organisations qui échouent avec l'IA ont souvent commencé par un projet trop ambitieux, mal défini, sur des données insuffisantes ou à risque élevé. À l'inverse, celles qui réussissent commencent par des cas d'usage précis, à valeur visible, réalisables avec leurs moyens, et dont les risques sont maîtrisables. Le choix des priorités est donc une décision décisive — et elle peut se faire avec méthode.
+Les organisations qui échouent avec l'IA ont souvent commencé par un projet trop ambitieux, mal défini, sur des données insuffisantes ou à risque élevé. À l'inverse, celles qui réussissent commencent par des cas d'usage précis, à valeur visible, réalisables avec leurs moyens, et dont les risques sont maîtrisables. Le choix des priorités est donc une décision décisive, et elle peut se faire avec méthode.
 
 ## 6.3 Objectifs d'apprentissage
 
@@ -2152,12 +2148,12 @@ Les organisations qui échouent avec l'IA ont souvent commencé par un projet tr
 - **Résultat attendu** : changement concret visé (temps, qualité, délai, accessibilité, satisfaction).
 - **Indicateur** : mesure qui permet de vérifier l'atteinte du résultat.
 - **Faisabilité** : capacité réelle à mettre en œuvre le cas d'usage avec les données, compétences, outils et budget disponibles.
-- **Coût total de possession** : ensemble des coûts sur la durée — acquisition, paramétrage, formation, abonnements, maintenance, temps de contrôle.
+- **Coût total de possession** : ensemble des coûts sur la durée : acquisition, paramétrage, formation, abonnements, maintenance, temps de contrôle.
 - **Gain rapide** : cas d'usage à forte valeur et à forte faisabilité, réalisable en quelques semaines.
 
 ## 6.5 Explications détaillées
 
-### Étape 1 — Partir des problèmes, pas des outils
+### Étape 1 : Partir des problèmes, pas des outils
 
 Chaque idée doit être reformulée en problème. « Un chatbot pour les bénéficiaires » n'est pas un problème. « Les bénéficiaires attendent en moyenne quatre jours une réponse à des questions simples sur les horaires et les documents à apporter » en est un. Cette reformulation fait souvent apparaître des solutions plus simples (une affiche, un message vocal enregistré, une FAQ imprimée).
 
@@ -2165,13 +2161,13 @@ Chaque idée doit être reformulée en problème. « Un chatbot pour les bénéf
 
 > Pour **[ACTEUR]**, dans le processus **[PROCESSUS]**, le problème est **[PROBLÈME OBSERVÉ, CHIFFRÉ SI POSSIBLE]**, ce qui entraîne **[CONSÉQUENCE]**. Nous voulons **[RÉSULTAT ATTENDU]**, mesuré par **[INDICATEUR]**.
 
-### Étape 2 — Définir les résultats attendus
+### Étape 2 : Définir les résultats attendus
 
 Un résultat attendu doit être **observable**. Évitez « améliorer l'efficacité ». Préférez « ramener le délai de production du procès-verbal de dix à trois jours » ou « réduire de moitié le nombre d'imputations corrigées lors de la revue mensuelle ». Notez la **valeur de départ** (issue du diagnostic) et la **valeur cible**.
 
-### Étape 3 — Automatisation classique ou IA ?
+### Étape 3 : Automatisation classique ou IA ?
 
-![Figure 6.2 — Arbre de décision : faut-il de l'IA, une automatisation classique ou rien ?](03_ILLUSTRATIONS/figures/fig_6_2.svg){#fig-6-2}
+![Figure 6.2 : Arbre de décision : faut-il de l'IA, une automatisation classique ou rien ?](03_ILLUSTRATIONS/figures/fig_6_2.svg){#fig-6-2}
 
 | Critère | Automatisation classique | IA |
 |---|---|---|
@@ -2181,11 +2177,11 @@ Un résultat attendu doit être **observable**. Évitez « améliorer l'efficaci
 | Explicabilité | Élevée | Variable, souvent faible |
 | Coût de contrôle | Faible après test | Permanent (vérification humaine) |
 
-Table: Tableau 6.1 — Explications détaillées
+Table: Tableau 6.1 : Explications détaillées
 
 **Règle d'or :** si une règle simple, une formule de tableur ou un modèle de document suffit, ce sont eux qu'il faut utiliser. L'IA se justifie quand la variabilité des entrées rend les règles impossibles à écrire.
 
-### Étape 4 — Évaluer la faisabilité
+### Étape 4 : Évaluer la faisabilité
 
 Cinq questions :
 
@@ -2195,35 +2191,35 @@ Cinq questions :
 4. **Intégration** : la solution s'insère-t-elle dans le processus existant sans créer de double saisie ?
 5. **Acceptabilité** : les utilisateurs et les personnes concernées accepteront-ils la solution ?
 
-### Étape 5 — Estimer coûts et bénéfices
+### Étape 5 : Estimer coûts et bénéfices
 
 Estimez les coûts sur **trois ans**, pas seulement l'année de lancement.
 
-*Exemple (fictif) — extraction assistée des factures à Horizons Partagés :*
+*Exemple (fictif) : extraction assistée des factures à Horizons Partagés :*
 
 | Poste | Année 1 | Année 2 | Année 3 |
 |---|---|---|---|
 | Abonnement outil d'extraction | 1 800 UM | 1 800 UM | 1 800 UM |
-| Paramétrage et intégration (prestataire) | 2 500 UM | — | — |
+| Paramétrage et intégration (prestataire) | 2 500 UM | Néant | Néant |
 | Formation (temps interne valorisé) | 600 UM | 200 UM | 200 UM |
 | Temps de contrôle humain | 1 200 UM | 1 200 UM | 1 200 UM |
 | **Total des coûts** | **6 100 UM** | **3 200 UM** | **3 200 UM** |
 
-Table: Tableau 6.2 — Explications détaillées
+Table: Tableau 6.2 : Explications détaillées
 
-Bénéfices estimés : la comptable traite environ 350 factures par mois ; la saisie manuelle prend en moyenne 6 minutes par facture, soit 35 heures par mois. Si l'outil ramène ce temps à 2,5 minutes (contrôle compris), le gain est d'environ 20 heures par mois, soit 240 heures par an. Valorisées à 15 UM de l'heure (coût complet fictif), cela représente 3 600 UM par an — à comparer aux 3 200 UM de coûts récurrents.
+Bénéfices estimés : la comptable traite environ 350 factures par mois ; la saisie manuelle prend en moyenne 6 minutes par facture, soit 35 heures par mois. Si l'outil ramène ce temps à 2,5 minutes (contrôle compris), le gain est d'environ 20 heures par mois, soit 240 heures par an. Valorisées à 15 UM de l'heure (coût complet fictif), cela représente 3 600 UM par an : à comparer aux 3 200 UM de coûts récurrents.
 
-Conclusion : le gain financier direct est modeste. Le cas d'usage se justifie surtout par des **bénéfices qualitatifs** — réduction des erreurs, pièces retrouvables, clôture plus rapide, réduction de la dépendance à une personne — qui doivent être explicités et mesurés. Ce type d'analyse honnête évite les désillusions.
+Conclusion : le gain financier direct est modeste. Le cas d'usage se justifie surtout par des **bénéfices qualitatifs** (réduction des erreurs, pièces retrouvables, clôture plus rapide, réduction de la dépendance à une personne) qui doivent être explicités et mesurés. Ce type d'analyse honnête évite les désillusions.
 
-> **🔎 À retenir** — Le temps « gagné » n'est un bénéfice que s'il est réaffecté à quelque chose d'utile. Précisez à quoi il servira.
+> **🔎 À retenir** : Le temps « gagné » n'est un bénéfice que s'il est réaffecté à quelque chose d'utile. Précisez à quoi il servira.
 
-### Étape 6 — Évaluer les risques
+### Étape 6 : Évaluer les risques
 
-Pour chaque cas d'usage, évaluez : la sensibilité des données (vert, orange, rouge — module 8) ; l'impact d'une erreur sur des personnes ou sur l'organisation ; le risque de biais ; la dépendance au fournisseur ; le risque d'image. Un cas d'usage qui implique des décisions sur des personnes vulnérables avec des données sensibles n'est jamais un « gain rapide ».
+Pour chaque cas d'usage, évaluez : la sensibilité des données (vert, orange, rouge ; voir le module 8) ; l'impact d'une erreur sur des personnes ou sur l'organisation ; le risque de biais ; la dépendance au fournisseur ; le risque d'image. Un cas d'usage qui implique des décisions sur des personnes vulnérables avec des données sensibles n'est jamais un « gain rapide ».
 
-### Étape 7 — Prioriser avec la matrice de sélection
+### Étape 7 : Prioriser avec la matrice de sélection
 
-![Figure 6.1 — Matrice de priorisation valeur × faisabilité](03_ILLUSTRATIONS/figures/fig_6_1.svg){#fig-6-1}
+![Figure 6.1 : Matrice de priorisation valeur × faisabilité](03_ILLUSTRATIONS/figures/fig_6_1.svg){#fig-6-1}
 
 La matrice de sélection (annexe 3) note chaque cas d'usage sur des critères pondérés :
 
@@ -2236,7 +2232,7 @@ La matrice de sélection (annexe 3) note chaque cas d'usage sur des critères po
 | Coût sur 3 ans (inversé) | 10 % | 1 = très élevé · 5 = très faible |
 | Niveau de risque (inversé) | 15 % | 1 = risque élevé sur des personnes · 5 = risque faible |
 
-Table: Tableau 6.3 — Explications détaillées
+Table: Tableau 6.3 : Explications détaillées
 
 *Application (fictive) à huit cas d'usage d'Horizons Partagés :*
 
@@ -2251,15 +2247,15 @@ Table: Tableau 6.3 — Explications détaillées
 | 7. Tri automatique des candidatures | 2 | 3 | 3 | 3 | 3 | 1 | **2,45** |
 | 8. Traduction des supports | 4 | 3 | 4 | 4 | 4 | 3 | **3,65** |
 
-Table: Tableau 6.4 — Explications détaillées
+Table: Tableau 6.4 : Explications détaillées
 
 *Détail du calcul pour le cas 1 :* 3 × 0,25 + 4 × 0,20 + 5 × 0,15 + 5 × 0,15 + 5 × 0,10 + 4 × 0,15 = 0,75 + 0,80 + 0,75 + 0,75 + 0,50 + 0,60 = **4,15**.
 
-> **🔎 À retenir** — Faites toujours les calculs d'une matrice dans un tableur (formule `SOMMEPROD` entre la ligne des notes et la ligne des poids). Lors de la préparation de cet exemple, un premier calcul « de tête » comportait deux erreurs d'arrondi : c'est précisément le type d'erreur que le tableur évite.
+> **🔎 À retenir** : Faites toujours les calculs d'une matrice dans un tableur (formule `SOMMEPROD` entre la ligne des notes et la ligne des poids). Lors de la préparation de cet exemple, un premier calcul « de tête » comportait deux erreurs d'arrondi : c'est précisément le type d'erreur que le tableur évite.
 
 **Lecture :** les cas 1 et 2 sont des gains rapides. Le cas 6 arrive en troisième position, mais avec une faible contribution à la mission : il peut être mené en parallèle à faible coût. Le cas 4 (assistant RAG) a une forte valeur mais une faible faisabilité : c'est un **projet structurant**, à préparer en commençant par la gestion documentaire. Le cas 7 est écarté en raison de son niveau de risque (décisions sur des personnes, risque de discrimination).
 
-> **🔎 À retenir** — La matrice éclaire la décision ; elle ne la remplace pas. Un cas d'usage peut être retenu malgré un score moyen pour une raison stratégique explicite, ou écarté malgré un bon score pour une raison éthique. Consignez ces raisons.
+> **🔎 À retenir** : La matrice éclaire la décision ; elle ne la remplace pas. Un cas d'usage peut être retenu malgré un score moyen pour une raison stratégique explicite, ou écarté malgré un bon score pour une raison éthique. Consignez ces raisons.
 
 ## 6.6 Application professionnelle : sélectionner deux projets pilotes
 
@@ -2281,11 +2277,11 @@ Table: Tableau 6.4 — Explications détaillées
 | Intermédiaire | Formulaire de collecte des idées ; matrice partagée ; vote pondéré en atelier | Formulaire, tableur partagé | Faibles | Exige un animateur |
 | Avancé | Portefeuille de projets numériques géré dans un outil de gestion de projets, avec revue trimestrielle et indicateurs de valeur | Outil de gestion de portefeuille | Licences | Lourd pour une petite structure |
 
-Table: Tableau 6.5 — Application professionnelle : sélectionner deux projets pilotes
+Table: Tableau 6.5 : Application professionnelle : sélectionner deux projets pilotes
 
 ## 6.7 Prompt prêt à l'emploi
 
-### Fiche P6.1 — Rédiger une fiche d'opportunité
+### Fiche P6.1 : Rédiger une fiche d'opportunité
 
 **A. Titre.** Fiche d'opportunité d'un cas d'usage d'IA.
 
@@ -2340,7 +2336,7 @@ Une liste de cas d'usage reformulés, une fiche d'opportunité par cas, une matr
 
 ## 6.9 Contrôles humains
 
-> **🛑 Contrôle humain obligatoire** — La sélection des projets est une décision de direction, documentée, qui tient compte de considérations stratégiques et éthiques que la matrice ne capture pas entièrement. Les cas d'usage touchant des décisions sur des personnes sont soumis à un examen éthique préalable (module 8).
+> **🛑 Contrôle humain obligatoire** : La sélection des projets est une décision de direction, documentée, qui tient compte de considérations stratégiques et éthiques que la matrice ne capture pas entièrement. Les cas d'usage touchant des décisions sur des personnes sont soumis à un examen éthique préalable (module 8).
 
 ## 6.10 Risques et erreurs à éviter
 
@@ -2364,7 +2360,7 @@ Une liste de cas d'usage reformulés, une fiche d'opportunité par cas, une matr
 - Prioriser avec une matrice pondérée, notée en groupe, calculée dans un tableur.
 - Commencer par un gain rapide et préparer un projet structurant.
 
-## 6.13 QCM — Module 6
+## 6.13 QCM : Module 6
 
 **Q1.** (une seule réponse) Lequel est un cas d'usage bien formulé ?
 
@@ -2408,14 +2404,14 @@ b) Il présente un risque de discrimination.
 c) Il est techniquement impossible.
 d) Son score de risque était très défavorable.
 
-**Q7.** (mise en situation — une seule réponse) Le calcul d'un projet montre un gain financier direct faible, mais une forte réduction des erreurs et des pièces perdues. Que faites-vous ?
+**Q7.** (mise en situation, une seule réponse) Le calcul d'un projet montre un gain financier direct faible, mais une forte réduction des erreurs et des pièces perdues. Que faites-vous ?
 
 a) Abandonner le projet.
 b) Gonfler les gains de temps pour justifier le projet.
 c) Lancer le projet sans analyse.
 d) Expliciter et mesurer les bénéfices qualitatifs dans la décision.
 
-**Q8.** (mise en situation — une seule réponse) Une responsable propose « un chatbot pour les bénéficiaires ». Première étape ?
+**Q8.** (mise en situation, une seule réponse) Une responsable propose « un chatbot pour les bénéficiaires ». Première étape ?
 
 a) Choisir un fournisseur.
 b) Lancer un appel d'offres.
@@ -2436,7 +2432,7 @@ b) calculer les scores dans un tableur.
 c) consigner les raisons d'un choix qui s'écarte du classement.
 d) laisser l'outil d'IA décider seul.
 
-## 6.14 Corrigé détaillé — Module 6
+## 6.14 Corrigé détaillé : Module 6
 
 **Q1 : b.** Il précise l'acteur, le processus, le résultat et l'indicateur.
 
@@ -2461,11 +2457,11 @@ d) laisser l'outil d'IA décider seul.
 **Barème.** 2 points par question (tout ou rien pour les réponses multiples). Total sur 20. **Niveau de maîtrise :** 0–9 à consolider · 10–13 en progression · 14–17 maîtrise opérationnelle · 18–20 maîtrise avancée.
 
 
-# Partie III — Préparer et sécuriser l'adoption de l'IA {#h9 .partie}
+# Partie III : Préparer et sécuriser l'adoption de l'IA {#h9 .partie}
 
 *Vous avez identifié vos priorités. Avant d'agir, trois conditions doivent être réunies : des données organisées et fiables, des règles éthiques et de sécurité claires, et des outils adaptés à vos moyens. Cette partie pose ces fondations, sans lesquelles l'IA amplifie les problèmes au lieu de les résoudre.*
 
-# Module 7 — Les données, le carburant des systèmes intelligents {#h10}
+# Module 7 : Les données, le carburant des systèmes intelligents {#h10}
 
 ## 7.1 Mise en situation
 
@@ -2475,7 +2471,7 @@ Amina demande à un assistant d'IA de « calculer le taux de réussite ». L'out
 
 ## 7.2 Problématique
 
-Un système d'IA ne vaut que par ses données. Des données dispersées, incohérentes, incomplètes ou mal protégées produisent des résultats erronés — d'autant plus dangereux qu'ils sont présentés de façon convaincante. Dans beaucoup d'ASBL, la gestion des données et des documents est le véritable chantier prioritaire, avant tout projet d'IA.
+Un système d'IA ne vaut que par ses données. Des données dispersées, incohérentes, incomplètes ou mal protégées produisent des résultats erronés, d'autant plus dangereux qu'ils sont présentés de façon convaincante. Dans beaucoup d'ASBL, la gestion des données et des documents est le véritable chantier prioritaire, avant tout projet d'IA.
 
 ## 7.3 Objectifs d'apprentissage
 
@@ -2510,7 +2506,7 @@ Un système d'IA ne vaut que par ses données. Des données dispersées, incohé
 | Apport de l'IA | Détection d'anomalies, prévisions, aide aux formules | Extraction d'informations, synthèse, classification, recherche par le sens (RAG) |
 | Risque principal | Erreurs de saisie, doublons, incohérences | Versions multiples, documents introuvables, données sensibles cachées dans le texte |
 
-Table: Tableau 7.1 — Explications détaillées
+Table: Tableau 7.1 : Explications détaillées
 
 L'IA a profondément changé le traitement des données non structurées : elle peut transformer une photo de facture en ligne de tableau, ou retrouver la bonne clause dans cinquante conventions. Mais elle ne peut retrouver que ce qui a été conservé, et elle ne distingue pas spontanément la version validée d'un brouillon.
 
@@ -2525,13 +2521,13 @@ L'IA a profondément changé le traitement des données non structurées : elle 
 | **Actualité** | La donnée est-elle à jour ? | Adresse d'un partenaire ancienne | Date de dernière mise à jour |
 | **Validité** | La donnée respecte-t-elle le format attendu ? | « 31/02/2026 » | Listes déroulantes, formats imposés |
 
-Table: Tableau 7.2 — Explications détaillées
+Table: Tableau 7.2 : Explications détaillées
 
-> **🔎 À retenir** — Il est beaucoup plus économique d'empêcher les erreurs à la saisie (listes déroulantes, champs obligatoires, formats imposés) que de les corriger ensuite.
+> **🔎 À retenir** : Il est beaucoup plus économique d'empêcher les erreurs à la saisie (listes déroulantes, champs obligatoires, formats imposés) que de les corriger ensuite.
 
 ### Organiser les documents : plan de classement et règle de nommage
 
-![Figure 7.2 — Exemple d'arborescence documentaire et de règle de nommage](03_ILLUSTRATIONS/figures/fig_7_2.svg){#fig-7-2}
+![Figure 7.2 : Exemple d'arborescence documentaire et de règle de nommage](03_ILLUSTRATIONS/figures/fig_7_2.svg){#fig-7-2}
 
 Un **plan de classement** est une arborescence de dossiers partagée par tous, stable dans le temps, et calquée sur les fonctions de l'organisation plutôt que sur les personnes. Règles pratiques :
 
@@ -2546,14 +2542,14 @@ Un **plan de classement** est une arborescence de dossiers partagée par tous, s
 
 Numériser n'est pas photographier en vrac. Une numérisation utile suppose :
 
-- **de choisir ce qui doit l'être** : pièces justificatives, conventions, PV, contrats — en priorité les documents exigés par les audits et les bailleurs ;
+- **de choisir ce qui doit l'être** : pièces justificatives, conventions, PV, contrats, en priorité les documents exigés par les audits et les bailleurs ;
 - **une qualité suffisante** : document à plat, bien éclairé, lisible en entier, format PDF de préférence ;
 - **un nommage et un classement immédiats**, selon la règle ;
 - **la conservation des originaux** lorsque la loi ou le bailleur l'exige.
 
-> **⚖️ Adaptation réglementaire** — La valeur probante d'une copie numérique et les durées de conservation des pièces comptables et des documents sociaux varient selon les pays. Avant de détruire un original papier, vérifiez la législation applicable et les conditions de vos conventions de financement.
+> **⚖️ Adaptation réglementaire** : La valeur probante d'une copie numérique et les durées de conservation des pièces comptables et des documents sociaux varient selon les pays. Avant de détruire un original papier, vérifiez la législation applicable et les conditions de vos conventions de financement.
 
-> **📶 Faible connectivité** — Les applications de numérisation sur smartphone fonctionnent généralement hors ligne ; les fichiers peuvent être synchronisés plus tard, lors d'une connexion. Fixez une routine (par exemple chaque vendredi) et vérifiez que la synchronisation s'est bien terminée.
+> **📶 Faible connectivité** : Les applications de numérisation sur smartphone fonctionnent généralement hors ligne ; les fichiers peuvent être synchronisés plus tard, lors d'une connexion. Fixez une routine (par exemple chaque vendredi) et vérifiez que la synchronisation s'est bien terminée.
 
 ### Bases de données et référentiels
 
@@ -2590,7 +2586,7 @@ Les ASBL connaissent un renouvellement important de personnel et de bénévoles.
 
 L'IA peut aider à **rédiger** des procédures à partir d'entretiens, à **synthétiser** des historiques de dossiers, et, à terme, à **interroger** cette mémoire via un assistant documentaire (RAG). Mais elle ne peut restituer que ce qui a été consigné.
 
-![Figure 7.1 — Le cycle de vie des données](03_ILLUSTRATIONS/figures/fig_7_1.svg){#fig-7-1}
+![Figure 7.1 : Le cycle de vie des données](03_ILLUSTRATIONS/figures/fig_7_1.svg){#fig-7-1}
 
 ## 7.6 Application professionnelle : remettre en ordre le suivi des élèves de Lumière des Collines
 
@@ -2601,7 +2597,7 @@ L'IA peut aider à **rédiger** des procédures à partir d'entretiens, à **syn
 **E. Processus actuel.** Chaque bénévole saisit où il veut, comme il veut.
 **F. Faiblesses.** Pas de traçabilité ; données personnelles d'enfants sur une clé USB non chiffrée.
 **G. Résultat recherché.** Un fichier unique, propre, protégé, avec des indicateurs fiables.
-**H. Pertinence de l'IA.** Utile pour proposer des règles de nettoyage et des formules, et pour repérer des incohérences — sur une version pseudonymisée.
+**H. Pertinence de l'IA.** Utile pour proposer des règles de nettoyage et des formules, et pour repérer des incohérences, sur une version pseudonymisée.
 **I. Alternatives sans IA.** Nettoyage manuel avec les fonctions du tableur (tri, filtres, suppression des doublons).
 **J. Solution.** Fusion contrôlée des trois fichiers dans un modèle unique avec listes déroulantes, identifiants uniques et accès restreint.
 **K. Niveau.** Débutant.
@@ -2636,11 +2632,11 @@ L'IA peut aider à **rédiger** des procédures à partir d'entretiens, à **syn
 | Intermédiaire | Base de données sans code avec formulaires de saisie ; gestion documentaire avec métadonnées ; sauvegardes automatiques | Outil de base de données sans code, gestion électronique de documents | Abonnements | Paramétrage initial |
 | Avancé | Entrepôt de données alimenté par API depuis les applications métier ; référentiels centralisés ; gestion fine des accès ; catalogue de données | ERP, base de données, outil d'intégration | Élevés | Compétences spécialisées, gouvernance des données |
 
-Table: Tableau 7.3 — Application professionnelle : remettre en ordre le suivi des élèves de Lumière des Collines
+Table: Tableau 7.3 : Application professionnelle : remettre en ordre le suivi des élèves de Lumière des Collines
 
 ## 7.7 Prompt prêt à l'emploi
 
-### Fiche P7.1 — Nettoyer un fichier de suivi pseudonymisé
+### Fiche P7.1 : Nettoyer un fichier de suivi pseudonymisé
 
 **A. Titre.** Règles de nettoyage et de normalisation d'un fichier.
 
@@ -2690,7 +2686,7 @@ Un plan de classement et une règle de nommage adoptés ; des fichiers de réfé
 
 ## 7.9 Contrôles humains
 
-> **🛑 Contrôle humain obligatoire** — La fusion d'enregistrements concernant des personnes (doublons supposés), la suppression de données et la destruction d'originaux sont décidées par une personne responsable, après vérification. Une fusion erronée peut priver quelqu'un d'un service ou fausser un dossier.
+> **🛑 Contrôle humain obligatoire** : La fusion d'enregistrements concernant des personnes (doublons supposés), la suppression de données et la destruction d'originaux sont décidées par une personne responsable, après vérification. Une fusion erronée peut priver quelqu'un d'un service ou fausser un dossier.
 
 ## 7.10 Risques et erreurs à éviter
 
@@ -2715,7 +2711,7 @@ Un plan de classement et une règle de nommage adoptés ; des fichiers de réfé
 - Interopérabilité, sauvegarde 3-2-1 testée et moindre privilège protègent l'organisation.
 - La mémoire institutionnelle se construit au quotidien ; l'IA aide à la formaliser et à l'interroger.
 
-## 7.13 QCM — Module 7
+## 7.13 QCM : Module 7
 
 **Q1.** (une seule réponse) Un courriel contenant une demande de partenariat est une donnée :
 
@@ -2759,14 +2755,14 @@ b) permettent une réidentification avec la table de correspondance.
 c) peuvent être librement publiées.
 d) exigent de protéger la table de correspondance.
 
-**Q7.** (mise en situation — une seule réponse) Avant de choisir un outil de suivi des bénéficiaires, quelle vérification protège le mieux contre la dépendance au fournisseur ?
+**Q7.** (mise en situation, une seule réponse) Avant de choisir un outil de suivi des bénéficiaires, quelle vérification protège le mieux contre la dépendance au fournisseur ?
 
 a) La possibilité d'exporter toutes les données dans un format ouvert.
 b) La couleur de l'interface.
 c) Le nombre de fonctionnalités d'IA.
 d) La popularité de l'outil.
 
-**Q8.** (mise en situation — une seule réponse) Un bénévole quitte l'association. Que faut-il faire en priorité en matière d'accès ?
+**Q8.** (mise en situation, une seule réponse) Un bénévole quitte l'association. Que faut-il faire en priorité en matière d'accès ?
 
 a) Attendre la revue annuelle.
 b) Lui laisser ses accès s'il reste en bons termes.
@@ -2787,7 +2783,7 @@ b) des champs obligatoires.
 c) des formats de date imposés.
 d) la correction a posteriori uniquement.
 
-## 7.14 Corrigé détaillé — Module 7
+## 7.14 Corrigé détaillé : Module 7
 
 **Q1 : c.** Un courriel n'a pas de format fixe.
 
@@ -2795,7 +2791,7 @@ d) la correction a posteriori uniquement.
 
 **Q3 : a, c, d.** Les dossiers personnels (b) rendent les documents introuvables après un départ.
 
-**Q4 : d.** Trois copies, deux supports, une copie hors site — et une restauration testée.
+**Q4 : d.** Trois copies, deux supports, une copie hors site, et une restauration testée.
 
 **Q5 : c.** Un code non signifiant ne révèle aucune information personnelle.
 
@@ -2812,13 +2808,13 @@ d) la correction a posteriori uniquement.
 **Barème.** 2 points par question (tout ou rien pour les réponses multiples). Total sur 20. **Niveau de maîtrise :** 0–9 à consolider · 10–13 en progression · 14–17 maîtrise opérationnelle · 18–20 maîtrise avancée.
 
 
-# Module 8 — Éthique, responsabilité, sécurité et réglementation de l'IA {#h11}
+# Module 8 : Éthique, responsabilité, sécurité et réglementation de l'IA {#h11}
 
 ## 8.1 Mise en situation
 
 La Maison des Aînés Solidaires accompagne des personnes âgées isolées. Pour mieux organiser les visites, Thomas, coordinateur des bénévoles, a eu une idée : enregistrer les appels téléphoniques des personnes accompagnées, les faire transcrire et résumer par un assistant gratuit, puis demander à l'outil d'identifier « les personnes qui montrent des signes de déclin cognitif » afin de leur envoyer plus de visites.
 
-L'intention est généreuse. Pourtant, le projet cumule presque tous les risques que ce module va examiner : des données de santé déduites sans base médicale, des personnes vulnérables enregistrées sans consentement éclairé, un outil gratuit dont les conditions de traitement des données n'ont pas été lues, une forme de profilage, et des décisions — l'intensité de l'accompagnement — qui dépendraient d'un résultat automatique non vérifiable.
+L'intention est généreuse. Pourtant, le projet cumule presque tous les risques que ce module va examiner : des données de santé déduites sans base médicale, des personnes vulnérables enregistrées sans consentement éclairé, un outil gratuit dont les conditions de traitement des données n'ont pas été lues, une forme de profilage, et des décisions (l'intensité de l'accompagnement) qui dépendraient d'un résultat automatique non vérifiable.
 
 Ce module ne vise pas à décourager l'innovation. Il vise à donner à chacun les réflexes qui permettent d'innover sans nuire.
 
@@ -2866,7 +2862,7 @@ Plusieurs textes internationaux convergent sur un socle de principes. Il est imp
 | Convention-cadre du Conseil de l'Europe sur l'IA (2024) | Traité contraignant pour les États qui le ratifient | Obligations des États pour que l'IA respecte les droits humains, la démocratie et l'État de droit |
 | Règlement (UE) 2024/1689 (AI Act) | Loi contraignante dans l'Union européenne | Approche par niveaux de risque : pratiques interdites, systèmes à haut risque, obligations de transparence |
 
-Table: Tableau 8.1 — Explications détaillées
+Table: Tableau 8.1 : Explications détaillées
 
 Ces textes partagent une idée centrale : **plus un usage de l'IA peut affecter les droits et la sécurité des personnes, plus les exigences de contrôle, de transparence et de supervision humaine doivent être élevées.**
 
@@ -2891,7 +2887,7 @@ Les biais peuvent naître à chaque étape :
 | Usage | Appliquer l'outil hors du contexte pour lequel il a été conçu |
 | IA générative | Descriptions ou images stéréotypées de certains groupes, de certains métiers |
 
-Table: Tableau 8.2 — Explications détaillées
+Table: Tableau 8.2 : Explications détaillées
 
 Parades : interroger la représentativité des données ; tester les résultats par sous-groupes (sexe, âge, langue, zone) ; exclure les variables sensibles et leurs substituts lorsqu'ils ne sont pas justifiés ; impliquer des personnes concernées dans la conception ; conserver une décision humaine motivée ; prévoir un recours.
 
@@ -2902,11 +2898,11 @@ Les personnes ont le droit de savoir quand un système d'IA intervient dans une 
 - signaler qu'un assistant en ligne est automatisé et offrir un contact humain ;
 - mentionner, dans les politiques de confidentialité, les traitements assistés par l'IA ;
 - indiquer, en interne et selon les règles de l'organisation, quand un document a été produit avec une aide de l'IA ;
-- pour toute décision affectant une personne, pouvoir en expliquer les motifs en termes compréhensibles — ce qui suppose que la décision ait été prise par un humain capable de la justifier.
+- pour toute décision affectant une personne, pouvoir en expliquer les motifs en termes compréhensibles : ce qui suppose que la décision ait été prise par un humain capable de la justifier.
 
 ### Confidentialité et protection des données
 
-![Figure 8.1 — Le feu tricolore de classification des données](03_ILLUSTRATIONS/figures/fig_8_1.svg){#fig-8-1}
+![Figure 8.1 : Le feu tricolore de classification des données](03_ILLUSTRATIONS/figures/fig_8_1.svg){#fig-8-1}
 
 Les grands principes de protection des données, communs à de nombreuses législations, sont :
 
@@ -2926,9 +2922,9 @@ Les grands principes de protection des données, communs à de nombreuses légis
 | 🟠 **Orange** | Information interne, non personnelle ou agrégée | Budget non publié, procédures, PV de CA, statistiques agrégées | Outils professionnels validés par l'organisation (contrat prévoyant la confidentialité et l'absence d'utilisation des données pour l'entraînement), après minimisation |
 | 🔴 **Rouge** | Données personnelles identifiantes, données sensibles, informations confidentielles | Listes nominatives de bénéficiaires, données de santé, données d'enfants, salaires, dossiers disciplinaires, coordonnées bancaires, signalements d'abus | Interdit dans tout outil non validé spécifiquement. Anonymisation préalable, base légale, accord du responsable, outil sécurisé |
 
-Table: Tableau 8.3 — Explications détaillées
+Table: Tableau 8.3 : Explications détaillées
 
-> **⚖️ Adaptation réglementaire** — Les lois de protection des données diffèrent selon les pays : définitions des données sensibles, bases légales, droits des personnes, règles de transfert international, obligations de déclaration. Dans l'Union européenne, le règlement (UE) 2016/679 (RGPD) s'applique ; d'autres pays disposent de lois proches ; certains États ont ratifié la Convention 108+ du Conseil de l'Europe. Lorsque vous utilisez un outil en ligne, vos données peuvent être traitées dans un autre pays : vérifiez la localisation des serveurs et les conditions de transfert.
+> **⚖️ Adaptation réglementaire** : Les lois de protection des données diffèrent selon les pays : définitions des données sensibles, bases légales, droits des personnes, règles de transfert international, obligations de déclaration. Dans l'Union européenne, le règlement (UE) 2016/679 (RGPD) s'applique ; d'autres pays disposent de lois proches ; certains États ont ratifié la Convention 108+ du Conseil de l'Europe. Lorsque vous utilisez un outil en ligne, vos données peuvent être traitées dans un autre pays : vérifiez la localisation des serveurs et les conditions de transfert.
 
 **Avant d'utiliser un outil en ligne avec des données internes, vérifiez au minimum :**
 
@@ -2938,7 +2934,7 @@ Table: Tableau 8.3 — Explications détaillées
 - l'existence d'une offre professionnelle avec engagement contractuel de confidentialité ;
 - la possibilité de supprimer ses données.
 
-> **🔎 À retenir** — Les offres gratuites ne sont pas nécessairement dangereuses, mais elles n'offrent généralement pas les garanties contractuelles nécessaires pour des données internes ou personnelles. Par défaut : vert uniquement.
+> **🔎 À retenir** : Les offres gratuites ne sont pas nécessairement dangereuses, mais elles n'offrent généralement pas les garanties contractuelles nécessaires pour des données internes ou personnelles. Par défaut : vert uniquement.
 
 ### Le consentement
 
@@ -2956,15 +2952,15 @@ L'IA introduit des risques de sécurité nouveaux, en plus des risques classique
 | Comptes compromis | Accès d'un attaquant aux outils et à l'historique des conversations | Double authentification, mots de passe uniques, revue des accès |
 | Extensions et applications non vérifiées | Modules complémentaires qui accèdent aux données | Liste des outils autorisés (annexe 9) |
 
-Table: Tableau 8.4 — Explications détaillées
+Table: Tableau 8.4 : Explications détaillées
 
 ### Supervision humaine et décisions automatisées
 
-![Figure 8.2 — Trois modes de supervision humaine](03_ILLUSTRATIONS/figures/fig_8_2.svg){#fig-8-2}
+![Figure 8.2 : Trois modes de supervision humaine](03_ILLUSTRATIONS/figures/fig_8_2.svg){#fig-8-2}
 
 La supervision humaine doit être **réelle** : une personne qui valide 200 propositions par heure sans les lire ne supervise rien (c'est le « biais d'automatisation », tendance à faire excessivement confiance à la machine). Elle suppose du temps, des compétences, le droit de refuser, et une trace de la validation.
 
-> **⚖️ Adaptation réglementaire** — Plusieurs textes encadrent les décisions fondées exclusivement sur un traitement automatisé et produisant des effets importants pour les personnes : par exemple l'article 22 du RGPD dans l'Union européenne, ou la Convention 108+. Le règlement européen sur l'IA classe en « haut risque » certains usages, notamment dans l'emploi, l'éducation ou l'accès à des services essentiels, avec des obligations renforcées ; son calendrier d'application a été modifié en 2026 par un règlement dit « omnibus », qui a reporté certaines échéances relatives aux systèmes à haut risque — vérifiez les dates en vigueur sur le site officiel EUR-Lex à la date de votre projet.
+> **⚖️ Adaptation réglementaire** : Plusieurs textes encadrent les décisions fondées exclusivement sur un traitement automatisé et produisant des effets importants pour les personnes : par exemple l'article 22 du RGPD dans l'Union européenne, ou la Convention 108+. Le règlement européen sur l'IA classe en « haut risque » certains usages, notamment dans l'emploi, l'éducation ou l'accès à des services essentiels, avec des obligations renforcées ; son calendrier d'application a été modifié en 2026 par un règlement dit « omnibus », qui a reporté certaines échéances relatives aux systèmes à haut risque : vérifiez les dates en vigueur sur le site officiel EUR-Lex à la date de votre projet.
 
 **Décisions qui doivent impérativement rester sous contrôle humain dans une ASBL :**
 
@@ -2978,7 +2974,7 @@ La supervision humaine doit être **réelle** : une personne qui valide 200 prop
 | Communication externe | Publication au nom de l'ASBL | Brouillons |
 | Protection | Toute situation d'abus, d'exploitation, de danger | Aucune automatisation du traitement ; orientation immédiate vers un référent humain |
 
-Table: Tableau 8.5 — Explications détaillées
+Table: Tableau 8.5 : Explications détaillées
 
 ### Hallucinations et responsabilité
 
@@ -2999,7 +2995,7 @@ Les enfants, les personnes âgées dépendantes, les personnes en situation de h
 - aucune donnée les concernant dans un outil non validé ;
 - prudence extrême sur toute forme de profilage ou de « score » ;
 - attention aux risques de réidentification à partir de données apparemment anonymes (un village, un âge et une situation familiale peuvent suffire à identifier une personne) ;
-- dans les contextes de crise, prise en compte des risques d'accès aux données par des acteurs hostiles — un enjeu détaillé par le *Handbook on Data Protection in Humanitarian Action* du CICR (Marelli, 2024), y compris pour les données hébergées chez des prestataires de cloud.
+- dans les contextes de crise, prise en compte des risques d'accès aux données par des acteurs hostiles : un enjeu détaillé par le *Handbook on Data Protection in Humanitarian Action* du CICR (Marelli, 2024), y compris pour les données hébergées chez des prestataires de cloud.
 
 ### Impact environnemental
 
@@ -3025,9 +3021,9 @@ Reprenons la mise en situation et appliquons la démarche.
 | Décision ? | Automatique (score) | Humaine : le coordinateur et l'infirmière référente, si un besoin de santé est exprimé |
 | Recours ? | Aucun | Les personnes peuvent demander plus ou moins de visites à tout moment |
 
-Table: Tableau 8.6 — Application professionnelle : refonder le projet de Thomas
+Table: Tableau 8.6 : Application professionnelle : refonder le projet de Thomas
 
-Le projet révisé conserve l'objectif — mieux accompagner — sans profilage ni données de santé déduites.
+Le projet révisé conserve l'objectif, mieux accompagner, sans profilage ni données de santé déduites.
 
 ### Processus de mise en œuvre d'un examen éthique simplifié (pour tout nouveau cas d'usage)
 
@@ -3049,11 +3045,11 @@ Le projet révisé conserve l'objectif — mieux accompagner — sans profilage 
 | Intermédiaire | Outils professionnels validés, paramètres de confidentialité configurés par l'administrateur, registre des outils et des risques, référent IA | Suite professionnelle, registres | Abonnements | Exige un suivi régulier |
 | Avancé | Système de management de l'IA inspiré d'ISO/IEC 42001 ; analyses d'impact formalisées ; journalisation et surveillance des usages ; prévention des fuites de données | Outils de gouvernance, de sécurité et de journalisation | Élevés | Compétences juridiques et techniques |
 
-Table: Tableau 8.7 — Application professionnelle : refonder le projet de Thomas
+Table: Tableau 8.7 : Application professionnelle : refonder le projet de Thomas
 
 ## 8.7 Prompts prêts à l'emploi
 
-### Fiche P8.1 — Anonymiser un texte avant traitement
+### Fiche P8.1 : Anonymiser un texte avant traitement
 
 **A. Titre.** Repérage des éléments identifiants dans un texte.
 
@@ -3061,7 +3057,7 @@ Table: Tableau 8.7 — Application professionnelle : refonder le projet de Thoma
 
 **C. Contexte d'utilisation.** Rapports de terrain, comptes rendus, retours de bénéficiaires.
 
-**D. Données nécessaires.** Le texte. **Important :** cette fiche s'utilise avec un outil **validé par l'organisation** pour des données orange ou rouges (outil interne, offre professionnelle avec garanties) — ou bien elle sert de liste de contrôle pour une anonymisation manuelle. Elle ne doit pas être utilisée avec un outil grand public sur un texte contenant des données personnelles : ce serait divulguer précisément ce que l'on veut protéger.
+**D. Données nécessaires.** Le texte. **Important :** cette fiche s'utilise avec un outil **validé par l'organisation** pour des données orange ou rouges (outil interne, offre professionnelle avec garanties), ou bien elle sert de liste de contrôle pour une anonymisation manuelle. Elle ne doit pas être utilisée avec un outil grand public sur un texte contenant des données personnelles : ce serait divulguer précisément ce que l'on veut protéger.
 
 **E. Prompt complet.**
 
@@ -3096,7 +3092,7 @@ Limites : ne résume pas, ne reformule pas le reste du texte.
 
 **K. Amélioration.** Si des identifiants indirects subsistent : « Applique une généralisation plus forte : remplace les âges par des tranches de 20 ans et les lieux par la région. »
 
-### Fiche P8.2 — Revue de biais d'un contenu ou d'un outil
+### Fiche P8.2 : Revue de biais d'un contenu ou d'un outil
 
 **A. Titre.** Revue de biais et d'inclusion.
 
@@ -3145,7 +3141,7 @@ Une politique d'utilisation de l'IA (annexe 10), une classification des données
 
 ## 8.9 Contrôles humains
 
-> **🛑 Contrôle humain obligatoire** — Toute décision qui affecte les droits, l'accès à un service, l'emploi, la sécurité ou la réputation d'une personne est prise par un humain compétent, qui peut l'expliquer, et contre laquelle un recours est possible. Toute situation de protection (abus, exploitation, danger) est traitée immédiatement par un référent humain, en dehors de tout circuit automatisé.
+> **🛑 Contrôle humain obligatoire** : Toute décision qui affecte les droits, l'accès à un service, l'emploi, la sécurité ou la réputation d'une personne est prise par un humain compétent, qui peut l'expliquer, et contre laquelle un recours est possible. Toute situation de protection (abus, exploitation, danger) est traitée immédiatement par un référent humain, en dehors de tout circuit automatisé.
 
 ## 8.10 Risques et erreurs à éviter
 
@@ -3172,7 +3168,7 @@ Une politique d'utilisation de l'IA (annexe 10), une classification des données
 - Cybersécurité, droit d'auteur, environnement et protection des personnes vulnérables complètent l'analyse.
 - Les obligations juridiques dépendent des pays : identifiez-les et faites-vous conseiller.
 
-## 8.13 QCM — Module 8
+## 8.13 QCM : Module 8
 
 **Q1.** (une seule réponse) La Recommandation de l'UNESCO sur l'éthique de l'IA (2021) est :
 
@@ -3216,14 +3212,14 @@ b) un biais dans les données d'entraînement.
 c) la tendance des humains à faire excessivement confiance aux résultats d'une machine.
 d) la lenteur des automatisations.
 
-**Q7.** (mise en situation — une seule réponse) Un message vocal imitant la voix du directeur demande au comptable un virement urgent. Que faire ?
+**Q7.** (mise en situation, une seule réponse) Un message vocal imitant la voix du directeur demande au comptable un virement urgent. Que faire ?
 
 a) Exécuter, la voix est reconnaissable.
 b) Vérifier par un second canal convenu avant tout paiement inhabituel.
 c) Demander à un assistant d'IA si la voix est authentique.
 d) Exécuter puis prévenir le directeur.
 
-**Q8.** (mise en situation — une seule réponse) Un partenaire propose un outil qui attribue un « score de vulnérabilité » à chaque ménage pour décider automatiquement de l'attribution de l'aide. Votre position ?
+**Q8.** (mise en situation, une seule réponse) Un partenaire propose un outil qui attribue un « score de vulnérabilité » à chaque ménage pour décider automatiquement de l'attribution de l'aide. Votre position ?
 
 a) Refuser toute décision automatique ; l'outil peut au mieux éclairer une décision humaine motivée, après examen des biais, de la base légale et avec un recours.
 b) Accepter, c'est plus objectif.
@@ -3244,7 +3240,7 @@ b) la localisation des traitements.
 c) la durée de conservation des conversations.
 d) le nombre d'abonnés de l'outil sur les réseaux sociaux.
 
-## 8.14 Corrigé détaillé — Module 8
+## 8.14 Corrigé détaillé : Module 8
 
 **Q1 : d.** C'est un instrument normatif adopté par les États, qui n'impose pas directement d'obligations juridiques aux organisations.
 
@@ -3273,7 +3269,7 @@ d) le nombre d'abonnés de l'outil sur les réseaux sociaux.
 - Agence internationale de l'énergie (AIE/IEA). (2025). *Energy and AI*.
 - Conseil de l'Europe. (2018). *Protocole d'amendement à la Convention 108* (STCE n° 223).
 - Conseil de l'Europe. (2024). *Convention-cadre sur l'intelligence artificielle et les droits de l'homme, la démocratie et l'État de droit* (STCE n° 225).
-- ISO/IEC. (2023). *ISO/IEC 42001:2023 — Artificial intelligence — Management system*.
+- ISO/IEC. (2023). *ISO/IEC 42001:2023, Artificial intelligence, Management system*.
 - Marelli, M. (dir.). (2024). *Handbook on Data Protection in Humanitarian Action* (3e éd.). Cambridge University Press / CICR. https://doi.org/10.1017/9781009414630
 - NIST. (2023). *AI Risk Management Framework 1.0* (NIST AI 100-1). https://doi.org/10.6028/NIST.AI.100-1
 - NIST. (2024). *Generative AI Profile* (NIST AI 600-1). https://doi.org/10.6028/NIST.AI.600-1
@@ -3284,7 +3280,7 @@ d) le nombre d'abonnés de l'outil sur les réseaux sociaux.
 - UNESCO. (2021). *Recommandation sur l'éthique de l'intelligence artificielle*.
 
 
-# Module 9 — Choisir et mettre en place les bons outils {#h12}
+# Module 9 : Choisir et mettre en place les bons outils {#h12}
 
 ## 9.1 Mise en situation
 
@@ -3294,7 +3290,7 @@ Les deux organisations se posent, à des échelles différentes, la même questi
 
 ## 9.2 Problématique
 
-Le marché des outils d'IA évolue très vite, avec des promesses parfois spectaculaires et des modèles économiques variés (gratuit, abonnement par utilisateur, paiement à l'usage, licence). Un mauvais choix coûte cher : abonnements inutilisés, doubles saisies, données prisonnières d'un outil, risques de sécurité. Le choix doit découler du cas d'usage, de la maturité de l'organisation et d'une analyse des risques — jamais d'une démonstration commerciale.
+Le marché des outils d'IA évolue très vite, avec des promesses parfois spectaculaires et des modèles économiques variés (gratuit, abonnement par utilisateur, paiement à l'usage, licence). Un mauvais choix coûte cher : abonnements inutilisés, doubles saisies, données prisonnières d'un outil, risques de sécurité. Le choix doit découler du cas d'usage, de la maturité de l'organisation et d'une analyse des risques, jamais d'une démonstration commerciale.
 
 ## 9.3 Objectifs d'apprentissage
 
@@ -3322,9 +3318,9 @@ Le marché des outils d'IA évolue très vite, avec des promesses parfois specta
 
 ### Trois niveaux d'implémentation
 
-![Figure 9.1 — Trois niveaux d'implémentation](03_ILLUSTRATIONS/figures/fig_9_1.svg){#fig-9-1}
+![Figure 9.1 : Trois niveaux d'implémentation](03_ILLUSTRATIONS/figures/fig_9_1.svg){#fig-9-1}
 
-| | Niveau 1 — Débutant | Niveau 2 — Intermédiaire | Niveau 3 — Avancé |
+| | Niveau 1 : Débutant | Niveau 2 : Intermédiaire | Niveau 3 : Avancé |
 |---|---|---|---|
 | Pour qui | Petites ASBL, peu de moyens techniques | ASBL disposant déjà d'outils numériques | Moyennes et grandes organisations, processus complexes |
 | Outils types | Assistant conversationnel, tableur, formulaires, modèles de documents, classement documentaire simple | Suite bureautique professionnelle avec IA intégrée, logiciels métier, plateformes d'automatisation sans code, gestion électronique de documents, tableaux de bord, assistants configurés sur documents internes | API de modèles, bases de données, ERP, architecture RAG, agents, hébergement dédié ou local, gestion des identités, journalisation et supervision |
@@ -3332,9 +3328,9 @@ Le marché des outils d'IA évolue très vite, avec des promesses parfois specta
 | Coûts | Nuls à faibles | Abonnements par utilisateur, paramétrage | Développement, licences, hébergement, maintenance, sécurité |
 | Limites | Offres gratuites : quotas, conditions de confidentialité souvent inadaptées aux données internes, absence de contrat | Dépendance à plusieurs fournisseurs, automatisations à maintenir | Complexité, coût récurrent, besoin d'une gouvernance solide |
 
-Table: Tableau 9.1 — Explications détaillées
+Table: Tableau 9.1 : Explications détaillées
 
-> **🔎 À retenir** — Le bon niveau n'est pas le plus élevé, mais celui que l'organisation peut **utiliser, contrôler et maintenir** durablement.
+> **🔎 À retenir** : Le bon niveau n'est pas le plus élevé, mais celui que l'organisation peut **utiliser, contrôler et maintenir** durablement.
 
 ### Gratuit ou payant ?
 
@@ -3351,9 +3347,9 @@ Les offres gratuites conviennent à l'apprentissage et aux données publiques (v
 | Connectivité | Indispensable | Fonctionne hors ligne |
 | Maintenance | Assurée par le fournisseur | À votre charge |
 
-Table: Tableau 9.2 — Explications détaillées
+Table: Tableau 9.2 : Explications détaillées
 
-> **📶 Faible connectivité** — Pour une organisation qui travaille en zone peu connectée, une approche hybride est souvent la plus réaliste : collecte et travail hors ligne (formulaires mobiles, tableurs), synchronisation périodique, et usage du cloud pour les traitements lourds lorsque la connexion est disponible. Des modèles de langage dits « ouverts » peuvent être installés sur un ordinateur portable récent pour des tâches simples hors ligne ; leur installation et leur sécurisation relèvent du niveau Avancé.
+> **📶 Faible connectivité** : Pour une organisation qui travaille en zone peu connectée, une approche hybride est souvent la plus réaliste : collecte et travail hors ligne (formulaires mobiles, tableurs), synchronisation périodique, et usage du cloud pour les traitements lourds lorsque la connexion est disponible. Des modèles de langage dits « ouverts » peuvent être installés sur un ordinateur portable récent pour des tâches simples hors ligne ; leur installation et leur sécurisation relèvent du niveau Avancé.
 
 ### No-code, low-code et développement
 
@@ -3394,7 +3390,7 @@ La grille ci-dessous (annexe 9 et fiche P9.1) structure l'évaluation.
 | Accessibilité | Interface conforme aux règles d'accessibilité (par exemple WCAG 2.2) ? Fonctionnement sur mobile et en faible débit ? |
 | Conformité | Clauses contractuelles de protection des données conformes aux lois applicables ? |
 
-Table: Tableau 9.3 — Explications détaillées
+Table: Tableau 9.3 : Explications détaillées
 
 ### Analyser les coûts
 
@@ -3402,7 +3398,7 @@ Reprenez la méthode du coût total sur trois ans (module 6) : licences et abonn
 
 ### La grille de sélection
 
-*Exemple (fictif) — RCE compare trois options pour un assistant de questions-réponses sur ses procédures :*
+*Exemple (fictif) : RCE compare trois options pour un assistant de questions-réponses sur ses procédures :*
 
 | Critère (poids) | A. Assistant configuré dans la suite bureautique (documents joints) | B. Module IA de l'ERP | C. Développement RAG sur mesure |
 |---|---|---|---|
@@ -3414,7 +3410,7 @@ Reprenez la méthode du coût total sur trois ans (module 6) : licences et abonn
 | Maintenabilité interne (15 %) | 4 | 4 | 2 |
 | **Score pondéré** | **3,90** | **3,15** | **3,60** |
 
-Table: Tableau 9.4 — Explications détaillées
+Table: Tableau 9.4 : Explications détaillées
 
 *Calcul pour l'option A :* 3 × 0,25 + 4 × 0,20 + 4 × 0,10 + 5 × 0,15 + 4 × 0,15 + 4 × 0,15 = 0,75 + 0,80 + 0,40 + 0,75 + 0,60 + 0,60 = 3,90.
 
@@ -3432,7 +3428,7 @@ Décision de RCE : démarrer avec l'option A en pilote sur un périmètre restre
 | 6 | Vérification juridique des clauses de protection des données | Direction / conseil juridique | Avis |
 | 7 | Décision et inscription au registre des outils | Direction | Décision, registre |
 
-Table: Tableau 9.5 — Application professionnelle : choisir un outil pour Horizons Partagés
+Table: Tableau 9.5 : Application professionnelle : choisir un outil pour Horizons Partagés
 
 ### Solutions selon le niveau
 
@@ -3442,11 +3438,11 @@ Table: Tableau 9.5 — Application professionnelle : choisir un outil pour Horiz
 | Intermédiaire | Questionnaire fournisseur, démonstration sur cas réels, grille pondérée, revue des conditions | Temps, abonnements | Comparaison parfois difficile entre offres |
 | Avancé | Appel d'offres ou consultation formalisée, preuve de concept chiffrée, audit de sécurité, clauses de réversibilité et de niveau de service | Élevés | Durée du processus |
 
-Table: Tableau 9.6 — Application professionnelle : choisir un outil pour Horizons Partagés
+Table: Tableau 9.6 : Application professionnelle : choisir un outil pour Horizons Partagés
 
 ## 9.7 Prompt prêt à l'emploi
 
-### Fiche P9.1 — Préparer un questionnaire fournisseur
+### Fiche P9.1 : Préparer un questionnaire fournisseur
 
 **A. Titre.** Questionnaire d'évaluation d'un fournisseur de solution d'IA.
 
@@ -3496,7 +3492,7 @@ Une décision documentée, un outil inscrit au registre (annexe 9) avec son resp
 
 ## 9.9 Contrôles humains
 
-> **🛑 Contrôle humain obligatoire** — La souscription d'un outil traitant des données internes ou personnelles est approuvée par la direction après examen des clauses de protection des données. Les paramètres de confidentialité sont configurés par un administrateur désigné, et non laissés au choix de chaque utilisateur.
+> **🛑 Contrôle humain obligatoire** : La souscription d'un outil traitant des données internes ou personnelles est approuvée par la direction après examen des clauses de protection des données. Les paramètres de confidentialité sont configurés par un administrateur désigné, et non laissés au choix de chaque utilisateur.
 
 ## 9.10 Risques et erreurs à éviter
 
@@ -3520,7 +3516,7 @@ Une décision documentée, un outil inscrit au registre (annexe 9) avec son resp
 - L'évaluation d'un fournisseur porte sur la fonction, mais aussi sur les données, la sécurité, la réversibilité et les coûts complets.
 - Une grille pondérée, des tests sur des cas réels et la lecture des contrats fondent une décision solide.
 
-## 9.13 QCM — Module 9
+## 9.13 QCM : Module 9
 
 **Q1.** (une seule réponse) La réversibilité désigne :
 
@@ -3564,14 +3560,14 @@ b) 3,40
 c) 19
 d) 3,15
 
-**Q7.** (mise en situation — une seule réponse) Un commercial affirme oralement que « vos données ne servent jamais à l'entraînement ». Que faites-vous ?
+**Q7.** (mise en situation, une seule réponse) Un commercial affirme oralement que « vos données ne servent jamais à l'entraînement ». Que faites-vous ?
 
 a) Vous le croyez.
 b) Vous demandez la même chose à un assistant d'IA.
 c) Vous exigez que cela figure dans le contrat ou l'accord de traitement des données.
 d) Vous ne posez plus de question.
 
-**Q8.** (mise en situation — une seule réponse) Une petite association en zone peu connectée veut améliorer la collecte de données de terrain. Approche la plus réaliste ?
+**Q8.** (mise en situation, une seule réponse) Une petite association en zone peu connectée veut améliorer la collecte de données de terrain. Approche la plus réaliste ?
 
 a) Un agent IA dans le cloud en continu.
 b) Formulaires mobiles hors ligne, synchronisation périodique, traitements assistés lors des connexions.
@@ -3592,7 +3588,7 @@ b) peuvent reproduire une erreur à grande échelle.
 c) ne nécessitent jamais de maintenance.
 d) font transiter des données par la plateforme, qui doit être évaluée.
 
-## 9.14 Corrigé détaillé — Module 9
+## 9.14 Corrigé détaillé : Module 9
 
 **Q1 : a.** C'est la garantie contre la dépendance.
 
@@ -3622,11 +3618,11 @@ d) font transiter des données par la plateforme, qui doit être évaluée.
 - W3C. (2023, mise à jour 2024). *Web Content Accessibility Guidelines (WCAG) 2.2*.
 
 
-# Partie IV — Implémenter l'IA dans chaque métier et processus {#h13 .partie}
+# Partie IV : Implémenter l'IA dans chaque métier et processus {#h13 .partie}
 
-*Le terrain est préparé : vous connaissez l'IA, votre organisation, vos priorités, vos règles et vos outils. Place aux métiers. Chaque module de cette partie part d'un processus réel et montre, étape par étape, ce que fait l'IA, ce que fait le logiciel, ce que fait le professionnel — et ce qui doit être contrôlé.*
+*Le terrain est préparé : vous connaissez l'IA, votre organisation, vos priorités, vos règles et vos outils. Place aux métiers. Chaque module de cette partie part d'un processus réel et montre, étape par étape, ce que fait l'IA, ce que fait le logiciel, ce que fait le professionnel, et ce qui doit être contrôlé.*
 
-# Module 10 — Gouvernance, direction générale et administration {#h14}
+# Module 10 : Gouvernance, direction générale et administration {#h14}
 
 ## 10.1 Mise en situation
 
@@ -3658,11 +3654,11 @@ La qualité de la gouvernance repose sur des documents fiables (ordres du jour, 
 - **Registre des décisions** : tableau de suivi listant chaque décision, son responsable, son échéance et son état d'avancement.
 - **Mandat** : fonction confiée pour une durée déterminée (administrateur, président, trésorier).
 
-> **⚖️ Adaptation réglementaire** — Les règles de convocation, de quorum, de majorité, de rédaction et de signature des PV, ainsi que la tenue de registres obligatoires, dépendent de la loi applicable et des statuts. L'enregistrement des réunions peut aussi être encadré. Vérifiez-les avant de modifier vos pratiques.
+> **⚖️ Adaptation réglementaire** : Les règles de convocation, de quorum, de majorité, de rédaction et de signature des PV, ainsi que la tenue de registres obligatoires, dépendent de la loi applicable et des statuts. L'enregistrement des réunions peut aussi être encadré. Vérifiez-les avant de modifier vos pratiques.
 
 ## 10.5 Explications détaillées
 
-![Figure 10.1 — De la réunion au suivi des décisions](03_ILLUSTRATIONS/figures/fig_10_1.svg){#fig-10-1}
+![Figure 10.1 : De la réunion au suivi des décisions](03_ILLUSTRATIONS/figures/fig_10_1.svg){#fig-10-1}
 
 ### Le cycle complet d'une réunion de gouvernance
 
@@ -3670,16 +3666,16 @@ La qualité de la gouvernance repose sur des documents fiables (ordres du jour, 
 |---|---|---|---|---|
 | 1. Préparation de l'ordre du jour | Recensement des points, vérification des échéances statutaires | Proposer un projet d'ordre du jour à partir du registre des décisions et du calendrier | Calendrier, registre | Président et direction arrêtent l'ordre du jour |
 | 2. Dossier de séance | Rassemblement des documents | Synthèses d'une page des rapports longs | Espace documentaire partagé | Vérification des synthèses par les auteurs des rapports |
-| 3. Convocation | Envoi dans les délais statutaires | — | Messagerie, rappel automatique | Secrétaire |
+| 3. Convocation | Envoi dans les délais statutaires | Néant | Messagerie, rappel automatique | Secrétaire |
 | 4. Réunion | Débats et votes | Transcription (si consentement de tous) | Visioconférence, enregistreur | Président anime ; secrétaire prend des notes |
 | 5. Projet de PV | Rédaction | Projet structuré à partir des notes ou de la transcription ; extraction des décisions | Traitement de texte | Secrétaire vérifie et corrige |
-| 6. Relecture | Contrôle | — | Suivi des modifications | Président et membres concernés |
-| 7. Adoption et signature | Approbation formelle | — | Signature (manuscrite ou électronique selon le droit applicable) | Organe compétent |
+| 6. Relecture | Contrôle | Néant | Suivi des modifications | Président et membres concernés |
+| 7. Adoption et signature | Approbation formelle | Néant | Signature (manuscrite ou électronique selon le droit applicable) | Organe compétent |
 | 8. Registre des décisions | Mise à jour | Pré-remplissage des lignes à partir du PV adopté | Tableur ou base | Secrétaire valide |
 | 9. Suivi | Rappels, avancement | Synthèse de l'état d'avancement | Rappels automatiques | Responsables de chaque décision |
 | 10. Archivage | Conservation | Indexation (mots clés, résumé) | Gestion documentaire | Secrétaire |
 
-Table: Tableau 10.1 — Explications détaillées
+Table: Tableau 10.1 : Explications détaillées
 
 ### Le procès-verbal : ce que l'IA peut faire… et ne doit pas faire
 
@@ -3696,11 +3692,11 @@ Il ne doit pas :
 - **interpréter** une discussion non conclusive comme une décision ;
 - **reformuler** une décision au point d'en changer la portée.
 
-> **🔎 À retenir** — Le PV adopté et signé fait foi ; le projet généré par l'IA n'est qu'un brouillon. Le secrétaire en est l'auteur et le garant.
+> **🔎 À retenir** : Le PV adopté et signé fait foi ; le projet généré par l'IA n'est qu'un brouillon. Le secrétaire en est l'auteur et le garant.
 
 ### Transcription des réunions : précautions
 
-L'enregistrement et la transcription automatique d'une réunion supposent : l'information préalable et le consentement des participants ; un outil autorisé pour des données orange (un CA évoque souvent des sujets confidentiels — personnel, litiges, finances) ; une durée de conservation courte de l'enregistrement (suppression après adoption du PV, sauf règle contraire) ; la possibilité de suspendre l'enregistrement pour les points confidentiels (huis clos, conflits d'intérêts, questions de personnel).
+L'enregistrement et la transcription automatique d'une réunion supposent : l'information préalable et le consentement des participants ; un outil autorisé pour des données orange (un CA évoque souvent des sujets confidentiels : personnel, litiges, finances) ; une durée de conservation courte de l'enregistrement (suppression après adoption du PV, sauf règle contraire) ; la possibilité de suspendre l'enregistrement pour les points confidentiels (huis clos, conflits d'intérêts, questions de personnel).
 
 ### Suivi des décisions et des mandats
 
@@ -3741,7 +3737,7 @@ Lors du renouvellement d'un président, d'un trésorier ou d'un directeur, un **
 **L. Outils.** Traitement de texte, tableur partagé, calendrier avec rappels ; assistant d'IA autorisé pour des données orange ; éventuellement outil de transcription validé.
 **M. Étapes détaillées.**
 
-1. Adopter un **modèle de PV** (en-tête, présents, représentés, excusés, quorum, ordre du jour, points traités avec « exposé — débat — décision — vote », actions, clôture).
+1. Adopter un **modèle de PV** (en-tête, présents, représentés, excusés, quorum, ordre du jour, points traités avec « exposé, débat, décision, vote », actions, clôture).
 2. Préparer l'**ordre du jour** avec la fiche P10.3, à partir du registre et du calendrier.
 3. Pendant la séance, la secrétaire prend des **notes structurées** selon le modèle, en notant mot pour mot le texte des décisions et les résultats des votes.
 4. Dans les 48 heures, elle soumet les notes à l'assistant avec la fiche P10.1 (outil autorisé pour données orange ; noms des personnes extérieures remplacés si nécessaire).
@@ -3769,11 +3765,11 @@ Lors du renouvellement d'un président, d'un trésorier ou d'un directeur, un **
 | Intermédiaire | Transcription validée avec consentement, suite collaborative avec assistant intégré, registre partagé avec rappels automatiques, espace documentaire du CA avec droits restreints | Suite professionnelle, outil de transcription, plateforme d'automatisation | Abonnements | Paramétrage de la confidentialité |
 | Avancé | Portail de gouvernance (convocations, votes, signatures électroniques selon le droit applicable), assistant de gouvernance RAG sur les documents adoptés, tableau de bord des décisions et des obligations | Logiciel de gestion de conseil, RAG | Licences, intégration | Coût ; vérification de la valeur juridique des signatures et votes électroniques |
 
-Table: Tableau 10.2 — Application métier : de la réunion au suivi des décisions à Horizons Partagés
+Table: Tableau 10.2 : Application métier : de la réunion au suivi des décisions à Horizons Partagés
 
 ## 10.7 Prompts prêts à l'emploi
 
-### Fiche P10.1 — Projet de procès-verbal à partir de notes
+### Fiche P10.1 : Projet de procès-verbal à partir de notes
 
 **A. Titre.** Projet de PV structuré et vérifiable.
 
@@ -3802,7 +3798,7 @@ Règles impératives :
    MOT POUR MOT le texte de la décision figurant dans les notes),
    « Vote » (pour/contre/abstention tels que notés).
 2. Si une décision, un vote, une heure ou un quorum ne figure pas dans
-   les notes, écris [À COMPLÉTER] — n'invente rien.
+   les notes, écris [À COMPLÉTER] : n'invente rien.
 3. Si une discussion n'a pas abouti à une décision, écris « Aucune
    décision n'a été prise sur ce point ».
 4. Termine par un tableau « N° | Décision | Responsable | Échéance »
@@ -3818,7 +3814,7 @@ Style : neutre, concis, au passé composé.
 
 **H. Exemple d'application (illustratif).** Extrait de projet obtenu pour le point « Politique de voyage » :
 
-> **Point 3 — Révision de la politique de voyage.**
+> **Point 3 : Révision de la politique de voyage.**
 > *Exposé.* La directrice a présenté les écarts constatés entre les frais de mission et les plafonds en vigueur, ainsi qu'un projet de politique révisée.
 > *Débat.* Les administrateurs ont discuté du plafond d'hébergement dans les capitales et de la procédure d'autorisation préalable.
 > *Décision.* « Le conseil adopte la politique de voyage révisée, sous réserve de l'ajout d'un plafond spécifique pour les capitales, à proposer par la direction avant le 30 avril. »
@@ -3832,7 +3828,7 @@ Style : neutre, concis, au passé composé.
 
 **K. Amélioration.** *V1* : « Fais un PV avec ces notes. » → l'outil invente une heure de clôture, reformule les décisions et attribue des propos. *V2* : la fiche ci-dessus. *Si le PV est trop long* : « Limite l'exposé et le débat de chaque point à 60 mots, sans toucher au texte des décisions. »
 
-### Fiche P10.2 — Alimenter le registre des décisions
+### Fiche P10.2 : Alimenter le registre des décisions
 
 **A. Titre.** Extraction des décisions et actions d'un PV adopté.
 
@@ -3877,7 +3873,7 @@ Direction exécutive;2026-04-30;à faire;Point 3
 
 **K. Amélioration.** « Ajoute une colonne "dépendances" indiquant si une décision dépend d'une autre décision du registre. »
 
-### Fiche P10.3 — Préparer l'ordre du jour
+### Fiche P10.3 : Préparer l'ordre du jour
 
 **A. Titre.** Projet d'ordre du jour fondé sur le registre et le calendrier.
 
@@ -3911,7 +3907,7 @@ points pour décision avant les points pour information.
 
 **G. Résultat attendu.** Un ordre du jour minuté, sourcé, avec la liste des documents à préparer.
 
-**H. Exemple d'application (illustratif).** Le projet obtenu inscrit automatiquement « Renouvellement des mandats de deux administrateurs (échéance : 2026-06-30) — pour décision » — le point qui avait été oublié l'année précédente.
+**H. Exemple d'application (illustratif).** Le projet obtenu inscrit automatiquement « Renouvellement des mandats de deux administrateurs (échéance : 2026-06-30), pour décision », le point qui avait été oublié l'année précédente.
 
 **I. Méthode de vérification.** Confrontez chaque point aux sources ; vérifiez les délais de convocation statutaires.
 
@@ -3925,7 +3921,7 @@ PV diffusés rapidement et fidèles ; registre des décisions à jour ; mandats 
 
 ## 10.9 Contrôles humains
 
-> **🛑 Contrôle humain obligatoire** — Le texte des décisions, les votes, le quorum et les présences sont vérifiés par le secrétaire sur ses notes. Le PV n'a de valeur qu'une fois adopté et signé par l'organe compétent. Aucune décision ne figure au registre sans validation humaine.
+> **🛑 Contrôle humain obligatoire** : Le texte des décisions, les votes, le quorum et les présences sont vérifiés par le secrétaire sur ses notes. Le PV n'a de valeur qu'une fois adopté et signé par l'organe compétent. Aucune décision ne figure au registre sans validation humaine.
 
 ## 10.10 Risques et erreurs à éviter
 
@@ -3949,7 +3945,7 @@ PV diffusés rapidement et fidèles ; registre des décisions à jour ; mandats 
 - Les mandats et obligations relèvent d'automatisations simples (dates, rappels).
 - Un assistant de gouvernance n'est fiable que sur une base documentaire de documents adoptés.
 
-## 10.13 QCM — Module 10
+## 10.13 QCM : Module 10
 
 **Q1.** (une seule réponse) Un projet de PV généré par l'IA :
 
@@ -3993,14 +3989,14 @@ b) tous les brouillons disponibles.
 c) les courriels personnels des administrateurs.
 d) des documents trouvés sur internet.
 
-**Q7.** (mise en situation — une seule réponse) Le projet de PV indique « 8 voix pour », alors que vos notes indiquent « 7 voix pour, 1 abstention ». Que faites-vous ?
+**Q7.** (mise en situation, une seule réponse) Le projet de PV indique « 8 voix pour », alors que vos notes indiquent « 7 voix pour, 1 abstention ». Que faites-vous ?
 
 a) Vous gardez la version de l'IA.
 b) Vous supprimez le vote du PV.
 c) Vous faites la moyenne.
 d) Vous corrigez selon vos notes et vérifiez le décompte des voix.
 
-**Q8.** (mise en situation — une seule réponse) Un point à huis clos a porté sur un litige avec un salarié. Comment le traiter ?
+**Q8.** (mise en situation, une seule réponse) Un point à huis clos a porté sur un litige avec un salarié. Comment le traiter ?
 
 a) Soumettre les notes à l'assistant comme le reste.
 b) Ne pas le mentionner dans le PV, même s'il y a eu décision.
@@ -4021,7 +4017,7 @@ b) pourcentage de décisions avec responsable et échéance.
 c) nombre de mandats expirés non renouvelés.
 d) nombre de pages des PV.
 
-## 10.14 Corrigé détaillé — Module 10
+## 10.14 Corrigé détaillé : Module 10
 
 **Q1 : b.** Seul le PV adopté et signé fait foi.
 
@@ -4046,17 +4042,17 @@ d) nombre de pages des PV.
 **Barème.** 2 points par question (tout ou rien pour les réponses multiples). Total sur 20. **Niveau de maîtrise :** 0–9 à consolider · 10–13 en progression · 14–17 maîtrise opérationnelle · 18–20 maîtrise avancée.
 
 
-# Module 11 — Gestion des programmes et des projets {#h15}
+# Module 11 : Gestion des programmes et des projets {#h15}
 
 ## 11.1 Mise en situation
 
-Dans trois villages où intervient Horizons Partagés, les agents de santé communautaires signalent une hausse des consultations pour diarrhées chez les jeunes enfants. La coordinatrice, Mariam, doit concevoir rapidement une intervention, la présenter à un bailleur, puis la suivre. Elle dispose d'un registre du centre de santé, de notes de réunions communautaires, d'une ancienne évaluation et de beaucoup de bonne volonté — mais de peu de temps.
+Dans trois villages où intervient Horizons Partagés, les agents de santé communautaires signalent une hausse des consultations pour diarrhées chez les jeunes enfants. La coordinatrice, Mariam, doit concevoir rapidement une intervention, la présenter à un bailleur, puis la suivre. Elle dispose d'un registre du centre de santé, de notes de réunions communautaires, d'une ancienne évaluation et de beaucoup de bonne volonté, mais de peu de temps.
 
 Ce module suit Mariam pas à pas : du problème communautaire au cadre logique, au budget, aux indicateurs, puis au suivi et au rapport.
 
 ## 11.2 Problématique
 
-La conception et le suivi de projets mobilisent énormément d'analyse et de rédaction : analyses de besoins, arbres à problèmes, cadres logiques, chronogrammes, budgets, plans de suivi-évaluation, rapports. Les équipes y consacrent un temps considérable, souvent au détriment du terrain. L'IA peut accélérer ces travaux — mais elle peut aussi produire des projets « hors sol », génériques, déconnectés des réalités et des voix des communautés.
+La conception et le suivi de projets mobilisent énormément d'analyse et de rédaction : analyses de besoins, arbres à problèmes, cadres logiques, chronogrammes, budgets, plans de suivi-évaluation, rapports. Les équipes y consacrent un temps considérable, souvent au détriment du terrain. L'IA peut accélérer ces travaux, mais elle peut aussi produire des projets « hors sol », génériques, déconnectés des réalités et des voix des communautés.
 
 ## 11.3 Objectifs d'apprentissage
 
@@ -4080,7 +4076,7 @@ La conception et le suivi de projets mobilisent énormément d'analyse et de ré
 - **Indicateur SMART** : spécifique, mesurable, atteignable, réaliste (ou pertinent) et temporellement défini.
 - **Critères d'évaluation du CAD de l'OCDE** : pertinence, cohérence, efficacité, efficience, impact, viabilité (OCDE, 2019).
 
-> **🔎 À retenir** — Les modèles de cadre logique, les formats de budget et les exigences de rapport varient selon les bailleurs. Utilisez toujours le modèle et le guide du bailleur concerné.
+> **🔎 À retenir** : Les modèles de cadre logique, les formats de budget et les exigences de rapport varient selon les bailleurs. Utilisez toujours le modèle et le guide du bailleur concerné.
 
 ## 11.5 Explications détaillées
 
@@ -4088,20 +4084,20 @@ La conception et le suivi de projets mobilisent énormément d'analyse et de ré
 
 Les sources d'une analyse des besoins sont multiples : données administratives (registres de santé, statistiques scolaires), enquêtes, entretiens, groupes de discussion, observations, évaluations antérieures. L'IA peut **organiser** ces sources : regrouper des retours par thème, résumer des rapports, proposer des causes possibles. Elle ne peut pas **remplacer** l'écoute des communautés : ce qu'elle propose est une hypothèse à discuter.
 
-![Figure 11.1 — De l'arbre à problèmes à l'arbre à objectifs](03_ILLUSTRATIONS/figures/fig_11_1.svg){#fig-11-1}
+![Figure 11.1 : De l'arbre à problèmes à l'arbre à objectifs](03_ILLUSTRATIONS/figures/fig_11_1.svg){#fig-11-1}
 
 ### Le cadre logique
 
 | | Logique d'intervention | Indicateurs | Sources de vérification | Hypothèses |
 |---|---|---|---|---|
-| **Objectif global** | Contribuer à la réduction de la morbidité infantile dans la zone | Incidence des diarrhées chez les < 5 ans | Registre du centre de santé | — |
+| **Objectif global** | Contribuer à la réduction de la morbidité infantile dans la zone | Incidence des diarrhées chez les < 5 ans | Registre du centre de santé | Néant |
 | **Objectif spécifique** | Les ménages des 3 villages adoptent des pratiques d'eau, d'assainissement et d'hygiène sûres | % de ménages traitant l'eau de boisson ; % de ménages disposant de latrines fonctionnelles | Enquêtes de base et finale | Stabilité sécuritaire ; disponibilité des produits de traitement sur le marché local |
 | **Résultat 1** | Les ménages traitent l'eau à domicile | Nb de ménages formés et équipés | Listes de distribution, rapports de séance | Acceptation culturelle du produit |
 | **Résultat 2** | Les latrines familiales sont fonctionnelles | Nb de latrines réhabilitées et utilisées | Fiches de suivi, visites | Participation des ménages aux travaux |
-| **Résultat 3** | Le lavage des mains aux moments clés est pratiqué | % de ménages disposant d'un dispositif de lavage avec savon | Observation par échantillon | — |
+| **Résultat 3** | Le lavage des mains aux moments clés est pratiqué | % de ménages disposant d'un dispositif de lavage avec savon | Observation par échantillon | Néant |
 | **Activités** | 1.1 Séances de sensibilisation ; 1.2 Distribution de kits ; 2.1 Réhabilitation de latrines ; 3.1 Installation de dispositifs de lavage ; 3.2 Animations scolaires | Moyens : personnel, kits, matériaux | Budget, rapports financiers | Engagement des leaders communautaires |
 
-Table: Tableau 11.1 — Explications détaillées
+Table: Tableau 11.1 : Explications détaillées
 
 **Contrôles de cohérence d'un cadre logique :**
 
@@ -4110,7 +4106,7 @@ Table: Tableau 11.1 — Explications détaillées
 3. **Sources** : chaque indicateur a une source réaliste et budgétée.
 4. **Hypothèses** : extérieures au projet, importantes, ni certaines ni impossibles.
 
-![Figure 11.2 — Chaîne de résultats et indicateurs](03_ILLUSTRATIONS/figures/fig_11_2.svg){#fig-11-2}
+![Figure 11.2 : Chaîne de résultats et indicateurs](03_ILLUSTRATIONS/figures/fig_11_2.svg){#fig-11-2}
 
 ### Planification et calendrier
 
@@ -4131,11 +4127,11 @@ Le budget traduit les activités en ressources. *Exemple (fictif) sur 12 mois :*
 | 6. Coûts indirects | 7 % des coûts directs (taux à vérifier selon le bailleur) | **5 047** |
 | **Total** | 72 100 + 5 047 | **77 147** |
 
-Table: Tableau 11.2 — Explications détaillées
+Table: Tableau 11.2 : Explications détaillées
 
 **Règles :** construire le budget dans un tableur avec des formules (quantité × coût unitaire × durée), jamais en saisissant des totaux à la main ; documenter chaque coût unitaire (devis, grille salariale, historique) ; vérifier l'éligibilité des dépenses et le taux de coûts indirects selon les règles du bailleur ; relier chaque ligne à une activité du cadre logique.
 
-> **🛑 Contrôle humain obligatoire** — Les coûts unitaires proposés par une IA ne sont jamais fiables : ils doivent provenir de devis, de grilles internes ou de données historiques de l'organisation.
+> **🛑 Contrôle humain obligatoire** : Les coûts unitaires proposés par une IA ne sont jamais fiables : ils doivent provenir de devis, de grilles internes ou de données historiques de l'organisation.
 
 ### Indicateurs et plan de suivi-évaluation
 
@@ -4147,7 +4143,7 @@ Un plan de suivi-évaluation précise, pour chaque indicateur : définition exac
 |---|---|---|---|---|---|---|
 | % de ménages traitant l'eau de boisson | Ménages dont l'eau stockée présente un traitement vérifié lors de la visite / ménages visités | 18 % (enquête de base) | 60 % | Enquête par échantillon | Base, mi-parcours, fin | Chargée S&E |
 
-Table: Tableau 11.3 — Explications détaillées
+Table: Tableau 11.3 : Explications détaillées
 
 ### Données de terrain
 
@@ -4205,11 +4201,11 @@ Un rapport d'avancement fidèle compare prévu et réalisé, explique les écart
 | Intermédiaire | Formulaires mobiles hors ligne reliés à une base ; tableaux de bord ; synthèse assistée des données qualitatives ; bibliothèque de modèles | Outil de collecte mobile, tableau de bord, suite professionnelle | Abonnements | Formation des agents |
 | Avancé | Système d'information de S&E intégré (indicateurs, cibles, données désagrégées), alimentant automatiquement les rapports, avec assistant RAG sur l'historique des projets | Plateforme de S&E, API, RAG | Élevés | Gouvernance des données, coûts récurrents |
 
-Table: Tableau 11.4 — Application métier : de l'alerte communautaire au projet financé
+Table: Tableau 11.4 : Application métier : de l'alerte communautaire au projet financé
 
 ## 11.7 Prompts prêts à l'emploi
 
-### Fiche P11.1 — Projet d'arbre à problèmes à partir de données de terrain
+### Fiche P11.1 : Projet d'arbre à problèmes à partir de données de terrain
 
 **A. Titre.** Arbre à problèmes à valider avec les communautés.
 
@@ -4251,7 +4247,7 @@ culpabilisent les populations.
 
 **K. Amélioration.** « Ajoute une colonne indiquant, pour chaque cause, si l'ASBL a la capacité d'agir dessus (oui/partiellement/non). »
 
-### Fiche P11.2 — Projet de cadre logique
+### Fiche P11.2 : Projet de cadre logique
 
 **A. Titre.** Cadre logique à partir d'un arbre à objectifs validé.
 
@@ -4295,7 +4291,7 @@ sans les signaler comme « proposition à valider ».
 
 **K. Amélioration.** « Réécris les indicateurs pour qu'ils soient désagrégés par sexe et par tranche d'âge, et propose un indicateur qualitatif. »
 
-### Fiche P11.3 — Rapport d'avancement fidèle
+### Fiche P11.3 : Rapport d'avancement fidèle
 
 **A. Titre.** Rapport trimestriel fondé sur les données.
 
@@ -4344,7 +4340,7 @@ Propositions plus rapides et plus cohérentes, construites avec les communautés
 
 ## 11.9 Contrôles humains
 
-> **🛑 Contrôle humain obligatoire** — Les priorités d'intervention sont définies avec les communautés et l'équipe ; les coûts unitaires proviennent de sources documentées ; chaque chiffre d'un rapport est pointé avec sa source ; la proposition est validée par la direction et le responsable financier.
+> **🛑 Contrôle humain obligatoire** : Les priorités d'intervention sont définies avec les communautés et l'équipe ; les coûts unitaires proviennent de sources documentées ; chaque chiffre d'un rapport est pointé avec sa source ; la proposition est validée par la direction et le responsable financier.
 
 ## 11.10 Risques et erreurs à éviter
 
@@ -4369,7 +4365,7 @@ Propositions plus rapides et plus cohérentes, construites avec les communautés
 - Les rapports sont fidèles : chaque chiffre est traçable, chaque écart expliqué.
 - L'impact se mesure avec prudence et méthode.
 
-## 11.13 QCM — Module 11
+## 11.13 QCM : Module 11
 
 **Q1.** (une seule réponse) Dans un cadre logique, les hypothèses sont :
 
@@ -4413,14 +4409,14 @@ b) documenter les coûts unitaires.
 c) reprendre les coûts unitaires proposés par l'IA.
 d) vérifier l'éligibilité selon les règles du bailleur.
 
-**Q7.** (mise en situation — une seule réponse) L'IA propose comme cause « le manque d'hygiène des mères ». Que faites-vous ?
+**Q7.** (mise en situation, une seule réponse) L'IA propose comme cause « le manque d'hygiène des mères ». Que faites-vous ?
 
 a) Vous la reformulez de façon factuelle et non culpabilisante et la soumettez comme hypothèse à l'atelier.
 b) Vous la gardez telle quelle.
 c) Vous la retirez sans discussion.
 d) Vous l'ajoutez aux effets.
 
-**Q8.** (mise en situation — une seule réponse) Le rapport généré mentionne « 85 % de satisfaction des bénéficiaires », chiffre absent de vos données. Que faites-vous ?
+**Q8.** (mise en situation, une seule réponse) Le rapport généré mentionne « 85 % de satisfaction des bénéficiaires », chiffre absent de vos données. Que faites-vous ?
 
 a) Vous le gardez car il est plausible.
 b) Vous l'arrondissez à 80 %.
@@ -4441,7 +4437,7 @@ b) Liste nominative des ménages visités.
 c) Notes de terrain anonymisées, si la politique de l'ASBL l'autorise.
 d) Modèle de cadre logique du bailleur, s'il est public.
 
-## 11.14 Corrigé détaillé — Module 11
+## 11.14 Corrigé détaillé : Module 11
 
 **Q1 : c.** Les hypothèses sont extérieures au contrôle du projet.
 
@@ -4472,7 +4468,7 @@ d) Modèle de cadre logique du bailleur, s'il est public.
 - Project Management Institute. (2025). *A Guide to the Project Management Body of Knowledge (PMBOK® Guide)* (8e éd.).
 
 
-# Module 12 — Comptabilité, gestion financière et budgétaire {#h16}
+# Module 12 : Comptabilité, gestion financière et budgétaire {#h16}
 
 ## 12.1 Mise en situation
 
@@ -4482,7 +4478,7 @@ Ibrahim, le responsable financier, a lu qu'« il existe des outils d'IA qui trai
 
 ## 12.2 Problématique
 
-La fonction financière d'une ASBL combine trois exigences : **exactitude** (chaque écriture est juste et justifiée), **traçabilité** (chaque montant peut être relié à une pièce et à une autorisation) et **redevabilité multiple** (bailleurs, organes de gouvernance, autorités, auditeurs, public). Elle est aussi l'une des plus chargées en tâches répétitives : réception, saisie, imputation, rapprochements, consolidation, mise en forme. L'IA peut alléger fortement ces tâches — à condition de ne jamais affaiblir le contrôle interne ni la piste d'audit.
+La fonction financière d'une ASBL combine trois exigences : **exactitude** (chaque écriture est juste et justifiée), **traçabilité** (chaque montant peut être relié à une pièce et à une autorisation) et **redevabilité multiple** (bailleurs, organes de gouvernance, autorités, auditeurs, public). Elle est aussi l'une des plus chargées en tâches répétitives : réception, saisie, imputation, rapprochements, consolidation, mise en forme. L'IA peut alléger fortement ces tâches, à condition de ne jamais affaiblir le contrôle interne ni la piste d'audit.
 
 ## 12.3 Objectifs d'apprentissage
 
@@ -4508,7 +4504,7 @@ La fonction financière d'une ASBL combine trois exigences : **exactitude** (cha
 - **Piste d'audit** : capacité à remonter de chaque montant des états financiers jusqu'à la pièce et à l'autorisation, et inversement.
 - **Seuil de confiance** : niveau de certitude au-dessous duquel une proposition de l'IA est automatiquement soumise à un examen renforcé.
 
-> **⚖️ Adaptation réglementaire** — Il n'existe pas de référentiel comptable universel pour les organisations à but non lucratif. Selon les pays, s'appliquent un plan comptable national, un référentiel spécifique aux entités à but non lucratif ou aux associations, des règles particulières (par exemple, à titre d'illustration et à vérifier selon votre situation : le système comptable des entités à but non lucratif dans l'espace OHADA, le règlement de l'ANC applicable aux personnes morales de droit privé à but non lucratif en France, le *Charities SORP* au Royaume-Uni, les normes du FASB pour les *not-for-profit entities* aux États-Unis). En octobre 2025, un référentiel international volontaire dédié, l'*International Non-Profit Accounting Standard* (INPAS), a été lancé à l'issue du projet IFR4NPO ; il ne s'impose que s'il est adopté par une juridiction ou exigé par un bailleur. Les numéros de comptes cités dans ce module sont donc des **exemples** : utilisez votre plan comptable.
+> **⚖️ Adaptation réglementaire** : Il n'existe pas de référentiel comptable universel pour les organisations à but non lucratif. Selon les pays, s'appliquent un plan comptable national, un référentiel spécifique aux entités à but non lucratif ou aux associations, des règles particulières (par exemple, à titre d'illustration et à vérifier selon votre situation : le système comptable des entités à but non lucratif dans l'espace OHADA, le règlement de l'ANC applicable aux personnes morales de droit privé à but non lucratif en France, le *Charities SORP* au Royaume-Uni, les normes du FASB pour les *not-for-profit entities* aux États-Unis). En octobre 2025, un référentiel international volontaire dédié, l'*International Non-Profit Accounting Standard* (INPAS), a été lancé à l'issue du projet IFR4NPO ; il ne s'impose que s'il est adopté par une juridiction ou exigé par un bailleur. Les numéros de comptes cités dans ce module sont donc des **exemples** : utilisez votre plan comptable.
 
 ## 12.5 Explications détaillées
 
@@ -4523,80 +4519,80 @@ Avant d'automatiser, quatre fondations doivent être en place :
 
 ### Le traitement d'une facture en 14 étapes
 
-![Figure 12.1 — Traitement d'une facture en 14 étapes : qui fait quoi ?](03_ILLUSTRATIONS/figures/fig_12_1.svg){#fig-12-1}
+![Figure 12.1 : Traitement d'une facture en 14 étapes : qui fait quoi ?](03_ILLUSTRATIONS/figures/fig_12_1.svg){#fig-12-1}
 
 Suivons une facture réelle (fictive) d'un bout à l'autre.
 
 *La pièce :* facture n° F-2026-0412 de « Papeterie du Centre », datée du 12 mars 2026, adressée à la Fondation Horizons Partagés : 40 rames de papier à 6,50 UM = 260 UM ; 20 cartouches d'encre à 22,00 UM = 440 UM ; **total 700 UM** (l'organisation n'est pas assujettie à une taxe sur la valeur ajoutée dans cet exemple). Référence du bon de commande : BC-2026-077. Matériel destiné aux sessions de formation des agents de santé du projet PRJ-SANTE-07.
 
-**Étape 1 — Réception.** La facture arrive par courriel au bureau de terrain.
+**Étape 1 : Réception.** La facture arrive par courriel au bureau de terrain.
 *Logiciel :* une adresse électronique dédiée (par exemple factures@…) centralise toutes les factures. *Humain :* les factures remises en main propre sont numérisées le jour même. *Règle :* aucune facture ne circule en dehors de ce canal.
 
-**Étape 2 — Numérisation ou photographie.** Le PDF est conservé tel quel ; une facture papier est scannée ou photographiée avec une application de numérisation (document à plat, lumière suffisante, quatre coins visibles).
+**Étape 2 : Numérisation ou photographie.** Le PDF est conservé tel quel ; une facture papier est scannée ou photographiée avec une application de numérisation (document à plat, lumière suffisante, quatre coins visibles).
 *Contrôle :* lisibilité de tous les montants avant envoi.
 
-**Étape 3 — Extraction des informations.**
+**Étape 3 : Extraction des informations.**
 *IA :* un outil d'extraction (OCR et modèle d'extraction) lit la pièce et propose les champs : fournisseur, numéro, date, montant total, lignes (désignation, quantité, prix unitaire, montant), référence du bon de commande, coordonnées bancaires éventuelles. Il associe à chaque champ un niveau de confiance.
 *Logiciel :* les champs extraits sont stockés dans un enregistrement relié à l'image de la pièce.
 
-**Étape 4 — Contrôle des données extraites.**
-*Logiciel :* contrôles automatiques simples — somme des lignes = total (260 + 440 = 700 ✓) ; date plausible ; fournisseur existant dans le fichier fournisseurs ; numéro de facture non déjà enregistré pour ce fournisseur.
+**Étape 4 : Contrôle des données extraites.**
+*Logiciel :* contrôles automatiques simples : somme des lignes = total (260 + 440 = 700 ✓) ; date plausible ; fournisseur existant dans le fichier fournisseurs ; numéro de facture non déjà enregistré pour ce fournisseur.
 *Humain :* l'assistante administrative compare les champs à faible confiance avec l'image (ici, le « 6,50 » a été lu « 6,60 » avec une confiance de 71 % : elle corrige). Toute modification des **coordonnées bancaires** d'un fournisseur est bloquée et transmise au responsable financier (risque de fraude au changement de RIB).
 
-**Étape 5 — Identification de la nature de la dépense.**
+**Étape 5 : Identification de la nature de la dépense.**
 *IA :* à partir des libellés (« rames de papier », « cartouches d'encre ») et de l'historique, le système propose la nature « fournitures de bureau et consommables de formation ».
 
-**Étape 6 — Proposition d'imputation.**
+**Étape 6 : Proposition d'imputation.**
 *IA :* proposition d'imputation comptable (compte de charges « Fournitures de bureau » de votre plan comptable) et analytique (projet PRJ-SANTE-07, activité 1.1 « Sessions de formation », ligne budgétaire 2 « Activités »), en s'appuyant sur la référence du bon de commande BC-2026-077, qui portait déjà ces codes. Confiance : 94 %.
 
-**Étape 7 — Vérification que le compte proposé est approprié.**
+**Étape 7 : Vérification que le compte proposé est approprié.**
 *Humain :* la comptable vérifie : la nature de la dépense correspond-elle au compte ? Le projet et la ligne correspondent-ils au bon de commande approuvé ? La dépense est-elle éligible selon la convention du bailleur (période, nature, plafond) ? *Règle :* toute proposition avec une confiance inférieure au seuil (par exemple 85 %) ou concernant un compte sensible (immobilisations, salaires, avances) est examinée ligne par ligne.
 
-**Étape 8 — Rapprochement avec le budget concerné.**
+**Étape 8 : Rapprochement avec le budget concerné.**
 *Logiciel :* le système calcule le disponible de la ligne : budget annuel de la ligne 2 du projet = 28 400 UM ; engagé et réalisé à date = 19 650 UM ; disponible avant cette facture = 8 750 UM ; après = 8 050 UM. Aucun dépassement.
-*Logiciel :* rapprochement à trois voies — commande BC-2026-077 (700 UM), bon de livraison signé (40 rames et 20 cartouches reçues), facture (700 UM) : concordance.
+*Logiciel :* rapprochement à trois voies : commande BC-2026-077 (700 UM), bon de livraison signé (40 rames et 20 cartouches reçues), facture (700 UM) : concordance.
 
-**Étape 9 — Détection d'anomalies.**
+**Étape 9 : Détection d'anomalies.**
 *IA et règles :* le système signale : « Une facture du même fournisseur, d'un montant identique (700 UM), numéro F-2026-0411, a été enregistrée le 26 février. Doublon possible. »
 *Humain :* la comptable vérifie : les deux factures correspondent à deux commandes distinctes (BC-2026-061 et BC-2026-077), deux livraisons signées. Ce n'est pas un doublon. Elle consigne l'explication dans le commentaire de l'alerte.
 
-**Étape 10 — Soumission au responsable habilité.**
+**Étape 10 : Soumission au responsable habilité.**
 *Logiciel :* le workflow transmet automatiquement la dépense au responsable habilité selon le seuil (ici, moins de 1 000 UM : coordinatrice du projet) avec la pièce, la proposition d'imputation, le contrôle budgétaire et les alertes traitées.
 *Humain :* la coordinatrice approuve dans l'outil. L'approbation est horodatée et nominative.
 
-**Étape 11 — Validation et enregistrement de l'écriture.**
+**Étape 11 : Validation et enregistrement de l'écriture.**
 *Logiciel :* l'écriture est générée (débit du compte de charges « Fournitures de bureau » 700 UM ; crédit du compte fournisseur « Papeterie du Centre » 700 UM ; axes analytiques PRJ-SANTE-07 / 1.1 / ligne 2).
 *Humain :* la comptable valide l'écriture. Une écriture n'est jamais comptabilisée sans validation humaine. Au paiement, une seconde écriture soldera le compte fournisseur par le compte bancaire, après approbation du paiement selon la procédure.
 
-**Étape 12 — Actualisation des tableaux de bord et du suivi budgétaire.**
+**Étape 12 : Actualisation des tableaux de bord et du suivi budgétaire.**
 *Logiciel :* le tableau de bord du projet est mis à jour (exécution de la ligne 2 : 20 350 / 28 400, soit 71,7 %).
 
-**Étape 13 — Conservation des pièces et de la piste d'audit.**
+**Étape 13 : Conservation des pièces et de la piste d'audit.**
 *Logiciel :* la pièce est archivée sous le nom `2026-03-12_FACT_PapeterieDuCentre_F-2026-0412.pdf`, liée à l'écriture, avec l'historique : qui a extrait, corrigé, proposé, approuvé, validé, et quand. La facture papier d'origine est classée selon les règles de conservation applicables.
 
-**Étape 14 — Traitement des erreurs et cas exceptionnels.**
+**Étape 14 : Traitement des erreurs et cas exceptionnels.**
 *Humain :* une procédure écrite couvre : pièce illisible (demande d'un duplicata) ; facture sans bon de commande (régularisation selon la procédure, signalement) ; dépense inéligible (réimputation sur fonds non affectés, après décision) ; avoir ou annulation ; facture en devise étrangère (taux de conversion selon la politique de l'organisation) ; erreur d'imputation découverte après clôture (écriture de correction documentée, jamais de suppression).
 
 | Étape | IA | Logiciel | Professionnel |
 |---|---|---|---|
-| 1. Réception | — | Boîte dédiée | Numérise les pièces papier |
-| 2. Numérisation | — | Application de numérisation | Vérifie la lisibilité |
-| 3. Extraction | Lit et propose les champs, avec confiance | Stocke champs + image | — |
-| 4. Contrôle des données | — | Contrôles arithmétiques et de cohérence | Corrige les champs à faible confiance ; bloque les changements de RIB |
-| 5. Nature | Propose la nature | — | — |
-| 6. Imputation | Propose comptes et axes | — | — |
-| 7. Vérification du compte | — | — | **Vérifie et décide** |
-| 8. Budget | — | Calcule le disponible ; rapprochement 3 voies | Examine les dépassements |
+| 1. Réception | Néant | Boîte dédiée | Numérise les pièces papier |
+| 2. Numérisation | Néant | Application de numérisation | Vérifie la lisibilité |
+| 3. Extraction | Lit et propose les champs, avec confiance | Stocke champs + image | Néant |
+| 4. Contrôle des données | Néant | Contrôles arithmétiques et de cohérence | Corrige les champs à faible confiance ; bloque les changements de RIB |
+| 5. Nature | Propose la nature | Néant | Néant |
+| 6. Imputation | Propose comptes et axes | Néant | Néant |
+| 7. Vérification du compte | Néant | Néant | **Vérifie et décide** |
+| 8. Budget | Néant | Calcule le disponible ; rapprochement 3 voies | Examine les dépassements |
 | 9. Anomalies | Signale doublons, inhabituels | Applique les règles | **Instruit et conclut** |
-| 10. Approbation | — | Workflow | **Approuve** (personne habilitée) |
-| 11. Écriture | — | Génère l'écriture | **Valide** |
-| 12. Tableaux de bord | — | Met à jour | Analyse |
+| 10. Approbation | Néant | Workflow | **Approuve** (personne habilitée) |
+| 11. Écriture | Néant | Génère l'écriture | **Valide** |
+| 12. Tableaux de bord | Néant | Met à jour | Analyse |
 | 13. Archivage | Indexe | Archive et trace | Classe le papier |
-| 14. Exceptions | — | — | **Traite selon procédure** |
+| 14. Exceptions | Néant | Néant | **Traite selon procédure** |
 
-Table: Tableau 12.1 — Explications détaillées
+Table: Tableau 12.1 : Explications détaillées
 
-> **🔎 À retenir** — L'IA **propose et signale** ; le logiciel **enregistre, calcule et trace** ; le professionnel **vérifie, décide et valide**. Ce partage des rôles est la condition d'une automatisation compatible avec l'audit.
+> **🔎 À retenir** : L'IA **propose et signale** ; le logiciel **enregistre, calcule et trace** ; le professionnel **vérifie, décide et valide**. Ce partage des rôles est la condition d'une automatisation compatible avec l'audit.
 
 ### Caisse et banque
 
@@ -4616,7 +4612,7 @@ Table: Tableau 12.1 — Explications détaillées
 | **= Solde comptable rapproché** | **47 550** |
 | **Écart résiduel** | **0** |
 
-Table: Tableau 12.2 — Explications détaillées
+Table: Tableau 12.2 : Explications détaillées
 
 Les logiciels comptables et bancaires proposent souvent un **rapprochement automatique** (appariement des lignes du relevé et des écritures par montant, date et libellé). L'IA améliore l'appariement des libellés ambigus. Le comptable traite les lignes non appariées, et le rapprochement est **revu et signé** par une autre personne (responsable financier).
 
@@ -4628,7 +4624,7 @@ La **table de correspondance** est l'outil central : pour chaque bailleur, elle 
 
 ### Écarts budgétaires
 
-![Figure 12.2 — Tableau de bord fictif : exécution budgétaire par ligne](03_ILLUSTRATIONS/figures/fig_12_2.svg){#fig-12-2}
+![Figure 12.2 : Tableau de bord fictif : exécution budgétaire par ligne](03_ILLUSTRATIONS/figures/fig_12_2.svg){#fig-12-2}
 
 Au 30 septembre (75 % de l'année écoulée), le tableau de bord du programme pluriannuel de santé communautaire (PRG-SANTE, qui regroupe plusieurs projets) fait apparaître (en milliers d'UM) :
 
@@ -4641,7 +4637,7 @@ Au 30 septembre (75 % de l'année écoulée), le tableau de bord du programme pl
 | Communication | 25 | 26 | 104,0 % | Léger dépassement : vérifier le seuil de flexibilité de la convention |
 | Frais de structure | 70 | 52 | 74,3 % | Conforme |
 
-Table: Tableau 12.3 — Explications détaillées
+Table: Tableau 12.3 : Explications détaillées
 
 L'analyse des écarts combine **calcul** (fait par le tableur ou le logiciel) et **explication** (qui relève des équipes). L'IA est utile pour rédiger une première analyse à partir des taux calculés et des commentaires des responsables (fiche P12.3), et pour comparer les écarts aux règles de flexibilité budgétaire de la convention.
 
@@ -4667,7 +4663,7 @@ Une comptabilité dont chaque écriture est liée à sa pièce et à son approba
 **F. Points de faiblesse.** Ressaisie, classement papier, approbations hors système, aucune détection de doublons.
 **G. Résultat recherché.** Temps de traitement par pièce divisé par deux ; 100 % des pièces liées aux écritures ; clôture mensuelle à J+10 ; zéro paiement en double.
 **H. Pertinence de l'IA.** Forte pour l'extraction et la proposition d'imputation (documents variés, libellés libres) ; complémentaire de règles automatiques (contrôles arithmétiques, seuils, doublons).
-**I. Alternatives sans IA.** Saisie directe dans un formulaire numérique par le demandeur ; centralisation des pièces ; classement normalisé — à mettre en place de toute façon.
+**I. Alternatives sans IA.** Saisie directe dans un formulaire numérique par le demandeur ; centralisation des pièces ; classement normalisé : à mettre en place de toute façon.
 **J. Solution recommandée.** Canal unique de réception + outil d'extraction de documents relié au logiciel comptable (ou fonction intégrée au logiciel) + workflow d'approbation + archivage lié.
 **K. Niveau.** Intermédiaire.
 **L. Outils nécessaires.** Logiciel comptable acceptant l'import ou disposant d'une fonction de capture de documents ; outil d'extraction (intégré ou externe, évalué selon le module 9) ; workflow d'approbation ; stockage documentaire.
@@ -4701,11 +4697,11 @@ Une comptabilité dont chaque écriture est liée à sa pièce et à son approba
 | **Intermédiaire** | Fonction de capture intégrée au logiciel comptable ou outil d'extraction relié ; workflow d'approbation ; rapprochement bancaire automatique ; tableaux de bord | Logiciel comptable en ligne, outil d'extraction, workflow | Paramétrage, tables de correspondance | Abonnements, paramétrage | Dépendance aux fournisseurs ; qualité des historiques |
 | **Avancé** | ERP intégrant achats, comptabilité, budget, trésorerie ; extraction et imputation automatiques avec apprentissage sur l'historique ; contrôles continus ; reporting bailleurs automatisé ; assistant RAG sur les conventions et procédures | ERP, API, entrepôt de données, RAG | Équipe financière et SI structurée | Élevés | Complexité, coût de maintenance, gouvernance des données |
 
-Table: Tableau 12.4 — Application métier : automatiser le traitement des pièces à Horizons Partagés
+Table: Tableau 12.4 : Application métier : automatiser le traitement des pièces à Horizons Partagés
 
 ## 12.7 Prompts prêts à l'emploi
 
-### Fiche P12.1 — Extraire les données d'une facture
+### Fiche P12.1 : Extraire les données d'une facture
 
 **A. Titre.** Extraction structurée d'une pièce justificative.
 
@@ -4740,7 +4736,7 @@ Limites : si un champ est illisible ou absent, écris « ILLISIBLE » ou
 
 **G. Résultat attendu.** Un tableau de champs, des certitudes, les résultats des contrôles arithmétiques.
 
-**H. Exemple d'application (illustratif).** Pour la facture F-2026-0412, le tableau obtenu indique « prix unitaire ligne 1 : 6,60 — certitude moyenne — remarque : le 5 et le 6 sont peu distincts » et « contrôle : 40 × 6,60 = 264 ≠ 260 indiqué ; incohérence ». La comptable vérifie l'image : 6,50. Le contrôle arithmétique a permis de détecter l'erreur de lecture.
+**H. Exemple d'application (illustratif).** Pour la facture F-2026-0412, le tableau obtenu indique « prix unitaire ligne 1 : 6,60, certitude moyenne, remarque : le 5 et le 6 sont peu distincts » et « contrôle : 40 × 6,60 = 264 ≠ 260 indiqué ; incohérence ». La comptable vérifie l'image : 6,50. Le contrôle arithmétique a permis de détecter l'erreur de lecture.
 
 **I. Méthode de vérification.** Comparez chaque champ à certitude non élevée à l'image ; recalculez les totaux dans le tableur ; vérifiez que le numéro de facture n'existe pas déjà pour ce fournisseur.
 
@@ -4748,7 +4744,7 @@ Limites : si un champ est illisible ou absent, écris « ILLISIBLE » ou
 
 **K. Amélioration.** Si l'outil confond prix unitaires et montants : « Pour chaque ligne, vérifie que quantité × prix unitaire = montant de la ligne et signale toute différence. »
 
-### Fiche P12.2 — Proposer une imputation comptable et analytique
+### Fiche P12.2 : Proposer une imputation comptable et analytique
 
 **A. Titre.** Proposition d'imputation justifiée.
 
@@ -4780,7 +4776,7 @@ ADAPTÉ » ; si l'affectation à un projet est incertaine, propose
 
 **G. Résultat attendu.** Une proposition par ligne de facture, justifiée, avec points de vigilance.
 
-**H. Exemple d'application (illustratif).** Proposition obtenue : « Ligne 1 et 2 — compte "Fournitures de bureau" — PRJ-SANTE-07 / 1.1 / ligne 2 — justification : bon de commande BC-2026-077 codé sur l'activité 1.1 ; consommables pour sessions de formation — confiance élevée — vérifier : la convention autorise les consommables de formation sur la ligne Activités (art. 6.2 fourni) ».
+**H. Exemple d'application (illustratif).** Proposition obtenue : « Ligne 1 et 2, compte "Fournitures de bureau", PRJ-SANTE-07 / 1.1 / ligne 2 (justification : bon de commande BC-2026-077 codé sur l'activité 1.1 ; consommables pour sessions de formation) confiance élevée : vérifier : la convention autorise les consommables de formation sur la ligne Activités (art. 6.2 fourni) ».
 
 **I. Méthode de vérification.** Vérifiez que le compte existe dans votre plan et correspond à la nature ; que le codage analytique correspond au bon de commande approuvé ; que la règle d'éligibilité citée figure bien dans la convention.
 
@@ -4788,7 +4784,7 @@ ADAPTÉ » ; si l'affectation à un projet est incertaine, propose
 
 **K. Amélioration.** Pour un usage récurrent, ajoutez 10 exemples d'imputations validées (« exemples guidés ») afin d'aligner les propositions sur vos pratiques.
 
-### Fiche P12.3 — Analyse narrative des écarts budgétaires
+### Fiche P12.3 : Analyse narrative des écarts budgétaires
 
 **A. Titre.** Note d'analyse des écarts budgétaires.
 
@@ -4839,7 +4835,7 @@ Pièces centralisées et liées aux écritures ; propositions d'imputation contr
 
 ## 12.9 Contrôles humains
 
-> **🛑 Contrôle humain obligatoire** — Validation des écritures ; approbation des dépenses et des paiements par les personnes habilitées ; vérification de l'éligibilité ; toute modification de coordonnées bancaires de fournisseurs (vérifiée par un second canal) ; revue et signature des rapprochements bancaires ; comptage physique de la caisse ; arrêté des comptes et rapports financiers. L'IA ne valide, n'approuve et ne paie jamais.
+> **🛑 Contrôle humain obligatoire** : Validation des écritures ; approbation des dépenses et des paiements par les personnes habilitées ; vérification de l'éligibilité ; toute modification de coordonnées bancaires de fournisseurs (vérifiée par un second canal) ; revue et signature des rapprochements bancaires ; comptage physique de la caisse ; arrêté des comptes et rapports financiers. L'IA ne valide, n'approuve et ne paie jamais.
 
 ## 12.10 Risques et erreurs à éviter
 
@@ -4870,7 +4866,7 @@ Pièces centralisées et liées aux écritures ; propositions d'imputation contr
 - Le suivi multi-axes et les tables de correspondance permettent de produire les rapports de chaque bailleur à partir d'une seule comptabilité.
 - Il n'existe pas de référentiel comptable universel : adaptez-vous au droit applicable.
 
-## 12.13 QCM — Module 12
+## 12.13 QCM : Module 12
 
 **Q1.** (une seule réponse) Dans le traitement assisté d'une facture, le rôle de l'IA est principalement de :
 
@@ -4914,14 +4910,14 @@ b) peuvent couvrir toute dépense de l'organisation.
 c) exigent un suivi distinct.
 d) peuvent devoir être restitués en cas de non-utilisation conforme.
 
-**Q7.** (mise en situation — une seule réponse) L'outil signale un doublon possible : même fournisseur, même montant, deux numéros de facture différents. Que faites-vous ?
+**Q7.** (mise en situation, une seule réponse) L'outil signale un doublon possible : même fournisseur, même montant, deux numéros de facture différents. Que faites-vous ?
 
 a) Supprimer la seconde facture.
 b) Vérifier les bons de commande et de livraison avant de conclure, et documenter la conclusion.
 c) Payer les deux sans vérification.
 d) Désactiver l'alerte.
 
-**Q8.** (mise en situation — une seule réponse) Une ligne « Déplacements » atteint 118 % de son budget à 75 % de la période. Première action ?
+**Q8.** (mise en situation, une seule réponse) Une ligne « Déplacements » atteint 118 % de son budget à 75 % de la période. Première action ?
 
 a) Analyser l'écart, vérifier la règle de flexibilité de la convention et soumettre une décision à la direction.
 b) Réimputer discrètement l'excédent sur une autre ligne.
@@ -4942,7 +4938,7 @@ b) taux de propositions d'imputation acceptées sans modification.
 c) délai de clôture mensuelle.
 d) nombre de logiciels installés.
 
-## 12.14 Corrigé détaillé — Module 12
+## 12.14 Corrigé détaillé : Module 12
 
 **Q1 : d.** L'IA propose et signale ; elle ne valide ni n'approuve.
 
@@ -4968,21 +4964,21 @@ d) nombre de logiciels installés.
 
 ## Références du module
 
-- COSO. (2013). *Internal Control — Integrated Framework*.
+- COSO. (2013). *Internal Control : Integrated Framework*.
 - International Non-Profit Reporting Foundation (INPRF) / projet IFR4NPO (CIPFA et Humentum). (2025). *International Non-Profit Accounting Standard (INPAS)*.
 
 
-# Module 13 — Audit, contrôle interne, gestion des risques et conformité {#h17}
+# Module 13 : Audit, contrôle interne, gestion des risques et conformité {#h17}
 
 ## 13.1 Mise en situation
 
-Au Réseau Citoyen pour l'Eau (RCE), Fatou est contrôleuse interne. Le comité d'audit lui demande une revue des dépenses du premier trimestre du projet « Eau et assainissement » et du siège. Elle dispose de l'extraction du grand livre (40 dépenses, 31 890,50 UM), du fichier fournisseurs, des pièces numérisées et du manuel de procédures. Avec la méthode classique — sélection d'un échantillon, vérification des pièces — elle aurait examiné une quinzaine d'opérations. Avec des tests analytiques assistés, elle peut examiner **toute la population**, puis concentrer son temps d'expert sur les opérations les plus risquées.
+Au Réseau Citoyen pour l'Eau (RCE), Fatou est contrôleuse interne. Le comité d'audit lui demande une revue des dépenses du premier trimestre du projet « Eau et assainissement » et du siège. Elle dispose de l'extraction du grand livre (40 dépenses, 31 890,50 UM), du fichier fournisseurs, des pièces numérisées et du manuel de procédures. Avec la méthode classique (sélection d'un échantillon, vérification des pièces) elle aurait examiné une quinzaine d'opérations. Avec des tests analytiques assistés, elle peut examiner **toute la population**, puis concentrer son temps d'expert sur les opérations les plus risquées.
 
 Ce module suit sa démarche, du fichier brut à la feuille de travail et aux recommandations. Les tests présentés ont été **réellement exécutés** sur le fichier fictif fourni en annexe (`depenses_RCE_T1_2026.csv`) à l'aide d'un script reproductible (`tests_audit.py`) ; les résultats chiffrés de ce module en sont issus. Les conclusions des vérifications de pièces et d'entretiens, elles, relèvent du scénario pédagogique.
 
 ## 13.2 Problématique
 
-Les ASBL sont exposées à des risques de fraude, d'erreur et de non-conformité, souvent avec des fonctions de contrôle réduites. Dans l'étude mondiale de l'ACFE sur 1 921 cas de fraude interne survenus entre janvier 2022 et septembre 2023 dans 138 pays et territoires, 43 % des fraudes ont été détectées grâce à un signalement — davantage que par tout autre moyen (ACFE, 2024) : les contrôles formels, à eux seuls, en détectent une part bien moindre. L'IA et l'analyse de données permettent d'étendre les contrôles à l'ensemble des opérations, mais elles produisent aussi des faux positifs et ne remplacent ni le jugement professionnel, ni les dispositifs de signalement, ni le scepticisme de l'auditeur.
+Les ASBL sont exposées à des risques de fraude, d'erreur et de non-conformité, souvent avec des fonctions de contrôle réduites. Dans l'étude mondiale de l'ACFE sur 1 921 cas de fraude interne survenus entre janvier 2022 et septembre 2023 dans 138 pays et territoires, 43 % des fraudes ont été détectées grâce à un signalement : davantage que par tout autre moyen (ACFE, 2024) : les contrôles formels, à eux seuls, en détectent une part bien moindre. L'IA et l'analyse de données permettent d'étendre les contrôles à l'ensemble des opérations, mais elles produisent aussi des faux positifs et ne remplacent ni le jugement professionnel, ni les dispositifs de signalement, ni le scepticisme de l'auditeur.
 
 ## 13.3 Objectifs d'apprentissage
 
@@ -5015,7 +5011,7 @@ L'environnement de contrôle est la base des autres composantes : intégrité et
 
 ### La cartographie des risques
 
-![Figure 13.2 — Carte thermique des risques](03_ILLUSTRATIONS/figures/fig_13_2.svg){#fig-13-2}
+![Figure 13.2 : Carte thermique des risques](03_ILLUSTRATIONS/figures/fig_13_2.svg){#fig-13-2}
 
 Pour chaque processus (achats, paiements, avances, caisse, paie, subventions), on identifie les risques, on les évalue (probabilité × impact, de 1 à 5), on recense les contrôles existants, puis on estime le risque résiduel. L'IA aide à **proposer des risques** à partir de la description d'un processus et à **mettre en forme** la cartographie ; l'évaluation relève des responsables et de l'auditeur.
 
@@ -5027,11 +5023,11 @@ Pour chaque processus (achats, paiements, avances, caisse, paie, subventions), o
 | R4 Fuite de données via outils d'IA | Transverse | 3 | 5 | 15 | Aucune règle écrite | Insuffisant |
 | R5 Dépendance à un fournisseur | Achats | 2 | 3 | 6 | Mise en concurrence au-delà du seuil | Partiel |
 
-Table: Tableau 13.1 — Explications détaillées
+Table: Tableau 13.1 : Explications détaillées
 
 ### Les tests analytiques
 
-![Figure 13.1 — Entonnoir des tests analytiques assistés](03_ILLUSTRATIONS/figures/fig_13_1.svg){#fig-13-1}
+![Figure 13.1 : Entonnoir des tests analytiques assistés](03_ILLUSTRATIONS/figures/fig_13_1.svg){#fig-13-1}
 
 | Test | Règle | Risque visé |
 |---|---|---|
@@ -5045,7 +5041,7 @@ Table: Tableau 13.1 — Explications détaillées
 | T8 Sans bon de commande | Montant ≥ seuil sans bon de commande | Non-respect de la procédure |
 | T9 Libellé imprécis | Libellé contenant « divers », « prestation de services » | Opacité |
 
-Table: Tableau 13.2 — Explications détaillées
+Table: Tableau 13.2 : Explications détaillées
 
 Ces tests reposent sur des **règles explicites** : ils relèvent davantage de l'analyse de données que de l'IA au sens strict. L'IA intervient pour : écrire les formules ou le script ; rapprocher des libellés semblables mais non identiques ; regrouper des fournisseurs aux noms proches (« Quincaillerie Delta » et « Quincaillerie Delta SARL ») ; résumer les résultats ; rédiger la feuille de travail et les recommandations.
 
@@ -5066,14 +5062,14 @@ Seuil d'autorisation et de bon de commande retenu dans le cas : 1 000 UM.
 | T9 Libellé imprécis | 2 | D24, D33 |
 | **Opérations signalées par au moins un test** | **22** | sur 40 |
 
-Table: Tableau 13.3 — Explications détaillées
+Table: Tableau 13.3 : Explications détaillées
 
 Vingt-deux opérations sur quarante : c'est beaucoup trop pour tout examiner en détail, et beaucoup sont des **faux positifs**. Le test T7 (week-end) est peu discriminant pour une organisation qui mène des activités de terrain le samedi. Les « doublons » D03/D39 (hôtel, 270 UM) concernent deux missions de projets et de dates différents ; D06/D35 et D15/D31 correspondent à des dépenses récurrentes de même montant (carburant, hébergement). L'auditrice **priorise** donc :
 
-- **priorité 1** — opérations cumulant plusieurs alertes fortes (T2, T3, T8, T9) : D24, D33 ;
-- **priorité 2** — doublon portant sur le **même bon de commande** (D01/D13, BC-101) ; fractionnement avec pièce manquante (D16, D17, D18) ;
-- **priorité 3** — pièce manquante isolée (D31) ;
-- **traitement global** — auto-approbations récurrentes (T4) : faiblesse de conception du contrôle, à examiner au niveau de la procédure plutôt qu'opération par opération.
+- **priorité 1** : opérations cumulant plusieurs alertes fortes (T2, T3, T8, T9) : D24, D33 ;
+- **priorité 2** : doublon portant sur le **même bon de commande** (D01/D13, BC-101) ; fractionnement avec pièce manquante (D16, D17, D18) ;
+- **priorité 3** : pièce manquante isolée (D31) ;
+- **traitement global** : auto-approbations récurrentes (T4) : faiblesse de conception du contrôle, à examiner au niveau de la procédure plutôt qu'opération par opération.
 
 Soit **8 opérations prioritaires** examinées en détail (D01, D13, D16, D17, D18, D24, D31, D33).
 
@@ -5087,9 +5083,9 @@ Soit **8 opérations prioritaires** examinées en détail (D01, D13, D16, D17, D
 | D31 | Facture d'hôtel retrouvée dans la messagerie de l'agent, non jointe | Régularisée : pièce archivée. Pas de constat, mais point d'attention sur la collecte des pièces de mission |
 | T4 (global) | La procédure autorise le logisticien à approuver ses propres achats de carburant en caisse | **Faiblesse de contrôle** : séparation des tâches insuffisante |
 
-Table: Tableau 13.4 — Explications détaillées
+Table: Tableau 13.4 : Explications détaillées
 
-> **🛑 Contrôle humain obligatoire** — Une alerte n'est pas une preuve. Aucune conclusion de fraude, aucun nom, aucune sanction ne découle d'un résultat automatique. Les soupçons de fraude suivent la politique de l'organisation et, le cas échéant, les obligations légales, sous la responsabilité de personnes habilitées.
+> **🛑 Contrôle humain obligatoire** : Une alerte n'est pas une preuve. Aucune conclusion de fraude, aucun nom, aucune sanction ne découle d'un résultat automatique. Les soupçons de fraude suivent la politique de l'organisation et, le cas échéant, les obligations légales, sous la responsabilité de personnes habilitées.
 
 ### La feuille de travail
 
@@ -5097,9 +5093,9 @@ Une feuille de travail comporte : référence ; objectif ; population et source 
 
 ### Constats et recommandations
 
-Un constat bien rédigé suit le schéma **critère — constat — cause — conséquence — recommandation**. Exemple pour le constat 2 :
+Un constat bien rédigé suit le schéma **critère, constat, cause, conséquence, recommandation**. Exemple pour le constat 2 :
 
-- *Critère* : manuel de procédures, § 5.3 — tout achat d'un montant cumulé supérieur à 1 000 UM auprès d'un même fournisseur pour un même besoin fait l'objet d'une consultation d'au moins trois fournisseurs et d'une approbation de la direction.
+- *Critère* : manuel de procédures, § 5.3 : tout achat d'un montant cumulé supérieur à 1 000 UM auprès d'un même fournisseur pour un même besoin fait l'objet d'une consultation d'au moins trois fournisseurs et d'une approbation de la direction.
 - *Constat* : trois achats de fournitures de bureau (990, 985 et 995 UM ; total 2 970 UM) ont été effectués auprès du même fournisseur du 3 au 5 février, payés en caisse et approuvés par la demandeuse ; la pièce de l'un d'eux est manquante.
 - *Cause* : absence de contrôle du cumul par fournisseur ; possibilité d'auto-approbation en caisse.
 - *Conséquence* : contournement de la mise en concurrence et de l'approbation ; risque de surcoût et de dépenses non justifiées ; risque de non-éligibilité auprès du bailleur.
@@ -5161,11 +5157,11 @@ L'usage de l'IA par l'auditeur doit respecter la confidentialité des données (
 | Intermédiaire | Script ou outil d'analyse de données exécutant une bibliothèque de tests ; rapprochement de noms proches ; tableaux de bord | Outil d'analyse, assistant professionnel | Licences modestes | Compétences en analyse de données |
 | Avancé | Contrôle continu sur l'ERP, alertes automatiques, gestion des cas, tableau de bord des risques intégré, IA pour la détection d'anomalies statistiques | ERP, plateforme d'audit, outil de GRC | Élevés | Gestion des faux positifs ; gouvernance des accès |
 
-Table: Tableau 13.5 — Application métier : revue des dépenses du premier trimestre au RCE
+Table: Tableau 13.5 : Application métier : revue des dépenses du premier trimestre au RCE
 
 ## 13.7 Prompts prêts à l'emploi
 
-### Fiche P13.1 — Concevoir les tests analytiques d'un fichier de dépenses
+### Fiche P13.1 : Concevoir les tests analytiques d'un fichier de dépenses
 
 **A. Titre.** Bibliothèque de tests analytiques pour un tableur.
 
@@ -5210,7 +5206,7 @@ nécessitent un tri préalable.
 
 **K. Amélioration.** « Le test week-end produit trop de faux positifs pour nos activités de terrain. Propose un test plus discriminant pour les opérations atypiques (par exemple, dépenses saisies hors des jours d'activité planifiés). »
 
-### Fiche P13.2 — Rédiger une feuille de travail
+### Fiche P13.2 : Rédiger une feuille de travail
 
 **A. Titre.** Projet de feuille de travail d'audit.
 
@@ -5249,7 +5245,7 @@ constatés et hypothèses ; n'emploie pas le mot « fraude » : écris
 
 **K. Amélioration.** « Ajoute un tableau de traçabilité "Constat → pièces examinées → référence d'archivage". »
 
-### Fiche P13.3 — Formuler des recommandations actionnables
+### Fiche P13.3 : Formuler des recommandations actionnables
 
 **A. Titre.** Recommandations SMART à partir des constats.
 
@@ -5279,7 +5275,7 @@ du conseil d'administration.
 
 **G. Résultat attendu.** Un tableau de recommandations prêtes à être discutées.
 
-**H. Exemple d'application (illustratif).** Pour la faiblesse T4, la proposition obtenue : « Modifier la procédure de caisse : approbation des dépenses de carburant par le coordinateur de projet ; alerte mensuelle automatique des auto-approbations — responsable : DAF — échéance : 31 mai — preuve : procédure révisée et rapport d'alertes de juin ».
+**H. Exemple d'application (illustratif).** Pour la faiblesse T4, la proposition obtenue : « Modifier la procédure de caisse : approbation des dépenses de carburant par le coordinateur de projet ; alerte mensuelle automatique des auto-approbations (responsable : DAF) échéance : 31 mai : preuve : procédure révisée et rapport d'alertes de juin ».
 
 **I. Méthode de vérification.** Chaque recommandation est-elle reliée à une cause ? réaliste ? vérifiable ?
 
@@ -5293,7 +5289,7 @@ Couverture complète de la population ; priorisation documentée ; trois constat
 
 ## 13.9 Contrôles humains
 
-> **🛑 Contrôle humain obligatoire** — Priorisation, examen des pièces, conclusions, rédaction finale des constats, traitement des soupçons de fraude et suivi des recommandations relèvent du jugement de l'auditeur et des personnes habilitées. Les résultats des tests ne sont jamais diffusés comme des accusations.
+> **🛑 Contrôle humain obligatoire** : Priorisation, examen des pièces, conclusions, rédaction finale des constats, traitement des soupçons de fraude et suivi des recommandations relèvent du jugement de l'auditeur et des personnes habilitées. Les résultats des tests ne sont jamais diffusés comme des accusations.
 
 ## 13.10 Risques et erreurs à éviter
 
@@ -5315,10 +5311,10 @@ Couverture complète de la population ; priorisation documentée ; trois constat
 - Le contrôle interne s'apprécie d'abord par son environnement ; la cartographie des risques oriente les travaux.
 - Les tests analytiques couvrent toute la population ; ils produisent des alertes, dont beaucoup sont des faux positifs.
 - La priorisation, l'examen des pièces et les conclusions relèvent du jugement professionnel.
-- Les constats suivent le schéma critère — constat — cause — conséquence — recommandation.
+- Les constats suivent le schéma critère, constat, cause, conséquence, recommandation.
 - Les recommandations sont suivies dans un registre et un tableau de bord des risques.
 
-## 13.13 QCM — Module 13
+## 13.13 QCM : Module 13
 
 **Q1.** (une seule réponse) Les *Global Internal Audit Standards* de l'IIA sont en vigueur depuis :
 
@@ -5362,14 +5358,14 @@ b) la cause.
 c) la conséquence.
 d) le nom de la personne fautive.
 
-**Q7.** (mise en situation — une seule réponse) Deux dépenses de 5 500 UM au total, sans pièce, auprès d'un fournisseur absent de la base, approuvées par le demandeur. Que fait l'auditrice ?
+**Q7.** (mise en situation, une seule réponse) Deux dépenses de 5 500 UM au total, sans pièce, auprès d'un fournisseur absent de la base, approuvées par le demandeur. Que fait l'auditrice ?
 
 a) Elle conclut à une fraude dans son rapport.
 b) Elle interroge immédiatement le demandeur devant l'équipe.
 c) Elle applique la politique de lutte contre la fraude : information confidentielle des personnes habilitées, préservation des preuves, pas de conclusion hâtive.
 d) Elle ignore l'alerte faute de preuve.
 
-**Q8.** (mise en situation — une seule réponse) Le test « week-end » signale 12 opérations, presque toutes liées à des activités de terrain normales. Que faites-vous ?
+**Q8.** (mise en situation, une seule réponse) Le test « week-end » signale 12 opérations, presque toutes liées à des activités de terrain normales. Que faites-vous ?
 
 a) Vous examinez quand même les 12 en détail chaque trimestre.
 b) Vous documentez sa faible pertinence et le remplacez ou l'affinez.
@@ -5390,7 +5386,7 @@ b) rapprocher des noms de fournisseurs proches.
 c) rédiger un projet de feuille de travail.
 d) conclure sur la culpabilité d'une personne.
 
-## 13.14 Corrigé détaillé — Module 13
+## 13.14 Corrigé détaillé : Module 13
 
 **Q1 : a.** Publiées le 9 janvier 2024, elles sont en vigueur depuis le 9 janvier 2025.
 
@@ -5417,11 +5413,11 @@ d) conclure sur la culpabilité d'une personne.
 ## Références du module
 
 - Association of Certified Fraud Examiners. (2024). *Occupational Fraud 2024: A Report to the Nations*.
-- COSO. (2013). *Internal Control — Integrated Framework*.
+- COSO. (2013). *Internal Control : Integrated Framework*.
 - The Institute of Internal Auditors. (2024). *Global Internal Audit Standards*.
 
 
-# Module 14 — Ressources humaines et gestion des bénévoles {#h18}
+# Module 14 : Ressources humaines et gestion des bénévoles {#h18}
 
 ## 14.1 Mise en situation
 
@@ -5431,7 +5427,7 @@ Horizons Partagés doit recruter un ou une chargé(e) de suivi-évaluation. La d
 
 ## 14.2 Problématique
 
-Les fonctions RH et bénévolat combinent une forte charge administrative (annonces, tri, plannings, formations, documents) et des décisions particulièrement sensibles, qui touchent directement des personnes : recrutement, évaluation, rémunération, sanctions. L'IA peut alléger la première ; elle ne doit pas s'approprier les secondes. Les systèmes de tri automatique de candidatures peuvent reproduire des discriminations, et de nombreuses législations encadrent les décisions automatisées en matière d'emploi — le règlement européen sur l'IA range d'ailleurs certains systèmes d'IA utilisés pour le recrutement et la gestion du personnel parmi les systèmes à haut risque.
+Les fonctions RH et bénévolat combinent une forte charge administrative (annonces, tri, plannings, formations, documents) et des décisions particulièrement sensibles, qui touchent directement des personnes : recrutement, évaluation, rémunération, sanctions. L'IA peut alléger la première ; elle ne doit pas s'approprier les secondes. Les systèmes de tri automatique de candidatures peuvent reproduire des discriminations, et de nombreuses législations encadrent les décisions automatisées en matière d'emploi : le règlement européen sur l'IA range d'ailleurs certains systèmes d'IA utilisés pour le recrutement et la gestion du personnel parmi les systèmes à haut risque.
 
 ## 14.3 Objectifs d'apprentissage
 
@@ -5453,11 +5449,11 @@ Les fonctions RH et bénévolat combinent une forte charge administrative (annon
 - **Référentiel de compétences** : liste des compétences attendues par fonction, avec niveaux.
 - **Biais de recrutement** : préférences non liées aux compétences (âge, sexe, origine, école, nom, apparence, handicap, situation familiale) qui influencent les décisions.
 
-> **⚖️ Adaptation réglementaire** — Le droit du travail, le droit de la non-discrimination, les règles relatives aux bénévoles (assurance, remboursement de frais, statut) et la protection des données des candidats et du personnel diffèrent selon les pays. Les durées de conservation des candidatures non retenues, en particulier, sont souvent encadrées.
+> **⚖️ Adaptation réglementaire** : Le droit du travail, le droit de la non-discrimination, les règles relatives aux bénévoles (assurance, remboursement de frais, statut) et la protection des données des candidats et du personnel diffèrent selon les pays. Les durées de conservation des candidatures non retenues, en particulier, sont souvent encadrées.
 
 ## 14.5 Explications détaillées
 
-![Figure 14.1 — Recrutement assisté : où l'IA aide, où l'humain décide](03_ILLUSTRATIONS/figures/fig_14_1.svg){#fig-14-1}
+![Figure 14.1 : Recrutement assisté : où l'IA aide, où l'humain décide](03_ILLUSTRATIONS/figures/fig_14_1.svg){#fig-14-1}
 
 ### Fiches de poste et annonces
 
@@ -5472,7 +5468,7 @@ L'IA est utile pour structurer une fiche de poste à partir des besoins exprimé
 5. **Anonymisation partielle** possible au premier tri (masquer nom, âge, photo, adresse) pour limiter les biais.
 6. **Réponse à tous les candidats**, y compris non retenus, dans un délai annoncé.
 
-> **🛑 Contrôle humain obligatoire** — Aucune candidature n'est écartée par un système automatique. Les personnes chargées du recrutement lisent les candidatures, appliquent la grille et motivent leurs décisions.
+> **🛑 Contrôle humain obligatoire** : Aucune candidature n'est écartée par un système automatique. Les personnes chargées du recrutement lisent les candidatures, appliquent la grille et motivent leurs décisions.
 
 ### Entretiens
 
@@ -5548,11 +5544,11 @@ Un assistant RH interne peut répondre aux questions générales du personnel et
 | Intermédiaire | Logiciel de gestion des candidatures (sans classement automatique), outil de planification des bénévoles avec application mobile, base de connaissances RH | Logiciel RH, outil de planification | Abonnements | Paramétrage ; protection des données |
 | Avancé | SIRH intégré (paie, congés, compétences, formation), assistant RH RAG sur documents validés, tableaux de bord RH agrégés | SIRH, RAG | Élevés | Données sensibles ; obligations légales renforcées |
 
-Table: Tableau 14.1 — Application métier : recruter un(e) chargé(e) de suivi-évaluation
+Table: Tableau 14.1 : Application métier : recruter un(e) chargé(e) de suivi-évaluation
 
 ## 14.7 Prompts prêts à l'emploi
 
-### Fiche P14.1 — Fiche de poste et annonce inclusives
+### Fiche P14.1 : Fiche de poste et annonce inclusives
 
 **A. Titre.** Fiche de poste et annonce.
 
@@ -5593,7 +5589,7 @@ situation familiale ou à l'apparence ; formulation inclusive.
 
 **K. Amélioration.** « Rédige une version courte (80 mots) pour les réseaux sociaux et une version audio de 45 secondes pour la radio communautaire. »
 
-### Fiche P14.2 — Guide d'entretien structuré
+### Fiche P14.2 : Guide d'entretien structuré
 
 **A. Titre.** Guide d'entretien structuré et échelle d'évaluation.
 
@@ -5630,7 +5626,7 @@ religion, origine…) ; une fiche d'évaluation individuelle vierge.
 
 **K. Amélioration.** « Adapte le guide pour un entretien à distance avec une connexion instable (questions envoyées à l'avance, durée réduite). »
 
-### Fiche P14.3 — Planning hebdomadaire des bénévoles
+### Fiche P14.3 : Planning hebdomadaire des bénévoles
 
 **A. Titre.** Proposition de planning à partir de disponibilités pseudonymisées.
 
@@ -5676,7 +5672,7 @@ Recrutements plus rapides, équitables et traçables ; candidats informés ; pla
 
 ## 14.9 Contrôles humains
 
-> **🛑 Contrôle humain obligatoire** — Présélection, entretiens, décisions de recrutement, évaluations, rémunérations, sanctions, acceptation ou exclusion de bénévoles : décisions exclusivement humaines, motivées et traçables. Aucune analyse automatisée de la voix, du visage, de la personnalité ou des communications du personnel.
+> **🛑 Contrôle humain obligatoire** : Présélection, entretiens, décisions de recrutement, évaluations, rémunérations, sanctions, acceptation ou exclusion de bénévoles : décisions exclusivement humaines, motivées et traçables. Aucune analyse automatisée de la voix, du visage, de la personnalité ou des communications du personnel.
 
 ## 14.10 Risques et erreurs à éviter
 
@@ -5700,7 +5696,7 @@ Recrutements plus rapides, équitables et traçables ; candidats informés ; pla
 - Les données des candidats, du personnel et des bénévoles sont protégées et minimisées.
 - La transmission des connaissances se prépare avant les départs.
 
-## 14.13 QCM — Module 14
+## 14.13 QCM : Module 14
 
 **Q1.** (une seule réponse) Une grille de sélection doit être définie :
 
@@ -5744,14 +5740,14 @@ b) accéder aux dossiers individuels pour répondre précisément.
 c) traiter les signalements de harcèlement.
 d) décider des congés.
 
-**Q7.** (mise en situation — une seule réponse) Un prestataire propose un classement automatique des 260 candidatures. Votre réponse ?
+**Q7.** (mise en situation, une seule réponse) Un prestataire propose un classement automatique des 260 candidatures. Votre réponse ?
 
 a) Accepter pour gagner du temps.
 b) Accepter si le prestataire garantit l'absence de biais.
 c) Ne retenir que les 20 premiers.
 d) Refuser le classement automatique ; éventuellement utiliser un outil pour organiser l'information factuelle, l'examen restant humain selon la grille.
 
-**Q8.** (mise en situation — une seule réponse) Pour planifier les visites, le coordinateur veut coller la liste des personnes âgées avec adresses et pathologies dans un assistant. Que recommandez-vous ?
+**Q8.** (mise en situation, une seule réponse) Pour planifier les visites, le coordinateur veut coller la liste des personnes âgées avec adresses et pathologies dans un assistant. Que recommandez-vous ?
 
 a) Le faire si l'outil est payant.
 b) Le faire puis supprimer la conversation.
@@ -5772,7 +5768,7 @@ b) liste des dossiers en cours et des contacts clés.
 c) transfert ou fermeture des accès.
 d) conservation des mots de passe personnels du partant.
 
-## 14.14 Corrigé détaillé — Module 14
+## 14.14 Corrigé détaillé : Module 14
 
 **Q1 : b.** Définie à l'avance, elle limite les biais et garantit l'égalité de traitement.
 
@@ -5802,7 +5798,7 @@ d) conservation des mots de passe personnels du partant.
 - Règlement (UE) 2016/679 (RGPD), article 22.
 
 
-# Module 15 — Recherche de financements, partenariats et relations avec les bailleurs {#h19}
+# Module 15 : Recherche de financements, partenariats et relations avec les bailleurs {#h19}
 
 ## 15.1 Mise en situation
 
@@ -5849,13 +5845,13 @@ La recherche de financements combine veille, analyse, stratégie, rédaction et 
 | Activités génératrices de revenus | Autonomie | Règles fiscales et statutaires, à vérifier |
 | Financement participatif | Visibilité | Effort de communication |
 
-Table: Tableau 15.1 — Explications détaillées
+Table: Tableau 15.1 : Explications détaillées
 
 Une stratégie de diversification fixe des objectifs (par exemple : aucun bailleur au-delà de 40 % du budget dans trois ans ; 15 % de ressources non affectées), identifie les sources cibles, et affecte du temps à la prospection de façon régulière.
 
 ### La veille
 
-![Figure 15.1 — Entonnoir des opportunités de financement](03_ILLUSTRATIONS/figures/fig_15_1.svg){#fig-15-1}
+![Figure 15.1 : Entonnoir des opportunités de financement](03_ILLUSTRATIONS/figures/fig_15_1.svg){#fig-15-1}
 
 Une veille efficace combine : abonnements aux lettres d'information des bailleurs et des plateformes d'appels ; alertes de recherche ; réseaux et plateformes de coordination sectorielle ; contacts réguliers avec les bailleurs. L'IA aide à **traiter le volume** : résumer chaque appel en une fiche standard (objet, zones, montants, éligibilité, échéances), le comparer au profil de l'organisation, et alimenter un tableau de veille. Elle ne remplace pas la lecture des documents officiels de l'appel avant toute décision.
 
@@ -5867,10 +5863,10 @@ L'éligibilité est **binaire** et souvent éliminatoire. Toute erreur coûte un
 |---|---|---|---|
 | Organisation enregistrée depuis au moins 3 ans | Enregistrée en 2018 | Récépissé d'enregistrement | ✅ |
 | Budget annuel moyen ≥ 500 000 UM sur les 3 derniers exercices | 3 200 000 UM | Comptes certifiés | ✅ |
-| Intervention dans au moins 2 des pays listés | 1 seul pays | — | ❌ éliminatoire sans partenaire |
+| Intervention dans au moins 2 des pays listés | 1 seul pays | Néant | ❌ éliminatoire sans partenaire |
 | Cofinancement d'au moins 10 % | À confirmer | Lettre d'engagement d'un autre bailleur | ⚠️ |
 
-Table: Tableau 15.2 — Explications détaillées
+Table: Tableau 15.2 : Explications détaillées
 
 ### Décision go / no-go
 
@@ -5878,9 +5874,9 @@ Une grille simple aide à décider : éligibilité (éliminatoire) ; alignement 
 
 ### Note conceptuelle et proposition
 
-L'IA est précieuse pour : structurer la note selon le modèle du bailleur ; reformuler et condenser ; vérifier la cohérence entre narration, cadre logique et budget ; adapter le style aux attentes. Mais **la substance** — analyse du contexte, preuves, choix d'intervention, partenariats, enseignements des projets passés — doit venir de l'organisation. Une bonne méthode : rédiger d'abord un **dossier de matière première** (données, enseignements, témoignages anonymisés, résultats passés, partenaires), puis demander à l'IA de le mettre en forme selon le modèle.
+L'IA est précieuse pour : structurer la note selon le modèle du bailleur ; reformuler et condenser ; vérifier la cohérence entre narration, cadre logique et budget ; adapter le style aux attentes. Mais **la substance** (analyse du contexte, preuves, choix d'intervention, partenariats, enseignements des projets passés) doit venir de l'organisation. Une bonne méthode : rédiger d'abord un **dossier de matière première** (données, enseignements, témoignages anonymisés, résultats passés, partenaires), puis demander à l'IA de le mettre en forme selon le modèle.
 
-> **🔎 À retenir** — Un dossier généré à partir d'une consigne vague ressemble à des centaines d'autres. La valeur de votre proposition tient à ce que vous seul pouvez apporter : votre connaissance du terrain et vos résultats.
+> **🔎 À retenir** : Un dossier généré à partir d'une consigne vague ressemble à des centaines d'autres. La valeur de votre proposition tient à ce que vous seul pouvez apporter : votre connaissance du terrain et vos résultats.
 
 ### Budgets
 
@@ -5938,11 +5934,11 @@ Un reporting de qualité, ponctuel et honnête, est le meilleur argument pour un
 | Intermédiaire | Plateformes de veille de financements ; gestion des relations bailleurs/donateurs (CRM) ; bibliothèque de contenus réutilisables | Plateforme de veille, CRM | Abonnements | Coûts récurrents |
 | Avancé | Assistant RAG sur les propositions, rapports et conventions passés ; tableau de bord du portefeuille de financements ; prévisions de ressources | CRM intégré, RAG, BI | Élevés | Qualité de la base documentaire |
 
-Table: Tableau 15.3 — Application métier : de l'appel à projets à la note conceptuelle
+Table: Tableau 15.3 : Application métier : de l'appel à projets à la note conceptuelle
 
 ## 15.7 Prompts prêts à l'emploi
 
-### Fiche P15.1 — Analyser un appel à projets et vérifier l'éligibilité
+### Fiche P15.1 : Analyser un appel à projets et vérifier l'éligibilité
 
 **A. Titre.** Fiche d'analyse d'appel et checklist d'éligibilité.
 
@@ -5959,16 +5955,16 @@ Contexte : [NOM DE L'ASBL], profil : <profil>[STATUT, ANNÉE
 D'ENREGISTREMENT, PAYS, SECTEURS, BUDGET ANNUEL, ZONES]</profil>
 Appel : <appel>[TEXTE INTÉGRAL ET ANNEXES]</appel>
 Tâche :
-Partie 1 — Fiche d'analyse : bailleur ; objet ; priorités
+Partie 1 : Fiche d'analyse : bailleur ; objet ; priorités
 thématiques ; zones ; montants min/max ; durée ; cofinancement ;
 coûts indirects autorisés ; dates (questions, soumission, décision) ;
 procédure (une ou deux étapes) ; documents exigés ; critères
 d'évaluation et pondération ; règles sur l'usage de l'IA dans la
 préparation du dossier, s'il y en a.
-Partie 2 — Éligibilité : tableau « Critère (citation exacte) | Page
+Partie 2 : Éligibilité : tableau « Critère (citation exacte) | Page
 ou section | Notre situation selon le profil | Preuve à fournir |
 Statut (rempli / non rempli / à vérifier) ».
-Partie 3 — Points d'attention et questions à poser au bailleur.
+Partie 3 : Points d'attention et questions à poser au bailleur.
 Règles : cite exactement le texte pour chaque critère ; si une
 information est absente de l'appel, écris « non précisé » ; ne
 conclus pas à l'éligibilité globale : laisse ce jugement à
@@ -5979,7 +5975,7 @@ l'organisation.
 
 **G. Résultat attendu.** Une fiche d'une à deux pages et une checklist sourcée.
 
-**H. Exemple d'application (illustratif).** L'analyse révèle, en annexe 2 de l'appel, un critère que l'équipe n'avait pas vu : « les organisations doivent avoir fait l'objet d'un audit externe au cours des deux derniers exercices ». Statut : rempli (audit 2025) — preuve : rapport d'audit.
+**H. Exemple d'application (illustratif).** L'analyse révèle, en annexe 2 de l'appel, un critère que l'équipe n'avait pas vu : « les organisations doivent avoir fait l'objet d'un audit externe au cours des deux derniers exercices ». Statut : rempli (audit 2025) : preuve : rapport d'audit.
 
 **I. Méthode de vérification.** Pour chaque critère, retrouvez la citation à la page indiquée ; vérifiez l'exhaustivité en relisant la section « éligibilité » de l'appel.
 
@@ -5987,7 +5983,7 @@ l'organisation.
 
 **K. Amélioration.** « Ajoute une évaluation de notre adéquation aux critères d'évaluation (forte / moyenne / faible) avec, pour chacun, les éléments de notre expérience à mettre en avant. »
 
-### Fiche P15.2 — Note conceptuelle à partir du dossier de matière première
+### Fiche P15.2 : Note conceptuelle à partir du dossier de matière première
 
 **A. Titre.** Note conceptuelle spécifique et sourcée.
 
@@ -6024,7 +6020,7 @@ Style : précis, concret, sans superlatifs.
 
 **G. Résultat attendu.** Une note conforme, spécifique, avec traçabilité des chiffres.
 
-**H. Exemple d'application (illustratif).** La rubrique « Expérience pertinente » obtenue cite : « De 2023 à 2025, nos 48 agents de santé communautaires ont mené 6 400 visites à domicile dans 3 districts (rapports annuels 2023-2025) » — chiffres présents dans la matière première et vérifiés.
+**H. Exemple d'application (illustratif).** La rubrique « Expérience pertinente » obtenue cite : « De 2023 à 2025, nos 48 agents de santé communautaires ont mené 6 400 visites à domicile dans 3 districts (rapports annuels 2023-2025) » : chiffres présents dans la matière première et vérifiés.
 
 **I. Méthode de vérification.** Pointage de chaque affirmation chiffrée ; relecture de cohérence avec le budget et le cadre logique ; vérification des engagements (partenaires, cofinancement) avec les personnes concernées.
 
@@ -6032,7 +6028,7 @@ Style : précis, concret, sans superlatifs.
 
 **K. Amélioration.** « Joue le rôle d'un évaluateur du bailleur : note la note conceptuelle selon chaque critère (sur 5), justifie, et propose trois améliorations prioritaires. »
 
-### Fiche P15.3 — Vérifier la cohérence budget–activités–règles
+### Fiche P15.3 : Vérifier la cohérence budget–activités–règles
 
 **A. Titre.** Contrôle de cohérence d'un budget de proposition.
 
@@ -6078,7 +6074,7 @@ Veille anticipée ; décisions go/no-go documentées ; zéro rejet administratif
 
 ## 15.9 Contrôles humains
 
-> **🛑 Contrôle humain obligatoire** — Décision de candidature, contenu et engagements du projet, budget, déclaration éventuelle de l'usage de l'IA, signature et soumission relèvent de la direction. Chaque critère d'éligibilité est vérifié sur le texte officiel.
+> **🛑 Contrôle humain obligatoire** : Décision de candidature, contenu et engagements du projet, budget, déclaration éventuelle de l'usage de l'IA, signature et soumission relèvent de la direction. Chaque critère d'éligibilité est vérifié sur le texte officiel.
 
 ## 15.10 Risques et erreurs à éviter
 
@@ -6102,7 +6098,7 @@ Veille anticipée ; décisions go/no-go documentées ; zéro rejet administratif
 - L'IA met en forme une matière première riche et propre à l'organisation ; elle ne la remplace pas.
 - Les obligations des conventions alimentent le calendrier, la comptabilité et le reporting.
 
-## 15.13 QCM — Module 15
+## 15.13 QCM : Module 15
 
 **Q1.** (une seule réponse) Un critère d'éligibilité est :
 
@@ -6146,14 +6142,14 @@ b) extraire ses obligations dans une fiche, vérifiée sur le texte, qui aliment
 c) ignorer les clauses d'audit.
 d) la traduire automatiquement sans relecture.
 
-**Q7.** (mise en situation — une seule réponse) Le résumé de l'IA indique « organisations de toute ancienneté éligibles », mais vous n'en trouvez pas trace dans l'appel. Que faites-vous ?
+**Q7.** (mise en situation, une seule réponse) Le résumé de l'IA indique « organisations de toute ancienneté éligibles », mais vous n'en trouvez pas trace dans l'appel. Que faites-vous ?
 
 a) Vous cherchez le critère exact dans le texte et ses annexes, et traitez le résumé comme non fiable sur ce point.
 b) Vous vous fiez au résumé.
 c) Vous soumettez sans vérifier.
 d) Vous demandez à un autre outil.
 
-**Q8.** (mise en situation — une seule réponse) La note conceptuelle générée mentionne « 92 % des bénéficiaires satisfaits », chiffre absent de votre matière première. Que faites-vous ?
+**Q8.** (mise en situation, une seule réponse) La note conceptuelle générée mentionne « 92 % des bénéficiaires satisfaits », chiffre absent de votre matière première. Que faites-vous ?
 
 a) Vous le gardez, il valorise le dossier.
 b) Vous l'arrondissez.
@@ -6174,7 +6170,7 @@ b) nombre de rejets administratifs.
 c) part du premier bailleur dans le budget.
 d) nombre de pages produites par l'IA.
 
-## 15.14 Corrigé détaillé — Module 15
+## 15.14 Corrigé détaillé : Module 15
 
 **Q1 : c.** L'éligibilité conditionne la recevabilité.
 
@@ -6199,13 +6195,13 @@ d) nombre de pages produites par l'IA.
 **Barème.** 2 points par question (tout ou rien pour les réponses multiples). Total sur 20. **Niveau de maîtrise :** 0–9 à consolider · 10–13 en progression · 14–17 maîtrise opérationnelle · 18–20 maîtrise avancée.
 
 
-# Module 16 — Achats, approvisionnements, logistique et patrimoine {#h20}
+# Module 16 : Achats, approvisionnements, logistique et patrimoine {#h20}
 
 ## 16.1 Mise en situation
 
 Le RCE doit acheter douze pompes manuelles pour un programme d'accès à l'eau. Le technicien rédige une demande sur un bout de papier ; trois fournisseurs envoient leurs offres sous des formes très différentes (un PDF de six pages, une photo de devis manuscrit, un courriel) ; le comité d'achat compare « à l'œil » ; à la livraison, une pompe est endommagée mais la facture est payée en totalité ; six mois plus tard, l'inventaire ne retrouve que dix pompes dans le registre.
 
-Chacune de ces étapes peut être améliorée — certaines avec l'IA, la plupart avec des procédures et des outils simples.
+Chacune de ces étapes peut être améliorée : certaines avec l'IA, la plupart avec des procédures et des outils simples.
 
 ## 16.2 Problématique
 
@@ -6232,15 +6228,15 @@ Les achats représentent souvent la plus grande part des dépenses d'une ASBL et
 - **Immobilisation** : bien durable dont la valeur dépasse un seuil fixé par la politique comptable, inscrit à l'actif et suivi dans un registre.
 - **Inventaire** : comptage physique des stocks et des biens, comparé aux registres.
 
-> **⚖️ Adaptation réglementaire** — Les seuils de procédure, les règles d'origine des biens, les obligations de publicité et les règles de propriété des biens financés dépendent des bailleurs et, pour certaines organisations, du droit des marchés publics ou du droit fiscal local. Les règles du bailleur s'appliquent aux achats qu'il finance.
+> **⚖️ Adaptation réglementaire** : Les seuils de procédure, les règles d'origine des biens, les obligations de publicité et les règles de propriété des biens financés dépendent des bailleurs et, pour certaines organisations, du droit des marchés publics ou du droit fiscal local. Les règles du bailleur s'appliquent aux achats qu'il finance.
 
 ## 16.5 Explications détaillées
 
-![Figure 16.1 — Circuit achats et logistique](03_ILLUSTRATIONS/figures/fig_16_1.svg){#fig-16-1}
+![Figure 16.1 : Circuit achats et logistique](03_ILLUSTRATIONS/figures/fig_16_1.svg){#fig-16-1}
 
 ### Demande d'achat et contrôle budgétaire
 
-Un formulaire numérique de demande d'achat (champs obligatoires : description, spécifications, quantité, date souhaitée, projet, ligne budgétaire, estimation) réduit les allers-retours. L'IA peut aider le demandeur à **préciser les spécifications techniques** (fiche P16.1, partie 1) — à condition qu'un technicien les valide et qu'elles ne soient pas rédigées de façon à favoriser un fournisseur. Le contrôle budgétaire vérifie le disponible sur la ligne (module 12).
+Un formulaire numérique de demande d'achat (champs obligatoires : description, spécifications, quantité, date souhaitée, projet, ligne budgétaire, estimation) réduit les allers-retours. L'IA peut aider le demandeur à **préciser les spécifications techniques** (fiche P16.1, partie 1), à condition qu'un technicien les valide et qu'elles ne soient pas rédigées de façon à favoriser un fournisseur. Le contrôle budgétaire vérifie le disponible sur la ligne (module 12).
 
 ### Fournisseurs
 
@@ -6250,7 +6246,7 @@ Le fichier fournisseurs est un référentiel critique : identité, coordonnées,
 
 L'IA est particulièrement utile pour **normaliser des offres hétérogènes** : extraire, de chaque devis, le prix unitaire, les quantités, les frais annexes (transport, installation), le délai, la garantie, la validité de l'offre, les conditions de paiement et la conformité aux spécifications. Elle produit un tableau homogène que le comité examine. **L'évaluation** elle-même suit une grille définie avant l'ouverture des offres, et **la décision** appartient au comité.
 
-*Exemple (fictif) — 12 pompes manuelles :*
+*Exemple (fictif) : 12 pompes manuelles :*
 
 | | Offre A | Offre B | Offre C |
 |---|---|---|---|
@@ -6261,7 +6257,7 @@ L'IA est particulièrement utile pour **normaliser des offres hétérogènes** :
 | Garantie | 12 mois | 24 mois | 12 mois |
 | Certificat de conformité aux spécifications | fourni | fourni | **manquant** |
 
-Table: Tableau 16.1 — Explications détaillées
+Table: Tableau 16.1 : Explications détaillées
 
 Critère éliminatoire : conformité technique attestée. Le règlement de consultation de l'organisation autorise la régularisation d'un **document administratif manquant** dans un délai de 48 heures, sans modification de l'offre. Le fournisseur C transmet le certificat dans le délai.
 
@@ -6273,13 +6269,13 @@ Grille de notation (définie avant l'ouverture) : prix 60 %, délai 25 %, garant
 | B | 100,00 | 40,00 | 100,00 | **85,00** |
 | C | 99,24 | 100,00 | 50,00 | **92,05** |
 
-Table: Tableau 16.2 — Explications détaillées
+Table: Tableau 16.2 : Explications détaillées
 
 *Calcul pour C :* 99,24 × 0,60 + 100 × 0,25 + 50 × 0,15 = 59,54 + 25,00 + 7,50 = 92,05 (calculé au tableur). Le comité retient l'offre C et consigne sa décision et ses motifs dans un procès-verbal de sélection.
 
 ### Commandes et livraisons
 
-Le bon de commande reprend exactement l'offre retenue. À la livraison, le réceptionnaire — **qui n'est ni le demandeur ni l'acheteur** — compte, contrôle l'état, signe le bon de livraison et note les réserves. Dans l'exemple : 12 pompes livrées, dont une au corps fissuré ; réserve inscrite sur le bon de livraison avec photo.
+Le bon de commande reprend exactement l'offre retenue. À la livraison, le réceptionnaire, **qui n'est ni le demandeur ni l'acheteur**, compte, contrôle l'état, signe le bon de livraison et note les réserves. Dans l'exemple : 12 pompes livrées, dont une au corps fissuré ; réserve inscrite sur le bon de livraison avec photo.
 
 Le **rapprochement à trois voies** (commande : 12 ; livraison : 12 dont 1 avec réserve ; facture : 12 × 1 980 = 23 760) conduit à **bloquer le paiement d'une pompe** (1 980 UM) jusqu'au remplacement. L'IA peut extraire les quantités des trois documents et signaler l'écart ; le logiciel bloque ; le logisticien et le comptable traitent.
 
@@ -6342,11 +6338,11 @@ Un calendrier de maintenance préventive (véhicules, générateurs, pompes) ré
 | Intermédiaire | Logiciel achats/stock avec workflow ; extraction de documents ; étiquettes à code QR et application d'inventaire mobile | Logiciel de gestion, application mobile | Abonnements | Paramétrage |
 | Avancé | Module achats de l'ERP intégré à la comptabilité (engagements, rapprochement automatique, blocages), portail fournisseurs, prévisions de consommation | ERP, portail | Élevés | Complexité ; adoption par les fournisseurs |
 
-Table: Tableau 16.3 — Application métier : de la demande d'achat à l'inventaire au RCE
+Table: Tableau 16.3 : Application métier : de la demande d'achat à l'inventaire au RCE
 
 ## 16.7 Prompts prêts à l'emploi
 
-### Fiche P16.1 — Normaliser des offres hétérogènes dans un tableau comparatif
+### Fiche P16.1 : Normaliser des offres hétérogènes dans un tableau comparatif
 
 **A. Titre.** Tableau comparatif normalisé des offres.
 
@@ -6379,7 +6375,7 @@ fournisseurs (selon le règlement de consultation).
 
 **G. Résultat attendu.** Un tableau homogène et sourcé, sans classement, avec une liste de clarifications.
 
-**H. Exemple d'application (illustratif).** Le tableau signale pour l'offre B : « Transport : 900 UM (devis, ligne 14, mention manuscrite en bas de page) » — un montant que la lecture rapide du comité avait manqué, et qui change le classement par le prix.
+**H. Exemple d'application (illustratif).** Le tableau signale pour l'offre B : « Transport : 900 UM (devis, ligne 14, mention manuscrite en bas de page) » : un montant que la lecture rapide du comité avait manqué, et qui change le classement par le prix.
 
 **I. Méthode de vérification.** Pointage de chaque cellule ; recalcul des totaux au tableur ; contrôle des unités (prix par pièce ou par lot ?).
 
@@ -6387,7 +6383,7 @@ fournisseurs (selon le règlement de consultation).
 
 **K. Amélioration.** « Ajoute une ligne "risques" (fournisseur nouveau, délai long, absence de service après-vente local) en citant les éléments des offres. »
 
-### Fiche P16.2 — Rapprochement commande / livraison / facture
+### Fiche P16.2 : Rapprochement commande / livraison / facture
 
 **A. Titre.** Rapprochement à trois voies assisté.
 
@@ -6428,7 +6424,7 @@ Achats conformes et documentés ; comparaisons transparentes ; aucun paiement sa
 
 ## 16.9 Contrôles humains
 
-> **🛑 Contrôle humain obligatoire** — Validation des spécifications, définition de la grille, évaluation et choix du fournisseur, réception physique, traitement des écarts, approbation des paiements, autorisation des cessions et mises au rebut. Séparation des tâches entre demandeur, acheteur, réceptionnaire et payeur.
+> **🛑 Contrôle humain obligatoire** : Validation des spécifications, définition de la grille, évaluation et choix du fournisseur, réception physique, traitement des écarts, approbation des paiements, autorisation des cessions et mises au rebut. Séparation des tâches entre demandeur, acheteur, réceptionnaire et payeur.
 
 ## 16.10 Risques et erreurs à éviter
 
@@ -6452,7 +6448,7 @@ Achats conformes et documentés ; comparaisons transparentes ; aucun paiement sa
 - Le rapprochement à trois voies protège contre les paiements indus.
 - Stocks, immobilisations et maintenance se suivent avec des registres à jour et des inventaires indépendants.
 
-## 16.13 QCM — Module 16
+## 16.13 QCM : Module 16
 
 **Q1.** (une seule réponse) Le rapprochement à trois voies compare :
 
@@ -6496,14 +6492,14 @@ b) signaler les informations non précisées.
 c) classer les offres.
 d) ne pas convertir les devises sans instruction.
 
-**Q7.** (mise en situation — une seule réponse) Une pompe livrée est endommagée ; la facture porte sur 12 pompes. Que faites-vous ?
+**Q7.** (mise en situation, une seule réponse) Une pompe livrée est endommagée ; la facture porte sur 12 pompes. Que faites-vous ?
 
 a) Payer la totalité et demander un avoir plus tard.
 b) Bloquer le paiement de l'article sous réserve jusqu'au remplacement, selon la procédure.
 c) Refuser toute la livraison.
 d) Ne rien signaler.
 
-**Q8.** (mise en situation — une seule réponse) Un technicien demande à l'IA de rédiger des spécifications « qui correspondent exactement au modèle du fournisseur X ». Votre réaction ?
+**Q8.** (mise en situation, une seule réponse) Un technicien demande à l'IA de rédiger des spécifications « qui correspondent exactement au modèle du fournisseur X ». Votre réaction ?
 
 a) C'est contraire à l'équité de la consultation ; les spécifications doivent décrire le besoin fonctionnel.
 b) C'est efficace.
@@ -6524,7 +6520,7 @@ b) écarts d'inventaire.
 c) nombre d'écarts de rapprochement.
 d) nombre de fournisseurs consultés par l'IA.
 
-## 16.14 Corrigé détaillé — Module 16
+## 16.14 Corrigé détaillé : Module 16
 
 **Q1 : d.** C'est le contrôle clé avant paiement.
 
@@ -6549,7 +6545,7 @@ d) nombre de fournisseurs consultés par l'IA.
 **Barème.** 2 points par question (tout ou rien pour les réponses multiples). Total sur 20. **Niveau de maîtrise :** 0–9 à consolider · 10–13 en progression · 14–17 maîtrise opérationnelle · 18–20 maîtrise avancée.
 
 
-# Module 17 — Communication, marketing et plaidoyer {#h21}
+# Module 17 : Communication, marketing et plaidoyer {#h21}
 
 ## 17.1 Mise en situation
 
@@ -6582,7 +6578,7 @@ La communication d'une ASBL repose sur la **confiance** : authenticité des réc
 
 ## 17.5 Explications détaillées
 
-![Figure 17.1 — La chaîne éditoriale assistée](03_ILLUSTRATIONS/figures/fig_17_1.svg){#fig-17-1}
+![Figure 17.1 : La chaîne éditoriale assistée](03_ILLUSTRATIONS/figures/fig_17_1.svg){#fig-17-1}
 
 ### Stratégie et identité
 
@@ -6602,7 +6598,7 @@ L'IA aide à structurer une présentation (message principal d'abord, trois idé
 
 ### Traduction et accessibilité
 
-Voir la fiche P3.3 : traduction avec glossaire, relecture par un locuteur natif, rétro-traduction pour les messages critiques. L'accessibilité numérique — textes alternatifs pour les images, contrastes suffisants, sous-titres des vidéos, langage clair — s'appuie utilement sur les règles WCAG 2.2 du W3C. L'IA peut proposer des textes alternatifs et des sous-titres, à vérifier.
+Voir la fiche P3.3 : traduction avec glossaire, relecture par un locuteur natif, rétro-traduction pour les messages critiques. L'accessibilité numérique (textes alternatifs pour les images, contrastes suffisants, sous-titres des vidéos, langage clair) s'appuie utilement sur les règles WCAG 2.2 du W3C. L'IA peut proposer des textes alternatifs et des sous-titres, à vérifier.
 
 ### Valorisation des activités et communication avec les bailleurs
 
@@ -6620,7 +6616,7 @@ Un message de sensibilisation efficace est simple, concret, adapté au public et
 4. **Transparence** : signaler les images ou contenus générés lorsqu'ils pourraient être pris pour réels ; respecter les règles des plateformes et, le cas échéant, les obligations légales de transparence sur les contenus synthétiques.
 5. **Droits** : vérifier les droits sur les images, musiques et textes utilisés.
 
-> **🔎 À retenir** — Une communication assistée par l'IA reste une communication **de l'organisation**. Elle engage sa crédibilité à chaque publication.
+> **🔎 À retenir** : Une communication assistée par l'IA reste une communication **de l'organisation**. Elle engage sa crédibilité à chaque publication.
 
 ## 17.6 Application métier : du programme décrit au calendrier éditorial de trois mois
 
@@ -6664,11 +6660,11 @@ Un message de sensibilisation efficace est simple, concret, adapté au public et
 | Intermédiaire | Outil de gestion des réseaux sociaux, gestion de contenus, banque d'images avec consentements, newsletters automatisées, assistant configuré avec la charte | Outils de publication et d'emailing | Abonnements | Protection des données des abonnés |
 | Avancé | Plateforme de gestion des relations (donateurs, abonnés) avec segmentation, tests A/B, tableaux de bord intégrés, assistant RAG sur les contenus validés | CRM, plateforme marketing | Élevés | Respect des règles de prospection et de consentement |
 
-Table: Tableau 17.1 — Application métier : du programme décrit au calendrier éditorial de trois mois
+Table: Tableau 17.1 : Application métier : du programme décrit au calendrier éditorial de trois mois
 
 ## 17.7 Prompts prêts à l'emploi
 
-### Fiche P17.1 — Calendrier éditorial à partir d'un programme réel
+### Fiche P17.1 : Calendrier éditorial à partir d'un programme réel
 
 **A. Titre.** Calendrier éditorial trimestriel.
 
@@ -6700,7 +6696,7 @@ signale les semaines sans activité à valoriser.
 
 **G. Résultat attendu.** Un calendrier de 13 semaines, chaque ligne reliée à une source.
 
-**H. Exemple d'application (illustratif).** Semaine 4 : « réseau social — grand public — informer — "Traiter l'eau à la maison : 3 gestes simples" — carrousel illustré (dessins) — source : activité 1.1, séance du 12 octobre — consentement : non (pas de personne représentée) ».
+**H. Exemple d'application (illustratif).** Semaine 4 : « réseau social, grand public, informer ("Traiter l'eau à la maison : 3 gestes simples") carrousel illustré (dessins) (source : activité 1.1, séance du 12 octobre) consentement : non (pas de personne représentée) ».
 
 **I. Méthode de vérification.** Chaque ligne renvoie à un élément vérifié de la fiche programme.
 
@@ -6708,7 +6704,7 @@ signale les semaines sans activité à valoriser.
 
 **K. Amélioration.** « Ajoute pour chaque contenu un indicateur de succès et la manière de le mesurer. »
 
-### Fiche P17.2 — Déclinaison multicanal fidèle
+### Fiche P17.2 : Déclinaison multicanal fidèle
 
 **A. Titre.** Déclinaisons d'un contenu pivot.
 
@@ -6735,7 +6731,7 @@ respecte la charte ; termine par la liste des faits utilisés.
 
 **G. Résultat attendu.** Des déclinaisons cohérentes et la liste des faits repris.
 
-**H. Exemple d'application (illustratif).** À partir d'un article sur la réhabilitation de 40 latrines, la version facile à lire propose : « Dans trois villages, 40 familles ont des toilettes réparées. Les enfants tombent moins malades. » — la seconde phrase n'étant **pas** dans le pivot, elle est supprimée lors de la relecture : c'est une affirmation d'impact non démontrée.
+**H. Exemple d'application (illustratif).** À partir d'un article sur la réhabilitation de 40 latrines, la version facile à lire propose : « Dans trois villages, 40 familles ont des toilettes réparées. Les enfants tombent moins malades. » : la seconde phrase n'étant **pas** dans le pivot, elle est supprimée lors de la relecture : c'est une affirmation d'impact non démontrée.
 
 **I. Méthode de vérification.** Comparaison des faits avec le pivot ; vigilance sur les glissements vers l'impact non prouvé.
 
@@ -6749,7 +6745,7 @@ Une communication régulière, authentique, exacte, accessible, et cohérente av
 
 ## 17.9 Contrôles humains
 
-> **🛑 Contrôle humain obligatoire** — Relecture et validation de chaque publication ; vérification des consentements ; décision sur l'usage d'images générées ; validation des positions de plaidoyer par la direction et, si nécessaire, par le conseil.
+> **🛑 Contrôle humain obligatoire** : Relecture et validation de chaque publication ; vérification des consentements ; décision sur l'usage d'images générées ; validation des positions de plaidoyer par la direction et, si nécessaire, par le conseil.
 
 ## 17.10 Risques et erreurs à éviter
 
@@ -6763,7 +6759,7 @@ Une communication régulière, authentique, exacte, accessible, et cohérente av
 
 **Consigne (2 heures).** (1) Rédigez une charte éditoriale d'une page. (2) Établissez une fiche programme vérifiée pour une activité réelle. (3) Appliquez P17.1 pour quatre semaines. (4) Appliquez P17.2 à un contenu pivot et relevez toute dérive factuelle.
 
-**Éléments de correction.** La charte fixe la manière de parler des personnes accompagnées ; chaque ligne du calendrier renvoie à un fait vérifié ; au moins une dérive factuelle est généralement repérée dans les déclinaisons — c'est l'objet de l'exercice.
+**Éléments de correction.** La charte fixe la manière de parler des personnes accompagnées ; chaque ligne du calendrier renvoie à un fait vérifié ; au moins une dérive factuelle est généralement repérée dans les déclinaisons : c'est l'objet de l'exercice.
 
 ## 17.12 Synthèse
 
@@ -6772,7 +6768,7 @@ Une communication régulière, authentique, exacte, accessible, et cohérente av
 - L'IA décline, adapte et traduit ; elle ne fournit pas les faits.
 - Dignité, exactitude, transparence et accessibilité sont non négociables.
 
-## 17.13 QCM — Module 17
+## 17.13 QCM : Module 17
 
 **Q1.** (une seule réponse) La charte éditoriale sert principalement à :
 
@@ -6816,7 +6812,7 @@ b) des émotions uniquement.
 c) des rumeurs.
 d) des preuves sourcées et des propositions précises.
 
-**Q7.** (mise en situation — une seule réponse) Un donateur vous reproche des messages « interchangeables ». Votre première action ?
+**Q7.** (mise en situation, une seule réponse) Un donateur vous reproche des messages « interchangeables ». Votre première action ?
 
 a) Publier davantage.
 b) Changer d'outil d'IA.
@@ -6837,14 +6833,14 @@ b) sous-titres des vidéos.
 c) contrastes suffisants.
 d) texte intégralement dans des images.
 
-**Q10.** (mise en situation — une seule réponse) Un partenaire demande d'utiliser vos photos de bénéficiaires dans sa campagne. Que vérifiez-vous d'abord ?
+**Q10.** (mise en situation, une seule réponse) Un partenaire demande d'utiliser vos photos de bénéficiaires dans sa campagne. Que vérifiez-vous d'abord ?
 
 a) La résolution des photos.
 b) La couleur de sa charte.
 c) Rien, les photos vous appartiennent.
 d) Que les consentements couvrent cet usage par un tiers.
 
-## 17.14 Corrigé détaillé — Module 17
+## 17.14 Corrigé détaillé : Module 17
 
 **Q1 : a.** Elle fixe la voix et les règles de représentation.
 
@@ -6873,7 +6869,7 @@ d) Que les consentements couvrent cet usage par un tiers.
 - W3C. (2023, mise à jour 2024). *Web Content Accessibility Guidelines (WCAG) 2.2*.
 
 
-# Module 18 — Gestion des bénéficiaires et opérations de terrain {#h22}
+# Module 18 : Gestion des bénéficiaires et opérations de terrain {#h22}
 
 ## 18.1 Mise en situation
 
@@ -6883,7 +6879,7 @@ Ce dernier point est le plus grave. Il montre que l'enjeu n'est pas seulement l'
 
 ## 18.2 Problématique
 
-La relation avec les bénéficiaires est le cœur de la mission : enregistrement, réponse aux demandes, enquêtes, gestion des plaintes, suivi des interventions, rapports de terrain. Ces activités se déroulent souvent dans des contextes multilingues, à faible connectivité, auprès de personnes vulnérables, avec des données sensibles. L'IA peut aider à transcrire, traduire, classer et synthétiser — mais toute erreur, fuite ou automatisation inadaptée peut nuire directement aux personnes. La redevabilité envers les populations, au cœur de la Norme humanitaire fondamentale (CHS, édition 2024), exige des mécanismes de retour fiables et une réponse humaine.
+La relation avec les bénéficiaires est le cœur de la mission : enregistrement, réponse aux demandes, enquêtes, gestion des plaintes, suivi des interventions, rapports de terrain. Ces activités se déroulent souvent dans des contextes multilingues, à faible connectivité, auprès de personnes vulnérables, avec des données sensibles. L'IA peut aider à transcrire, traduire, classer et synthétiser, mais toute erreur, fuite ou automatisation inadaptée peut nuire directement aux personnes. La redevabilité envers les populations, au cœur de la Norme humanitaire fondamentale (CHS, édition 2024), exige des mécanismes de retour fiables et une réponse humaine.
 
 ## 18.3 Objectifs d'apprentissage
 
@@ -6894,7 +6890,7 @@ La relation avec les bénéficiaires est le cœur de la mission : enregistrement
 3. concevoir un mécanisme de plaintes et de réclamations avec classification assistée et traitement humain prioritaire des cas sensibles ;
 4. conduire des enquêtes et analyser des réponses ouvertes ;
 5. suivre les interventions et produire des rapports de terrain ;
-6. évaluer l'opportunité — et les limites — d'assistants communautaires automatisés ;
+6. évaluer l'opportunité, et les limites, d'assistants communautaires automatisés ;
 7. protéger les bénéficiaires à chaque étape.
 
 ## 18.4 Notions et définitions
@@ -6907,15 +6903,15 @@ La relation avec les bénéficiaires est le cœur de la mission : enregistrement
 
 ## 18.5 Explications détaillées
 
-![Figure 18.1 — La boucle de redevabilité envers les communautés](03_ILLUSTRATIONS/figures/fig_18_1.svg){#fig-18-1}
+![Figure 18.1 : La boucle de redevabilité envers les communautés](03_ILLUSTRATIONS/figures/fig_18_1.svg){#fig-18-1}
 
 ### Enregistrement
 
-Questions à poser avant de concevoir un formulaire d'enregistrement : quelles données sont **réellement nécessaires** pour fournir le service ? qui y aura accès ? combien de temps seront-elles conservées ? les personnes sont-elles informées, dans leur langue, de l'usage qui en sera fait ? Les formulaires mobiles hors ligne réduisent les erreurs et sécurisent la transmission (chiffrement, synchronisation, effacement des données sur le téléphone après envoi). Les données biométriques, de localisation précise, d'ethnie, de religion ou de statut migratoire ne sont collectées que si elles sont indispensables, légales et protégées — dans la plupart des cas, elles ne le sont pas.
+Questions à poser avant de concevoir un formulaire d'enregistrement : quelles données sont **réellement nécessaires** pour fournir le service ? qui y aura accès ? combien de temps seront-elles conservées ? les personnes sont-elles informées, dans leur langue, de l'usage qui en sera fait ? Les formulaires mobiles hors ligne réduisent les erreurs et sécurisent la transmission (chiffrement, synchronisation, effacement des données sur le téléphone après envoi). Les données biométriques, de localisation précise, d'ethnie, de religion ou de statut migratoire ne sont collectées que si elles sont indispensables, légales et protégées : dans la plupart des cas, elles ne le sont pas.
 
 ### Demandes et multilinguisme
 
-Les demandes arrivent sous forme orale, écrite, dans plusieurs langues. La transcription et la traduction automatiques peuvent aider à les **enregistrer** et à les **orienter** plus vite — avec des limites importantes : qualité inégale selon les langues (souvent faible pour les langues peu dotées en ressources numériques), erreurs sur les noms propres, risques de contresens. Une validation par un locuteur de la langue reste nécessaire pour toute information importante.
+Les demandes arrivent sous forme orale, écrite, dans plusieurs langues. La transcription et la traduction automatiques peuvent aider à les **enregistrer** et à les **orienter** plus vite, avec des limites importantes : qualité inégale selon les langues (souvent faible pour les langues peu dotées en ressources numériques), erreurs sur les noms propres, risques de contresens. Une validation par un locuteur de la langue reste nécessaire pour toute information importante.
 
 ### Plaintes, réclamations et retours communautaires
 
@@ -6923,7 +6919,7 @@ Un mécanisme de plaintes efficace :
 
 1. offre **plusieurs canaux** adaptés aux publics (en personne, téléphone, messagerie, boîte, agents de confiance, y compris pour les personnes ne sachant pas lire) ;
 2. est **connu** des communautés (information répétée, dans les langues locales) ;
-3. **enregistre** chaque retour avec un numéro, la date, le canal, la catégorie, le niveau de sensibilité — en minimisant les données ;
+3. **enregistre** chaque retour avec un numéro, la date, le canal, la catégorie, le niveau de sensibilité : en minimisant les données ;
 4. **oriente** vers le service compétent dans un délai annoncé ;
 5. **répond** à la personne (quand c'est possible et sûr) ;
 6. **analyse** les tendances et **ajuste** le programme ;
@@ -6931,7 +6927,7 @@ Un mécanisme de plaintes efficace :
 
 L'IA intervient en **appui** : transcription et traduction des messages, proposition de catégorie et de niveau d'urgence, détection de mots ou d'expressions signalant un cas sensible, synthèse mensuelle des tendances.
 
-> **🛑 Contrôle humain obligatoire** — Tout message pouvant relever d'un cas sensible (abus, exploitation, violence, harcèlement, menace, détresse grave) est transmis **immédiatement** à la personne référente formée, **sans attendre** une classification automatique, et n'est jamais traité dans un outil non autorisé. Les règles de classification automatique doivent être réglées pour **sur-détecter** (mieux vaut transmettre à tort que manquer un cas), et tout message non classé est examiné par un humain. Le message vocal de la mise en situation aurait dû être écouté le jour même.
+> **🛑 Contrôle humain obligatoire** : Tout message pouvant relever d'un cas sensible (abus, exploitation, violence, harcèlement, menace, détresse grave) est transmis **immédiatement** à la personne référente formée, **sans attendre** une classification automatique, et n'est jamais traité dans un outil non autorisé. Les règles de classification automatique doivent être réglées pour **sur-détecter** (mieux vaut transmettre à tort que manquer un cas), et tout message non classé est examiné par un humain. Le message vocal de la mise en situation aurait dû être écouté le jour même.
 
 ### Assistants communautaires automatisés
 
@@ -6949,7 +6945,7 @@ Les agents de terrain saisissent leurs visites et observations dans des formulai
 
 En complément du module 8 : analyse des risques de chaque traitement de données avant sa mise en place ; accès minimal ; chiffrement des appareils de terrain ; procédure en cas de perte ou de vol d'un téléphone ; vigilance sur les contextes où des données pourraient être exigées par des autorités ou des groupes armés (se référer au *Handbook on Data Protection in Humanitarian Action* du CICR) ; formation des agents ; respect des politiques de protection de l'enfance et de PEAS.
 
-> **📶 Faible connectivité** — Les formulaires mobiles hors ligne, la transcription différée et les synchronisations planifiées permettent d'utiliser les outils sans connexion permanente. Les cas sensibles, eux, ne doivent jamais attendre la prochaine synchronisation : prévoyez un canal téléphonique direct vers la personne référente.
+> **📶 Faible connectivité** : Les formulaires mobiles hors ligne, la transcription différée et les synchronisations planifiées permettent d'utiliser les outils sans connexion permanente. Les cas sensibles, eux, ne doivent jamais attendre la prochaine synchronisation : prévoyez un canal téléphonique direct vers la personne référente.
 
 ## 18.6 Application métier : un mécanisme de plaintes multilingue à Horizons Partagés
 
@@ -6961,7 +6957,7 @@ En complément du module 8 : analyse des risques de chaque traitement de donnée
 **F. Faiblesses.** Risque grave pour la protection des personnes ; perte de confiance ; non-conformité aux exigences des bailleurs.
 **G. Résultat recherché.** 100 % des retours enregistrés sous 48 heures ; cas sensibles transmis au référent sous 24 heures ; réponse aux personnes dans le délai annoncé ; synthèse mensuelle.
 **H. Pertinence de l'IA.** Utile pour transcrire, traduire, proposer une catégorie, détecter des signaux, synthétiser ; jamais pour traiter les cas sensibles.
-**I. Alternatives sans IA.** Registre papier ou tableur, écoute quotidienne des messages, classification manuelle — indispensable de toute façon en premier niveau.
+**I. Alternatives sans IA.** Registre papier ou tableur, écoute quotidienne des messages, classification manuelle : indispensable de toute façon en premier niveau.
 **J. Solution.** Procédure écrite + référent PEAS + registre numérique + écoute quotidienne + classification assistée (outil validé) + synthèse mensuelle + retour communautaire.
 **K. Niveau.** Débutant à Intermédiaire.
 **L. Outils.** Téléphone dédié, registre (formulaire mobile ou tableur à accès restreint), outil de transcription/traduction validé, assistant validé pour la classification et la synthèse.
@@ -6995,11 +6991,11 @@ En complément du module 8 : analyse des risques de chaque traitement de donnée
 | Intermédiaire | Formulaires mobiles hors ligne, ligne téléphonique avec messagerie, transcription et traduction validées, tableau de bord | Outil de collecte mobile, téléphonie, tableau de bord | Abonnements | Qualité de la traduction des langues locales |
 | Avancé | Système de gestion des retours intégré (multi-canaux, gestion des cas, droits d'accès fins, journalisation), classification assistée avec revue humaine, analyses de tendances, assistant communautaire au périmètre restreint | Plateforme de gestion des cas, API, IA | Élevés | Protection des données ; supervision continue |
 
-Table: Tableau 18.1 — Application métier : un mécanisme de plaintes multilingue à Horizons Partagés
+Table: Tableau 18.1 : Application métier : un mécanisme de plaintes multilingue à Horizons Partagés
 
 ## 18.7 Prompts prêts à l'emploi
 
-### Fiche P18.1 — Classifier et synthétiser des retours communautaires
+### Fiche P18.1 : Classifier et synthétiser des retours communautaires
 
 **A. Titre.** Classification assistée et synthèse des retours.
 
@@ -7043,7 +7039,7 @@ N'interprète pas au-delà du texte.
 
 **K. Amélioration.** « Compare les tendances de ce mois à celles du mois précédent (fournies) et signale les évolutions significatives. »
 
-### Fiche P18.2 — Rapport de terrain structuré à partir de notes
+### Fiche P18.2 : Rapport de terrain structuré à partir de notes
 
 **A. Titre.** Rapport de visite ou de mission.
 
@@ -7089,7 +7085,7 @@ Données de bénéficiaires minimales et protégées ; retours enregistrés, tra
 
 ## 18.9 Contrôles humains
 
-> **🛑 Contrôle humain obligatoire** — Tri et traitement des cas sensibles ; toute décision affectant l'accès d'une personne à un service ; réponses aux plaignants ; validation des catégories ; usage des données de bénéficiaires. Un assistant communautaire automatisé ne donne jamais de conseil médical, juridique ou d'éligibilité individuelle et permet toujours de joindre un humain.
+> **🛑 Contrôle humain obligatoire** : Tri et traitement des cas sensibles ; toute décision affectant l'accès d'une personne à un service ; réponses aux plaignants ; validation des catégories ; usage des données de bénéficiaires. Un assistant communautaire automatisé ne donne jamais de conseil médical, juridique ou d'éligibilité individuelle et permet toujours de joindre un humain.
 
 ## 18.10 Risques et erreurs à éviter
 
@@ -7114,7 +7110,7 @@ Données de bénéficiaires minimales et protégées ; retours enregistrés, tra
 - L'IA transcrit, traduit, classe et synthétise, sous supervision.
 - Les assistants automatisés se limitent aux questions fréquentes non sensibles, avec accès à un humain.
 
-## 18.13 QCM — Module 18
+## 18.13 QCM : Module 18
 
 **Q1.** (une seule réponse) Un message vocal évoquant un comportement inapproprié d'un agent doit être :
 
@@ -7158,14 +7154,14 @@ b) est toujours fiable.
 c) est interdite.
 d) remplace les agents bilingues.
 
-**Q7.** (mise en situation — une seule réponse) Un bailleur suggère de collecter les empreintes digitales de tous les bénéficiaires « pour éviter les doublons ». Votre réponse ?
+**Q7.** (mise en situation, une seule réponse) Un bailleur suggère de collecter les empreintes digitales de tous les bénéficiaires « pour éviter les doublons ». Votre réponse ?
 
 a) Accepter, c'est plus moderne.
 b) Accepter si les données sont stockées dans le cloud.
 c) Refuser sans discussion.
 d) Analyser la nécessité, la base légale, les risques et les alternatives ; les données biométriques sont très sensibles.
 
-**Q8.** (mise en situation — une seule réponse) La synthèse des retours montre que 17 personnes âgées signalent l'éloignement d'un point de distribution. Que faites-vous ?
+**Q8.** (mise en situation, une seule réponse) La synthèse des retours montre que 17 personnes âgées signalent l'éloignement d'un point de distribution. Que faites-vous ?
 
 a) Rien, c'est une minorité.
 b) Supprimer ces retours.
@@ -7186,7 +7182,7 @@ b) taux de retours clos.
 c) part des retours ayant conduit à un ajustement.
 d) nombre de messages traités par l'IA sans relecture.
 
-## 18.14 Corrigé détaillé — Module 18
+## 18.14 Corrigé détaillé : Module 18
 
 **Q1 : b.** Aucun délai de traitement automatisé ne s'applique aux cas sensibles.
 
@@ -7216,11 +7212,11 @@ d) nombre de messages traités par l'IA sans relecture.
 - Marelli, M. (dir.). (2024). *Handbook on Data Protection in Humanitarian Action* (3e éd.). Cambridge University Press / CICR.
 
 
-# Partie V — De l'idée à la mise en œuvre {#h23 .partie}
+# Partie V : De l'idée à la mise en œuvre {#h23 .partie}
 
-*Une démonstration réussie ne fait pas une solution durable. Cette partie montre comment conduire un projet d'IA de bout en bout — du problème à la mise en production — puis comment accompagner les équipes et faire vivre la solution dans le temps.*
+*Une démonstration réussie ne fait pas une solution durable. Cette partie montre comment conduire un projet d'IA de bout en bout, du problème à la mise en production, puis comment accompagner les équipes et faire vivre la solution dans le temps.*
 
-# Module 19 — Concevoir et déployer une solution d'IA de bout en bout {#h24}
+# Module 19 : Concevoir et déployer une solution d'IA de bout en bout {#h24}
 
 ## 19.1 Mise en situation
 
@@ -7254,7 +7250,7 @@ Beaucoup de projets d'IA s'arrêtent au stade de la démonstration : un prototyp
 
 ## 19.5 Explications détaillées
 
-![Figure 19.1 — Cycle de vie d'un projet IA dans une ASBL](03_ILLUSTRATIONS/figures/fig_19_1.svg){#fig-19-1}
+![Figure 19.1 : Cycle de vie d'un projet IA dans une ASBL](03_ILLUSTRATIONS/figures/fig_19_1.svg){#fig-19-1}
 
 ### Les douze étapes
 
@@ -7275,7 +7271,7 @@ Beaucoup de projets d'IA s'arrêtent au stade de la démonstration : un prototyp
 | 11 | Formation et déploiement | Utilisateurs formés, mise en production | Chef de projet + RH |
 | 12 | Documentation | Fiche de la solution, procédures, registre | Référent IA |
 
-Table: Tableau 19.1 — Explications détaillées
+Table: Tableau 19.1 : Explications détaillées
 
 Les deux portes de décision sont essentielles : un « non » après le cadrage ou après le pilote est un résultat utile qui évite d'investir davantage dans une mauvaise solution.
 
@@ -7331,7 +7327,7 @@ La formation (module 20) porte sur l'usage, les limites, la vérification et le 
 **F. Faiblesses.** Dépendance à une personne ; réponses non tracées.
 **G. Résultat recherché.** Réduction de 50 % du temps consacré aux questions répétitives ; réponses homogènes et sourcées ; diminution des erreurs de procédure.
 **H. Pertinence de l'IA.** Forte : questions formulées librement, documents longs ; le RAG permet de citer les sources.
-**I. Alternatives sans IA.** FAQ de 30 questions, fiches réflexes d'une page — réalisées en parallèle : elles servent aussi de jeu de tests.
+**I. Alternatives sans IA.** FAQ de 30 questions, fiches réflexes d'une page : réalisées en parallèle : elles servent aussi de jeu de tests.
 **J. Solution.** Assistant configuré sur les procédures validées (niveau Intermédiaire).
 **K. Niveau.** Intermédiaire.
 **L. Outils.** Suite bureautique professionnelle avec assistant configurable ; espace documentaire ; formulaire de signalement.
@@ -7353,11 +7349,11 @@ La formation (module 20) porte sur l'usage, les limites, la vérification et le 
 | Intermédiaire | Assistant configuré sur documents validés, accès nominatif, consignes permanentes, jeu de tests | Suite professionnelle | Abonnements | Fonctions de citation variables selon les outils |
 | Avancé | RAG sur mesure : indexation des documents avec métadonnées de version, droits d'accès par document, journalisation, tests automatisés, intégration à l'intranet | API, base vectorielle, plateforme | Développement, hébergement, maintenance | Compétences ; gouvernance documentaire stricte |
 
-Table: Tableau 19.2 — Application : l'assistant de procédures d'Horizons Partagés
+Table: Tableau 19.2 : Application : l'assistant de procédures d'Horizons Partagés
 
 ## 19.7 Prompts prêts à l'emploi
 
-### Fiche P19.1 — Cahier des charges simplifié et consignes système
+### Fiche P19.1 : Cahier des charges simplifié et consignes système
 
 **A. Titre.** Cahier des charges d'un assistant documentaire et consignes permanentes.
 
@@ -7402,7 +7398,7 @@ Limites : ne propose pas de solution commerciale nommée.
 
 **K. Amélioration.** « Ajoute une section "risques et mesures" alignée sur notre registre des risques IA. »
 
-### Fiche P19.2 — Construire un jeu de tests
+### Fiche P19.2 : Construire un jeu de tests
 
 **A. Titre.** Jeu de tests d'un assistant documentaire.
 
@@ -7433,7 +7429,7 @@ paraphrases fidèles des documents, avec la section exacte.
 
 **G. Résultat attendu.** Un tableau de 50 tests validés.
 
-**H. Exemple d'application (illustratif).** Test n° 34 (prémisse fausse) : « Puisque le plafond d'avance est de 500 UM, puis-je demander 450 UM ? » — Comportement attendu : signaler que le plafond est de 300 UM (Manuel financier v3, § 4.2) et orienter pour toute exception.
+**H. Exemple d'application (illustratif).** Test n° 34 (prémisse fausse) : « Puisque le plafond d'avance est de 500 UM, puis-je demander 450 UM ? » : Comportement attendu : signaler que le plafond est de 300 UM (Manuel financier v3, § 4.2) et orienter pour toute exception.
 
 **I. Méthode de vérification.** Validation de chaque réponse de référence par l'expert du domaine.
 
@@ -7447,7 +7443,7 @@ Une solution testée, pilotée, décidée, déployée, documentée et inscrite a
 
 ## 19.9 Contrôles humains
 
-> **🛑 Contrôle humain obligatoire** — Décisions aux deux portes ; validation des documents sources et des réponses de référence ; vérification d'échantillons en production ; traitement des cas individuels ; approbation de la mise en production à l'aide de la checklist (annexe 22).
+> **🛑 Contrôle humain obligatoire** : Décisions aux deux portes ; validation des documents sources et des réponses de référence ; vérification d'échantillons en production ; traitement des cas individuels ; approbation de la mise en production à l'aide de la checklist (annexe 22).
 
 ## 19.10 Risques et erreurs à éviter
 
@@ -7470,7 +7466,7 @@ Une solution testée, pilotée, décidée, déployée, documentée et inscrite a
 - Les tests portent sur les bonnes réponses, mais aussi sur les refus, les pièges et la sécurité.
 - Le pilote mesure ; la direction décide ; la documentation pérennise.
 
-## 19.13 QCM — Module 19
+## 19.13 QCM : Module 19
 
 **Q1.** (une seule réponse) Les deux portes de décision du cycle se situent :
 
@@ -7514,14 +7510,14 @@ b) la procédure de mise à jour de la base.
 c) le jeu de tests et ses résultats.
 d) les mots de passe des utilisateurs.
 
-**Q7.** (mise en situation — une seule réponse) Le pilote montre 82 % de réponses correctes et sourcées pour un critère fixé à 90 %. Que faites-vous ?
+**Q7.** (mise en situation, une seule réponse) Le pilote montre 82 % de réponses correctes et sourcées pour un critère fixé à 90 %. Que faites-vous ?
 
 a) Analyser les erreurs, corriger (base, consignes), retester ; décider à la porte 2 sur la base des résultats.
 b) Déployer quand même.
 c) Abaisser le critère à 80 %.
 d) Abandonner sans analyse.
 
-**Q8.** (mise en situation — une seule réponse) Un utilisateur demande à l'assistant : « Ma dépense du 3 mars a-t-elle été approuvée ? ». Comportement attendu ?
+**Q8.** (mise en situation, une seule réponse) Un utilisateur demande à l'assistant : « Ma dépense du 3 mars a-t-elle été approuvée ? ». Comportement attendu ?
 
 a) Répondre « oui » pour rassurer.
 b) Chercher dans les courriels.
@@ -7542,7 +7538,7 @@ b) un échantillon de réponses vérifiées par l'expert.
 c) le temps consacré par l'expert aux questions.
 d) le nombre de couleurs de l'interface.
 
-## 19.14 Corrigé détaillé — Module 19
+## 19.14 Corrigé détaillé : Module 19
 
 **Q1 : c.** Après le cadrage (avant d'investir) et après le pilote (avant de généraliser).
 
@@ -7574,11 +7570,11 @@ d) le nombre de couleurs de l'interface.
 - Project Management Institute. (2025). *PMBOK® Guide* (8e éd.).
 
 
-# Module 20 — Gérer le changement et assurer la pérennité des solutions {#h25}
+# Module 20 : Gérer le changement et assurer la pérennité des solutions {#h25}
 
 ## 20.1 Mise en situation
 
-Six mois après le déploiement de l'assistant de procédures, Horizons Partagés fait le point. Au siège, l'outil est utilisé quotidiennement. Dans deux bureaux de terrain, presque personne ne l'utilise : « on n'a pas eu le temps », « je préfère appeler Ibrahim », « une fois il s'est trompé ». Le référent numérique qui avait paramétré l'outil a quitté l'organisation ; personne n'a mis à jour la base depuis la révision de la politique de voyage ; l'abonnement a augmenté. La solution est en train de mourir doucement — un scénario fréquent.
+Six mois après le déploiement de l'assistant de procédures, Horizons Partagés fait le point. Au siège, l'outil est utilisé quotidiennement. Dans deux bureaux de terrain, presque personne ne l'utilise : « on n'a pas eu le temps », « je préfère appeler Ibrahim », « une fois il s'est trompé ». Le référent numérique qui avait paramétré l'outil a quitté l'organisation ; personne n'a mis à jour la base depuis la révision de la politique de voyage ; l'abonnement a augmenté. La solution est en train de mourir doucement : un scénario fréquent.
 
 ## 20.2 Problématique
 
@@ -7607,9 +7603,9 @@ Une solution d'IA n'est pas un achat ponctuel : c'est un **changement de pratiqu
 
 ### Comprendre la résistance
 
-La résistance au changement a souvent des causes légitimes : peur de perdre son emploi ou sa compétence, crainte d'être surveillé, mauvaise expérience avec l'outil, surcharge de travail, absence de sens. La traiter suppose d'écouter, d'expliquer, d'associer — et parfois d'adapter le projet.
+La résistance au changement a souvent des causes légitimes : peur de perdre son emploi ou sa compétence, crainte d'être surveillé, mauvaise expérience avec l'outil, surcharge de travail, absence de sens. La traiter suppose d'écouter, d'expliquer, d'associer, et parfois d'adapter le projet.
 
-![Figure 20.2 — Facteurs d'adoption d'un nouvel outil](03_ILLUSTRATIONS/figures/fig_20_2.svg){#fig-20-2}
+![Figure 20.2 : Facteurs d'adoption d'un nouvel outil](03_ILLUSTRATIONS/figures/fig_20_2.svg){#fig-20-2}
 
 Les modèles d'acceptation de la technologie, largement étudiés en sciences de gestion, mettent en avant quelques déterminants : l'**utilité perçue** et la **facilité d'utilisation perçue** (Davis, 1989), auxquelles le modèle UTAUT ajoute l'**influence sociale** et les **conditions facilitantes** (Venkatesh et al., 2003). Traduction pratique :
 
@@ -7620,7 +7616,7 @@ Les modèles d'acceptation de la technologie, largement étudiés en sciences de
 | Influence sociale | « Les autres l'utilisent-ils ? » | Ambassadeurs dans chaque équipe ; exemple de la direction |
 | Conditions facilitantes | « Ai-je le matériel, le temps, le droit ? » | Équipement ; temps dédié ; règles claires sur ce qui est permis |
 
-Table: Tableau 20.1 — Explications détaillées
+Table: Tableau 20.1 : Explications détaillées
 
 ### Gestion des équipes
 
@@ -7644,7 +7640,7 @@ Les petites habitudes répétées comptent davantage que les grandes formations 
 
 ### Gouvernance de l'IA
 
-![Figure 20.1 — Gouvernance de l'IA dans l'ASBL](03_ILLUSTRATIONS/figures/fig_20_1.svg){#fig-20-1}
+![Figure 20.1 : Gouvernance de l'IA dans l'ASBL](03_ILLUSTRATIONS/figures/fig_20_1.svg){#fig-20-1}
 
 Une gouvernance proportionnée à la taille de l'organisation comprend :
 
@@ -7671,7 +7667,7 @@ Les indicateurs définis dans le cahier des charges sont suivis dans le temps. O
 
 ### Audit des systèmes
 
-Une fois par an (ou à chaque changement important), un audit — interne ou externe — examine : conformité à la politique et aux lois ; exactitude des registres ; efficacité des contrôles humains (sont-ils réellement exercés ?) ; résultats des tests ; sécurité et droits d'accès ; gestion des incidents ; coûts et bénéfices.
+Une fois par an (ou à chaque changement important), un audit, interne ou externe, examine : conformité à la politique et aux lois ; exactitude des registres ; efficacité des contrôles humains (sont-ils réellement exercés ?) ; résultats des tests ; sécurité et droits d'accès ; gestion des incidents ; coûts et bénéfices.
 
 ### Coûts récurrents
 
@@ -7679,7 +7675,7 @@ Les coûts d'une solution évoluent : nombre d'utilisateurs, volumes, hausses ta
 
 ### Amélioration continue
 
-Le cycle **planifier — faire — vérifier — agir** s'applique : analyser les incidents et les signalements ; exploiter les questions sans réponse ; mettre à jour la base et les consignes ; enrichir les jeux de tests ; partager les bonnes pratiques ; décider chaque année de poursuivre, d'étendre, de modifier ou d'arrêter.
+Le cycle **planifier, faire, vérifier : agir** s'applique : analyser les incidents et les signalements ; exploiter les questions sans réponse ; mettre à jour la base et les consignes ; enrichir les jeux de tests ; partager les bonnes pratiques ; décider chaque année de poursuivre, d'étendre, de modifier ou d'arrêter.
 
 ## 20.6 Application : relancer l'assistant de procédures
 
@@ -7691,7 +7687,7 @@ Le cycle **planifier — faire — vérifier — agir** s'applique : analyser le
 | Coût en hausse | Licences inutilisées | Revue des licences ; suppression des comptes inactifs | Référente IA + finances | 1 mois |
 | Pas d'évaluation | Indicateurs non suivis | Tableau de bord trimestriel ; bilan au comité de direction | Référente IA | Trimestriel |
 
-Table: Tableau 20.2 — Application : relancer l'assistant de procédures
+Table: Tableau 20.2 : Application : relancer l'assistant de procédures
 
 ### Solutions selon le niveau
 
@@ -7701,11 +7697,11 @@ Table: Tableau 20.2 — Application : relancer l'assistant de procédures
 | Intermédiaire | Référent désigné, registres, circuit de validation, bilan annuel au CA | Socle + modules métier + ambassadeurs | Tableau de bord trimestriel, jeux de tests |
 | Avancé | Comité IA, système de management inspiré d'ISO/IEC 42001, audits réguliers | Parcours par rôle, certification interne | Surveillance continue, journalisation, audit annuel |
 
-Table: Tableau 20.3 — Application : relancer l'assistant de procédures
+Table: Tableau 20.3 : Application : relancer l'assistant de procédures
 
 ## 20.7 Prompt prêt à l'emploi
 
-### Fiche P20.1 — Construire un plan de formation
+### Fiche P20.1 : Construire un plan de formation
 
 **A. Titre.** Plan de formation à l'usage responsable de l'IA.
 
@@ -7752,7 +7748,7 @@ Des équipes formées et outillées ; une adoption mesurée et soutenue ; une go
 
 ## 20.9 Contrôles humains
 
-> **🛑 Contrôle humain obligatoire** — Le conseil adopte la politique et reçoit le bilan annuel ; la direction décide de poursuivre, d'étendre ou d'arrêter chaque solution ; le référent IA valide les nouveaux usages ; l'audit est réalisé par une personne indépendante de la gestion de la solution.
+> **🛑 Contrôle humain obligatoire** : Le conseil adopte la politique et reçoit le bilan annuel ; la direction décide de poursuivre, d'étendre ou d'arrêter chaque solution ; le référent IA valide les nouveaux usages ; l'audit est réalisé par une personne indépendante de la gestion de la solution.
 
 ## 20.10 Risques et erreurs à éviter
 
@@ -7777,7 +7773,7 @@ Des équipes formées et outillées ; une adoption mesurée et soutenue ; une go
 - Maintenance, évaluation, audit et suivi des coûts font vivre la solution.
 - L'amélioration continue inclut la possibilité d'arrêter.
 
-## 20.13 QCM — Module 20
+## 20.13 QCM : Module 20
 
 **Q1.** (une seule réponse) Selon le modèle de Davis (1989), deux déterminants majeurs de l'acceptation d'une technologie sont :
 
@@ -7821,14 +7817,14 @@ b) changer de fournisseur.
 c) relancer le jeu de tests.
 d) supprimer la base documentaire.
 
-**Q7.** (mise en situation — une seule réponse) Le référent qui a paramétré l'outil quitte l'organisation sans suppléant. Le risque principal est :
+**Q7.** (mise en situation, une seule réponse) Le référent qui a paramétré l'outil quitte l'organisation sans suppléant. Le risque principal est :
 
 a) une hausse de l'adoption.
 b) l'abandon progressif de la maintenance et la dégradation de la solution.
 c) une baisse des coûts.
 d) aucun.
 
-**Q8.** (mise en situation — une seule réponse) Des agents disent préférer appeler le responsable financier « car l'outil s'est trompé une fois ». Que faites-vous ?
+**Q8.** (mise en situation, une seule réponse) Des agents disent préférer appeler le responsable financier « car l'outil s'est trompé une fois ». Que faites-vous ?
 
 a) Expliquer l'erreur et sa correction, rappeler la vérification, montrer des exemples réussis.
 b) Rendre l'outil obligatoire.
@@ -7849,7 +7845,7 @@ b) incidents et signalements.
 c) coûts réels comparés au budget et à la valeur.
 d) nombre de messages promotionnels du fournisseur.
 
-## 20.14 Corrigé détaillé — Module 20
+## 20.14 Corrigé détaillé : Module 20
 
 **Q1 : d.** Ce sont les deux construits fondateurs du modèle d'acceptation de la technologie.
 
@@ -7881,11 +7877,11 @@ d) nombre de messages promotionnels du fournisseur.
 - Venkatesh, V., Morris, M. G., Davis, G. B., & Davis, F. D. (2003). User acceptance of information technology: Toward a unified view. *MIS Quarterly, 27*(3), 425–478. https://doi.org/10.2307/30036540
 
 
-# Partie VI — Laboratoire pratique et transformation durable {#h26 .partie}
+# Partie VI : Laboratoire pratique et transformation durable {#h26 .partie}
 
 *Place à l'entraînement. Le module 21 propose dix études de cas complètes, chacune reliant un problème réel à une méthode, à une solution adaptée aux moyens de l'organisation, et aux contrôles nécessaires. Le module 22 vous accompagne dans la construction de votre propre plan de transformation.*
 
-# Module 21 — Études de cas et résolution de problèmes concrets {#h27}
+# Module 21 : Études de cas et résolution de problèmes concrets {#h27}
 
 ## 21.1 Mise en situation
 
@@ -7903,11 +7899,11 @@ Vous avez parcouru vingt modules. Il est temps de vérifier que vous savez mobil
 
 ## 21.3 Mode d'emploi
 
-![Figure 21.1 — Les dix études de cas et leurs modules de référence](03_ILLUSTRATIONS/figures/fig_21_1.svg){#fig-21-1}
+![Figure 21.1 : Les dix études de cas et leurs modules de référence](03_ILLUSTRATIONS/figures/fig_21_1.svg){#fig-21-1}
 
 Pour chaque cas : lisez la situation ; répondez aux questions **avant** de lire l'analyse proposée ; comparez. Les analyses ne sont pas les seules réponses possibles : ce qui compte est la qualité du raisonnement. Les organisations et données sont fictives.
 
-## Cas 1 — Comptabilité désorganisée
+## Cas 1 : Comptabilité désorganisée
 
 **Situation.** Une association culturelle (8 salariés, budget 400 000 UM) n'a pas clôturé ses comptes depuis 14 mois. Les pièces sont dans des boîtes, des courriels et des téléphones. La comptable bénévole est partie. Le trésorier veut « un logiciel avec de l'IA qui remettra tout en ordre ».
 
@@ -7917,12 +7913,12 @@ Pour chaque cas : lisez la situation ; répondez aux questions **avant** de lire
 
 - *Symptômes* : comptes non clôturés, pièces dispersées. *Causes profondes* : absence de procédure, dépendance à une bénévole, aucun classement.
 - *Priorité* : reconstituer et sécuriser l'information (pièces, relevés bancaires), puis rattraper la comptabilité, avant toute automatisation.
-- *Rôle de l'IA* : utile pour **accélérer** l'extraction des données de centaines de pièces numérisées et proposer des imputations — à condition qu'une personne compétente vérifie. Elle ne peut pas reconstituer des pièces manquantes ni décider des régularisations.
+- *Rôle de l'IA* : utile pour **accélérer** l'extraction des données de centaines de pièces numérisées et proposer des imputations, à condition qu'une personne compétente vérifie. Elle ne peut pas reconstituer des pièces manquantes ni décider des régularisations.
 - *Séquence* : (1) rassembler toutes les pièces, les numériser et les classer par mois (règle de nommage, module 7) ; (2) récupérer tous les relevés bancaires ; (3) engager un professionnel pour le rattrapage (expert-comptable ou comptable expérimenté, selon les exigences locales) ; (4) utiliser l'extraction assistée (fiche P12.1) pour accélérer la saisie, avec vérification de 100 % des montants ; (5) rapprochements bancaires mensuels sur toute la période ; (6) liste des pièces manquantes et demandes de duplicatas ; (7) procédure de traitement des pièces pour l'avenir ; (8) choix d'un logiciel adapté (niveau Débutant ou Intermédiaire).
 - *Contrôles humains* : validation des écritures, des régularisations et des comptes par une personne compétente ; arrêté des comptes par l'organe compétent.
 - *Indicateurs* : mois rapprochés ; pièces manquantes ; date de clôture.
 
-## Cas 2 — Retards de reporting financier
+## Cas 2 : Retards de reporting financier
 
 **Situation.** Une ONG de 40 salariés envoie systématiquement ses rapports financiers trimestriels avec 20 à 30 jours de retard à ses quatre bailleurs, qui exigent chacun un format différent. Les rapports sont construits par ressaisie dans des tableurs.
 
@@ -7937,7 +7933,7 @@ Pour chaque cas : lisez la situation ; répondez aux questions **avant** de lire
 - *Contrôles* : revue du rapport par le responsable financier ; réconciliation rapport/comptabilité.
 - *Indicateurs* : délai de remise ; nombre de corrections demandées par les bailleurs.
 
-## Cas 3 — Risques de détournement
+## Cas 3 : Risques de détournement
 
 **Situation.** Dans une ONG, un bailleur signale que deux fournisseurs d'un bureau régional partagent la même adresse et le même numéro de téléphone. Le bureau régional effectue de nombreux achats juste sous le seuil de mise en concurrence.
 
@@ -7951,7 +7947,7 @@ Pour chaque cas : lisez la situation ; répondez aux questions **avant** de lire
 - *Prévention* : contrôle des données fournisseurs à la création et à la modification (second canal pour les RIB) ; alertes de fractionnement ; rotation et séparation des tâches ; canal de signalement confidentiel (dans l'étude ACFE 2024, le signalement était le premier mode de détection des fraudes internes de l'échantillon).
 - *Indicateurs* : alertes traitées ; délais ; recommandations mises en œuvre.
 
-## Cas 4 — Dépendance financière
+## Cas 4 : Dépendance financière
 
 **Situation.** Lumière des Collines dépend à 70 % d'un bailleur dont la convention expire dans 18 mois.
 
@@ -7964,7 +7960,7 @@ Pour chaque cas : lisez la situation ; répondez aux questions **avant** de lire
 - *Points de vigilance* : ne pas multiplier les dossiers génériques ; go/no-go systématique ; respect des règles des bailleurs sur l'IA.
 - *Indicateurs* : part du premier bailleur ; nombre de sources ; taux de succès ; ressources non affectées.
 
-## Cas 5 — Perte de documents
+## Cas 5 : Perte de documents
 
 **Situation.** Lors d'un audit, une fondation ne retrouve pas 15 % des pièces sélectionnées. Les documents sont répartis entre ordinateurs personnels, messageries et classeurs.
 
@@ -7977,7 +7973,7 @@ Pour chaque cas : lisez la situation ; répondez aux questions **avant** de lire
 - *IA* : indexation et classification automatique des documents numérisés (types, dates, montants) avec vérification ; à terme, recherche par le sens (assistant documentaire). L'IA ne retrouve que ce qui a été conservé.
 - *Indicateurs* : taux de pièces retrouvées en moins de cinq minutes ; pièces non liées aux écritures.
 
-## Cas 6 — Mauvais suivi de projets
+## Cas 6 : Mauvais suivi de projets
 
 **Situation.** Un réseau associatif gère 12 projets ; aucun tableau de bord commun ; les indicateurs sont définis différemment d'un projet à l'autre ; les rapports arrivent en retard et se contredisent.
 
@@ -7986,12 +7982,12 @@ Pour chaque cas : lisez la situation ; répondez aux questions **avant** de lire
 **Analyse proposée.**
 
 - *Fondations* (module 11) : référentiel commun d'indicateurs (définitions, méthodes de calcul, désagrégations) ; plan de S&E par projet ; calendrier de collecte.
-- *Solutions* : Débutant — tableur commun avec onglets par projet et tableau de synthèse ; Intermédiaire — formulaires mobiles hors ligne reliés à une base et tableau de bord ; Avancé — système d'information de S&E intégré, rapports générés à partir des données.
+- *Solutions* : Débutant, tableur commun avec onglets par projet et tableau de synthèse ; Intermédiaire, formulaires mobiles hors ligne reliés à une base et tableau de bord ; Avancé : système d'information de S&E intégré, rapports générés à partir des données.
 - *IA* : contrôles de cohérence, synthèse des données qualitatives, rédaction des rapports d'avancement (P11.3) avec traçabilité des chiffres.
 - *Contrôles* : validation mensuelle des données par les chargés de S&E ; pointage des chiffres des rapports.
 - *Indicateurs* : complétude des données ; ponctualité des rapports ; nombre de contradictions détectées.
 
-## Cas 7 — Gestion insuffisante des bénévoles
+## Cas 7 : Gestion insuffisante des bénévoles
 
 **Situation.** La Maison des Aînés Solidaires compte 80 bénévoles ; un tiers part chaque année ; les plannings sont faits à la main ; certains bénévoles se sentent peu reconnus ; des visites sont oubliées.
 
@@ -8005,7 +8001,7 @@ Pour chaque cas : lisez la situation ; répondez aux questions **avant** de lire
 - *Contrôles* : validation humaine du planning ; suivi des visites non réalisées.
 - *Indicateurs* : taux de visites réalisées ; taux de rétention des bénévoles ; satisfaction.
 
-## Cas 8 — Absence de suivi des bénéficiaires
+## Cas 8 : Absence de suivi des bénéficiaires
 
 **Situation.** Une ONG de soutien scolaire ne sait pas combien d'enfants elle a réellement accompagnés l'an dernier, ni combien ont progressé. Les listes sont tenues sur papier par chaque animateur.
 
@@ -8018,7 +8014,7 @@ Pour chaque cas : lisez la situation ; répondez aux questions **avant** de lire
 - *IA prédictive* : à ce stade, **non**. Les données historiques n'existent pas ; les risques de stigmatisation des enfants sont réels ; une règle simple (« trois absences consécutives → appel aux parents ») répond au besoin. L'IA peut aider à construire le modèle de tableur et à analyser des données agrégées.
 - *Indicateurs* : nombre d'enfants suivis ; assiduité ; progression selon les évaluations définies.
 
-## Cas 9 — Administration manuelle
+## Cas 9 : Administration manuelle
 
 **Situation.** Dans une fondation de 25 salariés, les demandes de congé, les notes de frais, les réservations de salles et de véhicules se font par courriel et sur papier ; l'assistante administrative passe la moitié de son temps à relancer et à recopier.
 
@@ -8031,7 +8027,7 @@ Pour chaque cas : lisez la situation ; répondez aux questions **avant** de lire
 - *Risques* : automatisations non documentées ; dépendance à une personne ; données personnelles (congés maladie) à protéger ; double saisie si les outils ne sont pas reliés.
 - *Indicateurs* : délai de traitement ; temps administratif libéré ; satisfaction des salariés.
 
-## Cas 10 — Déployer une politique d'utilisation responsable de l'IA
+## Cas 10 : Déployer une politique d'utilisation responsable de l'IA
 
 **Situation.** Un sondage interne d'Horizons Partagés montre que 60 % du personnel utilise des assistants d'IA, souvent gratuits, sans règle ; certains y ont collé des listes de patients ou des budgets confidentiels. La direction veut agir sans freiner les usages utiles.
 
@@ -8057,7 +8053,7 @@ Pour chaque cas : lisez la situation ; répondez aux questions **avant** de lire
 
 **Éléments de correction.** L'étude est convaincante si les causes sont étayées par des faits, si la solution est proportionnée aux moyens, si les risques pour les personnes sont identifiés et si les indicateurs comportent une valeur de départ.
 
-## 21.6 QCM — Module 21
+## 21.6 QCM : Module 21
 
 **Q1.** (une seule réponse) Dans le cas 1, la première priorité est :
 
@@ -8129,7 +8125,7 @@ b) proportionner la solution aux moyens.
 c) prévoir des contrôles humains et des indicateurs.
 d) commencer systématiquement par l'outil d'IA le plus avancé.
 
-## 21.7 Corrigé détaillé — Module 21
+## 21.7 Corrigé détaillé : Module 21
 
 **Q1 : a.** Sans pièces ni relevés, aucune comptabilité fiable n'est possible.
 
@@ -8154,7 +8150,7 @@ d) commencer systématiquement par l'outil d'IA le plus avancé.
 **Barème.** 2 points par question (tout ou rien pour les réponses multiples). Total sur 20. **Niveau de maîtrise :** 0–9 à consolider · 10–13 en progression · 14–17 maîtrise opérationnelle · 18–20 maîtrise avancée.
 
 
-# Module 22 — Construire le plan de transformation numérique et intelligente de son ASBL {#h28}
+# Module 22 : Construire le plan de transformation numérique et intelligente de son ASBL {#h28}
 
 ## 22.1 Mise en situation
 
@@ -8187,11 +8183,11 @@ Sans plan, les initiatives restent dispersées, dépendantes de quelques personn
 
 ## 22.5 Explications détaillées
 
-### Étape 1 — Diagnostic synthétique
+### Étape 1 : Diagnostic synthétique
 
 Reprenez les résultats des modules 4 à 7 et résumez-les en **cinq constats prioritaires** au maximum, chacun appuyé sur un fait mesuré. Complétez par un **autodiagnostic de maturité numérique** (annexe 1) qui situe l'organisation sur six dimensions : gouvernance du numérique, données et documents, outils, compétences, sécurité et protection des données, usages de l'IA.
 
-### Étape 2 — Priorités
+### Étape 2 : Priorités
 
 À l'aide de la matrice (module 6), retenez pour 90 jours :
 
@@ -8199,33 +8195,33 @@ Reprenez les résultats des modules 4 à 7 et résumez-les en **cinq constats pr
 - **un ou deux pilotes** à gain rapide ;
 - **la préparation** d'un projet structurant, le cas échéant.
 
-### Étape 3 — Solutions
+### Étape 3 : Solutions
 
 Pour chaque priorité : niveau d'implémentation (débutant, intermédiaire, avancé) ; outils ; données ; contrôles humains ; risques (examen éthique du module 8).
 
-### Étape 4 — Planification sur 90 jours
+### Étape 4 : Planification sur 90 jours
 
-![Figure 22.1 — Plan de transformation sur 90 jours](03_ILLUSTRATIONS/figures/fig_22_1.svg){#fig-22-1}
+![Figure 22.1 : Plan de transformation sur 90 jours](03_ILLUSTRATIONS/figures/fig_22_1.svg){#fig-22-1}
 
 Treize semaines suffisent pour poser les fondations, tester deux pilotes et décider. Au-delà, la feuille de route à 12 mois prolonge ce qui a fonctionné.
 
-### Étape 5 — Budget
+### Étape 5 : Budget
 
 Le budget à 90 jours inclut les coûts monétaires et **le temps interne**, souvent la ressource la plus rare.
 
-### Étape 6 — Responsabilités
+### Étape 6 : Responsabilités
 
 Une personne pilote le plan ; chaque action a un responsable ; la direction arbitre ; le conseil adopte la politique et reçoit le bilan.
 
-### Étape 7 — Indicateurs
+### Étape 7 : Indicateurs
 
 Trois familles : **fondations** (politique adoptée, personnes formées, données nettoyées), **pilotes** (indicateurs des cas d'usage), **adoption et risques** (usages, incidents).
 
-### Étape 8 — Politique d'IA
+### Étape 8 : Politique d'IA
 
 La politique (annexe 10) est adoptée au cours des cinq premières semaines : elle encadre les pilotes et l'ensemble des usages.
 
-### Étape 9 — Évaluation et décision
+### Étape 9 : Évaluation et décision
 
 En semaine 11, bilan des pilotes au regard des critères fixés ; en semaine 13, décision du conseil : poursuivre, étendre, ajuster ou arrêter ; adoption de la feuille de route à 12 mois.
 
@@ -8241,14 +8237,14 @@ En semaine 11, bilan des pilotes au regard des critères fixés ; en semaine 13,
 | 4 | Charge administrative élevée de la coordinatrice | Environ 12 heures par semaine de tâches administratives répétitives |
 | 5 | Dépendance financière | 70 % du budget provient d'un seul bailleur |
 
-Table: Tableau 22.1 — Application : le plan à 90 jours de Lumière des Collines
+Table: Tableau 22.1 : Application : le plan à 90 jours de Lumière des Collines
 
 Maturité numérique (annexe 1) : 2/5 en moyenne ; point faible : données et sécurité.
 
 ### Priorités retenues
 
 - **Fondations** : politique d'IA et règles de données ; nettoyage du fichier élèves ; formation socle.
-- **Pilote A** : projet de PV et registre des décisions (module 10) — gain rapide.
+- **Pilote A** : projet de PV et registre des décisions (module 10) : gain rapide.
 - **Pilote B** : suivi des élèves dans un tableur modèle avec formules (module 7), avec synthèse mensuelle assistée sur données agrégées.
 - **Préparé pour plus tard** : veille de financements et diversification (module 15), lancée au trimestre suivant.
 
@@ -8258,15 +8254,15 @@ Maturité numérique (annexe 1) : 2/5 en moyenne ; point faible : données et s�
 |---|---|---|---|
 | 1–3 | Diagnostic et inventaire des outils et usages | Diagnostic synthétique, registre des outils | S3 : diagnostic validé par la direction |
 | 2–5 | Politique d'IA et feu tricolore | Politique d'une page, affiche | S5 : politique adoptée par le CA |
-| 3–6 | Formation socle (modules 1–3 et 8) | 6 salariés et 10 bénévoles formés | — |
-| 4–5 | Nettoyage et pseudonymisation du fichier élèves | Fichier unique, table de correspondance protégée | — |
-| 5–10 | Pilote A : PV et registre des décisions | 2 PV produits avec la méthode ; registre à jour | — |
-| 5–10 | Pilote B : tableur de suivi et synthèse mensuelle | Tableur modèle ; 2 synthèses mensuelles | — |
-| 6–11 | Mesure des indicateurs | Tableau de bord | — |
+| 3–6 | Formation socle (modules 1–3 et 8) | 6 salariés et 10 bénévoles formés | Néant |
+| 4–5 | Nettoyage et pseudonymisation du fichier élèves | Fichier unique, table de correspondance protégée | Néant |
+| 5–10 | Pilote A : PV et registre des décisions | 2 PV produits avec la méthode ; registre à jour | Néant |
+| 5–10 | Pilote B : tableur de suivi et synthèse mensuelle | Tableur modèle ; 2 synthèses mensuelles | Néant |
+| 6–11 | Mesure des indicateurs | Tableau de bord | Néant |
 | 10–11 | Évaluation des pilotes | Note d'évaluation | S11 : bilan des pilotes |
 | 12–13 | Décision et feuille de route à 12 mois | Feuille de route | S13 : décision du conseil |
 
-Table: Tableau 22.2 — Application : le plan à 90 jours de Lumière des Collines
+Table: Tableau 22.2 : Application : le plan à 90 jours de Lumière des Collines
 
 ### Budget (montants fictifs)
 
@@ -8278,7 +8274,7 @@ Table: Tableau 22.2 — Application : le plan à 90 jours de Lumière des Collin
 | Temps interne valorisé (pilotage, formation, nettoyage, pilotes) | 60 h × 10 | 600 |
 | **Total** | 60 + 80 + 90 + 600 | **830** |
 
-Table: Tableau 22.3 — Application : le plan à 90 jours de Lumière des Collines
+Table: Tableau 22.3 : Application : le plan à 90 jours de Lumière des Collines
 
 *Le montant de l'abonnement est fictif : consultez les tarifs et les éventuels programmes destinés aux organisations à but non lucratif à la date de votre projet.*
 
@@ -8289,12 +8285,12 @@ Table: Tableau 22.3 — Application : le plan à 90 jours de Lumière des Collin
 | Pilotage du plan | R | A | I | C | I |
 | Politique d'IA | R | A (adoption par le CA) | C | C | C |
 | Nettoyage du fichier élèves | A | I | I | R | C |
-| Formation socle | R | I | I | C | — (participants) |
+| Formation socle | R | I | I | C | : (participants) |
 | Pilote A (PV, registre) | C | A | I | R | I |
 | Pilote B (suivi élèves) | A | I | I | R | C |
 | Évaluation et décision | R | A | C | C | I |
 
-Table: Tableau 22.4 — Application : le plan à 90 jours de Lumière des Collines
+Table: Tableau 22.4 : Application : le plan à 90 jours de Lumière des Collines
 
 *R = réalise ; A = autorité / décide ; C = consulté ; I = informé.*
 
@@ -8310,7 +8306,7 @@ Table: Tableau 22.4 — Application : le plan à 90 jours de Lumière des Collin
 | Temps administratif répétitif de la coordinatrice | ≈ 12 h/semaine | ≤ 9 h/semaine | Journal des tâches (2 semaines) |
 | Incidents liés aux données | inconnu | 0 incident rouge | Registre des incidents |
 
-Table: Tableau 22.5 — Application : le plan à 90 jours de Lumière des Collines
+Table: Tableau 22.5 : Application : le plan à 90 jours de Lumière des Collines
 
 ### Politique, évaluation et décision
 
@@ -8324,11 +8320,11 @@ La politique d'une page est adoptée en semaine 5. En semaine 11, la note d'éva
 | Intermédiaire | En plus : outil professionnel validé, référent désigné, registres, automatisation d'un processus, tableau de bord |
 | Avancé | En plus : feuille de route SI/IA, gouvernance par comité, préparation d'un projet intégré (RAG, ERP), audit des systèmes existants |
 
-Table: Tableau 22.6 — Application : le plan à 90 jours de Lumière des Collines
+Table: Tableau 22.6 : Application : le plan à 90 jours de Lumière des Collines
 
 ## 22.7 Prompt prêt à l'emploi
 
-### Fiche P22.1 — Construire la feuille de route à 90 jours
+### Fiche P22.1 : Construire la feuille de route à 90 jours
 
 **A. Titre.** Plan de transformation à 90 jours.
 
@@ -8380,7 +8376,7 @@ Un plan adopté, des fondations posées, deux pilotes évalués, une décision d
 
 ## 22.9 Contrôles humains
 
-> **🛑 Contrôle humain obligatoire** — Le plan est arbitré par la direction ; la politique d'IA est adoptée par le conseil ; la décision de fin de période (poursuivre, étendre, ajuster, arrêter) est prise par les organes compétents au vu d'une évaluation factuelle.
+> **🛑 Contrôle humain obligatoire** : Le plan est arbitré par la direction ; la politique d'IA est adoptée par le conseil ; la décision de fin de période (poursuivre, étendre, ajuster, arrêter) est prise par les organes compétents au vu d'une évaluation factuelle.
 
 ## 22.10 Risques et erreurs à éviter
 
@@ -8390,7 +8386,7 @@ Un plan adopté, des fondations posées, deux pilotes évalués, une décision d
 - Absence de décision à l'issue des 90 jours.
 - Plan porté par une seule personne.
 
-## 22.11 Exercice pratique — Votre plan
+## 22.11 Exercice pratique : Votre plan
 
 **Consigne (une demi-journée).** Construisez le plan à 90 jours de votre organisation avec la fiche P22.1 et les annexes 1, 3, 7, 10, 15 et 17. Présentez-le à votre direction.
 
@@ -8404,7 +8400,7 @@ Un plan adopté, des fondations posées, deux pilotes évalués, une décision d
 - La politique d'IA encadre les pilotes.
 - La décision de fin de période est un acte de gouvernance.
 
-## 22.13 QCM — Module 22
+## 22.13 QCM : Module 22
 
 **Q1.** (une seule réponse) Un bon plan à 90 jours comprend au maximum :
 
@@ -8448,14 +8444,14 @@ b) la politique adoptée en semaine 5.
 c) la décision du conseil en semaine 13.
 d) l'achat d'un ERP en semaine 2.
 
-**Q7.** (mise en situation — une seule réponse) Au bout de 90 jours, un pilote n'atteint pas ses cibles. Que faites-vous ?
+**Q7.** (mise en situation, une seule réponse) Au bout de 90 jours, un pilote n'atteint pas ses cibles. Que faites-vous ?
 
 a) Ne rien dire.
 b) Modifier les cibles a posteriori.
 c) Lancer trois nouveaux pilotes.
 d) Analyser les causes et proposer au conseil d'ajuster ou d'arrêter, sur la base de l'évaluation.
 
-**Q8.** (mise en situation — une seule réponse) Le plan prévoit 40 heures de travail pour une coordinatrice qui n'a que 3 heures libres par semaine. Que faites-vous ?
+**Q8.** (mise en situation, une seule réponse) Le plan prévoit 40 heures de travail pour une coordinatrice qui n'a que 3 heures libres par semaine. Que faites-vous ?
 
 a) Maintenir le plan.
 b) Demander à l'IA de faire le travail.
@@ -8476,7 +8472,7 @@ b) ce qui sera testé.
 c) ce qui sera préparé.
 d) ce qui sera caché au conseil.
 
-## 22.14 Corrigé détaillé — Module 22
+## 22.14 Corrigé détaillé : Module 22
 
 **Q1 : b.** Peu de pilotes, bien suivis, et des fondations solides.
 
@@ -8505,7 +8501,7 @@ d) ce qui sera caché au conseil.
 
 Au début de ce livre, une trésorière cherchait une facture à 18 h 40, un coordinateur recopiait trois fois les mêmes chiffres, une chargée de communication s'interrogeait sur des consentements, un président se demandait si son organisation était en retard.
 
-Vous savez désormais que la réponse à leurs difficultés ne se trouve pas d'abord dans un outil. Elle commence par une compréhension lucide de ce qu'est l'intelligence artificielle — un ensemble de techniques statistiques puissantes, utiles pour des tâches précises, sujettes à l'erreur, et dépourvues de jugement. Elle se poursuit par une connaissance fine de son organisation : ses processus réels, ses causes profondes de dysfonctionnement, ses risques, ses personnes. Elle exige des fondations : des données ordonnées, des règles éthiques et de sécurité, des outils proportionnés. Elle se concrétise, métier par métier, dans des processus où chacun sait ce que fait l'IA, ce que fait le logiciel, ce que fait le professionnel — et ce qui doit être vérifié. Elle ne dure que si elle est accompagnée, gouvernée, maintenue et évaluée.
+Vous savez désormais que la réponse à leurs difficultés ne se trouve pas d'abord dans un outil. Elle commence par une compréhension lucide de ce qu'est l'intelligence artificielle (un ensemble de techniques statistiques puissantes, utiles pour des tâches précises, sujettes à l'erreur, et dépourvues de jugement. Elle se poursuit par une connaissance fine de son organisation : ses processus réels, ses causes profondes de dysfonctionnement, ses risques, ses personnes. Elle exige des fondations : des données ordonnées, des règles éthiques et de sécurité, des outils proportionnés. Elle se concrétise, métier par métier, dans des processus où chacun sait ce que fait l'IA, ce que fait le logiciel, ce que fait le professionnel) et ce qui doit être vérifié. Elle ne dure que si elle est accompagnée, gouvernée, maintenue et évaluée.
 
 Trois convictions traversent l'ouvrage.
 
@@ -8515,9 +8511,9 @@ Trois convictions traversent l'ouvrage.
 
 **La troisième : commencer petit, mesurer, décider.** Un plan de quatre-vingt-dix jours, deux pilotes bien suivis, des indicateurs avec une valeur de départ et une décision explicite valent mieux qu'une transformation spectaculaire annoncée et jamais réalisée.
 
-Les outils changeront — probablement très vite. Les fonctionnalités décrites aujourd'hui comme avancées deviendront banales, et de nouveaux risques apparaîtront. Les méthodes de ce livre, elles, resteront valables : diagnostiquer, prioriser, protéger, expérimenter, contrôler, apprendre.
+Les outils changeront : probablement très vite. Les fonctionnalités décrites aujourd'hui comme avancées deviendront banales, et de nouveaux risques apparaîtront. Les méthodes de ce livre, elles, resteront valables : diagnostiquer, prioriser, protéger, expérimenter, contrôler, apprendre.
 
-Le moment est venu de passer à l'action. Ouvrez l'annexe 1, réalisez votre autodiagnostic, réunissez deux ou trois collègues, et construisez votre plan. Votre organisation n'a pas besoin de devenir une entreprise technologique. Elle a besoin de rester fidèle à sa mission — avec un peu plus de temps, un peu plus de rigueur, et un peu plus de moyens pour les personnes qu'elle sert.
+Le moment est venu de passer à l'action. Ouvrez l'annexe 1, réalisez votre autodiagnostic, réunissez deux ou trois collègues, et construisez votre plan. Votre organisation n'a pas besoin de devenir une entreprise technologique. Elle a besoin de rester fidèle à sa mission, avec un peu plus de temps, un peu plus de rigueur, et un peu plus de moyens pour les personnes qu'elle sert.
 
 # Feuille de route de transformation {#h30 .unnumbered}
 
@@ -8534,17 +8530,15 @@ La feuille de route ci-dessous résume le parcours proposé. Elle se lit comme u
 | **Mois 4–12** | Généraliser et structurer | Déploiement des pilotes concluants ; projet structurant (assistant documentaire, intégration comptable) ; gouvernance de l'IA | M19, M20 ; annexes 5, 7, 8, 15, 16, 22 |
 | **Chaque année** | Évaluer et améliorer | Bilan au conseil ; audit des systèmes ; mise à jour de la politique et des registres | M13, M20 ; annexes 19, 20, 21 |
 
-Table: Tableau 0.1 — Pages liminaires
+Table: Tableau 0.1 : Pages liminaires
 
 
 
 # Bibliographie {#h31 .unnumbered}
 
-*Références présentées selon les principes de l'APA (7e édition), adaptées au français. Les ouvrages de la section « Inspiration éditoriale » ont servi à étudier des principes généraux de clarté et de pédagogie ; aucun texte n'en est reproduit. Le niveau de vérification de chaque référence figure dans le registre documentaire joint au manuscrit.*
-
 ## Normes, cadres et instruments internationaux {.unnumbered}
 
-Committee of Sponsoring Organizations of the Treadway Commission. (2013). *Internal control — Integrated framework*. COSO.
+Committee of Sponsoring Organizations of the Treadway Commission. (2013). *Internal control : Integrated framework*. COSO.
 
 Conseil de l'Europe. (2018). *Protocole d'amendement à la Convention pour la protection des personnes à l'égard du traitement automatisé des données à caractère personnel* (STCE n° 223).
 
@@ -8554,7 +8548,7 @@ CHS Alliance, Groupe URD, & Sphere. (2024). *Core humanitarian standard on quali
 
 International Non-Profit Reporting Foundation. (2025). *International non-profit accounting standard (INPAS)*. Projet IFR4NPO, CIPFA et Humentum.
 
-ISO/IEC. (2023). *ISO/IEC 42001:2023 — Information technology — Artificial intelligence — Management system*. Organisation internationale de normalisation et Commission électrotechnique internationale.
+ISO/IEC. (2023). *ISO/IEC 42001:2023, Information technology, Artificial intelligence : Management system*. Organisation internationale de normalisation et Commission électrotechnique internationale.
 
 National Institute of Standards and Technology. (2023). *Artificial intelligence risk management framework (AI RMF 1.0)* (NIST AI 100-1). https://doi.org/10.6028/NIST.AI.100-1
 
@@ -8628,8 +8622,6 @@ Zinsser, W. *On writing well*. Harper. [Première édition 1976 ; édition à pr
 
 # Webographie {#h32 .unnumbered}
 
-*Ressources en ligne d'institutions de référence. Date de consultation : 20 novembre 2026. Les adresses peuvent évoluer ; en cas de lien rompu, recherchez le titre sur le site de l'institution.*
-
 | Ressource | Institution | Adresse |
 |---|---|---|
 | Principes de l'OCDE sur l'IA | OCDE | https://oecd.ai/en/principles |
@@ -8649,285 +8641,285 @@ Zinsser, W. *On writing well*. Harper. [Première édition 1976 ; édition à pr
 | Energy and AI | AIE | https://www.iea.org/reports/energy-and-ai |
 | Occupational Fraud 2024 | ACFE | https://legacy.acfe.com/report-to-the-nations/2024/ |
 | IFR4NPO / INPAS | CIPFA et Humentum | https://www.ifr4npo.org |
-| AI Ethics for Nonprofits — Toolkit | NetHope (catalogue OCDE.AI) | https://oecd.ai/en/catalogue/tools/artificial-intelligence-ai-ethics-for-nonprofits |
+| AI Ethics for Nonprofits : Toolkit | NetHope (catalogue OCDE.AI) | https://oecd.ai/en/catalogue/tools/artificial-intelligence-ai-ethics-for-nonprofits |
 
-Table: Tableau 0.1 — Inspiration éditoriale
+Table: Tableau 0.1 : Inspiration éditoriale
 
 # Index alphabétique {#index-alpha .unnumbered}
 
 *Les renvois indiquent les modules (M) où la notion est principalement traitée ; « Glossaire » renvoie aux pages liminaires.*
 
 ::: index
-**agent IA** — M2, M6, M9, M21
+**agent IA** : M2, M6, M9, M21
 
-**AI Act** — Glossaire, M8, M14
+**AI Act** : Glossaire, M8, M14
 
-**anonymisation** — M8
+**anonymisation** : M8
 
-**API** — Glossaire, M7, M9
+**API** : Glossaire, M7, M9
 
-**apprentissage automatique** — Glossaire, M1, M2
+**apprentissage automatique** : Glossaire, M1, M2
 
-**apprentissage profond** — M1, M2
+**apprentissage profond** : M1, M2
 
-**arbre à problèmes** — M11
+**arbre à problèmes** : M11
 
-**assistant conversationnel** — M1, M2, M3, M9
+**assistant conversationnel** : M1, M2, M3, M9
 
-**audit interne** — M13
+**audit interne** : M13
 
-**bailleur** — Glossaire, M1, M3, M4, M5, M7, M8, M9, M10, M11, M12, M15, M16, M17, M18, M21, M22
+**bailleur** : Glossaire, M1, M3, M4, M5, M7, M8, M9, M10, M11, M12, M15, M16, M17, M18, M21, M22
 
-**base de connaissances** — Glossaire, M2, M14
+**base de connaissances** : Glossaire, M2, M14
 
-**bénévole** — Glossaire, M1, M2, M4, M7, M8, M10, M14, M20, M21, M22
+**bénévole** : Glossaire, M1, M2, M4, M7, M8, M10, M14, M20, M21, M22
 
-**biais** — M1, M2, M8, M12, M14
+**biais** : M1, M2, M8, M12, M14
 
-**budget** — Glossaire, M4, M5, M6, M8, M9, M11, M12, M15, M16, M19, M20, M21, M22
+**budget** : Glossaire, M4, M5, M6, M8, M9, M11, M12, M15, M16, M19, M20, M21, M22
 
-**CADRE** — M3
+**CADRE** : M3
 
-**cadre logique** — M11, M15
+**cadre logique** : M11, M15
 
-**cahier des charges** — M19
+**cahier des charges** : M19
 
-**chaîne de résultats** — M11
+**chaîne de résultats** : M11
 
-**cloud** — M9
+**cloud** : M9
 
-**consentement** — M4, M8, M10, M15, M17, M21
+**consentement** : M4, M8, M10, M15, M17, M21
 
-**contrôle interne** — Glossaire, M4, M5, M12, M13
+**contrôle interne** : Glossaire, M4, M5, M12, M13
 
-**COSO** — M5, M13
+**COSO** : M5, M13
 
-**cybersécurité** — Glossaire, M8
+**cybersécurité** : Glossaire, M8
 
-**donnée personnelle** — Glossaire
+**donnée personnelle** : Glossaire
 
-**droit d'auteur** — Glossaire, M2, M8
+**droit d'auteur** : Glossaire, M2, M8
 
-**éligibilité** — M11, M12, M15, M18
+**éligibilité** : M11, M12, M15, M18
 
-**extraction** — M5, M6, M9, M10, M12, M13, M16, M21
+**extraction** : M5, M6, M9, M10, M12, M13, M16, M21
 
-**faible connectivité** — Glossaire, M9, M18
+**faible connectivité** : Glossaire, M9, M18
 
-**faux positif** — M13
+**faux positif** : M13
 
-**feu tricolore** — M8, M21, M22
+**feu tricolore** : M8, M21, M22
 
-**fonds affectés** — M12
+**fonds affectés** : M12
 
-**fractionnement** — M13, M21
+**fractionnement** : M13, M21
 
-**gouvernance** — Glossaire, M1, M3, M4, M8, M10, M12, M13, M20, M22
+**gouvernance** : Glossaire, M1, M3, M4, M8, M10, M12, M13, M20, M22
 
-**hallucination** — M1, M2
+**hallucination** : M1, M2
 
-**immobilisation** — M16
+**immobilisation** : M16
 
-**imputation** — M6, M12
+**imputation** : M6, M12
 
-**indicateur** — Glossaire, M3, M4, M5, M6, M7, M10, M11, M12, M13, M14, M15, M16, M17, M18, M19, M20, M21, M22
+**indicateur** : Glossaire, M3, M4, M5, M6, M7, M10, M11, M12, M13, M14, M15, M16, M17, M18, M19, M20, M21, M22
 
-**injection de prompt** — M2
+**injection de prompt** : M2
 
-**inventaire** — M16
+**inventaire** : M16
 
-**ISO/IEC 42001** — M8, M20
+**ISO/IEC 42001** : M8, M20
 
-**jeu de tests** — M19, M20
+**jeu de tests** : M19, M20
 
-**matrice de sélection** — M6
+**matrice de sélection** : M6
 
-**minimisation** — M8, M18
+**minimisation** : M8, M18
 
-**NIST** — M2, M8, M20
+**NIST** : M2, M8, M20
 
-**no-code** — Glossaire, M9
+**no-code** : Glossaire, M9
 
-**OCDE** — Glossaire, M1, M8, M11
+**OCDE** : Glossaire, M1, M8, M11
 
-**OCR** — Glossaire, M1, M2
+**OCR** : Glossaire, M1, M2
 
-**pilote** — M6, M9, M12, M19, M22
+**pilote** : M6, M9, M12, M19, M22
 
-**piste d'audit** — Glossaire, M12
+**piste d'audit** : Glossaire, M12
 
-**plainte** — M18
+**plainte** : M18
 
-**plan de classement** — M5, M7, M21
+**plan de classement** : M5, M7, M21
 
-**procès-verbal** — M10, M16
+**procès-verbal** : M10, M16
 
-**prompt** — Glossaire, M1, M2, M3, M4, M5, M6, M7, M8, M9, M10, M11, M12, M13, M14, M15, M16, M17, M18, M19, M20, M22
+**prompt** : Glossaire, M1, M2, M3, M4, M5, M6, M7, M8, M9, M10, M11, M12, M13, M14, M15, M16, M17, M18, M19, M20, M22
 
-**pseudonymisation** — Glossaire, M7
+**pseudonymisation** : Glossaire, M7
 
-**RACI** — M22
+**RACI** : M22
 
-**RAG** — Glossaire, M2, M6, M7, M9, M10, M11, M12, M14, M15, M19
+**RAG** : Glossaire, M2, M6, M7, M9, M10, M11, M12, M14, M15, M19
 
-**rapprochement à trois voies** — M12, M16
+**rapprochement à trois voies** : M12, M16
 
-**rapprochement bancaire** — M12
+**rapprochement bancaire** : M12
 
-**recrutement** — M4, M8, M14
+**recrutement** : M4, M8, M14
 
-**registre des décisions** — M10, M22
+**registre des décisions** : M10, M22
 
-**réversibilité** — M9
+**réversibilité** : M9
 
-**RGPD** — Glossaire, M8, M14
+**RGPD** : Glossaire, M8, M14
 
-**RPA** — Glossaire, M2
+**RPA** : Glossaire, M2
 
-**sauvegarde** — M7, M21
+**sauvegarde** : M7, M21
 
-**séparation des tâches** — Glossaire, M5, M12, M13, M16
+**séparation des tâches** : Glossaire, M5, M12, M13, M16
 
-**supervision humaine** — M8
+**supervision humaine** : M8
 
-**tableau de bord** — M12, M13, M18, M20, M21, M22
+**tableau de bord** : M12, M13, M18, M20, M21, M22
 
-**traduction** — M1, M3, M6, M17, M18
+**traduction** : M1, M3, M6, M17, M18
 
-**transparence** — M8, M17
+**transparence** : M8, M17
 
-**trésorerie** — M5, M6, M12
+**trésorerie** : M5, M6, M12
 
-**UNESCO** — M1, M8
+**UNESCO** : M1, M8
 
-**WCAG** — M9, M17
+**WCAG** : M9, M17
 
 :::
 
 # Liste des illustrations {#liste-illustrations .unnumbered}
 
 ::: listeillus
-- [Figure 0.1 — Carte des parcours de lecture](#fig-0-1)
-- [Figure 1.1 — Repères historiques de l'intelligence artificielle](#fig-1-1)
-- [Figure 1.2 — Les grandes familles d'intelligence artificielle](#fig-1-2)
-- [Figure 2.1 — Du jeu de données au modèle, puis à la prédiction](#fig-2-1)
-- [Figure 2.2 — Architecture RAG (génération augmentée par la recherche)](#fig-2-2)
-- [Figure 3.1 — Anatomie d'un prompt efficace : la méthode CADRE](#fig-3-1)
-- [Figure 3.2 — La boucle de vérification d'une réponse d'IA](#fig-3-2)
-- [Figure 4.1 — Organigramme type d'une ASBL de taille moyenne](#fig-4-1)
-- [Figure 4.2 — Les cycles de fonctionnement d'une ASBL](#fig-4-2)
-- [Figure 5.2 — Arbre des causes : retards de reporting financier](#fig-5-2)
-- [Figure 5.1 — Cartographie « tel quel » du circuit des dépenses](#fig-5-1)
-- [Figure 6.2 — Arbre de décision : faut-il de l'IA, une automatisation classique ou rien ?](#fig-6-2)
-- [Figure 6.1 — Matrice de priorisation valeur × faisabilité](#fig-6-1)
-- [Figure 7.2 — Exemple d'arborescence documentaire et de règle de nommage](#fig-7-2)
-- [Figure 7.1 — Le cycle de vie des données](#fig-7-1)
-- [Figure 8.1 — Le feu tricolore de classification des données](#fig-8-1)
-- [Figure 8.2 — Trois modes de supervision humaine](#fig-8-2)
-- [Figure 9.1 — Trois niveaux d'implémentation](#fig-9-1)
-- [Figure 10.1 — De la réunion au suivi des décisions](#fig-10-1)
-- [Figure 11.1 — De l'arbre à problèmes à l'arbre à objectifs](#fig-11-1)
-- [Figure 11.2 — Chaîne de résultats et indicateurs](#fig-11-2)
-- [Figure 12.1 — Traitement d'une facture en 14 étapes : qui fait quoi ?](#fig-12-1)
-- [Figure 12.2 — Tableau de bord fictif : exécution budgétaire par ligne](#fig-12-2)
-- [Figure 13.2 — Carte thermique des risques](#fig-13-2)
-- [Figure 13.1 — Entonnoir des tests analytiques assistés](#fig-13-1)
-- [Figure 14.1 — Recrutement assisté : où l'IA aide, où l'humain décide](#fig-14-1)
-- [Figure 15.1 — Entonnoir des opportunités de financement](#fig-15-1)
-- [Figure 16.1 — Circuit achats et logistique](#fig-16-1)
-- [Figure 17.1 — La chaîne éditoriale assistée](#fig-17-1)
-- [Figure 18.1 — La boucle de redevabilité envers les communautés](#fig-18-1)
-- [Figure 19.1 — Cycle de vie d'un projet IA dans une ASBL](#fig-19-1)
-- [Figure 20.2 — Facteurs d'adoption d'un nouvel outil](#fig-20-2)
-- [Figure 20.1 — Gouvernance de l'IA dans l'ASBL](#fig-20-1)
-- [Figure 21.1 — Les dix études de cas et leurs modules de référence](#fig-21-1)
-- [Figure 22.1 — Plan de transformation sur 90 jours](#fig-22-1)
+- [Figure 0.1 : Carte des parcours de lecture](#fig-0-1)
+- [Figure 1.1 : Repères historiques de l'intelligence artificielle](#fig-1-1)
+- [Figure 1.2 : Les grandes familles d'intelligence artificielle](#fig-1-2)
+- [Figure 2.1 : Du jeu de données au modèle, puis à la prédiction](#fig-2-1)
+- [Figure 2.2 : Architecture RAG (génération augmentée par la recherche)](#fig-2-2)
+- [Figure 3.1 : Anatomie d'un prompt efficace : la méthode CADRE](#fig-3-1)
+- [Figure 3.2 : La boucle de vérification d'une réponse d'IA](#fig-3-2)
+- [Figure 4.1 : Organigramme type d'une ASBL de taille moyenne](#fig-4-1)
+- [Figure 4.2 : Les cycles de fonctionnement d'une ASBL](#fig-4-2)
+- [Figure 5.2 : Arbre des causes : retards de reporting financier](#fig-5-2)
+- [Figure 5.1 : Cartographie « tel quel » du circuit des dépenses](#fig-5-1)
+- [Figure 6.2 : Arbre de décision : faut-il de l'IA, une automatisation classique ou rien ?](#fig-6-2)
+- [Figure 6.1 : Matrice de priorisation valeur × faisabilité](#fig-6-1)
+- [Figure 7.2 : Exemple d'arborescence documentaire et de règle de nommage](#fig-7-2)
+- [Figure 7.1 : Le cycle de vie des données](#fig-7-1)
+- [Figure 8.1 : Le feu tricolore de classification des données](#fig-8-1)
+- [Figure 8.2 : Trois modes de supervision humaine](#fig-8-2)
+- [Figure 9.1 : Trois niveaux d'implémentation](#fig-9-1)
+- [Figure 10.1 : De la réunion au suivi des décisions](#fig-10-1)
+- [Figure 11.1 : De l'arbre à problèmes à l'arbre à objectifs](#fig-11-1)
+- [Figure 11.2 : Chaîne de résultats et indicateurs](#fig-11-2)
+- [Figure 12.1 : Traitement d'une facture en 14 étapes : qui fait quoi ?](#fig-12-1)
+- [Figure 12.2 : Tableau de bord fictif : exécution budgétaire par ligne](#fig-12-2)
+- [Figure 13.2 : Carte thermique des risques](#fig-13-2)
+- [Figure 13.1 : Entonnoir des tests analytiques assistés](#fig-13-1)
+- [Figure 14.1 : Recrutement assisté : où l'IA aide, où l'humain décide](#fig-14-1)
+- [Figure 15.1 : Entonnoir des opportunités de financement](#fig-15-1)
+- [Figure 16.1 : Circuit achats et logistique](#fig-16-1)
+- [Figure 17.1 : La chaîne éditoriale assistée](#fig-17-1)
+- [Figure 18.1 : La boucle de redevabilité envers les communautés](#fig-18-1)
+- [Figure 19.1 : Cycle de vie d'un projet IA dans une ASBL](#fig-19-1)
+- [Figure 20.2 : Facteurs d'adoption d'un nouvel outil](#fig-20-2)
+- [Figure 20.1 : Gouvernance de l'IA dans l'ASBL](#fig-20-1)
+- [Figure 21.1 : Les dix études de cas et leurs modules de référence](#fig-21-1)
+- [Figure 22.1 : Plan de transformation sur 90 jours](#fig-22-1)
 :::
 
 # Liste des tableaux {#liste-tableaux .unnumbered}
 
 *Les tableaux sont numérotés par module ; le numéro 0 désigne les pages liminaires.*
 
-- Tableau 0.1 — Présentation de l'ouvrage
-- Tableau 0.2 — Présentation de l'ouvrage
-- Tableau 0.3 — Guide de lecture
-- Tableau 0.4 — Liste des abréviations
-- Tableau 1.1 — Explications détaillées
-- Tableau 1.2 — Explications détaillées
-- Tableau 1.3 — Explications détaillées
-- Tableau 1.4 — Application professionnelle : expliquer l'IA à son conseil d'administration
-- Tableau 2.1 — Notions et définitions
-- Tableau 2.2 — Explications détaillées
-- Tableau 2.3 — Application professionnelle : tester un assistant avant de l'adopter
-- Tableau 2.4 — Prompt prêt à l'emploi
-- Tableau 3.1 — Explications détaillées
-- Tableau 3.2 — Application professionnelle : trois usages quotidiens maîtrisés
-- Tableau 4.1 — Explications détaillées
-- Tableau 4.2 — Explications détaillées
-- Tableau 4.3 — Application professionnelle : radiographie d'Horizons Partagés
-- Tableau 4.4 — Application professionnelle : radiographie d'Horizons Partagés
-- Tableau 5.1 — Explications détaillées
-- Tableau 5.2 — Explications détaillées
-- Tableau 5.3 — Application professionnelle : diagnostic du circuit des dépenses d'Horizons Partagés
-- Tableau 6.1 — Explications détaillées
-- Tableau 6.2 — Explications détaillées
-- Tableau 6.3 — Explications détaillées
-- Tableau 6.4 — Explications détaillées
-- Tableau 6.5 — Application professionnelle : sélectionner deux projets pilotes
-- Tableau 7.1 — Explications détaillées
-- Tableau 7.2 — Explications détaillées
-- Tableau 7.3 — Application professionnelle : remettre en ordre le suivi des élèves de Lumière des Collines
-- Tableau 8.1 — Explications détaillées
-- Tableau 8.2 — Explications détaillées
-- Tableau 8.3 — Explications détaillées
-- Tableau 8.4 — Explications détaillées
-- Tableau 8.5 — Explications détaillées
-- Tableau 8.6 — Application professionnelle : refonder le projet de Thomas
-- Tableau 8.7 — Application professionnelle : refonder le projet de Thomas
-- Tableau 9.1 — Explications détaillées
-- Tableau 9.2 — Explications détaillées
-- Tableau 9.3 — Explications détaillées
-- Tableau 9.4 — Explications détaillées
-- Tableau 9.5 — Application professionnelle : choisir un outil pour Horizons Partagés
-- Tableau 9.6 — Application professionnelle : choisir un outil pour Horizons Partagés
-- Tableau 10.1 — Explications détaillées
-- Tableau 10.2 — Application métier : de la réunion au suivi des décisions à Horizons Partagés
-- Tableau 11.1 — Explications détaillées
-- Tableau 11.2 — Explications détaillées
-- Tableau 11.3 — Explications détaillées
-- Tableau 11.4 — Application métier : de l'alerte communautaire au projet financé
-- Tableau 12.1 — Explications détaillées
-- Tableau 12.2 — Explications détaillées
-- Tableau 12.3 — Explications détaillées
-- Tableau 12.4 — Application métier : automatiser le traitement des pièces à Horizons Partagés
-- Tableau 13.1 — Explications détaillées
-- Tableau 13.2 — Explications détaillées
-- Tableau 13.3 — Explications détaillées
-- Tableau 13.4 — Explications détaillées
-- Tableau 13.5 — Application métier : revue des dépenses du premier trimestre au RCE
-- Tableau 14.1 — Application métier : recruter un(e) chargé(e) de suivi-évaluation
-- Tableau 15.1 — Explications détaillées
-- Tableau 15.2 — Explications détaillées
-- Tableau 15.3 — Application métier : de l'appel à projets à la note conceptuelle
-- Tableau 16.1 — Explications détaillées
-- Tableau 16.2 — Explications détaillées
-- Tableau 16.3 — Application métier : de la demande d'achat à l'inventaire au RCE
-- Tableau 17.1 — Application métier : du programme décrit au calendrier éditorial de trois mois
-- Tableau 18.1 — Application métier : un mécanisme de plaintes multilingue à Horizons Partagés
-- Tableau 19.1 — Explications détaillées
-- Tableau 19.2 — Application : l'assistant de procédures d'Horizons Partagés
-- Tableau 20.1 — Explications détaillées
-- Tableau 20.2 — Application : relancer l'assistant de procédures
-- Tableau 20.3 — Application : relancer l'assistant de procédures
-- Tableau 22.1 — Application : le plan à 90 jours de Lumière des Collines
-- Tableau 22.2 — Application : le plan à 90 jours de Lumière des Collines
-- Tableau 22.3 — Application : le plan à 90 jours de Lumière des Collines
-- Tableau 22.4 — Application : le plan à 90 jours de Lumière des Collines
-- Tableau 22.5 — Application : le plan à 90 jours de Lumière des Collines
-- Tableau 22.6 — Application : le plan à 90 jours de Lumière des Collines
-- Tableau 0.1 — Pages liminaires
-- Tableau 0.1 — Inspiration éditoriale
-- Tableau 0.2 — Inspiration éditoriale
+- Tableau 0.1 : Présentation de l'ouvrage
+- Tableau 0.2 : Présentation de l'ouvrage
+- Tableau 0.3 : Guide de lecture
+- Tableau 0.4 : Liste des abréviations
+- Tableau 1.1 : Explications détaillées
+- Tableau 1.2 : Explications détaillées
+- Tableau 1.3 : Explications détaillées
+- Tableau 1.4 : Application professionnelle : expliquer l'IA à son conseil d'administration
+- Tableau 2.1 : Notions et définitions
+- Tableau 2.2 : Explications détaillées
+- Tableau 2.3 : Application professionnelle : tester un assistant avant de l'adopter
+- Tableau 2.4 : Prompt prêt à l'emploi
+- Tableau 3.1 : Explications détaillées
+- Tableau 3.2 : Application professionnelle : trois usages quotidiens maîtrisés
+- Tableau 4.1 : Explications détaillées
+- Tableau 4.2 : Explications détaillées
+- Tableau 4.3 : Application professionnelle : radiographie d'Horizons Partagés
+- Tableau 4.4 : Application professionnelle : radiographie d'Horizons Partagés
+- Tableau 5.1 : Explications détaillées
+- Tableau 5.2 : Explications détaillées
+- Tableau 5.3 : Application professionnelle : diagnostic du circuit des dépenses d'Horizons Partagés
+- Tableau 6.1 : Explications détaillées
+- Tableau 6.2 : Explications détaillées
+- Tableau 6.3 : Explications détaillées
+- Tableau 6.4 : Explications détaillées
+- Tableau 6.5 : Application professionnelle : sélectionner deux projets pilotes
+- Tableau 7.1 : Explications détaillées
+- Tableau 7.2 : Explications détaillées
+- Tableau 7.3 : Application professionnelle : remettre en ordre le suivi des élèves de Lumière des Collines
+- Tableau 8.1 : Explications détaillées
+- Tableau 8.2 : Explications détaillées
+- Tableau 8.3 : Explications détaillées
+- Tableau 8.4 : Explications détaillées
+- Tableau 8.5 : Explications détaillées
+- Tableau 8.6 : Application professionnelle : refonder le projet de Thomas
+- Tableau 8.7 : Application professionnelle : refonder le projet de Thomas
+- Tableau 9.1 : Explications détaillées
+- Tableau 9.2 : Explications détaillées
+- Tableau 9.3 : Explications détaillées
+- Tableau 9.4 : Explications détaillées
+- Tableau 9.5 : Application professionnelle : choisir un outil pour Horizons Partagés
+- Tableau 9.6 : Application professionnelle : choisir un outil pour Horizons Partagés
+- Tableau 10.1 : Explications détaillées
+- Tableau 10.2 : Application métier : de la réunion au suivi des décisions à Horizons Partagés
+- Tableau 11.1 : Explications détaillées
+- Tableau 11.2 : Explications détaillées
+- Tableau 11.3 : Explications détaillées
+- Tableau 11.4 : Application métier : de l'alerte communautaire au projet financé
+- Tableau 12.1 : Explications détaillées
+- Tableau 12.2 : Explications détaillées
+- Tableau 12.3 : Explications détaillées
+- Tableau 12.4 : Application métier : automatiser le traitement des pièces à Horizons Partagés
+- Tableau 13.1 : Explications détaillées
+- Tableau 13.2 : Explications détaillées
+- Tableau 13.3 : Explications détaillées
+- Tableau 13.4 : Explications détaillées
+- Tableau 13.5 : Application métier : revue des dépenses du premier trimestre au RCE
+- Tableau 14.1 : Application métier : recruter un(e) chargé(e) de suivi-évaluation
+- Tableau 15.1 : Explications détaillées
+- Tableau 15.2 : Explications détaillées
+- Tableau 15.3 : Application métier : de l'appel à projets à la note conceptuelle
+- Tableau 16.1 : Explications détaillées
+- Tableau 16.2 : Explications détaillées
+- Tableau 16.3 : Application métier : de la demande d'achat à l'inventaire au RCE
+- Tableau 17.1 : Application métier : du programme décrit au calendrier éditorial de trois mois
+- Tableau 18.1 : Application métier : un mécanisme de plaintes multilingue à Horizons Partagés
+- Tableau 19.1 : Explications détaillées
+- Tableau 19.2 : Application : l'assistant de procédures d'Horizons Partagés
+- Tableau 20.1 : Explications détaillées
+- Tableau 20.2 : Application : relancer l'assistant de procédures
+- Tableau 20.3 : Application : relancer l'assistant de procédures
+- Tableau 22.1 : Application : le plan à 90 jours de Lumière des Collines
+- Tableau 22.2 : Application : le plan à 90 jours de Lumière des Collines
+- Tableau 22.3 : Application : le plan à 90 jours de Lumière des Collines
+- Tableau 22.4 : Application : le plan à 90 jours de Lumière des Collines
+- Tableau 22.5 : Application : le plan à 90 jours de Lumière des Collines
+- Tableau 22.6 : Application : le plan à 90 jours de Lumière des Collines
+- Tableau 0.1 : Pages liminaires
+- Tableau 0.1 : Inspiration éditoriale
+- Tableau 0.2 : Inspiration éditoriale
 
 # Annexes et modèles téléchargeables {#h33 .unnumbered}
 
@@ -8958,7 +8950,7 @@ Les vingt-deux annexes opérationnelles sont fournies sous forme de fichiers mod
 | 21 | Modèle de mesure des performances | Avant / après | 6, 19, 22 |
 | 22 | Checklist de mise en production d'une solution IA | Décider du déploiement | 19 |
 
-Table: Tableau 0.2 — Inspiration éditoriale
+Table: Tableau 0.2 : Inspiration éditoriale
 
 Données d'exercice : `04_ANNEXES/donnees_exercices/` (fichier fictif de 40 dépenses du module 13, fichier fournisseurs, résultats des tests).
 
@@ -8966,7 +8958,7 @@ Données d'exercice : `04_ANNEXES/donnees_exercices/` (fichier fictif de 40 dép
 
 Comprendre les possibilités de l'intelligence artificielle est une première étape. La véritable transformation commence lorsque ces connaissances sont intégrées aux processus, aux outils et aux pratiques quotidiennes de votre organisation.
 
-Verdi Imbole, auteur indépendant, auditeur financier et consultant freelance en intelligence artificielle, accompagne les organisations à but non lucratif dans leur modernisation et l'amélioration de leurs pratiques de gestion.
+Nous accompagnons les organisations à but non lucratif dans la modernisation et l'amélioration de leur pratique de gestion.
 
 Les accompagnements proposés portent notamment sur :
 
@@ -8980,12 +8972,8 @@ Les accompagnements proposés portent notamment sur :
 
 ## L'auteur {.unnumbered}
 
-**Verdi Imbole** — Auteur indépendant · Auditeur financier · Consultant freelance en intelligence artificielle.
+**Verdi Imbole**, auteur indépendant, auditeur financier et consultant freelance en intelligence artificielle.
 
 ## Coordonnées {.unnumbered}
 
-Pour toute demande d'information ou d'accompagnement :
-
-**Verdi Imbole**
-Auteur indépendant – Auditeur financier – Consultant freelance en intelligence artificielle
-Contact : verdiimbole0@gmail.com
+verdiimbole0@gmail.com

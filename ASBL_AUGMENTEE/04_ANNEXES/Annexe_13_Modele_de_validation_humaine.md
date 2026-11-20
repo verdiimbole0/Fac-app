@@ -1,6 +1,6 @@
-# Annexe 13 — Modèle de validation humaine
+# Annexe 13 : Modèle de validation humaine
 
-*ASBL augmentée — © 2026 Verdi Imbole. Reproduction autorisée pour l'usage interne de l'organisation de l'acheteur.*
+*ASBL augmentée : © 2026 Verdi Imbole. Reproduction autorisée pour l'usage interne de l'organisation de l'acheteur.*
 
 ## Objectif
 

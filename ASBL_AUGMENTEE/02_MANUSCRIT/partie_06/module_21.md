@@ -1,8 +1,8 @@
-# Partie VI — Laboratoire pratique et transformation durable {.partie}
+# Partie VI : Laboratoire pratique et transformation durable {.partie}
 
 *Place à l'entraînement. Le module 21 propose dix études de cas complètes, chacune reliant un problème réel à une méthode, à une solution adaptée aux moyens de l'organisation, et aux contrôles nécessaires. Le module 22 vous accompagne dans la construction de votre propre plan de transformation.*
 
-# Module 21 — Études de cas et résolution de problèmes concrets
+# Module 21 : Études de cas et résolution de problèmes concrets
 
 ## 21.1 Mise en situation
 
@@ -20,11 +20,11 @@ Vous avez parcouru vingt modules. Il est temps de vérifier que vous savez mobil
 
 ## 21.3 Mode d'emploi
 
-![Figure 21.1 — Les dix études de cas et leurs modules de référence](03_ILLUSTRATIONS/figures/fig_21_1.svg)
+![Figure 21.1 : Les dix études de cas et leurs modules de référence](03_ILLUSTRATIONS/figures/fig_21_1.svg)
 
 Pour chaque cas : lisez la situation ; répondez aux questions **avant** de lire l'analyse proposée ; comparez. Les analyses ne sont pas les seules réponses possibles : ce qui compte est la qualité du raisonnement. Les organisations et données sont fictives.
 
-## Cas 1 — Comptabilité désorganisée
+## Cas 1 : Comptabilité désorganisée
 
 **Situation.** Une association culturelle (8 salariés, budget 400 000 UM) n'a pas clôturé ses comptes depuis 14 mois. Les pièces sont dans des boîtes, des courriels et des téléphones. La comptable bénévole est partie. Le trésorier veut « un logiciel avec de l'IA qui remettra tout en ordre ».
 
@@ -34,12 +34,12 @@ Pour chaque cas : lisez la situation ; répondez aux questions **avant** de lire
 
 - *Symptômes* : comptes non clôturés, pièces dispersées. *Causes profondes* : absence de procédure, dépendance à une bénévole, aucun classement.
 - *Priorité* : reconstituer et sécuriser l'information (pièces, relevés bancaires), puis rattraper la comptabilité, avant toute automatisation.
-- *Rôle de l'IA* : utile pour **accélérer** l'extraction des données de centaines de pièces numérisées et proposer des imputations — à condition qu'une personne compétente vérifie. Elle ne peut pas reconstituer des pièces manquantes ni décider des régularisations.
+- *Rôle de l'IA* : utile pour **accélérer** l'extraction des données de centaines de pièces numérisées et proposer des imputations, à condition qu'une personne compétente vérifie. Elle ne peut pas reconstituer des pièces manquantes ni décider des régularisations.
 - *Séquence* : (1) rassembler toutes les pièces, les numériser et les classer par mois (règle de nommage, module 7) ; (2) récupérer tous les relevés bancaires ; (3) engager un professionnel pour le rattrapage (expert-comptable ou comptable expérimenté, selon les exigences locales) ; (4) utiliser l'extraction assistée (fiche P12.1) pour accélérer la saisie, avec vérification de 100 % des montants ; (5) rapprochements bancaires mensuels sur toute la période ; (6) liste des pièces manquantes et demandes de duplicatas ; (7) procédure de traitement des pièces pour l'avenir ; (8) choix d'un logiciel adapté (niveau Débutant ou Intermédiaire).
 - *Contrôles humains* : validation des écritures, des régularisations et des comptes par une personne compétente ; arrêté des comptes par l'organe compétent.
 - *Indicateurs* : mois rapprochés ; pièces manquantes ; date de clôture.
 
-## Cas 2 — Retards de reporting financier
+## Cas 2 : Retards de reporting financier
 
 **Situation.** Une ONG de 40 salariés envoie systématiquement ses rapports financiers trimestriels avec 20 à 30 jours de retard à ses quatre bailleurs, qui exigent chacun un format différent. Les rapports sont construits par ressaisie dans des tableurs.
 
@@ -54,7 +54,7 @@ Pour chaque cas : lisez la situation ; répondez aux questions **avant** de lire
 - *Contrôles* : revue du rapport par le responsable financier ; réconciliation rapport/comptabilité.
 - *Indicateurs* : délai de remise ; nombre de corrections demandées par les bailleurs.
 
-## Cas 3 — Risques de détournement
+## Cas 3 : Risques de détournement
 
 **Situation.** Dans une ONG, un bailleur signale que deux fournisseurs d'un bureau régional partagent la même adresse et le même numéro de téléphone. Le bureau régional effectue de nombreux achats juste sous le seuil de mise en concurrence.
 
@@ -68,7 +68,7 @@ Pour chaque cas : lisez la situation ; répondez aux questions **avant** de lire
 - *Prévention* : contrôle des données fournisseurs à la création et à la modification (second canal pour les RIB) ; alertes de fractionnement ; rotation et séparation des tâches ; canal de signalement confidentiel (dans l'étude ACFE 2024, le signalement était le premier mode de détection des fraudes internes de l'échantillon).
 - *Indicateurs* : alertes traitées ; délais ; recommandations mises en œuvre.
 
-## Cas 4 — Dépendance financière
+## Cas 4 : Dépendance financière
 
 **Situation.** Lumière des Collines dépend à 70 % d'un bailleur dont la convention expire dans 18 mois.
 
@@ -81,7 +81,7 @@ Pour chaque cas : lisez la situation ; répondez aux questions **avant** de lire
 - *Points de vigilance* : ne pas multiplier les dossiers génériques ; go/no-go systématique ; respect des règles des bailleurs sur l'IA.
 - *Indicateurs* : part du premier bailleur ; nombre de sources ; taux de succès ; ressources non affectées.
 
-## Cas 5 — Perte de documents
+## Cas 5 : Perte de documents
 
 **Situation.** Lors d'un audit, une fondation ne retrouve pas 15 % des pièces sélectionnées. Les documents sont répartis entre ordinateurs personnels, messageries et classeurs.
 
@@ -94,7 +94,7 @@ Pour chaque cas : lisez la situation ; répondez aux questions **avant** de lire
 - *IA* : indexation et classification automatique des documents numérisés (types, dates, montants) avec vérification ; à terme, recherche par le sens (assistant documentaire). L'IA ne retrouve que ce qui a été conservé.
 - *Indicateurs* : taux de pièces retrouvées en moins de cinq minutes ; pièces non liées aux écritures.
 
-## Cas 6 — Mauvais suivi de projets
+## Cas 6 : Mauvais suivi de projets
 
 **Situation.** Un réseau associatif gère 12 projets ; aucun tableau de bord commun ; les indicateurs sont définis différemment d'un projet à l'autre ; les rapports arrivent en retard et se contredisent.
 
@@ -103,12 +103,12 @@ Pour chaque cas : lisez la situation ; répondez aux questions **avant** de lire
 **Analyse proposée.**
 
 - *Fondations* (module 11) : référentiel commun d'indicateurs (définitions, méthodes de calcul, désagrégations) ; plan de S&E par projet ; calendrier de collecte.
-- *Solutions* : Débutant — tableur commun avec onglets par projet et tableau de synthèse ; Intermédiaire — formulaires mobiles hors ligne reliés à une base et tableau de bord ; Avancé — système d'information de S&E intégré, rapports générés à partir des données.
+- *Solutions* : Débutant, tableur commun avec onglets par projet et tableau de synthèse ; Intermédiaire, formulaires mobiles hors ligne reliés à une base et tableau de bord ; Avancé : système d'information de S&E intégré, rapports générés à partir des données.
 - *IA* : contrôles de cohérence, synthèse des données qualitatives, rédaction des rapports d'avancement (P11.3) avec traçabilité des chiffres.
 - *Contrôles* : validation mensuelle des données par les chargés de S&E ; pointage des chiffres des rapports.
 - *Indicateurs* : complétude des données ; ponctualité des rapports ; nombre de contradictions détectées.
 
-## Cas 7 — Gestion insuffisante des bénévoles
+## Cas 7 : Gestion insuffisante des bénévoles
 
 **Situation.** La Maison des Aînés Solidaires compte 80 bénévoles ; un tiers part chaque année ; les plannings sont faits à la main ; certains bénévoles se sentent peu reconnus ; des visites sont oubliées.
 
@@ -122,7 +122,7 @@ Pour chaque cas : lisez la situation ; répondez aux questions **avant** de lire
 - *Contrôles* : validation humaine du planning ; suivi des visites non réalisées.
 - *Indicateurs* : taux de visites réalisées ; taux de rétention des bénévoles ; satisfaction.
 
-## Cas 8 — Absence de suivi des bénéficiaires
+## Cas 8 : Absence de suivi des bénéficiaires
 
 **Situation.** Une ONG de soutien scolaire ne sait pas combien d'enfants elle a réellement accompagnés l'an dernier, ni combien ont progressé. Les listes sont tenues sur papier par chaque animateur.
 
@@ -135,7 +135,7 @@ Pour chaque cas : lisez la situation ; répondez aux questions **avant** de lire
 - *IA prédictive* : à ce stade, **non**. Les données historiques n'existent pas ; les risques de stigmatisation des enfants sont réels ; une règle simple (« trois absences consécutives → appel aux parents ») répond au besoin. L'IA peut aider à construire le modèle de tableur et à analyser des données agrégées.
 - *Indicateurs* : nombre d'enfants suivis ; assiduité ; progression selon les évaluations définies.
 
-## Cas 9 — Administration manuelle
+## Cas 9 : Administration manuelle
 
 **Situation.** Dans une fondation de 25 salariés, les demandes de congé, les notes de frais, les réservations de salles et de véhicules se font par courriel et sur papier ; l'assistante administrative passe la moitié de son temps à relancer et à recopier.
 
@@ -148,7 +148,7 @@ Pour chaque cas : lisez la situation ; répondez aux questions **avant** de lire
 - *Risques* : automatisations non documentées ; dépendance à une personne ; données personnelles (congés maladie) à protéger ; double saisie si les outils ne sont pas reliés.
 - *Indicateurs* : délai de traitement ; temps administratif libéré ; satisfaction des salariés.
 
-## Cas 10 — Déployer une politique d'utilisation responsable de l'IA
+## Cas 10 : Déployer une politique d'utilisation responsable de l'IA
 
 **Situation.** Un sondage interne d'Horizons Partagés montre que 60 % du personnel utilise des assistants d'IA, souvent gratuits, sans règle ; certains y ont collé des listes de patients ou des budgets confidentiels. La direction veut agir sans freiner les usages utiles.
 
@@ -174,7 +174,7 @@ Pour chaque cas : lisez la situation ; répondez aux questions **avant** de lire
 
 **Éléments de correction.** L'étude est convaincante si les causes sont étayées par des faits, si la solution est proportionnée aux moyens, si les risques pour les personnes sont identifiés et si les indicateurs comportent une valeur de départ.
 
-## 21.6 QCM — Module 21
+## 21.6 QCM : Module 21
 
 **Q1.** (une seule réponse) Dans le cas 1, la première priorité est :
 
@@ -246,7 +246,7 @@ b) proportionner la solution aux moyens.
 c) prévoir des contrôles humains et des indicateurs.
 d) commencer systématiquement par l'outil d'IA le plus avancé.
 
-## 21.7 Corrigé détaillé — Module 21
+## 21.7 Corrigé détaillé : Module 21
 
 **Q1 : a.** Sans pièces ni relevés, aucune comptabilité fiable n'est possible.
 

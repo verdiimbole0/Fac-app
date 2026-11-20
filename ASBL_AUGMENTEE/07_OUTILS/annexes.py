@@ -112,8 +112,8 @@ annexe(6, "Modèle de cartographie de processus",
        "Décrire un processus « tel quel » puis « cible », étape par étape, avec les rôles et les contrôles.",
        ["Délimitez le déclencheur et le résultat final.", "Une ligne par étape ; suivez au moins une transaction réelle pour valider.", "Dessinez ensuite les couloirs (un par acteur)."],
        tables=[("Processus", ["N°", "Étape", "Acteur (fonction)", "Outil / document", "Durée ou délai", "Contrôle existant", "Point de blocage", "Rôle IA (cible)", "Rôle logiciel (cible)", "Rôle humain (cible)"], [
-           ["1", "Remplir la demande de dépense", "Demandeur", "Fiche papier", "1 jour", "Aucun", "Fiche incomplète", "—", "Formulaire avec champs obligatoires", "Saisit et signe"],
-           ["2", "Vérifier le budget", "Coordination", "Tableur personnel", "2 jours", "Partiel", "Fichier non partagé", "—", "Calcul du disponible", "Examine les dépassements"]], 15)])
+           ["1", "Remplir la demande de dépense", "Demandeur", "Fiche papier", "1 jour", "Aucun", "Fiche incomplète", "Néant", "Formulaire avec champs obligatoires", "Saisit et signe"],
+           ["2", "Vérifier le budget", "Coordination", "Tableur personnel", "2 jours", "Partiel", "Fichier non partagé", "Néant", "Calcul du disponible", "Examine les dépassements"]], 15)])
 
 # ------------------------------------------------------------------ 7
 annexe(7, "Matrice des responsabilités (RACI)",
@@ -301,7 +301,7 @@ annexe(22, "Checklist de mise en production d'une solution IA",
 | 13 | Budget récurrent validé | Non | | |
 | 14 | Communication aux utilisateurs et, le cas échéant, aux personnes concernées | Non | | |
 
-Décision : ☐ mise en production ☐ mise en production partielle ☐ report ☐ arrêt — Date : ______ — Signature de la direction : ______""")])
+Décision : ☐ mise en production ☐ mise en production partielle ☐ report ☐ arrêt : Date : ______ : Signature de la direction : ______""")])
 
 
 # ------------------------------------------------------------------ 18 : bibliothèque extraite du manuscrit
@@ -310,7 +310,7 @@ def bibliotheque():
     for f in sorted(glob.glob(os.path.join(ROOT, "02_MANUSCRIT", "partie_*", "module_*.md"))):
         txt = open(f, encoding="utf-8").read()
         mod = int(re.search(r"module_(\d+)", f).group(1))
-        for m in re.finditer(r"### Fiche (P[\d.]+) — (.+?)\n(.*?)(?=\n### Fiche |\n## \d)", txt, re.S):
+        for m in re.finditer(r"### Fiche (P[\d.]+) : (.+?)\n(.*?)(?=\n### Fiche |\n## \d)", txt, re.S):
             code, titre, body = m.group(1), m.group(2).strip(), m.group(3)
             obj = re.search(r"\*\*B\. Objectif\.\*\* (.+)", body)
             ctx = re.search(r"\*\*C\. Contexte d'utilisation\.\*\* (.+)", body)
@@ -320,7 +320,7 @@ def bibliotheque():
             r = [code, mod, titre, obj.group(1) if obj else "", ctx.group(1) if ctx else "",
                  prompt.group(1).strip() if prompt else "", verif.group(1) if verif else "", prec.group(1) if prec else ""]
             rows.append(r)
-            md.append(f"### {code} — {titre} (module {mod})\n\n**Objectif.** {r[3]}\n\n**Contexte.** {r[4]}\n\n```text\n{r[5]}\n```\n\n**Vérification.** {r[6]}\n\n**Précautions.** {r[7]}\n")
+            md.append(f"### {code} : {titre} (module {mod})\n\n**Objectif.** {r[3]}\n\n**Contexte.** {r[4]}\n\n```text\n{r[5]}\n```\n\n**Vérification.** {r[6]}\n\n**Précautions.** {r[7]}\n")
     return rows, md
 
 
@@ -367,7 +367,7 @@ def main():
     files = []
     for a in A:
         base = f"Annexe_{a['num']:02d}_" + re.sub(r"[^A-Za-z0-9]+", "_", unicodedata.normalize("NFKD", a["titre"]).encode("ascii", "ignore").decode())[:50].strip("_")
-        md = f"# Annexe {a['num']} — {a['titre']}\n\n*ASBL augmentée — © 2026 Verdi Imbole. Reproduction autorisée pour l'usage interne de l'organisation de l'acheteur.*\n\n## Objectif\n\n{a['objectif']}\n\n## Mode d'emploi\n\n" + "\n".join(f"{i}. {c}" for i, c in enumerate(a["consignes"], 1)) + "\n\n"
+        md = f"# Annexe {a['num']} : {a['titre']}\n\n*ASBL augmentée : © 2026 Verdi Imbole. Reproduction autorisée pour l'usage interne de l'organisation de l'acheteur.*\n\n## Objectif\n\n{a['objectif']}\n\n## Mode d'emploi\n\n" + "\n".join(f"{i}. {c}" for i, c in enumerate(a["consignes"], 1)) + "\n\n"
         for t, c in a["sections"]:
             md += f"## {t}\n\n{c}\n\n"
         for name, head, rows, empty in a["tables"]:

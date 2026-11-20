@@ -87,7 +87,7 @@ def preprocess():
                     res.append(lines[j]); j += 1
                 tcount += 1
                 num = f"{mod if mod is not None else 0}.{tcount}"
-                cap = f"Tableau {num} — {section or 'Pages liminaires'}"
+                cap = f"Tableau {num} : {section or 'Pages liminaires'}"
                 tables.append((num, cap, mod))
                 res.append(""); res.append(f"Table: {cap}")
                 i = j
@@ -107,7 +107,7 @@ def generated_lists(figs, tables, index_text):
         total = sum(counts.values())
         refs = [k for k in keys if counts[k] >= (1 if total < 6 else 2)]
         if refs:
-            md += f"**{term}** — {', '.join(refs)}\n\n"
+            md += f"**{term}** : {', '.join(refs)}\n\n"
     md += ":::\n\n# Liste des illustrations {#liste-illustrations .unnumbered}\n\n::: listeillus\n"
     for num, cap, fid, mod in figs:
         md += f"- [{cap}](#{fid})\n"
@@ -127,7 +127,12 @@ def assemble(parts, lists, target):
             txt = re.sub(r"03_ILLUSTRATIONS/figures/(fig_[\d_]+)\.svg", r"03_ILLUSTRATIONS/png/\1.png", txt)
         elif target == "html":
             txt = txt.replace("03_ILLUSTRATIONS/figures/", "../../03_ILLUSTRATIONS/figures/")
+            txt = re.sub(r"^# ((?:Module \d+)|(?:Partie [IVX]+)) : (.*?)( \{[^}]*\})$", r"# [\1]{.pill} \2\3", txt, flags=re.M)
         out.append(txt)
+    if target == "docx":
+        cov = "06_LIVRABLES/COUVERTURE/"
+        out.insert(0, f"![]({cov}couverture_avant.png){{width=100%}}\n\n::: saut\n:::\n")
+        out.append(f"\n::: saut\n:::\n\n![]({cov}couverture_arriere.png){{width=100%}}\n")
     return "\n\n".join(out)
 
 
@@ -218,6 +223,21 @@ def main():
     html = build_html(assemble(parts, lists, "html"), toc)
     if os.environ.get("NO_PDF") != "1":
         build_pdf(html)
+        ajouter_couvertures()
+
+
+def ajouter_couvertures():
+    from pypdf import PdfReader, PdfWriter
+    pdf = os.path.join(LIV, "MANUSCRIT_FINAL.pdf")
+    cov = os.path.join(LIV, "COUVERTURE")
+    w = PdfWriter()
+    for f in (os.path.join(cov, "couverture_avant.pdf"), pdf, os.path.join(cov, "couverture_arriere.pdf")):
+        for pg in PdfReader(f).pages:
+            w.add_page(pg)
+    tmp = pdf + ".tmp"
+    with open(tmp, "wb") as fh:
+        w.write(fh)
+    os.replace(tmp, pdf)
 
 
 if __name__ == "__main__":

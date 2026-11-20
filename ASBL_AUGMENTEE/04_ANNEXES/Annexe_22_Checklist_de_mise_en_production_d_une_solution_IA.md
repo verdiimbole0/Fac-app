@@ -1,6 +1,6 @@
-# Annexe 22 — Checklist de mise en production d'une solution IA
+# Annexe 22 : Checklist de mise en production d'une solution IA
 
-*ASBL augmentée — © 2026 Verdi Imbole. Reproduction autorisée pour l'usage interne de l'organisation de l'acheteur.*
+*ASBL augmentée : © 2026 Verdi Imbole. Reproduction autorisée pour l'usage interne de l'organisation de l'acheteur.*
 
 ## Objectif
 
@@ -30,5 +30,5 @@ Décider du déploiement (porte 2) sur la base de critères vérifiés.
 | 13 | Budget récurrent validé | Non | | |
 | 14 | Communication aux utilisateurs et, le cas échéant, aux personnes concernées | Non | | |
 
-Décision : ☐ mise en production ☐ mise en production partielle ☐ report ☐ arrêt — Date : ______ — Signature de la direction : ______
+Décision : ☐ mise en production ☐ mise en production partielle ☐ report ☐ arrêt : Date : ______ : Signature de la direction : ______
 

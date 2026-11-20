@@ -1,8 +1,8 @@
-# Partie III — Préparer et sécuriser l'adoption de l'IA {.partie}
+# Partie III : Préparer et sécuriser l'adoption de l'IA {.partie}
 
 *Vous avez identifié vos priorités. Avant d'agir, trois conditions doivent être réunies : des données organisées et fiables, des règles éthiques et de sécurité claires, et des outils adaptés à vos moyens. Cette partie pose ces fondations, sans lesquelles l'IA amplifie les problèmes au lieu de les résoudre.*
 
-# Module 7 — Les données, le carburant des systèmes intelligents
+# Module 7 : Les données, le carburant des systèmes intelligents
 
 ## 7.1 Mise en situation
 
@@ -12,7 +12,7 @@ Amina demande à un assistant d'IA de « calculer le taux de réussite ». L'out
 
 ## 7.2 Problématique
 
-Un système d'IA ne vaut que par ses données. Des données dispersées, incohérentes, incomplètes ou mal protégées produisent des résultats erronés — d'autant plus dangereux qu'ils sont présentés de façon convaincante. Dans beaucoup d'ASBL, la gestion des données et des documents est le véritable chantier prioritaire, avant tout projet d'IA.
+Un système d'IA ne vaut que par ses données. Des données dispersées, incohérentes, incomplètes ou mal protégées produisent des résultats erronés, d'autant plus dangereux qu'ils sont présentés de façon convaincante. Dans beaucoup d'ASBL, la gestion des données et des documents est le véritable chantier prioritaire, avant tout projet d'IA.
 
 ## 7.3 Objectifs d'apprentissage
 
@@ -60,11 +60,11 @@ L'IA a profondément changé le traitement des données non structurées : elle 
 | **Actualité** | La donnée est-elle à jour ? | Adresse d'un partenaire ancienne | Date de dernière mise à jour |
 | **Validité** | La donnée respecte-t-elle le format attendu ? | « 31/02/2026 » | Listes déroulantes, formats imposés |
 
-> **🔎 À retenir** — Il est beaucoup plus économique d'empêcher les erreurs à la saisie (listes déroulantes, champs obligatoires, formats imposés) que de les corriger ensuite.
+> **🔎 À retenir** : Il est beaucoup plus économique d'empêcher les erreurs à la saisie (listes déroulantes, champs obligatoires, formats imposés) que de les corriger ensuite.
 
 ### Organiser les documents : plan de classement et règle de nommage
 
-![Figure 7.2 — Exemple d'arborescence documentaire et de règle de nommage](03_ILLUSTRATIONS/figures/fig_7_2.svg)
+![Figure 7.2 : Exemple d'arborescence documentaire et de règle de nommage](03_ILLUSTRATIONS/figures/fig_7_2.svg)
 
 Un **plan de classement** est une arborescence de dossiers partagée par tous, stable dans le temps, et calquée sur les fonctions de l'organisation plutôt que sur les personnes. Règles pratiques :
 
@@ -79,14 +79,14 @@ Un **plan de classement** est une arborescence de dossiers partagée par tous, s
 
 Numériser n'est pas photographier en vrac. Une numérisation utile suppose :
 
-- **de choisir ce qui doit l'être** : pièces justificatives, conventions, PV, contrats — en priorité les documents exigés par les audits et les bailleurs ;
+- **de choisir ce qui doit l'être** : pièces justificatives, conventions, PV, contrats, en priorité les documents exigés par les audits et les bailleurs ;
 - **une qualité suffisante** : document à plat, bien éclairé, lisible en entier, format PDF de préférence ;
 - **un nommage et un classement immédiats**, selon la règle ;
 - **la conservation des originaux** lorsque la loi ou le bailleur l'exige.
 
-> **⚖️ Adaptation réglementaire** — La valeur probante d'une copie numérique et les durées de conservation des pièces comptables et des documents sociaux varient selon les pays. Avant de détruire un original papier, vérifiez la législation applicable et les conditions de vos conventions de financement.
+> **⚖️ Adaptation réglementaire** : La valeur probante d'une copie numérique et les durées de conservation des pièces comptables et des documents sociaux varient selon les pays. Avant de détruire un original papier, vérifiez la législation applicable et les conditions de vos conventions de financement.
 
-> **📶 Faible connectivité** — Les applications de numérisation sur smartphone fonctionnent généralement hors ligne ; les fichiers peuvent être synchronisés plus tard, lors d'une connexion. Fixez une routine (par exemple chaque vendredi) et vérifiez que la synchronisation s'est bien terminée.
+> **📶 Faible connectivité** : Les applications de numérisation sur smartphone fonctionnent généralement hors ligne ; les fichiers peuvent être synchronisés plus tard, lors d'une connexion. Fixez une routine (par exemple chaque vendredi) et vérifiez que la synchronisation s'est bien terminée.
 
 ### Bases de données et référentiels
 
@@ -123,7 +123,7 @@ Les ASBL connaissent un renouvellement important de personnel et de bénévoles.
 
 L'IA peut aider à **rédiger** des procédures à partir d'entretiens, à **synthétiser** des historiques de dossiers, et, à terme, à **interroger** cette mémoire via un assistant documentaire (RAG). Mais elle ne peut restituer que ce qui a été consigné.
 
-![Figure 7.1 — Le cycle de vie des données](03_ILLUSTRATIONS/figures/fig_7_1.svg)
+![Figure 7.1 : Le cycle de vie des données](03_ILLUSTRATIONS/figures/fig_7_1.svg)
 
 ## 7.6 Application professionnelle : remettre en ordre le suivi des élèves de Lumière des Collines
 
@@ -134,7 +134,7 @@ L'IA peut aider à **rédiger** des procédures à partir d'entretiens, à **syn
 **E. Processus actuel.** Chaque bénévole saisit où il veut, comme il veut.
 **F. Faiblesses.** Pas de traçabilité ; données personnelles d'enfants sur une clé USB non chiffrée.
 **G. Résultat recherché.** Un fichier unique, propre, protégé, avec des indicateurs fiables.
-**H. Pertinence de l'IA.** Utile pour proposer des règles de nettoyage et des formules, et pour repérer des incohérences — sur une version pseudonymisée.
+**H. Pertinence de l'IA.** Utile pour proposer des règles de nettoyage et des formules, et pour repérer des incohérences, sur une version pseudonymisée.
 **I. Alternatives sans IA.** Nettoyage manuel avec les fonctions du tableur (tri, filtres, suppression des doublons).
 **J. Solution.** Fusion contrôlée des trois fichiers dans un modèle unique avec listes déroulantes, identifiants uniques et accès restreint.
 **K. Niveau.** Débutant.
@@ -171,7 +171,7 @@ L'IA peut aider à **rédiger** des procédures à partir d'entretiens, à **syn
 
 ## 7.7 Prompt prêt à l'emploi
 
-### Fiche P7.1 — Nettoyer un fichier de suivi pseudonymisé
+### Fiche P7.1 : Nettoyer un fichier de suivi pseudonymisé
 
 **A. Titre.** Règles de nettoyage et de normalisation d'un fichier.
 
@@ -221,7 +221,7 @@ Un plan de classement et une règle de nommage adoptés ; des fichiers de réfé
 
 ## 7.9 Contrôles humains
 
-> **🛑 Contrôle humain obligatoire** — La fusion d'enregistrements concernant des personnes (doublons supposés), la suppression de données et la destruction d'originaux sont décidées par une personne responsable, après vérification. Une fusion erronée peut priver quelqu'un d'un service ou fausser un dossier.
+> **🛑 Contrôle humain obligatoire** : La fusion d'enregistrements concernant des personnes (doublons supposés), la suppression de données et la destruction d'originaux sont décidées par une personne responsable, après vérification. Une fusion erronée peut priver quelqu'un d'un service ou fausser un dossier.
 
 ## 7.10 Risques et erreurs à éviter
 
@@ -246,7 +246,7 @@ Un plan de classement et une règle de nommage adoptés ; des fichiers de réfé
 - Interopérabilité, sauvegarde 3-2-1 testée et moindre privilège protègent l'organisation.
 - La mémoire institutionnelle se construit au quotidien ; l'IA aide à la formaliser et à l'interroger.
 
-## 7.13 QCM — Module 7
+## 7.13 QCM : Module 7
 
 **Q1.** (une seule réponse) Un courriel contenant une demande de partenariat est une donnée :
 
@@ -290,14 +290,14 @@ b) permettent une réidentification avec la table de correspondance.
 c) peuvent être librement publiées.
 d) exigent de protéger la table de correspondance.
 
-**Q7.** (mise en situation — une seule réponse) Avant de choisir un outil de suivi des bénéficiaires, quelle vérification protège le mieux contre la dépendance au fournisseur ?
+**Q7.** (mise en situation, une seule réponse) Avant de choisir un outil de suivi des bénéficiaires, quelle vérification protège le mieux contre la dépendance au fournisseur ?
 
 a) La possibilité d'exporter toutes les données dans un format ouvert.
 b) La couleur de l'interface.
 c) Le nombre de fonctionnalités d'IA.
 d) La popularité de l'outil.
 
-**Q8.** (mise en situation — une seule réponse) Un bénévole quitte l'association. Que faut-il faire en priorité en matière d'accès ?
+**Q8.** (mise en situation, une seule réponse) Un bénévole quitte l'association. Que faut-il faire en priorité en matière d'accès ?
 
 a) Attendre la revue annuelle.
 b) Lui laisser ses accès s'il reste en bons termes.
@@ -318,7 +318,7 @@ b) des champs obligatoires.
 c) des formats de date imposés.
 d) la correction a posteriori uniquement.
 
-## 7.14 Corrigé détaillé — Module 7
+## 7.14 Corrigé détaillé : Module 7
 
 **Q1 : c.** Un courriel n'a pas de format fixe.
 
@@ -326,7 +326,7 @@ d) la correction a posteriori uniquement.
 
 **Q3 : a, c, d.** Les dossiers personnels (b) rendent les documents introuvables après un départ.
 
-**Q4 : d.** Trois copies, deux supports, une copie hors site — et une restauration testée.
+**Q4 : d.** Trois copies, deux supports, une copie hors site, et une restauration testée.
 
 **Q5 : c.** Un code non signifiant ne révèle aucune information personnelle.
 

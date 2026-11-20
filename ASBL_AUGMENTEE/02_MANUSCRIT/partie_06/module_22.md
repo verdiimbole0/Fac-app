@@ -1,4 +1,4 @@
-# Module 22 — Construire le plan de transformation numérique et intelligente de son ASBL
+# Module 22 : Construire le plan de transformation numérique et intelligente de son ASBL
 
 ## 22.1 Mise en situation
 
@@ -31,11 +31,11 @@ Sans plan, les initiatives restent dispersées, dépendantes de quelques personn
 
 ## 22.5 Explications détaillées
 
-### Étape 1 — Diagnostic synthétique
+### Étape 1 : Diagnostic synthétique
 
 Reprenez les résultats des modules 4 à 7 et résumez-les en **cinq constats prioritaires** au maximum, chacun appuyé sur un fait mesuré. Complétez par un **autodiagnostic de maturité numérique** (annexe 1) qui situe l'organisation sur six dimensions : gouvernance du numérique, données et documents, outils, compétences, sécurité et protection des données, usages de l'IA.
 
-### Étape 2 — Priorités
+### Étape 2 : Priorités
 
 À l'aide de la matrice (module 6), retenez pour 90 jours :
 
@@ -43,33 +43,33 @@ Reprenez les résultats des modules 4 à 7 et résumez-les en **cinq constats pr
 - **un ou deux pilotes** à gain rapide ;
 - **la préparation** d'un projet structurant, le cas échéant.
 
-### Étape 3 — Solutions
+### Étape 3 : Solutions
 
 Pour chaque priorité : niveau d'implémentation (débutant, intermédiaire, avancé) ; outils ; données ; contrôles humains ; risques (examen éthique du module 8).
 
-### Étape 4 — Planification sur 90 jours
+### Étape 4 : Planification sur 90 jours
 
-![Figure 22.1 — Plan de transformation sur 90 jours](03_ILLUSTRATIONS/figures/fig_22_1.svg)
+![Figure 22.1 : Plan de transformation sur 90 jours](03_ILLUSTRATIONS/figures/fig_22_1.svg)
 
 Treize semaines suffisent pour poser les fondations, tester deux pilotes et décider. Au-delà, la feuille de route à 12 mois prolonge ce qui a fonctionné.
 
-### Étape 5 — Budget
+### Étape 5 : Budget
 
 Le budget à 90 jours inclut les coûts monétaires et **le temps interne**, souvent la ressource la plus rare.
 
-### Étape 6 — Responsabilités
+### Étape 6 : Responsabilités
 
 Une personne pilote le plan ; chaque action a un responsable ; la direction arbitre ; le conseil adopte la politique et reçoit le bilan.
 
-### Étape 7 — Indicateurs
+### Étape 7 : Indicateurs
 
 Trois familles : **fondations** (politique adoptée, personnes formées, données nettoyées), **pilotes** (indicateurs des cas d'usage), **adoption et risques** (usages, incidents).
 
-### Étape 8 — Politique d'IA
+### Étape 8 : Politique d'IA
 
 La politique (annexe 10) est adoptée au cours des cinq premières semaines : elle encadre les pilotes et l'ensemble des usages.
 
-### Étape 9 — Évaluation et décision
+### Étape 9 : Évaluation et décision
 
 En semaine 11, bilan des pilotes au regard des critères fixés ; en semaine 13, décision du conseil : poursuivre, étendre, ajuster ou arrêter ; adoption de la feuille de route à 12 mois.
 
@@ -90,7 +90,7 @@ Maturité numérique (annexe 1) : 2/5 en moyenne ; point faible : données et s�
 ### Priorités retenues
 
 - **Fondations** : politique d'IA et règles de données ; nettoyage du fichier élèves ; formation socle.
-- **Pilote A** : projet de PV et registre des décisions (module 10) — gain rapide.
+- **Pilote A** : projet de PV et registre des décisions (module 10) : gain rapide.
 - **Pilote B** : suivi des élèves dans un tableur modèle avec formules (module 7), avec synthèse mensuelle assistée sur données agrégées.
 - **Préparé pour plus tard** : veille de financements et diversification (module 15), lancée au trimestre suivant.
 
@@ -100,11 +100,11 @@ Maturité numérique (annexe 1) : 2/5 en moyenne ; point faible : données et s�
 |---|---|---|---|
 | 1–3 | Diagnostic et inventaire des outils et usages | Diagnostic synthétique, registre des outils | S3 : diagnostic validé par la direction |
 | 2–5 | Politique d'IA et feu tricolore | Politique d'une page, affiche | S5 : politique adoptée par le CA |
-| 3–6 | Formation socle (modules 1–3 et 8) | 6 salariés et 10 bénévoles formés | — |
-| 4–5 | Nettoyage et pseudonymisation du fichier élèves | Fichier unique, table de correspondance protégée | — |
-| 5–10 | Pilote A : PV et registre des décisions | 2 PV produits avec la méthode ; registre à jour | — |
-| 5–10 | Pilote B : tableur de suivi et synthèse mensuelle | Tableur modèle ; 2 synthèses mensuelles | — |
-| 6–11 | Mesure des indicateurs | Tableau de bord | — |
+| 3–6 | Formation socle (modules 1–3 et 8) | 6 salariés et 10 bénévoles formés | Néant |
+| 4–5 | Nettoyage et pseudonymisation du fichier élèves | Fichier unique, table de correspondance protégée | Néant |
+| 5–10 | Pilote A : PV et registre des décisions | 2 PV produits avec la méthode ; registre à jour | Néant |
+| 5–10 | Pilote B : tableur de suivi et synthèse mensuelle | Tableur modèle ; 2 synthèses mensuelles | Néant |
+| 6–11 | Mesure des indicateurs | Tableau de bord | Néant |
 | 10–11 | Évaluation des pilotes | Note d'évaluation | S11 : bilan des pilotes |
 | 12–13 | Décision et feuille de route à 12 mois | Feuille de route | S13 : décision du conseil |
 
@@ -127,7 +127,7 @@ Maturité numérique (annexe 1) : 2/5 en moyenne ; point faible : données et s�
 | Pilotage du plan | R | A | I | C | I |
 | Politique d'IA | R | A (adoption par le CA) | C | C | C |
 | Nettoyage du fichier élèves | A | I | I | R | C |
-| Formation socle | R | I | I | C | — (participants) |
+| Formation socle | R | I | I | C | : (participants) |
 | Pilote A (PV, registre) | C | A | I | R | I |
 | Pilote B (suivi élèves) | A | I | I | R | C |
 | Évaluation et décision | R | A | C | C | I |
@@ -160,7 +160,7 @@ La politique d'une page est adoptée en semaine 5. En semaine 11, la note d'éva
 
 ## 22.7 Prompt prêt à l'emploi
 
-### Fiche P22.1 — Construire la feuille de route à 90 jours
+### Fiche P22.1 : Construire la feuille de route à 90 jours
 
 **A. Titre.** Plan de transformation à 90 jours.
 
@@ -212,7 +212,7 @@ Un plan adopté, des fondations posées, deux pilotes évalués, une décision d
 
 ## 22.9 Contrôles humains
 
-> **🛑 Contrôle humain obligatoire** — Le plan est arbitré par la direction ; la politique d'IA est adoptée par le conseil ; la décision de fin de période (poursuivre, étendre, ajuster, arrêter) est prise par les organes compétents au vu d'une évaluation factuelle.
+> **🛑 Contrôle humain obligatoire** : Le plan est arbitré par la direction ; la politique d'IA est adoptée par le conseil ; la décision de fin de période (poursuivre, étendre, ajuster, arrêter) est prise par les organes compétents au vu d'une évaluation factuelle.
 
 ## 22.10 Risques et erreurs à éviter
 
@@ -222,7 +222,7 @@ Un plan adopté, des fondations posées, deux pilotes évalués, une décision d
 - Absence de décision à l'issue des 90 jours.
 - Plan porté par une seule personne.
 
-## 22.11 Exercice pratique — Votre plan
+## 22.11 Exercice pratique : Votre plan
 
 **Consigne (une demi-journée).** Construisez le plan à 90 jours de votre organisation avec la fiche P22.1 et les annexes 1, 3, 7, 10, 15 et 17. Présentez-le à votre direction.
 
@@ -236,7 +236,7 @@ Un plan adopté, des fondations posées, deux pilotes évalués, une décision d
 - La politique d'IA encadre les pilotes.
 - La décision de fin de période est un acte de gouvernance.
 
-## 22.13 QCM — Module 22
+## 22.13 QCM : Module 22
 
 **Q1.** (une seule réponse) Un bon plan à 90 jours comprend au maximum :
 
@@ -280,14 +280,14 @@ b) la politique adoptée en semaine 5.
 c) la décision du conseil en semaine 13.
 d) l'achat d'un ERP en semaine 2.
 
-**Q7.** (mise en situation — une seule réponse) Au bout de 90 jours, un pilote n'atteint pas ses cibles. Que faites-vous ?
+**Q7.** (mise en situation, une seule réponse) Au bout de 90 jours, un pilote n'atteint pas ses cibles. Que faites-vous ?
 
 a) Ne rien dire.
 b) Modifier les cibles a posteriori.
 c) Lancer trois nouveaux pilotes.
 d) Analyser les causes et proposer au conseil d'ajuster ou d'arrêter, sur la base de l'évaluation.
 
-**Q8.** (mise en situation — une seule réponse) Le plan prévoit 40 heures de travail pour une coordinatrice qui n'a que 3 heures libres par semaine. Que faites-vous ?
+**Q8.** (mise en situation, une seule réponse) Le plan prévoit 40 heures de travail pour une coordinatrice qui n'a que 3 heures libres par semaine. Que faites-vous ?
 
 a) Maintenir le plan.
 b) Demander à l'IA de faire le travail.
@@ -308,7 +308,7 @@ b) ce qui sera testé.
 c) ce qui sera préparé.
 d) ce qui sera caché au conseil.
 
-## 22.14 Corrigé détaillé — Module 22
+## 22.14 Corrigé détaillé : Module 22
 
 **Q1 : b.** Peu de pilotes, bien suivis, et des fondations solides.
 

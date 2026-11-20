@@ -1,13 +1,14 @@
-# ASBL AUGMENTÉE — Comment implémenter l'IA dans vos processus
+# ASBL AUGMENTÉE : Comment implémenter l'IA dans vos processus
 
-Manuscrit de Verdi Imbole (titre et sous-titre provisoires). Version complète soumise à la validation de l'auteur — novembre 2026.
+Manuscrit de Verdi Imbole (titre et sous-titre provisoires). Version complète soumise à la validation de l'auteur : novembre 2026.
 
 ## Livrables (`06_LIVRABLES/`)
 
 | Fichier | Contenu |
 |---|---|
-| `MANUSCRIT_FINAL.pdf` | Version de relecture et d'impression, 17 × 24 cm, ≈ 426 pages, table des matières paginée |
-| `MANUSCRIT_FINAL.docx` | Version Word modifiable (mettre à jour la table des matières à l'ouverture ; installer les polices Source Serif 4, Source Sans 3 et JetBrains Mono, licence OFL) |
+| `MANUSCRIT_FINAL.pdf` | Version de relecture, 17 × 24 cm, 443 pages couvertures comprises, table des matières paginée |
+| `COUVERTURE/` | 1re et 4e de couverture : PDF au format livre, PDF d'impression avec fond perdu de 3 mm, PNG haute définition |
+| `MANUSCRIT_FINAL.docx` | Version Word modifiable (mettre à jour la table des matières à l'ouverture ; installer les polices Inter, Outfit et JetBrains Mono, licence OFL, gratuites sur Google Fonts) |
 | `MANUSCRIT_SOURCE.md` | Manuscrit assemblé en Markdown |
 | `ANNEXES.zip` | 22 annexes (.md, .docx, .xlsx) et données d'exercice |
 
@@ -31,6 +32,7 @@ Depuis `ASBL_AUGMENTEE/` (pandoc, Python 3 avec openpyxl et python-docx, Node.js
 python3 07_OUTILS/figures.py 03_ILLUSTRATIONS/figures
 NODE_PATH=$(npm root -g) node 07_OUTILS/render_png.js "$PWD/03_ILLUSTRATIONS/figures" "$PWD/03_ILLUSTRATIONS/png"
 python3 07_OUTILS/make_reference.py
+python3 07_OUTILS/couverture.py
 python3 07_OUTILS/annexes.py
 python3 07_OUTILS/build.py
 python3 07_OUTILS/controles.py
@@ -44,4 +46,4 @@ Voir `05_CONTROLE_QUALITE/controle_final.md`.
 
 ## Composants tiers
 
-Polices Source Serif 4, Source Sans 3 et JetBrains Mono : SIL Open Font License 1.1 (`07_OUTILS/fonts/`). Paged.js (MIT) pour la mise en page du PDF (`07_OUTILS/vendor/`).
+Polices Inter, Outfit et JetBrains Mono : SIL Open Font License 1.1 (`07_OUTILS/fonts/`). Paged.js (MIT) pour la mise en page du PDF (`07_OUTILS/vendor/`).

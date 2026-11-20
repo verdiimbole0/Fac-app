@@ -9,8 +9,9 @@ const fontDir = path.join(__dirname, 'fonts');
 const face = (fam, file, w, st) =>
   `@font-face{font-family:'${fam}';src:url('file://${path.join(fontDir, file)}') format('woff2');font-weight:${w};font-style:${st};}`;
 let css = '';
-for (const w of [400, 600, 700]) for (const st of ['normal', 'italic'])
-  css += face('Source Sans 3', `source-sans-3-latin-${w}-${st}.woff2`, w, st);
+for (const w of [400, 500, 600, 700]) for (const st of ['normal', 'italic'])
+  css += face('Inter', `inter-latin-${w}-${st}.woff2`, w, st);
+for (const w of [600, 700, 800]) css += face('Outfit', `outfit-latin-${w}-normal.woff2`, w, 'normal');
 
 (async () => {
   fs.mkdirSync(pngDir, { recursive: true });

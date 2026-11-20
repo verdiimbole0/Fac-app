@@ -1,10 +1,10 @@
-# Module 16 — Achats, approvisionnements, logistique et patrimoine
+# Module 16 : Achats, approvisionnements, logistique et patrimoine
 
 ## 16.1 Mise en situation
 
 Le RCE doit acheter douze pompes manuelles pour un programme d'accès à l'eau. Le technicien rédige une demande sur un bout de papier ; trois fournisseurs envoient leurs offres sous des formes très différentes (un PDF de six pages, une photo de devis manuscrit, un courriel) ; le comité d'achat compare « à l'œil » ; à la livraison, une pompe est endommagée mais la facture est payée en totalité ; six mois plus tard, l'inventaire ne retrouve que dix pompes dans le registre.
 
-Chacune de ces étapes peut être améliorée — certaines avec l'IA, la plupart avec des procédures et des outils simples.
+Chacune de ces étapes peut être améliorée : certaines avec l'IA, la plupart avec des procédures et des outils simples.
 
 ## 16.2 Problématique
 
@@ -31,15 +31,15 @@ Les achats représentent souvent la plus grande part des dépenses d'une ASBL et
 - **Immobilisation** : bien durable dont la valeur dépasse un seuil fixé par la politique comptable, inscrit à l'actif et suivi dans un registre.
 - **Inventaire** : comptage physique des stocks et des biens, comparé aux registres.
 
-> **⚖️ Adaptation réglementaire** — Les seuils de procédure, les règles d'origine des biens, les obligations de publicité et les règles de propriété des biens financés dépendent des bailleurs et, pour certaines organisations, du droit des marchés publics ou du droit fiscal local. Les règles du bailleur s'appliquent aux achats qu'il finance.
+> **⚖️ Adaptation réglementaire** : Les seuils de procédure, les règles d'origine des biens, les obligations de publicité et les règles de propriété des biens financés dépendent des bailleurs et, pour certaines organisations, du droit des marchés publics ou du droit fiscal local. Les règles du bailleur s'appliquent aux achats qu'il finance.
 
 ## 16.5 Explications détaillées
 
-![Figure 16.1 — Circuit achats et logistique](03_ILLUSTRATIONS/figures/fig_16_1.svg)
+![Figure 16.1 : Circuit achats et logistique](03_ILLUSTRATIONS/figures/fig_16_1.svg)
 
 ### Demande d'achat et contrôle budgétaire
 
-Un formulaire numérique de demande d'achat (champs obligatoires : description, spécifications, quantité, date souhaitée, projet, ligne budgétaire, estimation) réduit les allers-retours. L'IA peut aider le demandeur à **préciser les spécifications techniques** (fiche P16.1, partie 1) — à condition qu'un technicien les valide et qu'elles ne soient pas rédigées de façon à favoriser un fournisseur. Le contrôle budgétaire vérifie le disponible sur la ligne (module 12).
+Un formulaire numérique de demande d'achat (champs obligatoires : description, spécifications, quantité, date souhaitée, projet, ligne budgétaire, estimation) réduit les allers-retours. L'IA peut aider le demandeur à **préciser les spécifications techniques** (fiche P16.1, partie 1), à condition qu'un technicien les valide et qu'elles ne soient pas rédigées de façon à favoriser un fournisseur. Le contrôle budgétaire vérifie le disponible sur la ligne (module 12).
 
 ### Fournisseurs
 
@@ -49,7 +49,7 @@ Le fichier fournisseurs est un référentiel critique : identité, coordonnées,
 
 L'IA est particulièrement utile pour **normaliser des offres hétérogènes** : extraire, de chaque devis, le prix unitaire, les quantités, les frais annexes (transport, installation), le délai, la garantie, la validité de l'offre, les conditions de paiement et la conformité aux spécifications. Elle produit un tableau homogène que le comité examine. **L'évaluation** elle-même suit une grille définie avant l'ouverture des offres, et **la décision** appartient au comité.
 
-*Exemple (fictif) — 12 pompes manuelles :*
+*Exemple (fictif) : 12 pompes manuelles :*
 
 | | Offre A | Offre B | Offre C |
 |---|---|---|---|
@@ -74,7 +74,7 @@ Grille de notation (définie avant l'ouverture) : prix 60 %, délai 25 %, garant
 
 ### Commandes et livraisons
 
-Le bon de commande reprend exactement l'offre retenue. À la livraison, le réceptionnaire — **qui n'est ni le demandeur ni l'acheteur** — compte, contrôle l'état, signe le bon de livraison et note les réserves. Dans l'exemple : 12 pompes livrées, dont une au corps fissuré ; réserve inscrite sur le bon de livraison avec photo.
+Le bon de commande reprend exactement l'offre retenue. À la livraison, le réceptionnaire, **qui n'est ni le demandeur ni l'acheteur**, compte, contrôle l'état, signe le bon de livraison et note les réserves. Dans l'exemple : 12 pompes livrées, dont une au corps fissuré ; réserve inscrite sur le bon de livraison avec photo.
 
 Le **rapprochement à trois voies** (commande : 12 ; livraison : 12 dont 1 avec réserve ; facture : 12 × 1 980 = 23 760) conduit à **bloquer le paiement d'une pompe** (1 980 UM) jusqu'au remplacement. L'IA peut extraire les quantités des trois documents et signaler l'écart ; le logiciel bloque ; le logisticien et le comptable traitent.
 
@@ -139,7 +139,7 @@ Un calendrier de maintenance préventive (véhicules, générateurs, pompes) ré
 
 ## 16.7 Prompts prêts à l'emploi
 
-### Fiche P16.1 — Normaliser des offres hétérogènes dans un tableau comparatif
+### Fiche P16.1 : Normaliser des offres hétérogènes dans un tableau comparatif
 
 **A. Titre.** Tableau comparatif normalisé des offres.
 
@@ -172,7 +172,7 @@ fournisseurs (selon le règlement de consultation).
 
 **G. Résultat attendu.** Un tableau homogène et sourcé, sans classement, avec une liste de clarifications.
 
-**H. Exemple d'application (illustratif).** Le tableau signale pour l'offre B : « Transport : 900 UM (devis, ligne 14, mention manuscrite en bas de page) » — un montant que la lecture rapide du comité avait manqué, et qui change le classement par le prix.
+**H. Exemple d'application (illustratif).** Le tableau signale pour l'offre B : « Transport : 900 UM (devis, ligne 14, mention manuscrite en bas de page) » : un montant que la lecture rapide du comité avait manqué, et qui change le classement par le prix.
 
 **I. Méthode de vérification.** Pointage de chaque cellule ; recalcul des totaux au tableur ; contrôle des unités (prix par pièce ou par lot ?).
 
@@ -180,7 +180,7 @@ fournisseurs (selon le règlement de consultation).
 
 **K. Amélioration.** « Ajoute une ligne "risques" (fournisseur nouveau, délai long, absence de service après-vente local) en citant les éléments des offres. »
 
-### Fiche P16.2 — Rapprochement commande / livraison / facture
+### Fiche P16.2 : Rapprochement commande / livraison / facture
 
 **A. Titre.** Rapprochement à trois voies assisté.
 
@@ -221,7 +221,7 @@ Achats conformes et documentés ; comparaisons transparentes ; aucun paiement sa
 
 ## 16.9 Contrôles humains
 
-> **🛑 Contrôle humain obligatoire** — Validation des spécifications, définition de la grille, évaluation et choix du fournisseur, réception physique, traitement des écarts, approbation des paiements, autorisation des cessions et mises au rebut. Séparation des tâches entre demandeur, acheteur, réceptionnaire et payeur.
+> **🛑 Contrôle humain obligatoire** : Validation des spécifications, définition de la grille, évaluation et choix du fournisseur, réception physique, traitement des écarts, approbation des paiements, autorisation des cessions et mises au rebut. Séparation des tâches entre demandeur, acheteur, réceptionnaire et payeur.
 
 ## 16.10 Risques et erreurs à éviter
 
@@ -245,7 +245,7 @@ Achats conformes et documentés ; comparaisons transparentes ; aucun paiement sa
 - Le rapprochement à trois voies protège contre les paiements indus.
 - Stocks, immobilisations et maintenance se suivent avec des registres à jour et des inventaires indépendants.
 
-## 16.13 QCM — Module 16
+## 16.13 QCM : Module 16
 
 **Q1.** (une seule réponse) Le rapprochement à trois voies compare :
 
@@ -289,14 +289,14 @@ b) signaler les informations non précisées.
 c) classer les offres.
 d) ne pas convertir les devises sans instruction.
 
-**Q7.** (mise en situation — une seule réponse) Une pompe livrée est endommagée ; la facture porte sur 12 pompes. Que faites-vous ?
+**Q7.** (mise en situation, une seule réponse) Une pompe livrée est endommagée ; la facture porte sur 12 pompes. Que faites-vous ?
 
 a) Payer la totalité et demander un avoir plus tard.
 b) Bloquer le paiement de l'article sous réserve jusqu'au remplacement, selon la procédure.
 c) Refuser toute la livraison.
 d) Ne rien signaler.
 
-**Q8.** (mise en situation — une seule réponse) Un technicien demande à l'IA de rédiger des spécifications « qui correspondent exactement au modèle du fournisseur X ». Votre réaction ?
+**Q8.** (mise en situation, une seule réponse) Un technicien demande à l'IA de rédiger des spécifications « qui correspondent exactement au modèle du fournisseur X ». Votre réaction ?
 
 a) C'est contraire à l'équité de la consultation ; les spécifications doivent décrire le besoin fonctionnel.
 b) C'est efficace.
@@ -317,7 +317,7 @@ b) écarts d'inventaire.
 c) nombre d'écarts de rapprochement.
 d) nombre de fournisseurs consultés par l'IA.
 
-## 16.14 Corrigé détaillé — Module 16
+## 16.14 Corrigé détaillé : Module 16
 
 **Q1 : d.** C'est le contrôle clé avant paiement.
 

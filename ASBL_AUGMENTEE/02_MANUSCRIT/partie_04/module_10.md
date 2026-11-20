@@ -1,8 +1,8 @@
-# Partie IV — Implémenter l'IA dans chaque métier et processus {.partie}
+# Partie IV : Implémenter l'IA dans chaque métier et processus {.partie}
 
-*Le terrain est préparé : vous connaissez l'IA, votre organisation, vos priorités, vos règles et vos outils. Place aux métiers. Chaque module de cette partie part d'un processus réel et montre, étape par étape, ce que fait l'IA, ce que fait le logiciel, ce que fait le professionnel — et ce qui doit être contrôlé.*
+*Le terrain est préparé : vous connaissez l'IA, votre organisation, vos priorités, vos règles et vos outils. Place aux métiers. Chaque module de cette partie part d'un processus réel et montre, étape par étape, ce que fait l'IA, ce que fait le logiciel, ce que fait le professionnel, et ce qui doit être contrôlé.*
 
-# Module 10 — Gouvernance, direction générale et administration
+# Module 10 : Gouvernance, direction générale et administration
 
 ## 10.1 Mise en situation
 
@@ -34,11 +34,11 @@ La qualité de la gouvernance repose sur des documents fiables (ordres du jour, 
 - **Registre des décisions** : tableau de suivi listant chaque décision, son responsable, son échéance et son état d'avancement.
 - **Mandat** : fonction confiée pour une durée déterminée (administrateur, président, trésorier).
 
-> **⚖️ Adaptation réglementaire** — Les règles de convocation, de quorum, de majorité, de rédaction et de signature des PV, ainsi que la tenue de registres obligatoires, dépendent de la loi applicable et des statuts. L'enregistrement des réunions peut aussi être encadré. Vérifiez-les avant de modifier vos pratiques.
+> **⚖️ Adaptation réglementaire** : Les règles de convocation, de quorum, de majorité, de rédaction et de signature des PV, ainsi que la tenue de registres obligatoires, dépendent de la loi applicable et des statuts. L'enregistrement des réunions peut aussi être encadré. Vérifiez-les avant de modifier vos pratiques.
 
 ## 10.5 Explications détaillées
 
-![Figure 10.1 — De la réunion au suivi des décisions](03_ILLUSTRATIONS/figures/fig_10_1.svg)
+![Figure 10.1 : De la réunion au suivi des décisions](03_ILLUSTRATIONS/figures/fig_10_1.svg)
 
 ### Le cycle complet d'une réunion de gouvernance
 
@@ -46,11 +46,11 @@ La qualité de la gouvernance repose sur des documents fiables (ordres du jour, 
 |---|---|---|---|---|
 | 1. Préparation de l'ordre du jour | Recensement des points, vérification des échéances statutaires | Proposer un projet d'ordre du jour à partir du registre des décisions et du calendrier | Calendrier, registre | Président et direction arrêtent l'ordre du jour |
 | 2. Dossier de séance | Rassemblement des documents | Synthèses d'une page des rapports longs | Espace documentaire partagé | Vérification des synthèses par les auteurs des rapports |
-| 3. Convocation | Envoi dans les délais statutaires | — | Messagerie, rappel automatique | Secrétaire |
+| 3. Convocation | Envoi dans les délais statutaires | Néant | Messagerie, rappel automatique | Secrétaire |
 | 4. Réunion | Débats et votes | Transcription (si consentement de tous) | Visioconférence, enregistreur | Président anime ; secrétaire prend des notes |
 | 5. Projet de PV | Rédaction | Projet structuré à partir des notes ou de la transcription ; extraction des décisions | Traitement de texte | Secrétaire vérifie et corrige |
-| 6. Relecture | Contrôle | — | Suivi des modifications | Président et membres concernés |
-| 7. Adoption et signature | Approbation formelle | — | Signature (manuscrite ou électronique selon le droit applicable) | Organe compétent |
+| 6. Relecture | Contrôle | Néant | Suivi des modifications | Président et membres concernés |
+| 7. Adoption et signature | Approbation formelle | Néant | Signature (manuscrite ou électronique selon le droit applicable) | Organe compétent |
 | 8. Registre des décisions | Mise à jour | Pré-remplissage des lignes à partir du PV adopté | Tableur ou base | Secrétaire valide |
 | 9. Suivi | Rappels, avancement | Synthèse de l'état d'avancement | Rappels automatiques | Responsables de chaque décision |
 | 10. Archivage | Conservation | Indexation (mots clés, résumé) | Gestion documentaire | Secrétaire |
@@ -70,11 +70,11 @@ Il ne doit pas :
 - **interpréter** une discussion non conclusive comme une décision ;
 - **reformuler** une décision au point d'en changer la portée.
 
-> **🔎 À retenir** — Le PV adopté et signé fait foi ; le projet généré par l'IA n'est qu'un brouillon. Le secrétaire en est l'auteur et le garant.
+> **🔎 À retenir** : Le PV adopté et signé fait foi ; le projet généré par l'IA n'est qu'un brouillon. Le secrétaire en est l'auteur et le garant.
 
 ### Transcription des réunions : précautions
 
-L'enregistrement et la transcription automatique d'une réunion supposent : l'information préalable et le consentement des participants ; un outil autorisé pour des données orange (un CA évoque souvent des sujets confidentiels — personnel, litiges, finances) ; une durée de conservation courte de l'enregistrement (suppression après adoption du PV, sauf règle contraire) ; la possibilité de suspendre l'enregistrement pour les points confidentiels (huis clos, conflits d'intérêts, questions de personnel).
+L'enregistrement et la transcription automatique d'une réunion supposent : l'information préalable et le consentement des participants ; un outil autorisé pour des données orange (un CA évoque souvent des sujets confidentiels : personnel, litiges, finances) ; une durée de conservation courte de l'enregistrement (suppression après adoption du PV, sauf règle contraire) ; la possibilité de suspendre l'enregistrement pour les points confidentiels (huis clos, conflits d'intérêts, questions de personnel).
 
 ### Suivi des décisions et des mandats
 
@@ -115,7 +115,7 @@ Lors du renouvellement d'un président, d'un trésorier ou d'un directeur, un **
 **L. Outils.** Traitement de texte, tableur partagé, calendrier avec rappels ; assistant d'IA autorisé pour des données orange ; éventuellement outil de transcription validé.
 **M. Étapes détaillées.**
 
-1. Adopter un **modèle de PV** (en-tête, présents, représentés, excusés, quorum, ordre du jour, points traités avec « exposé — débat — décision — vote », actions, clôture).
+1. Adopter un **modèle de PV** (en-tête, présents, représentés, excusés, quorum, ordre du jour, points traités avec « exposé, débat, décision, vote », actions, clôture).
 2. Préparer l'**ordre du jour** avec la fiche P10.3, à partir du registre et du calendrier.
 3. Pendant la séance, la secrétaire prend des **notes structurées** selon le modèle, en notant mot pour mot le texte des décisions et les résultats des votes.
 4. Dans les 48 heures, elle soumet les notes à l'assistant avec la fiche P10.1 (outil autorisé pour données orange ; noms des personnes extérieures remplacés si nécessaire).
@@ -145,7 +145,7 @@ Lors du renouvellement d'un président, d'un trésorier ou d'un directeur, un **
 
 ## 10.7 Prompts prêts à l'emploi
 
-### Fiche P10.1 — Projet de procès-verbal à partir de notes
+### Fiche P10.1 : Projet de procès-verbal à partir de notes
 
 **A. Titre.** Projet de PV structuré et vérifiable.
 
@@ -174,7 +174,7 @@ Règles impératives :
    MOT POUR MOT le texte de la décision figurant dans les notes),
    « Vote » (pour/contre/abstention tels que notés).
 2. Si une décision, un vote, une heure ou un quorum ne figure pas dans
-   les notes, écris [À COMPLÉTER] — n'invente rien.
+   les notes, écris [À COMPLÉTER] : n'invente rien.
 3. Si une discussion n'a pas abouti à une décision, écris « Aucune
    décision n'a été prise sur ce point ».
 4. Termine par un tableau « N° | Décision | Responsable | Échéance »
@@ -190,7 +190,7 @@ Style : neutre, concis, au passé composé.
 
 **H. Exemple d'application (illustratif).** Extrait de projet obtenu pour le point « Politique de voyage » :
 
-> **Point 3 — Révision de la politique de voyage.**
+> **Point 3 : Révision de la politique de voyage.**
 > *Exposé.* La directrice a présenté les écarts constatés entre les frais de mission et les plafonds en vigueur, ainsi qu'un projet de politique révisée.
 > *Débat.* Les administrateurs ont discuté du plafond d'hébergement dans les capitales et de la procédure d'autorisation préalable.
 > *Décision.* « Le conseil adopte la politique de voyage révisée, sous réserve de l'ajout d'un plafond spécifique pour les capitales, à proposer par la direction avant le 30 avril. »
@@ -204,7 +204,7 @@ Style : neutre, concis, au passé composé.
 
 **K. Amélioration.** *V1* : « Fais un PV avec ces notes. » → l'outil invente une heure de clôture, reformule les décisions et attribue des propos. *V2* : la fiche ci-dessus. *Si le PV est trop long* : « Limite l'exposé et le débat de chaque point à 60 mots, sans toucher au texte des décisions. »
 
-### Fiche P10.2 — Alimenter le registre des décisions
+### Fiche P10.2 : Alimenter le registre des décisions
 
 **A. Titre.** Extraction des décisions et actions d'un PV adopté.
 
@@ -249,7 +249,7 @@ Direction exécutive;2026-04-30;à faire;Point 3
 
 **K. Amélioration.** « Ajoute une colonne "dépendances" indiquant si une décision dépend d'une autre décision du registre. »
 
-### Fiche P10.3 — Préparer l'ordre du jour
+### Fiche P10.3 : Préparer l'ordre du jour
 
 **A. Titre.** Projet d'ordre du jour fondé sur le registre et le calendrier.
 
@@ -283,7 +283,7 @@ points pour décision avant les points pour information.
 
 **G. Résultat attendu.** Un ordre du jour minuté, sourcé, avec la liste des documents à préparer.
 
-**H. Exemple d'application (illustratif).** Le projet obtenu inscrit automatiquement « Renouvellement des mandats de deux administrateurs (échéance : 2026-06-30) — pour décision » — le point qui avait été oublié l'année précédente.
+**H. Exemple d'application (illustratif).** Le projet obtenu inscrit automatiquement « Renouvellement des mandats de deux administrateurs (échéance : 2026-06-30), pour décision », le point qui avait été oublié l'année précédente.
 
 **I. Méthode de vérification.** Confrontez chaque point aux sources ; vérifiez les délais de convocation statutaires.
 
@@ -297,7 +297,7 @@ PV diffusés rapidement et fidèles ; registre des décisions à jour ; mandats 
 
 ## 10.9 Contrôles humains
 
-> **🛑 Contrôle humain obligatoire** — Le texte des décisions, les votes, le quorum et les présences sont vérifiés par le secrétaire sur ses notes. Le PV n'a de valeur qu'une fois adopté et signé par l'organe compétent. Aucune décision ne figure au registre sans validation humaine.
+> **🛑 Contrôle humain obligatoire** : Le texte des décisions, les votes, le quorum et les présences sont vérifiés par le secrétaire sur ses notes. Le PV n'a de valeur qu'une fois adopté et signé par l'organe compétent. Aucune décision ne figure au registre sans validation humaine.
 
 ## 10.10 Risques et erreurs à éviter
 
@@ -321,7 +321,7 @@ PV diffusés rapidement et fidèles ; registre des décisions à jour ; mandats 
 - Les mandats et obligations relèvent d'automatisations simples (dates, rappels).
 - Un assistant de gouvernance n'est fiable que sur une base documentaire de documents adoptés.
 
-## 10.13 QCM — Module 10
+## 10.13 QCM : Module 10
 
 **Q1.** (une seule réponse) Un projet de PV généré par l'IA :
 
@@ -365,14 +365,14 @@ b) tous les brouillons disponibles.
 c) les courriels personnels des administrateurs.
 d) des documents trouvés sur internet.
 
-**Q7.** (mise en situation — une seule réponse) Le projet de PV indique « 8 voix pour », alors que vos notes indiquent « 7 voix pour, 1 abstention ». Que faites-vous ?
+**Q7.** (mise en situation, une seule réponse) Le projet de PV indique « 8 voix pour », alors que vos notes indiquent « 7 voix pour, 1 abstention ». Que faites-vous ?
 
 a) Vous gardez la version de l'IA.
 b) Vous supprimez le vote du PV.
 c) Vous faites la moyenne.
 d) Vous corrigez selon vos notes et vérifiez le décompte des voix.
 
-**Q8.** (mise en situation — une seule réponse) Un point à huis clos a porté sur un litige avec un salarié. Comment le traiter ?
+**Q8.** (mise en situation, une seule réponse) Un point à huis clos a porté sur un litige avec un salarié. Comment le traiter ?
 
 a) Soumettre les notes à l'assistant comme le reste.
 b) Ne pas le mentionner dans le PV, même s'il y a eu décision.
@@ -393,7 +393,7 @@ b) pourcentage de décisions avec responsable et échéance.
 c) nombre de mandats expirés non renouvelés.
 d) nombre de pages des PV.
 
-## 10.14 Corrigé détaillé — Module 10
+## 10.14 Corrigé détaillé : Module 10
 
 **Q1 : b.** Seul le PV adopté et signé fait foi.
 

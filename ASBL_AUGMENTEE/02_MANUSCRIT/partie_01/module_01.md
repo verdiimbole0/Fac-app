@@ -1,8 +1,8 @@
-# Partie I — Comprendre l'intelligence artificielle {.partie}
+# Partie I : Comprendre l'intelligence artificielle {.partie}
 
 *Avant de transformer des processus, il faut comprendre l'outil. Cette première partie explique ce qu'est l'intelligence artificielle, comment elle fonctionne réellement et comment l'utiliser de façon efficace et sûre. Aucune connaissance technique préalable n'est nécessaire.*
 
-# Module 1 — L'intelligence artificielle : comprendre une révolution qui nous concerne tous
+# Module 1 : L'intelligence artificielle : comprendre une révolution qui nous concerne tous
 
 ## 1.1 Mise en situation
 
@@ -38,9 +38,9 @@ Entre les deux, il existe une voie : comprendre ce que l'IA sait faire, ce qu'el
 
 ### Une définition de travail
 
-Il n'existe pas de définition unique de l'intelligence artificielle. Pour ce livre, nous retiendrons une définition pratique, proche de celle qu'utilisent les Principes de l'OCDE sur l'IA — dont la définition de « système d'IA » a été actualisée en 2023 et reprise par le règlement européen sur l'IA (OCDE, 2019/2024 ; règlement (UE) 2024/1689) :
+Il n'existe pas de définition unique de l'intelligence artificielle. Pour ce livre, nous retiendrons une définition pratique, proche de celle qu'utilisent les Principes de l'OCDE sur l'IA, dont la définition de « système d'IA » a été actualisée en 2023 et reprise par le règlement européen sur l'IA (OCDE, 2019/2024 ; règlement (UE) 2024/1689) :
 
-> Un **système d'IA** est un système informatique qui, à partir des données qu'il reçoit, produit des résultats — prédictions, contenus, recommandations ou décisions — capables d'influencer un environnement physique ou numérique, avec des degrés variables d'autonomie.
+> Un **système d'IA** est un système informatique qui, à partir des données qu'il reçoit, produit des résultats (prédictions, contenus, recommandations ou décisions) capables d'influencer un environnement physique ou numérique, avec des degrés variables d'autonomie.
 
 Retenez trois idées de cette définition :
 
@@ -50,19 +50,19 @@ Retenez trois idées de cette définition :
 
 ### Ce que l'IA n'est pas
 
-L'IA n'est pas une intelligence au sens humain. Elle n'a ni intention, ni conscience, ni compréhension du monde comparable à la nôtre. Les systèmes actuels repèrent des régularités statistiques dans d'immenses quantités de données et les exploitent pour produire des résultats. Cela peut donner une impression saisissante de compréhension — surtout avec les assistants conversationnels, qui manient la langue avec aisance — mais cette aisance ne garantit ni la vérité ni le bon jugement.
+L'IA n'est pas une intelligence au sens humain. Elle n'a ni intention, ni conscience, ni compréhension du monde comparable à la nôtre. Les systèmes actuels repèrent des régularités statistiques dans d'immenses quantités de données et les exploitent pour produire des résultats. Cela peut donner une impression saisissante de compréhension (surtout avec les assistants conversationnels, qui manient la langue avec aisance) mais cette aisance ne garantit ni la vérité ni le bon jugement.
 
 ## 1.5 Explications détaillées
 
 ### Une histoire faite d'accélérations et de désillusions
 
-![Figure 1.1 — Repères historiques de l'intelligence artificielle](03_ILLUSTRATIONS/figures/fig_1_1.svg)
+![Figure 1.1 : Repères historiques de l'intelligence artificielle](03_ILLUSTRATIONS/figures/fig_1_1.svg)
 
 L'histoire de l'IA n'est pas une progression régulière. Elle alterne promesses et désillusions.
 
 - **Les fondations (années 1950).** En 1950, le mathématicien Alan Turing pose la question de savoir si une machine peut penser et propose un test pour en juger. En 1956, une conférence organisée au Dartmouth College, aux États-Unis, popularise l'expression « intelligence artificielle ».
 - **Les systèmes à règles (années 1970–1980).** On tente de reproduire l'expertise humaine sous forme de règles « si… alors… ». Ces « systèmes experts » fonctionnent dans des domaines étroits, mais deviennent ingérables quand les règles se multiplient. Les promesses non tenues entraînent des périodes de désintérêt et de baisse des financements, que l'on appelle les « hivers de l'IA ».
-- **L'apprentissage à partir des données (années 1990–2010).** Plutôt que d'écrire les règles, on laisse la machine les déduire d'exemples. En 1997, un ordinateur bat le champion du monde d'échecs. À partir de 2012 environ, l'**apprentissage profond** — rendu possible par la puissance de calcul et l'abondance de données — fait progresser spectaculairement la reconnaissance d'images et de la parole.
+- **L'apprentissage à partir des données (années 1990–2010).** Plutôt que d'écrire les règles, on laisse la machine les déduire d'exemples. En 1997, un ordinateur bat le champion du monde d'échecs. À partir de 2012 environ, l'**apprentissage profond**, rendu possible par la puissance de calcul et l'abondance de données, fait progresser spectaculairement la reconnaissance d'images et de la parole.
 - **L'ère des modèles de langage (depuis 2017).** En 2017, des chercheurs publient l'architecture « Transformer » (Vaswani et al., 2017), qui permet d'entraîner des modèles de langage beaucoup plus grands. Fin 2022, les assistants conversationnels deviennent accessibles au grand public et se diffusent à une vitesse inédite.
 - **L'ère de l'encadrement (depuis le début des années 2020).** Les organisations internationales et les États adoptent des cadres : la Recommandation de l'UNESCO sur l'éthique de l'IA (2021), la révision des Principes de l'OCDE (2024), le cadre de gestion des risques du NIST (2023), la norme ISO/IEC 42001 (2023), le règlement européen sur l'IA (2024) et la Convention-cadre du Conseil de l'Europe sur l'IA (2024). Le module 8 y revient en détail.
 
@@ -70,7 +70,7 @@ Pourquoi cette histoire vous concerne-t-elle ? Parce qu'elle enseigne la prudenc
 
 ### Les grandes familles d'IA
 
-![Figure 1.2 — Les grandes familles d'intelligence artificielle](03_ILLUSTRATIONS/figures/fig_1_2.svg)
+![Figure 1.2 : Les grandes familles d'intelligence artificielle](03_ILLUSTRATIONS/figures/fig_1_2.svg)
 
 On peut se représenter les familles d'IA comme des ensembles emboîtés.
 
@@ -143,7 +143,7 @@ Le scepticisme n'est pas un obstacle à vaincre : c'est souvent une forme de vig
 | « On n'a pas les moyens. » | Les solutions avancées coûtent cher. | Le niveau Débutant est accessible ; l'important est de choisir un problème précis. |
 | « Ce n'est pas notre culture. » | La mission repose sur la relation humaine. | Justement : l'IA doit libérer du temps pour la relation, pas la remplacer. |
 
-> **🔎 À retenir** — L'IA est un outil statistique puissant, pas une intelligence humaine. Elle est utile pour des tâches précises, à condition de fournir de bonnes données, de vérifier ses résultats et de garder les décisions importantes sous contrôle humain.
+> **🔎 À retenir** : L'IA est un outil statistique puissant, pas une intelligence humaine. Elle est utile pour des tâches précises, à condition de fournir de bonnes données, de vérifier ses résultats et de garder les décisions importantes sous contrôle humain.
 
 ## 1.6 Application professionnelle : expliquer l'IA à son conseil d'administration
 
@@ -154,7 +154,7 @@ Après la réunion du conseil, la directrice d'Horizons Partagés demande à Mar
 ### Processus de mise en œuvre
 
 1. **Recenser les usages existants.** Mariam envoie un questionnaire anonyme de cinq questions à l'équipe : utilisez-vous déjà un outil d'IA ? lequel ? pour quelles tâches ? avec quelles données ? qu'est-ce qui vous inquiète ?
-2. **Rédiger un projet de note** avec l'aide d'un assistant conversationnel, à partir d'informations publiques et des résultats agrégés du questionnaire — sans aucune donnée nominative.
+2. **Rédiger un projet de note** avec l'aide d'un assistant conversationnel, à partir d'informations publiques et des résultats agrégés du questionnaire, sans aucune donnée nominative.
 3. **Vérifier chaque affirmation** factuelle (dates, cadres de référence) auprès des sources officielles.
 4. **Faire relire** la note par la directrice et par un administrateur sceptique, afin de tester sa solidité.
 5. **Présenter** la note au conseil avec une proposition de décision : adopter des règles provisoires d'usage et lancer un diagnostic (modules 5 et 6).
@@ -173,7 +173,7 @@ Un formulaire (papier ou numérique), un assistant conversationnel, un traitemen
 
 ## 1.7 Prompt prêt à l'emploi
 
-### Fiche P1.1 — Préparer une note de sensibilisation sur l'IA pour un organe de gouvernance
+### Fiche P1.1 : Préparer une note de sensibilisation sur l'IA pour un organe de gouvernance
 
 **A. Titre.** Note de sensibilisation sur l'IA pour le conseil d'administration.
 
@@ -245,7 +245,7 @@ Exigences :
 
 ## 1.9 Contrôles humains
 
-> **🛑 Contrôle humain obligatoire** — La position de l'organisation sur l'IA est une décision de gouvernance. Elle est prise par l'organe compétent, après débat, et non par un outil. La note produite avec l'IA n'est qu'un support de discussion.
+> **🛑 Contrôle humain obligatoire** : La position de l'organisation sur l'IA est une décision de gouvernance. Elle est prise par l'organe compétent, après débat, et non par un outil. La note produite avec l'IA n'est qu'un support de discussion.
 
 Contrôles à effectuer : exactitude des faits ; absence de données internes sensibles dans les échanges avec l'outil ; validation de la note par la direction ; consignation de la décision dans le procès-verbal.
 
@@ -273,11 +273,11 @@ Contrôles à effectuer : exactitude des faits ; absence de données internes se
 - Un système d'IA produit des résultats à partir de données ; ses résultats ont des effets ; son autonomie varie.
 - L'histoire de l'IA alterne accélérations et désillusions : la prudence est de mise face aux promesses.
 - On distingue systèmes à règles, apprentissage automatique, apprentissage profond et IA générative. Pour une ASBL, la distinction la plus utile est entre IA analytique (réponses fermées, mesurables) et IA générative (contenus ouverts, à relire).
-- Les opportunités sont réelles — temps, qualité, accès, décision — mais les risques aussi — erreurs, fuites, biais, dépendance, réputation.
+- Les opportunités sont réelles (temps, qualité, accès, décision) mais les risques aussi : erreurs, fuites, biais, dépendance, réputation.
 - Les ASBL sont particulièrement concernées : forte charge administrative, données sensibles, redevabilité multiple.
 - Le scepticisme est une ressource : il oblige à justifier chaque usage.
 
-## 1.13 QCM — Module 1
+## 1.13 QCM : Module 1
 
 *Pour chaque question, la consigne précise s'il y a une seule ou plusieurs bonnes réponses. Le corrigé figure après la dernière question.*
 
@@ -330,14 +330,14 @@ b) Une redevabilité envers de multiples parties prenantes.
 c) L'absence totale de tâches administratives.
 d) Une charge administrative relative souvent élevée.
 
-**Q8.** (mise en situation — une seule réponse) Un bénévole veut copier la liste nominative des familles suivies dans un assistant gratuit pour « faire un tableau plus joli ». Que faites-vous ?
+**Q8.** (mise en situation, une seule réponse) Un bénévole veut copier la liste nominative des familles suivies dans un assistant gratuit pour « faire un tableau plus joli ». Que faites-vous ?
 
 a) Vous l'encouragez, car l'outil est gratuit.
 b) Vous l'arrêtez : ces données sont sensibles ; on travaille sur une version anonymisée ou avec un outil validé, selon les règles de l'ASBL.
 c) Vous le laissez faire si la liste compte moins de 50 noms.
 d) Vous lui demandez d'utiliser plutôt son téléphone personnel.
 
-**Q9.** (mise en situation — une seule réponse) Un administrateur affirme que l'IA « remplacera la moitié du personnel administratif d'ici deux ans ». La réponse la plus appropriée est :
+**Q9.** (mise en situation, une seule réponse) Un administrateur affirme que l'IA « remplacera la moitié du personnel administratif d'ici deux ans ». La réponse la plus appropriée est :
 
 a) de demander la source et de rappeler que les études disponibles montrent surtout une transformation des tâches, variable selon leur nature.
 b) de confirmer, car c'est l'avis général.
@@ -351,7 +351,7 @@ b) Commencer par des usages sur des données publiques ou anonymisées.
 c) Imposer un outil sans explication pour gagner du temps.
 d) Expliquer comment le temps gagné sera réinvesti dans la mission.
 
-## 1.14 Corrigé détaillé — Module 1
+## 1.14 Corrigé détaillé : Module 1
 
 **Q1 : a.** La définition met l'accent sur les résultats produits à partir de données et sur leurs effets. Ni conscience (b), ni forme physique (c), ni absence d'intervention humaine (d) ne sont requises.
 
@@ -367,7 +367,7 @@ d) Expliquer comment le temps gagné sera réinvesti dans la mission.
 
 **Q7 : a, b, d.** Les ASBL ont au contraire une charge administrative importante (c est faux).
 
-**Q8 : b.** Une liste nominative de familles suivies relève des données confidentielles (rouge, module 8). Ni la gratuité, ni la taille de la liste, ni l'usage d'un appareil personnel ne changent ce constat — l'appareil personnel l'aggrave même.
+**Q8 : b.** Une liste nominative de familles suivies relève des données confidentielles (rouge, module 8). Ni la gratuité, ni la taille de la liste, ni l'usage d'un appareil personnel ne changent ce constat : l'appareil personnel l'aggrave même.
 
 **Q9 : a.** Demander la source et nuancer est la réponse rigoureuse. Les réponses b et c sont des affirmations non étayées ; d est disproportionnée.
 
