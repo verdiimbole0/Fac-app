@@ -522,11 +522,11 @@ def f122(s):
 
 # ---------------------------------------------------------------- Module 13
 @fig("13.1", "Entonnoir des tests analytiques assistés",
-     "Du fichier complet de 40 dépenses aux tests automatiques (doublons, montants ronds, seuils, week-ends, fournisseurs inconnus), puis 9 opérations signalées, examen des pièces par l'auditeur, 3 constats confirmés et recommandations.", 900, 470)
+     "Du fichier complet de 40 dépenses à neuf tests automatiques, 22 opérations signalées, 8 opérations prioritaires examinées par l'auditeur, puis 3 constats et une faiblesse de contrôle donnant lieu à recommandations.", 900, 470)
 def f131(s):
     s.header("De la population aux constats", "L'IA trie et signale ; l'auditeur examine et conclut")
-    lv = [("Population : 40 dépenses (grand livre + registre)", 820), ("Tests automatiques : doublons · seuils · montants ronds ·\nweek-ends · fournisseurs hors base · pièces manquantes", 680),
-          ("9 opérations signalées (dont faux positifs)", 520), ("Examen des pièces et entretiens par l'auditeur", 380), ("3 constats confirmés → recommandations", 250)]
+    lv = [("Population : 40 dépenses, 31 890,50 UM (1er trimestre)", 820), ("9 tests automatiques : doublons · fournisseurs hors base · pièces ·\nauto-approbation · fractionnement · montants ronds · week-end · seuils · libellés", 700),
+          ("22 opérations signalées (dont de nombreux faux positifs)", 580), ("8 opérations prioritaires examinées : pièces + entretiens", 440), ("3 constats + 1 faiblesse de contrôle\n→ recommandations", 300)]
     for i, (t, w) in enumerate(lv):
         y = 75 + i*76
         c = [LIGHT, LTEAL, LGOLD, LIGHT, NAVY][i]

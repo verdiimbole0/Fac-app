@@ -1,0 +1,23 @@
+id;date;fournisseur;montant;approbateur;alertes
+D01;2026-01-05;Quincaillerie Delta;1240.00;Coord. EAU-03;T1 doublon potentiel (D01/D13)
+D03;2026-01-08;Hôtel du Lac;270.00;Coord. EAU-01;T1 doublon potentiel (D03/D39)
+D06;2026-01-13;Station Total Ouest;180.00;Logist. B;T1 doublon potentiel (D06/D35) | T4 auto-approbation (demandeur = approbateur)
+D08;2026-01-17;Quincaillerie Delta;980.00;Coord. EAU-03;T7 date de week-end
+D09;2026-01-18;Traiteur Saveurs;500.00;Coord. EAU-01;T7 date de week-end
+D12;2026-01-24;Station Total Ouest;175.00;Logist. B;T4 auto-approbation (demandeur = approbateur) | T7 date de week-end
+D13;2026-01-27;Quincaillerie Delta;1240.00;Coord. EAU-03;T1 doublon potentiel (D01/D13)
+D15;2026-02-02;Hôtel du Lac;180.00;Coord. EAU-01;T1 doublon potentiel (D15/D31)
+D16;2026-02-03;Fournitures Express;990.00;Admin. E;T4 auto-approbation (demandeur = approbateur) | T5 fractionnement possible (D16/D17/D18, cumul 2970.00)
+D17;2026-02-04;Fournitures Express;985.00;Admin. E;T4 auto-approbation (demandeur = approbateur) | T5 fractionnement possible (D16/D17/D18, cumul 2970.00)
+D18;2026-02-05;Fournitures Express;995.00;Admin. E;T3 pièce justificative manquante | T4 auto-approbation (demandeur = approbateur) | T5 fractionnement possible (D16/D17/D18, cumul 2970.00)
+D19;2026-02-07;Garage Horizon;890.00;Coord. EAU-03;T7 date de week-end
+D20;2026-02-08;Station Total Ouest;190.00;Logist. B;T4 auto-approbation (demandeur = approbateur) | T7 date de week-end
+D23;2026-02-14;Traiteur Saveurs;450.00;Coord. EAU-01;T7 date de week-end
+D24;2026-02-15;Services Généraux KB;3000.00;Coord. EAU-03;T2 fournisseur absent du fichier fournisseurs | T3 pièce justificative manquante | T4 auto-approbation (demandeur = approbateur) | T6 montant rond élevé | T7 date de week-end | T8 montant ≥ seuil sans bon de commande | T9 libellé imprécis
+D27;2026-02-21;Station Total Ouest;185.00;Logist. B;T4 auto-approbation (demandeur = approbateur) | T7 date de week-end
+D31;2026-03-04;Hôtel du Lac;180.00;Coord. EAU-01;T1 doublon potentiel (D15/D31) | T3 pièce justificative manquante
+D33;2026-03-07;Services Généraux KB;2500.00;Coord. EAU-03;T2 fournisseur absent du fichier fournisseurs | T3 pièce justificative manquante | T4 auto-approbation (demandeur = approbateur) | T6 montant rond élevé | T7 date de week-end | T8 montant ≥ seuil sans bon de commande | T9 libellé imprécis
+D35;2026-03-11;Station Total Ouest;180.00;Logist. B;T1 doublon potentiel (D06/D35) | T4 auto-approbation (demandeur = approbateur)
+D36;2026-03-14;Imprimerie Nova;230.00;Coord. EAU-01;T7 date de week-end
+D39;2026-03-21;Hôtel du Lac;270.00;Coord. EAU-03;T1 doublon potentiel (D03/D39) | T7 date de week-end
+D40;2026-03-28;Traiteur Saveurs;520.00;Directrice;T7 date de week-end

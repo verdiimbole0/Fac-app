@@ -1,0 +1,41 @@
+id;date;fournisseur;code_fournisseur;libelle;montant;mode_paiement;projet;approbateur;demandeur;piece_jointe;bon_commande
+D01;2026-01-05;Quincaillerie Delta;F014;Tuyaux PVC 50 mm;1240.00;virement;EAU-03;Coord. EAU-03;Tech. A;oui;BC-101
+D02;2026-01-06;Garage Horizon;F022;Entretien véhicule 4x4;385.50;virement;EAU-03;Coord. EAU-03;Logist. B;oui;BC-102
+D03;2026-01-08;Hôtel du Lac;F031;Hébergement mission 3 nuits;270.00;avance;EAU-01;Coord. EAU-01;Agent C;oui;
+D04;2026-01-09;Quincaillerie Delta;F014;Ciment 20 sacs;460.00;virement;EAU-03;Coord. EAU-03;Tech. A;oui;BC-103
+D05;2026-01-12;Imprimerie Nova;F009;Affiches sensibilisation;315.00;virement;EAU-01;Coord. EAU-01;Comm. D;oui;BC-104
+D06;2026-01-13;Station Total Ouest;F040;Carburant;180.00;caisse;EAU-03;Logist. B;Logist. B;oui;
+D07;2026-01-15;Bureau Équipement Plus;F017;Ordinateur portable;1450.00;virement;STRUCT;Directrice;Admin. E;oui;BC-105
+D08;2026-01-17;Quincaillerie Delta;F014;Robinets et raccords;980.00;virement;EAU-03;Coord. EAU-03;Tech. A;oui;BC-106
+D09;2026-01-18;Traiteur Saveurs;F052;Repas atelier communautaire;500.00;caisse;EAU-01;Coord. EAU-01;Agent C;oui;
+D10;2026-01-20;Garage Horizon;F022;Pneus 4x4;620.00;virement;EAU-03;Coord. EAU-03;Logist. B;oui;BC-107
+D11;2026-01-22;Imprimerie Nova;F009;Fiches de suivi;145.00;virement;EAU-01;Coord. EAU-01;Comm. D;oui;BC-108
+D12;2026-01-24;Station Total Ouest;F040;Carburant;175.00;caisse;EAU-03;Logist. B;Logist. B;oui;
+D13;2026-01-27;Quincaillerie Delta;F014;Tuyaux PVC 50 mm;1240.00;virement;EAU-03;Coord. EAU-03;Tech. A;oui;BC-101
+D14;2026-01-29;Cabinet Conseil Sigma;F061;Étude géophysique forage;4800.00;virement;EAU-03;Directrice;Coord. EAU-03;oui;BC-109
+D15;2026-02-02;Hôtel du Lac;F031;Hébergement mission 2 nuits;180.00;avance;EAU-01;Coord. EAU-01;Agent C;oui;
+D16;2026-02-03;Fournitures Express;F077;Fournitures de bureau;990.00;caisse;STRUCT;Admin. E;Admin. E;oui;
+D17;2026-02-04;Fournitures Express;F077;Fournitures de bureau;985.00;caisse;STRUCT;Admin. E;Admin. E;oui;
+D18;2026-02-05;Fournitures Express;F077;Fournitures de bureau;995.00;caisse;STRUCT;Admin. E;Admin. E;non;
+D19;2026-02-07;Garage Horizon;F022;Réparation embrayage;890.00;virement;EAU-03;Coord. EAU-03;Logist. B;oui;BC-110
+D20;2026-02-08;Station Total Ouest;F040;Carburant;190.00;caisse;EAU-03;Logist. B;Logist. B;oui;
+D21;2026-02-10;Imprimerie Nova;F009;Banderoles;260.00;virement;EAU-01;Coord. EAU-01;Comm. D;oui;BC-111
+D22;2026-02-12;Quincaillerie Delta;F014;Pompe manuelle;2100.00;virement;EAU-03;Coord. EAU-03;Tech. A;oui;BC-112
+D23;2026-02-14;Traiteur Saveurs;F052;Repas formation comités;450.00;caisse;EAU-01;Coord. EAU-01;Agent C;oui;
+D24;2026-02-15;Services Généraux KB;F099;Prestation de services diverses;3000.00;virement;EAU-03;Coord. EAU-03;Coord. EAU-03;non;
+D25;2026-02-17;Hôtel du Lac;F031;Hébergement mission 4 nuits;360.00;avance;EAU-03;Coord. EAU-03;Tech. A;oui;
+D26;2026-02-19;Bureau Équipement Plus;F017;Imprimante;420.00;virement;STRUCT;Directrice;Admin. E;oui;BC-113
+D27;2026-02-21;Station Total Ouest;F040;Carburant;185.00;caisse;EAU-03;Logist. B;Logist. B;oui;
+D28;2026-02-24;Garage Horizon;F022;Vidange;95.00;virement;EAU-03;Coord. EAU-03;Logist. B;oui;BC-114
+D29;2026-02-26;Imprimerie Nova;F009;Rapports annuels;780.00;virement;STRUCT;Directrice;Comm. D;oui;BC-115
+D30;2026-03-02;Quincaillerie Delta;F014;Ciment 30 sacs;690.00;virement;EAU-03;Coord. EAU-03;Tech. A;oui;BC-116
+D31;2026-03-04;Hôtel du Lac;F031;Hébergement mission 2 nuits;180.00;avance;EAU-01;Coord. EAU-01;Agent C;non;
+D32;2026-03-06;Traiteur Saveurs;F052;Repas atelier;480.00;caisse;EAU-01;Coord. EAU-01;Agent C;oui;
+D33;2026-03-07;Services Généraux KB;F099;Prestation de services diverses;2500.00;virement;EAU-03;Coord. EAU-03;Coord. EAU-03;non;
+D34;2026-03-09;Garage Horizon;F022;Plaquettes de frein;210.00;virement;EAU-03;Coord. EAU-03;Logist. B;oui;BC-117
+D35;2026-03-11;Station Total Ouest;F040;Carburant;180.00;caisse;EAU-03;Logist. B;Logist. B;oui;
+D36;2026-03-14;Imprimerie Nova;F009;Dépliants;230.00;virement;EAU-01;Coord. EAU-01;Comm. D;oui;BC-118
+D37;2026-03-16;Quincaillerie Delta;F014;Réservoir 1000 L;1350.00;virement;EAU-03;Coord. EAU-03;Tech. A;oui;BC-119
+D38;2026-03-18;Bureau Équipement Plus;F017;Vidéoprojecteur;640.00;virement;STRUCT;Directrice;Admin. E;oui;BC-120
+D39;2026-03-21;Hôtel du Lac;F031;Hébergement mission 3 nuits;270.00;avance;EAU-03;Coord. EAU-03;Tech. A;oui;
+D40;2026-03-28;Traiteur Saveurs;F052;Repas réunion partenaires;520.00;caisse;STRUCT;Directrice;Admin. E;oui;
