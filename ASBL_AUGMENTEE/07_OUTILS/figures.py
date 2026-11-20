@@ -503,7 +503,7 @@ def f121(s):
 @fig("12.2", "Tableau de bord fictif : exécution budgétaire par ligne",
      "Histogramme horizontal comparant budget et réalisé pour six lignes budgétaires d'un projet, avec taux d'exécution ; deux lignes dépassent 100 % (déplacements 118 %, communication 104 %) et une est sous-exécutée (formation 41 %). Données fictives.", 900, 470)
 def f122(s):
-    s.header("Tableau de bord budgétaire — projet PRJ-SANTE-07 (données fictives)", "Budget annuel vs réalisé au 30 septembre, en milliers d'UM")
+    s.header("Tableau de bord budgétaire — programme PRG-SANTE (données fictives)", "Budget annuel vs réalisé au 30 septembre, en milliers d'UM")
     data = [("Personnel", 420, 318), ("Déplacements", 60, 71), ("Formation", 85, 35), ("Équipements", 140, 126), ("Communication", 25, 26), ("Frais de structure", 70, 52)]
     mx = 450; x0 = 200; W = 520
     for i, (n, b, r) in enumerate(data):
