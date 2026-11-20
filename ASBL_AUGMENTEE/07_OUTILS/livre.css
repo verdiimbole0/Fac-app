@@ -30,15 +30,17 @@
 
 html{font-family:'Inter',Arial,sans-serif;font-size:10.2pt;line-height:1.6;color:var(--ink);hyphens:auto;-webkit-hyphens:auto}
 body{margin:0}
-p{margin:0 0 .7em;text-align:left;orphans:3;widows:3}
+p{margin:0 0 .7em;text-align:justify;text-justify:inter-word;orphans:3;widows:3}
+li{text-align:justify}
 a{color:var(--violet);text-decoration:none}
 strong{font-weight:700;color:#1F1A45}
 h1,h2,h3,h4{font-family:'Outfit',Arial,sans-serif;color:var(--indigo);line-height:1.15;break-after:avoid;text-align:left;letter-spacing:-.005em}
-h1{font-size:25pt;font-weight:800;break-before:page;margin:0 0 9mm;padding-top:10mm;string-set:titrecourant content(text)}
+h1{font-size:25pt;font-weight:800;break-before:page;margin:0 0 9mm;padding-top:10mm}
+.tc{string-set:titrecourant content(text)}
 h1 .pill,.pill{display:block;width:max-content;font-family:'Inter';font-size:7.6pt;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--indigo);background:var(--lav);border-radius:2mm;padding:1.4mm 3mm;margin-bottom:4.5mm}
 h1.partie{page:partie;padding:122mm 16mm 0 18mm;margin:0 0 6mm;font-size:29pt;font-weight:900}
 h1.partie .pill{background:#fff;border:1.2px solid var(--violet2);color:var(--violet)}
-h1.partie + p{page:partie;padding:0 18mm 0 18mm;font-size:10.8pt;line-height:1.65;color:#3A3656}
+h1.partie + p{page:partie;text-align:justify;padding:0 18mm 0 18mm;font-size:10.8pt;line-height:1.65;color:#3A3656}
 h1.partie + p em{font-style:normal}
 h2{font-size:15pt;font-weight:800;margin:9mm 0 3mm}
 h3{font-size:11.8pt;font-weight:700;color:var(--violet);margin:6mm 0 2mm}
@@ -68,7 +70,7 @@ code{font-family:'JetBrains Mono',monospace;font-size:8pt;color:var(--violet)}
 pre code{color:inherit;font-size:inherit}
 
 blockquote{margin:4mm 0;padding:4mm 5mm;background:var(--lav);border-radius:3mm;font-family:'Inter';font-size:9.4pt;line-height:1.55;break-inside:avoid;color:#1F1A45}
-blockquote p{text-align:left;margin:0}
+blockquote p{text-align:justify;margin:0}
 
 /* Liminaires */
 .fauxtitre{page:liminaire;text-align:center;font-family:'Outfit';font-size:26pt;font-weight:900;color:var(--indigo);letter-spacing:.04em;padding-top:85mm}
@@ -81,7 +83,6 @@ blockquote p{text-align:left;margin:0}
 @page liminaire:left{@top-left{content:none}}
 
 /* Table des matières */
-nav.tdm h1{string-set:titrecourant content(text)}
 nav.tdm ol{list-style:none;padding:0;margin:0;font-family:'Inter'}
 nav.tdm li{margin:1.6mm 0;font-size:9.3pt}
 nav.tdm li::before{content:none}

@@ -127,7 +127,8 @@ def assemble(parts, lists, target):
             txt = re.sub(r"03_ILLUSTRATIONS/figures/(fig_[\d_]+)\.svg", r"03_ILLUSTRATIONS/png/\1.png", txt)
         elif target == "html":
             txt = txt.replace("03_ILLUSTRATIONS/figures/", "../../03_ILLUSTRATIONS/figures/")
-            txt = re.sub(r"^# ((?:Module \d+)|(?:Partie [IVX]+)) : (.*?)( \{[^}]*\})$", r"# [\1]{.pill} \2\3", txt, flags=re.M)
+            txt = re.sub(r"^# ((?:Module \d+)|(?:Partie [IVX]+)) : (.*?)( \{[^}]*\})$", r"# [\1]{.pill} [\2]{.tc}\3", txt, flags=re.M)
+            txt = re.sub(r"^# (?!\[)(.*?)( \{[^}]*\})$", r"# [\1]{.tc}\2", txt, flags=re.M)
         out.append(txt)
     if target == "docx":
         cov = "06_LIVRABLES/COUVERTURE/"

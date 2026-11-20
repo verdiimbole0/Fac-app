@@ -82,6 +82,20 @@ except KeyError:
     pass
 
 
+# Texte justifié (sauf « Compact », utilisé dans les tableaux)
+from docx.enum.text import WD_ALIGN_PARAGRAPH as _AL
+for _n in ("Normal", "Body Text", "First Paragraph", "Block Text"):
+    _st = next((x for x in d.styles if x.name == _n), None)
+    if _st is not None:
+        _st.paragraph_format.alignment = _AL.JUSTIFY
+_c = next((x for x in d.styles if x.name == "Compact"), None)
+if _c is not None:
+    _c.paragraph_format.alignment = _AL.LEFT
+for _n in ("Caption", "Image Caption", "Table Caption", "Title", "Subtitle", "TOC Heading") + tuple(f"Heading {i}" for i in range(1, 7)):
+    _st = next((x for x in d.styles if x.name == _n), None)
+    if _st is not None and _st.paragraph_format.alignment is None:
+        _st.paragraph_format.alignment = _AL.CENTER if "Caption" in _n else _AL.LEFT
+
 # Styles personnalisés des pages liminaires
 from docx.enum.style import WD_STYLE_TYPE
 from docx.enum.text import WD_ALIGN_PARAGRAPH
