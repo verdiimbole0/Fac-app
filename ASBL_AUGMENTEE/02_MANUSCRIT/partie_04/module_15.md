@@ -297,8 +297,8 @@ Veille anticipée ; décisions go/no-go documentées ; zéro rejet administratif
 **Q1.** (une seule réponse) Un critère d'éligibilité est :
 
 a) un critère de notation.
-b) une condition de recevabilité du dossier, souvent éliminatoire.
-c) une suggestion du bailleur.
+b) une suggestion du bailleur.
+c) une condition de recevabilité du dossier, souvent éliminatoire.
 d) un indicateur de projet.
 
 **Q2.** (une ou plusieurs réponses) Quelles informations une fiche d'analyse d'appel doit-elle contenir ?
@@ -310,17 +310,17 @@ d) L'avis personnel de l'IA sur nos chances.
 
 **Q3.** (une seule réponse) La meilleure source pour la substance d'une proposition est :
 
-a) l'IA, sur la base d'une consigne courte.
-b) le dossier de matière première de l'organisation.
+a) le dossier de matière première de l'organisation.
+b) l'IA, sur la base d'une consigne courte.
 c) une proposition d'une autre ONG.
 d) des statistiques trouvées par l'IA sans source.
 
 **Q4.** (une seule réponse) La décision go/no-go appartient à :
 
 a) l'outil d'IA.
-b) la direction.
-c) le bailleur.
-d) le chargé de communication.
+b) le bailleur.
+c) le chargé de communication.
+d) la direction.
 
 **Q5.** (une ou plusieurs réponses) Une stratégie de diversification peut fixer :
 
@@ -338,23 +338,23 @@ d) la traduire automatiquement sans relecture.
 
 **Q7.** (mise en situation — une seule réponse) Le résumé de l'IA indique « organisations de toute ancienneté éligibles », mais vous n'en trouvez pas trace dans l'appel. Que faites-vous ?
 
-a) Vous vous fiez au résumé.
-b) Vous cherchez le critère exact dans le texte et ses annexes, et traitez le résumé comme non fiable sur ce point.
+a) Vous cherchez le critère exact dans le texte et ses annexes, et traitez le résumé comme non fiable sur ce point.
+b) Vous vous fiez au résumé.
 c) Vous soumettez sans vérifier.
 d) Vous demandez à un autre outil.
 
 **Q8.** (mise en situation — une seule réponse) La note conceptuelle générée mentionne « 92 % des bénéficiaires satisfaits », chiffre absent de votre matière première. Que faites-vous ?
 
 a) Vous le gardez, il valorise le dossier.
-b) Vous le supprimez ou le remplacez par un chiffre réel et sourcé.
-c) Vous l'arrondissez.
-d) Vous l'attribuez à un rapport ancien.
+b) Vous l'arrondissez.
+c) Vous l'attribuez à un rapport ancien.
+d) Vous le supprimez ou le remplacez par un chiffre réel et sourcé.
 
 **Q9.** (une seule réponse) Un bailleur exige de déclarer l'usage de l'IA dans la préparation du dossier. Vous :
 
 a) ne le déclarez pas si le texte a été relu.
-b) le déclarez conformément aux instructions.
-c) changez de bailleur.
+b) changez de bailleur.
+c) le déclarez conformément aux instructions.
 d) supprimez tous les passages rédigés avec l'IA.
 
 **Q10.** (une ou plusieurs réponses) Indicateurs pertinents pour la fonction financements :
@@ -366,23 +366,23 @@ d) nombre de pages produites par l'IA.
 
 ## 15.14 Corrigé détaillé — Module 15
 
-**Q1 : b.** L'éligibilité conditionne la recevabilité.
+**Q1 : c.** L'éligibilité conditionne la recevabilité.
 
 **Q2 : a, b, c.** L'« avis » de l'IA sur les chances (d) n'a pas de fondement fiable.
 
-**Q3 : b.** La spécificité vient de l'organisation.
+**Q3 : a.** La spécificité vient de l'organisation.
 
-**Q4 : b.** C'est une décision stratégique.
+**Q4 : d.** C'est une décision stratégique.
 
 **Q5 : a, b, d.** Le reporting reste indispensable (c).
 
 **Q6 : b.** La fiche d'obligations alimente le pilotage.
 
-**Q7 : b.** Les résumés peuvent être inexacts ; le texte officiel fait foi.
+**Q7 : a.** Les résumés peuvent être inexacts ; le texte officiel fait foi.
 
-**Q8 : b.** Un chiffre non sourcé est une affirmation non vérifiée, potentiellement fausse.
+**Q8 : d.** Un chiffre non sourcé est une affirmation non vérifiée, potentiellement fausse.
 
-**Q9 : b.** Les règles du bailleur s'appliquent ; la transparence est aussi une valeur.
+**Q9 : c.** Les règles du bailleur s'appliquent ; la transparence est aussi une valeur.
 
 **Q10 : a, b, c.** Le volume produit (d) ne mesure pas la qualité.
 

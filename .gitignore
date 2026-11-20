@@ -42,3 +42,4 @@ next-env.d.ts
 
 # base de données locale (comptes, sessions, rapports)
 /donnees
+ASBL_AUGMENTEE/07_OUTILS/build/

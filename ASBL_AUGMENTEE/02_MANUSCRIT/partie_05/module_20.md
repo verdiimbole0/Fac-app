@@ -200,9 +200,9 @@ Des équipes formées et outillées ; une adoption mesurée et soutenue ; une go
 **Q1.** (une seule réponse) Selon le modèle de Davis (1989), deux déterminants majeurs de l'acceptation d'une technologie sont :
 
 a) le prix et la marque.
-b) l'utilité perçue et la facilité d'utilisation perçue.
-c) la couleur et la vitesse.
-d) l'âge et le sexe.
+b) la couleur et la vitesse.
+c) l'âge et le sexe.
+d) l'utilité perçue et la facilité d'utilisation perçue.
 
 **Q2.** (une ou plusieurs réponses) Le modèle UTAUT ajoute notamment :
 
@@ -228,15 +228,15 @@ d) l'interdiction de tout nouvel usage.
 **Q5.** (une seule réponse) La « dérive » d'un système désigne :
 
 a) une panne de serveur.
-b) une dégradation progressive des performances (documents obsolètes, nouvelles versions de modèles…).
-c) une hausse de prix.
-d) un changement d'interface.
+b) une hausse de prix.
+c) un changement d'interface.
+d) une dégradation progressive des performances (documents obsolètes, nouvelles versions de modèles…).
 
 **Q6.** (une seule réponse) Après une mise à jour du modèle par le fournisseur, il faut :
 
 a) ne rien faire.
-b) relancer le jeu de tests.
-c) changer de fournisseur.
+b) changer de fournisseur.
+c) relancer le jeu de tests.
 d) supprimer la base documentaire.
 
 **Q7.** (mise en situation — une seule réponse) Le référent qui a paramétré l'outil quitte l'organisation sans suppléant. Le risque principal est :
@@ -248,17 +248,17 @@ d) aucun.
 
 **Q8.** (mise en situation — une seule réponse) Des agents disent préférer appeler le responsable financier « car l'outil s'est trompé une fois ». Que faites-vous ?
 
-a) Rendre l'outil obligatoire.
-b) Expliquer l'erreur et sa correction, rappeler la vérification, montrer des exemples réussis.
+a) Expliquer l'erreur et sa correction, rappeler la vérification, montrer des exemples réussis.
+b) Rendre l'outil obligatoire.
 c) Interdire les appels.
 d) Supprimer l'outil.
 
 **Q9.** (une seule réponse) L'audit d'un système d'IA doit être réalisé par :
 
 a) la personne qui gère la solution.
-b) une personne indépendante de la gestion de la solution.
-c) le fournisseur.
-d) l'outil lui-même.
+b) le fournisseur.
+c) l'outil lui-même.
+d) une personne indépendante de la gestion de la solution.
 
 **Q10.** (une ou plusieurs réponses) Indicateurs pertinents pour le bilan annuel :
 
@@ -269,7 +269,7 @@ d) nombre de messages promotionnels du fournisseur.
 
 ## 20.14 Corrigé détaillé — Module 20
 
-**Q1 : b.** Ce sont les deux construits fondateurs du modèle d'acceptation de la technologie.
+**Q1 : d.** Ce sont les deux construits fondateurs du modèle d'acceptation de la technologie.
 
 **Q2 : a, b.** Avec la performance attendue et l'effort attendu.
 
@@ -277,15 +277,15 @@ d) nombre de messages promotionnels du fournisseur.
 
 **Q4 : a, b, c.** L'interdiction générale (d) n'est pas une gouvernance.
 
-**Q5 : b.** D'où la nécessité de tests réguliers.
+**Q5 : d.** D'où la nécessité de tests réguliers.
 
-**Q6 : b.** Une nouvelle version peut changer les comportements.
+**Q6 : c.** Une nouvelle version peut changer les comportements.
 
 **Q7 : b.** Responsable et suppléant sont indispensables.
 
-**Q8 : b.** La confiance se reconstruit par la transparence et la démonstration.
+**Q8 : a.** La confiance se reconstruit par la transparence et la démonstration.
 
-**Q9 : b.** L'indépendance garantit l'objectivité.
+**Q9 : d.** L'indépendance garantit l'objectivité.
 
 **Q10 : a, b, c.** Le critère d est sans rapport avec la valeur.
 

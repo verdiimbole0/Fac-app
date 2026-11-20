@@ -178,17 +178,17 @@ Pour chaque cas : lisez la situation ; répondez aux questions **avant** de lire
 
 **Q1.** (une seule réponse) Dans le cas 1, la première priorité est :
 
-a) acheter un logiciel avec IA.
-b) rassembler, numériser et classer les pièces et les relevés.
+a) rassembler, numériser et classer les pièces et les relevés.
+b) acheter un logiciel avec IA.
 c) produire immédiatement les états financiers.
 d) recruter un développeur.
 
 **Q2.** (une seule réponse) Dans le cas 2, l'outil structurel clé pour produire les rapports de quatre bailleurs à partir d'une comptabilité est :
 
 a) un assistant conversationnel.
-b) la table de correspondance par bailleur.
-c) un agent autonome.
-d) la ressaisie.
+b) un agent autonome.
+c) la ressaisie.
+d) la table de correspondance par bailleur.
 
 **Q3.** (une ou plusieurs réponses) Dans le cas 3, quels tests sont pertinents ?
 
@@ -206,17 +206,17 @@ d) ignorer l'alerte du bailleur.
 
 **Q5.** (une seule réponse) Dans le cas 8, l'IA prédictive du décrochage est déconseillée principalement parce que :
 
-a) elle est trop chère.
-b) les données historiques manquent et les risques de stigmatisation sont réels, alors qu'une règle simple suffit.
+a) les données historiques manquent et les risques de stigmatisation sont réels, alors qu'une règle simple suffit.
+b) elle est trop chère.
 c) elle est interdite partout.
 d) les enfants n'utilisent pas d'ordinateur.
 
 **Q6.** (une seule réponse) Dans le cas 9, la première réponse adaptée est :
 
 a) un agent IA autonome.
-b) l'automatisation classique (formulaires, workflows, rappels).
-c) un modèle prédictif.
-d) le statu quo.
+b) un modèle prédictif.
+c) le statu quo.
+d) l'automatisation classique (formulaires, workflows, rappels).
 
 **Q7.** (une ou plusieurs réponses) Dans le cas 10, les mesures d'urgence comprennent :
 
@@ -234,8 +234,8 @@ d) Le calendrier des formations.
 
 **Q9.** (une seule réponse) Dans le cas 5, l'IA :
 
-a) peut retrouver des documents jamais conservés.
-b) peut indexer et classer les documents conservés, sous vérification.
+a) peut indexer et classer les documents conservés, sous vérification.
+b) peut retrouver des documents jamais conservés.
 c) remplace le plan de classement.
 d) dispense de sauvegarde.
 
@@ -248,23 +248,23 @@ d) commencer systématiquement par l'outil d'IA le plus avancé.
 
 ## 21.7 Corrigé détaillé — Module 21
 
-**Q1 : b.** Sans pièces ni relevés, aucune comptabilité fiable n'est possible.
+**Q1 : a.** Sans pièces ni relevés, aucune comptabilité fiable n'est possible.
 
-**Q2 : b.** Elle relie les lignes de chaque bailleur aux comptes et codes analytiques.
+**Q2 : d.** Elle relie les lignes de chaque bailleur aux comptes et codes analytiques.
 
 **Q3 : a, b, c.** Le nombre de pages (d) n'est pas un indicateur de risque.
 
 **Q4 : b.** Confidentialité, préservation des preuves et respect des droits.
 
-**Q5 : b.** Proportionnalité et protection des enfants.
+**Q5 : a.** Proportionnalité et protection des enfants.
 
-**Q6 : b.** Les règles stables relèvent de l'automatisation classique.
+**Q6 : d.** Les règles stables relèvent de l'automatisation classique.
 
 **Q7 : a, b, c.** L'interdiction totale (d) pousserait les usages dans l'ombre.
 
 **Q8 : b.** Données de santé et de dépendance : rouge.
 
-**Q9 : b.** L'IA ne retrouve que ce qui existe.
+**Q9 : a.** L'IA ne retrouve que ce qui existe.
 
 **Q10 : a, b, c.** La démarche commence par le problème, pas par l'outil (d).
 

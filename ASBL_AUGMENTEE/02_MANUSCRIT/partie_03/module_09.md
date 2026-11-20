@@ -226,17 +226,17 @@ Une décision documentée, un outil inscrit au registre (annexe 9) avec son resp
 
 **Q1.** (une seule réponse) La réversibilité désigne :
 
-a) la possibilité d'annuler une requête.
-b) la capacité à quitter un fournisseur en récupérant ses données dans un format exploitable.
+a) la capacité à quitter un fournisseur en récupérant ses données dans un format exploitable.
+b) la possibilité d'annuler une requête.
 c) la traduction dans les deux sens.
 d) le remboursement de l'abonnement.
 
 **Q2.** (une seule réponse) Une API est :
 
 a) un type d'ordinateur.
-b) une interface permettant à des logiciels d'échanger des données ou d'utiliser des services de façon automatisée.
-c) une norme de sécurité.
-d) un assistant conversationnel.
+b) une norme de sécurité.
+c) un assistant conversationnel.
+d) une interface permettant à des logiciels d'échanger des données ou d'utiliser des services de façon automatisée.
 
 **Q3.** (une ou plusieurs réponses) Les offres gratuites d'outils d'IA présentent souvent :
 
@@ -262,15 +262,15 @@ d) accès complet à la messagerie pour plus d'efficacité.
 **Q6.** (une seule réponse) Avec les poids de l'exemple (25/20/10/15/15/15 %), l'option notée 2, 4, 2, 4, 3, 4 obtient :
 
 a) 3,05
-b) 3,15
-c) 3,40
-d) 19
+b) 3,40
+c) 19
+d) 3,15
 
 **Q7.** (mise en situation — une seule réponse) Un commercial affirme oralement que « vos données ne servent jamais à l'entraînement ». Que faites-vous ?
 
 a) Vous le croyez.
-b) Vous exigez que cela figure dans le contrat ou l'accord de traitement des données.
-c) Vous demandez la même chose à un assistant d'IA.
+b) Vous demandez la même chose à un assistant d'IA.
+c) Vous exigez que cela figure dans le contrat ou l'accord de traitement des données.
 d) Vous ne posez plus de question.
 
 **Q8.** (mise en situation — une seule réponse) Une petite association en zone peu connectée veut améliorer la collecte de données de terrain. Approche la plus réaliste ?
@@ -282,8 +282,8 @@ d) Renoncer au numérique.
 
 **Q9.** (une seule réponse) Pour un outil facturé à l'usage via API, une bonne pratique consiste à :
 
-a) ne pas suivre la consommation.
-b) fixer une alerte de consommation et tester sur un mois pilote.
+a) fixer une alerte de consommation et tester sur un mois pilote.
+b) ne pas suivre la consommation.
 c) payer d'avance trois ans.
 d) partager la clé d'accès entre tous les collaborateurs.
 
@@ -296,9 +296,9 @@ d) font transiter des données par la plateforme, qui doit être évaluée.
 
 ## 9.14 Corrigé détaillé — Module 9
 
-**Q1 : b.** C'est la garantie contre la dépendance.
+**Q1 : a.** C'est la garantie contre la dépendance.
 
-**Q2 : b.** L'API permet les échanges automatisés entre logiciels.
+**Q2 : d.** L'API permet les échanges automatisés entre logiciels.
 
 **Q3 : a, b, d.** Les offres gratuites n'offrent généralement pas les garanties contractuelles nécessaires (c).
 
@@ -306,13 +306,13 @@ d) font transiter des données par la plateforme, qui doit être évaluée.
 
 **Q5 : a, b, c.** L'accès complet (d) contredit le moindre privilège et expose aux injections de prompt.
 
-**Q6 : b.** 2×0,25 + 4×0,20 + 2×0,10 + 4×0,15 + 3×0,15 + 4×0,15 = 0,50 + 0,80 + 0,20 + 0,60 + 0,45 + 0,60 = 3,15. C'est le score de l'option B du tableau. Réponse d : erreur classique consistant à additionner les notes sans les pondérer.
+**Q6 : d.** 2×0,25 + 4×0,20 + 2×0,10 + 4×0,15 + 3×0,15 + 4×0,15 = 0,50 + 0,80 + 0,20 + 0,60 + 0,45 + 0,60 = 3,15. C'est le score de l'option B du tableau. Réponse c : erreur classique consistant à additionner les notes sans les pondérer.
 
-**Q7 : b.** Seul le contrat engage le fournisseur.
+**Q7 : c.** Seul le contrat engage le fournisseur.
 
 **Q8 : b.** L'approche hybride hors ligne est adaptée à la faible connectivité.
 
-**Q9 : b.** L'alerte évite les dépassements ; la clé d'accès ne se partage jamais (d).
+**Q9 : a.** L'alerte évite les dépassements ; la clé d'accès ne se partage jamais (d).
 
 **Q10 : a, b, d.** Elles exigent au contraire une maintenance (c).
 

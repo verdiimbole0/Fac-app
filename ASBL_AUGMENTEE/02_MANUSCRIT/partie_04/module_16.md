@@ -250,9 +250,9 @@ Achats conformes et documentés ; comparaisons transparentes ; aucun paiement sa
 **Q1.** (une seule réponse) Le rapprochement à trois voies compare :
 
 a) trois devis.
-b) commande, bon de livraison et facture.
-c) budget, engagement et paiement.
-d) stock, inventaire et immobilisations.
+b) budget, engagement et paiement.
+c) stock, inventaire et immobilisations.
+d) commande, bon de livraison et facture.
 
 **Q2.** (une ou plusieurs réponses) Qui ne devrait pas réceptionner la marchandise ?
 
@@ -270,8 +270,8 @@ d) par l'IA après lecture des offres.
 
 **Q4.** (une seule réponse) Dans l'exemple, le prix total rendu site de l'offre B est :
 
-a) 22 680
-b) 23 580
+a) 23 580
+b) 22 680
 c) 23 760
 d) 24 600
 
@@ -279,8 +279,8 @@ d) 24 600
 
 a) 81,68
 b) 85,00
-c) 92,05
-d) 99,24
+c) 99,24
+d) 92,05
 
 **Q6.** (une ou plusieurs réponses) Dans l'extraction des offres, l'IA doit :
 
@@ -298,17 +298,17 @@ d) Ne rien signaler.
 
 **Q8.** (mise en situation — une seule réponse) Un technicien demande à l'IA de rédiger des spécifications « qui correspondent exactement au modèle du fournisseur X ». Votre réaction ?
 
-a) C'est efficace.
-b) C'est contraire à l'équité de la consultation ; les spécifications doivent décrire le besoin fonctionnel.
+a) C'est contraire à l'équité de la consultation ; les spécifications doivent décrire le besoin fonctionnel.
+b) C'est efficace.
 c) C'est acceptable sous le seuil.
 d) Il faut demander au fournisseur X de les écrire.
 
 **Q9.** (une seule réponse) Une immobilisation est :
 
 a) tout achat de fournitures.
-b) un bien durable au-dessus d'un seuil, inscrit et suivi dans un registre.
-c) un stock de médicaments.
-d) un bien loué.
+b) un stock de médicaments.
+c) un bien loué.
+d) un bien durable au-dessus d'un seuil, inscrit et suivi dans un registre.
 
 **Q10.** (une ou plusieurs réponses) Indicateurs pertinents pour la fonction achats-logistique :
 
@@ -319,23 +319,23 @@ d) nombre de fournisseurs consultés par l'IA.
 
 ## 16.14 Corrigé détaillé — Module 16
 
-**Q1 : b.** C'est le contrôle clé avant paiement.
+**Q1 : d.** C'est le contrôle clé avant paiement.
 
 **Q2 : a, b, d.** La réception est confiée à une personne indépendante (c).
 
 **Q3 : b.** Sinon, la grille peut être ajustée pour favoriser une offre.
 
-**Q4 : b.** 12 × 1 890 + 900 = 23 580.
+**Q4 : a.** 12 × 1 890 + 900 = 23 580.
 
-**Q5 : c.** 59,54 + 25,00 + 7,50 = 92,05 (calcul au tableur).
+**Q5 : d.** 59,54 + 25,00 + 7,50 = 92,05 (calcul au tableur).
 
 **Q6 : a, b, d.** Le classement (c) relève du comité.
 
 **Q7 : b.** Le blocage partiel protège l'organisation sans pénaliser les articles conformes.
 
-**Q8 : b.** Des spécifications orientées faussent la concurrence et peuvent rendre la dépense inéligible.
+**Q8 : a.** Des spécifications orientées faussent la concurrence et peuvent rendre la dépense inéligible.
 
-**Q9 : b.** Le seuil est fixé par la politique comptable.
+**Q9 : d.** Le seuil est fixé par la politique comptable.
 
 **Q10 : a, b, c.** Le critère d (outil) ne mesure pas la performance du processus.
 

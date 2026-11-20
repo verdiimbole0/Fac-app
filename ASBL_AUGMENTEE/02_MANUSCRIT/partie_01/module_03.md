@@ -281,8 +281,8 @@ Une pratique plus régulière et plus sûre ; une bibliothèque de consignes par
 **Q1.** (une seule réponse) Dans la méthode CADRE, la lettre D désigne :
 
 a) la date de la demande.
-b) les données fournies et leur délimitation.
-c) la durée de la réponse.
+b) la durée de la réponse.
+c) les données fournies et leur délimitation.
 d) le destinataire.
 
 **Q2.** (une seule réponse) Pour calculer le total d'un budget de 80 lignes, il est préférable :
@@ -302,15 +302,15 @@ d) Demander une réponse plus longue.
 **Q4.** (une seule réponse) Les délimiteurs (balises) servent principalement à :
 
 a) embellir la consigne.
-b) séparer clairement les instructions des données.
-c) accélérer l'outil.
-d) chiffrer les données.
+b) accélérer l'outil.
+c) chiffrer les données.
+d) séparer clairement les instructions des données.
 
 **Q5.** (une seule réponse) La rétro-traduction consiste à :
 
 a) traduire deux fois dans la même langue.
-b) retraduire le texte traduit vers la langue d'origine pour comparer le sens.
-c) supprimer les termes techniques.
+b) supprimer les termes techniques.
+c) retraduire le texte traduit vers la langue d'origine pour comparer le sens.
 d) faire traduire par l'auteur du texte.
 
 **Q6.** (une ou plusieurs réponses) Dans la boucle « 6 V », quelles étapes figurent ?
@@ -322,23 +322,23 @@ d) Valider et documenter.
 
 **Q7.** (mise en situation — une seule réponse) L'assistant propose une formule de tableur qui renvoie une erreur. La meilleure réaction est :
 
-a) abandonner le tableur.
-b) transmettre le message d'erreur exact et la version du logiciel, puis tester la nouvelle formule sur des lignes connues.
+a) transmettre le message d'erreur exact et la version du logiciel, puis tester la nouvelle formule sur des lignes connues.
+b) abandonner le tableur.
 c) recopier les résultats calculés par l'assistant.
 d) changer d'outil d'IA sans rien préciser.
 
 **Q8.** (mise en situation — une seule réponse) Une collègue veut diffuser aux familles une traduction automatique d'un message sur la vaccination, sans relecture, « car c'est urgent ». Vous recommandez :
 
 a) de diffuser, l'urgence prime.
-b) une relecture rapide par un locuteur natif et un professionnel de santé avant diffusion.
-c) de diffuser en ajoutant « traduction automatique ».
-d) de renoncer à traduire.
+b) de diffuser en ajoutant « traduction automatique ».
+c) de renoncer à traduire.
+d) une relecture rapide par un locuteur natif et un professionnel de santé avant diffusion.
 
 **Q9.** (une seule réponse) Pour un document de 80 pages, la stratégie la plus fiable est :
 
 a) de tout coller en une fois et de demander un résumé.
-b) de le traiter par parties, puis de faire une synthèse des synthèses.
-c) de ne lire que l'introduction.
+b) de ne lire que l'introduction.
+c) de le traiter par parties, puis de faire une synthèse des synthèses.
 d) de demander à l'outil de deviner le contenu à partir du titre.
 
 **Q10.** (une ou plusieurs réponses) Une bibliothèque partagée de consignes doit comporter, pour chaque consigne :
@@ -350,23 +350,23 @@ d) un exemple d'utilisation.
 
 ## 3.14 Corrigé détaillé — Module 3
 
-**Q1 : b.** D = Données : ce qui est fourni, délimité, avec éventuellement la consigne de s'y limiter.
+**Q1 : c.** D = Données : ce qui est fourni, délimité, avec éventuellement la consigne de s'y limiter.
 
 **Q2 : b.** Les modèles de langage ne sont pas fiables pour les calculs exacts ; le tableur l'est. L'IA peut aider à écrire la formule.
 
 **Q3 : a, b, c.** Une réponse plus longue (d) n'est pas plus fiable — souvent l'inverse.
 
-**Q4 : b.** Les délimiteurs évitent que l'outil confonde vos instructions et le contenu à traiter, et limitent l'effet d'instructions cachées dans les données.
+**Q4 : d.** Les délimiteurs évitent que l'outil confonde vos instructions et le contenu à traiter, et limitent l'effet d'instructions cachées dans les données.
 
-**Q5 : b.** La rétro-traduction permet de repérer les glissements de sens.
+**Q5 : c.** La rétro-traduction permet de repérer les glissements de sens.
 
 **Q6 : a, b, d.** La publication immédiate (c) contredit le principe même de la boucle.
 
-**Q7 : b.** Le message d'erreur et la version du logiciel permettent une correction précise ; le test sur des lignes connues valide la formule.
+**Q7 : a.** Le message d'erreur et la version du logiciel permettent une correction précise ; le test sur des lignes connues valide la formule.
 
-**Q8 : b.** Un message de santé mal traduit peut mettre des personnes en danger. Une relecture rapide mais qualifiée est compatible avec l'urgence.
+**Q8 : d.** Un message de santé mal traduit peut mettre des personnes en danger. Une relecture rapide mais qualifiée est compatible avec l'urgence.
 
-**Q9 : b.** Le découpage limite les passages ignorés et rend chaque synthèse vérifiable.
+**Q9 : c.** Le découpage limite les passages ignorés et rend chaque synthèse vérifiable.
 
 **Q10 : a, b, d.** Le nom de l'auteur peut être utile, mais la réponse c, par sa formulation exclusive, est fausse.
 

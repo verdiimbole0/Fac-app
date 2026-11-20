@@ -340,9 +340,9 @@ d) interpréter une discussion non conclusive comme une décision.
 **Q3.** (une seule réponse) Le suivi de l'échéance des mandats relève principalement :
 
 a) de l'IA générative.
-b) d'une automatisation simple (dates et rappels).
-c) d'un agent autonome.
-d) d'une analyse prédictive.
+b) d'un agent autonome.
+c) d'une analyse prédictive.
+d) d'une automatisation simple (dates et rappels).
 
 **Q4.** (une ou plusieurs réponses) Une ligne du registre des décisions comporte :
 
@@ -360,23 +360,23 @@ d) rien, si la réunion est interne.
 
 **Q6.** (une seule réponse) Un assistant de gouvernance RAG doit être alimenté par :
 
-a) tous les brouillons disponibles.
-b) les seuls documents adoptés et à jour.
+a) les seuls documents adoptés et à jour.
+b) tous les brouillons disponibles.
 c) les courriels personnels des administrateurs.
 d) des documents trouvés sur internet.
 
 **Q7.** (mise en situation — une seule réponse) Le projet de PV indique « 8 voix pour », alors que vos notes indiquent « 7 voix pour, 1 abstention ». Que faites-vous ?
 
 a) Vous gardez la version de l'IA.
-b) Vous corrigez selon vos notes et vérifiez le décompte des voix.
-c) Vous supprimez le vote du PV.
-d) Vous faites la moyenne.
+b) Vous supprimez le vote du PV.
+c) Vous faites la moyenne.
+d) Vous corrigez selon vos notes et vérifiez le décompte des voix.
 
 **Q8.** (mise en situation — une seule réponse) Un point à huis clos a porté sur un litige avec un salarié. Comment le traiter ?
 
 a) Soumettre les notes à l'assistant comme le reste.
-b) Le rédiger manuellement, sans le soumettre à l'outil.
-c) Ne pas le mentionner dans le PV, même s'il y a eu décision.
+b) Ne pas le mentionner dans le PV, même s'il y a eu décision.
+c) Le rédiger manuellement, sans le soumettre à l'outil.
 d) Le publier dans la note aux équipes.
 
 **Q9.** (une seule réponse) La note de synthèse aux équipes après un CA :
@@ -399,17 +399,17 @@ d) nombre de pages des PV.
 
 **Q2 : a, b, d.** Signaler une information manquante (c) est précisément ce qu'on attend de l'outil.
 
-**Q3 : b.** Une formule de date et un rappel suffisent.
+**Q3 : d.** Une formule de date et un rappel suffisent.
 
 **Q4 : a, b, c.** Les avis personnels (d) n'ont pas leur place dans un registre.
 
 **Q5 : b.** Consentement et outil autorisé sont des préalables.
 
-**Q6 : b.** Sinon, l'assistant risque de citer des décisions non adoptées.
+**Q6 : a.** Sinon, l'assistant risque de citer des décisions non adoptées.
 
-**Q7 : b.** Les notes de séance font référence ; le décompte doit être vérifié.
+**Q7 : d.** Les notes de séance font référence ; le décompte doit être vérifié.
 
-**Q8 : b.** Les informations confidentielles sur des personnes ne sont pas soumises à l'outil. La décision, si elle existe, doit figurer au PV selon les règles applicables (c est faux).
+**Q8 : c.** Les informations confidentielles sur des personnes ne sont pas soumises à l'outil. La décision, si elle existe, doit figurer au PV selon les règles applicables (b est faux).
 
 **Q9 : b.** La note aux équipes est un outil de communication, pas un document officiel.
 

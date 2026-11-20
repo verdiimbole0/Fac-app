@@ -247,8 +247,8 @@ d) un projet avancé unique.
 
 **Q2.** (une seule réponse) Dans une matrice RACI, la lettre A désigne :
 
-a) l'assistant.
-b) l'autorité qui décide et rend compte.
+a) l'autorité qui décide et rend compte.
+b) l'assistant.
 c) l'auditeur.
 d) l'acheteur.
 
@@ -262,15 +262,15 @@ d) une formulation vague.
 **Q4.** (une seule réponse) La politique d'IA doit être adoptée :
 
 a) après les pilotes.
-b) avant le démarrage des pilotes impliquant des données internes.
-c) seulement si un incident survient.
+b) seulement si un incident survient.
+c) avant le démarrage des pilotes impliquant des données internes.
 d) jamais dans une petite structure.
 
 **Q5.** (une seule réponse) Dans le budget de Lumière des Collines, le total est de :
 
 a) 230 UM
-b) 600 UM
-c) 830 UM
+b) 830 UM
+c) 600 UM
 d) 900 UM
 
 **Q6.** (une ou plusieurs réponses) Les jalons du plan de Lumière des Collines comprennent :
@@ -283,15 +283,15 @@ d) l'achat d'un ERP en semaine 2.
 **Q7.** (mise en situation — une seule réponse) Au bout de 90 jours, un pilote n'atteint pas ses cibles. Que faites-vous ?
 
 a) Ne rien dire.
-b) Analyser les causes et proposer au conseil d'ajuster ou d'arrêter, sur la base de l'évaluation.
-c) Modifier les cibles a posteriori.
-d) Lancer trois nouveaux pilotes.
+b) Modifier les cibles a posteriori.
+c) Lancer trois nouveaux pilotes.
+d) Analyser les causes et proposer au conseil d'ajuster ou d'arrêter, sur la base de l'évaluation.
 
 **Q8.** (mise en situation — une seule réponse) Le plan prévoit 40 heures de travail pour une coordinatrice qui n'a que 3 heures libres par semaine. Que faites-vous ?
 
 a) Maintenir le plan.
-b) Réduire le périmètre ou répartir la charge, et vérifier la faisabilité.
-c) Demander à l'IA de faire le travail.
+b) Demander à l'IA de faire le travail.
+c) Réduire le périmètre ou répartir la charge, et vérifier la faisabilité.
 d) Repousser le plan d'un an.
 
 **Q9.** (une seule réponse) Le temps interne dans le budget :
@@ -312,19 +312,19 @@ d) ce qui sera caché au conseil.
 
 **Q1 : b.** Peu de pilotes, bien suivis, et des fondations solides.
 
-**Q2 : b.** L'autorité décide et rend compte.
+**Q2 : a.** L'autorité décide et rend compte.
 
 **Q3 : a, b, c.** Une formulation vague (d) empêche la mesure.
 
-**Q4 : b.** Les règles encadrent les pilotes.
+**Q4 : c.** Les règles encadrent les pilotes.
 
-**Q5 : c.** 60 + 80 + 90 + 600 = 830.
+**Q5 : b.** 60 + 80 + 90 + 600 = 830.
 
 **Q6 : a, b, c.** Aucun achat d'ERP n'est prévu (d).
 
-**Q7 : b.** L'évaluation fonde la décision ; on ne modifie pas les cibles après coup (c).
+**Q7 : d.** L'évaluation fonde la décision ; on ne modifie pas les cibles après coup (b).
 
-**Q8 : b.** Un plan irréaliste échoue ; la charge doit être compatible avec les ressources.
+**Q8 : c.** Un plan irréaliste échoue ; la charge doit être compatible avec les ressources.
 
 **Q9 : b.** Le temps interne est un coût réel.
 

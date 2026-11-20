@@ -251,8 +251,8 @@ Un plan de classement et une règle de nommage adoptés ; des fichiers de réfé
 **Q1.** (une seule réponse) Un courriel contenant une demande de partenariat est une donnée :
 
 a) structurée.
-b) non structurée.
-c) de référence.
+b) de référence.
+c) non structurée.
 d) chiffrée.
 
 **Q2.** (une seule réponse) « Un fournisseur enregistré trois fois sous des noms légèrement différents » relève d'un défaut de :
@@ -272,15 +272,15 @@ d) Règle de nommage commençant par la date.
 **Q4.** (une seule réponse) Le principe de sauvegarde 3-2-1 signifie :
 
 a) 3 sauvegardes par jour, 2 par semaine, 1 par mois.
-b) au moins 3 copies, sur 2 supports différents, dont 1 hors du bureau.
-c) 3 mots de passe, 2 utilisateurs, 1 administrateur.
-d) 3 ans de conservation, 2 copies, 1 archive.
+b) 3 mots de passe, 2 utilisateurs, 1 administrateur.
+c) 3 ans de conservation, 2 copies, 1 archive.
+d) au moins 3 copies, sur 2 supports différents, dont 1 hors du bureau.
 
 **Q5.** (une seule réponse) Un identifiant de bénéficiaire recommandé est :
 
 a) ses initiales suivies de sa date de naissance.
-b) un code non signifiant comme BEN-000317.
-c) son numéro de téléphone.
+b) son numéro de téléphone.
+c) un code non signifiant comme BEN-000317.
 d) son nom de famille.
 
 **Q6.** (une ou plusieurs réponses) Des données pseudonymisées :
@@ -292,23 +292,23 @@ d) exigent de protéger la table de correspondance.
 
 **Q7.** (mise en situation — une seule réponse) Avant de choisir un outil de suivi des bénéficiaires, quelle vérification protège le mieux contre la dépendance au fournisseur ?
 
-a) La couleur de l'interface.
-b) La possibilité d'exporter toutes les données dans un format ouvert.
+a) La possibilité d'exporter toutes les données dans un format ouvert.
+b) La couleur de l'interface.
 c) Le nombre de fonctionnalités d'IA.
 d) La popularité de l'outil.
 
 **Q8.** (mise en situation — une seule réponse) Un bénévole quitte l'association. Que faut-il faire en priorité en matière d'accès ?
 
 a) Attendre la revue annuelle.
-b) Retirer ses accès le jour de son départ.
-c) Lui laisser ses accès s'il reste en bons termes.
-d) Changer seulement le mot de passe du Wi-Fi.
+b) Lui laisser ses accès s'il reste en bons termes.
+c) Changer seulement le mot de passe du Wi-Fi.
+d) Retirer ses accès le jour de son départ.
 
 **Q9.** (une seule réponse) Pourquoi l'IA ne suffit-elle pas à préserver la mémoire institutionnelle ?
 
 a) Parce qu'elle ne sait pas lire.
-b) Parce qu'elle ne peut restituer que ce qui a été consigné.
-c) Parce qu'elle oublie tout chaque soir.
+b) Parce qu'elle oublie tout chaque soir.
+c) Parce qu'elle ne peut restituer que ce qui a été consigné.
 d) Parce qu'elle est interdite dans les ASBL.
 
 **Q10.** (une ou plusieurs réponses) Pour prévenir les erreurs à la saisie, on peut utiliser :
@@ -320,23 +320,23 @@ d) la correction a posteriori uniquement.
 
 ## 7.14 Corrigé détaillé — Module 7
 
-**Q1 : b.** Un courriel n'a pas de format fixe.
+**Q1 : c.** Un courriel n'a pas de format fixe.
 
 **Q2 : b.** Une même entité enregistrée plusieurs fois est un défaut d'unicité.
 
 **Q3 : a, c, d.** Les dossiers personnels (b) rendent les documents introuvables après un départ.
 
-**Q4 : b.** Trois copies, deux supports, une copie hors site — et une restauration testée.
+**Q4 : d.** Trois copies, deux supports, une copie hors site — et une restauration testée.
 
-**Q5 : b.** Un code non signifiant ne révèle aucune information personnelle.
+**Q5 : c.** Un code non signifiant ne révèle aucune information personnelle.
 
 **Q6 : a, b, d.** Des données pseudonymisées ne peuvent pas être publiées librement (c).
 
-**Q7 : b.** La portabilité des données est la meilleure garantie.
+**Q7 : a.** La portabilité des données est la meilleure garantie.
 
-**Q8 : b.** Le retrait immédiat des accès est une mesure de base du moindre privilège.
+**Q8 : d.** Le retrait immédiat des accès est une mesure de base du moindre privilège.
 
-**Q9 : b.** Ce qui n'a pas été documenté ne peut pas être retrouvé.
+**Q9 : c.** Ce qui n'a pas été documenté ne peut pas être retrouvé.
 
 **Q10 : a, b, c.** La prévention à la saisie est plus efficace que la seule correction a posteriori (d).
 

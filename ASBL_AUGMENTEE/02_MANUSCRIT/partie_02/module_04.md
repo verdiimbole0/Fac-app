@@ -195,15 +195,15 @@ Un dossier de référence, un organigramme fonctionnel validé, une matrice des 
 **Q1.** (une seule réponse) La mission d'une ASBL :
 
 a) décrit l'organigramme.
-b) exprime ce que fait l'organisation, pour qui et pourquoi.
-c) fixe le budget annuel.
-d) est un texte décoratif sans incidence sur les choix.
+b) fixe le budget annuel.
+c) est un texte décoratif sans incidence sur les choix.
+d) exprime ce que fait l'organisation, pour qui et pourquoi.
 
 **Q2.** (une seule réponse) Dans la plupart des ASBL, l'adoption d'une politique d'utilisation de l'IA relève :
 
 a) de chaque salarié.
-b) de l'organe d'orientation et de contrôle (souvent le conseil d'administration), selon les statuts.
-c) du fournisseur de l'outil.
+b) du fournisseur de l'outil.
+c) de l'organe d'orientation et de contrôle (souvent le conseil d'administration), selon les statuts.
 d) des bénéficiaires.
 
 **Q3.** (une ou plusieurs réponses) Quelles informations une vision fonctionnelle doit-elle ajouter à l'organigramme ?
@@ -215,8 +215,8 @@ d) La couleur des bureaux.
 
 **Q4.** (une seule réponse) Le cycle budgétaire est généralement :
 
-a) pluriannuel.
-b) annuel.
+a) annuel.
+b) pluriannuel.
 c) hebdomadaire.
 d) sans périodicité.
 
@@ -230,8 +230,8 @@ d) Les agents de terrain.
 **Q6.** (une seule réponse) Dans les cycles de fonctionnement, l'IA est d'abord utile pour :
 
 a) les arbitrages stratégiques.
-b) les tâches de collecte, de consolidation et de mise en forme.
-c) la validation des comptes.
+b) la validation des comptes.
+c) les tâches de collecte, de consolidation et de mise en forme.
 d) l'élection des administrateurs.
 
 **Q7.** (mise en situation — une seule réponse) Dans une association de cinq personnes, la présidente est aussi trésorière et coordinatrice. Le principal risque à signaler est :
@@ -243,17 +243,17 @@ d) l'interdiction légale de cumuler ces fonctions dans tous les pays.
 
 **Q8.** (mise en situation — une seule réponse) Un assistant propose une matrice des parties prenantes mentionnant les « craintes des agents de terrain ». Comment traiter cette information ?
 
-a) La considérer comme établie.
-b) La traiter comme une hypothèse à vérifier par des entretiens.
+a) La traiter comme une hypothèse à vérifier par des entretiens.
+b) La considérer comme établie.
 c) La supprimer.
 d) La transmettre telle quelle au bailleur.
 
 **Q9.** (une seule réponse) Avant d'enregistrer un entretien pour le faire transcrire, il faut :
 
 a) informer la personne après coup.
-b) obtenir son consentement explicite et lui expliquer l'usage de l'enregistrement.
-c) demander l'accord du fournisseur de l'outil.
-d) rien de particulier si l'entretien est interne.
+b) demander l'accord du fournisseur de l'outil.
+c) rien de particulier si l'entretien est interne.
+d) obtenir son consentement explicite et lui expliquer l'usage de l'enregistrement.
 
 **Q10.** (une ou plusieurs réponses) Pourquoi comprendre l'organisation avant d'introduire l'IA ?
 
@@ -264,23 +264,23 @@ d) Pour choisir le fournisseur le moins cher.
 
 ## 4.14 Corrigé détaillé — Module 4
 
-**Q1 : b.** La mission dit quoi, pour qui et pourquoi ; elle oriente les choix.
+**Q1 : d.** La mission dit quoi, pour qui et pourquoi ; elle oriente les choix.
 
-**Q2 : b.** Une politique engage l'organisation : elle est adoptée par l'organe compétent selon les statuts, souvent le conseil d'administration.
+**Q2 : c.** Une politique engage l'organisation : elle est adoptée par l'organe compétent selon les statuts, souvent le conseil d'administration.
 
 **Q3 : a, b, c.** La vision fonctionnelle relie métiers, données et documents.
 
-**Q4 : b.** Le budget est généralement annuel, même s'il peut s'inscrire dans une programmation pluriannuelle.
+**Q4 : a.** Le budget est généralement annuel, même s'il peut s'inscrire dans une programmation pluriannuelle.
 
 **Q5 : a, b, c, d.** Toutes sont concernées, à des degrés divers.
 
-**Q6 : b.** Les arbitrages, validations et élections restent humains.
+**Q6 : c.** Les arbitrages, validations et élections restent humains.
 
 **Q7 : b.** Le cumul affaiblit la séparation des tâches et crée une dépendance. Il n'est pas interdit partout (d est faux) ; il doit être compensé par d'autres contrôles.
 
-**Q8 : b.** L'assistant formule des hypothèses plausibles, pas des faits.
+**Q8 : a.** L'assistant formule des hypothèses plausibles, pas des faits.
 
-**Q9 : b.** Le consentement éclairé est un principe éthique de base et, dans de nombreux pays, une exigence légale.
+**Q9 : d.** Le consentement éclairé est un principe éthique de base et, dans de nombreux pays, une exigence légale.
 
 **Q10 : a, b, c.** Le choix du fournisseur (d) vient plus tard et ne repose pas sur le seul prix.
 

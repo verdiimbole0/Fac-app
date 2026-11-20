@@ -318,8 +318,8 @@ Propositions plus rapides et plus cohérentes, construites avec les communautés
 **Q1.** (une seule réponse) Dans un cadre logique, les hypothèses sont :
 
 a) des activités du projet.
-b) des conditions externes importantes, ni certaines ni impossibles.
-c) des indicateurs.
+b) des indicateurs.
+c) des conditions externes importantes, ni certaines ni impossibles.
 d) des dépenses.
 
 **Q2.** (une seule réponse) « Nombre de ménages formés » est un indicateur :
@@ -338,16 +338,16 @@ d) formulé de manière vague pour laisser de la souplesse.
 
 **Q4.** (une seule réponse) Les six critères d'évaluation du CAD de l'OCDE sont :
 
-a) pertinence, cohérence, efficacité, efficience, impact, viabilité.
-b) coût, délai, qualité, risque, impact, visibilité.
-c) pertinence, rapidité, efficacité, conformité, impact, notoriété.
-d) efficience, rentabilité, croissance, impact, visibilité, cohérence.
+a) coût, délai, qualité, risque, impact, visibilité.
+b) pertinence, rapidité, efficacité, conformité, impact, notoriété.
+c) efficience, rentabilité, croissance, impact, visibilité, cohérence.
+d) pertinence, cohérence, efficacité, efficience, impact, viabilité.
 
 **Q5.** (une seule réponse) Dans l'exemple de budget, les coûts indirects à 7 % s'élèvent à :
 
-a) 5 047 UM
-b) 5 400 UM
-c) 7 210 UM
+a) 5 400 UM
+b) 7 210 UM
+c) 5 047 UM
 d) 72 100 UM
 
 **Q6.** (une ou plusieurs réponses) Pour construire un budget fiable, il faut :
@@ -359,23 +359,23 @@ d) vérifier l'éligibilité selon les règles du bailleur.
 
 **Q7.** (mise en situation — une seule réponse) L'IA propose comme cause « le manque d'hygiène des mères ». Que faites-vous ?
 
-a) Vous la gardez telle quelle.
-b) Vous la reformulez de façon factuelle et non culpabilisante et la soumettez comme hypothèse à l'atelier.
+a) Vous la reformulez de façon factuelle et non culpabilisante et la soumettez comme hypothèse à l'atelier.
+b) Vous la gardez telle quelle.
 c) Vous la retirez sans discussion.
 d) Vous l'ajoutez aux effets.
 
 **Q8.** (mise en situation — une seule réponse) Le rapport généré mentionne « 85 % de satisfaction des bénéficiaires », chiffre absent de vos données. Que faites-vous ?
 
 a) Vous le gardez car il est plausible.
-b) Vous le supprimez : tout chiffre doit provenir des données fournies.
-c) Vous l'arrondissez à 80 %.
-d) Vous demandez à l'IA sa source et la croyez.
+b) Vous l'arrondissez à 80 %.
+c) Vous demandez à l'IA sa source et la croyez.
+d) Vous le supprimez : tout chiffre doit provenir des données fournies.
 
 **Q9.** (une seule réponse) Une baisse des diarrhées observée pendant le projet :
 
 a) prouve l'impact du projet.
-b) doit être analysée avec une méthode d'attribution ou de contribution avant toute conclusion.
-c) doit être ignorée.
+b) doit être ignorée.
+c) doit être analysée avec une méthode d'attribution ou de contribution avant toute conclusion.
 d) prouve que le projet a échoué.
 
 **Q10.** (une ou plusieurs réponses) Quelles données peuvent être soumises à un assistant d'IA externe non spécifiquement validé ?
@@ -387,23 +387,23 @@ d) Modèle de cadre logique du bailleur, s'il est public.
 
 ## 11.14 Corrigé détaillé — Module 11
 
-**Q1 : b.** Les hypothèses sont extérieures au contrôle du projet.
+**Q1 : c.** Les hypothèses sont extérieures au contrôle du projet.
 
 **Q2 : b.** C'est un produit direct des activités.
 
 **Q3 : a, b, c.** Un indicateur vague (d) n'est pas mesurable.
 
-**Q4 : a.** Ce sont les six critères révisés en 2019.
+**Q4 : d.** Ce sont les six critères révisés en 2019.
 
-**Q5 : a.** 72 100 × 0,07 = 5 047.
+**Q5 : c.** 72 100 × 0,07 = 5 047.
 
 **Q6 : a, b, d.** Les coûts proposés par l'IA (c) ne sont pas fiables.
 
-**Q7 : b.** Une formulation culpabilisante est à la fois injuste et contre-productive ; la cause éventuelle (par exemple « accès limité au savon et à l'eau aux moments clés ») est discutée en atelier.
+**Q7 : a.** Une formulation culpabilisante est à la fois injuste et contre-productive ; la cause éventuelle (par exemple « accès limité au savon et à l'eau aux moments clés ») est discutée en atelier.
 
-**Q8 : b.** Un chiffre non traçable est une hallucination potentielle.
+**Q8 : d.** Un chiffre non traçable est une hallucination potentielle.
 
-**Q9 : b.** Corrélation n'est pas causalité.
+**Q9 : c.** Corrélation n'est pas causalité.
 
 **Q10 : a, c, d.** La liste nominative (b) est rouge. Les notes anonymisées relèvent de la politique de l'organisation (souvent orange) : à vérifier.
 

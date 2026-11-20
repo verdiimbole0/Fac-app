@@ -283,17 +283,17 @@ Contrôles à effectuer : exactitude des faits ; absence de données internes se
 
 **Q1.** (une seule réponse) Selon la définition de travail retenue, un système d'IA :
 
-a) est un programme doté d'une conscience artificielle.
-b) produit, à partir de données, des résultats qui peuvent influencer un environnement, avec une autonomie variable.
+a) produit, à partir de données, des résultats qui peuvent influencer un environnement, avec une autonomie variable.
+b) est un programme doté d'une conscience artificielle.
 c) est nécessairement un robot physique.
 d) fonctionne toujours sans aucune intervention humaine.
 
 **Q2.** (une seule réponse) Les « hivers de l'IA » désignent :
 
 a) des pannes de serveurs dues au froid.
-b) des périodes de désintérêt et de baisse des financements après des promesses non tenues.
-c) la saison où les modèles sont réentraînés.
-d) l'interdiction de l'IA dans certains pays.
+b) la saison où les modèles sont réentraînés.
+c) l'interdiction de l'IA dans certains pays.
+d) des périodes de désintérêt et de baisse des financements après des promesses non tenues.
 
 **Q3.** (une seule réponse) L'architecture qui a permis l'essor des grands modèles de langage a été publiée en :
 
@@ -311,8 +311,8 @@ d) Traduire une affiche de sensibilisation.
 
 **Q5.** (une seule réponse) Quelle affirmation est exacte ?
 
-a) Une réponse d'assistant conversationnel est vérifiée avant d'être affichée.
-b) Un assistant conversationnel peut formuler avec assurance une information fausse.
+a) Un assistant conversationnel peut formuler avec assurance une information fausse.
+b) Une réponse d'assistant conversationnel est vérifiée avant d'être affichée.
 c) L'IA est neutre car elle repose sur des mathématiques.
 d) Une fois installée, une solution d'IA ne nécessite plus de suivi.
 
@@ -320,8 +320,8 @@ d) Une fois installée, une solution d'IA ne nécessite plus de suivi.
 
 a) l'IA améliore la performance sur toutes les tâches.
 b) l'IA dégrade la performance sur toutes les tâches.
-c) l'IA améliore certaines tâches mais peut en dégrader d'autres d'apparence comparable.
-d) l'IA remplace intégralement les consultants.
+c) l'IA remplace intégralement les consultants.
+d) l'IA améliore certaines tâches mais peut en dégrader d'autres d'apparence comparable.
 
 **Q7.** (une ou plusieurs réponses) Quelles caractéristiques rendent l'usage de l'IA particulièrement délicat dans les ASBL ?
 
@@ -339,8 +339,8 @@ d) Vous lui demandez d'utiliser plutôt son téléphone personnel.
 
 **Q9.** (mise en situation — une seule réponse) Un administrateur affirme que l'IA « remplacera la moitié du personnel administratif d'ici deux ans ». La réponse la plus appropriée est :
 
-a) de confirmer, car c'est l'avis général.
-b) de demander la source et de rappeler que les études disponibles montrent surtout une transformation des tâches, variable selon leur nature.
+a) de demander la source et de rappeler que les études disponibles montrent surtout une transformation des tâches, variable selon leur nature.
+b) de confirmer, car c'est l'avis général.
 c) d'affirmer que l'IA n'aura aucun effet sur le travail.
 d) de proposer d'interdire l'IA.
 
@@ -353,23 +353,23 @@ d) Expliquer comment le temps gagné sera réinvesti dans la mission.
 
 ## 1.14 Corrigé détaillé — Module 1
 
-**Q1 : b.** La définition met l'accent sur les résultats produits à partir de données et sur leurs effets. Ni conscience (a), ni forme physique (c), ni absence d'intervention humaine (d) ne sont requises.
+**Q1 : a.** La définition met l'accent sur les résultats produits à partir de données et sur leurs effets. Ni conscience (b), ni forme physique (c), ni absence d'intervention humaine (d) ne sont requises.
 
-**Q2 : b.** Les « hivers » ont suivi des promesses excessives, notamment autour des systèmes à règles. Ils rappellent l'importance de rester mesuré.
+**Q2 : d.** Les « hivers » ont suivi des promesses excessives, notamment autour des systèmes à règles. Ils rappellent l'importance de rester mesuré.
 
 **Q3 : c.** L'architecture Transformer a été publiée en 2017 (Vaswani et al.). 1956 correspond à la conférence de Dartmouth, 1997 à la victoire aux échecs, 2022 à la diffusion grand public des assistants conversationnels.
 
 **Q4 : a, c, d.** La rédaction, la synthèse et la traduction produisent de nouveaux contenus. La règle de double signature (b) est une règle explicite, qu'un simple workflow ou une formule suffit à appliquer.
 
-**Q5 : b.** Les modèles de langage peuvent « halluciner ». Les autres affirmations correspondent à des mythes.
+**Q5 : a.** Les modèles de langage peuvent « halluciner ». Les autres affirmations correspondent à des mythes.
 
-**Q6 : c.** L'étude met en évidence une « frontière irrégulière » des capacités de l'IA : utile pour certaines tâches, nuisible pour d'autres qui semblaient similaires.
+**Q6 : d.** L'étude met en évidence une « frontière irrégulière » des capacités de l'IA : utile pour certaines tâches, nuisible pour d'autres qui semblaient similaires.
 
 **Q7 : a, b, d.** Les ASBL ont au contraire une charge administrative importante (c est faux).
 
 **Q8 : b.** Une liste nominative de familles suivies relève des données confidentielles (rouge, module 8). Ni la gratuité, ni la taille de la liste, ni l'usage d'un appareil personnel ne changent ce constat — l'appareil personnel l'aggrave même.
 
-**Q9 : b.** Demander la source et nuancer est la réponse rigoureuse. Les réponses a et c sont des affirmations non étayées ; d est disproportionnée.
+**Q9 : a.** Demander la source et nuancer est la réponse rigoureuse. Les réponses b et c sont des affirmations non étayées ; d est disproportionnée.
 
 **Q10 : a, b, d.** Imposer un outil sans explication (c) renforce les résistances et compromet l'adoption (module 20).
 

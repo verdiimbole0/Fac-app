@@ -240,8 +240,8 @@ d) « Être plus moderne. »
 
 **Q2.** (une seule réponse) Envoyer un rappel automatique sept jours avant l'échéance d'un rapport relève plutôt :
 
-a) de l'IA générative.
-b) de l'automatisation classique.
+a) de l'automatisation classique.
+b) de l'IA générative.
 c) de l'IA prédictive.
 d) d'un agent IA.
 
@@ -255,8 +255,8 @@ d) La maintenance.
 **Q4.** (une seule réponse) Dans la matrice, un cas d'usage à forte valeur mais à faible faisabilité est :
 
 a) un gain rapide.
-b) un projet structurant à préparer.
-c) à écarter systématiquement.
+b) à écarter systématiquement.
+c) un projet structurant à préparer.
 d) une petite amélioration.
 
 **Q5.** (une seule réponse) Avec les poids du module (25/20/15/15/10/15 %), un cas noté 4, 4, 4, 4, 4, 4 obtient :
@@ -276,15 +276,15 @@ d) Son score de risque était très défavorable.
 **Q7.** (mise en situation — une seule réponse) Le calcul d'un projet montre un gain financier direct faible, mais une forte réduction des erreurs et des pièces perdues. Que faites-vous ?
 
 a) Abandonner le projet.
-b) Expliciter et mesurer les bénéfices qualitatifs dans la décision.
-c) Gonfler les gains de temps pour justifier le projet.
-d) Lancer le projet sans analyse.
+b) Gonfler les gains de temps pour justifier le projet.
+c) Lancer le projet sans analyse.
+d) Expliciter et mesurer les bénéfices qualitatifs dans la décision.
 
 **Q8.** (mise en situation — une seule réponse) Une responsable propose « un chatbot pour les bénéficiaires ». Première étape ?
 
 a) Choisir un fournisseur.
-b) Reformuler le besoin en problème mesurable et envisager des solutions sans IA.
-c) Lancer un appel d'offres.
+b) Lancer un appel d'offres.
+c) Reformuler le besoin en problème mesurable et envisager des solutions sans IA.
 d) Rédiger les réponses du chatbot.
 
 **Q9.** (une seule réponse) Le temps gagné grâce à une solution est un bénéfice réel lorsque :
@@ -305,19 +305,19 @@ d) laisser l'outil d'IA décider seul.
 
 **Q1 : b.** Il précise l'acteur, le processus, le résultat et l'indicateur.
 
-**Q2 : b.** C'est une règle stable : un rappel programmé suffit.
+**Q2 : a.** C'est une règle stable : un rappel programmé suffit.
 
 **Q3 : a, b, c, d.** Tous ces postes doivent être estimés sur la durée.
 
-**Q4 : b.** Il faut préparer ses conditions (données, compétences) avant de le lancer.
+**Q4 : c.** Il faut préparer ses conditions (données, compétences) avant de le lancer.
 
 **Q5 : b.** 4 × (0,25 + 0,20 + 0,15 + 0,15 + 0,10 + 0,15) = 4 × 1 = 4,0.
 
 **Q6 : a, b, d.** Il n'est pas techniquement impossible (c) ; il est écarté pour des raisons de risque et d'éthique.
 
-**Q7 : b.** Les bénéfices qualitatifs sont réels mais doivent être explicités et mesurés. Gonfler les gains (c) serait malhonnête.
+**Q7 : d.** Les bénéfices qualitatifs sont réels mais doivent être explicités et mesurés. Gonfler les gains (b) serait malhonnête.
 
-**Q8 : b.** On part toujours du problème ; une solution simple peut suffire.
+**Q8 : c.** On part toujours du problème ; une solution simple peut suffire.
 
 **Q9 : b.** Le temps gagné n'a de valeur que s'il est réinvesti.
 

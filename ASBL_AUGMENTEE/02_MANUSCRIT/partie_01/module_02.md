@@ -249,8 +249,8 @@ d) sont obligatoirement des images.
 
 **Q2.** (une seule réponse) La tâche de base d'un grand modèle de langage est de :
 
-a) rechercher la bonne réponse dans une base de données de faits.
-b) prédire le fragment de texte le plus probable qui suit un texte donné.
+a) prédire le fragment de texte le plus probable qui suit un texte donné.
+b) rechercher la bonne réponse dans une base de données de faits.
 c) traduire uniquement.
 d) exécuter des calculs exacts.
 
@@ -264,8 +264,8 @@ d) Ils peuvent commettre des erreurs de calcul.
 **Q4.** (une seule réponse) L'OCR sert à :
 
 a) prédire un risque de fraude.
-b) transformer l'image d'un texte en texte exploitable.
-c) traduire une réunion en temps réel.
+b) traduire une réunion en temps réel.
+c) transformer l'image d'un texte en texte exploitable.
 d) reconnaître les visages des bénéficiaires.
 
 **Q5.** (une seule réponse) La RPA :
@@ -277,8 +277,8 @@ d) remplace les logiciels comptables.
 
 **Q6.** (une seule réponse) Le principe du RAG consiste à :
 
-a) réentraîner le modèle chaque nuit avec les documents de l'organisation.
-b) rechercher les passages pertinents dans une base documentaire et les fournir au modèle avec la question.
+a) rechercher les passages pertinents dans une base documentaire et les fournir au modèle avec la question.
+b) réentraîner le modèle chaque nuit avec les documents de l'organisation.
 c) interdire au modèle de répondre.
 d) remplacer le modèle par un moteur de recherche.
 
@@ -292,8 +292,8 @@ d) Des réponses fondées sur les documents propres à l'organisation.
 **Q8.** (mise en situation — une seule réponse) Un assistant cite « l'article 14 de votre manuel de procédures » alors que vous ne lui avez fourni aucun document. Il s'agit très probablement :
 
 a) d'une preuve qu'il a accès à vos serveurs.
-b) d'une hallucination.
-c) d'une information fiable.
+b) d'une information fiable.
+c) d'une hallucination.
 d) d'une injection de prompt.
 
 **Q9.** (mise en situation — une seule réponse) Vous envisagez un agent IA qui lirait les courriels entrants et paierait automatiquement les factures reçues. La recommandation principale est :
@@ -314,19 +314,19 @@ d) Croire la réponse si elle est formulée avec assurance.
 
 **Q1 : b.** L'étiquette est la bonne réponse associée à chaque exemple. L'absence d'étiquette caractérise l'apprentissage non supervisé.
 
-**Q2 : b.** C'est la tâche de pré-entraînement. Le modèle ne consulte pas une base de faits (a) et n'est pas fiable pour les calculs exacts (d).
+**Q2 : a.** C'est la tâche de pré-entraînement. Le modèle ne consulte pas une base de faits (b) et n'est pas fiable pour les calculs exacts (d).
 
 **Q3 : a, b, d.** Les réponses varient d'une fois sur l'autre (c est faux).
 
-**Q4 : b.** L'OCR lit le texte d'une image. La reconnaissance faciale (d) est une autre technologie, à proscrire sauf justification exceptionnelle et cadre légal strict.
+**Q4 : c.** L'OCR lit le texte d'une image. La reconnaissance faciale (d) est une autre technologie, à proscrire sauf justification exceptionnelle et cadre légal strict.
 
 **Q5 : b.** La RPA applique des règles fixes ; elle n'apprend pas (c) et n'est pas générative (a).
 
-**Q6 : b.** Le RAG recherche puis génère. Il n'implique pas de réentraînement (a).
+**Q6 : a.** Le RAG recherche puis génère. Il n'implique pas de réentraînement (b).
 
 **Q7 : a, b, d.** Aucune technique ne garantit l'exactitude absolue ; la qualité dépend de la base documentaire (c est faux).
 
-**Q8 : b.** Sans document fourni ni connexion à vos fichiers, l'outil ne peut pas connaître votre manuel : il produit une référence plausible mais inventée.
+**Q8 : c.** Sans document fourni ni connexion à vos fichiers, l'outil ne peut pas connaître votre manuel : il produit une référence plausible mais inventée.
 
 **Q9 : b.** Un paiement est une action irréversible : il exige une validation humaine, et l'agent ne doit disposer que des droits strictement nécessaires. Des courriels malveillants pourraient contenir des instructions piégées (injection de prompt) ou de fausses factures.
 

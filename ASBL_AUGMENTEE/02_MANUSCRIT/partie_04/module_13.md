@@ -338,17 +338,17 @@ Couverture complète de la population ; priorisation documentée ; trois constat
 
 **Q1.** (une seule réponse) Les *Global Internal Audit Standards* de l'IIA sont en vigueur depuis :
 
-a) le 1er janvier 2013.
-b) le 9 janvier 2025.
+a) le 9 janvier 2025.
+b) le 1er janvier 2013.
 c) le 1er août 2024.
 d) le 18 décembre 2023.
 
 **Q2.** (une seule réponse) Un faux positif est :
 
 a) une fraude non détectée.
-b) une opération signalée qui se révèle normale après examen.
-c) un test qui n'a rien trouvé.
-d) une erreur de saisie.
+b) un test qui n'a rien trouvé.
+c) une erreur de saisie.
+d) une opération signalée qui se révèle normale après examen.
 
 **Q3.** (une ou plusieurs réponses) Quels tests visent un risque de fournisseur fictif ?
 
@@ -360,14 +360,14 @@ d) Date de week-end uniquement.
 **Q4.** (une seule réponse) Dans le cas du RCE, combien d'opérations ont été signalées par au moins un test ?
 
 a) 8
-b) 12
-c) 22
+b) 22
+c) 12
 d) 40
 
 **Q5.** (une seule réponse) Le fractionnement consiste à :
 
-a) payer une facture en plusieurs fois selon le contrat.
-b) découper un achat en plusieurs dépenses sous le seuil pour contourner une règle.
+a) découper un achat en plusieurs dépenses sous le seuil pour contourner une règle.
+b) payer une facture en plusieurs fois selon le contrat.
 c) répartir une dépense entre plusieurs projets.
 d) arrondir les montants.
 
@@ -381,8 +381,8 @@ d) le nom de la personne fautive.
 **Q7.** (mise en situation — une seule réponse) Deux dépenses de 5 500 UM au total, sans pièce, auprès d'un fournisseur absent de la base, approuvées par le demandeur. Que fait l'auditrice ?
 
 a) Elle conclut à une fraude dans son rapport.
-b) Elle applique la politique de lutte contre la fraude : information confidentielle des personnes habilitées, préservation des preuves, pas de conclusion hâtive.
-c) Elle interroge immédiatement le demandeur devant l'équipe.
+b) Elle interroge immédiatement le demandeur devant l'équipe.
+c) Elle applique la politique de lutte contre la fraude : information confidentielle des personnes habilitées, préservation des preuves, pas de conclusion hâtive.
 d) Elle ignore l'alerte faute de preuve.
 
 **Q8.** (mise en situation — une seule réponse) Le test « week-end » signale 12 opérations, presque toutes liées à des activités de terrain normales. Que faites-vous ?
@@ -394,8 +394,8 @@ d) Vous supprimez toutes les opérations du week-end.
 
 **Q9.** (une seule réponse) Avant d'exécuter des tests, il faut vérifier :
 
-a) la couleur du fichier.
-b) l'exhaustivité de l'extraction (total = grand livre).
+a) l'exhaustivité de l'extraction (total = grand livre).
+b) la couleur du fichier.
 c) le nombre de colonnes.
 d) le nom de l'outil d'IA.
 
@@ -408,23 +408,23 @@ d) conclure sur la culpabilité d'une personne.
 
 ## 13.14 Corrigé détaillé — Module 13
 
-**Q1 : b.** Publiées le 9 janvier 2024, elles sont en vigueur depuis le 9 janvier 2025.
+**Q1 : a.** Publiées le 9 janvier 2024, elles sont en vigueur depuis le 9 janvier 2025.
 
-**Q2 : b.** D'où l'importance de la priorisation et de l'examen.
+**Q2 : d.** D'où l'importance de la priorisation et de l'examen.
 
 **Q3 : a, b, c.** La date de week-end seule (d) n'est pas un indicateur de fournisseur fictif.
 
-**Q4 : c.** 22 opérations sur 40, dont de nombreux faux positifs ; 8 ont été examinées en priorité.
+**Q4 : b.** 22 opérations sur 40, dont de nombreux faux positifs ; 8 ont été examinées en priorité.
 
-**Q5 : b.** C'est un contournement des seuils d'autorisation ou de mise en concurrence.
+**Q5 : a.** C'est un contournement des seuils d'autorisation ou de mise en concurrence.
 
 **Q6 : a, b, c.** Le constat porte sur des faits et des processus, pas sur la désignation de coupables.
 
-**Q7 : b.** Les indices de fraude exigent une procédure rigoureuse et confidentielle.
+**Q7 : c.** Les indices de fraude exigent une procédure rigoureuse et confidentielle.
 
 **Q8 : b.** Un test peu discriminant use l'attention et doit être amélioré.
 
-**Q9 : b.** Sans exhaustivité, la couverture « 100 % » est illusoire.
+**Q9 : a.** Sans exhaustivité, la couverture « 100 % » est illusoire.
 
 **Q10 : a, b, c.** La conclusion (d) relève de l'auditeur et des instances habilitées.
 

@@ -8,7 +8,7 @@ ASBL AUGMENTÉE
 ::: {.pagetitre}
 **Verdi Imbole**
 
-# ASBL AUGMENTÉE {.unnumbered .unlisted}
+[ASBL AUGMENTÉE]{.titrelivre}
 
 **Comment implémenter l'IA dans vos processus**
 
@@ -336,3 +336,6 @@ Il a été écrit pour trois profils de lecteurs à la fois : **ceux qui découv
 **Traitement du langage naturel** — Domaine de l'IA consacré à la compréhension et à la production du langage humain.
 
 **Workflow** — Enchaînement d'étapes d'un processus, avec ses acteurs, ses règles de passage et ses validations.
+
+::: tdm
+:::

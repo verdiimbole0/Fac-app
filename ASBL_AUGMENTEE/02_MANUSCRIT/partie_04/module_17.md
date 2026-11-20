@@ -223,8 +223,8 @@ Une communication régulière, authentique, exacte, accessible, et cohérente av
 
 **Q1.** (une seule réponse) La charte éditoriale sert principalement à :
 
-a) choisir les couleurs du logo.
-b) fixer le ton, le vocabulaire et la manière de représenter les personnes.
+a) fixer le ton, le vocabulaire et la manière de représenter les personnes.
+b) choisir les couleurs du logo.
 c) programmer les publications.
 d) mesurer l'engagement.
 
@@ -238,8 +238,8 @@ d) des résultats inventés pour équilibrer les semaines creuses.
 **Q3.** (une seule réponse) Une image générée montrant des enfants dans un village :
 
 a) peut être présentée comme une photo d'activité.
-b) ne doit pas être présentée comme réelle ; mieux vaut des dessins identifiables ou des photos réelles avec consentement.
-c) est toujours interdite par la loi.
+b) est toujours interdite par la loi.
+c) ne doit pas être présentée comme réelle ; mieux vaut des dessins identifiables ou des photos réelles avec consentement.
 d) remplace avantageusement les consentements.
 
 **Q4.** (une seule réponse) La version « facile à lire » d'un texte ajoute « les enfants tombent moins malades », absent du texte source. Que faites-vous ?
@@ -259,15 +259,15 @@ d) présumé si la personne sourit sur la photo.
 **Q6.** (une seule réponse) Un argumentaire de plaidoyer doit reposer sur :
 
 a) des statistiques générées par l'IA.
-b) des preuves sourcées et des propositions précises.
-c) des émotions uniquement.
-d) des rumeurs.
+b) des émotions uniquement.
+c) des rumeurs.
+d) des preuves sourcées et des propositions précises.
 
 **Q7.** (mise en situation — une seule réponse) Un donateur vous reproche des messages « interchangeables ». Votre première action ?
 
 a) Publier davantage.
-b) Revenir à des contenus fondés sur des faits propres à l'organisation et fournir la charte à l'outil.
-c) Changer d'outil d'IA.
+b) Changer d'outil d'IA.
+c) Revenir à des contenus fondés sur des faits propres à l'organisation et fournir la charte à l'outil.
 d) Supprimer les réseaux sociaux.
 
 **Q8.** (une seule réponse) Les règles WCAG 2.2 concernent :
@@ -287,31 +287,31 @@ d) texte intégralement dans des images.
 **Q10.** (mise en situation — une seule réponse) Un partenaire demande d'utiliser vos photos de bénéficiaires dans sa campagne. Que vérifiez-vous d'abord ?
 
 a) La résolution des photos.
-b) Que les consentements couvrent cet usage par un tiers.
-c) La couleur de sa charte.
-d) Rien, les photos vous appartiennent.
+b) La couleur de sa charte.
+c) Rien, les photos vous appartiennent.
+d) Que les consentements couvrent cet usage par un tiers.
 
 ## 17.14 Corrigé détaillé — Module 17
 
-**Q1 : b.** Elle fixe la voix et les règles de représentation.
+**Q1 : a.** Elle fixe la voix et les règles de représentation.
 
 **Q2 : a, b, c.** Inventer des résultats (d) est exclu.
 
-**Q3 : b.** Présenter une image générée comme réelle est trompeur.
+**Q3 : c.** Présenter une image générée comme réelle est trompeur.
 
 **Q4 : b.** Un glissement vers l'impact non prouvé est une erreur factuelle.
 
 **Q5 : a, b, c.** Le consentement ne se présume pas (d).
 
-**Q6 : b.** Les preuves sourcées fondent la crédibilité.
+**Q6 : d.** Les preuves sourcées fondent la crédibilité.
 
-**Q7 : b.** La spécificité vient des faits et de la voix propres à l'organisation.
+**Q7 : c.** La spécificité vient des faits et de la voix propres à l'organisation.
 
 **Q8 : b.** Ce sont des règles d'accessibilité du W3C.
 
 **Q9 : a, b, c.** Le texte dans les images (d) est inaccessible aux lecteurs d'écran.
 
-**Q10 : b.** Le consentement est donné pour des usages précis.
+**Q10 : d.** Le consentement est donné pour des usages précis.
 
 **Barème.** 2 points par question (tout ou rien pour les réponses multiples). Total sur 20. **Niveau de maîtrise :** 0–9 à consolider · 10–13 en progression · 14–17 maîtrise opérationnelle · 18–20 maîtrise avancée.
 

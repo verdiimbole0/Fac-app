@@ -236,17 +236,17 @@ Un rapport de diagnostic de 5 à 10 pages comprenant : carte « tel quel », arb
 
 **Q1.** (une seule réponse) « Les rapports financiers arrivent en retard » est :
 
-a) une cause profonde.
-b) un symptôme.
+a) un symptôme.
+b) une cause profonde.
 c) une solution.
 d) un indicateur de performance.
 
 **Q2.** (une seule réponse) La carte « tel quel » doit décrire :
 
 a) le processus prévu par le manuel de procédures.
-b) le processus tel qu'il se déroule réellement.
-c) le processus idéal.
-d) le processus du principal bailleur.
+b) le processus idéal.
+c) le processus du principal bailleur.
+d) le processus tel qu'il se déroule réellement.
 
 **Q3.** (une ou plusieurs réponses) Quelles sources de preuves combine un bon diagnostic ?
 
@@ -272,15 +272,15 @@ d) Impliquant un jugement éthique complexe à chaque occurrence.
 **Q6.** (une seule réponse) Dans l'exemple d'Horizons Partagés, la cause profonde principale des retards était :
 
 a) l'absence d'IA.
-b) l'absence de délégation de signature formalisée.
-c) la lenteur d'internet.
-d) le nombre de bailleurs.
+b) la lenteur d'internet.
+c) le nombre de bailleurs.
+d) l'absence de délégation de signature formalisée.
 
 **Q7.** (mise en situation — une seule réponse) Au bureau de terrain, la même personne commande, réceptionne et paie les fournitures. Quelle composante du contrôle interne est principalement concernée ?
 
 a) Pilotage.
-b) Activités de contrôle (séparation des tâches).
-c) Information et communication.
+b) Information et communication.
+c) Activités de contrôle (séparation des tâches).
 d) Aucune.
 
 **Q8.** (mise en situation — une seule réponse) Deux entretiens décrivent différemment la même étape. Que faites-vous ?
@@ -292,8 +292,8 @@ d) Supprimer l'étape de la carte.
 
 **Q9.** (une seule réponse) Pourquoi mesurer la situation de départ ?
 
-a) Pour sanctionner les retards.
-b) Pour pouvoir démontrer l'effet des améliorations.
+a) Pour pouvoir démontrer l'effet des améliorations.
+b) Pour sanctionner les retards.
 c) Parce que le bailleur l'exige toujours.
 d) Ce n'est pas nécessaire.
 
@@ -306,9 +306,9 @@ d) ajouter les coordonnées des personnes interrogées.
 
 ## 5.14 Corrigé détaillé — Module 5
 
-**Q1 : b.** C'est la manifestation visible ; les causes sont à rechercher en amont.
+**Q1 : a.** C'est la manifestation visible ; les causes sont à rechercher en amont.
 
-**Q2 : b.** La carte doit refléter la pratique réelle, souvent différente de la procédure écrite.
+**Q2 : d.** La carte doit refléter la pratique réelle, souvent différente de la procédure écrite.
 
 **Q3 : a, b, c.** Les impressions non vérifiées (d) ne constituent pas des preuves.
 
@@ -316,13 +316,13 @@ d) ajouter les coordonnées des personnes interrogées.
 
 **Q5 : a, b, c.** Une tâche exigeant un jugement éthique complexe (d) est mal adaptée à l'automatisation.
 
-**Q6 : b.** La cause était organisationnelle ; un logiciel seul ne l'aurait pas résolue.
+**Q6 : d.** La cause était organisationnelle ; un logiciel seul ne l'aurait pas résolue.
 
-**Q7 : b.** Le cumul de fonctions incompatibles est une faiblesse des activités de contrôle.
+**Q7 : c.** Le cumul de fonctions incompatibles est une faiblesse des activités de contrôle.
 
 **Q8 : b.** Les faits priment : on vérifie par l'observation d'une transaction réelle.
 
-**Q9 : b.** Sans mesure initiale, impossible de prouver un progrès.
+**Q9 : a.** Sans mesure initiale, impossible de prouver un progrès.
 
 **Q10 : a, b, c.** Ajouter les coordonnées (d) contredit le principe de minimisation des données.
 

@@ -253,8 +253,8 @@ Une solution testée, pilotée, décidée, déployée, documentée et inscrite a
 **Q1.** (une seule réponse) Les deux portes de décision du cycle se situent :
 
 a) au début et à la fin du projet.
-b) après le cadrage et après le pilote.
-c) après la formation et après la documentation.
+b) après la formation et après la documentation.
+c) après le cadrage et après le pilote.
 d) avant le diagnostic et avant les tests.
 
 **Q2.** (une seule réponse) Un critère d'acceptation doit être :
@@ -274,15 +274,15 @@ d) uniquement des questions faciles.
 **Q4.** (une seule réponse) Face à une question hors périmètre, le comportement attendu de l'assistant est :
 
 a) inventer une réponse plausible.
-b) indiquer que l'information est absente et proposer une orientation.
-c) répondre à partir de connaissances générales.
-d) ne rien répondre.
+b) répondre à partir de connaissances générales.
+c) ne rien répondre.
+d) indiquer que l'information est absente et proposer une orientation.
 
 **Q5.** (une seule réponse) Dans l'exemple, deux réponses incorrectes provenaient :
 
 a) d'un défaut du modèle impossible à corriger.
-b) d'une annexe scannée illisible dans la base documentaire.
-c) d'un utilisateur malveillant.
+b) d'un utilisateur malveillant.
+c) d'une annexe scannée illisible dans la base documentaire.
 d) d'un manque de budget.
 
 **Q6.** (une ou plusieurs réponses) La documentation d'une solution comprend :
@@ -294,23 +294,23 @@ d) les mots de passe des utilisateurs.
 
 **Q7.** (mise en situation — une seule réponse) Le pilote montre 82 % de réponses correctes et sourcées pour un critère fixé à 90 %. Que faites-vous ?
 
-a) Déployer quand même.
-b) Analyser les erreurs, corriger (base, consignes), retester ; décider à la porte 2 sur la base des résultats.
+a) Analyser les erreurs, corriger (base, consignes), retester ; décider à la porte 2 sur la base des résultats.
+b) Déployer quand même.
 c) Abaisser le critère à 80 %.
 d) Abandonner sans analyse.
 
 **Q8.** (mise en situation — une seule réponse) Un utilisateur demande à l'assistant : « Ma dépense du 3 mars a-t-elle été approuvée ? ». Comportement attendu ?
 
 a) Répondre « oui » pour rassurer.
-b) Orienter vers le service financier (cas individuel).
-c) Chercher dans les courriels.
-d) Inventer une procédure.
+b) Chercher dans les courriels.
+c) Inventer une procédure.
+d) Orienter vers le service financier (cas individuel).
 
 **Q9.** (une seule réponse) Le processus cible décrit :
 
 a) le fonctionnement actuel.
-b) le fonctionnement après la mise en place, avec les rôles de chacun.
-c) le contrat du fournisseur.
+b) le contrat du fournisseur.
+c) le fonctionnement après la mise en place, avec les rôles de chacun.
 d) le budget.
 
 **Q10.** (une ou plusieurs réponses) Pendant le pilote, on mesure :
@@ -322,23 +322,23 @@ d) le nombre de couleurs de l'interface.
 
 ## 19.14 Corrigé détaillé — Module 19
 
-**Q1 : b.** Après le cadrage (avant d'investir) et après le pilote (avant de généraliser).
+**Q1 : c.** Après le cadrage (avant d'investir) et après le pilote (avant de généraliser).
 
 **Q2 : b.** Fixé à l'avance, il évite d'ajuster les exigences aux résultats.
 
 **Q3 : a, b, c.** Des questions uniquement faciles (d) surestimeraient la qualité.
 
-**Q4 : b.** Le refus correct est un comportement essentiel.
+**Q4 : d.** Le refus correct est un comportement essentiel.
 
-**Q5 : b.** La qualité de la base conditionne la qualité des réponses.
+**Q5 : c.** La qualité de la base conditionne la qualité des réponses.
 
 **Q6 : a, b, c.** Les mots de passe (d) ne figurent jamais dans la documentation.
 
-**Q7 : b.** On corrige et on reteste ; on ne baisse pas le critère pour le faire coïncider avec le résultat (c).
+**Q7 : a.** On corrige et on reteste ; on ne baisse pas le critère pour le faire coïncider avec le résultat (c).
 
-**Q8 : b.** Les cas individuels sont orientés vers le service compétent.
+**Q8 : d.** Les cas individuels sont orientés vers le service compétent.
 
-**Q9 : b.** Il décrit la situation visée.
+**Q9 : c.** Il décrit la situation visée.
 
 **Q10 : a, b, c.** L'interface (d) n'est pas un indicateur de valeur.
 

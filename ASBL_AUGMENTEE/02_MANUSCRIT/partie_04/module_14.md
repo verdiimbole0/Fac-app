@@ -294,9 +294,9 @@ d) Préparer les modèles de messages aux candidats.
 **Q3.** (une seule réponse) Un entretien structuré se caractérise par :
 
 a) des questions improvisées selon le candidat.
-b) des questions et des critères fixés à l'avance, identiques pour tous.
-c) une durée libre.
-d) l'absence de notation.
+b) une durée libre.
+c) l'absence de notation.
+d) des questions et des critères fixés à l'avance, identiques pour tous.
 
 **Q4.** (une ou plusieurs réponses) Questions à éviter en entretien :
 
@@ -314,23 +314,23 @@ d) ne sont pas des données personnelles.
 
 **Q6.** (une seule réponse) Un assistant RH interne doit :
 
-a) accéder aux dossiers individuels pour répondre précisément.
-b) répondre à partir des documents validés et orienter vers une personne pour les situations particulières.
+a) répondre à partir des documents validés et orienter vers une personne pour les situations particulières.
+b) accéder aux dossiers individuels pour répondre précisément.
 c) traiter les signalements de harcèlement.
 d) décider des congés.
 
 **Q7.** (mise en situation — une seule réponse) Un prestataire propose un classement automatique des 260 candidatures. Votre réponse ?
 
 a) Accepter pour gagner du temps.
-b) Refuser le classement automatique ; éventuellement utiliser un outil pour organiser l'information factuelle, l'examen restant humain selon la grille.
-c) Accepter si le prestataire garantit l'absence de biais.
-d) Ne retenir que les 20 premiers.
+b) Accepter si le prestataire garantit l'absence de biais.
+c) Ne retenir que les 20 premiers.
+d) Refuser le classement automatique ; éventuellement utiliser un outil pour organiser l'information factuelle, l'examen restant humain selon la grille.
 
 **Q8.** (mise en situation — une seule réponse) Pour planifier les visites, le coordinateur veut coller la liste des personnes âgées avec adresses et pathologies dans un assistant. Que recommandez-vous ?
 
 a) Le faire si l'outil est payant.
-b) Utiliser des codes et seulement les informations nécessaires (zones, créneaux, compétences), sans pathologies.
-c) Le faire puis supprimer la conversation.
+b) Le faire puis supprimer la conversation.
+c) Utiliser des codes et seulement les informations nécessaires (zones, créneaux, compétences), sans pathologies.
 d) Demander l'accord oral des bénévoles.
 
 **Q9.** (une seule réponse) La revue d'inclusion d'une annonce vise à :
@@ -353,17 +353,17 @@ d) conservation des mots de passe personnels du partant.
 
 **Q2 : a, b, d.** L'élimination automatique (c) est exclue.
 
-**Q3 : b.** Questions et critères identiques permettent la comparaison.
+**Q3 : d.** Questions et critères identiques permettent la comparaison.
 
 **Q4 : a, b, d.** L'expérience d'analyse de données (c) est liée au poste.
 
 **Q5 : b.** Données de santé : rouge.
 
-**Q6 : b.** L'assistant informe ; les situations particulières, les conflits et le harcèlement relèvent de personnes formées.
+**Q6 : a.** L'assistant informe ; les situations particulières, les conflits et le harcèlement relèvent de personnes formées.
 
-**Q7 : b.** Un classement automatique expose à la discrimination et, dans plusieurs juridictions, à des obligations légales renforcées.
+**Q7 : d.** Un classement automatique expose à la discrimination et, dans plusieurs juridictions, à des obligations légales renforcées.
 
-**Q8 : b.** Minimisation et pseudonymisation ; les pathologies sont inutiles pour la planification.
+**Q8 : c.** Minimisation et pseudonymisation ; les pathologies sont inutiles pour la planification.
 
 **Q9 : b.** C'est l'objectif de la revue (fiche P8.2).
 

@@ -349,15 +349,15 @@ Une politique d'utilisation de l'IA (annexe 10), une classification des données
 **Q1.** (une seule réponse) La Recommandation de l'UNESCO sur l'éthique de l'IA (2021) est :
 
 a) une loi directement applicable aux ASBL dans tous les pays.
-b) une recommandation adoptée par les États membres, non contraignante pour les organisations.
-c) une norme certifiable.
-d) un contrat type.
+b) une norme certifiable.
+c) un contrat type.
+d) une recommandation adoptée par les États membres, non contraignante pour les organisations.
 
 **Q2.** (une seule réponse) ISO/IEC 42001:2023 est :
 
 a) une loi européenne.
-b) une norme volontaire de système de management de l'IA, certifiable.
-c) une recommandation de l'OCDE.
+b) une recommandation de l'OCDE.
+c) une norme volontaire de système de management de l'IA, certifiable.
 d) un logiciel.
 
 **Q3.** (une ou plusieurs réponses) Lesquelles de ces données sont classées « rouge » ?
@@ -369,8 +369,8 @@ d) Un signalement d'abus.
 
 **Q4.** (une seule réponse) Le principe de minimisation signifie :
 
-a) réduire la taille des fichiers.
-b) ne traiter que les données strictement nécessaires à la finalité.
+a) ne traiter que les données strictement nécessaires à la finalité.
+b) réduire la taille des fichiers.
 c) minimiser le nombre d'outils.
 d) supprimer toutes les données chaque année.
 
@@ -384,8 +384,8 @@ d) irrévocable.
 **Q6.** (une seule réponse) Le « biais d'automatisation » désigne :
 
 a) une erreur de programmation.
-b) la tendance des humains à faire excessivement confiance aux résultats d'une machine.
-c) un biais dans les données d'entraînement.
+b) un biais dans les données d'entraînement.
+c) la tendance des humains à faire excessivement confiance aux résultats d'une machine.
 d) la lenteur des automatisations.
 
 **Q7.** (mise en situation — une seule réponse) Un message vocal imitant la voix du directeur demande au comptable un virement urgent. Que faire ?
@@ -397,17 +397,17 @@ d) Exécuter puis prévenir le directeur.
 
 **Q8.** (mise en situation — une seule réponse) Un partenaire propose un outil qui attribue un « score de vulnérabilité » à chaque ménage pour décider automatiquement de l'attribution de l'aide. Votre position ?
 
-a) Accepter, c'est plus objectif.
-b) Refuser toute décision automatique ; l'outil peut au mieux éclairer une décision humaine motivée, après examen des biais, de la base légale et avec un recours.
+a) Refuser toute décision automatique ; l'outil peut au mieux éclairer une décision humaine motivée, après examen des biais, de la base légale et avec un recours.
+b) Accepter, c'est plus objectif.
 c) Accepter si le score est expliqué en anglais.
 d) Accepter pour les ménages qui ne protestent pas.
 
 **Q9.** (une seule réponse) Une image générée par IA montrant des enfants souffrants pour une campagne de dons :
 
 a) est acceptable si elle est réaliste.
-b) pose des problèmes de dignité et de tromperie et est à proscrire.
-c) est acceptable si l'outil est payant.
-d) est obligatoire pour protéger les vrais enfants.
+b) est acceptable si l'outil est payant.
+c) est obligatoire pour protéger les vrais enfants.
+d) pose des problèmes de dignité et de tromperie et est à proscrire.
 
 **Q10.** (une ou plusieurs réponses) Avant d'utiliser un outil en ligne avec des données internes, il faut vérifier :
 
@@ -418,23 +418,23 @@ d) le nombre d'abonnés de l'outil sur les réseaux sociaux.
 
 ## 8.14 Corrigé détaillé — Module 8
 
-**Q1 : b.** C'est un instrument normatif adopté par les États, qui n'impose pas directement d'obligations juridiques aux organisations.
+**Q1 : d.** C'est un instrument normatif adopté par les États, qui n'impose pas directement d'obligations juridiques aux organisations.
 
-**Q2 : b.** Norme volontaire et certifiable de système de management.
+**Q2 : c.** Norme volontaire et certifiable de système de management.
 
 **Q3 : a, c, d.** Le rapport annuel publié est vert.
 
-**Q4 : b.** Ne traiter que ce qui est nécessaire.
+**Q4 : a.** Ne traiter que ce qui est nécessaire.
 
 **Q5 : a, b, c.** Le consentement doit au contraire pouvoir être retiré (d).
 
-**Q6 : b.** Il rend la supervision humaine illusoire si elle n'est pas organisée.
+**Q6 : c.** Il rend la supervision humaine illusoire si elle n'est pas organisée.
 
 **Q7 : b.** Les imitations de voix sont devenues accessibles ; seule une procédure de vérification indépendante protège. Un outil d'IA (c) n'offre pas de garantie fiable.
 
-**Q8 : b.** L'attribution d'une aide est une décision sur des personnes vulnérables : elle reste humaine, motivée et contestable.
+**Q8 : a.** L'attribution d'une aide est une décision sur des personnes vulnérables : elle reste humaine, motivée et contestable.
 
-**Q9 : b.** Elle porte atteinte à la dignité et trompe les donateurs.
+**Q9 : d.** Elle porte atteinte à la dignité et trompe les donateurs.
 
 **Q10 : a, b, c.** La popularité (d) n'est pas un critère de sécurité.
 

@@ -393,9 +393,9 @@ Pièces centralisées et liées aux écritures ; propositions d'imputation contr
 **Q1.** (une seule réponse) Dans le traitement assisté d'une facture, le rôle de l'IA est principalement de :
 
 a) valider l'écriture comptable.
-b) proposer des champs, des imputations et signaler des anomalies.
-c) approuver le paiement.
-d) signer le rapprochement bancaire.
+b) approuver le paiement.
+c) signer le rapprochement bancaire.
+d) proposer des champs, des imputations et signaler des anomalies.
 
 **Q2.** (une ou plusieurs réponses) Quelles étapes relèvent impérativement d'une décision humaine ?
 
@@ -413,17 +413,17 @@ d) trois devis.
 
 **Q4.** (une seule réponse) Une demande de modification des coordonnées bancaires d'un fournisseur reçue par courriel doit :
 
-a) être appliquée immédiatement par l'outil.
-b) être bloquée et vérifiée par un second canal par le responsable financier.
+a) être bloquée et vérifiée par un second canal par le responsable financier.
+b) être appliquée immédiatement par l'outil.
 c) être ignorée.
 d) être traitée par l'IA.
 
 **Q5.** (une seule réponse) Dans l'exemple du module, le solde rapproché au 31 mars est :
 
 a) 46 980
-b) 47 550
-c) 48 250
-d) 47 515
+b) 48 250
+c) 47 515
+d) 47 550
 
 **Q6.** (une ou plusieurs réponses) Les fonds affectés :
 
@@ -441,17 +441,17 @@ d) Désactiver l'alerte.
 
 **Q8.** (mise en situation — une seule réponse) Une ligne « Déplacements » atteint 118 % de son budget à 75 % de la période. Première action ?
 
-a) Réimputer discrètement l'excédent sur une autre ligne.
-b) Analyser l'écart, vérifier la règle de flexibilité de la convention et soumettre une décision à la direction.
+a) Analyser l'écart, vérifier la règle de flexibilité de la convention et soumettre une décision à la direction.
+b) Réimputer discrètement l'excédent sur une autre ligne.
 c) Attendre la fin du projet.
 d) Supprimer des écritures.
 
 **Q9.** (une seule réponse) Concernant les référentiels comptables des ASBL :
 
 a) un plan comptable national unique s'applique dans tous les pays.
-b) les règles dépendent de la juridiction ; un référentiel international volontaire (INPAS) existe depuis 2025.
-c) les normes IFRS s'appliquent obligatoirement à toutes les ASBL.
-d) il n'existe aucune règle comptable pour les ASBL.
+b) les normes IFRS s'appliquent obligatoirement à toutes les ASBL.
+c) il n'existe aucune règle comptable pour les ASBL.
+d) les règles dépendent de la juridiction ; un référentiel international volontaire (INPAS) existe depuis 2025.
 
 **Q10.** (une ou plusieurs réponses) Indicateurs pertinents pour suivre l'automatisation du traitement des pièces :
 
@@ -462,23 +462,23 @@ d) nombre de logiciels installés.
 
 ## 12.14 Corrigé détaillé — Module 12
 
-**Q1 : b.** L'IA propose et signale ; elle ne valide ni n'approuve.
+**Q1 : d.** L'IA propose et signale ; elle ne valide ni n'approuve.
 
 **Q2 : a, b, c.** Le calcul du disponible (d) est réalisé par le logiciel, l'humain en tirant les conséquences.
 
 **Q3 : b.** Commande, livraison, facture : ce contrôle prévient les paiements de biens non commandés ou non reçus.
 
-**Q4 : b.** C'est un schéma de fraude fréquent ; la vérification par un second canal (appel au contact habituel connu) est indispensable.
+**Q4 : a.** C'est un schéma de fraude fréquent ; la vérification par un second canal (appel au contact habituel connu) est indispensable.
 
-**Q5 : b.** 48 250 − 1 500 + 800 = 47 550, et 46 980 − 35 + 605 = 47 550.
+**Q5 : d.** 48 250 − 1 500 + 800 = 47 550, et 46 980 − 35 + 605 = 47 550.
 
 **Q6 : a, c, d.** Les fonds affectés ne couvrent pas n'importe quelle dépense (b).
 
 **Q7 : b.** On instruit avant de conclure ; dans l'exemple, il s'agissait de deux commandes distinctes.
 
-**Q8 : b.** Le dépassement est analysé au regard de la convention ; une réimputation non autorisée (a) serait une irrégularité.
+**Q8 : a.** Le dépassement est analysé au regard de la convention ; une réimputation non autorisée (b) serait une irrégularité.
 
-**Q9 : b.** Les obligations sont nationales ; INPAS est volontaire sauf adoption ou exigence d'un bailleur.
+**Q9 : d.** Les obligations sont nationales ; INPAS est volontaire sauf adoption ou exigence d'un bailleur.
 
 **Q10 : a, b, c.** Le nombre de logiciels (d) ne mesure pas la performance.
 

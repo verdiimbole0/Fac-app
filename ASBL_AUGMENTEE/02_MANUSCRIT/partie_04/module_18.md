@@ -256,15 +256,15 @@ d) collecte un maximum de données personnelles.
 **Q3.** (une seule réponse) Les règles de détection automatique des cas sensibles doivent être réglées pour :
 
 a) minimiser le nombre d'alertes.
-b) sur-détecter : mieux vaut transmettre à tort que manquer un cas.
-c) ne détecter que les mots grossiers.
-d) remplacer le référent.
+b) ne détecter que les mots grossiers.
+c) remplacer le référent.
+d) sur-détecter : mieux vaut transmettre à tort que manquer un cas.
 
 **Q4.** (une seule réponse) Un assistant communautaire automatisé peut :
 
 a) donner des conseils médicaux individuels.
-b) répondre à des questions fréquentes non sensibles, avec accès à un humain.
-c) décider de l'éligibilité d'un ménage.
+b) décider de l'éligibilité d'un ménage.
+c) répondre à des questions fréquentes non sensibles, avec accès à un humain.
 d) traiter les plaintes pour abus.
 
 **Q5.** (une ou plusieurs réponses) Pour sécuriser les données sur les téléphones de terrain :
@@ -276,29 +276,29 @@ d) partage d'un même code de déverrouillage entre tous les agents.
 
 **Q6.** (une seule réponse) La traduction automatique d'une langue peu dotée :
 
-a) est toujours fiable.
-b) peut être de qualité faible et doit être vérifiée par un locuteur pour toute information importante.
+a) peut être de qualité faible et doit être vérifiée par un locuteur pour toute information importante.
+b) est toujours fiable.
 c) est interdite.
 d) remplace les agents bilingues.
 
 **Q7.** (mise en situation — une seule réponse) Un bailleur suggère de collecter les empreintes digitales de tous les bénéficiaires « pour éviter les doublons ». Votre réponse ?
 
 a) Accepter, c'est plus moderne.
-b) Analyser la nécessité, la base légale, les risques et les alternatives ; les données biométriques sont très sensibles.
-c) Accepter si les données sont stockées dans le cloud.
-d) Refuser sans discussion.
+b) Accepter si les données sont stockées dans le cloud.
+c) Refuser sans discussion.
+d) Analyser la nécessité, la base légale, les risques et les alternatives ; les données biométriques sont très sensibles.
 
 **Q8.** (mise en situation — une seule réponse) La synthèse des retours montre que 17 personnes âgées signalent l'éloignement d'un point de distribution. Que faites-vous ?
 
 a) Rien, c'est une minorité.
-b) Examiner un ajustement (point mobile, horaires dédiés) et en rendre compte aux communautés.
-c) Supprimer ces retours.
+b) Supprimer ces retours.
+c) Examiner un ajustement (point mobile, horaires dédiés) et en rendre compte aux communautés.
 d) Demander à l'IA de décider.
 
 **Q9.** (une seule réponse) Dans un rapport de terrain, il faut distinguer :
 
-a) les faits observés, les propos rapportés et les interprétations.
-b) les bons et les mauvais bénéficiaires.
+a) les bons et les mauvais bénéficiaires.
+b) les faits observés, les propos rapportés et les interprétations.
 c) les retours en langue locale et en langue officielle uniquement.
 d) rien de particulier.
 
@@ -315,19 +315,19 @@ d) nombre de messages traités par l'IA sans relecture.
 
 **Q2 : a, b, c.** La minimisation exclut la collecte maximale (d).
 
-**Q3 : b.** Le coût d'un cas manqué est beaucoup plus élevé que celui d'une fausse alerte.
+**Q3 : d.** Le coût d'un cas manqué est beaucoup plus élevé que celui d'une fausse alerte.
 
-**Q4 : b.** Le périmètre est strictement limité.
+**Q4 : c.** Le périmètre est strictement limité.
 
 **Q5 : a, b, c.** Le partage d'un code (d) détruit la traçabilité et la sécurité.
 
-**Q6 : b.** La qualité varie fortement selon les langues.
+**Q6 : a.** La qualité varie fortement selon les langues.
 
-**Q7 : b.** Les données biométriques exigent une justification forte, une base légale, une analyse des risques et l'examen d'alternatives moins intrusives.
+**Q7 : d.** Les données biométriques exigent une justification forte, une base légale, une analyse des risques et l'examen d'alternatives moins intrusives.
 
-**Q8 : b.** Les tendances doivent conduire à des ajustements, communiqués aux communautés.
+**Q8 : c.** Les tendances doivent conduire à des ajustements, communiqués aux communautés.
 
-**Q9 : a.** Cette distinction rend le rapport fiable.
+**Q9 : b.** Cette distinction rend le rapport fiable.
 
 **Q10 : a, b, c.** L'absence de relecture (d) n'est pas un objectif.
 
