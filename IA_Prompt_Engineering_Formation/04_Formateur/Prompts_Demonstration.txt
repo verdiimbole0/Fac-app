@@ -1,0 +1,68 @@
+PROMPTS DE DÉMONSTRATION — Formation IA & Prompt Engineering
+================================================================
+
+Restez dans la même conversation du début à la fin de l'atelier.
+
+---- NOTES BRUTES (à coller après le prompt de l'étape 2 ou à la place de [COLLER LES NOTES]) ----
+Réunion 14/11 – lancement nouveau logiciel de facturation
+Présents : Sarah (DAF), Karim (IT), Julie (resp. service client), Marc (commercial)
+- Sarah : mise en service prévue le 6 janvier, pas plus tard (clôture annuelle)
+- Karim : migration des données clients pas finie, besoin de 2 semaines de tests -> risque si on garde le 6/01
+- Julie inquiète : équipe pas formée, risque d'appels clients
+- Décidé : formation équipe service client semaine du 8 décembre
+- Karim envoie le planning de migration vendredi
+- Marc : faut-il prévenir les 20 plus gros clients du nouveau format de facture ? -> pas tranché
+- Budget formation 3 500 € validé par Sarah
+- Prochaine réunion le 28/11
+
+---- ÉTAPE 2 : PREMIÈRE DEMANDE ----
+Fais un compte rendu de cette réunion :
+Réunion 14/11 – lancement nouveau logiciel de facturation
+Présents : Sarah (DAF), Karim (IT), Julie (resp. service client), Marc (commercial)
+- Sarah : mise en service prévue le 6 janvier, pas plus tard (clôture annuelle)
+- Karim : migration des données clients pas finie, besoin de 2 semaines de tests -> risque si on garde le 6/01
+- Julie inquiète : équipe pas formée, risque d'appels clients
+- Décidé : formation équipe service client semaine du 8 décembre
+- Karim envoie le planning de migration vendredi
+- Marc : faut-il prévenir les 20 plus gros clients du nouveau format de facture ? -> pas tranché
+- Budget formation 3 500 € validé par Sarah
+- Prochaine réunion le 28/11
+
+---- ÉTAPE 5 : PROMPT PILOTE ----
+[P] Agis comme un chef de projet rigoureux.
+[I] Voici mes notes brutes d'une réunion de lancement d'un nouveau logiciel de facturation : 
+Réunion 14/11 – lancement nouveau logiciel de facturation
+Présents : Sarah (DAF), Karim (IT), Julie (resp. service client), Marc (commercial)
+- Sarah : mise en service prévue le 6 janvier, pas plus tard (clôture annuelle)
+- Karim : migration des données clients pas finie, besoin de 2 semaines de tests -> risque si on garde le 6/01
+- Julie inquiète : équipe pas formée, risque d'appels clients
+- Décidé : formation équipe service client semaine du 8 décembre
+- Karim envoie le planning de migration vendredi
+- Marc : faut-il prévenir les 20 plus gros clients du nouveau format de facture ? -> pas tranché
+- Budget formation 3 500 € validé par Sarah
+- Prochaine réunion le 28/11
+[L] Produis un compte rendu structuré : 1) contexte en 2 lignes, 2) décisions prises, 3) tableau des actions (action / responsable / échéance), 4) points non tranchés, 5) risques identifiés.
+[O] Objectif : que chaque participant sache exactement ce qu'il doit faire.
+[T] Ton : factuel et concis.
+[E] N'invente rien : si un responsable ou une date manque, écris « À définir ». Signale toute contradiction.
+
+---- RELANCE : EMAIL DE SUIVI ----
+Rédige maintenant l'email de suivi à envoyer aux 4 participants : 120 mots maximum, objet clair, rappel des décisions et du tableau d'actions, et demande à chacun de confirmer ses actions avant le 21/11.
+
+---- ÉTAPE 8 : RELANCE DE CORRECTION ----
+Vérifie ton compte rendu ligne à ligne par rapport à mes notes : signale toute action, décision ou responsable qui n'y figure pas explicitement, puis corrige.
+
+---- CHAPITRE 3 (facultatif) ----
+[Prompt faible]
+Écris un email pour un client.
+
+[Prompt amélioré]
+Écris un email à un client pour m'excuser d'un retard de livraison de sa commande de fournitures de bureau.
+
+[Prompt professionnel (PILOTE)]
+[P] Agis comme un responsable de la relation client d'une PME.
+[I] Notre client, la société Alfa Conseil (contact : Mme Diallo), attend 40 cartons de papier commandés le 3 mars. La livraison prévue le 10 mars est décalée au 14 mars à cause d'une rupture chez notre transporteur.
+[L] Rédige un email de 120 à 150 mots avec un objet clair.
+[O] Objectif : conserver la confiance du client et lui proposer une solution.
+[T] Ton : professionnel, empathique, sans excès d'excuses.
+[E] Propose une livraison partielle de 10 cartons dès le 11 mars. N'invente aucune autre information.
