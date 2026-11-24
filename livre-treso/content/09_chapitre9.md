@@ -1,13 +1,13 @@
 @chapter 9|Anticiper les risques et gérer une crise de trésorerie|Risques et crise
 Lundi 30 mars, 16 heures. Le nouveau directeur du groupe scolaire Les Palmiers appelle Grâce : à partir d'avril, toutes les fournitures passeront par un appel d'offres annuel, déjà attribué à un concurrent. Les Palmiers représentent **24 % des ventes** de MAKAO. Il précise, gêné, que les factures en cours « seront réglées, mais l'économat est en pleine réorganisation ».
-Grâce ne dort pas cette nuit-là. Le lendemain matin, vous lui présentez trois chiffres : la trésorerie de fin juin dans trois scénarios. La panique laisse place à un plan. C'est tout l'enjeu de ce chapitre : transformer une mauvaise nouvelle en décisions chiffrées, rapidement.
+Le lendemain matin, vous présentez à Grâce la trésorerie de fin juin dans trois scénarios. La panique laisse place à un plan : c'est l'enjeu de ce chapitre, transformer une mauvaise nouvelle en décisions chiffrées.
 :::objectifs
 - Reconnaître les symptômes et les causes profondes d'une crise de trésorerie.
 - Construire des scénarios optimiste, réaliste et pessimiste et les simuler.
 - Élaborer un plan d'urgence et organiser la communication avec banques et fournisseurs.
 :::
 ## 9.1 Symptômes et causes profondes
-Les **symptômes** d'une crise se voient d'abord dans la trésorerie : point bas négatif répété, découvert utilisé en permanence, factures fournisseurs payées en retard, impôts et cotisations reportés, dirigeants qui « avancent » de l'argent chaque mois, tensions avec la banque. Mais les **causes profondes** sont ailleurs : dépendance à un client ou à un bailleur, marge insuffisante, croissance trop rapide, charges fixes trop lourdes, perte d'un marché, choc externe (change, réglementation, sécurité).
+Les **symptômes** se voient d'abord dans la trésorerie : point bas négatif répété, découvert permanent, fournisseurs payés en retard, impôts reportés, dirigeants qui « avancent » de l'argent chaque mois. Mais les **causes profondes** sont ailleurs : dépendance à un client ou à un bailleur, marge insuffisante, croissance trop rapide, charges fixes trop lourdes, perte d'un marché, choc externe (change, réglementation, sécurité).
 Chez MAKAO, la cause profonde est la **concentration** : un seul client pèse près d'un quart du chiffre d'affaires. Le risque était visible dès la balance âgée du chapitre 2, où les Palmiers représentaient 30 000 USD sur 126 000.
 :::retenir
 La norme ISO 31000:2018 (*Management du risque - Lignes directrices*) propose une démarche en boucle : identifier les risques, les analyser, les évaluer, les traiter, puis surveiller et revoir. Appliquée à la trésorerie, elle conduit à tenir une liste des risques majeurs avec, pour chacun, sa probabilité, son impact en dollars et la réponse prévue.
@@ -39,7 +39,6 @@ En crise, l'information circule avant la demande. Prévenez la banque **avant** 
 :::erreur
 - Attendre que la crise soit visible sur le relevé bancaire pour réagir.
 - Couper d'abord les dépenses qui préparent l'avenir (prospection, maintenance critique).
-- Cacher la situation à la banque jusqu'au dernier moment.
 :::
 :::retenir Synthèse du chapitre
 - Les symptômes d'une crise sont dans la trésorerie ; ses causes sont dans le modèle économique.
@@ -61,25 +60,25 @@ c) 24 000 USD
 d) 72 000 USD
 Q3. Pourquoi ne pas intégrer les ventes de prospection dans le scénario pessimiste ?
 a) Parce qu'elles sont certaines
-b) Par prudence : elles ne sont pas encore acquises
-c) Parce que la prospection est interdite en crise
+b) Par prudence : elles sont non acquises
+c) La prospection est interdite en crise
 d) Pour gonfler le besoin de financement
 Q4. Quelle mesure d'urgence est la moins appropriée ?
 a) Écouler une partie des stocks
 b) Reporter un investissement non urgent
-c) Suspendre le paiement des cotisations sociales sans accord
-d) Réduire les charges externes non essentielles
+c) Suspendre les cotisations sans accord
+d) Réduire les charges non essentielles
 Q5. Quand informer la banque d'une dégradation prévisible ?
 a) Quand le compte est déjà débiteur
-b) Dès que le prévisionnel montre le risque, avec un plan chiffré
+b) Dès que la prévision montre le risque
 c) Jamais
 d) À la clôture annuelle
 ## Corrigé du QCM
-**Q1 : b.** La concentration client est une caractéristique du modèle économique qui produit les symptômes a, c et d.
+**Q1 : b.** La concentration client, trait du modèle économique, produit les symptômes a, c et d.
 **Q2 : a.** Ventes perdues : 24 000 USD ; marge perdue : 24 000 × (1 - 0,72) = 6 720 USD. Les achats diminuent aussi, mais la marge disparaît, et les charges fixes restent.
-**Q3 : b.** Une hypothèse non acquise n'entre pas dans un scénario prudent ; elle est suivie à part.
-**Q4 : c.** C'est une obligation légale ; son report non négocié expose à des sanctions.
-**Q5 : b.** Une banque informée tôt, avec un plan, peut accompagner ; une banque mise devant le fait accompli réduit son exposition.
-:::action
-Listez les **trois risques** qui pourraient le plus affecter votre trésorerie dans les six mois (perte d'un client, retard d'un bailleur, hausse d'un coût, change). Pour chacun, estimez l'impact mensuel en dollars et écrivez une mesure de réponse et son responsable.
+**Q3 : b.** Une hypothèse non acquise n'entre pas dans un scénario prudent.
+**Q4 : c.** Obligation légale : son report non négocié expose à des sanctions.
+**Q5 : b.** Informée tôt, avec un plan, la banque peut accompagner.
+:::action!
+Listez les **trois risques** les plus menaçants pour votre trésorerie à six mois ; pour chacun, impact mensuel en dollars, réponse et responsable.
 :::

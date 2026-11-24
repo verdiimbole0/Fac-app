@@ -46,10 +46,9 @@ Résultat : décaissements de la semaine ramenés à 31 500 USD ; solde de fin d
 Les mois de janvier à juin sont désormais tous positifs, et la réserve cible est atteinte dès mars. Un point bas subsiste toutefois : **-6 763 USD le 10 février**, jour où 34 200 USD d'achats sont payés avant les encaissements du 12. Ce besoin ponctuel est traité au chapitre 6.
 :::erreur
 - Payer les fournisseurs les plus insistants plutôt que les plus importants.
-- Promettre un paiement que le prévisionnel ne permet pas de tenir.
 - Reporter les impôts et cotisations pour payer un fournisseur.
 :::
-:::retenir Synthèse du chapitre
+:::retenir! Synthèse du chapitre
 - Classez chaque sortie : obligatoire, négociable ou différable.
 - Une grille de priorités écrite rend les arbitrages rapides et défendables.
 - Un circuit d'autorisation avec seuils et un jour fixe de paiement évitent les décisions dispersées.
@@ -69,25 +68,25 @@ c) Fournisseur négociable et climatiseur, puis le reste la semaine suivante
 d) Payer chacun au prorata
 Q3. Une réparation urgente non budgétée de 900 USD est engagée un samedi. Que prévoit une bonne procédure ?
 a) Rien, l'urgence justifie tout
-b) Une régularisation écrite rapide et la mise à jour de la prévision
+b) Régularisation écrite, prévision à jour
 c) L'annulation de la réparation
-d) Le paiement par la caisse sans pièce justificative
+d) Un paiement en caisse sans justificatif
 Q4. Quelle proposition de négociation est la plus efficace ?
 a) « Nous paierons dès que possible »
-b) « 15 000 USD le 10 et 15 000 USD le 30, confirmés par écrit »
+b) « 15 000 le 10, 15 000 le 30, par écrit »
 c) « Pouvez-vous attendre deux mois ? »
-d) « Nous payerons quand nos clients paieront »
+d) « Quand nos clients paieront »
 Q5. Pourquoi fixer un jour unique de paiement par semaine ?
-a) Pour retarder systématiquement les fournisseurs
-b) Pour regrouper les décisions, vérifier la trésorerie et réduire les erreurs
+a) Pour retarder les fournisseurs
+b) Pour regrouper et contrôler les paiements
 c) Parce que la banque l'exige
-d) Pour éviter de tenir un prévisionnel
+d) Pour se passer de prévisionnel
 ## Corrigé du QCM
-**Q1 : c.** Le remboursement d'un associé dépend d'une décision interne. Les salaires, les cotisations et l'échéance bancaire sont des obligations dont le retard entraîne des sanctions ou pénalités.
-**Q2 : b.** 12 000 + 15 000 + 3 000 = 30 000 USD : on respecte les obligations, on préserve l'approvisionnement et on négocie le reste. Le prorata (d) traite de la même manière des engagements de nature différente.
-**Q3 : b.** L'urgence est légitime, mais elle doit être tracée et autorisée a posteriori ; la prévision doit refléter la nouvelle sortie.
+**Q1 : c.** Il dépend d'une décision interne ; les autres réponses sont des obligations.
+**Q2 : b.** 12 000 + 15 000 + 3 000 = 30 000 USD : obligations respectées, approvisionnement préservé, reste négocié. Le prorata (d) traite pareil des engagements différents.
+**Q3 : b.** L'urgence est légitime, mais tracée, autorisée a posteriori et intégrée à la prévision.
 **Q4 : b.** Une proposition chiffrée et datée rassure le fournisseur et engage l'entreprise.
-**Q5 : b.** Un rythme unique permet de contrôler les pièces, de vérifier le solde et d'appliquer les priorités.
+**Q5 : b.** Un rythme unique permet de contrôler pièces, solde et priorités.
 :::action
 Établissez la **liste des paiements à effectuer au cours des quatre prochaines semaines**, avec date, montant, bénéficiaire et catégorie (obligatoire, négociable, différable). Comparez le total au prévisionnel d'encaissements et identifiez la semaine où un arbitrage sera nécessaire.
 :::

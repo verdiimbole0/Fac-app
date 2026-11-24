@@ -12,7 +12,7 @@ Une disponibilité n'est retenue que si elle est **prouvée** : un comptage sign
 Pour la caisse, faites un **billetage** : comptez chaque coupure, en présence de la caissière et d'un témoin, et faites signer le procès-verbal par les deux. Pour la banque, obtenez le relevé arrêté à la date du diagnostic et comparez-le au solde comptable (la méthode complète du rapprochement est au chapitre 7). Pour les devises, convertissez au taux de la date du diagnostic et **indiquez ce taux**.
 @table t_dispo_3112|Les disponibilités de MAKAO au 31 décembre 2025
 Le calcul de conversion est simple : 3 420 000 CDF / 2 850 = 1 200 USD ; 1 140 000 CDF / 2 850 = 400 USD. Les 15 000 USD correspondent exactement au solde de fin de trimestre calculé au chapitre 1.
-:::attention
+:::attention!
 Si le cours du franc congolais baisse de 5 % face au dollar, les 4 560 000 CDF détenus (comptes et caisse) ne valent plus 1 600 USD mais environ 1 524 USD. Détenir une devise, c'est porter un risque de change : nous y reviendrons au chapitre 6.
 :::
 ## 2.2 Analyser les créances clients

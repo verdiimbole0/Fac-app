@@ -8,7 +8,7 @@ Grâce a reçu trois propositions en une semaine : sa banque lui propose un cré
 - Gérer un excédent et une réserve de sécurité, en tenant compte du risque de change.
 :::
 ## 6.1 Qualifier le besoin avant de choisir
-Un besoin de trésorerie se décrit par quatre questions : **combien** (le point bas, plus une marge), **quand** (à quelle date), **combien de temps** (quelques jours ou plusieurs mois) et **pourquoi** (décalage temporaire ou déséquilibre durable). Un décalage temporaire se finance par une solution courte et souple. Un déséquilibre durable (pertes répétées, croissance non financée, investissement payé avec la trésorerie) appelle un financement long ou des mesures de fond : le financer par du court terme ne fait que repousser la crise.
+Un besoin se décrit par quatre questions : **combien** (point bas plus une marge), **quand**, **combien de temps** et **pourquoi** (décalage temporaire ou déséquilibre durable). Un décalage temporaire se finance par une solution courte et souple. Un déséquilibre durable (pertes répétées, croissance non financée, investissement payé avec la trésorerie) appelle un financement long ou des mesures de fond : le financer par du court terme ne fait que repousser la crise.
 ## 6.2 Les solutions à court terme
 |{w:28,72}Solution|Principe
 |Découvert autorisé|La banque autorise le compte à devenir négatif jusqu'à un plafond. On ne paie des intérêts que sur les montants et les jours réellement utilisés, plus des commissions.
@@ -17,7 +17,7 @@ Un besoin de trésorerie se décrit par quatre questions : **combien** (le point
 |Avance d'associé|L'associé prête à la société (compte courant). Rapide, mais à formaliser par écrit et à faire valider selon les statuts.
 |Affacturage|Une société spécialisée achète les factures clients et avance une partie de leur montant, contre commission et intérêts. Disponibilité variable selon les pays.
 |Négociation d'échéances|Report d'un paiement fournisseur ou fiscal accordé par écrit. Coût financier souvent nul, coût relationnel à surveiller.
-:::attention
+:::attention!
 Un découvert **non autorisé** coûte généralement plus cher, peut entraîner le rejet de paiements et abîme la relation bancaire. On négocie une autorisation avant d'en avoir besoin, avec son prévisionnel en main.
 :::
 ## 6.3 Calculer le coût réel
@@ -42,7 +42,7 @@ MAKAO cède 15 000 USD de factures de l'hôtel Fleuve Bleu. Le factor avance 80 
 3. **Refuser le crédit de trésorerie** d'un mois, inadapté à un besoin de quelques jours.
 4. **Garder l'avance de la gérante en dernier recours**, avec une convention écrite.
 :::
-Critères de décision à retenir : adéquation de la durée, coût total, rapidité de mise en place, souplesse, garanties exigées, effet sur la relation (banque, fournisseur) et sur la gouvernance (avance d'associé).
+Critères de décision : durée, coût total, rapidité, souplesse, garanties, effet sur les relations et sur la gouvernance.
 ## 6.5 Gérer les excédents et la réserve de sécurité
 À partir de mai, la prévision de MAKAO dépasse 50 000 USD. Un excédent se gère en trois temps. D'abord, **constituer une réserve de sécurité** : MAKAO vise un mois de décaissements fixes, soit 22 000 USD, disponible immédiatement. Ensuite, **réduire les dettes coûteuses** (rembourser le découvert, discuter un remboursement anticipé d'emprunt si le contrat le permet sans pénalité excessive). Enfin, **placer le surplus** sur un support sans risque de perte en capital et dont l'échéance précède les besoins connus, par exemple un dépôt à terme de trois mois.
 :::attention Le risque de change
@@ -88,5 +88,5 @@ d) Emprunter en CDF pour placer en USD
 **Q4 : b.** Financer des pertes répétées par du court terme repousse la crise. Il faut agir sur la rentabilité et, si nécessaire, renforcer les fonds propres ou obtenir un financement long.
 **Q5 : b.** On aligne la devise des liquidités sur celle des paiements prévus. Les options a et d relèvent de la spéculation.
 :::action
-Calculez le **coût annualisé** de chaque financement court terme que votre organisation utilise ou pourrait utiliser (découvert, facilité, avance) à partir des conditions réelles de vos contrats. Notez les frais fixes : vous saurez quelle solution choisir pour un besoin de quelques jours.
+Calculez le **coût annualisé** des financements courts que vous utilisez ou pourriez utiliser (découvert, facilité, avance), à partir de vos contrats, en isolant les frais fixes.
 :::

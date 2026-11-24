@@ -58,3 +58,14 @@ Aucune photographie ni image générée par IA n'a été utilisée : l'accès au
 | fig11_mission_13_semaines.png | Mission : 13 semaines | Graphique, données fictives | idem | idem | idem | idem |
 
 Polices : Montserrat et Source Sans 3 (SIL Open Font License 1.1), obtenues via les paquets npm @fontsource/montserrat 5.3.0 et @fontsource/source-sans-3 5.3.1. La licence OFL autorise l'usage commercial et l'incorporation dans des documents.
+
+### Visuels de mise en page et couvertures (révision du 24/11/2026)
+
+| Fichier | Nature | Auteur | Outil | Licence |
+|---|---|---|---|---|
+| design/bandeau_titre.jpg | Composition graphique originale (page de titre) | Verdi Imbole (production assistée) | Python Pillow | Droits de l'auteur |
+| design/bandeau_ch01.jpg à bandeau_ch12.jpg | Bandeaux de chapitres construits à partir des séries chiffrées du cas | idem | idem | idem |
+| design/partie_1.jpg à partie_4.jpg | Fonds des pages de parties | idem | idem | idem |
+| couverture/couverture_1_avant, couverture_4_arriere, couverture_complete_impression (JPG et PDF, 300 dpi, fonds perdus 3 mm) | Couvertures | idem | idem | idem |
+
+Source d'inspiration de mise en forme : rapport institutionnel fourni par l'auteur (principes de composition uniquement ; aucun élément graphique, logo, photographie ou texte repris). Police ajoutée : Source Serif 4 (@fontsource/source-serif-4 5.3.1, SIL Open Font License 1.1).

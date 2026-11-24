@@ -1,5 +1,5 @@
 @section Glossaire|Glossaire
-@fontsize 9.6
+@fontsize 9.3
 **Affacturage** : cession de factures clients à une société spécialisée qui en avance une partie contre rémunération.
 **Amortissement** : constatation comptable de l'usure d'un bien durable ; charge sans sortie d'argent.
 **Balance âgée** : tableau des créances (ou des dettes) classées par ancienneté.

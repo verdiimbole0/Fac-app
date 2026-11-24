@@ -45,7 +45,7 @@ Chaque prompt est présenté selon la même grille. Les données d'exemple sont 
 :::prompt 4. Préparer un calendrier de décaissements
 **Objectif** : ordonner les paiements selon les priorités. **Données** : engagements (bénéficiaire codé, montant, échéance, nature), trésorerie disponible.
 `Voici nos engagements à payer du [5] au [11 janvier] et notre trésorerie disponible de [41 500 USD] sur la semaine. Classe chaque engagement en obligatoire, négociable ou différable selon ces règles : [salaires, impôts, cotisations, loyer et banque obligatoires ; fournisseurs négociables ; investissements et remboursements d'associés différables]. Propose un plan de paiement qui ne dépasse pas la trésorerie disponible, avec les montants à négocier et une justification par ligne. Ne propose jamais de reporter une obligation légale.`
-**Exemple** : l'IA doit aboutir à 41 500 USD de paiements au maximum, loyer inclus. **Résultat attendu** : un plan daté et justifié. **Vérification** : somme des paiements ≤ disponible ; obligations intégralement payées. **Limites** : la négociation réelle avec chaque fournisseur reste humaine.
+**Exemple** : l'IA doit aboutir à 41 500 USD de paiements au maximum, loyer inclus. **Résultat attendu** : un plan daté et justifié. **Vérification** : somme des paiements au plus égale au disponible ; obligations intégralement payées. **Limites** : la négociation réelle avec chaque fournisseur reste humaine.
 :::
 :::prompt 5. Analyser les écarts
 **Objectif** : expliquer prévu et réalisé. **Données** : tableau prévu/réalisé par catégorie, informations connues sur les événements du mois.

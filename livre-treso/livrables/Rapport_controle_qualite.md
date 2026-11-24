@@ -7,11 +7,11 @@ Date du contrôle : 24 novembre 2026. Rendu de référence : PDF exporté par Li
 | Élément | Résultat |
 |---|---|
 | Format | A5 (148 × 210 mm), vérifié dans le PDF (419,6 × 595,3 points) |
-| Nombre de pages intérieures | **121** (limite : 130 ; cible : 124) |
+| Nombre de pages intérieures | **123** (limite : 130 ; cible : 124), couverture non comprise |
 | Chapitres | 12, répartis en 4 parties |
 | QCM | 60 questions (5 par chapitre), 60 corrigés justifiés |
 | Rubriques « Votre prochaine action » | 12 |
-| Tableaux numérotés / figures | 32 tableaux numérotés ; 12 figures |
+| Tableaux numérotés / figures | 32 tableaux numérotés ; 12 figures pédagogiques ; 17 visuels de mise en page (titre, 12 bandeaux, 4 parties) |
 | Prompts IA structurés (7 rubriques) | 10 |
 | Modèles Excel | 10 modèles, en 10 fichiers séparés et 1 classeur combiné |
 | Références bibliographiques | 13, toutes vérifiées par recherche (voir limites) |
@@ -22,14 +22,14 @@ Date du contrôle : 24 novembre 2026. Rendu de référence : PDF exporté par Li
 | Section | Cible | Réalisé |
 |---|---:|---:|
 | Pages liminaires et guide de lecture | 8 | 7 |
-| Partie I | 14 | 17 |
+| Partie I | 14 | 19 |
 | Partie II | 25 | 32 |
-| Partie III | 22 | 21 |
+| Partie III | 22 | 22 |
 | Partie IV | 28 | 28 |
-| Conclusion et éléments complémentaires | 27 | 16 |
-| **Total** | **124** | **121** |
+| Conclusion et éléments complémentaires | 27 | 15 |
+| **Total** | **124** | **123** |
 
-Détail des éléments complémentaires : conclusion 1 p. (cible 2), plan d'action 2 p. (3), annexes 5 p. (10), glossaire 3 p. (3), bibliographie 2 p. (4), index 2 p. (2), crédits 1 p. (2), auteur 1 p. (1). Les parties I et II dépassent leur cible parce que les méthodes de base (diagnostic, prévisionnel, encaissements, décaissements) exigent des exemples chiffrés complets ; la compensation porte sur des éléments complémentaires plus courts que prévu. Les annexes donnent colonnes, formules, consignes et exemples ; leur version complète est dans les fichiers Excel.
+Détail des éléments complémentaires : conclusion 1 p. (cible 2), plan d'action 1 p. (3), annexes 5 p. (10), glossaire 2 p. (3), bibliographie 2 p. (4), index 2 p. (2), crédits 1 p. (2), auteur 1 p. (1). Les parties I et II dépassent leur cible parce que les méthodes de base (diagnostic, prévisionnel, encaissements, décaissements) exigent des exemples chiffrés complets ; la compensation porte sur des éléments complémentaires plus courts que prévu. Les annexes donnent colonnes, formules, consignes et exemples ; leur version complète est dans les fichiers Excel.
 
 ## 3. Tests de cohérence réalisés
 
@@ -41,16 +41,20 @@ Détail des éléments complémentaires : conclusion 1 p. (cible 2), plan d'acti
 - **Mise en page** : détection automatique des titres d'encadrés isolés en bas de page (0 restant) et des pages quasi vides (0) ; revue visuelle de toutes les pages.
 - **Fichier Word** : validation du schéma OOXML réussie (« All validations PASSED »).
 
-## 4. Licences des illustrations
+## 4. Mise en forme (révision du 24/11/2026)
 
-12 illustrations, toutes créations originales (schémas et graphiques Matplotlib construits à partir des données fictives du livre). Aucune photographie, aucune image générée par IA : statut des licences sans réserve. Polices sous SIL Open Font License 1.1.
+Mise en page révisée en s'inspirant des codes d'un rapport institutionnel fourni par l'auteur (titres à empattement, grands numéros de chapitre en couleur d'accent sur bandeau visuel, sommaire à numéros, cartes de chiffres clés, citations mises en exergue), sans reprise de son identité visuelle. Texte courant justifié avec césure française automatique (dictionnaire hyphen-fr) ; césure désactivée dans les titres, tableaux et légendes. Titres en Source Serif 4, étiquettes et numéros en Montserrat, texte en Source Sans 3. La phrase « Comprendre son argent. Anticiper ses besoins. Sécuriser ses ressources. Prendre les bonnes décisions. » a été retirée de la page de titre et de la conclusion (seules occurrences). Couvertures créées : 1re et 4e de couverture, et maquette d'impression complète avec dos de 6,7 mm (estimation pour 123 pages sur papier offset 80 g, à confirmer par l'imprimeur) et fonds perdus de 3 mm. Une « édition lecture » PDF de 125 pages intègre les deux couvertures.
 
-## 5. Limites et anomalies non résolues
+## 5. Licences des illustrations
+
+12 figures (Matplotlib) et 20 visuels de mise en page et de couverture (Pillow), tous créations originales construites à partir des données fictives du livre. Aucune photographie, aucune image générée par IA : statut des licences sans réserve. Polices Montserrat, Source Sans 3 et Source Serif 4 sous SIL Open Font License 1.1.
+
+## 6. Limites et anomalies non résolues
 
 1. **Photographies** : l'accès réseau aux banques d'images (Pexels, Wikimedia Commons, Unsplash) était bloqué et l'ouverture de ces hôtes a été refusée ; le livre ne contient donc aucune photographie. Des photographies peuvent être ajoutées ultérieurement, après vérification de leur licence.
 2. **Sources officielles** : les sites officiels n'étaient pas accessibles directement ; les références ont été vérifiées par recherche web indexant ces pages. Le texte du SYCEBNL a été contrôlé sur une transcription structurée de l'Acte uniforme. Les documents payants (COSO 2013, ISO 31000) n'ont pas été lus intégralement.
-3. **Polices dans le fichier Word** : Montserrat et Source Sans 3 sont intégrées au PDF, mais pas au fichier Word. Elles doivent être installées (gratuites, Google Fonts) pour que Word affiche la mise en page prévue.
+3. **Polices dans le fichier Word** : Montserrat, Source Sans 3 et Source Serif 4 sont intégrées au PDF, mais pas au fichier Word. Elles doivent être installées (gratuites, Google Fonts) pour que Word affiche la mise en page prévue. Dans Word, activez aussi la césure automatique si elle ne l'est pas (Mise en page > Coupure de mots).
 4. **Pagination Word** : le sommaire et l'index portent les numéros de page du rendu PDF. Word peut paginer légèrement différemment ; vérifier ces numéros si le fichier Word est réexporté.
 5. **Simplifications pédagogiques assumées** et signalées dans le texte : montants hors TVA ; taux d'intérêt, frais bancaires, échéance d'impôt du chapitre 12 et taux de change (2 850 CDF pour 1 USD) fictifs.
 6. **Relecture** : relecture humaine professionnelle (orthographe, style) et vérification juridique de la page de droits recommandées avant commercialisation. L'année © 2026 est à ajuster selon la date de publication.
-7. **Couverture** : non réalisée, conformément au cahier des charges.
+7. **Couverture** : aucun code-barres ni ISBN n'y figure (aucun identifiant n'a été créé) ; prévoir l'emplacement avec l'imprimeur si un ISBN est obtenu. Le dos de 6,7 mm est une estimation.

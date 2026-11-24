@@ -38,7 +38,7 @@ Le résultat est de +28 000 USD, la trésorerie a fondu de 55 000 USD. Pour expl
 - Les **stocks** gonflent de 24 000 USD : MAKAO a acheté plus qu'elle n'a vendu, pour préparer la rentrée.
 - Les **dettes fournisseurs** augmentent de 4 000 USD : un petit répit.
 - Le **capital de l'emprunt** (9 000 USD) et le **véhicule** (18 000 USD) sont des sorties réelles absentes des charges du trimestre.
-:::retenir
+:::retenir!
 Variation de trésorerie = résultat + charges sans sortie d'argent - hausse des créances - hausse des stocks + hausse des dettes fournisseurs - investissements payés +/- flux de financement.
 :::
 ## 1.5 Causes fréquentes et idées reçues

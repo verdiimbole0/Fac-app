@@ -1,5 +1,5 @@
 @section Crédits des illustrations|Crédits
-Toutes les figures de cet ouvrage sont des **créations originales** de l'auteur. Les graphiques ont été construits avec la bibliothèque Python Matplotlib à partir des données fictives du cas MAKAO Distribution et de l'ASBL Mains Unies pour l'Éducation ; chaque valeur affichée est calculée par le fichier de données central du livre et peut être recalculée avec les modèles Excel fournis. Aucune photographie de banque d'images ni aucune image générée par intelligence artificielle n'a été utilisée.
+Toutes les figures de cet ouvrage sont des **créations originales** de l'auteur. Les graphiques ont été construits avec la bibliothèque Python Matplotlib à partir des données fictives du cas MAKAO Distribution et de l'ASBL Mains Unies pour l'Éducation ; chaque valeur affichée est calculée par le fichier de données central du livre et peut être recalculée avec les modèles Excel fournis. Aucune photographie de banque d'images ni aucune image générée par intelligence artificielle n'a été utilisée. Les bandeaux de chapitres, les pages de parties et la couverture sont des compositions graphiques originales générées par programme (Python, bibliothèque Pillow) à partir des séries chiffrées du cas fil rouge.
 Table: Registre des illustrations
 |{w:12,58,30}N°|Titre|Nature et source
 |0|Deux parcours de lecture|Schéma original

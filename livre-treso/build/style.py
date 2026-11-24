@@ -15,3 +15,5 @@ BOXES = {  # type: (label, fond, couleur bordure, style bordure gauche, épaisse
     "prompt":    ("PROMPT PRÊT À UTILISER", GREY, TEAL, "left", 18, TEAL),
     "note":      ("", GREY, GREY, "none", 0, NAVY),
 }
+DISPLAY_FONT = "Source Serif 4"
+BOXES["citation"] = ("", "FFFFFF", TEAL, "left", 12, TEAL)

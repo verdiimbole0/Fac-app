@@ -46,7 +46,7 @@ Le scénario réaliste s'est produit : les Palmiers ont payé leurs factures ave
 @table t_c12_13w_sans|Prévisionnel 13 semaines sans mesures (USD)
 Les mois de juillet sont confortables, mais l'agence crée deux trous : **-510 USD le 25 août** et **-7 970 USD le 10 septembre**. Les demandes de Grâce aggraveraient la situation : le point bas de la semaine 13 tomberait à -5 370 USD.
 ### Étapes 3 et 4 : les décisions
-:::cas Recommandations présentées à la gérante
+:::cas! Recommandations présentées à la gérante
 1. **Reporter** le remboursement du compte courant et l'achat du matériel au quatrième trimestre, et les réexaminer quand la couverture dépassera un mois.
 2. **Fractionner le stock initial de l'agence** : 10 000 USD le 17 août, 10 000 USD le 14 septembre, au rythme du démarrage des ventes.
 3. **Négocier avec Santé Plus** une avance de démarrage de 20 % du premier trimestre (7 200 USD le 15 juillet), déduite de la première facture.

@@ -23,207 +23,208 @@
   [
    "chap",
    "2. Faire le diagnostic de sa trésorerie : savoir exactement où l'on en est",
-   17
+   18
   ],
   [
    "part",
    "Partie II · Prévoir et maîtriser les flux de trésorerie",
-   25
+   27
   ],
   [
    "chap",
    "3. Construire un prévisionnel de trésorerie : apprendre à anticiper",
-   26
+   28
   ],
   [
    "chap",
    "4. Faire rentrer l'argent plus rapidement : maîtriser les encaissements",
-   35
+   38
   ],
   [
    "chap",
    "5. Maîtriser les dépenses et organiser les décaissements",
-   42
+   45
   ],
   [
    "chap",
    "6. Financer les besoins de trésorerie et gérer les excédents",
-   49
+   52
   ],
   [
    "part",
    "Partie III · Sécuriser et piloter la trésorerie",
-   56
+   59
   ],
   [
    "chap",
    "7. Sécuriser la trésorerie : contrôle interne, banque et caisse",
-   57
+   60
   ],
   [
    "chap",
    "8. Construire un tableau de bord de trésorerie et prendre de meilleures décisions",
-   65
+   68
   ],
   [
    "chap",
    "9. Anticiper les risques et gérer une crise de trésorerie",
-   71
+   75
   ],
   [
    "part",
    "Partie IV · Spécialiser, digitaliser et appliquer",
-   77
+   81
   ],
   [
    "chap",
    "10. La gestion de trésorerie des ASBL et des projets financés",
-   78
+   82
   ],
   [
    "chap",
    "11. Excel, outils numériques et intelligence artificielle : moderniser sa gestion de trésorerie",
-   86
+   90
   ],
   [
    "chap",
    "12. Cas pratique intégral : mettre en place la gestion de trésorerie dans une véritable organisation",
-   95
+   99
   ],
   [
    "sec",
    "Conclusion générale",
-   105
+   109
   ],
   [
    "sec",
    "Plan d'action récapitulatif",
-   106
+   110
   ],
   [
    "sec",
    "Annexes pratiques : les dix modèles",
-   108
+   111
   ],
   [
    "sec",
    "Glossaire",
-   113
-  ],
-  [
-   "sec",
-   "Bibliographie et webographie",
    116
   ],
   [
    "sec",
-   "Index thématique",
+   "Bibliographie et webographie",
    118
   ],
   [
    "sec",
-   "Crédits des illustrations",
+   "Index thématique",
    120
   ],
   [
    "sec",
+   "Crédits des illustrations",
+   122
+  ],
+  [
+   "sec",
    "L'auteur",
-   121
+   123
   ]
  ],
  "index": [
   [
    "Acompte",
    [
-    36,
-    38,
-    85
+    39,
+    42,
+    89
    ]
   ],
   [
    "Affacturage",
    [
-    49,
-    50,
-    52
+    53,
+    55
    ]
   ],
   [
    "Amortissement",
    [
     10,
+    11,
     12,
     13,
     15,
     16,
-    85
+    88
    ]
   ],
   [
    "ASBL",
    [
-    9,
-    11,
+    10,
+    12,
     14,
-    19,
-    35,
-    74,
-    77
+    15,
+    20,
+    38,
+    78
    ]
   ],
   [
    "Bailleur",
    [
-    42,
-    71,
+    45,
     76,
-    78,
-    79,
-    80,
-    82
+    82,
+    83,
+    84,
+    86,
+    87
    ]
   ],
   [
    "Balance âgée",
    [
-    19,
-    22,
-    37,
-    72,
-    89,
-    96,
-    109
+    20,
+    24,
+    41,
+    76,
+    93,
+    100,
+    112
    ]
   ],
   [
    "Billetage",
    [
-    18,
-    22,
-    23,
-    59,
-    105,
-    108
+    19,
+    24,
+    25,
+    62,
+    109,
+    111
    ]
   ],
   [
    "Budget",
    [
-    26,
-    27,
     28,
     29,
     30,
+    31,
     32,
-    33
+    33,
+    35
    ]
   ],
   [
    "Budget de trésorerie",
    [
-    26,
     28,
-    89
+    29,
+    30,
+    93
    ]
   ],
   [
@@ -231,166 +232,168 @@
    [
     10,
     11,
-    17,
+    12,
     18,
-    22,
-    23,
+    19,
+    20,
     24
    ]
   ],
   [
    "Calendrier des paiements",
    [
-    42,
-    43,
-    110
+    45,
+    46,
+    113
    ]
   ],
   [
    "Charges fixes",
    [
-    21,
-    22,
     23,
-    27,
+    24,
+    25,
     29,
-    67,
-    72
+    31,
+    70,
+    71
    ]
   ],
   [
    "Chiffre d'affaires",
    [
-    9,
     10,
     16,
-    19,
-    23,
-    38,
-    39
+    21,
+    25,
+    41,
+    42,
+    44
    ]
   ],
   [
    "Compte courant d'associé",
    [
-    20,
-    28,
-    47
+    22,
+    31,
+    50
    ]
   ],
   [
    "Contrôle interne",
    [
-    56,
-    57,
-    58,
-    111
+    59,
+    60,
+    61,
+    114
    ]
   ],
   [
    "COSO",
    [
-    58
+    61
    ]
   ],
   [
    "Couverture",
    [
-    66,
-    67,
-    68,
     69,
     70,
-    91,
-    99
+    72,
+    73,
+    74,
+    95,
+    104
    ]
   ],
   [
    "Créance client",
    [
-    10,
+    11,
     16,
-    18,
-    103
+    20,
+    107
    ]
   ],
   [
    "Créance douteuse",
    [
-    38
+    41
    ]
   ],
   [
    "Crédit de trésorerie",
    [
-    49,
-    50,
-    51,
     52,
-    54
+    53,
+    54,
+    55,
+    56,
+    57,
+    58
    ]
   ],
   [
    "Décaissement",
    [
-    10,
-    20,
-    21,
-    25,
+    11,
+    22,
+    23,
     27,
-    28,
-    29
+    29,
+    30,
+    31
    ]
   ],
   [
    "Découvert",
    [
     10,
-    36,
-    49,
-    50,
-    51,
+    40,
     52,
-    53
+    53,
+    54,
+    55,
+    56
    ]
   ],
   [
    "Dette fournisseur",
    [
-    98
+    103
    ]
   ],
   [
    "Double paiement",
    [
-    49,
-    61,
-    62,
-    68,
-    95,
-    110
+    52,
+    64,
+    65,
+    71,
+    99,
+    113
    ]
   ],
   [
    "DPO",
    [
-    66,
-    67,
     69,
-    91,
-    111
+    70,
+    73,
+    95,
+    114
    ]
   ],
   [
    "DSO",
    [
-    19,
     21,
-    22,
     23,
-    38,
-    39,
-    40
+    24,
+    25,
+    41,
+    42,
+    43
    ]
   ],
   [
@@ -398,297 +401,304 @@
    [
     12,
     13,
-    26,
-    31,
-    32,
+    29,
     33,
-    34
+    34,
+    35,
+    36
    ]
   ],
   [
    "Encaissement",
    [
-    10,
+    11,
     12,
-    21,
     22,
     23,
     25,
-    27
+    27,
+    29
    ]
   ],
   [
    "Escompte",
    [
-    36,
-    39
+    39,
+    40,
+    42,
+    43
    ]
   ],
   [
    "Excédent",
    [
-    14,
-    25,
-    29,
-    49,
+    15,
+    27,
+    31,
+    52,
     53,
-    54
+    56,
+    57
    ]
   ],
   [
    "Excel",
    [
-    34,
-    61,
-    77,
-    86,
-    87,
-    89,
-    91
+    37,
+    64,
+    81,
+    90,
+    91,
+    93,
+    95
    ]
   ],
   [
    "Facilité de caisse",
    [
-    49,
-    50,
-    51,
     52,
-    54
+    53,
+    54,
+    55,
+    57
    ]
   ],
   [
    "Flux de financement",
    [
-    13
+    14
    ]
   ],
   [
    "Fonds affectés",
    [
     14,
-    78,
-    79,
-    80,
+    82,
+    83,
     84,
-    85
+    87,
+    88,
+    89
    ]
   ],
   [
    "Fraude",
    [
     14,
-    31,
-    57,
-    58,
-    62,
-    85,
-    98
+    34,
+    60,
+    61,
+    65,
+    89,
+    102
    ]
   ],
   [
    "Google Sheets",
    [
-    87,
-    108
+    91,
+    111
    ]
   ],
   [
    "Hallucination",
    [
-    87,
-    93
+    92,
+    97
    ]
   ],
   [
    "IAS 7",
    [
-    10
+    10,
+    11
    ]
   ],
   [
    "Intelligence artificielle",
    [
-    77,
-    86,
-    87,
-    105
+    81,
+    90,
+    91,
+    109
    ]
   ],
   [
    "Investissement",
    [
-    9,
+    10,
     11,
-    13,
     14,
     15,
     16,
-    20
+    21,
+    23
    ]
   ],
   [
    "ISO 31000",
    [
-    72
+    76
    ]
   ],
   [
    "Litige",
    [
-    19,
-    22,
-    27,
-    38,
-    67,
-    89,
-    96
+    21,
+    23,
+    24,
+    30,
+    41,
+    70,
+    94
    ]
   ],
   [
    "Matrice des risques",
    [
-    57,
-    62,
-    92,
-    102
+    61,
+    65,
+    96,
+    106
    ]
   ],
   [
    "Monnaie électronique",
    [
     10,
-    11,
-    17,
+    12,
     18,
-    36,
-    38,
-    42
+    19,
+    39,
+    42,
+    45
    ]
   ],
   [
    "NIST",
    [
-    88
+    92
    ]
   ],
   [
    "OHADA",
    [
     10,
-    79
+    83
    ]
   ],
   [
    "Plafond",
    [
-    36,
     39,
-    40,
-    50,
-    51,
-    59,
-    60
+    42,
+    43,
+    53,
+    54,
+    62,
+    64
    ]
   ],
   [
    "Plan d'urgence",
    [
-    71,
-    73,
     75,
-    96
+    77,
+    78,
+    79,
+    100
    ]
   ],
   [
    "Point bas",
    [
-    26,
     29,
-    30,
-    34,
-    39,
-    45,
-    46
+    32,
+    37,
+    42,
+    48,
+    49,
+    53
    ]
   ],
   [
    "Préfinancement",
    [
-    80,
-    84
+    84,
+    87,
+    88
    ]
   ],
   [
    "Prévisionnel glissant",
    [
-    26,
     29,
-    34,
-    109
+    32,
+    37,
+    112
    ]
   ],
   [
    "Profil d'encaissement",
    [
-    27,
-    32,
-    38,
-    40,
-    68,
-    89,
-    90
+    30,
+    35,
+    42,
+    43,
+    72,
+    93,
+    94
    ]
   ],
   [
    "Prompt",
    [
-    86,
-    87,
-    88,
-    89,
-    90,
     91,
-    92
+    92,
+    93,
+    94,
+    95,
+    96,
+    97
    ]
   ],
   [
    "Rapport de trésorerie",
    [
-    91
+    95
    ]
   ],
   [
    "Rapprochement bancaire",
    [
-    57,
-    59,
+    60,
     62,
-    106,
-    111
+    65,
+    110,
+    114
    ]
   ],
   [
    "Relance",
    [
     9,
-    35,
-    36,
-    37,
-    38,
     39,
-    44
+    40,
+    42,
+    47,
+    72,
+    74
    ]
   ],
   [
    "Réserve de sécurité",
    [
-    29,
-    49,
+    31,
     53,
-    54,
-    73,
-    104
+    56,
+    57,
+    78,
+    108
    ]
   ],
   [
@@ -696,96 +706,97 @@
    [
     9,
     10,
+    11,
     12,
     13,
     14,
-    15,
-    16
+    15
    ]
   ],
   [
    "Risque de change",
    [
-    18,
-    49,
-    53
+    20,
+    53,
+    56
    ]
   ],
   [
    "Scénario",
    [
-    71,
-    72,
-    73,
-    74,
     75,
     76,
-    92
+    77,
+    78,
+    79,
+    80,
+    96
    ]
   ],
   [
    "Séparation des fonctions",
    [
-    57,
-    58,
+    60,
     62,
-    105
+    65,
+    109
    ]
   ],
   [
    "Stock",
    [
-    12,
     13,
     14,
     15,
-    21,
-    73,
-    76
+    16,
+    23,
+    78,
+    80
    ]
   ],
   [
    "Subvention",
    [
-    16,
-    78
+    17,
+    83
    ]
   ],
   [
    "SYCEBNL",
    [
-    79,
-    85
+    83,
+    88
    ]
   ],
   [
    "SYSCOHADA",
    [
-    10
+    10,
+    11
    ]
   ],
   [
    "Tableau de bord",
    [
-    52,
-    56,
-    65,
-    67,
+    59,
+    68,
     69,
-    86,
-    91
+    70,
+    71,
+    72,
+    73
    ]
   ],
   [
    "Tranche",
    [
-    37,
-    66,
-    68,
-    78,
-    80,
-    81,
-    82
+    41,
+    69,
+    72,
+    82,
+    84,
+    85,
+    86
    ]
   ],
   [
@@ -797,13 +808,13 @@
   [
    "Validation",
    [
-    40,
-    51,
-    57,
-    59,
+    43,
+    54,
     60,
     62,
-    64
+    64,
+    65,
+    67
    ]
   ]
  ]

@@ -1,7 +1,7 @@
 @chapter 4|Faire rentrer l'argent plus rapidement : maîtriser les encaissements|Maîtriser les encaissements
 Mardi 6 janvier, vous appelez les cinq plus gros clients en retard. L'économe du groupe scolaire Les Palmiers vous répond aimablement : « Nous avons toujours payé à 60 jours, personne ne nous a jamais rien dit. » Chez Bâtir Kongo, on vous apprend que la facture litigieuse concerne des chaises livrées abîmées, signalées par courriel en octobre, sans réponse de MAKAO. À l'ASBL Espoir Rural, la facture de septembre n'a jamais été reçue : elle a été envoyée à une ancienne adresse.
 Aucun de ces clients n'est de mauvaise foi. Le problème est chez MAKAO : personne n'est chargé de faire rentrer l'argent. Or chaque jour de retard client est un jour où l'entreprise finance son client avec sa propre trésorerie.
-:::objectifs
+:::objectifs!
 - Relier chaque étape du cycle de vente à son effet sur les encaissements.
 - Définir une politique de crédit client et une procédure de relance.
 - Tenir un tableau de suivi des créances et traiter les créances douteuses.
@@ -35,7 +35,7 @@ Le tableau de suivi est l'outil quotidien du recouvrement. Une ligne par facture
 Une **créance douteuse** est une créance dont le recouvrement est devenu incertain : litige, client en difficulté, retard très long sans réponse. En trésorerie, on cesse de compter sur elle. En comptabilité, on constate une dépréciation selon les règles du référentiel applicable. Cela n'empêche pas de continuer à la réclamer.
 :::formule Délai moyen de recouvrement : l'objectif
 >> Jours gagnés × chiffre d'affaires journalier = trésorerie libérée
-Avec 300 000 USD de ventes sur 92 jours, le chiffre d'affaires journalier de MAKAO est d'environ 3 261 USD. Ramener le DSO de 38,6 à 30 jours libérerait environ 8,6 × 3 261 ≈ **28 000 USD** de trésorerie.
+Avec 300 000 USD de ventes sur 92 jours, le chiffre d'affaires journalier de MAKAO est d'environ 3 261 USD. Ramener le DSO de 38,6 à 30 jours libérerait environ 8,6 × 3 261, soit environ **28 000 USD** de trésorerie.
 :::
 ## 4.5 Le plan d'action de MAKAO et son effet
 :::cas Les décisions du 7 janvier

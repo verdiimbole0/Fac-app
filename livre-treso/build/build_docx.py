@@ -6,7 +6,8 @@ from docx.enum.text import WD_ALIGN_PARAGRAPH, WD_BREAK, WD_LINE_SPACING
 from docx.enum.table import WD_TABLE_ALIGNMENT, WD_CELL_VERTICAL_ALIGNMENT
 from docx.enum.section import WD_SECTION
 from docx.oxml.ns import qn
-from docx.oxml import OxmlElement
+from docx.oxml import OxmlElement, parse_xml
+from docx.oxml.ns import nsdecls
 HERE = os.path.dirname(os.path.abspath(__file__)); ROOT = os.path.dirname(HERE)
 sys.path.insert(0, HERE); sys.path.insert(0, os.path.join(ROOT, "data"))
 from style import *
@@ -51,6 +52,26 @@ def repeat_header(row):
     trPr = row._tr.get_or_add_trPr(); e = OxmlElement('w:tblHeader'); trPr.append(e)
 def keep_next(p, v=True): p.paragraph_format.keep_with_next = v
 
+def nohyph(p):
+    pPr = p._p.get_or_add_pPr(); e = OxmlElement('w:suppressAutoHyphens'); pPr.append(e); return p
+
+_ANCHOR_ID = [5000]
+def anchor_picture(paragraph, path, w_mm, h_mm, x_mm=0, y_mm=0):
+    run = paragraph.add_run(); run.add_picture(path, width=Mm(w_mm), height=Mm(h_mm))
+    inline = run._r.xpath('.//wp:inline')[0]
+    E = lambda mm: int(mm * 36000)
+    _ANCHOR_ID[0] += 1
+    anchor = parse_xml(
+        f'<wp:anchor {nsdecls("wp", "a", "pic", "r")} distT="0" distB="0" distL="0" distR="0" simplePos="0" relativeHeight="{_ANCHOR_ID[0]}" '
+        f'behindDoc="1" locked="1" layoutInCell="1" allowOverlap="1"><wp:simplePos x="0" y="0"/>'
+        f'<wp:positionH relativeFrom="page"><wp:posOffset>{E(x_mm)}</wp:posOffset></wp:positionH>'
+        f'<wp:positionV relativeFrom="page"><wp:posOffset>{E(y_mm)}</wp:posOffset></wp:positionV>'
+        f'<wp:extent cx="{E(w_mm)}" cy="{E(h_mm)}"/><wp:effectExtent l="0" t="0" r="0" b="0"/><wp:wrapNone/></wp:anchor>')
+    for tag in ('wp:docPr', 'wp:cNvGraphicFramePr', 'a:graphic'):
+        el = inline.xpath(tag)[0]; anchor.append(el)
+    inline.getparent().replace(inline, anchor)
+    return run
+
 NBSP = "\u00a0"
 def typo(s):
     s = re.sub(r'(\d) (\d{3})(?!\d)', lambda m: m.group(1) + NBSP + m.group(2), s)
@@ -90,15 +111,20 @@ class Builder:
         mm = OxmlElement('w:mirrorMargins'); settings.append(mm)
         eo = OxmlElement('w:evenAndOddHeaders'); settings.append(eo)
         lang = OxmlElement('w:themeFontLang'); lang.set(qn('w:val'), 'fr-FR'); settings.append(lang)
+        ah = OxmlElement('w:autoHyphenation'); settings.append(ah)
+        ch = OxmlElement('w:consecutiveHyphenLimit'); ch.set(qn('w:val'), '2'); settings.append(ch)
+        hz = OxmlElement('w:hyphenationZone'); hz.set(qn('w:val'), '284'); settings.append(hz)
+        dc = OxmlElement('w:doNotHyphenateCaps'); settings.append(dc)
         st = d.styles
         n = st['Normal']; n.font.name = BODY_FONT; n.font.size = Pt(BODY_PT); n.font.color.rgb = rgb("1E2633")
         rpr = n.element.get_or_add_rPr(); rf = rpr.find(qn('w:rFonts'))
         for a in ('w:ascii', 'w:hAnsi', 'w:cs', 'w:eastAsia'): rf.set(qn(a), BODY_FONT)
         l = OxmlElement('w:lang'); l.set(qn('w:val'), 'fr-FR'); rpr.append(l)
         pf = n.paragraph_format; pf.space_after = Pt(3); pf.space_before = Pt(0); pf.line_spacing = 1.1
+        pf.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
         pf.widow_control = True
-        for name, size, color, before, after, font in [("Heading 1", 21, NAVY, 0, 10, TITLE_FONT), ("Heading 2", 12, NAVY, 9, 3, TITLE_FONT),
-                                                         ("Heading 3", 10.5, TEAL, 8, 2, TITLE_FONT)]:
+        for name, size, color, before, after, font in [("Heading 1", 22, NAVY, 0, 8, DISPLAY_FONT), ("Heading 2", 13, NAVY, 10, 3, DISPLAY_FONT),
+                                                         ("Heading 3", 9.6, TEAL, 8, 2, TITLE_FONT)]:
             h = st[name]; h.font.name = font; h.font.size = Pt(size); h.font.bold = True; h.font.color.rgb = rgb(color); h.font.italic = False
             r = h.element.get_or_add_rPr(); rf = r.find(qn('w:rFonts'))
             if rf is None: rf = OxmlElement('w:rFonts'); r.append(rf)
@@ -107,12 +133,18 @@ class Builder:
                 if rf.get(qn(a)) is not None: del rf.attrib[qn(a)]
             h.paragraph_format.space_before = Pt(before); h.paragraph_format.space_after = Pt(after)
             h.paragraph_format.keep_with_next = True; h.paragraph_format.line_spacing = 1.05
+            h.paragraph_format.alignment = WD_ALIGN_PARAGRAPH.LEFT
+            h.element.get_or_add_pPr().append(OxmlElement('w:suppressAutoHyphens'))
+            h.font.bold = (name != 'Heading 1')
         # styles de légende / tableau
         from docx.enum.style import WD_STYLE_TYPE
         cap = st.add_style('Legende', WD_STYLE_TYPE.PARAGRAPH); cap.base_style = n; cap.font.size = Pt(8.5)
         cap.font.italic = True; cap.font.color.rgb = rgb(MID); cap.paragraph_format.space_after = Pt(8)
         cap.paragraph_format.alignment = WD_ALIGN_PARAGRAPH.CENTER
+        cap.element.get_or_add_pPr().append(OxmlElement('w:suppressAutoHyphens'))
         tt = st.add_style('TabTexte', WD_STYLE_TYPE.PARAGRAPH); tt.base_style = n; tt.font.size = Pt(8.3)
+        tt.paragraph_format.alignment = WD_ALIGN_PARAGRAPH.LEFT
+        tt.element.get_or_add_pPr().append(OxmlElement('w:suppressAutoHyphens'))
         tt.paragraph_format.space_after = Pt(0); tt.paragraph_format.line_spacing = 1.0
         for lvl in ('List Bullet', 'List Number'):
             ls = st[lvl]; ls.font.name = BODY_FONT; ls.paragraph_format.space_after = Pt(2.5); ls.paragraph_format.line_spacing = 1.12
@@ -124,10 +156,19 @@ class Builder:
         r4 = p.add_run("1")
         r5 = p.add_run(); f3 = OxmlElement('w:fldChar'); f3.set(qn('w:fldCharType'), 'end'); r5._r.append(f3)
         for r in (r, r2, r3, r4, r5): r.font.size = Pt(8); r.font.name = TITLE_FONT; r.font.color.rgb = rgb(NAVY)
-    def new_section(self, running, blank_header=False, numbered=True):
+    def new_section(self, running, blank_header=False, numbered=True, first_number=True):
         if self.first:
             sec = self.doc.sections[0]; self.first = False
         else:
+            body = self.doc.element.body
+            last = body[-2] if len(body) > 1 else None   # body[-1] = sectPr
+            if last is not None and last.tag == qn('w:p') and not ''.join(last.itertext()).strip() and last.find('.//' + qn('w:drawing')) is None \
+               and last.getprevious() is not None and last.getprevious().tag == qn('w:tbl'):
+                pPr = last.find(qn('w:pPr'))
+                if pPr is None or pPr.find(qn('w:sectPr')) is None:
+                    p = [x for x in self.doc.paragraphs if x._p is last][0]
+                    pf = p.paragraph_format; pf.space_after = Pt(0); pf.space_before = Pt(0)
+                    pf.line_spacing_rule = WD_LINE_SPACING.EXACTLY; pf.line_spacing = Pt(1)
             sec = self.doc.add_section(WD_SECTION.NEW_PAGE)
             # le paragraphe porteur du saut de section ne doit pas créer de page vide
             for p in reversed(self.doc.paragraphs):
@@ -144,10 +185,10 @@ class Builder:
                 r.font.bold = True
                 pPr = p._p.get_or_add_pPr(); bd = OxmlElement('w:pBdr'); bt = OxmlElement('w:bottom')
                 bt.set(qn('w:val'), 'single'); bt.set(qn('w:sz'), '4'); bt.set(qn('w:color'), 'C9D1DC'); bt.set(qn('w:space'), '3'); bd.append(bt); pPr.append(bd)
-        for ftr, align in ((sec.footer, WD_ALIGN_PARAGRAPH.RIGHT), (sec.even_page_footer, WD_ALIGN_PARAGRAPH.LEFT), (sec.first_page_footer, WD_ALIGN_PARAGRAPH.CENTER)):
+        for fi, (ftr, align) in enumerate(((sec.footer, WD_ALIGN_PARAGRAPH.RIGHT), (sec.even_page_footer, WD_ALIGN_PARAGRAPH.LEFT), (sec.first_page_footer, WD_ALIGN_PARAGRAPH.CENTER))):
             ftr.is_linked_to_previous = False
             p = ftr.paragraphs[0]; p.text = ""; p.alignment = align
-            if numbered: self._field(p, "PAGE")
+            if numbered and (first_number or fi != 2): self._field(p, "PAGE")
         sec.first_page_header.is_linked_to_previous = False
         sec.first_page_header.paragraphs[0].text = ""
         return sec
@@ -156,7 +197,8 @@ class Builder:
         cont = container or self.doc
         p = cont.add_paragraph(style=style) if style else cont.add_paragraph()
         add_runs(p, text, size=size, color=color, bold=bold, italic=italic, font=font)
-        if align: p.alignment = align
+        if align is not None:
+            p.alignment = align; nohyph(p)
         if after is not None: p.paragraph_format.space_after = Pt(after)
         if before is not None: p.paragraph_format.space_before = Pt(before)
         if keep: keep_next(p)
@@ -175,16 +217,20 @@ class Builder:
             r = p.add_run("•\t"); r.font.color.rgb = rgb(color or TEAL); r.bold = True
             pf.tab_stops.add_tab_stop(Mm(4.5 + 4*level))
         add_runs(p, text, color=None if color is None or color in (TEAL,) else color)
+        p.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
         return p
     def heading(self, text, level):
         p = self.doc.add_heading(level=level); add_runs(p, text)
         return p
     def chapter_opener(self, num, title, running):
         self.chap = num; self.running = running; self.heads.append(('chap', f'CHAPITRE {num}', f'{num}. {title}'))
-        self.new_section(f"Chapitre {num} · {running}")
-        p = self.para(f"CHAPITRE {num}", size=10, color=TEAL, bold=True, font=TITLE_FONT, before=14, after=2)
+        self.new_section(f"Chapitre {num} · {running}", first_number=False)
+        p = self.doc.add_paragraph(); p.alignment = WD_ALIGN_PARAGRAPH.LEFT
+        anchor_picture(p, os.path.join(ROOT, "illustrations", "design", f"bandeau_ch{num:02d}.jpg"), 148, 64, 0, 0)
+        add_runs(p, f"CHAPITRE {num}", size=8.5, color=TEAL, bold=True, font=TITLE_FONT)
+        p.paragraph_format.space_before = Pt(144); p.paragraph_format.space_after = Pt(3); keep_next(p)
         p2 = self.doc.add_heading(level=1); add_runs(p2, title)
-        self._rule(TEAL, 18, 60)
+        self._rule(TEAL, 18, 22, after=10)
     def _rule(self, color, sz, width_pct=100, after=8):
         p = self.doc.add_paragraph(); pPr = p._p.get_or_add_pPr(); bd = OxmlElement('w:pBdr'); bt = OxmlElement('w:bottom')
         bt.set(qn('w:val'), 'single'); bt.set(qn('w:sz'), str(sz)); bt.set(qn('w:color'), color); bt.set(qn('w:space'), '1'); bd.append(bt); pPr.append(bd)
@@ -192,17 +238,36 @@ class Builder:
         r = p.add_run(""); r.font.size = Pt(2)
     def part_page(self, num, title, sub):
         self.heads.append(('part', f'PARTIE {num}', f'Partie {num} · {title}'))
-        self.new_section("", blank_header=True)
-        t = self.doc.add_table(rows=1, cols=1); c = t.rows[0].cells[0]; set_cell_bg(c, NAVY); table_width(t, [TEXT_W_MM])
-        set_cell_margins(c, 500, 500, 300, 300); set_cell_borders(c)
-        tr = t.rows[0]._tr.get_or_add_trPr(); h = OxmlElement('w:trHeight'); h.set(qn('w:val'), str(int(150*56.7))); h.set(qn('w:hRule'), 'exact'); tr.append(h)
-        c.vertical_alignment = WD_CELL_VERTICAL_ALIGNMENT.CENTER
-        p = c.paragraphs[0]; add_runs(p, f"PARTIE {num}", size=12, color=TEAL, bold=True, font=TITLE_FONT); p.paragraph_format.space_after = Pt(10)
-        p = c.add_paragraph(); add_runs(p, title, size=20, color=WHITE, bold=True, font=TITLE_FONT); p.paragraph_format.line_spacing = 1.1
-        p.paragraph_format.space_after = Pt(14)
+        self.new_section("", blank_header=True, first_number=False)
+        idx = {"I": 1, "II": 2, "III": 3, "IV": 4}[num]
+        p = self.doc.add_paragraph(); p.alignment = WD_ALIGN_PARAGRAPH.LEFT
+        anchor_picture(p, os.path.join(ROOT, "illustrations", "design", f"partie_{idx}.jpg"), 148, 210, 0, 0)
+        add_runs(p, f"PARTIE {num}", size=11, color="5AD6C4", bold=True, font=TITLE_FONT); p.paragraph_format.space_before = Pt(40)
+        p.paragraph_format.space_after = Pt(8)
+        p = self.doc.add_paragraph(); p.alignment = WD_ALIGN_PARAGRAPH.LEFT; nohyph(p); add_runs(p, title, size=25, color=WHITE, font=DISPLAY_FONT)
+        p.paragraph_format.line_spacing = 1.05; p.paragraph_format.space_after = Pt(12)
+        self._rule("5AD6C4", 18, 22, after=12)
         for line in sub:
-            p = c.add_paragraph(); add_runs(p, line, size=9.5, color="C9D6E8"); p.paragraph_format.space_after = Pt(3)
+            p = self.doc.add_paragraph(); p.alignment = WD_ALIGN_PARAGRAPH.LEFT; nohyph(p)
+            m = re.match(r'Chapitre (\d+)\. (.*)', line)
+            if m:
+                r = p.add_run(f"{int(m.group(1)):02d}  "); r.font.name = TITLE_FONT; r.font.bold = True; r.font.size = Pt(10.5); r.font.color.rgb = rgb("5AD6C4")
+                add_runs(p, m.group(2), size=10, color="D7E3F2")
+            else: add_runs(p, line, size=10, color="D7E3F2")
+            p.paragraph_format.space_after = Pt(5); p.paragraph_format.left_indent = Mm(8); p.paragraph_format.first_line_indent = Mm(-8)
     def box(self, kind, title, lines, keep=False):
+        if kind == 'citation':
+            p = self.doc.add_paragraph(); p.alignment = WD_ALIGN_PARAGRAPH.LEFT
+            p.paragraph_format.left_indent = Mm(10); p.paragraph_format.first_line_indent = Mm(-10)
+            p.paragraph_format.space_before = Pt(8); p.paragraph_format.space_after = Pt(10); p.paragraph_format.line_spacing = 1.12
+            r = p.add_run("\u201c\t"); r.font.name = DISPLAY_FONT; r.font.size = Pt(34); r.font.color.rgb = rgb(TEAL); r.font.bold = True
+            p.paragraph_format.tab_stops.add_tab_stop(Mm(10))
+            add_runs(p, " ".join(l.strip() for l in lines if l.strip()), size=12.5, color=NAVY, italic=True, font=DISPLAY_FONT)
+            for rr in p.runs[1:]: rr.font.size = Pt(12.5)
+            if title:
+                q = self.doc.add_paragraph(); q.alignment = WD_ALIGN_PARAGRAPH.LEFT; q.paragraph_format.left_indent = Mm(10)
+                add_runs(q, title, size=8.5, color=TEAL, bold=True, font=TITLE_FONT); q.paragraph_format.space_after = Pt(10)
+            return
         label, bg, bcol, bstyle, bsz, lcol = BOXES[kind]
         t = self.doc.add_table(rows=1, cols=1); c = t.rows[0].cells[0]; table_width(t, [TEXT_W_MM])
         set_cell_bg(c, bg); set_cell_margins(c, 90, 90, 150, 130)
@@ -380,7 +445,7 @@ class Builder:
         elif cmd == 'section':
             self.chap = 0; self.running = args[0]; self.new_section(args[1] if len(args) > 1 else args[0], blank_header=False)
             if args[0] != 'Sommaire': self.heads.append(('sec', args[0], args[0]))
-            p2 = self.doc.add_heading(level=1); add_runs(p2, args[0]); self._rule(TEAL, 18, 60)
+            p2 = self.doc.add_heading(level=1); add_runs(p2, args[0]); self._rule(TEAL, 18, 22, after=10)
         elif cmd == 'rawsection': self.chap = 0; self.new_section(args[0] if args else "", blank_header=not args, numbered=True)
         elif cmd == 'pagebreak': self.doc.add_paragraph().add_run().add_break(WD_BREAK.PAGE)
         elif cmd == 'figure': self.figure(args[0], args[1], float(args[2]) if len(args) > 2 else None)
@@ -391,6 +456,7 @@ class Builder:
                        total_rows=spec.get('totals', ()))
         elif cmd == 'space': p = self.doc.add_paragraph(); p.paragraph_format.space_after = Pt(float(args[0]) if args else 12)
         elif cmd == 'fontsize': self.small = float(args[0]) if args and args[0] != 'reset' else None
+        elif cmd == 'keyfigures': self.keyfigures(args)
         elif cmd == 'toc': self.toc()
         elif cmd == 'index': self.index()
         elif cmd == 'titlepage': self.titlepage()
@@ -398,32 +464,48 @@ class Builder:
             self.para(args[0], align=WD_ALIGN_PARAGRAPH.CENTER, size=float(args[1]) if len(args) > 1 else None,
                       color=NAVY, bold=len(args) > 2 and args[2] == 'b', font=TITLE_FONT if len(args) > 2 and args[2] == 'b' else None)
         else: raise ValueError(d)
+    def keyfigures(self, args):
+        pairs = list(zip(args[0::2], args[1::2])); n = len(pairs)
+        t = self.doc.add_table(rows=1, cols=2*n-1); gap = 3; cw = (TEXT_W_MM - gap*(n-1)) / n
+        table_width(t, [cw if i % 2 == 0 else gap for i in range(2*n-1)])
+        for i, (num, lab) in enumerate(pairs):
+            c = t.rows[0].cells[2*i]; set_cell_bg(c, GREY); set_cell_borders(c, top=('single', 18, TEAL)); set_cell_margins(c, 90, 90, 80, 80)
+            p = c.paragraphs[0]; p.alignment = WD_ALIGN_PARAGRAPH.LEFT; add_runs(p, num, size=22, color=TEAL, bold=True, font=TITLE_FONT)
+            p.paragraph_format.space_after = Pt(0); p.paragraph_format.line_spacing = 1.0
+            q = c.add_paragraph(); q.alignment = WD_ALIGN_PARAGRAPH.LEFT; add_runs(q, lab, size=8.3, color=NAVY); q.paragraph_format.line_spacing = 1.0
+            if i < n-1:
+                g = t.rows[0].cells[2*i+1]; set_cell_borders(g)
+        sp = self.doc.add_paragraph(); sp.paragraph_format.space_after = Pt(4)
     def titlepage(self):
         self.new_section("", blank_header=True, numbered=False)
-        self.para("", after=60)
-        self.para("LA TRÉSO", size=30, color=NAVY, bold=True, font=TITLE_FONT, after=0, align=WD_ALIGN_PARAGRAPH.LEFT)
-        self.para("SOUS CONTRÔLE", size=30, color=TEAL, bold=True, font=TITLE_FONT, after=10)
-        self._rule(NAVY, 12, 35, 12)
-        self.para("Prenez les bonnes décisions financières, sans être expert-comptable.", size=12.5, color=NAVY, font=TITLE_FONT, after=90)
-        self.para("Verdi Imbole", size=13, color=NAVY, bold=True, font=TITLE_FONT, after=2)
-        self.para("Auteur indépendant, auditeur financier et freelance", size=9.5, color=MID, after=70)
-        self.para("Comprendre son argent. Anticiper ses besoins. Sécuriser ses ressources. Prendre les bonnes décisions.", size=8.5, color=TEAL, bold=True, font=TITLE_FONT)
+        p = self.doc.add_paragraph(); p.alignment = WD_ALIGN_PARAGRAPH.LEFT
+        anchor_picture(p, os.path.join(ROOT, "illustrations", "design", "bandeau_titre.jpg"), 148, 92, 0, 0)
+        add_runs(p, "MANUEL PRATIQUE · ENTREPRISES & ASBL", size=8, color=TEAL, bold=True, font=TITLE_FONT)
+        p.paragraph_format.space_before = Pt(226); p.paragraph_format.space_after = Pt(8)
+        self.para("LA TRÉSO", size=32, color=NAVY, bold=True, font=TITLE_FONT, after=0, align=WD_ALIGN_PARAGRAPH.LEFT)
+        self.para("SOUS CONTRÔLE", size=32, color=TEAL, bold=True, font=TITLE_FONT, after=8, align=WD_ALIGN_PARAGRAPH.LEFT)
+        self._rule(TEAL, 18, 22, 12)
+        self.para("Prenez les bonnes décisions financières, sans être expert-comptable.", size=14, color=NAVY, italic=True, font=DISPLAY_FONT, after=40, align=WD_ALIGN_PARAGRAPH.LEFT)
+        self.para("Verdi Imbole", size=13, color=NAVY, bold=True, font=TITLE_FONT, after=2, align=WD_ALIGN_PARAGRAPH.LEFT)
+        self.para("Auteur indépendant, auditeur financier et freelance", size=9.5, color=MID, after=0, align=WD_ALIGN_PARAGRAPH.LEFT)
     def toc(self):
         entries = PAGEMAP.get('toc', [])
         for kind, text, page in entries:
-            p = self.doc.add_paragraph(); pf = p.paragraph_format
-            pf.tab_stops.add_tab_stop(Mm(TEXT_W_MM), alignment=2, leader=1)
+            p = self.doc.add_paragraph(); pf = p.paragraph_format; p.alignment = WD_ALIGN_PARAGRAPH.LEFT; nohyph(p)
+            pf.tab_stops.add_tab_stop(Mm(10)); pf.tab_stops.add_tab_stop(Mm(TEXT_W_MM), alignment=2, leader=0)
             if kind == 'part':
                 pf.space_before = Pt(5); pf.space_after = Pt(1.5)
-                add_runs(p, text, size=8.6, color=TEAL, bold=True, font=TITLE_FONT)
+                add_runs(p, text.upper().replace("·", " ·"), size=7.4, color=MID, bold=True, font=TITLE_FONT)
             elif kind == 'chap':
-                pf.space_after = Pt(1.6); pf.left_indent = Mm(0); pf.line_spacing = 1.05
-                add_runs(p, text, size=9.3, color=NAVY, bold=True)
-                r = p.add_run("\t" + str(page)); r.font.size = Pt(9.3); r.bold = True
+                m = re.match(r'(\d+)\. (.*)', text)
+                pf.space_after = Pt(1.8); pf.left_indent = Mm(10); pf.first_line_indent = Mm(-10); pf.line_spacing = 1.0; pf.right_indent = Mm(0)
+                r = p.add_run(f"{int(m.group(1)):02d}\t"); r.font.name = TITLE_FONT; r.font.bold = True; r.font.size = Pt(10.5); r.font.color.rgb = rgb(TEAL)
+                add_runs(p, m.group(2), size=9, color=NAVY)
+                r = p.add_run("\t" + str(page)); r.font.size = Pt(9); r.font.color.rgb = rgb(MID); r.font.name = TITLE_FONT
             else:
-                pf.space_after = Pt(1.2); pf.space_before = Pt(2); pf.line_spacing = 1.05
-                add_runs(p, text, size=9.3, color=NAVY, bold=True)
-                r = p.add_run("\t" + str(page)); r.font.size = Pt(9.3)
+                pf.space_after = Pt(1); pf.space_before = Pt(1); pf.left_indent = Mm(10); pf.line_spacing = 1.0
+                add_runs(p, text, size=9, color=NAVY, font=DISPLAY_FONT)
+                r = p.add_run("\t" + str(page)); r.font.size = Pt(9); r.font.color.rgb = rgb(MID); r.font.name = TITLE_FONT
         if not entries: self.para("[table des matières générée au second passage]")
     def index(self):
         entries = PAGEMAP.get('index', [])
@@ -470,7 +552,7 @@ if __name__ == "__main__":
     out = os.path.join(ROOT, "livrables", "LA_TRESO_SOUS_CONTROLE.docx")
     b.doc.core_properties.author = "Verdi Imbole"; b.doc.core_properties.title = "La tréso sous contrôle"
     b.doc.core_properties.language = "fr-FR"
-    reorder(b.doc.element); reorder(b.doc.settings.element)
+    reorder(b.doc.element); reorder(b.doc.settings.element); reorder(b.doc.styles.element)
     for sec in b.doc.sections:
         for hf in (sec.header, sec.even_page_header, sec.first_page_header, sec.footer, sec.even_page_footer, sec.first_page_footer):
             reorder(hf._element)

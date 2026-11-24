@@ -1,7 +1,7 @@
 @part III|Sécuriser et piloter la trésorerie|Chapitre 7. Sécuriser la trésorerie : contrôle interne, banque et caisse|Chapitre 8. Construire un tableau de bord de trésorerie et prendre de meilleures décisions|Chapitre 9. Anticiper les risques et gérer une crise de trésorerie
 @chapter 7|Sécuriser la trésorerie : contrôle interne, banque et caisse|Sécuriser la trésorerie
 Lundi 2 février. Le relevé de compte envoyé par Mobilier Express affiche une ligne inattendue : MAKAO aurait un **solde créditeur de 4 800 USD**. Autrement dit, MAKAO a trop payé. L'enquête prend vingt minutes : la facture MX-1187 de 4 800 USD est arrivée deux fois, une fois par courriel et une fois sur papier avec la livraison. Elle a été saisie deux fois, payée le 12 janvier par chèque, puis une seconde fois le 25 janvier dans le virement groupé de 22 000 USD.
-Personne n'a volé. Mais 4 800 USD sont sortis sans raison, au pire moment. Et si une erreur aussi simple passe, une fraude organisée passerait aussi. Le contrôle interne n'est pas une marque de méfiance envers les équipes : c'est ce qui les protège.
+Personne n'a volé, mais 4 800 USD sont sortis sans raison, au pire moment. Si une erreur aussi simple passe, une fraude organisée passerait aussi. Le contrôle interne ne traduit pas une méfiance : il protège les équipes.
 :::objectifs
 - Identifier les principaux risques qui pèsent sur les liquidités.
 - Organiser la séparation des fonctions et les circuits de validation.
@@ -63,7 +63,6 @@ Table: Extrait de la matrice des risques et des contrôles de MAKAO
 - Confier à la même personne la caisse, la saisie comptable et le rapprochement.
 - Faire le rapprochement bancaire « quand on a le temps ».
 - Payer sur une simple copie ou sur un courriel non vérifié.
-- Considérer qu'une organisation de confiance n'a pas besoin de contrôles : les contrôles protègent aussi les personnes honnêtes.
 :::
 :::retenir Synthèse du chapitre
 - Les fonds sont exposés aux vols, paiements fictifs, doublons, faux justificatifs, fraudes au changement de compte et erreurs.
