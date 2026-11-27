@@ -44,7 +44,7 @@ Toutes les illustrations listées ci-dessous sont des **créations originales** 
 | 17 | `schemas/fig16_ia_validation.svg` / `.png` | L'IA dans le circuit documentaire : la validation humaine au centre | Création originale (figs.py) | © Verdi Imbole | Chapitre 9 |
 | 18 | `schemas/fig17_demarche_service.svg` / `.png` | La démarche de mise en place d'un service d'archives | Création originale (figs.py) | © Verdi Imbole | Chapitre 10 |
 | 19 | `schemas/fig18_feuille_route_30j.svg` / `.png` | Feuille de route des trente premiers jours | Création originale (figs.py) | © Verdi Imbole | Chapitre 10 |
-| 20 | `couverture/couverture_avant.pdf` / `.png` | Couverture avant : couloir de magasin d'archives en perspective | Création originale (covers.py) | © Verdi Imbole | Couverture avant |
-| 21 | `couverture/couverture_arriere.pdf` / `.png` | Couverture arrière : argumentaire, contenu, auteur | Création originale (covers.py) | © Verdi Imbole | Couverture arrière |
+| 20 | `couverture/couverture_avant.pdf` / `.png` | Couverture avant : couloir de magasin d'archives en perspective, lumière chaude, feuillets en mouvement, ruban tricolore | Création originale (covers.py) | © Verdi Imbole | Couverture avant |
+| 21 | `couverture/couverture_arriere.pdf` / `.png` | Couverture arrière : argumentaire, contenu, chiffres clés, public visé, auteur | Création originale (covers.py) | © Verdi Imbole | Couverture arrière |
 | 22 | (intégré) | Fonds des 10 pages d'ouverture de chapitre : rayonnages stylisés et pictogramme | Création originale (build.py) | © Verdi Imbole | Ouverture de chaque chapitre |
 | 23 | (intégré) | Page de titre : pictogramme de boîte d'archives | Création originale (titlepage.html) | © Verdi Imbole | Page de titre |

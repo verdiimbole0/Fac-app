@@ -167,5 +167,22 @@ Palette appliquée à l'intérieur selon des rôles fixes, pour une lecture coh�
 - Les 19 schémas ont été recolorés dans la même palette (échelle de risque : bleu pastel, moutarde, orange, bordeaux).
 - Contraste : le texte courant reste marine ou blanc sur fond marine ; le moutarde n'est jamais utilisé pour du texte de petite taille sur fond blanc (l'ocre le remplace).
 - DOCX : couleurs alignées sur les mêmes rôles. Word ne gère pas les coins arrondis des tableaux et des cellules : ils restent droits dans la version modifiable.
-- Couvertures inchangées (la demande portait sur le design intérieur).
 - Pagination inchangée : 112 pages intérieures, aucune page blanche.
+
+## 11. Révision : couvertures
+
+Couvertures redessinées dans la palette de l'intérieur (marine, bleu pastel, moutarde, orange, bordeaux), avec un objectif d'impact commercial.
+
+**Couverture avant.**
+- Lumière chaude (crème, moutarde, orange) jaillissant du fond du couloir, avec des faisceaux rayonnants : point focal unique qui attire l'œil.
+- Boîtes d'archives colorées : kraft, bleu pastel et touches de moutarde, d'orange et de bordeaux.
+- Feuillets qui s'échappent de la lumière vers le lecteur : la couverture est en mouvement.
+- Ruban en biais tricolore (moutarde, orange, bordeaux) et filets segmentés aux cinq couleurs en haut et en bas.
+- Titre en capitales grasses, lisible en vignette sur une boutique en ligne. Les verbes « organiser, protéger, retrouver et valoriser » sont mis en valeur en moutarde.
+
+**Couverture arrière.**
+- Accroche dont le mot « exposent » est mis en valeur, et sept bénéfices numérotés en couleurs alternées.
+- Quatre cartes de chiffres clés.
+- Rubrique « Pour qui ? » listant onze profils de lecteurs, frise de rayonnages aux couleurs de la palette et encadré de l'auteur.
+
+Note technique : le moteur PDF ne rendait pas les dégradés radiaux. La lumière est donc construite par superposition de cercles translucides, ce qui donne un rendu identique sur tout support.
