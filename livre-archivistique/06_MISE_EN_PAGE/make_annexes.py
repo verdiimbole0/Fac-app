@@ -84,5 +84,4 @@ def word_templates():
         print("ok", out.name)
 
 if __name__ == "__main__":
-    registre()
     word_templates()

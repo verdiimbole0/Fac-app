@@ -186,3 +186,28 @@ Couvertures redessinées dans la palette de l'intérieur (marine, bleu pastel, m
 - Rubrique « Pour qui ? » listant onze profils de lecteurs, frise de rayonnages aux couleurs de la palette et encadré de l'auteur.
 
 Note technique : le moteur PDF ne rendait pas les dégradés radiaux. La lumière est donc construite par superposition de cercles translucides, ce qui donne un rendu identique sur tout support.
+
+## 12. Révision : les dix modèles en classeurs Excel
+
+Les dix modèles (annexes A à J) sont désormais fournis en classeurs Excel modifiables, en plus des versions Word. Chaque classeur comprend un mode d'emploi, le modèle vierge, un exemple rempli (cas fictif Horizon) et un onglet de listes modifiable.
+
+| Annexe | Fonctions automatiques |
+|---|---|
+| A · Inventaire | Numérotation, totaux par unité (ml, boîtes, Go), lots en état critique, alertes d'état et d'urgence, contrôle des années |
+| B · Plan de classement | Plan type prérempli (40 rubriques), niveau calculé depuis le code, contrôle des doublons et du format, mise en relief par niveau |
+| C · Registre de suivi | Échéance = année de fin + DUA, alertes « Échéance atteinte » et « Gelé : ne pas éliminer », doublons de cotes, filtres |
+| D · Prêt et consultation | Fiche imprimable et registre : retour prévu, statut (en cours, rendu, en retard), jours de retard, autorisation manquante |
+| E · Tableau de gestion | Contrôle de complétude ligne par ligne (fondement, point de départ, DUA, sort, modalités de tri), sort C/D/T en couleur |
+| F · Bordereau de versement | Nombre de boîtes, volume, boîtes confidentielles, échéances, doublons, bloc de signatures |
+| G · Procès-verbal de destruction | Volume total, lignes bloquées, « NE PAS DÉTRUIRE » si suspension, contrôle de la référence, bloc de visas |
+| H · Diagnostic | Priorité calculée, score global, priorités hautes, barres de données et graphique par domaine |
+| I · Politique d'archivage | Texte modèle en 9 sections, suivi de rédaction et taux d'avancement, matrice RACI avec contrôle (un seul A, au moins un R) |
+| J · Checklist de contrôle interne | Taux de conformité global et par domaine, non-conformités, suivi des actions et échéances dépassées |
+
+Contrôles effectués :
+- les dix classeurs ont été recalculés dans LibreOffice : aucune erreur de formule ;
+- les résultats des exemples ont été vérifiés (totaux, échéances, retards, alertes, taux) ;
+- les mises en forme conditionnelles et les listes déroulantes ont été vérifiées aussi sur les onglets d'exemple ;
+- les zones d'impression sont limitées aux lignes utiles (5 à 8 pages A4 par classeur, mode d'emploi compris).
+
+Le livre renvoie désormais au fichier Annexe_C_Registre_de_suivi_documentaire.xlsx (chapitre 4 et annexe C). Pagination inchangée : 112 pages.

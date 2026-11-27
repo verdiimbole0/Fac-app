@@ -3,7 +3,7 @@ titre: "Annexes : modèles prêts à l'emploi"
 classe: "annexes"
 ---
 
-Ces dix modèles sont directement réutilisables. Les versions modifiables (Word et Excel) sont fournies dans le dossier *04_ANNEXES* qui accompagne l'ouvrage. Adaptez-les à votre organisation et à votre législation avant usage. Les exemples d'utilisation reprennent le cas fictif de l'Organisation Horizon.
+Ces dix modèles sont directement réutilisables. Chacun est fourni dans le dossier *04_ANNEXES* qui accompagne l'ouvrage, en version Word et sous forme de classeur Excel (mode d'emploi, modèle avec listes déroulantes, calculs et alertes automatiques, exemple rempli). Adaptez-les à votre organisation et à votre législation avant usage. Les exemples d'utilisation reprennent le cas fictif de l'Organisation Horizon.
 
 ## Annexe A · Fiche d'inventaire des archives
 
@@ -51,7 +51,7 @@ Ces dix modèles sont directement réutilisables. Les versions modifiables (Word
 *Colonnes complémentaires dans le fichier Excel :* rubrique, date de début et de fin séparées, support, mots-clés, sort final, observations.
 :::
 
-*Fichier fourni :* **Registre_suivi_documentaire.xlsx**, avec listes déroulantes (rubrique, service, support, confidentialité, sort, statut), contrôle des cotes en double, calcul automatique de l'échéance et onglet de paramètres modifiable. Les durées saisies dans l'exemple sont fictives.
+*Fichier fourni :* **Annexe_C_Registre_de_suivi_documentaire.xlsx**, avec listes déroulantes (rubrique, service, support, confidentialité, sort, statut), contrôle des cotes en double, calcul automatique de l'échéance, alertes « Échéance atteinte » et « Gelé », et onglet de listes modifiable. Les durées saisies dans l'exemple sont fictives.
 
 ## Annexe D · Fiche de prêt et de consultation
 
