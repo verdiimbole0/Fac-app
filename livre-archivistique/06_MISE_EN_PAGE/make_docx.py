@@ -11,13 +11,13 @@ import build
 
 ROOT = build.ROOT
 MS, OUTD = build.MS, ROOT / "06_MISE_EN_PAGE" / "build"
-NAVY, GOLD, GRAY = "0A1E3F", "2D5A3B", "F2F4F7"
-LABELS = {"situation": ("SITUATION", "F2F4F7", "2D5A3B"), "objectifs": ("OBJECTIFS PÉDAGOGIQUES", "FFFFFF", "0A1E3F"),
-          "definition": ("DÉFINITIONS", "FFFFFF", "2D5A3B"), "exemple": ("EXEMPLE PROFESSIONNEL", "F2F4F7", "14305C"),
-          "horizon": ("FIL ROUGE · ORGANISATION HORIZON (cas fictif)", "E6EFE8", "2D5A3B"), "attention": ("ATTENTION", "FFFFFF", "7B1E30"),
-          "retenir": ("À RETENIR", "0A1E3F", "2D5A3B"), "cas": ("CAS PRATIQUE", "FFFFFF", "0A1E3F"), "corrige": ("CORRIGÉ", "F2F4F7", "14305C"),
-          "qcm": ("QUESTIONNAIRE À CHOIX MULTIPLES", "FFFFFF", "0A1E3F"), "prompt": ("PROMPT PRÊT À L'EMPLOI", "F7F8FA", "14305C"),
-          "modele": ("MODÈLE RÉUTILISABLE", "FFFFFF", "2D5A3B"), "note": ("NOTE", "F2F4F7", "5A6476"), "glosscols": None}
+NAVY, GOLD, GRAY = "0A1E3F", "D9A520", "EFF5FC"
+LABELS = {"situation": ("SITUATION", "EFF5FC", "1F3A68"), "objectifs": ("OBJECTIFS PÉDAGOGIQUES", "DCE9F7", "0A1E3F"),
+          "definition": ("DÉFINITIONS", "FFFFFF", "A8761A"), "exemple": ("EXEMPLE PROFESSIONNEL", "EFF5FC", "1F3A68"),
+          "horizon": ("FIL ROUGE · ORGANISATION HORIZON (cas fictif)", "FBF3DC", "A8761A"), "attention": ("ATTENTION", "FDF1E7", "B65A1F"),
+          "retenir": ("À RETENIR", "0A1E3F", "D9A520"), "cas": ("CAS PRATIQUE", "FFFFFF", "7B1E30"), "corrige": ("CORRIGÉ", "F7EBEE", "7B1E30"),
+          "qcm": ("QUESTIONNAIRE À CHOIX MULTIPLES", "FFFFFF", "7B1E30"), "prompt": ("PROMPT PRÊT À L'EMPLOI", "EFF5FC", "1F3A68"),
+          "modele": ("MODÈLE RÉUTILISABLE", "FFFFFF", "A8761A"), "note": ("NOTE", "F4F6F9", "5A6476"), "glosscols": None}
 
 LUA = r'''
 local labels = {situation=1,objectifs=1,definition=1,exemple=1,horizon=1,attention=1,retenir=1,cas=1,corrige=1,qcm=1,prompt=1,modele=1,note=1}
@@ -175,14 +175,14 @@ def postprocess(path, full=True):
             label, fill, accent = LABELS[kind]
             for r in p0.runs: r.text = ""
             run = p0.add_run(label); run.bold = True; run.font.size = Pt(7.5); run.font.name = "Montserrat"
-            run.font.color.rgb = RGBColor.from_string("8DBB9A" if kind == "retenir" else accent)
+            run.font.color.rgb = RGBColor.from_string("D9A520" if kind == "retenir" else accent)
             p0.paragraph_format.alignment = WD_ALIGN_PARAGRAPH.LEFT
             set_cell_shading(c, fill)
             set_cell_borders(c, accent if kind not in ("retenir",) else NAVY, left=36 if kind in ("situation", "definition", "cas", "prompt") else None, sz=6)
             if kind == "retenir":
                 for p in c.paragraphs[1:]:
                     for r in p.runs:
-                        r.font.color.rgb = RGBColor(255, 255, 255) if not r.bold else RGBColor.from_string("8DBB9A")
+                        r.font.color.rgb = RGBColor(255, 255, 255) if not r.bold else RGBColor.from_string("D9A520")
                 for tb in c.tables:
                     pass
             for tb in c.tables:

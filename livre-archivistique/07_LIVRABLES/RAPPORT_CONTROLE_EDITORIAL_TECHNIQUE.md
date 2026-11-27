@@ -150,3 +150,22 @@ Demandes de l'auteur appliquées :
 Règles de design respectées : une couleur dominante et deux couleurs d'accent à rôles fixes ; contrastes suffisants pour le texte blanc sur marine, vert et bordeaux ; neutres froids cohérents avec le marine ; rayons d'arrondi homogènes.
 
 Pagination inchangée : 112 pages intérieures, préliminaires sur 8 pages, aucune page blanche.
+
+## 10. Révision : palette intérieure et arrondis
+
+Palette appliquée à l'intérieur selon des rôles fixes, pour une lecture cohérente :
+
+| Rôle | Couleur |
+|---|---|
+| Structure : bandeaux de section, en-têtes de tableaux, « À retenir », ouvertures | Bleu marine #0A1E3F |
+| Fonds doux : situation, exemple, prompt, lignes alternées des tableaux | Bleu pastel #DCE9F7 / #EFF5FC |
+| Numérotation, puces, filets, fil rouge Horizon, définitions, modèles | Moutarde #D9A520 (texte en ocre #A8761A pour la lisibilité) |
+| Avertissements : encadrés « Attention » et erreurs | Orange #E07B39 (texte #B65A1F) |
+| Exercices : cas pratiques, QCM, corrigés | Bordeaux #7B1E30 |
+
+- Coins arrondis sur tous les encadrés (3 mm), les tableaux (3 mm), les bandeaux de titre, les carrés numérotés et pictogrammes, les blocs de code et les cases des schémas.
+- Les 19 schémas ont été recolorés dans la même palette (échelle de risque : bleu pastel, moutarde, orange, bordeaux).
+- Contraste : le texte courant reste marine ou blanc sur fond marine ; le moutarde n'est jamais utilisé pour du texte de petite taille sur fond blanc (l'ocre le remplace).
+- DOCX : couleurs alignées sur les mêmes rôles. Word ne gère pas les coins arrondis des tableaux et des cellules : ils restent droits dans la version modifiable.
+- Couvertures inchangées (la demande portait sur le design intérieur).
+- Pagination inchangée : 112 pages intérieures, aucune page blanche.

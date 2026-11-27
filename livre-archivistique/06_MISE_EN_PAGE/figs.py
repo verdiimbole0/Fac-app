@@ -5,9 +5,11 @@ import pathlib, math, cairosvg
 
 OUT = pathlib.Path(__file__).resolve().parent.parent / "03_ILLUSTRATIONS" / "schemas"
 OUT.mkdir(parents=True, exist_ok=True)
-VC, BORD = "#8DBB9A", "#7B1E30"
-NAVY, NAVY2, GOLD, GOLDL, GRAY, LINE, INK, MUTED = "#0A1E3F", "#14305C", "#2D5A3B", "#E6EFE8", "#F2F4F7", "#D9DEE6", "#1D2433", "#5A6476"
-RED, ORANGE, YEL, GREEN = "#7B1E30", "#C9687A", "#E3B6BE", "#2D5A3B"
+VC, BORD = "#E3B341", "#7B1E30"
+MOUT = "#D9A520"
+NAVY, NAVY2, GOLD, GOLDL, GRAY, LINE, INK, MUTED = "#0A1E3F", "#1F3A68", "#C8951E", "#FBF3DC", "#EEF4FB", "#C9D9EE", "#1D2433", "#5A6476"
+PASTEL, PASTELM, ORANGE_D = "#DCE9F7", "#8FB4E0", "#B65A1F"
+RED, ORANGE, YEL, GREEN = "#7B1E30", "#E07B39", "#F6DFA0", "#1F3A68"
 FIGS = {}
 
 def fig(fn):
@@ -44,7 +46,7 @@ def L(x1, y1, x2, y2, color=LINE, sw=1, dash=None):
     d = f' stroke-dasharray="{dash}"' if dash else ""
     return f'<line x1="{x1}" y1="{y1}" x2="{x2}" y2="{y2}" stroke="{color}" stroke-width="{sw}"{d}/>'
 
-def sq(x, y, n, s=26, fill=BORD, color="white"):
+def sq(x, y, n, s=26, fill=MOUT, color=NAVY):
     return R(x, y, s, s, fill, rx=4) + M(x + s / 2, y + s / 2, str(n), 13, color, 800, ls=0)
 
 def card(x, y, w, h, title, text, n=None, head=NAVY, tsize=12.5):
@@ -117,11 +119,11 @@ def fig03_cycle_vie():
     cx, cy, R = 450, 305, 185
     ARC = "#C3CCDC"
     icons = [
-        '<rect x="-20" y="-16" width="40" height="30" rx="2"/><path d="M-20 -16 L0 2 L20 -16"/><path d="M8 6 h18 M17 -3 v18" stroke="#2D5A3B"/>',
-        '<rect x="-17" y="-22" width="30" height="42" rx="2"/><path d="M-10 -12h16M-10 -4h16M-10 4h10"/><path d="M10 18 l14 -22 l5 3 l-14 22 z" stroke="#2D5A3B"/>',
-        '<path d="M-22 -8 h36 l-8 -8 M22 8 h-36 l8 8"/><circle cx="0" cy="0" r="3" fill="#2D5A3B" stroke="#2D5A3B"/>',
-        '<rect x="-22" y="-8" width="44" height="28" rx="2"/><path d="M-24 -16 h48 v8 h-48 z M-7 4 h14" /><rect x="-9" y="0" width="18" height="9" stroke="#2D5A3B"/>',
-        '<path d="M-14 -22 h28 M-14 22 h28 M-11 -22 c0 14 22 14 22 22 s-22 8 -22 22 M11 -22 c0 14 -22 14 -22 22 s22 8 22 22" transform="scale(1 0.98)"/><path d="M-5 16 h10" stroke="#2D5A3B"/>',
+        '<rect x="-20" y="-16" width="40" height="30" rx="2"/><path d="M-20 -16 L0 2 L20 -16"/><path d="M8 6 h18 M17 -3 v18" stroke="#C8951E"/>',
+        '<rect x="-17" y="-22" width="30" height="42" rx="2"/><path d="M-10 -12h16M-10 -4h16M-10 4h10"/><path d="M10 18 l14 -22 l5 3 l-14 22 z" stroke="#C8951E"/>',
+        '<path d="M-22 -8 h36 l-8 -8 M22 8 h-36 l8 8"/><circle cx="0" cy="0" r="3" fill="#C8951E" stroke="#C8951E"/>',
+        '<rect x="-22" y="-8" width="44" height="28" rx="2"/><path d="M-24 -16 h48 v8 h-48 z M-7 4 h14" /><rect x="-9" y="0" width="18" height="9" stroke="#C8951E"/>',
+        '<path d="M-14 -22 h28 M-14 22 h28 M-11 -22 c0 14 22 14 22 22 s-22 8 -22 22 M11 -22 c0 14 -22 14 -22 22 s22 8 22 22" transform="scale(1 0.98)"/><path d="M-5 16 h10" stroke="#C8951E"/>',
     ]
     steps = [("1. Création ou réception", "Le document entre dans\nla sphère de l'organisation"),
              ("2. Enregistrement", "Il reçoit date, numéro\net dossier (capture)"),
@@ -269,7 +271,7 @@ def fig10_local_comparatif():
     b = ""
     for side in (0, 1):
         x0 = 10 + side * 450
-        b += R(x0, 10, 430, 360, "#F5E6E9" if side == 0 else "#E6EFE8")
+        b += R(x0, 10, 430, 360, "#F7E9EC" if side == 0 else "#EEF4FB")
         b += R(x0, 10, 430, 38, RED if side == 0 else GREEN) + M(x0 + 215, 29, "À RISQUE" if side == 0 else "BONNES PRATIQUES", 12.5, "white", 800, ls=1.5)
         # sol + rayonnage
         b += L(x0 + 20, 300, x0 + 410, 300, INK, 2)
@@ -367,7 +369,7 @@ def fig14_exigences_securite():
 def fig15_matrice_risques():
     w, h = 760, 560
     ox, oy, c = 120, 30, 100
-    cols = {1: "#E6EFE8", 2: "#CFE2D4", 3: "#F1E4E0", 4: "#E3B6BE", 5: "#C9687A"}
+    cols = {1: "#DCE9F7", 2: "#BFD3EC", 3: "#F6DFA0", 4: "#EFA46B", 5: "#C25A6C"}
     b = ""
     for p in range(1, 6):
         for i in range(1, 6):

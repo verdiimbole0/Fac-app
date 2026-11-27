@@ -37,19 +37,19 @@ def opener_bg(n):
         while x < 208:
             w = 5 + ((i * 7 + k * 3) % 5)
             h = 18 + ((i * 5 + k * 11) % 14)
-            col = ("#7B1E30" if (i + k) % 2 else "#2D5A3B") if (i + k) % 7 == 0 else "#173563"
+            col = ("#7B1E30" if (i + k) % 2 else "#D9A520") if (i + k) % 7 == 0 else "#173563"
             shelves.append(f'<rect x="{x}" y="{y-h}" width="{w}" height="{h}" fill="{col}" opacity="{0.95 if col!="#173563" else 0.85}" rx="0.5"/>')
             x += w + 1.2
             k += 1
     icon = ICONS[n]
     return f'''<svg class="op-bg" viewBox="0 0 210 297" xmlns="http://www.w3.org/2000/svg">
 <rect width="210" height="297" fill="#0A1E3F"/>
-<rect x="0" y="0" width="6" height="297" fill="#7B1E30"/>
+<rect x="0" y="0" width="6" height="297" fill="#D9A520"/>
 {''.join(shelves)}
 <rect x="130" y="0" width="80" height="297" fill="url(#fade)"/>
 <defs><linearGradient id="fade" x1="0" x2="1"><stop offset="0" stop-color="#0A1E3F" stop-opacity="1"/><stop offset="0.6" stop-color="#0A1E3F" stop-opacity="0.15"/><stop offset="1" stop-color="#0A1E3F" stop-opacity="0"/></linearGradient></defs>
-<path d="M0 206 L210 190 L210 297 L0 297 Z" fill="#0E2A52"/><path d="M0 206 L210 190" stroke="#B4475B" stroke-width="0.9"/>
-<g transform="translate(152 222) scale(0.25)" fill="none" stroke="#8DBB9A" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">{icon}</g>
+<path d="M0 206 L210 190 L210 297 L0 297 Z" fill="#0E2A52"/><path d="M0 206 L210 190" stroke="#D9A520" stroke-width="0.9"/>
+<g transform="translate(152 222) scale(0.25)" fill="none" stroke="#D9A520" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">{icon}</g>
 </svg>'''
 
 import json as _json
