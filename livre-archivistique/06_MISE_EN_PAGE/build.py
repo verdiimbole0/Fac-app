@@ -31,25 +31,25 @@ def opener_bg(n):
     shelves = []
     for i in range(7):
         y = 40 + i * 38
-        shelves.append(f'<line x1="140" y1="{y}" x2="210" y2="{y}" stroke="#1B3A6B" stroke-width="0.6"/>')
+        shelves.append(f'<line x1="140" y1="{y}" x2="210" y2="{y}" stroke="#45494F" stroke-width="0.6"/>')
         x = 142
         k = 0
         while x < 208:
             w = 5 + ((i * 7 + k * 3) % 5)
             h = 18 + ((i * 5 + k * 11) % 14)
-            col = "#C7A34F" if (i + k) % 9 == 0 else "#173563"
-            shelves.append(f'<rect x="{x}" y="{y-h}" width="{w}" height="{h}" fill="{col}" opacity="{0.9 if col=="#C7A34F" else 0.85}"/>')
+            col = ("#7B1E30" if (i + k) % 2 else "#2D5A3B") if (i + k) % 7 == 0 else "#3E4248"
+            shelves.append(f'<rect x="{x}" y="{y-h}" width="{w}" height="{h}" fill="{col}" opacity="{0.95 if col!="#3E4248" else 0.85}" rx="0.5"/>')
             x += w + 1.2
             k += 1
     icon = ICONS[n]
     return f'''<svg class="op-bg" viewBox="0 0 210 297" xmlns="http://www.w3.org/2000/svg">
-<rect width="210" height="297" fill="#0A1E3F"/>
-<rect x="0" y="0" width="6" height="297" fill="#C7A34F"/>
+<rect width="210" height="297" fill="#33373D"/>
+<rect x="0" y="0" width="6" height="297" fill="#7B1E30"/>
 {''.join(shelves)}
 <rect x="130" y="0" width="80" height="297" fill="url(#fade)"/>
-<defs><linearGradient id="fade" x1="0" x2="1"><stop offset="0" stop-color="#0A1E3F" stop-opacity="1"/><stop offset="0.6" stop-color="#0A1E3F" stop-opacity="0.15"/><stop offset="1" stop-color="#0A1E3F" stop-opacity="0"/></linearGradient></defs>
-<path d="M0 206 L210 190 L210 297 L0 297 Z" fill="#102A52"/><path d="M0 206 L210 190" stroke="#C7A34F" stroke-width="0.8"/>
-<g transform="translate(152 222) scale(0.25)" fill="none" stroke="#C7A34F" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">{icon}</g>
+<defs><linearGradient id="fade" x1="0" x2="1"><stop offset="0" stop-color="#33373D" stop-opacity="1"/><stop offset="0.6" stop-color="#33373D" stop-opacity="0.15"/><stop offset="1" stop-color="#33373D" stop-opacity="0"/></linearGradient></defs>
+<path d="M0 206 L210 190 L210 297 L0 297 Z" fill="#26292E"/><path d="M0 206 L210 190" stroke="#B4475B" stroke-width="0.9"/>
+<g transform="translate(152 222) scale(0.25)" fill="none" stroke="#8DBB9A" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">{icon}</g>
 </svg>'''
 
 import json as _json

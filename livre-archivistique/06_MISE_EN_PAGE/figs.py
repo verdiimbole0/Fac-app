@@ -5,8 +5,9 @@ import pathlib, math, cairosvg
 
 OUT = pathlib.Path(__file__).resolve().parent.parent / "03_ILLUSTRATIONS" / "schemas"
 OUT.mkdir(parents=True, exist_ok=True)
-NAVY, NAVY2, GOLD, GOLDL, GRAY, LINE, INK, MUTED = "#0A1E3F", "#14305C", "#C7A34F", "#F5EEDC", "#F2F4F7", "#D9DEE6", "#1D2433", "#5A6476"
-RED, ORANGE, YEL, GREEN = "#B8463C", "#D98B3A", "#E8C658", "#5E9E6E"
+VC, BORD = "#8DBB9A", "#7B1E30"
+NAVY, NAVY2, GOLD, GOLDL, GRAY, LINE, INK, MUTED = "#33373D", "#4A4F57", "#2D5A3B", "#E6EFE8", "#F2F3F4", "#DCDDDF", "#222428", "#5E6166"
+RED, ORANGE, YEL, GREEN = "#7B1E30", "#C9687A", "#E3B6BE", "#2D5A3B"
 FIGS = {}
 
 def fig(fn):
@@ -32,7 +33,7 @@ def T(x, y, s, size=13, color=INK, weight=400, anchor="middle", fam="Source Sans
 def M(x, y, s, size=12, color=NAVY, weight=700, anchor="middle", ls=0.5):
     return T(x, y, s, size, color, weight, anchor, "Montserrat", ls=ls)
 
-def R(x, y, w, h, fill=GRAY, stroke="none", sw=1, rx=0):
+def R(x, y, w, h, fill=GRAY, stroke="none", sw=1, rx=7):
     return f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="{rx}" fill="{fill}" stroke="{stroke}" stroke-width="{sw}"/>'
 
 def A(x1, y1, x2, y2, color=NAVY, sw=1.8, dash=None, marker="ar"):
@@ -43,8 +44,8 @@ def L(x1, y1, x2, y2, color=LINE, sw=1, dash=None):
     d = f' stroke-dasharray="{dash}"' if dash else ""
     return f'<line x1="{x1}" y1="{y1}" x2="{x2}" y2="{y2}" stroke="{color}" stroke-width="{sw}"{d}/>'
 
-def sq(x, y, n, s=26, fill=GOLD, color=NAVY):
-    return R(x, y, s, s, fill) + M(x + s / 2, y + s / 2, str(n), 13, color, 800, ls=0)
+def sq(x, y, n, s=26, fill=BORD, color="white"):
+    return R(x, y, s, s, fill, rx=4) + M(x + s / 2, y + s / 2, str(n), 13, color, 800, ls=0)
 
 def card(x, y, w, h, title, text, n=None, head=NAVY, tsize=12.5):
     b = R(x, y, w, h, GRAY) + R(x, y, w, 34, head)
@@ -58,7 +59,7 @@ def card(x, y, w, h, title, text, n=None, head=NAVY, tsize=12.5):
 @fig
 def fig01_types_archives():
     w, h = 900, 430
-    b = R(360, 170, 180, 90, NAVY) + M(450, 205, "UNE ARCHIVE", 15, "white", 800) + T(450, 232, "se caractérise par…", 12.5, "#C9D3E3", italic=True)
+    b = R(360, 170, 180, 90, NAVY) + M(450, 205, "UNE ARCHIVE", 15, "white", 800) + T(450, 232, "se caractérise par…", 12.5, "#CFD2D6", italic=True)
     items = [
         (40, 30, "SUPPORT", "Physique (papier, photo, plan)\nNumérique natif\nNumérisé"),
         (620, 30, "STATUT", "Publique\nPrivée (entreprise, ASBL,\nfamille, personne)"),
@@ -99,8 +100,8 @@ def fig00_horizon():
           ("PRG", "Programmes\net Projets"), ("LOG", "Logistique\net Achats"), ("COM", "Communication\net Partenariats")]
     for i, (c, n) in enumerate(sv):
         x = 20 + i * 145
-        b += L(450, 60, x + 65, 100, LINE, 1.2) + R(x, 100, 130, 82, GRAY) + R(x, 100, 130, 26, GOLD) + M(x + 65, 113, c, 12, NAVY, 800) + T(x + 65, 154, n, 12.5)
-    b += M(450, 210, "PLAN DE CLASSEMENT FONCTIONNEL", 11, GOLD, 800, ls=1.5)
+        b += L(450, 60, x + 65, 100, LINE, 1.2) + R(x, 100, 130, 82, GRAY) + R(x, 100, 130, 26, GOLD) + M(x + 65, 113, c, 12, "white", 800) + T(x + 65, 154, n, 12.5)
+    b += M(450, 210, "PLAN DE CLASSEMENT FONCTIONNEL", 11, BORD, 800, ls=1.5)
     fn = ["01 Gouvernance", "02 Finances", "03 Ressources\nhumaines", "04 Programmes", "05 Partenariats", "06 Logistique", "07 Communication"]
     for i, f in enumerate(fn):
         x = 20 + i * 124.5
@@ -114,13 +115,13 @@ def fig03_cycle_vie():
     """Roue de processus façon plaquette : arcs gris, pictogrammes, légendes en renvoi."""
     w, h = 900, 600
     cx, cy, R = 450, 305, 185
-    ARC = "#C9CED8"
+    ARC = "#CACBCE"
     icons = [
-        '<rect x="-20" y="-16" width="40" height="30" rx="2"/><path d="M-20 -16 L0 2 L20 -16"/><path d="M8 6 h18 M17 -3 v18" stroke="#C7A34F"/>',
-        '<rect x="-17" y="-22" width="30" height="42" rx="2"/><path d="M-10 -12h16M-10 -4h16M-10 4h10"/><path d="M10 18 l14 -22 l5 3 l-14 22 z" stroke="#C7A34F"/>',
-        '<path d="M-22 -8 h36 l-8 -8 M22 8 h-36 l8 8"/><circle cx="0" cy="0" r="3" fill="#C7A34F" stroke="#C7A34F"/>',
-        '<rect x="-22" y="-8" width="44" height="28" rx="2"/><path d="M-24 -16 h48 v8 h-48 z M-7 4 h14" /><rect x="-9" y="0" width="18" height="9" stroke="#C7A34F"/>',
-        '<path d="M-14 -22 h28 M-14 22 h28 M-11 -22 c0 14 22 14 22 22 s-22 8 -22 22 M11 -22 c0 14 -22 14 -22 22 s22 8 22 22" transform="scale(1 0.98)"/><path d="M-5 16 h10" stroke="#C7A34F"/>',
+        '<rect x="-20" y="-16" width="40" height="30" rx="2"/><path d="M-20 -16 L0 2 L20 -16"/><path d="M8 6 h18 M17 -3 v18" stroke="#2D5A3B"/>',
+        '<rect x="-17" y="-22" width="30" height="42" rx="2"/><path d="M-10 -12h16M-10 -4h16M-10 4h10"/><path d="M10 18 l14 -22 l5 3 l-14 22 z" stroke="#2D5A3B"/>',
+        '<path d="M-22 -8 h36 l-8 -8 M22 8 h-36 l8 8"/><circle cx="0" cy="0" r="3" fill="#2D5A3B" stroke="#2D5A3B"/>',
+        '<rect x="-22" y="-8" width="44" height="28" rx="2"/><path d="M-24 -16 h48 v8 h-48 z M-7 4 h14" /><rect x="-9" y="0" width="18" height="9" stroke="#2D5A3B"/>',
+        '<path d="M-14 -22 h28 M-14 22 h28 M-11 -22 c0 14 22 14 22 22 s-22 8 -22 22 M11 -22 c0 14 -22 14 -22 22 s22 8 22 22" transform="scale(1 0.98)"/><path d="M-5 16 h10" stroke="#2D5A3B"/>',
     ]
     steps = [("1. Création ou réception", "Le document entre dans\nla sphère de l'organisation"),
              ("2. Enregistrement", "Il reçoit date, numéro\net dossier (capture)"),
@@ -130,7 +131,7 @@ def fig03_cycle_vie():
     b = ""
     # cercle central
     b += f'<circle cx="{cx}" cy="{cy}" r="88" fill="{NAVY}"/>' + M(cx, cy - 22, "CYCLE DE VIE", 13, "white", 800, ls=1.5) + M(cx, cy - 2, "DU DOCUMENT", 13, "white", 800, ls=1.5)
-    b += f'<line x1="{cx-28}" y1="{cy+16}" x2="{cx+28}" y2="{cy+16}" stroke="{GOLD}" stroke-width="2.4"/>' + T(cx, cy + 40, "traçabilité\nà chaque étape", 12, "#C9D3E3", italic=True)
+    b += f'<line x1="{cx-28}" y1="{cy+16}" x2="{cx+28}" y2="{cy+16}" stroke="{GOLD}" stroke-width="2.4"/>' + T(cx, cy + 40, "traçabilité\nà chaque étape", 12, "#CFD2D6", italic=True)
     for i in range(5):
         ang = math.radians(-90 + i * 72)
         x, y = cx + R * math.cos(ang), cy + R * math.sin(ang)
@@ -146,13 +147,13 @@ def fig03_cycle_vie():
         ly = y + (-82 if i == 0 else 92 if math.sin(ang) > 0.5 else 0)
         if i == 0:
             b += M(x + 150, y - 30, t, 12.5, NAVY, 800, anchor="start", ls=0) + T(x + 150, y - 4, d, 12, INK, anchor="start")
-            b += L(x + 66, y - 30, x + 142, y - 30, "#9AA2B1", 1.2) + f'<circle cx="{x+142}" cy="{y-30:.1f}" r="2.5" fill="{GOLD}"/>'
+            b += L(x + 66, y - 30, x + 142, y - 30, "#9A9DA2", 1.2) + f'<circle cx="{x+142}" cy="{y-30:.1f}" r="2.5" fill="{GOLD}"/>'
         else:
             right = math.cos(ang) > 0
             ex = x + (92 if right else -92)
             tx = ex + (14 if right else -14)
             anchor = "start" if right else "end"
-            b += L(x + (66 if right else -66), y, ex, y, "#9AA2B1", 1.2) + f'<circle cx="{ex}" cy="{y:.1f}" r="2.5" fill="{GOLD}"/>'
+            b += L(x + (66 if right else -66), y, ex, y, "#9A9DA2", 1.2) + f'<circle cx="{ex}" cy="{y:.1f}" r="2.5" fill="{GOLD}"/>'
             b += M(tx, y - 14, t, 12.5, NAVY, 800, anchor=anchor, ls=0) + T(tx, y + 14, d, 12, INK, anchor=anchor)
     return svg(w, h, b)
 
@@ -161,12 +162,12 @@ def fig04_trois_ages():
     w, h = 900, 330
     ages = [("1er ÂGE", "ARCHIVES COURANTES", "Usage quotidien\nDans les services", "Service producteur", NAVY2),
             ("2e ÂGE", "ARCHIVES INTERMÉDIAIRES", "Usage occasionnel\nLocal de préarchivage", "Archiviste + service", NAVY),
-            ("3e ÂGE", "ARCHIVES DÉFINITIVES", "Intérêt historique\nou probant durable", "Archiviste", "#071530")]
+            ("3e ÂGE", "ARCHIVES DÉFINITIVES", "Intérêt historique\nou probant durable", "Archiviste", "#1F2125")]
     b = ""
     for i, (a, t, d, resp, col) in enumerate(ages):
         x = 20 + i * 290
         b += f'<path d="M{x} 40 H{x+250} L{x+275} 95 L{x+250} 150 H{x} L{x+25} 95 Z" fill="{col}"/>' if i else f'<path d="M{x} 40 H{x+250} L{x+275} 95 L{x+250} 150 H{x} Z" fill="{col}"/>'
-        b += M(x + 140, 75, a, 12, GOLD, 800, ls=2) + M(x + 140, 105, t, 12, "white", 700)
+        b += M(x + 140, 75, a, 12, VC, 800, ls=2) + M(x + 140, 105, t, 12, "white", 700)
         b += R(x + 10, 170, 250, 90, GRAY) + T(x + 135, 200, d, 13) + T(x + 135, 245, "Responsable : " + resp, 12, MUTED, italic=True)
     b += A(40, 295, 860, 295, GOLD, 2, marker="arg") + M(150, 312, "CRÉATION", 10, MUTED, 700, ls=1) + M(440, 312, "FIN DE LA DUA", 10, MUTED, 700, ls=1) + M(760, 312, "SANS LIMITE", 10, MUTED, 700, ls=1)
     b += L(310, 285, 310, 305, GOLD, 2) + L(600, 285, 600, 305, GOLD, 2) + T(455, 282, "tri et sort final", 11, GOLD, italic=True)
@@ -182,7 +183,7 @@ def fig05_modeles_gestion():
     for i, (t, d, p) in enumerate(titles):
         x = 15 + i * 295
         hl = i == 2
-        b += R(x, 10, 275, 280, GOLDL if hl else GRAY) + R(x, 10, 275, 36, GOLD if hl else NAVY) + M(x + 137, 28, t, 12.5, NAVY if hl else "white", 800, ls=1)
+        b += R(x, 10, 275, 280, GOLDL if hl else GRAY) + R(x, 10, 275, 36, GOLD if hl else NAVY) + M(x + 137, 28, t, 12.5, "white", 800, ls=1)
         cx = x + 137
         if i == 0:
             b += R(cx - 40, 70, 80, 40, NAVY) + M(cx, 90, "ARCHIVES", 9.5, "white", 800)
@@ -268,27 +269,27 @@ def fig10_local_comparatif():
     b = ""
     for side in (0, 1):
         x0 = 10 + side * 450
-        b += R(x0, 10, 430, 360, "#FBF3F1" if side == 0 else "#F1F6F2")
+        b += R(x0, 10, 430, 360, "#F5E6E9" if side == 0 else "#E6EFE8")
         b += R(x0, 10, 430, 38, RED if side == 0 else GREEN) + M(x0 + 215, 29, "À RISQUE" if side == 0 else "BONNES PRATIQUES", 12.5, "white", 800, ls=1.5)
         # sol + rayonnage
         b += L(x0 + 20, 300, x0 + 410, 300, INK, 2)
         if side == 0:
             b += f'<path d="M{x0+300} 60 v30 h40" stroke="{MUTED}" stroke-width="6" fill="none"/>' + f'<path d="M{x0+330} 96 q4 10 0 14 q-4 -4 0 -14z" fill="#4A90C2"/>'
             for k in range(4):
-                b += R(x0 + 40 + k * 55, 258 - (k % 2) * 8, 48, 42 + (k % 2) * 8, "#C8B596", "#8E7B5A", 1)
+                b += R(x0 + 40 + k * 55, 258 - (k % 2) * 8, 48, 42 + (k % 2) * 8, "#CFCCC7", "#8E8B86", 1)
             b += R(x0 + 40, 296, 230, 6, "#4A90C2")
-            b += R(x0 + 330, 160, 60, 80, "#FFF6C8", MUTED, 1) + T(x0 + 360, 200, "soleil", 11, MUTED, italic=True)
+            b += R(x0 + 330, 160, 60, 80, "#F2F3F4", MUTED, 1) + T(x0 + 360, 200, "soleil", 11, MUTED, italic=True)
             for k in range(6):
-                b += f'<circle cx="{x0+70+k*35}" cy="{200+(k%3)*12}" r="4" fill="#7B8A6E" opacity=".7"/>'
+                b += f'<circle cx="{x0+70+k*35}" cy="{200+(k%3)*12}" r="4" fill="#6E7176" opacity=".7"/>'
             notes = ["Cartons au sol, déformés", "Canalisation au-dessus", "Fenêtre plein soleil", "Taches de moisissure"]
         else:
             for lv in range(3):
                 y = 280 - lv * 70
                 b += R(x0 + 40, y, 250, 4, NAVY)
                 for k in range(5):
-                    b += R(x0 + 46 + k * 49, y - 46, 44, 46, "#E9E1CF", NAVY, 1) + R(x0 + 58 + k * 49, y - 34, 20, 8, GOLD)
+                    b += R(x0 + 46 + k * 49, y - 46, 44, 46, "#E4E6E8", NAVY, 1) + R(x0 + 58 + k * 49, y - 34, 20, 8, GOLD)
             b += L(x0 + 40, 280, x0 + 40, 300, NAVY, 3) + L(x0 + 290, 280, x0 + 290, 300, NAVY, 3)
-            b += R(x0 + 330, 110, 60, 80, "#1F2B3E") + T(x0 + 360, 150, "volet\nfermé", 11, "white", italic=True)
+            b += R(x0 + 330, 110, 60, 80, "#2A2D31") + T(x0 + 360, 150, "volet\nfermé", 11, "white", italic=True)
             b += R(x0 + 330, 215, 50, 40, "white", NAVY, 1.2) + M(x0 + 355, 235, "HR 50%", 8.5, NAVY, 700)
             notes = ["Rayonnages métalliques surélevés", "Boîtes de conservation cotées", "Obscurité, fenêtre occultée", "Climat mesuré et stable"]
         for k, n in enumerate(notes):
@@ -305,12 +306,12 @@ def fig11_sort_final():
         x = 10 + i * 175
         b += R(x, 70, 150, 160, GRAY) + R(x, 70, 150, 36, NAVY) + M(x + 75, 88, t, 12, "white", 800, ls=1) + T(x + 75, 168, d, 12.5)
         b += A(x + 152, 150, x + 172, 150, GOLD, 2.2, marker="arg")
-    b += R(535, 110, 90, 80, GOLD) + M(580, 140, "ÉCHÉANCE", 9.5, NAVY, 800) + T(580, 165, "gel ?\nlitige · audit", 10.5, NAVY, italic=True)
-    outs = [("C", "CONSERVATION", "archives définitives", NAVY), ("T", "TRI", "échantillon conservé", NAVY2), ("D", "DESTRUCTION", "autorisée + PV", "#6B7486")]
+    b += R(535, 110, 90, 80, GOLD) + M(580, 140, "ÉCHÉANCE", 9.5, "white", 800) + T(580, 165, "gel ?\nlitige · audit", 10.5, "white", italic=True)
+    outs = [("C", "CONSERVATION", "archives définitives", NAVY), ("T", "TRI", "échantillon conservé", NAVY2), ("D", "DESTRUCTION", "autorisée + PV", "#6E7176")]
     for i, (l, t, d, c) in enumerate(outs):
         y = 25 + i * 90
         b += A(627, 150, 680, y + 35, NAVY, 1.6)
-        b += R(685, y, 205, 70, c) + R(685, y, 50, 70, GOLD) + M(710, y + 35, l, 24, NAVY, 800) + M(812, y + 24, t, 11, "white", 800, ls=0.5) + T(812, y + 48, d, 12, "#DCE3EF", italic=True)
+        b += R(685, y, 205, 70, c) + R(685, y, 50, 70, BORD) + M(710, y + 35, l, 24, "white", 800) + M(812, y + 24, t, 11, "white", 800, ls=0.5) + T(812, y + 48, d, 12, "#E4E6E8", italic=True)
     return svg(w, h, b)
 
 # ------------------------------------------------------------------ CH7
@@ -325,8 +326,8 @@ def fig12_stockage_ged_sae():
         x = 15 + i * 295
         hh = 120 + lvl * 120
         y = 260 - hh
-        b += R(x, y, 275, hh, NAVY if i == 2 else (NAVY2 if i == 1 else "#3B4F72"))
-        b += M(x + 137, y + 24, t, 12.5, GOLD, 800, ls=1) + T(x + 137, y + 50, q, 12, "white", italic=True)
+        b += R(x, y, 275, hh, NAVY if i == 2 else (NAVY2 if i == 1 else "#55595F"))
+        b += M(x + 137, y + 24, t, 12.5, VC, 800, ls=1) + T(x + 137, y + 50, q, 12, "white", italic=True)
         for k, it in enumerate(items):
             b += T(x + 137, y + 82 + k * 22, it, 12.5, "white")
         if i < 2:
@@ -353,11 +354,11 @@ def fig14_exigences_securite():
     w, h = 900, 250
     ex = [("C", "CONFIDENTIALITÉ", "accès aux seules\npersonnes autorisées"), ("I", "INTÉGRITÉ", "complet et\nnon altéré"), ("D", "DISPONIBILITÉ", "accessible\nquand nécessaire"),
           ("A", "AUTHENTICITÉ", "auteur et date\nvérifiables"), ("T", "TRAÇABILITÉ", "chaque action\ndatée et attribuée")]
-    b = R(10, 205, 880, 34, NAVY) + M(450, 222, "LA VALEUR DE PREUVE DES ARCHIVES", 12, GOLD, 800, ls=2)
+    b = R(10, 205, 880, 34, NAVY) + M(450, 222, "LA VALEUR DE PREUVE DES ARCHIVES", 12, VC, 800, ls=2)
     for i, (l, t, d) in enumerate(ex):
         x = 10 + i * 178
-        col = NAVY2 if i < 3 else GOLD
-        b += R(x + 4, 10, 162, 190, GRAY) + f'<circle cx="{x+85}" cy="52" r="32" fill="{col}"/>' + M(x + 85, 52, l, 22, "white" if i < 3 else NAVY, 800)
+        col = NAVY2 if i < 3 else BORD
+        b += R(x + 4, 10, 162, 190, GRAY) + f'<circle cx="{x+85}" cy="52" r="32" fill="{col}"/>' + M(x + 85, 52, l, 22, "white", 800)
         b += M(x + 85, 110, t, 10.5, NAVY, 800, ls=0.5) + T(x + 85, 152, d, 12.5)
     b += T(270, 4 + 0, "", 1)
     return svg(w, h, b)
@@ -366,7 +367,7 @@ def fig14_exigences_securite():
 def fig15_matrice_risques():
     w, h = 760, 560
     ox, oy, c = 120, 30, 100
-    cols = {1: "#E3EFE6", 2: "#CFE4D5", 3: "#F6E9B8", 4: "#F2C48F", 5: "#E3897C"}
+    cols = {1: "#E6EFE8", 2: "#CFE2D4", 3: "#F1E4E0", 4: "#E3B6BE", 5: "#C9687A"}
     b = ""
     for p in range(1, 6):
         for i in range(1, 6):
@@ -395,12 +396,12 @@ def fig16_ia_validation():
         x = 10 + i * 200
         b += R(x, 70, 170, 120, GRAY) + R(x, 70, 170, 34, NAVY2 if i else NAVY) + M(x + 85, 87, t, 12, "white", 800, ls=1) + T(x + 85, 148, d, 12.5)
     b += A(182, 130, 208, 130, GOLD, 2.2, marker="arg") + A(382, 130, 418, 130, GOLD, 2.2, marker="arg")
-    b += R(420, 40, 210, 180, GOLD) + M(525, 70, "VALIDATION", 13, NAVY, 800, ls=1.5) + M(525, 90, "HUMAINE", 13, NAVY, 800, ls=1.5)
-    b += T(525, 155, "contrôle proportionné\nà l'enjeu · confiance\nfaible = revue\nsystématique", 12, NAVY)
+    b += R(420, 40, 210, 180, GOLD) + M(525, 70, "VALIDATION", 13, "white", 800, ls=1.5) + M(525, 90, "HUMAINE", 13, "white", 800, ls=1.5)
+    b += T(525, 155, "contrôle proportionné\nà l'enjeu · confiance\nfaible = revue\nsystématique", 12, "white")
     outs = [("ACCEPTÉ", "classé, indexé,\ntracé", NAVY), ("CORRIGÉ", "règles et descriptions\najustées", NAVY2)]
     for i, (t, d, c) in enumerate(outs):
         y = 30 + i * 120
-        b += A(632, 130, 688, y + 45, NAVY, 1.6) + R(690, y, 200, 90, c) + M(790, y + 25, t, 12, GOLD, 800, ls=1) + T(790, y + 60, d, 12, "white")
+        b += A(632, 130, 688, y + 45, NAVY, 1.6) + R(690, y, 200, 90, c) + M(790, y + 25, t, 12, VC, 800, ls=1) + T(790, y + 60, d, 12, "white")
     b += f'<path d="M790 240 Q 525 290 300 192" fill="none" stroke="{GOLD}" stroke-width="1.6" stroke-dasharray="5 4" marker-end="url(#arg)"/>' + T(560, 258, "amélioration continue", 11, GOLD, italic=True)
     return svg(w, h + 10, b)
 

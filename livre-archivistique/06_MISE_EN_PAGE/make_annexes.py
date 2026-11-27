@@ -11,7 +11,7 @@ import build, make_docx
 ROOT = build.ROOT
 OUT = ROOT / "04_ANNEXES"
 OUT.mkdir(exist_ok=True)
-NAVY, GOLD = "0A1E3F", "C7A34F"
+NAVY, GOLD = "33373D", "2D5A3B"
 
 def registre():
     wb = Workbook()

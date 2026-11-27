@@ -65,7 +65,7 @@ Volume rédactionnel : environ 27 000 mots pour les dix chapitres, 37 000 mots a
 
 ## 5. Contrôle graphique
 
-- Palette respectée : bleu marine #0A1E3F, or #C7A34F, gris clair #F2F4F7.
+- Palette (révision du 27/11/2026, à la demande de l'auteur) : gris foncé #33373D, vert forêt #2D5A3B, bordeaux #7B1E30, avec gris clair #F2F3F4 pour les fonds ; teintes claires dérivées (vert #8DBB9A, bordeaux #D98A98) pour la lisibilité sur fond sombre. Aucune couleur dorée.
 - Polices : Montserrat (titres, tableaux d'en-tête), Source Sans 3 (corps 10,5 pt, interligne 1,25 ; tableaux 9,4 pt). Titres de chapitre 25 pt, sous-titres 12,5 pt.
 - Inspiration de la plaquette fournie : bandeaux de section pleine largeur sur fond sombre, carrés numérotés de couleur accent, grands titres en graisse fine, grilles de pictogrammes, pages d'ouverture pleine page sombre avec visuel.
 - Encadrés différenciés (situation, objectifs, définitions, exemple, fil rouge, attention, cas pratique, corrigé, QCM, prompt, modèle, à retenir).
@@ -124,3 +124,17 @@ Demandes de l'auteur appliquées :
 3. **Couverture avant** : mentions « 10 chapitres », « 10 modèles prêts à l'emploi » et « Papier · Numérique · IA » supprimées.
 
 Effet sur la pagination : 112 pages intérieures (contre 108), toujours sous la limite de 130. Les préliminaires restent sur 8 pages et aucune page blanche n'apparaît.
+
+## 10. Révision du 27 novembre 2026 (palette et coins arrondis)
+
+Demandes de l'auteur appliquées :
+
+1. **Coins arrondis** sur toutes les cases et tous les tableaux : encadrés (rayon 3 mm), bandeaux de section, carrés numérotés et carrés à pictogramme, tableaux (bordure arrondie, en-tête et dernière ligne arrondis), blocs de code, filets ; dans les 19 schémas, tous les rectangles sont arrondis.
+2. **Palette intérieure** : gris foncé (bandeaux, en-têtes de tableaux, pages d'ouverture, « À retenir »), vert forêt (carte « Objectifs », pictogrammes, puces, filets, fil rouge Horizon), bordeaux (numéros de section, étiquettes « Situation », « Attention », « Cas pratique », « QCM », légendes de figures et tableaux, carrés des ouvertures).
+3. **Suppression de tout le doré** : feuille de style, pages d'ouverture, page de titre, 19 schémas, couvertures avant et arrière, version Word, modèles Word et Excel. Les cartons de l'illustration de couverture, de teinte kraft, sont passés en gris, vert et bordeaux, et la lumière du couloir est devenue blanche.
+
+Contrôle : analyse colorimétrique automatique de toutes les pages du PDF et des deux couvertures, sans aucun pixel de teinte dorée détecté ; recherche des codes couleur dorés dans les fichiers DOCX et XLSX, sans résultat.
+
+Limite : Word ne sait pas arrondir les coins des tableaux ni des encadrés construits en tableaux. Dans la version DOCX, couleurs et contenus sont identiques au PDF, mais les angles restent droits.
+
+Pagination inchangée : 112 pages intérieures.

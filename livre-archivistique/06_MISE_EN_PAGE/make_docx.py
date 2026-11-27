@@ -11,13 +11,13 @@ import build
 
 ROOT = build.ROOT
 MS, OUTD = build.MS, ROOT / "06_MISE_EN_PAGE" / "build"
-NAVY, GOLD, GRAY = "0A1E3F", "C7A34F", "F2F4F7"
-LABELS = {"situation": ("SITUATION", "F2F4F7", "C7A34F"), "objectifs": ("OBJECTIFS PÉDAGOGIQUES", "FFFFFF", "0A1E3F"),
-          "definition": ("DÉFINITIONS", "FFFFFF", "C7A34F"), "exemple": ("EXEMPLE PROFESSIONNEL", "F2F4F7", "14305C"),
-          "horizon": ("FIL ROUGE · ORGANISATION HORIZON (cas fictif)", "F5EEDC", "8C6B1F"), "attention": ("ATTENTION", "FFFFFF", "A5822E"),
-          "retenir": ("À RETENIR", "0A1E3F", "C7A34F"), "cas": ("CAS PRATIQUE", "FFFFFF", "0A1E3F"), "corrige": ("CORRIGÉ", "F2F4F7", "14305C"),
-          "qcm": ("QUESTIONNAIRE À CHOIX MULTIPLES", "FFFFFF", "0A1E3F"), "prompt": ("PROMPT PRÊT À L'EMPLOI", "F7F8FA", "14305C"),
-          "modele": ("MODÈLE RÉUTILISABLE", "FFFFFF", "C7A34F"), "note": ("NOTE", "F2F4F7", "5A6476"), "glosscols": None}
+NAVY, GOLD, GRAY = "33373D", "2D5A3B", "F2F3F4"
+LABELS = {"situation": ("SITUATION", "F2F3F4", "2D5A3B"), "objectifs": ("OBJECTIFS PÉDAGOGIQUES", "FFFFFF", "33373D"),
+          "definition": ("DÉFINITIONS", "FFFFFF", "2D5A3B"), "exemple": ("EXEMPLE PROFESSIONNEL", "F2F3F4", "4A4F57"),
+          "horizon": ("FIL ROUGE · ORGANISATION HORIZON (cas fictif)", "E6EFE8", "2D5A3B"), "attention": ("ATTENTION", "FFFFFF", "7B1E30"),
+          "retenir": ("À RETENIR", "33373D", "2D5A3B"), "cas": ("CAS PRATIQUE", "FFFFFF", "33373D"), "corrige": ("CORRIGÉ", "F2F3F4", "4A4F57"),
+          "qcm": ("QUESTIONNAIRE À CHOIX MULTIPLES", "FFFFFF", "33373D"), "prompt": ("PROMPT PRÊT À L'EMPLOI", "F7F7F8", "4A4F57"),
+          "modele": ("MODÈLE RÉUTILISABLE", "FFFFFF", "2D5A3B"), "note": ("NOTE", "F2F3F4", "5E6166"), "glosscols": None}
 
 LUA = r'''
 local labels = {situation=1,objectifs=1,definition=1,exemple=1,horizon=1,attention=1,retenir=1,cas=1,corrige=1,qcm=1,prompt=1,modele=1,note=1}
@@ -114,7 +114,7 @@ def make_reference():
         if color: s.font.color.rgb = RGBColor.from_string(color)
     for nm in ("Normal", "Body Text", "First Paragraph", "Compact"):
         if nm in [s.name for s in st]:
-            s = st[nm]; font(s, "Source Sans 3", 10.5, color="1D2433")
+            s = st[nm]; font(s, "Source Sans 3", 10.5, color="222428")
             s.paragraph_format.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
             s.paragraph_format.line_spacing = 1.2
             s.paragraph_format.space_after = Pt(5)
@@ -127,11 +127,11 @@ def make_reference():
         st[h].paragraph_format.keep_with_next = True
     if "Title" in [s.name for s in st]:
         font(st["Title"], "Montserrat Light", 30, False, NAVY)
-    for nm, sz, col, it in (("Subtitle", 15, GOLD, False), ("Accroche", 12.5, "14305C", True), ("Kicker", 8.5, GOLD, False)):
+    for nm, sz, col, it in (("Subtitle", 15, GOLD, False), ("Accroche", 12.5, "4A4F57", True), ("Kicker", 8.5, GOLD, False)):
         s = st[nm] if nm in [x.name for x in st] else st.add_style(nm, 1)
         s.base_style = st["Normal"]; font(s, "Montserrat" if nm != "Accroche" else "Source Sans 3", sz, nm != "Accroche", col, it)
         s.paragraph_format.alignment = WD_ALIGN_PARAGRAPH.LEFT
-    font(st["Caption"] if "Caption" in [s.name for s in st] else st.add_style("Caption", 1), "Montserrat", 8.5, False, "5A6476")
+    font(st["Caption"] if "Caption" in [s.name for s in st] else st.add_style("Caption", 1), "Montserrat", 8.5, False, "5E6166")
     for nm in ("Table Caption", "Image Caption"):
         if nm in [s.name for s in st]:
             font(st[nm], "Montserrat", 8.5, True, NAVY); st[nm].paragraph_format.alignment = WD_ALIGN_PARAGRAPH.LEFT
@@ -154,7 +154,7 @@ def style_data_table(t):
     hdr = len(t.rows) > 1
     for i, row in enumerate(t.rows):
         for cell in row.cells:
-            set_cell_borders(cell, "B8C0CC", sz=4)
+            set_cell_borders(cell, "C2C4C7", sz=4)
             if i == 0 and hdr:
                 set_cell_shading(cell, NAVY)
             for p in cell.paragraphs:
@@ -175,14 +175,14 @@ def postprocess(path, full=True):
             label, fill, accent = LABELS[kind]
             for r in p0.runs: r.text = ""
             run = p0.add_run(label); run.bold = True; run.font.size = Pt(7.5); run.font.name = "Montserrat"
-            run.font.color.rgb = RGBColor.from_string(GOLD if kind == "retenir" else accent)
+            run.font.color.rgb = RGBColor.from_string("8DBB9A" if kind == "retenir" else accent)
             p0.paragraph_format.alignment = WD_ALIGN_PARAGRAPH.LEFT
             set_cell_shading(c, fill)
             set_cell_borders(c, accent if kind not in ("retenir",) else NAVY, left=36 if kind in ("situation", "definition", "cas", "prompt") else None, sz=6)
             if kind == "retenir":
                 for p in c.paragraphs[1:]:
                     for r in p.runs:
-                        r.font.color.rgb = RGBColor(255, 255, 255) if not r.bold else RGBColor.from_string(GOLD)
+                        r.font.color.rgb = RGBColor(255, 255, 255) if not r.bold else RGBColor.from_string("8DBB9A")
                 for tb in c.tables:
                     pass
             for tb in c.tables:
@@ -216,7 +216,7 @@ def postprocess(path, full=True):
     hp = sec.header.paragraphs[0]; hp.text = ""
     r = hp.add_run("L'ARCHIVISTIQUE · PRINCIPES ET PRATIQUES DU MÉTIER D'ARCHIVISTE"); r.font.size = Pt(7.5); r.font.name = "Montserrat"; r.font.color.rgb = RGBColor.from_string(GOLD); r.bold = True
     fp = sec.footer.paragraphs[0]; fp.text = ""; fp.alignment = WD_ALIGN_PARAGRAPH.RIGHT
-    r = fp.add_run("Verdi Imbole  ·  page "); r.font.size = Pt(8); r.font.name = "Montserrat"; r.font.color.rgb = RGBColor.from_string("5A6476")
+    r = fp.add_run("Verdi Imbole  ·  page "); r.font.size = Pt(8); r.font.name = "Montserrat"; r.font.color.rgb = RGBColor.from_string("5E6166")
     add_field(fp, "PAGE")
     # demande la mise à jour des champs à l'ouverture
     settings = d.settings.element
