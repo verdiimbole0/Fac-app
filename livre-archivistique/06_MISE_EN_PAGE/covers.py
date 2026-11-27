@@ -91,20 +91,17 @@ def page(svg_body, overlay_html):
 
 def front():
     body = corridor() + '<rect width="210" height="297" fill="url(#glow)"/><rect width="210" height="297" fill="url(#side)"/><rect width="210" height="297" fill="url(#shade)"/>'
-    body += f'<rect x="0" y="0" width="210" height="3" fill="{GOLD}"/><rect x="18" y="176" width="1.2" height="94" fill="{GOLD}"/>'
+    body += f'<path d="M0 172 L210 150 L210 297 L0 297 Z" fill="{NAVY}" opacity="0.93"/><path d="M0 172 L210 150" stroke="{GOLD}" stroke-width="0.9"/>'
+    body += f'<rect x="0" y="0" width="210" height="3" fill="{GOLD}"/><rect x="18" y="182" width="1.2" height="88" fill="{GOLD}"/>'
     html = f'''
 <div class="abs" style="left:18mm;top:14mm;font:700 7.5pt Montserrat;letter-spacing:.42em;color:{GOLD}">MANUEL PROFESSIONNEL</div>
 <div class="abs" style="right:18mm;top:14mm;font:600 7.5pt Montserrat;letter-spacing:.3em;color:#C9D3E3">MÉTHODES · OUTILS · CAS PRATIQUES</div>
-<div class="abs" style="left:25mm;top:178mm;width:170mm">
+<div class="abs" style="left:25mm;top:184mm;width:170mm">
  <div style="font:200 41pt/1 Montserrat;letter-spacing:.02em;color:white">L'ARCHIVISTIQUE</div>
  <div style="font:600 14.5pt/1.3 Montserrat;letter-spacing:.06em;color:{GOLD};margin-top:5mm;text-transform:uppercase">Principes et pratiques<br>du métier d'archiviste</div>
  <div style="font:italic 400 11.5pt/1.45 'Source Sans 3';color:#DCE3EF;margin-top:6mm;width:150mm">De la gestion des documents à la maîtrise des archives : les méthodes professionnelles pour organiser, protéger, retrouver et valoriser l'information de toute organisation.</div>
 </div>
-<div class="abs" style="left:25mm;top:252mm;display:flex;gap:2.5mm">
- <span style="font:700 7.2pt Montserrat;letter-spacing:.08em;background:{GOLD};color:{NAVY};padding:1.6mm 2.6mm;white-space:nowrap">10 CHAPITRES</span>
- <span style="font:700 7.2pt Montserrat;letter-spacing:.08em;border:.3mm solid {GOLD};color:white;padding:1.3mm 2.6mm;white-space:nowrap">10 MODÈLES PRÊTS À L'EMPLOI</span>
- <span style="font:700 7.2pt Montserrat;letter-spacing:.08em;border:.3mm solid {GOLD};color:white;padding:1.3mm 2.6mm;white-space:nowrap">PAPIER · NUMÉRIQUE · IA</span>
-</div>
+
 <div class="abs" style="left:25mm;top:274mm;font:700 13pt Montserrat;letter-spacing:.22em;color:white">VERDI IMBOLE</div>
 <div class="abs" style="right:18mm;top:276mm;font:500 7pt Montserrat;letter-spacing:.25em;color:#8D9AB5">ÉDITION 2026</div>
 '''

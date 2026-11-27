@@ -7,8 +7,8 @@
 
 | Fichier | Contenu | Vérification |
 |---|---|---|
-| `Archivistique_Verdi_Imbole_interieur.pdf` | Intérieur du livre, A4, 108 pages | Ouvert et contrôlé page par page (rendu visuel) |
-| `Archivistique_Verdi_Imbole_complet_avec_couvertures.pdf` | Couverture avant + intérieur + couverture arrière (110 pages) | Ouvert, assemblage contrôlé |
+| `Archivistique_Verdi_Imbole_interieur.pdf` | Intérieur du livre, A4, 112 pages | Ouvert et contrôlé page par page (rendu visuel) |
+| `Archivistique_Verdi_Imbole_complet_avec_couvertures.pdf` | Couverture avant + intérieur + couverture arrière (114 pages) | Ouvert, assemblage contrôlé |
 | `Archivistique_Verdi_Imbole.docx` | Version Word intégralement modifiable | Ouverte avec python-docx et convertie par LibreOffice : 19 images, 165 tableaux, encadrés, en-têtes et pieds de page |
 | `Couverture_avant.pdf` / `.png` · `Couverture_arriere.pdf` / `.png` | Couvertures A4 (PNG 200 ppp) | Contrôle visuel |
 | `Annexes_modeles/` | 10 modèles Word (A à J) + `Registre_suivi_documentaire.xlsx` | Ouverts et convertis ; listes déroulantes, formule d'échéance, contrôle des doublons |
@@ -23,21 +23,21 @@
 | Partie | Pages (PDF) | Cible du cahier des charges |
 |---|---|---|
 | Pages préliminaires (titre, mentions, auteur, préface, avant-propos, mode d'emploi, parcours, sommaire) | 8 (p. 1-8) | 8 |
-| Chapitre 1 | 9 (p. 9-17) | 8 |
-| Chapitre 2 | 9 (p. 18-26) | 9 |
-| Chapitre 3 | 9 (p. 27-35) | 10 |
-| Chapitre 4 | 8 (p. 36-43) | 11 |
-| Chapitre 5 | 9 (p. 44-52) | 11 |
-| Chapitre 6 | 8 (p. 53-60) | 10 |
-| Chapitre 7 | 9 (p. 61-69) | 11 |
-| Chapitre 8 | 9 (p. 70-78) | 11 |
-| Chapitre 9 | 9 (p. 79-87) | 10 |
-| Chapitre 10 | 8 (p. 88-95) | 10 |
-| Conclusion générale | 2 (p. 96-97) | 2 |
-| Annexes A à J | 8 (p. 98-105) | 6 |
-| Glossaire | 1 (p. 106) | 1 |
-| Bibliographie et webographie | 2 (p. 107-108) | au moins 1 |
-| **Total intérieur** | **108** | **130 maximum** |
+| Chapitre 1 | 10 (p. 9-18) | 8 |
+| Chapitre 2 | 9 (p. 19-27) | 9 |
+| Chapitre 3 | 9 (p. 28-36) | 10 |
+| Chapitre 4 | 9 (p. 37-45) | 11 |
+| Chapitre 5 | 9 (p. 46-54) | 11 |
+| Chapitre 6 | 9 (p. 55-63) | 10 |
+| Chapitre 7 | 9 (p. 64-72) | 11 |
+| Chapitre 8 | 9 (p. 73-81) | 11 |
+| Chapitre 9 | 9 (p. 82-90) | 10 |
+| Chapitre 10 | 9 (p. 91-99) | 10 |
+| Conclusion générale | 2 (p. 100-101) | 2 |
+| Annexes A à J | 8 (p. 102-109) | 6 |
+| Glossaire | 1 (p. 110) | 1 |
+| Bibliographie et webographie | 2 (p. 111-112) | au moins 1 |
+| **Total intérieur** | **112** | **130 maximum** |
 
 Chaque chapitre compte une page d'ouverture pleine page. Les chapitres sont légèrement plus courts que les cibles indicatives : conformément à la consigne « ne remplis pas artificiellement », aucun contenu de remplissage n'a été ajouté. La version DOCX, mise en page par le traitement de texte, compte environ 121 pages sous LibreOffice (le nombre exact varie selon le logiciel et les polices installées) ; le contenu est identique.
 
@@ -76,7 +76,7 @@ Volume rédactionnel : environ 27 000 mots pour les dix chapitres, 37 000 mots a
 
 | Point | Résultat |
 |---|---|
-| 130 pages maximum | 108 pages intérieures |
+| 130 pages maximum | 112 pages intérieures |
 | Sommaire automatique | PDF : numéros de page calculés automatiquement et liens cliquables ; DOCX : champ Table des matières, mis à jour à l'ouverture (ou clic droit > Mettre à jour les champs) |
 | Signets PDF | 37 entrées de navigation |
 | Liens | 18 liens externes, tous vers des pages officielles (ISO, ICA, NIST, LoC, FADGI, Légifrance, EUR-Lex, OHADA) ; liens internes du sommaire fonctionnels |
@@ -107,3 +107,20 @@ Volume rédactionnel : environ 27 000 mots pour les dix chapitres, 37 000 mots a
 - **ISBN et dépôt légal** : non renseignés, conformément à la consigne. À ajouter dans les mentions légales le cas échéant.
 - **Couverture pour l'impression** : les couvertures sont au format A4 sans fond perdu. Pour un imprimeur, prévoir l'ajout de 3 mm de fond perdu et le calcul du dos selon le papier et le nombre de pages.
 - **Polices du DOCX** : installer Montserrat et Source Sans 3 (dossier `Polices/`) pour retrouver la typographie du PDF.
+
+## 9. Révision du 27 novembre 2026 (design de la plaquette de référence)
+
+Demandes de l'auteur appliquées :
+
+1. **Design de la plaquette jointe** appliqué à l'ensemble du livre :
+   - bandeaux de section centrés en capitales sur fond sombre, avec carré numéroté or décalé sur l'angle ;
+   - encadrés en cartes portant un carré or décalé avec pictogramme au trait (13 pictogrammes originaux) ;
+   - carte « Objectifs pédagogiques » ardoise à texte blanc, comme les cartes numérotées de la plaquette ;
+   - puces triangulaires or ;
+   - pages d'ouverture : filet vertical or devant l'accroche, rangée de chiffres clés avec pictogrammes (sections, schémas, tableaux, questions QCM, calculés automatiquement), panneau en biais à filet or ;
+   - schéma du cycle de vie (figure 2.1) redessiné en roue de processus : arcs gris, pictogrammes, légendes en renvoi ;
+   - couverture avant : coupe en biais à filet or entre l'illustration et le bloc titre.
+2. **Bibliographie et webographie** : phrase introductive supprimée du livre. Les dates de consultation restent consignées dans BIBLIOGRAPHIE.md.
+3. **Couverture avant** : mentions « 10 chapitres », « 10 modèles prêts à l'emploi » et « Papier · Numérique · IA » supprimées.
+
+Effet sur la pagination : 112 pages intérieures (contre 108), toujours sous la limite de 130. Les préliminaires restent sur 8 pages et aucune page blanche n'apparaît.

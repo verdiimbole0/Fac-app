@@ -193,6 +193,7 @@ def postprocess(path, full=True):
     for p in d.paragraphs:
         if p.style.name == "Heading 2":
             para_shading(p, NAVY)
+            p.alignment = WD_ALIGN_PARAGRAPH.CENTER
             for r in p.runs:
                 r.font.color.rgb = RGBColor(255, 255, 255); r.text = r.text.upper()
         elif p.style.name == "Heading 3":

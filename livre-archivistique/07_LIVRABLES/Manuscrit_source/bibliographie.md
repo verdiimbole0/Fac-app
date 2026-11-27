@@ -3,8 +3,6 @@ titre: "Bibliographie et webographie"
 classe: "biblio"
 ---
 
-Les titres des normes sont donnés dans leur version officielle anglaise. Toutes les références ci-dessous ont été vérifiées dans les catalogues des organismes éditeurs ou dans des notices bibliographiques le 27 novembre 2026. Les normes sont payantes : seules leurs notices officielles sont librement consultables. Le détail des vérifications figure dans le rapport de vérification scientifique joint à l'ouvrage.
-
 ## Normes internationales
 
 - ISO. *ISO 15489-1:2016, Information and documentation · Records management · Part 1: Concepts and principles*. Genève : ISO, 2016 (confirmée en 2021). <https://www.iso.org/standard/62542.html>

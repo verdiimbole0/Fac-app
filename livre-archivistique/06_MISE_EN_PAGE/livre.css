@@ -205,3 +205,82 @@ section.prelim p, section.prelim li { font-size: 10.2pt; }
 .glosscols p { margin-bottom: 1.6mm; font-size: 9.4pt; line-height: 1.22; text-align: left; hyphens: auto; break-inside: avoid; }
 .annexes div.modele { break-inside: avoid; }
 .annexes h2 { break-after: avoid; }
+
+/* ==========================================================
+   COUCHE DE DESIGN INSPIRÉE DE LA PLAQUETTE DE RÉFÉRENCE
+   bandeaux centrés, carrés numérotés décalés, pictogrammes au trait,
+   puces triangulaires, cartes sombres, panneaux en biais
+   ========================================================== */
+h2 { display: block; position: relative; text-align: center; font-weight: 600; font-size: 11.5pt; letter-spacing: .07em;
+     padding: 2.6mm 15mm 2.6mm 15mm; margin: 8mm 1mm 4.2mm 3mm; background: var(--navy); }
+h2 .secnum { position: absolute; left: -3mm; top: -2.6mm; margin: 0; padding: 0; width: 11.5mm; height: 11.5mm; line-height: 11.5mm;
+     text-align: center; font-size: 10.5pt; letter-spacing: 0; box-shadow: none; }
+section.prelim h2 { padding: 2.4mm 6mm; margin-left: 0; margin-right: 0; }
+.chapter-body > h2:first-child { margin-top: 3mm; }
+
+/* puces triangulaires */
+ul { list-style: none; padding-left: 5mm; }
+ul > li { position: relative; }
+ul > li::before { content: ""; position: absolute; left: -4.2mm; top: 1.45mm; width: 0; height: 0;
+  border-left: 1.7mm solid var(--gold); border-top: 1.05mm solid transparent; border-bottom: 1.05mm solid transparent; }
+
+/* encadrés : carte + carré or décalé portant un pictogramme */
+div.situation, div.objectifs, div.definition, div.exemple, div.horizon, div.attention, div.retenir,
+div.cas, div.corrige, div.qcm, div.prompt, div.modele, div.note { margin: 6mm 0 4.5mm 3mm; padding-top: 2.8mm; }
+div.situation::before, div.objectifs::before, div.definition::before, div.exemple::before, div.horizon::before,
+div.attention::before, div.retenir::before, div.cas::before, div.corrige::before, div.qcm::before, div.prompt::before, div.modele::before, div.note::before {
+  margin-left: 8mm; margin-bottom: 3.2mm; letter-spacing: .22em; }
+div.situation::after, div.objectifs::after, div.definition::after, div.exemple::after, div.horizon::after,
+div.attention::after, div.retenir::after, div.cas::after, div.corrige::after, div.qcm::after, div.prompt::after, div.modele::after, div.note::after {
+  content: ""; position: absolute; left: -3.2mm; top: -3.2mm; width: 9.5mm; height: 9.5mm; background-color: var(--gold);
+  background-repeat: no-repeat; background-position: center; background-size: 6mm 6mm; }
+div.nolabel { padding-top: 8.5mm; }
+div.qcm { padding-left: 2mm; padding-right: 2mm; }
+
+/* carte « objectifs » façon plaquette : ardoise, texte blanc */
+div.objectifs { background: #33415E; color: white; border: none; border-top: none; padding-left: 6mm; }
+div.objectifs::before { color: var(--gold); }
+div.objectifs ul { padding-left: 5mm; }
+div.objectifs li { padding-left: 0; color: #F1F4F9; }
+div.objectifs li::before { left: -4.2mm; top: 1.45mm; width: 0; height: 0; background: none;
+  border-left: 1.7mm solid var(--gold); border-top: 1.05mm solid transparent; border-bottom: 1.05mm solid transparent; }
+div.retenir { padding-left: 7mm; }
+div.situation { border-left: none; background: var(--gray); }
+div.situation p { font-size: 10.8pt; }
+div.cas { border-left: .45mm solid var(--navy); }
+
+/* tableaux : filets plus fins, première colonne affirmée */
+td:first-child { font-weight: 600; color: #14223D; }
+.annexes td:first-child, table.plain td:first-child { font-weight: 400; }
+th { letter-spacing: .03em; }
+
+/* ouvertures de chapitre : rangée de chiffres clés + panneau en biais */
+.opener .op-accroche { top: 140mm; left: 28mm; width: 125mm; }
+.opener .op-vline { position: absolute; left: 22mm; top: 139mm; width: .9mm; height: 24mm; background: var(--gold); }
+.opener .op-stats { position: absolute; left: 22mm; top: 172mm; width: 168mm; display: flex; }
+.opener .st { width: 42mm; text-align: center; }
+.opener .st img { width: 11mm; height: 11mm; display: block; margin: 0 auto 1.5mm; }
+.opener .st .n { font: 700 17pt/1 "Montserrat"; color: white; }
+.opener .st .l { font: 500 7.6pt "Montserrat"; color: #B9C3D6; margin-top: 1.2mm; letter-spacing: .04em; }
+.opener .op-points { top: 219mm; left: 26mm; }
+.opener .op-rule { display: none; }
+
+div.situation::after { background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMEExRTNGIiBzdHJva2Utd2lkdGg9IjEuOSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48cGF0aCBkPSJNOSAxOGg2TTEwIDIxaDRNMTIgM2E2IDYgMCAwIDAtMy41IDEwLjljLjYuNSAxIDEuMiAxIDJWMTZoNXYtLjFjMC0uOC40LTEuNSAxLTJBNiA2IDAgMCAwIDEyIDN6Ii8+PC9zdmc+"); }
+div.objectifs::after { background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMEExRTNGIiBzdHJva2Utd2lkdGg9IjEuOSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48Y2lyY2xlIGN4PSIxMiIgY3k9IjEyIiByPSI5Ii8+PGNpcmNsZSBjeD0iMTIiIGN5PSIxMiIgcj0iNSIvPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjEuMiIvPjwvc3ZnPg=="); }
+div.definition::after { background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMEExRTNGIiBzdHJva2Utd2lkdGg9IjEuOSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48cGF0aCBkPSJNNCAxOVY1YTIgMiAwIDAgMSAyLTJoMTN2MTVINmEyIDIgMCAwIDAtMiAyIDIgMiAwIDAgMCAyIDJoMTNNOCA3aDciLz48L3N2Zz4="); }
+div.exemple::after { background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMEExRTNGIiBzdHJva2Utd2lkdGg9IjEuOSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48cGF0aCBkPSJNNCAyMVY2bDgtMyA4IDN2MTV6TTkgMjF2LTRoNnY0TTggOGgyTTE0IDhoMk04IDEyaDJNMTQgMTJoMiIvPjwvc3ZnPg=="); }
+div.horizon::after { background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMEExRTNGIiBzdHJva2Utd2lkdGg9IjEuOSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48Y2lyY2xlIGN4PSIxMiIgY3k9IjEyIiByPSI5Ii8+PHBhdGggZD0iTTE1LjUgOC41bC0yIDUtNSAyIDItNXoiLz48L3N2Zz4="); }
+div.attention::after { background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMEExRTNGIiBzdHJva2Utd2lkdGg9IjEuOSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48cGF0aCBkPSJNMTIgM2wxMCAxOEgyek0xMiAxMHY1TTEyIDE4di40Ii8+PC9zdmc+"); }
+div.retenir::after { background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMEExRTNGIiBzdHJva2Utd2lkdGg9IjEuOSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48cGF0aCBkPSJNNiAzaDEydjE4bC02LTQtNiA0eiIvPjwvc3ZnPg=="); }
+div.cas::after { background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMEExRTNGIiBzdHJva2Utd2lkdGg9IjEuOSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48cGF0aCBkPSJNMyA3aDE4djEzSDN6TTkgN1Y0aDZ2M00zIDEyaDE4Ii8+PC9zdmc+"); }
+div.corrige::after { background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMEExRTNGIiBzdHJva2Utd2lkdGg9IjEuOSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48Y2lyY2xlIGN4PSIxMiIgY3k9IjEyIiByPSI5Ii8+PHBhdGggZD0iTTggMTIuMmwzIDMgNS02Ii8+PC9zdmc+"); }
+div.qcm::after { background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMEExRTNGIiBzdHJva2Utd2lkdGg9IjEuOSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48Y2lyY2xlIGN4PSIxMiIgY3k9IjEyIiByPSI5Ii8+PHBhdGggZD0iTTkuNSA5LjNhMi41IDIuNSAwIDEgMSAzLjUgMi4zYy0uNy4zLTEgLjktMSAxLjdNMTIgMTYuOHYuNCIvPjwvc3ZnPg=="); }
+div.prompt::after { background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMEExRTNGIiBzdHJva2Utd2lkdGg9IjEuOSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48cGF0aCBkPSJNNCA1aDE2djExSDlsLTUgNHpNOCA5aDhNOCAxMmg1Ii8+PC9zdmc+"); }
+div.modele::after { background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMEExRTNGIiBzdHJva2Utd2lkdGg9IjEuOSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48cGF0aCBkPSJNNiAzaDlsNCA0djE0SDZ6TTE1IDN2NGg0TTkgMTJoN005IDE2aDciLz48L3N2Zz4="); }
+div.note::after { background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMEExRTNGIiBzdHJva2Utd2lkdGg9IjEuOSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48Y2lyY2xlIGN4PSIxMiIgY3k9IjEyIiByPSI5Ii8+PHBhdGggZD0iTTEyIDExdjZNMTIgNy42di40Ii8+PC9zdmc+"); }
+section.prelim h2 { margin: 5mm 0 2.6mm 0; padding: 2mm 6mm; }
+section.prelim div.retenir, section.prelim div.note { margin-top: 5mm; margin-bottom: 3mm; }
+section.prelim td { padding: 1.1mm 2mm; }
+div.corrige { break-inside: avoid; }
+.opener .st .l { font-size: 7.2pt; }
+div.cas, div.objectifs, div.situation, div.retenir { break-inside: avoid; }

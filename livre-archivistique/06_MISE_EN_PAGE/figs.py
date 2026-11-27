@@ -111,19 +111,49 @@ def fig00_horizon():
 # ------------------------------------------------------------------ CH2
 @fig
 def fig03_cycle_vie():
-    w, h = 700, 560
-    cx, cy, r = 350, 285, 190
-    st = [("1", "CRÉATION OU\nRÉCEPTION"), ("2", "ENREGISTREMENT\n(CAPTURE)"), ("3", "UTILISATION ET\nCIRCULATION"), ("4", "CONSERVATION"), ("5", "SORT FINAL\nC · D · T")]
-    b = f'<circle cx="{cx}" cy="{cy}" r="{r}" fill="none" stroke="{LINE}" stroke-width="14"/>'
+    """Roue de processus façon plaquette : arcs gris, pictogrammes, légendes en renvoi."""
+    w, h = 900, 600
+    cx, cy, R = 450, 305, 185
+    ARC = "#C9CED8"
+    icons = [
+        '<rect x="-20" y="-16" width="40" height="30" rx="2"/><path d="M-20 -16 L0 2 L20 -16"/><path d="M8 6 h18 M17 -3 v18" stroke="#C7A34F"/>',
+        '<rect x="-17" y="-22" width="30" height="42" rx="2"/><path d="M-10 -12h16M-10 -4h16M-10 4h10"/><path d="M10 18 l14 -22 l5 3 l-14 22 z" stroke="#C7A34F"/>',
+        '<path d="M-22 -8 h36 l-8 -8 M22 8 h-36 l8 8"/><circle cx="0" cy="0" r="3" fill="#C7A34F" stroke="#C7A34F"/>',
+        '<rect x="-22" y="-8" width="44" height="28" rx="2"/><path d="M-24 -16 h48 v8 h-48 z M-7 4 h14" /><rect x="-9" y="0" width="18" height="9" stroke="#C7A34F"/>',
+        '<path d="M-14 -22 h28 M-14 22 h28 M-11 -22 c0 14 22 14 22 22 s-22 8 -22 22 M11 -22 c0 14 -22 14 -22 22 s22 8 22 22" transform="scale(1 0.98)"/><path d="M-5 16 h10" stroke="#C7A34F"/>',
+    ]
+    steps = [("1. Création ou réception", "Le document entre dans\nla sphère de l'organisation"),
+             ("2. Enregistrement", "Il reçoit date, numéro\net dossier (capture)"),
+             ("3. Utilisation et circulation", "Traité, validé, transmis :\nun seul détenteur de l'original"),
+             ("4. Conservation", "Rangé dans son dossier,\naux conditions adaptées"),
+             ("5. Sort final", "Conservation, tri ou\ndestruction autorisée")]
+    b = ""
+    # cercle central
+    b += f'<circle cx="{cx}" cy="{cy}" r="88" fill="{NAVY}"/>' + M(cx, cy - 22, "CYCLE DE VIE", 13, "white", 800, ls=1.5) + M(cx, cy - 2, "DU DOCUMENT", 13, "white", 800, ls=1.5)
+    b += f'<line x1="{cx-28}" y1="{cy+16}" x2="{cx+28}" y2="{cy+16}" stroke="{GOLD}" stroke-width="2.4"/>' + T(cx, cy + 40, "traçabilité\nà chaque étape", 12, "#C9D3E3", italic=True)
     for i in range(5):
-        a0 = math.radians(-90 + i * 72 + 14); a1 = math.radians(-90 + (i + 1) * 72 - 14)
-        x0, y0 = cx + r * math.cos(a0), cy + r * math.sin(a0); x1, y1 = cx + r * math.cos(a1), cy + r * math.sin(a1)
-        b += f'<path d="M{x0:.1f} {y0:.1f} A{r} {r} 0 0 1 {x1:.1f} {y1:.1f}" fill="none" stroke="{GOLD}" stroke-width="3" marker-end="url(#arg)"/>'
-    for i, (n, t) in enumerate(st):
-        a = math.radians(-90 + i * 72)
-        x, y = cx + r * math.cos(a), cy + r * math.sin(a)
-        b += R(x - 82, y - 34, 164, 68, NAVY) + sq(x - 82 - 13, y - 47, n, 26) + M(x, y, t, 11, "white", 700, ls=0.3)
-    b += f'<circle cx="{cx}" cy="{cy}" r="78" fill="{GRAY}"/>' + M(cx, cy - 12, "TRAÇABILITÉ", 12, NAVY, 800) + T(cx, cy + 16, "à chaque étape :\nqui, quoi, quand", 12, MUTED, italic=True)
+        ang = math.radians(-90 + i * 72)
+        x, y = cx + R * math.cos(ang), cy + R * math.sin(ang)
+        # arc gris ouvert vers l'extérieur (comme les « C » de la plaquette)
+        r2 = 54; C = 2 * math.pi * r2
+        rot = math.degrees(ang) + 0.36 * 180
+        b += f'<circle cx="{x:.1f}" cy="{y:.1f}" r="{r2}" fill="none" stroke="{ARC}" stroke-width="20" stroke-dasharray="{0.64*C:.1f} {0.36*C:.1f}" transform="rotate({rot:.1f} {x:.1f} {y:.1f})"/>'
+        b += f'<circle cx="{x:.1f}" cy="{y:.1f}" r="42" fill="white"/>'
+        b += f'<g transform="translate({x:.1f} {y:.1f})" fill="none" stroke="{NAVY}" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">{icons[i]}</g>'
+        # renvoi et légende
+        t, d = steps[i]
+        lx = x + (95 if math.cos(ang) > 0.2 else -95 if math.cos(ang) < -0.2 else 0)
+        ly = y + (-82 if i == 0 else 92 if math.sin(ang) > 0.5 else 0)
+        if i == 0:
+            b += M(x + 150, y - 30, t, 12.5, NAVY, 800, anchor="start", ls=0) + T(x + 150, y - 4, d, 12, INK, anchor="start")
+            b += L(x + 66, y - 30, x + 142, y - 30, "#9AA2B1", 1.2) + f'<circle cx="{x+142}" cy="{y-30:.1f}" r="2.5" fill="{GOLD}"/>'
+        else:
+            right = math.cos(ang) > 0
+            ex = x + (92 if right else -92)
+            tx = ex + (14 if right else -14)
+            anchor = "start" if right else "end"
+            b += L(x + (66 if right else -66), y, ex, y, "#9AA2B1", 1.2) + f'<circle cx="{ex}" cy="{y:.1f}" r="2.5" fill="{GOLD}"/>'
+            b += M(tx, y - 14, t, 12.5, NAVY, 800, anchor=anchor, ls=0) + T(tx, y + 14, d, 12, INK, anchor=anchor)
     return svg(w, h, b)
 
 @fig

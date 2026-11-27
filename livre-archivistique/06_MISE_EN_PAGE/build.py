@@ -48,8 +48,22 @@ def opener_bg(n):
 {''.join(shelves)}
 <rect x="130" y="0" width="80" height="297" fill="url(#fade)"/>
 <defs><linearGradient id="fade" x1="0" x2="1"><stop offset="0" stop-color="#0A1E3F" stop-opacity="1"/><stop offset="0.6" stop-color="#0A1E3F" stop-opacity="0.15"/><stop offset="1" stop-color="#0A1E3F" stop-opacity="0"/></linearGradient></defs>
-<g transform="translate(150 215) scale(0.27)" fill="none" stroke="#C7A34F" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">{icon}</g>
+<path d="M0 206 L210 190 L210 297 L0 297 Z" fill="#102A52"/><path d="M0 206 L210 190" stroke="#C7A34F" stroke-width="0.8"/>
+<g transform="translate(152 222) scale(0.25)" fill="none" stroke="#C7A34F" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">{icon}</g>
 </svg>'''
+
+import json as _json
+STAT_ICONS = _json.load(open(pathlib.Path(__file__).resolve().parent / "stat_icons.json"))
+
+def stats_html(body):
+    """Rangée de chiffres clés du chapitre (calculés sur le manuscrit)."""
+    nsec = len(re.findall(r"^## ", body, flags=re.M))
+    nfig = len(re.findall(r"^!\[", body, flags=re.M))
+    ntab = len(re.findall(r"^\|[-|: ]+\|\s*$", body, flags=re.M))
+    nq = len(re.findall(r"^\*\*\d+\.\*\* ", body, flags=re.M))
+    items = [("sec", nsec, "sections"), ("fig", nfig, "schémas"), ("tab", ntab, "tableaux"), ("qcm", nq, "questions QCM")]
+    cells = "".join(f'<div class="st"><img src="{STAT_ICONS[k]}"><div class="n">{n}</div><div class="l">{l}</div></div>' for k, n, l in items)
+    return f'<div class="op-stats">{cells}</div>'
 
 def split_front(text):
     m = re.match(r"^---\n(.*?)\n---\n(.*)$", text, re.S)
@@ -96,7 +110,8 @@ def build():
         parts.append(f'''<section class="opener" id="{cid}">{opener_bg(n)}
 <div class="op-label">CHAPITRE</div><div class="op-num">{n:02d}</div>
 <h1 data-short="Chapitre {n} · {html.escape(short)}">{html.escape(title)}</h1><div class="op-rule"></div>
-<p class="op-accroche">{html.escape(fm["accroche"])}</p>
+<div class="op-vline"></div><p class="op-accroche">{html.escape(fm["accroche"])}</p>
+{stats_html(body)}
 <div class="op-points"><div class="t">DANS CE CHAPITRE</div>{pts}</div>
 <div class="op-foot">L'ARCHIVISTIQUE · PRINCIPES ET PRATIQUES DU MÉTIER D'ARCHIVISTE</div></section>''')
         h = md2html(body, numprefix=n)

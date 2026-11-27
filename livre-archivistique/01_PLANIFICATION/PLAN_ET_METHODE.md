@@ -5,9 +5,9 @@
 | Partie | Contenu | Cible | Réel |
 |---|---|---|---|
 | Préliminaires | Titre, mentions légales, auteur, préface (mot de l'auteur), avant-propos, mode d'emploi, parcours, sommaire | 8 p. | 8 p. |
-| Ch. 1 à 10 | Ordre pédagogique imposé | 101 p. | 87 p. |
+| Ch. 1 à 10 | Ordre pédagogique imposé | 101 p. | 91 p. |
 | Conclusion, annexes A-J, glossaire, bibliographie | | 10+ p. | 13 p. |
-| **Total** | | **≤ 130 p.** | **108 p.** |
+| **Total** | | **≤ 130 p.** | **112 p.** |
 
 ## Chaîne de production
 
