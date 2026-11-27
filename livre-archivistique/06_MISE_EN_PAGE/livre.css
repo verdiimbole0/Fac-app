@@ -1,0 +1,207 @@
+/* ==========================================================
+   L'ARCHIVISTIQUE : PRINCIPES ET PRATIQUES DU MÉTIER D'ARCHIVISTE
+   Feuille de style d'impression (WeasyPrint) · A4
+   Palette : bleu marine #0A1E3F · or #C7A34F · gris clair #F2F4F7
+   ========================================================== */
+
+@font-face { font-family: "Montserrat"; font-weight: 300; src: url("fonts/MontserratLight.ttf"); }
+@font-face { font-family: "Montserrat"; font-weight: 400; src: url("fonts/MontserratRegular.ttf"); }
+@font-face { font-family: "Montserrat"; font-weight: 500; src: url("fonts/MontserratMedium.ttf"); }
+@font-face { font-family: "Montserrat"; font-weight: 600; src: url("fonts/MontserratSemiBold.ttf"); }
+@font-face { font-family: "Montserrat"; font-weight: 700; src: url("fonts/MontserratBold.ttf"); }
+@font-face { font-family: "Montserrat"; font-weight: 800; src: url("fonts/MontserratExtraBold.ttf"); }
+@font-face { font-family: "Montserrat"; font-weight: 200; src: url("fonts/MontserratExtraLight.ttf"); }
+@font-face { font-family: "Source Sans 3"; font-weight: 400; src: url("fonts/SourceSans3Regular.ttf"); }
+@font-face { font-family: "Source Sans 3"; font-weight: 400; font-style: italic; src: url("fonts/SourceSans3RegularItalic.ttf"); }
+@font-face { font-family: "Source Sans 3"; font-weight: 600; src: url("fonts/SourceSans3SemiBold.ttf"); }
+@font-face { font-family: "Source Sans 3"; font-weight: 700; src: url("fonts/SourceSans3Bold.ttf"); }
+@font-face { font-family: "Source Sans 3"; font-weight: 700; font-style: italic; src: url("fonts/SourceSans3BoldItalic.ttf"); }
+@font-face { font-family: "Source Sans 3"; font-weight: 300; src: url("fonts/SourceSans3Light.ttf"); }
+
+:root {
+  --navy: #0A1E3F; --navy2: #14305C; --gold: #C7A34F; --goldl: #F5EEDC;
+  --gray: #F2F4F7; --line: #D9DEE6; --ink: #1D2433; --muted: #5A6476;
+}
+
+/* ---------- Pages ---------- */
+@page {
+  size: A4;
+  margin: 21mm 17mm 19mm 19mm;
+  @top-left { content: string(chaptitle); font: 600 7.5pt "Montserrat"; color: #8A93A3;
+              text-transform: uppercase; letter-spacing: .08em; vertical-align: bottom; padding-bottom: 3mm; }
+  @top-right { content: "L'archivistique"; font: 600 7.5pt "Montserrat"; color: var(--gold);
+               text-transform: uppercase; letter-spacing: .12em; vertical-align: bottom; padding-bottom: 3mm; }
+  @bottom-right { content: counter(page); font: 700 8.5pt "Montserrat"; color: white;
+                  background: var(--navy); width: 9mm; height: 7mm; text-align: center; vertical-align: middle; margin-bottom: 7mm; }
+  @bottom-left { content: "Verdi Imbole"; font: 500 7pt "Montserrat"; color: #9AA2B1; letter-spacing: .06em; margin-bottom: 7mm; vertical-align: middle; width: 120mm; }
+}
+@page :left {
+  margin: 21mm 19mm 19mm 17mm;
+  @bottom-left { content: counter(page); font: 700 8.5pt "Montserrat"; color: white;
+                 background: var(--navy); width: 9mm; height: 7mm; text-align: center; vertical-align: middle; margin-bottom: 7mm; }
+  @bottom-right { content: "Principes et pratiques du métier d'archiviste"; font: 500 7pt "Montserrat"; color: #9AA2B1; letter-spacing: .04em; margin-bottom: 7mm; vertical-align: middle; width: 120mm; text-align: right; background: none; }
+}
+@page opener { margin: 0; @top-left{content:none} @top-right{content:none} @bottom-left{content:none} @bottom-right{content:none} }
+@page prelim { @top-left{content:none} @top-right{content:none} @bottom-left{content:none}
+  @bottom-right{ content: counter(page, lower-roman); background: none; color: var(--muted); font: 500 8pt "Montserrat"; } }
+@page prelim:left { @bottom-right{content:none} @bottom-left{ content: counter(page, lower-roman); background: none; color: var(--muted); font: 500 8pt "Montserrat"; } }
+@page titlepage { margin: 0; @top-left{content:none} @top-right{content:none} @bottom-left{content:none} @bottom-right{content:none} }
+
+html { font-family: "Source Sans 3", "DejaVu Sans", Georgia, serif; font-size: 10.5pt; line-height: 1.25; color: var(--ink); }
+body { margin: 0; counter-reset: chapnum; }
+p { margin: 0 0 2mm; text-align: justify; hyphens: auto; orphans: 3; widows: 3; }
+li { text-align: justify; hyphens: auto; margin-bottom: 1mm; }
+ul, ol { margin: 0 0 2.6mm; padding-left: 6mm; }
+ul li::marker { color: var(--gold); }
+ol li::marker { color: var(--navy); font-weight: 700; font-family: "Montserrat"; font-size: .9em; }
+strong { font-weight: 700; color: #0E234A; }
+em { font-style: italic; }
+a { color: var(--navy2); text-decoration: none; }
+code { font-family: "Source Sans 3"; background: var(--gray); padding: 0 1mm; }
+
+/* ---------- Titres ---------- */
+h1, h2, h3, h4 { font-family: "Montserrat"; color: var(--navy); hyphens: manual; text-align: left; break-after: avoid; }
+h2 { font-size: 12.5pt; font-weight: 700; text-transform: uppercase; letter-spacing: .02em;
+     color: white; background: var(--navy); padding: 2.4mm 4mm 2.4mm 0; margin: 6mm 0 3.2mm;
+     display: flex; align-items: stretch; }
+h2 .secnum { display: inline-block; background: var(--gold); color: var(--navy); font-weight: 800;
+     padding: 2.4mm 3mm; margin: -2.4mm 4mm -2.4mm 0; min-width: 9mm; text-align: center; }
+h3 { font-size: 11.5pt; font-weight: 700; margin: 5mm 0 2mm; padding-left: 3.5mm; border-left: 1.4mm solid var(--gold); }
+h4 { font-size: 10.5pt; font-weight: 600; margin: 3mm 0 1.5mm; color: var(--navy2); }
+.chapter-body > h2:first-child { margin-top: 0; }
+
+/* ---------- Ouverture de chapitre (pleine page) ---------- */
+section.opener { page: opener; break-before: page; height: 297mm; width: 210mm; position: relative;
+  background: var(--navy); color: white; overflow: hidden; }
+.opener .op-bg { position: absolute; left: 0; top: 0; width: 210mm; height: 297mm; }
+.opener .op-num { position: absolute; left: 22mm; top: 30mm; font: 200 96pt/1 "Montserrat"; color: var(--gold); letter-spacing: -.02em; }
+.opener .op-label { position: absolute; left: 24mm; top: 22mm; font: 700 9pt "Montserrat"; letter-spacing: .35em; color: #B9C3D6; }
+.opener h1 { position: absolute; left: 22mm; top: 78mm; width: 150mm; font: 300 25pt/1.18 "Montserrat"; color: white;
+  text-transform: uppercase; letter-spacing: .01em; margin: 0; string-set: chaptitle attr(data-short); }
+.opener .op-rule { position: absolute; left: 22mm; top: 136mm; width: 30mm; height: 1.6mm; background: var(--gold); }
+.opener .op-accroche { position: absolute; left: 22mm; top: 145mm; width: 128mm; font: italic 400 12.5pt/1.45 "Source Sans 3"; color: #DCE3EF; text-align: left; }
+.opener .op-points { position: absolute; left: 22mm; top: 196mm; width: 120mm; }
+.opener .op-points .t { font: 700 8pt "Montserrat"; letter-spacing: .3em; color: var(--gold); margin-bottom: 4mm; }
+.opener .pt { display: flex; align-items: center; margin-bottom: 3.2mm; font: 500 10pt "Montserrat"; color: white; }
+.opener .pt .sq { display: inline-block; width: 7mm; height: 7mm; line-height: 7mm; background: var(--gold); color: var(--navy);
+  font-weight: 800; text-align: center; margin-right: 4mm; font-size: 9pt; flex: none; }
+.opener .op-foot { position: absolute; left: 22mm; bottom: 16mm; font: 600 7.5pt "Montserrat"; letter-spacing: .25em; color: #7F8BA3; }
+
+/* ---------- Encadrés pédagogiques ---------- */
+div.situation, div.objectifs, div.definition, div.exemple, div.horizon, div.attention, div.retenir,
+div.cas, div.corrige, div.qcm, div.prompt, div.modele, div.note {
+  margin: 3.2mm 0 3.6mm; padding: 3.2mm 4.5mm 1.6mm; break-inside: auto; position: relative; }
+div.situation::before, div.objectifs::before, div.definition::before, div.exemple::before, div.horizon::before,
+div.attention::before, div.retenir::before, div.cas::before, div.corrige::before, div.qcm::before, div.prompt::before, div.modele::before, div.note::before {
+  display: block; font: 800 7.6pt "Montserrat"; letter-spacing: .2em; margin-bottom: 2.4mm; }
+div.nolabel::before { content: none !important; display: none; }
+
+div.situation { background: var(--gray); border-left: 2mm solid var(--gold); font-size: 11pt; }
+div.situation::before { content: "SITUATION"; color: var(--gold); }
+div.situation p:first-of-type { font-family: "Source Sans 3"; }
+
+div.objectifs { background: white; border: .35mm solid var(--line); border-top: 1.4mm solid var(--navy); }
+div.objectifs::before { content: "OBJECTIFS PÉDAGOGIQUES"; color: var(--navy); }
+div.objectifs ul { list-style: none; padding-left: 0; }
+div.objectifs li { padding-left: 7mm; position: relative; }
+div.objectifs li::before { content: ""; position: absolute; left: 0; top: 1.3mm; width: 3.2mm; height: 3.2mm; background: var(--gold); }
+
+div.definition { background: white; border-left: 1.2mm solid var(--gold); border-top: .3mm solid var(--line); border-bottom: .3mm solid var(--line); }
+div.definition::before { content: "DÉFINITIONS"; color: var(--gold); }
+
+div.exemple { background: var(--gray); }
+div.exemple::before { content: "EXEMPLE PROFESSIONNEL"; color: var(--navy2); }
+
+div.horizon { background: var(--goldl); border-top: 1.2mm solid var(--gold); }
+div.horizon::before { content: "FIL ROUGE · ORGANISATION HORIZON  (cas fictif)"; color: #8C6B1F; }
+
+div.attention { border: .45mm solid var(--gold); background: white; }
+div.attention::before { content: "ATTENTION"; color: #A5822E; }
+
+div.retenir { background: var(--navy); color: white; padding: 5mm 6mm 3mm; }
+div.retenir::before { content: "À RETENIR"; color: var(--gold); }
+div.retenir strong { color: var(--gold); }
+div.retenir li::marker { color: var(--gold); }
+
+div.cas { border: .45mm solid var(--navy); border-left: 2.2mm solid var(--navy); }
+div.cas::before { content: "CAS PRATIQUE"; color: var(--navy); }
+
+div.corrige { background: var(--gray); font-size: 10.2pt; }
+div.corrige::before { content: "CORRIGÉ"; color: var(--navy2); }
+
+div.qcm { border-top: .45mm solid var(--navy); border-bottom: .45mm solid var(--navy); padding-left: 0; padding-right: 0; }
+div.qcm::before { content: "QUESTIONNAIRE À CHOIX MULTIPLES"; color: var(--navy); }
+div.qcm p { text-align: left; margin-bottom: 3mm; break-inside: avoid; }
+
+div.prompt { background: #F7F8FA; border-left: 1.2mm solid var(--navy2); font-size: 10.1pt; }
+div.prompt::before { content: "PROMPT PRÊT À L'EMPLOI"; color: var(--navy2); }
+div.prompt blockquote { margin: 1mm 0 2.5mm; padding: 2.5mm 3.5mm; background: white; border: .3mm dashed #B8C0CC; font-size: 9.8pt; }
+div.prompt blockquote p { text-align: left; hyphens: manual; }
+
+div.modele { border: .35mm solid var(--line); border-top: 1.4mm solid var(--gold); padding-bottom: 3mm; }
+div.modele::before { content: "MODÈLE RÉUTILISABLE"; color: var(--gold); }
+div.note { background: var(--gray); font-size: 9.8pt; }
+div.note::before { content: "NOTE"; color: var(--muted); }
+
+div.retenir > :last-child, div.corrige > :last-child, div.qcm > :last-child { margin-bottom: 1.5mm; }
+
+/* ---------- Tableaux ---------- */
+table { width: 100%; border-collapse: collapse; margin: 2.5mm 0 4mm; font-family: "Source Sans 3"; font-size: 9.4pt; line-height: 1.22; }
+thead { display: table-header-group; }
+th { background: var(--navy); color: white; font: 600 8.2pt "Montserrat"; text-align: left; padding: 1.6mm 2mm; vertical-align: bottom; }
+td { padding: 1.3mm 2mm; border-bottom: .25mm solid var(--line); vertical-align: top; text-align: left; hyphens: auto; }
+tbody tr:nth-child(even) td { background: #F7F8FA; }
+tr { break-inside: avoid; }
+caption { caption-side: top; text-align: left; font: 700 8.4pt "Montserrat"; color: var(--navy); padding-bottom: 1.8mm; }
+caption::before { content: "Tableau " counter(chapnum) "." counter(tabnum) "  ·  "; counter-increment: tabnum; color: var(--gold); }
+table.form td { height: 7.5mm; }
+.annexes caption::before, .nocount caption::before { content: none; }
+
+/* ---------- Figures ---------- */
+figure { margin: 3mm 0 4mm; text-align: center; break-inside: avoid; }
+figure img { max-width: 100%; }
+figcaption { font: 500 8.4pt "Montserrat"; color: var(--muted); margin-top: 2mm; text-align: center; }
+figcaption::before { content: "Figure " counter(chapnum) "." counter(fignum) "  ·  "; counter-increment: fignum; color: var(--gold); font-weight: 700; }
+.annexes figcaption::before { content: none; }
+
+section.chapter-body { counter-reset: fignum tabnum; }
+section.opener { counter-increment: chapnum; }
+
+/* ---------- Pages préliminaires ---------- */
+section.prelim { page: prelim; break-before: page; }
+section.prelim h1 { font: 300 20pt "Montserrat"; text-transform: uppercase; color: var(--navy); margin: 0 0 2mm; letter-spacing: .02em; }
+section.prelim h1::after { content: ""; display: block; width: 22mm; height: 1.3mm; background: var(--gold); margin-top: 3mm; }
+section.prelim h1 + * { margin-top: 6mm; }
+section.titlepage { page: titlepage; break-before: auto; height: 297mm; position: relative; background: white; }
+
+/* Sommaire */
+.toc { columns: 2; column-gap: 7mm; font-size: 7.5pt; line-height: 1.12; }
+.toc .tc { break-inside: avoid; margin-bottom: 1.6mm; }
+.toc a { display: block; color: var(--ink); }
+.toc .c > a { font: 700 7.6pt "Montserrat"; color: var(--navy); margin-bottom: .5mm; }
+.toc .s > a { padding-left: 4mm; color: #3A4458; }
+.toc a::after { content: leader(".") target-counter(attr(href), page); color: var(--muted); }
+.toc .c a::after { color: var(--navy); }
+
+/* Conclusion, annexes, glossaire, bibliographie */
+section.backmatter { break-before: page; }
+section.backmatter > h1 { font: 300 22pt "Montserrat"; text-transform: uppercase; color: var(--navy); margin: 0 0 6mm;
+  string-set: chaptitle content(); padding-bottom: 3mm; border-bottom: 1.3mm solid var(--gold); }
+section.annexes h2 { break-before: auto; }
+section.annexes .annexe { break-before: page; }
+.gloss { } section.gloss > p { margin-bottom: 1.5mm; font-size: 9.3pt; line-height: 1.22; } section.gloss { } .glosscols { columns: 2; column-gap: 7mm; }
+.biblio p, .biblio li { font-size: 9.2pt; text-align: left; hyphens: manual; line-height: 1.25; }
+.biblio li { margin-bottom: 1.6mm; }
+.small { font-size: 9pt; }
+
+pre { font-family: "DejaVu Sans Mono", monospace; font-size: 8.6pt; line-height: 1.25; background: var(--gray); border-left: 1.2mm solid var(--navy2); padding: 3mm 4mm; margin: 2.5mm 0 4mm; break-inside: avoid; color: var(--navy); }
+pre code { background: none; padding: 0; font-family: inherit; }
+.annexes table { font-size: 8.4pt; }
+.annexes td { height: 6.5mm; }
+.annexes th { font-size: 7.4pt; }
+
+section.prelim table { font-size: 8.8pt; }
+section.prelim p, section.prelim li { font-size: 10.2pt; }
+.glosscols p { margin-bottom: 1.6mm; font-size: 9.4pt; line-height: 1.22; text-align: left; hyphens: auto; break-inside: avoid; }
+.annexes div.modele { break-inside: avoid; }
+.annexes h2 { break-after: avoid; }
