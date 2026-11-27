@@ -1,7 +1,7 @@
 /* ==========================================================
    L'ARCHIVISTIQUE : PRINCIPES ET PRATIQUES DU MÉTIER D'ARCHIVISTE
    Feuille de style d'impression (WeasyPrint) · A4
-   Palette : bleu marine #33373D · or #2D5A3B · gris clair #F2F3F4
+   Palette : bleu marine #0A1E3F · or #2D5A3B · gris clair #F2F4F7
    ========================================================== */
 
 @font-face { font-family: "Montserrat"; font-weight: 300; src: url("fonts/MontserratLight.ttf"); }
@@ -19,27 +19,27 @@
 @font-face { font-family: "Source Sans 3"; font-weight: 300; src: url("fonts/SourceSans3Light.ttf"); }
 
 :root {
-  --navy: #33373D; --navy2: #4A4F57; --gold: #2D5A3B; --goldl: #E6EFE8;
-  --gray: #F2F3F4; --line: #DCDDDF; --ink: #222428; --muted: #5E6166;
+  --navy: #0A1E3F; --navy2: #14305C; --gold: #2D5A3B; --goldl: #E6EFE8;
+  --gray: #F2F4F7; --line: #D9DEE6; --ink: #1D2433; --muted: #5A6476;
 }
 
 /* ---------- Pages ---------- */
 @page {
   size: A4;
   margin: 21mm 17mm 19mm 19mm;
-  @top-left { content: string(chaptitle); font: 600 7.5pt "Montserrat"; color: #8E9196;
+  @top-left { content: string(chaptitle); font: 600 7.5pt "Montserrat"; color: #8A93A3;
               text-transform: uppercase; letter-spacing: .08em; vertical-align: bottom; padding-bottom: 3mm; }
   @top-right { content: "L'archivistique"; font: 600 7.5pt "Montserrat"; color: var(--gold);
                text-transform: uppercase; letter-spacing: .12em; vertical-align: bottom; padding-bottom: 3mm; }
   @bottom-right { content: counter(page); font: 700 8.5pt "Montserrat"; color: white;
                   background: var(--navy); width: 9mm; height: 7mm; text-align: center; vertical-align: middle; margin-bottom: 7mm; }
-  @bottom-left { content: "Verdi Imbole"; font: 500 7pt "Montserrat"; color: #9A9DA2; letter-spacing: .06em; margin-bottom: 7mm; vertical-align: middle; width: 120mm; }
+  @bottom-left { content: "Verdi Imbole"; font: 500 7pt "Montserrat"; color: #9AA2B1; letter-spacing: .06em; margin-bottom: 7mm; vertical-align: middle; width: 120mm; }
 }
 @page :left {
   margin: 21mm 19mm 19mm 17mm;
   @bottom-left { content: counter(page); font: 700 8.5pt "Montserrat"; color: white;
                  background: var(--navy); width: 9mm; height: 7mm; text-align: center; vertical-align: middle; margin-bottom: 7mm; }
-  @bottom-right { content: "Principes et pratiques du métier d'archiviste"; font: 500 7pt "Montserrat"; color: #9A9DA2; letter-spacing: .04em; margin-bottom: 7mm; vertical-align: middle; width: 120mm; text-align: right; background: none; }
+  @bottom-right { content: "Principes et pratiques du métier d'archiviste"; font: 500 7pt "Montserrat"; color: #9AA2B1; letter-spacing: .04em; margin-bottom: 7mm; vertical-align: middle; width: 120mm; text-align: right; background: none; }
 }
 @page opener { margin: 0; @top-left{content:none} @top-right{content:none} @bottom-left{content:none} @bottom-right{content:none} }
 @page prelim { @top-left{content:none} @top-right{content:none} @bottom-left{content:none}
@@ -54,7 +54,7 @@ li { text-align: justify; hyphens: auto; margin-bottom: 1mm; }
 ul, ol { margin: 0 0 2.6mm; padding-left: 6mm; }
 ul li::marker { color: var(--gold); }
 ol li::marker { color: var(--navy); font-weight: 700; font-family: "Montserrat"; font-size: .9em; }
-strong { font-weight: 700; color: #2A2D31; }
+strong { font-weight: 700; color: #0E234A; }
 em { font-style: italic; }
 a { color: var(--navy2); text-decoration: none; }
 code { font-family: "Source Sans 3"; background: var(--gray); padding: 0 1mm; }
@@ -75,17 +75,17 @@ section.opener { page: opener; break-before: page; height: 297mm; width: 210mm; 
   background: var(--navy); color: white; overflow: hidden; }
 .opener .op-bg { position: absolute; left: 0; top: 0; width: 210mm; height: 297mm; }
 .opener .op-num { position: absolute; left: 22mm; top: 30mm; font: 200 96pt/1 "Montserrat"; color: var(--gold); letter-spacing: -.02em; }
-.opener .op-label { position: absolute; left: 24mm; top: 22mm; font: 700 9pt "Montserrat"; letter-spacing: .35em; color: #D5D7DA; }
+.opener .op-label { position: absolute; left: 24mm; top: 22mm; font: 700 9pt "Montserrat"; letter-spacing: .35em; color: #D0D7E2; }
 .opener h1 { position: absolute; left: 22mm; top: 78mm; width: 150mm; font: 300 25pt/1.18 "Montserrat"; color: white;
   text-transform: uppercase; letter-spacing: .01em; margin: 0; string-set: chaptitle attr(data-short); }
 .opener .op-rule { position: absolute; left: 22mm; top: 136mm; width: 30mm; height: 1.6mm; background: var(--gold); }
-.opener .op-accroche { position: absolute; left: 22mm; top: 145mm; width: 128mm; font: italic 400 12.5pt/1.45 "Source Sans 3"; color: #E4E6E8; text-align: left; }
+.opener .op-accroche { position: absolute; left: 22mm; top: 145mm; width: 128mm; font: italic 400 12.5pt/1.45 "Source Sans 3"; color: #E3E8EF; text-align: left; }
 .opener .op-points { position: absolute; left: 22mm; top: 196mm; width: 120mm; }
 .opener .op-points .t { font: 700 8pt "Montserrat"; letter-spacing: .3em; color: var(--gold); margin-bottom: 4mm; }
 .opener .pt { display: flex; align-items: center; margin-bottom: 3.2mm; font: 500 10pt "Montserrat"; color: white; }
 .opener .pt .sq { display: inline-block; width: 7mm; height: 7mm; line-height: 7mm; background: var(--gold); color: var(--navy);
   font-weight: 800; text-align: center; margin-right: 4mm; font-size: 9pt; flex: none; }
-.opener .op-foot { position: absolute; left: 22mm; bottom: 16mm; font: 600 7.5pt "Montserrat"; letter-spacing: .25em; color: #85888D; }
+.opener .op-foot { position: absolute; left: 22mm; bottom: 16mm; font: 600 7.5pt "Montserrat"; letter-spacing: .25em; color: #7F8BA3; }
 
 /* ---------- Encadrés pédagogiques ---------- */
 div.situation, div.objectifs, div.definition, div.exemple, div.horizon, div.attention, div.retenir,
@@ -133,9 +133,9 @@ div.qcm { border-top: .45mm solid var(--navy); border-bottom: .45mm solid var(--
 div.qcm::before { content: "QUESTIONNAIRE À CHOIX MULTIPLES"; color: var(--navy); }
 div.qcm p { text-align: left; margin-bottom: 3mm; break-inside: avoid; }
 
-div.prompt { background: #F7F7F8; border-left: 1.2mm solid var(--navy2); font-size: 10.1pt; }
+div.prompt { background: #F7F8FA; border-left: 1.2mm solid var(--navy2); font-size: 10.1pt; }
 div.prompt::before { content: "PROMPT PRÊT À L'EMPLOI"; color: var(--navy2); }
-div.prompt blockquote { margin: 1mm 0 2.5mm; padding: 2.5mm 3.5mm; background: white; border: .3mm dashed #C2C4C7; font-size: 9.8pt; }
+div.prompt blockquote { margin: 1mm 0 2.5mm; padding: 2.5mm 3.5mm; background: white; border: .3mm dashed #B9C3D6; font-size: 9.8pt; }
 div.prompt blockquote p { text-align: left; hyphens: manual; }
 
 div.modele { border: .35mm solid var(--line); border-top: 1.4mm solid var(--gold); padding-bottom: 3mm; }
@@ -150,7 +150,7 @@ table { width: 100%; border-collapse: collapse; margin: 2.5mm 0 4mm; font-family
 thead { display: table-header-group; }
 th { background: var(--navy); color: white; font: 600 8.2pt "Montserrat"; text-align: left; padding: 1.6mm 2mm; vertical-align: bottom; }
 td { padding: 1.3mm 2mm; border-bottom: .25mm solid var(--line); vertical-align: top; text-align: left; hyphens: auto; }
-tbody tr:nth-child(even) td { background: #F7F7F8; }
+tbody tr:nth-child(even) td { background: #F7F8FA; }
 tr { break-inside: avoid; }
 caption { caption-side: top; text-align: left; font: 700 8.4pt "Montserrat"; color: var(--navy); padding-bottom: 1.8mm; }
 caption::before { content: "Tableau " counter(chapnum) "." counter(tabnum) "  ·  "; counter-increment: tabnum; color: var(--gold); }
@@ -179,7 +179,7 @@ section.titlepage { page: titlepage; break-before: auto; height: 297mm; position
 .toc .tc { break-inside: avoid; margin-bottom: 1.6mm; }
 .toc a { display: block; color: var(--ink); }
 .toc .c > a { font: 700 7.6pt "Montserrat"; color: var(--navy); margin-bottom: .5mm; }
-.toc .s > a { padding-left: 4mm; color: #3E4145; }
+.toc .s > a { padding-left: 4mm; color: #1C3A6E; }
 .toc a::after { content: leader(".") target-counter(attr(href), page); color: var(--muted); }
 .toc .c a::after { color: var(--navy); }
 
@@ -241,7 +241,7 @@ div.qcm { padding-left: 2mm; padding-right: 2mm; }
 div.objectifs { background: #2D5A3B; color: white; border: none; border-top: none; padding-left: 6mm; }
 div.objectifs::before { color: var(--gold); }
 div.objectifs ul { padding-left: 5mm; }
-div.objectifs li { padding-left: 0; color: #F2F3F4; }
+div.objectifs li { padding-left: 0; color: #F2F4F7; }
 div.objectifs li::before { left: -4.2mm; top: 1.45mm; width: 0; height: 0; background: none;
   border-left: 1.7mm solid var(--gold); border-top: 1.05mm solid transparent; border-bottom: 1.05mm solid transparent; }
 div.retenir { padding-left: 7mm; }
@@ -250,18 +250,18 @@ div.situation p { font-size: 10.8pt; }
 div.cas { border-left: .45mm solid var(--navy); }
 
 /* tableaux : filets plus fins, première colonne affirmée */
-td:first-child { font-weight: 600; color: #2A2D31; }
+td:first-child { font-weight: 600; color: #0E234A; }
 .annexes td:first-child, table.plain td:first-child { font-weight: 400; }
 th { letter-spacing: .03em; }
 
 /* ouvertures de chapitre : rangée de chiffres clés + panneau en biais */
 .opener .op-accroche { top: 140mm; left: 28mm; width: 125mm; }
 .opener .op-vline { position: absolute; left: 22mm; top: 139mm; width: .9mm; height: 24mm; background: var(--gold); }
-.opener .op-stats { position: absolute; left: 22mm; top: 172mm; width: 168mm; display: flex; }
+.opener .op-stats { position: absolute; left: 22mm; top: 168mm; width: 168mm; display: flex; }
 .opener .st { width: 42mm; text-align: center; }
 .opener .st img { width: 11mm; height: 11mm; display: block; margin: 0 auto 1.5mm; }
 .opener .st .n { font: 700 17pt/1 "Montserrat"; color: white; }
-.opener .st .l { font: 500 7.6pt "Montserrat"; color: #D5D7DA; margin-top: 1.2mm; letter-spacing: .04em; }
+.opener .st .l { font: 500 7.6pt "Montserrat"; color: #D0D7E2; margin-top: 1.2mm; letter-spacing: .04em; }
 .opener .op-points { top: 219mm; left: 26mm; }
 .opener .op-rule { display: none; }
 
@@ -286,10 +286,10 @@ div.corrige { break-inside: avoid; }
 div.cas, div.objectifs, div.situation, div.retenir { break-inside: avoid; }
 
 /* ==========================================================
-   PALETTE INTÉRIEURE : gris foncé #33373D · vert forêt #2D5A3B · bordeaux #7B1E30
+   PALETTE INTÉRIEURE : gris foncé #0A1E3F · vert forêt #2D5A3B · bordeaux #7B1E30
    aucun doré · coins arrondis partout
    ========================================================== */
-:root { --navy: #33373D; --gold: #2D5A3B; --vert: #2D5A3B; --bord: #7B1E30; --vertc: #8DBB9A; --bordc: #D98A98; }
+:root { --navy: #0A1E3F; --gold: #2D5A3B; --vert: #2D5A3B; --bord: #7B1E30; --vertc: #8DBB9A; --bordc: #D98A98; }
 @page { @top-right { color: #7B1E30; } }
 @page :left { @bottom-left { border-radius: 1.2mm; } }
 @page { @bottom-right { border-radius: 1.2mm; } }
@@ -305,35 +305,35 @@ div.cas, div.corrige, div.qcm, div.prompt, div.modele, div.note { border-radius:
 div.situation::after, div.objectifs::after, div.definition::after, div.exemple::after, div.horizon::after,
 div.attention::after, div.retenir::after, div.cas::after, div.corrige::after, div.qcm::after, div.prompt::after, div.modele::after, div.note::after {
   border-radius: 2mm; background-color: var(--vert); }
-div.definition { border: .35mm solid #DCDDDF; border-left: 1.2mm solid var(--vert); }
+div.definition { border: .35mm solid #D9DEE6; border-left: 1.2mm solid var(--vert); }
 div.horizon { border-top: none; border: .35mm solid #B9D2C0; background: #E6EFE8; }
 div.horizon::before { color: var(--vert); }
 div.attention { border: .45mm solid var(--bord); }
 div.attention::before { color: var(--bord); }
-div.cas { border: .45mm solid #33373D; }
+div.cas { border: .45mm solid #0A1E3F; }
 div.cas::before { color: var(--bord); }
 div.situation::before { color: var(--bord); }
-div.qcm { border: .45mm solid #33373D; padding-left: 4mm; padding-right: 4mm; }
+div.qcm { border: .45mm solid #0A1E3F; padding-left: 4mm; padding-right: 4mm; }
 div.qcm::before { color: var(--bord); }
 div.corrige::before { color: var(--vert); }
-div.modele { border: .35mm solid #DCDDDF; border-top: 1.4mm solid var(--vert); }
+div.modele { border: .35mm solid #D9DEE6; border-top: 1.4mm solid var(--vert); }
 div.modele::before { color: var(--vert); }
-div.prompt { border-left: none; border: .35mm solid #DCDDDF; }
+div.prompt { border-left: none; border: .35mm solid #D9DEE6; }
 div.prompt blockquote { border-radius: 2mm; }
 div.prompt::before { color: var(--bord); }
 div.objectifs { background: var(--vert); }
 div.objectifs::before { color: white; }
 div.objectifs::after { background-color: var(--bord); }
 div.objectifs li::before { border-left-color: var(--vertc); }
-div.retenir { background: #33373D; }
+div.retenir { background: #0A1E3F; }
 div.retenir::before { color: var(--vertc); }
 div.retenir strong { color: var(--vertc); }
 div.retenir li::before { border-left-color: var(--vertc); }
 ul > li::before { border-left-color: var(--vert); }
-pre { border-radius: 2mm; border-left: none; border: .35mm solid #DCDDDF; }
+pre { border-radius: 2mm; border-left: none; border: .35mm solid #D9DEE6; }
 
 /* tableaux arrondis */
-table { border-collapse: separate; border-spacing: 0; border: .3mm solid #C9CBCE; border-radius: 3mm; }
+table { border-collapse: separate; border-spacing: 0; border: .3mm solid #C0CADB; border-radius: 3mm; }
 th:first-child { border-top-left-radius: 2.6mm; }
 th:last-child { border-top-right-radius: 2.6mm; }
 tbody tr:last-child td { border-bottom: none; }

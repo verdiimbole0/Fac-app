@@ -6,7 +6,7 @@ import pathlib, math, cairosvg
 OUT = pathlib.Path(__file__).resolve().parent.parent / "03_ILLUSTRATIONS" / "schemas"
 OUT.mkdir(parents=True, exist_ok=True)
 VC, BORD = "#8DBB9A", "#7B1E30"
-NAVY, NAVY2, GOLD, GOLDL, GRAY, LINE, INK, MUTED = "#33373D", "#4A4F57", "#2D5A3B", "#E6EFE8", "#F2F3F4", "#DCDDDF", "#222428", "#5E6166"
+NAVY, NAVY2, GOLD, GOLDL, GRAY, LINE, INK, MUTED = "#0A1E3F", "#14305C", "#2D5A3B", "#E6EFE8", "#F2F4F7", "#D9DEE6", "#1D2433", "#5A6476"
 RED, ORANGE, YEL, GREEN = "#7B1E30", "#C9687A", "#E3B6BE", "#2D5A3B"
 FIGS = {}
 
@@ -59,7 +59,7 @@ def card(x, y, w, h, title, text, n=None, head=NAVY, tsize=12.5):
 @fig
 def fig01_types_archives():
     w, h = 900, 430
-    b = R(360, 170, 180, 90, NAVY) + M(450, 205, "UNE ARCHIVE", 15, "white", 800) + T(450, 232, "se caractérise par…", 12.5, "#CFD2D6", italic=True)
+    b = R(360, 170, 180, 90, NAVY) + M(450, 205, "UNE ARCHIVE", 15, "white", 800) + T(450, 232, "se caractérise par…", 12.5, "#C9D3E3", italic=True)
     items = [
         (40, 30, "SUPPORT", "Physique (papier, photo, plan)\nNumérique natif\nNumérisé"),
         (620, 30, "STATUT", "Publique\nPrivée (entreprise, ASBL,\nfamille, personne)"),
@@ -115,7 +115,7 @@ def fig03_cycle_vie():
     """Roue de processus façon plaquette : arcs gris, pictogrammes, légendes en renvoi."""
     w, h = 900, 600
     cx, cy, R = 450, 305, 185
-    ARC = "#CACBCE"
+    ARC = "#C3CCDC"
     icons = [
         '<rect x="-20" y="-16" width="40" height="30" rx="2"/><path d="M-20 -16 L0 2 L20 -16"/><path d="M8 6 h18 M17 -3 v18" stroke="#2D5A3B"/>',
         '<rect x="-17" y="-22" width="30" height="42" rx="2"/><path d="M-10 -12h16M-10 -4h16M-10 4h10"/><path d="M10 18 l14 -22 l5 3 l-14 22 z" stroke="#2D5A3B"/>',
@@ -131,7 +131,7 @@ def fig03_cycle_vie():
     b = ""
     # cercle central
     b += f'<circle cx="{cx}" cy="{cy}" r="88" fill="{NAVY}"/>' + M(cx, cy - 22, "CYCLE DE VIE", 13, "white", 800, ls=1.5) + M(cx, cy - 2, "DU DOCUMENT", 13, "white", 800, ls=1.5)
-    b += f'<line x1="{cx-28}" y1="{cy+16}" x2="{cx+28}" y2="{cy+16}" stroke="{GOLD}" stroke-width="2.4"/>' + T(cx, cy + 40, "traçabilité\nà chaque étape", 12, "#CFD2D6", italic=True)
+    b += f'<line x1="{cx-28}" y1="{cy+16}" x2="{cx+28}" y2="{cy+16}" stroke="{GOLD}" stroke-width="2.4"/>' + T(cx, cy + 40, "traçabilité\nà chaque étape", 12, "#C9D3E3", italic=True)
     for i in range(5):
         ang = math.radians(-90 + i * 72)
         x, y = cx + R * math.cos(ang), cy + R * math.sin(ang)
@@ -147,13 +147,13 @@ def fig03_cycle_vie():
         ly = y + (-82 if i == 0 else 92 if math.sin(ang) > 0.5 else 0)
         if i == 0:
             b += M(x + 150, y - 30, t, 12.5, NAVY, 800, anchor="start", ls=0) + T(x + 150, y - 4, d, 12, INK, anchor="start")
-            b += L(x + 66, y - 30, x + 142, y - 30, "#9A9DA2", 1.2) + f'<circle cx="{x+142}" cy="{y-30:.1f}" r="2.5" fill="{GOLD}"/>'
+            b += L(x + 66, y - 30, x + 142, y - 30, "#9AA2B1", 1.2) + f'<circle cx="{x+142}" cy="{y-30:.1f}" r="2.5" fill="{GOLD}"/>'
         else:
             right = math.cos(ang) > 0
             ex = x + (92 if right else -92)
             tx = ex + (14 if right else -14)
             anchor = "start" if right else "end"
-            b += L(x + (66 if right else -66), y, ex, y, "#9A9DA2", 1.2) + f'<circle cx="{ex}" cy="{y:.1f}" r="2.5" fill="{GOLD}"/>'
+            b += L(x + (66 if right else -66), y, ex, y, "#9AA2B1", 1.2) + f'<circle cx="{ex}" cy="{y:.1f}" r="2.5" fill="{GOLD}"/>'
             b += M(tx, y - 14, t, 12.5, NAVY, 800, anchor=anchor, ls=0) + T(tx, y + 14, d, 12, INK, anchor=anchor)
     return svg(w, h, b)
 
@@ -162,7 +162,7 @@ def fig04_trois_ages():
     w, h = 900, 330
     ages = [("1er ÂGE", "ARCHIVES COURANTES", "Usage quotidien\nDans les services", "Service producteur", NAVY2),
             ("2e ÂGE", "ARCHIVES INTERMÉDIAIRES", "Usage occasionnel\nLocal de préarchivage", "Archiviste + service", NAVY),
-            ("3e ÂGE", "ARCHIVES DÉFINITIVES", "Intérêt historique\nou probant durable", "Archiviste", "#1F2125")]
+            ("3e ÂGE", "ARCHIVES DÉFINITIVES", "Intérêt historique\nou probant durable", "Archiviste", "#071530")]
     b = ""
     for i, (a, t, d, resp, col) in enumerate(ages):
         x = 20 + i * 290
@@ -276,20 +276,20 @@ def fig10_local_comparatif():
         if side == 0:
             b += f'<path d="M{x0+300} 60 v30 h40" stroke="{MUTED}" stroke-width="6" fill="none"/>' + f'<path d="M{x0+330} 96 q4 10 0 14 q-4 -4 0 -14z" fill="#4A90C2"/>'
             for k in range(4):
-                b += R(x0 + 40 + k * 55, 258 - (k % 2) * 8, 48, 42 + (k % 2) * 8, "#CFCCC7", "#8E8B86", 1)
+                b += R(x0 + 40 + k * 55, 258 - (k % 2) * 8, 48, 42 + (k % 2) * 8, "#D3D9E3", "#8E99AD", 1)
             b += R(x0 + 40, 296, 230, 6, "#4A90C2")
-            b += R(x0 + 330, 160, 60, 80, "#F2F3F4", MUTED, 1) + T(x0 + 360, 200, "soleil", 11, MUTED, italic=True)
+            b += R(x0 + 330, 160, 60, 80, "#F2F4F7", MUTED, 1) + T(x0 + 360, 200, "soleil", 11, MUTED, italic=True)
             for k in range(6):
-                b += f'<circle cx="{x0+70+k*35}" cy="{200+(k%3)*12}" r="4" fill="#6E7176" opacity=".7"/>'
+                b += f'<circle cx="{x0+70+k*35}" cy="{200+(k%3)*12}" r="4" fill="#6B7486" opacity=".7"/>'
             notes = ["Cartons au sol, déformés", "Canalisation au-dessus", "Fenêtre plein soleil", "Taches de moisissure"]
         else:
             for lv in range(3):
                 y = 280 - lv * 70
                 b += R(x0 + 40, y, 250, 4, NAVY)
                 for k in range(5):
-                    b += R(x0 + 46 + k * 49, y - 46, 44, 46, "#E4E6E8", NAVY, 1) + R(x0 + 58 + k * 49, y - 34, 20, 8, GOLD)
+                    b += R(x0 + 46 + k * 49, y - 46, 44, 46, "#E3E8EF", NAVY, 1) + R(x0 + 58 + k * 49, y - 34, 20, 8, GOLD)
             b += L(x0 + 40, 280, x0 + 40, 300, NAVY, 3) + L(x0 + 290, 280, x0 + 290, 300, NAVY, 3)
-            b += R(x0 + 330, 110, 60, 80, "#2A2D31") + T(x0 + 360, 150, "volet\nfermé", 11, "white", italic=True)
+            b += R(x0 + 330, 110, 60, 80, "#0E234A") + T(x0 + 360, 150, "volet\nfermé", 11, "white", italic=True)
             b += R(x0 + 330, 215, 50, 40, "white", NAVY, 1.2) + M(x0 + 355, 235, "HR 50%", 8.5, NAVY, 700)
             notes = ["Rayonnages métalliques surélevés", "Boîtes de conservation cotées", "Obscurité, fenêtre occultée", "Climat mesuré et stable"]
         for k, n in enumerate(notes):
@@ -307,11 +307,11 @@ def fig11_sort_final():
         b += R(x, 70, 150, 160, GRAY) + R(x, 70, 150, 36, NAVY) + M(x + 75, 88, t, 12, "white", 800, ls=1) + T(x + 75, 168, d, 12.5)
         b += A(x + 152, 150, x + 172, 150, GOLD, 2.2, marker="arg")
     b += R(535, 110, 90, 80, GOLD) + M(580, 140, "ÉCHÉANCE", 9.5, "white", 800) + T(580, 165, "gel ?\nlitige · audit", 10.5, "white", italic=True)
-    outs = [("C", "CONSERVATION", "archives définitives", NAVY), ("T", "TRI", "échantillon conservé", NAVY2), ("D", "DESTRUCTION", "autorisée + PV", "#6E7176")]
+    outs = [("C", "CONSERVATION", "archives définitives", NAVY), ("T", "TRI", "échantillon conservé", NAVY2), ("D", "DESTRUCTION", "autorisée + PV", "#6B7486")]
     for i, (l, t, d, c) in enumerate(outs):
         y = 25 + i * 90
         b += A(627, 150, 680, y + 35, NAVY, 1.6)
-        b += R(685, y, 205, 70, c) + R(685, y, 50, 70, BORD) + M(710, y + 35, l, 24, "white", 800) + M(812, y + 24, t, 11, "white", 800, ls=0.5) + T(812, y + 48, d, 12, "#E4E6E8", italic=True)
+        b += R(685, y, 205, 70, c) + R(685, y, 50, 70, BORD) + M(710, y + 35, l, 24, "white", 800) + M(812, y + 24, t, 11, "white", 800, ls=0.5) + T(812, y + 48, d, 12, "#E3E8EF", italic=True)
     return svg(w, h, b)
 
 # ------------------------------------------------------------------ CH7
@@ -326,7 +326,7 @@ def fig12_stockage_ged_sae():
         x = 15 + i * 295
         hh = 120 + lvl * 120
         y = 260 - hh
-        b += R(x, y, 275, hh, NAVY if i == 2 else (NAVY2 if i == 1 else "#55595F"))
+        b += R(x, y, 275, hh, NAVY if i == 2 else (NAVY2 if i == 1 else "#3A4E73"))
         b += M(x + 137, y + 24, t, 12.5, VC, 800, ls=1) + T(x + 137, y + 50, q, 12, "white", italic=True)
         for k, it in enumerate(items):
             b += T(x + 137, y + 82 + k * 22, it, 12.5, "white")

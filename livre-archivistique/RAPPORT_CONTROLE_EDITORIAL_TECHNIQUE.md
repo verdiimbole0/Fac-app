@@ -138,3 +138,15 @@ Contrôle : analyse colorimétrique automatique de toutes les pages du PDF et de
 Limite : Word ne sait pas arrondir les coins des tableaux ni des encadrés construits en tableaux. Dans la version DOCX, couleurs et contenus sont identiques au PDF, mais les angles restent droits.
 
 Pagination inchangée : 112 pages intérieures.
+
+## 10. Révision du 27 novembre 2026 (palette et coins arrondis)
+
+Demandes de l'auteur appliquées :
+
+1. **Contours arrondis** : encadrés, cartes, bandeaux de section, carrés numérotés, tableaux (y compris en-têtes), figures, pastilles des ouvertures et blocs des 19 schémas ont des coins arrondis dans le PDF. Limite technique : Word ne sait pas arrondir les cellules de tableau ; dans le DOCX, les encadrés gardent des angles droits.
+2. **Palette intérieure** : bleu marine (titres, bandeaux, en-têtes de tableaux, ouvertures), vert forêt (objectifs, définitions, exemples, puces, chiffres clés, éléments positifs), bordeaux (numéros de section, situations, cas pratiques, avertissements, risques). Les gris intermédiaires d'une version de travail ont été remplacés par des tons marine et des gris bleutés.
+3. **Suppression du doré** : contrôle automatique sur les sources, les 19 schémas, la page de titre, les ouvertures, les deux couvertures, le DOCX et les 10 modèles Word : aucune teinte dorée restante.
+
+Règles de design respectées : une couleur dominante et deux couleurs d'accent à rôles fixes ; contrastes suffisants pour le texte blanc sur marine, vert et bordeaux ; neutres froids cohérents avec le marine ; rayons d'arrondi homogènes.
+
+Pagination inchangée : 112 pages intérieures, préliminaires sur 8 pages, aucune page blanche.
