@@ -220,11 +220,8 @@ def arriere(n, c):
         ax.add_patch(Rectangle((6, 6), 143, 40, fc=th["bande"], ec="none", alpha=0.55, zorder=4.2))
         ax.plot([6, 149], [46, 46], color=th["fort"], lw=0.9, zorder=5)
     else:
-        ax.plot([17, 138], [40, 40], color=c["sombre"], lw=0.6, zorder=5)
-    texte(ax, 17, 34, espace(AUTEUR.upper()), 8, color=T if clair else c["accent"], ha="left")
-    yy = 28
-    for l in textwrap.wrap(BIO, 88):
-        texte(ax, 17, yy, l, 7.8, ha="left", alpha=0.9 if clair else 0.85, color=T); yy -= 3.9
+        ax.plot([17, 138], [26, 26], color=c["sombre"], lw=0.6, zorder=5)
+    texte(ax, 17, 20 if not clair else 34, espace(AUTEUR.upper()), 8, color=T if clair else c["accent"], ha="left")
     texte(ax, 17, 11 if clair else 8, "Mines · Intelligence artificielle · Management", 7.5, ha="left", alpha=0.75, color=T)
     for ext in ("pdf", "png"):
         fig.savefig(OUT / f"tome{n}_couverture_arriere.{ext}", dpi=300, facecolor=th["fond"])

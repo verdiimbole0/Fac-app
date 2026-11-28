@@ -311,13 +311,12 @@ def tome2_arriere(c):
             yy -= 5.6
     y = y - h - 6
     y = paragraphe(ax, 17, y, c["chiffres"], 8.6, 80, ITA, O["encre"], 1.35)
-    legende_geologique(ax, 17, 52)
+    legende_geologique(ax, 17, 44)
     # bandeau auteur
-    ax.add_patch(Rectangle((0, 0), 155, 40, fc=O["encre"], ec="none", zorder=5))
-    ax.plot([0, 155], [40, 40], color=O["sable"], lw=0.8, zorder=6)
-    trace(ax, 17, 32, AUTEUR.upper(), 9, REG, O["creme"], 0.48, ha="left", z=7)
-    paragraphe(ax, 17, 25, c["bio"], 7.7, 92, REG, O["sable"], 1.35, z=7)
-    trace(ax, 17, 6.5, "MINES · INTELLIGENCE ARTIFICIELLE · MANAGEMENT", 5.6, REG, O["haut"], 0.32, ha="left", z=7)
+    ax.add_patch(Rectangle((0, 0), 155, 27, fc=O["encre"], ec="none", zorder=5))
+    ax.plot([0, 155], [27, 27], color=O["sable"], lw=0.8, zorder=6)
+    trace(ax, 17, 17, AUTEUR.upper(), 10, REG, O["creme"], 0.48, ha="left", z=7)
+    trace(ax, 17, 9, "MINES · INTELLIGENCE ARTIFICIELLE · MANAGEMENT", 5.6, REG, O["haut"], 0.32, ha="left", z=7)
     enregistrer(fig, "tome2_couverture_arriere")
 
 # ---------------------------------------------------------------- TOME III : bleu marine, plan de fosse
@@ -431,12 +430,11 @@ def tome3_arriere(c):
         y -= 6
     y -= 2
     y = paragraphe(ax, 17, y, c["chiffres"], 8.6, 80, ITA, M["or_"], 1.35)
-    legende_carto(ax, 17, 52)
-    ax.add_patch(Rectangle((0, 0), 155, 40, fc=M["nuit"], ec="none", zorder=5))
-    ax.plot([0, 155], [40, 40], color=M["or_"], lw=0.8, zorder=6)
-    trace(ax, 17, 32, AUTEUR.upper(), 9, REG, M["creme"], 0.48, ha="left", z=7)
-    paragraphe(ax, 17, 25, c["bio"], 7.7, 92, REG, "#C9D6E6", 1.35, z=7)
-    trace(ax, 17, 6.5, "MINES · INTELLIGENCE ARTIFICIELLE · MANAGEMENT", 5.6, REG, M["or_"], 0.32, ha="left", z=7)
+    legende_carto(ax, 17, 44)
+    ax.add_patch(Rectangle((0, 0), 155, 27, fc=M["nuit"], ec="none", zorder=5))
+    ax.plot([0, 155], [27, 27], color=M["or_"], lw=0.8, zorder=6)
+    trace(ax, 17, 17, AUTEUR.upper(), 10, REG, M["creme"], 0.48, ha="left", z=7)
+    trace(ax, 17, 9, "MINES · INTELLIGENCE ARTIFICIELLE · MANAGEMENT", 5.6, REG, M["or_"], 0.32, ha="left", z=7)
     enregistrer(fig, "tome3_couverture_arriere")
 
 def produire(tomes, bio):
