@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """Couvertures (1re et 4e) des trois tomes, format 15,5 × 23,5 cm.
-Tome I : fond anthracite et cuivre. Tome II : orange pastel et blanc. Tome III : bleu pastel et or sable.
+Tome I : fond anthracite et cuivre. Tome II : orange et encre (coupe géologique). Tome III : bleu marine et or (plan de fosse).
 Les trois partagent la fosse en courbes de niveau, la typographie et la hiérarchie des textes.
 Sorties : 02_ILLUSTRATIONS/COUVERTURES/tome{N}_couverture_avant.(pdf|png), tome{N}_couverture_arriere.(pdf|png)"""
 import textwrap
@@ -405,7 +405,9 @@ def arriere_clair(n, c):
     plt.close(fig)
 
 if __name__ == "__main__":
-    for n, c in TOMES.items():
-        if "clair" in c: avant_clair(n, c); arriere_clair(n, c)
-        else: avant(n, c); arriere(n, c)
+    # Tome I : maquette d'origine. Tomes II (orange, coupe géologique) et III (bleu marine, plan de fosse) :
+    # maquettes de 08_OUTILS/couvertures_premium.py, sur le même système typographique.
+    avant(1, TOMES[1]); arriere(1, TOMES[1])
+    import couvertures_premium
+    couvertures_premium.produire(TOMES, BIO)
     print("Couvertures produites dans", OUT)
