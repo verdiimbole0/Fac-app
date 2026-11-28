@@ -1,10 +1,10 @@
-## Chapitre 18 — Claude appliqué à l'échantillonnage, aux ressources et aux réserves minérales
+## Chapitre 18. Claude appliqué à l'échantillonnage, aux ressources et aux réserves minérales
 
 ### A. Mise en situation professionnelle
 
 La mise à jour annuelle des ressources et réserves de MCC doit être publiée dans six semaines. Patrick Ilunga, géologue principal et « personne compétente » pour les ressources, découvre que la base de données de sondages contient des anomalies : une teneur en cuivre de 112 %, une valeur de cobalt dix fois supérieure aux valeurs voisines, un échantillon dupliqué, des intervalles qui se chevauchent. Le contrôle qualité des analyses (QA/QC) signale aussi un standard hors tolérance et un blanc contaminé. Avant toute estimation, il faut nettoyer, documenter et expliquer. Le rapport final devra respecter un code de déclaration reconnu, et c'est Patrick qui le signera.
 
-![Figure 18.1 — Caisses de carottes de sondage rangées en carothèque. Titre original : « Drill core boxes Onkalo 1 ». Auteur : kallerna. Source : Wikimedia Commons, [https://commons.wikimedia.org/wiki/File:Drill_core_boxes_Onkalo_1.jpg](https://commons.wikimedia.org/wiki/File:Drill_core_boxes_Onkalo_1.jpg) (consulté le 16/11/2026). Licence : [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.fr) ; image redimensionnée pour l'édition. Photographie d'illustration, sans lien avec l'entreprise fictive MCC.](02_ILLUSTRATIONS/PHOTOGRAPHIES/photo_carottes_sondage.jpg){width=78%}
+![Figure 18.1. Caisses de carottes de sondage rangées en carothèque. Titre original : « Drill core boxes Onkalo 1 ». Auteur : kallerna. Source : Wikimedia Commons, [https://commons.wikimedia.org/wiki/File:Drill_core_boxes_Onkalo_1.jpg](https://commons.wikimedia.org/wiki/File:Drill_core_boxes_Onkalo_1.jpg) (consulté le 16/11/2026). Licence : [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.fr) ; image redimensionnée pour l'édition. Photographie d'illustration, sans lien avec l'entreprise fictive MCC.](02_ILLUSTRATIONS/PHOTOGRAPHIES/photo_carottes_sondage.jpg){width=78%}
 
 ### B. Objectifs d'apprentissage
 
@@ -16,7 +16,7 @@ La mise à jour annuelle des ressources et réserves de MCC doit être publiée 
 4. **Vérifier** la cohérence interne d'un rapport de ressources et sa complétude au regard d'un code de déclaration.
 5. **Rédiger** des sections méthodologiques claires et traçables.
 
-### C. Comprendre avant de pratiquer — Profil du métier
+### C. Comprendre avant de pratiquer : Profil du métier
 
 #### C.1. Ressources, réserves et personne compétente
 
@@ -27,7 +27,7 @@ Les codes de déclaration, comme le code JORC, distinguent [@JORC-2012] :
 
 Les déclarations publiques doivent être fondées sur les travaux d'une **personne compétente**, et le code JORC prévoit une liste de critères à documenter (sa « Table 1 ») couvrant l'échantillonnage, les données, l'estimation et les facteurs modificateurs [@JORC-2012].
 
-*Tableau 18.1 — Profil des métiers « données géologiques et ressources ».*
+*Tableau 18.1. Profil des métiers « données géologiques et ressources ».*
 
 | Dimension | Contenu |
 |---|---|
@@ -41,12 +41,12 @@ Les déclarations publiques doivent être fondées sur les travaux d'une **perso
 | Limites | Estimation géostatistique (logiciels spécialisés), classification, jugement de la personne compétente, signature |
 
 ::: attention
-La classification des ressources et la déclaration publique engagent la responsabilité professionnelle de la personne compétente — et, pour une société cotée, l'entreprise vis-à-vis des marchés. Claude ne classe pas, ne valide pas et ne signe pas.
+La classification des ressources et la déclaration publique engagent la responsabilité professionnelle de la personne compétente, et, pour une société cotée, l'entreprise vis-à-vis des marchés. Claude ne classe pas, ne valide pas et ne signe pas.
 :::
 
-### D. Démonstration guidée — Cas d'usage
+### D. Démonstration guidée : Cas d'usage
 
-#### Cas d'usage 18.1 — Profiler et nettoyer la base d'échantillonnage
+#### Cas d'usage 18.1. Profiler et nettoyer la base d'échantillonnage
 
 **1. Problème.** La base `MCC_sondages_analyses.csv` comporte des anomalies qui fausseraient l'estimation.
 
@@ -81,7 +81,7 @@ Affiche le nombre total d'échantillons testés.
 
 **8. Exemple de résultat.** Claude retrouve les anomalies insérées dans le jeu d'exercice : S10200 (Cu = 112 %), S10038 (Co ×10), S10053 (Cu manquant), S10081 (doublon), chevauchement sur MBN-002 (voir `ANOMALIES_ATTENDUES.md`).
 
-![Figure 18.2 — Distribution des teneurs en cuivre et relation Cu-Co sur la base d'échantillonnage (fictive). Le graphique fait apparaître une valeur de cobalt aberrante ; la valeur de 112 % Cu, impossible, a été exclue. Graphique réalisé pour cet ouvrage.](02_ILLUSTRATIONS/GRAPHIQUES/fig18_1_teneurs_sondages.png){width=100%}
+![Figure 18.2. Distribution des teneurs en cuivre et relation Cu-Co sur la base d'échantillonnage (fictive). Le graphique fait apparaître une valeur de cobalt aberrante ; la valeur de 112 % Cu, impossible, a été exclue. Graphique réalisé pour cet ouvrage.](02_ILLUSTRATIONS/GRAPHIQUES/fig18_1_teneurs_sondages.png){width=100%}
 
 **9. Contrôle qualité.** Le géologue contrôle chaque anomalie sur le certificat d'analyse original ; il vérifie que le nombre d'échantillons testés correspond à la base.
 
@@ -91,7 +91,7 @@ Affiche le nombre total d'échantillons testés.
 
 **12. Livrable.** Rapport de validation de la base : liste des anomalies, décisions, corrections, journal signé du gestionnaire de données.
 
-#### Cas d'usage 18.2 — Synthèse QA/QC
+#### Cas d'usage 18.2. Synthèse QA/QC
 
 **1. Problème.** Le rapport annuel doit démontrer la qualité des analyses : résultats des **matériaux de référence certifiés** (standards), des **blancs** et des **duplicatas**.
 
@@ -119,7 +119,7 @@ Avec l'exécution de code :
 
 **8. Exemple de résultat.** Le standard Q018 (CRM-B, valeur certifiée 0,85 % Cu) est mesuré à 0,952 % Cu, soit un écart normalisé d'environ +4,8 : hors tolérance. Le blanc Q030 présente 0,15 % Cu : contamination possible. Les deux lots concernés (LOT-04, LOT-06) sont signalés pour décision.
 
-![Figure 18.3 — Contrôle qualité des analyses : écarts normalisés des standards certifiés et teneurs des blancs (données fictives). Graphique réalisé pour cet ouvrage.](02_ILLUSTRATIONS/GRAPHIQUES/fig18_2_carte_controle_qaqc.png){width=100%}
+![Figure 18.3. Contrôle qualité des analyses : écarts normalisés des standards certifiés et teneurs des blancs (données fictives). Graphique réalisé pour cet ouvrage.](02_ILLUSTRATIONS/GRAPHIQUES/fig18_2_carte_controle_qaqc.png){width=100%}
 
 **9. Contrôle.** Recalcul manuel des deux anomalies ; vérification des tolérances utilisées (celles du protocole du laboratoire et de MCC, pas des valeurs « par défaut »).
 
@@ -129,17 +129,17 @@ Avec l'exécution de code :
 
 **12. Livrable.** Section QA/QC du rapport annuel avec graphiques, tableau des anomalies et décisions.
 
-#### Cas d'usage 18.3 — Contrôle de cohérence et de complétude d'un rapport de ressources (condensé)
+#### Cas d'usage 18.3. Contrôle de cohérence et de complétude d'un rapport de ressources (condensé)
 
 Claude compare systématiquement les tableaux de ressources et réserves, le résumé, le texte et les annexes (tonnages, teneurs, métal contenu, catégories, coupure, date d'effet), recalcule le métal contenu (tonnage × teneur) et signale toute incohérence avec citation et page. Il vérifie ensuite, à partir de la liste de critères fournie par l'utilisateur (par exemple la Table 1 du code applicable), les rubriques absentes ou insuffisamment documentées. Exemple : dans le scénario, 51 Mt × 2,36 % Cu = 1,20 Mt de cuivre contenu ; si le résumé annonce 1,25 Mt, l'écart est signalé. **La personne compétente reste seule juge** de la complétude et de la conformité.
 
-#### Cas d'usage 18.4 — Rédiger la section « échantillonnage et analyses » (condensé)
+#### Cas d'usage 18.4. Rédiger la section « échantillonnage et analyses » (condensé)
 
 À partir du protocole interne, des fiches du laboratoire et de la synthèse QA/QC, Claude rédige une section méthodologique (type de sondage, diamètre, longueur des échantillons, préparation, méthode analytique, programme QA/QC, résultats), en signalant entre crochets les informations manquantes. Le géologue complète et valide.
 
 ### E. Prompts commentés
 
-**Prompt 18.1 — Recalcul et cohérence d'un tableau de ressources**
+**Prompt 18.1. Recalcul et cohérence d'un tableau de ressources**
 
 ```text
 Tableau des ressources (extrait du projet de rapport) : <tableau> … </tableau>
@@ -160,7 +160,7 @@ et liste les écarts supérieurs à 0,5 %. N'arrondis qu'à la fin.
 
 ### G. Livrable professionnel
 
-**Dossier de qualité des données** : rapport de validation de la base, journal des corrections, section QA/QC avec graphiques, contrôle de cohérence du projet de rapport de ressources — prêt pour la revue de la personne compétente.
+**Dossier de qualité des données** : rapport de validation de la base, journal des corrections, section QA/QC avec graphiques, contrôle de cohérence du projet de rapport de ressources : prêt pour la revue de la personne compétente.
 
 ### H. Vérification des résultats
 
@@ -201,4 +201,4 @@ Claude « corrige » spontanément la teneur de 112 % en 1,12 % dans un tableau 
 9. **(Vrai ou faux)** La moyenne simple des teneurs de trois catégories de ressources donne la teneur totale.
 10. **(Application)** Rédigez la règle qui interdit à Claude de corriger une valeur de la base.
 
-<div class="carnet" titre="Chapitre 18 — Claude appliqué à l'échantillonnage, aux ressources et aux réserves minérales"></div>
+<div class="carnet" titre="Chapitre 18. Claude appliqué à l'échantillonnage, aux ressources et aux réserves minérales"></div>

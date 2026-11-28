@@ -1,10 +1,10 @@
-## Chapitre 6 — Pourquoi l'expertise humaine demeure indispensable
+## Chapitre 6. Pourquoi l'expertise humaine demeure indispensable
 
 ### A. Mise en situation professionnelle
 
 Albert Kalenga, superintendant forage-minage de MCC, reçoit un message d'un jeune ingénieur : « J'ai demandé à Claude d'optimiser la maille de forage du prochain tir sur le gradin 1380 ; il propose d'élargir la maille de 15 %, ce qui ferait économiser de l'explosif. On applique ? »
 
-Albert répond par une question : « As-tu vérifié la fracturation observée sur le gradin, la distance aux installations, les vibrations mesurées au dernier tir près du village de Kasongo-Mbiyo, et l'avis du boutefeu ? » Le jeune ingénieur n'avait rien vérifié. La proposition de Claude n'était pas absurde en soi ; elle était simplement **incomplète** — car Claude ne connaissait ni le terrain, ni les mesures, ni les contraintes locales.
+Albert répond par une question : « As-tu vérifié la fracturation observée sur le gradin, la distance aux installations, les vibrations mesurées au dernier tir près du village de Kasongo-Mbiyo, et l'avis du boutefeu ? » Le jeune ingénieur n'avait rien vérifié. La proposition de Claude n'était pas absurde en soi ; elle était simplement **incomplète** : car Claude ne connaissait ni le terrain, ni les mesures, ni les contraintes locales.
 
 ### B. Objectifs d'apprentissage
 
@@ -58,13 +58,13 @@ Claude peut aider à **documenter**, **préparer**, **relire** ou **former** sur
 
 L'expression **humain dans la boucle** (*human in the loop*) désigne une organisation du travail dans laquelle un humain intervient à des étapes définies d'un processus assisté par l'IA : pour cadrer la tâche, vérifier les résultats, corriger et valider.
 
-![Figure 6.1 — La boucle « humain dans la boucle ». Les étapes de cadrage, de vérification et de validation restent humaines ; Claude intervient dans la production et la correction. Illustration réalisée pour cet ouvrage.](02_ILLUSTRATIONS/SCHEMAS/fig06_1_humain_boucle.png){width=78%}
+![Figure 6.1. La boucle « humain dans la boucle ». Les étapes de cadrage, de vérification et de validation restent humaines ; Claude intervient dans la production et la correction. Illustration réalisée pour cet ouvrage.](02_ILLUSTRATIONS/SCHEMAS/fig06_1_humain_boucle.png){width=78%}
 
 Le cadre de gestion des risques de l'IA du NIST insiste lui aussi sur la définition claire des rôles et responsabilités humains dans l'utilisation des systèmes d'IA, au titre de sa fonction de gouvernance [@NIST-RMF].
 
 #### C.5. Une répartition des rôles
 
-![Figure 6.2 — Qui fait quoi ? Claude excelle dans la structuration et la production ; l'expert reste indispensable pour le jugement, la vérification et la responsabilité ; ensemble, ils produisent plus vite des livrables plus complets. Illustration réalisée pour cet ouvrage.](02_ILLUSTRATIONS/SCHEMAS/fig06_2_partage_roles.png){width=100%}
+![Figure 6.2. Qui fait quoi ? Claude excelle dans la structuration et la production ; l'expert reste indispensable pour le jugement, la vérification et la responsabilité ; ensemble, ils produisent plus vite des livrables plus complets. Illustration réalisée pour cet ouvrage.](02_ILLUSTRATIONS/SCHEMAS/fig06_2_partage_roles.png){width=100%}
 
 #### C.6. Le risque de déqualification
 
@@ -74,7 +74,7 @@ L'usage intensif d'un assistant peut **éroder les compétences** : un jeune pro
 À MCC, la charte IA prévoit que les **nouveaux arrivants** rédigent eux-mêmes leurs trois premiers rapports de chaque type, corrigés par un tuteur, avant d'utiliser Claude pour ce type de document. L'objectif : savoir faire avant de faire faire.
 :::
 
-### D. Démonstration guidée — Reprendre la proposition de maille de forage
+### D. Démonstration guidée : Reprendre la proposition de maille de forage
 
 Albert reprend la situation avec le jeune ingénieur, en appliquant la boucle.
 
@@ -88,7 +88,7 @@ Claude a été utile : il a structuré l'analyse et évité des oublis. Il n'a p
 
 ### E. Prompts commentés
 
-**Prompt 6.1 — Préparer une analyse sans déléguer la décision**
+**Prompt 6.1. Préparer une analyse sans déléguer la décision**
 
 ```text
 Je suis ingénieur forage-minage dans une mine de cuivre à ciel ouvert.
@@ -106,7 +106,7 @@ Ne recommande pas de valeur de maille et ne te prononce pas sur la décision.
 
 *Commentaire.* La consigne finale empêche Claude de franchir la frontière entre aide à l'analyse et décision. Le prompt positionne explicitement les décideurs humains.
 
-**Prompt 6.2 — Contre-expertise d'un raisonnement**
+**Prompt 6.2. Contre-expertise d'un raisonnement**
 
 ```text
 Voici mon raisonnement et ma conclusion provisoire : [texte].
@@ -122,29 +122,29 @@ Ne réécris pas ma conclusion ; aide-moi à la mettre à l'épreuve.
 
 ### F. Exercices pratiques
 
-**Exercice 6.1 (guidé) — Les lignes rouges de votre métier**
+**Exercice 6.1 (guidé) : Les lignes rouges de votre métier**
 
 Listez cinq décisions de votre métier qui ne doivent jamais être déléguées à une IA. Pour chacune, indiquez ce que Claude peut néanmoins faire pour aider (préparer, documenter, relire, former).
 
-**Exercice 6.2 (guidé) — Appliquer la boucle**
+**Exercice 6.2 (guidé) : Appliquer la boucle**
 
 Choisissez une tâche de votre métier (par exemple : rédiger un rapport mensuel). Décrivez les cinq étapes de la boucle : ce que fait l'humain, ce que fait Claude, le contrôle prévu à chaque étape et la personne qui valide.
 
-**Exercice 6.3 (autonome) — Le plan anti-déqualification**
+**Exercice 6.3 (autonome) : Le plan anti-déqualification**
 
 Pour votre équipe, proposez trois règles qui garantissent que les compétences de base sont maintenues malgré l'usage de Claude.
 
 ### G. Livrable professionnel
 
-**Fiche RACI d'un processus assisté par Claude** (Responsable, Approbateur, Consulté, Informé) — exemple pour le rapport mensuel HSE de MCC :
+**Fiche RACI d'un processus assisté par Claude** (Responsable, Approbateur, Consulté, Informé) : exemple pour le rapport mensuel HSE de MCC :
 
 | Étape | Claude | Technicien HSE | Responsable HSE | Directeur des opérations |
 |---|---|---|---|---|
-| Collecte des données | — | R | A | — |
-| Calcul des indicateurs | Assiste (code) | R | A | — |
+| Collecte des données |  | R | A |  |
+| Calcul des indicateurs | Assiste (code) | R | A |  |
 | Commentaire des tendances | Premier jet | R | A | I |
 | Identification des actions | Suggestions | C | R/A | C |
-| Validation et diffusion | — | — | R | A |
+| Validation et diffusion |  |  | R | A |
 
 ### H. Vérification des résultats
 
@@ -173,7 +173,7 @@ Interrogé sur la stabilité d'un talus à partir d'une simple photographie, un 
 2. Le livrable tient-il compte de ce que je sais du terrain et que Claude ignore ?
 3. Suis-je prêt à signer ce document comme s'il était entièrement de ma main ?
 
-**Prompt réutilisable 6.3 — Délimiter le rôle de Claude**
+**Prompt réutilisable 6.3 : Délimiter le rôle de Claude**
 
 ```text
 Ton rôle dans cette tâche est limité à : [préparer / structurer / relire / proposer des options].
@@ -194,4 +194,4 @@ de décision et signale toute question qui nécessite un avis d'expert ou une me
 9. **(Compréhension)** Dans la boucle de la figure 6.1, quelles étapes sont humaines ?
 10. **(Application)** Rédigez la phrase qui délimite le rôle de Claude dans un prompt de préparation d'une enquête d'incident.
 
-<div class="carnet" titre="Chapitre 6 — Pourquoi l'expertise humaine demeure indispensable"></div>
+<div class="carnet" titre="Chapitre 6. Pourquoi l'expertise humaine demeure indispensable"></div>

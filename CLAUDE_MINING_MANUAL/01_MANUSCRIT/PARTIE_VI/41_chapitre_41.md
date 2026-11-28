@@ -1,4 +1,4 @@
-## Chapitre 41 — Ateliers pratiques transversaux
+## Chapitre 41. Ateliers pratiques transversaux
 
 ### A. Mise en situation professionnelle
 
@@ -14,7 +14,7 @@ Lundi 4 mai 2026. À MCC, une semaine ordinaire n'existe pas : un dépassement a
 4. **Évaluer** votre travail avec une grille objective.
 5. **Animer** un atelier en équipe (pour les formateurs et managers).
 
-### C. Comprendre avant de pratiquer — Mode d'emploi des ateliers
+### C. Comprendre avant de pratiquer : Mode d'emploi des ateliers
 
 Chaque atelier précise : la situation, les fichiers d'exercice, la durée indicative, les étapes, les livrables et la grille d'évaluation. Les ateliers peuvent être réalisés seuls ou en groupe de 3 à 5 personnes (idéalement de services différents). Un corrigé indicatif figure à l'Annexe L ; les anomalies insérées dans les données sont listées dans `ANOMALIES_ATTENDUES.md` (à consulter **après** l'atelier).
 
@@ -29,9 +29,9 @@ Chaque atelier précise : la situation, les fichiers d'exercice, la durée indic
 | Respect des règles de sécurité et de confidentialité | 2 |
 | Traçabilité (sources, versions, contrôles documentés) | 2 |
 
-### D. Démonstration guidée — Les six ateliers
+### D. Démonstration guidée : Les six ateliers
 
-#### Atelier 1 — Le dossier de l'incident de la rampe R3 (HSE, maintenance, production) — 2 h
+#### Atelier 1. Le dossier de l'incident de la rampe R3 (HSE, maintenance, production) : 2 h
 
 *Fichiers :* `MCC_declarations_incident_INC-2026-0412`, `MCC_maintenance_ordres_travail.csv`, `MCC_incidents_HSE_2025_2026.csv`.
 
@@ -41,7 +41,7 @@ Chaque atelier précise : la situation, les fichiers d'exercice, la durée indic
 
 *Pièges :* formulations qui anticipent les causes ; OT à durée négative ; heures approximatives présentées comme exactes.
 
-#### Atelier 2 — Le dépassement au point de rejet (environnement, communautés, juridique, direction) — 2 h
+#### Atelier 2. Le dépassement au point de rejet (environnement, communautés, juridique, direction) : 2 h
 
 *Fichiers :* `MCC_suivi_qualite_eau.csv`, `MCC_registre_plaintes.csv`.
 
@@ -49,7 +49,7 @@ Chaque atelier précise : la situation, les fichiers d'exercice, la durée indic
 
 *Pièges :* limite de rejet non fournie par un texte officiel (ne pas en inventer) ; confusion entre corrélation et cause ; promesses dans le message aux communautés.
 
-#### Atelier 3 — Le dérapage des réactifs (usine, achats, finance, juridique) — 2 h 30
+#### Atelier 3. Le dérapage des réactifs (usine, achats, finance, juridique) : 2 h 30
 
 *Fichiers :* `MCC_budget_reel_S1_2026.xlsx`, `MCC_contrat_fourniture_acide_extrait`, `MCC_rapport_mensuel_production_mars_2026`, `MCC_bons_de_commande.csv`.
 
@@ -57,7 +57,7 @@ Chaque atelier précise : la situation, les fichiers d'exercice, la durée indic
 
 *Pièges :* attribuer tout l'écart à l'acide ; ignorer le plafond de révision de 15 % ; conclure sur un extrait de contrat.
 
-#### Atelier 4 — L'audit éclair des achats (audit, achats, contrôle interne) — 1 h 30
+#### Atelier 4. L'audit éclair des achats (audit, achats, contrôle interne) : 1 h 30
 
 *Fichier :* `MCC_bons_de_commande.csv`.
 
@@ -65,7 +65,7 @@ Chaque atelier précise : la situation, les fichiers d'exercice, la durée indic
 
 *Pièges :* qualifier de fraude un simple signalement ; test « doublons » inopérant à cause des types de données.
 
-#### Atelier 5 — Le questionnaire du client européen (ESG, opérations, communautés, RH) — 2 h
+#### Atelier 5. Le questionnaire du client européen (ESG, opérations, communautés, RH) : 2 h
 
 *Matériel :* 15 questions de diligence rédigées par l'animateur ; bibliothèque de preuves fictives.
 
@@ -73,7 +73,7 @@ Chaque atelier précise : la situation, les fichiers d'exercice, la durée indic
 
 *Pièges :* formulations absolues ; politique présentée comme preuve d'application.
 
-#### Atelier 6 — La procédure piégée (sécurité de l'IA) — 45 min
+#### Atelier 6. La procédure piégée (sécurité de l'IA) : 45 min
 
 *Fichier :* `MCC_procedure_reception_reactifs_PIEGE.docx`.
 
@@ -81,7 +81,7 @@ Chaque atelier précise : la situation, les fichiers d'exercice, la durée indic
 
 ### E. Prompts commentés
 
-**Prompt 41.1 — Plan de travail d'un atelier transversal**
+**Prompt 41.1. Plan de travail d'un atelier transversal**
 
 ```text
 Nous sommes une équipe de [n] personnes ([services]). Atelier : [titre], durée [x] h.
@@ -134,4 +134,4 @@ Dans un atelier transversal, l'erreur la plus fréquente n'est pas une hallucina
 9. **(Analyse critique)** Pourquoi un tableau unique des chiffres de référence est-il utile ?
 10. **(Compréhension)** Quel est l'objectif de l'atelier 6 ?
 
-<div class="carnet" titre="Chapitre 41 — Ateliers pratiques transversaux"></div>
+<div class="carnet" titre="Chapitre 41. Ateliers pratiques transversaux"></div>

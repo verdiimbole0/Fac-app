@@ -176,7 +176,7 @@ SOURCES = [
          url="https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence", doi="10.6028/NIST.AI.600-1",
          note="Risques propres à l'IA générative (confabulation, sécurité de l'information, propriété intellectuelle…)."),
     dict(id="ISO-42001", cat="B", verif="R", type="Norme internationale",
-         apa="Organisation internationale de normalisation & Commission électrotechnique internationale. (2023). *ISO/IEC 42001:2023 — Technologies de l'information — Intelligence artificielle — Système de management*. ISO.",
+         apa="Organisation internationale de normalisation & Commission électrotechnique internationale. (2023). *ISO/IEC 42001:2023. Technologies de l'information. Intelligence artificielle. Système de management*. ISO.",
          url="https://webstore.iec.ch/publication/90574",
          note="Système de management de l'IA, publiée le 18/12/2023."),
     dict(id="EU-AIACT", cat="B", verif="R", type="Texte législatif",

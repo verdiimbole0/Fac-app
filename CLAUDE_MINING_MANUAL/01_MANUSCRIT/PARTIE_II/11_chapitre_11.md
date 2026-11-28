@@ -1,4 +1,4 @@
-## Chapitre 11 — Les techniques avancées de prompting
+## Chapitre 11. Les techniques avancées de prompting
 
 ### A. Mise en situation professionnelle
 
@@ -29,7 +29,7 @@ Croire qu'un rôle confère une compétence réelle. « Tu es un géotechnicien 
 
 Les exemples sont l'un des moyens les plus fiables de contrôler le format, le ton et la structure d'une réponse. La documentation recommande des exemples **pertinents** (proches du cas réel), **variés** (couvrant les cas limites) et **structurés** (clairement délimités) [@ANT-PROMPT]. On parle d'apprentissage « par quelques exemples » (*few-shot*).
 
-![Figure 11.1 — L'apprentissage par l'exemple. Quelques exemples variés suffisent souvent pour que Claude reproduise le format et la logique de classement. Illustration réalisée pour cet ouvrage.](02_ILLUSTRATIONS/SCHEMAS/fig11_2_exemples.png){width=85%}
+![Figure 11.1. L'apprentissage par l'exemple. Quelques exemples variés suffisent souvent pour que Claude reproduise le format et la logique de classement. Illustration réalisée pour cet ouvrage.](02_ILLUSTRATIONS/SCHEMAS/fig11_2_exemples.png){width=85%}
 
 #### C.3. Structurer avec des balises
 
@@ -39,7 +39,7 @@ Quand une instruction mélange consignes, documents et exemples, des **balises**
 
 Le **chaînage** consiste à découper une tâche complexe en étapes successives, la sortie de l'une alimentant la suivante. Avantages : chaque étape est plus simple, donc plus fiable ; vous pouvez **contrôler** entre deux étapes ; une erreur est localisée et corrigée sans tout refaire.
 
-![Figure 11.2 — Le chaînage d'instructions. Chaque étape peut être suivie d'un point de contrôle humain. Illustration réalisée pour cet ouvrage.](02_ILLUSTRATIONS/SCHEMAS/fig11_1_chainage.png){width=100%}
+![Figure 11.2. Le chaînage d'instructions. Chaque étape peut être suivie d'un point de contrôle humain. Illustration réalisée pour cet ouvrage.](02_ILLUSTRATIONS/SCHEMAS/fig11_1_chainage.png){width=100%}
 
 #### C.5. Faire réfléchir, faire vérifier, faire critiquer
 
@@ -57,27 +57,27 @@ Pour qu'un résultat soit exploitable (tableur, base de données, tableau de bor
 
 Un **modèle d'instruction** (gabarit) contient des variables entre crochets : `[NOM_FOURNISSEUR]`, `[PÉRIODE]`. Il garantit la constance d'un processus et facilite le partage dans l'équipe (bibliothèque de l'Annexe B, compétences « Skills » au chapitre 16).
 
-### D. Démonstration guidée — La chaîne d'audit de Michel
+### D. Démonstration guidée : La chaîne d'audit de Michel
 
-**Étape 1 — Extraire.** Michel joint le fichier des bons de commande et la matrice des délégations. Il demande l'extraction structurée des commandes proches des seuils d'approbation (prompt 11.1).
+**Étape 1. Extraire.** Michel joint le fichier des bons de commande et la matrice des délégations. Il demande l'extraction structurée des commandes proches des seuils d'approbation (prompt 11.1).
 
 *Contrôle 1 :* il vérifie sur 10 lignes que les montants extraits correspondent au fichier.
 
-**Étape 2 — Détecter les anomalies.** Il demande, par exécution de code, la recherche de commandes fractionnées (même fournisseur, même jour, montants juste sous le seuil) et de doublons.
+**Étape 2. Détecter les anomalies.** Il demande, par exécution de code, la recherche de commandes fractionnées (même fournisseur, même jour, montants juste sous le seuil) et de doublons.
 
 *Contrôle 2 :* il ouvre le fichier et confirme les trois commandes de 9 800 USD du 14 mars 2026 à un même fournisseur, et le doublon BC-60999 / BC-60012.
 
-**Étape 3 — Analyser.** Il demande, pour chaque anomalie, les risques associés et les questions à poser aux responsables, en se référant à la procédure.
+**Étape 3. Analyser.** Il demande, pour chaque anomalie, les risques associés et les questions à poser aux responsables, en se référant à la procédure.
 
-**Étape 4 — Rédiger.** Il demande la rédaction des constats au format du rapport d'audit interne (constat, critère, cause présumée, risque, recommandation), avec des exemples tirés d'un ancien rapport.
+**Étape 4. Rédiger.** Il demande la rédaction des constats au format du rapport d'audit interne (constat, critère, cause présumée, risque, recommandation), avec des exemples tirés d'un ancien rapport.
 
-**Étape 5 — Critiquer.** Il fait relire le projet par Claude selon la grille de qualité de l'audit interne (prompt 11.4), puis le relit lui-même.
+**Étape 5. Critiquer.** Il fait relire le projet par Claude selon la grille de qualité de l'audit interne (prompt 11.4), puis le relit lui-même.
 
 Les anomalies détectées sont celles insérées dans les données d'exercice (voir `ANOMALIES_ATTENDUES.md`) : la chaîne a fonctionné, et chaque constat est traçable jusqu'aux lignes du fichier.
 
 ### E. Prompts commentés
 
-**Prompt 11.1 — Extraction structurée avec exemple**
+**Prompt 11.1. Extraction structurée avec exemple**
 
 ```text
 <role>Tu es auditeur interne dans une entreprise minière.</role>
@@ -100,7 +100,7 @@ Indique le nombre total de lignes analysées.</regles>
 
 *Commentaire.* Balises, rôle, exemple de ligne et règle de prudence (« signalements à investiguer ») : la sortie est directement exploitable dans un papier de travail d'audit.
 
-**Prompt 11.2 — Classement avec exemples (few-shot)**
+**Prompt 11.2. Classement avec exemples (few-shot)**
 
 ```text
 Classe chaque incident selon : catégorie (Sécurité / Santé / Environnement / Matériel)
@@ -122,7 +122,7 @@ Règle : cette classification est une proposition, validée ensuite par le respo
 Marque « à revoir » tout cas ambigu.
 ```
 
-**Prompt 11.3 — Pré-mortem**
+**Prompt 11.3. Pré-mortem**
 
 ```text
 Voici notre plan d'action pour réduire les incidents sur les rampes : [plan].
@@ -131,7 +131,7 @@ Liste les 8 causes les plus plausibles de cet échec (organisationnelles, humain
 techniques, de suivi), et pour chacune, une mesure préventive à ajouter au plan.
 ```
 
-**Prompt 11.4 — Critique selon une grille**
+**Prompt 11.4. Critique selon une grille**
 
 ```text
 Relis le projet de rapport ci-dessous selon cette grille, et note chaque critère de 1 à 5 :
@@ -144,7 +144,7 @@ Pour chaque note inférieure à 4, propose une correction précise.
 <projet> … </projet>
 ```
 
-**Prompt 11.5 — Faire écrire une instruction par Claude (méta-prompt)**
+**Prompt 11.5. Faire écrire une instruction par Claude (méta-prompt)**
 
 ```text
 Je dois répéter chaque mois la tâche suivante : [description].
@@ -155,15 +155,15 @@ entre crochets pour ce qui change chaque mois, et une check-list de contrôle du
 
 ### F. Exercices pratiques
 
-**Exercice 11.1 (guidé) — Few-shot sur les incidents**
+**Exercice 11.1 (guidé) : Few-shot sur les incidents**
 
 Avec 20 lignes de `MCC_incidents_HSE_2025_2026.csv`, testez le prompt 11.2 sans exemples, puis avec exemples. Comparez la constance des classements.
 
-**Exercice 11.2 (guidé) — Chaîne en trois étapes**
+**Exercice 11.2 (guidé) : Chaîne en trois étapes**
 
 Avec `MCC_registre_plaintes.csv` : (1) classer les plaintes par thème et village ; (2) calculer les délais de traitement par catégorie (exécution de code) ; (3) rédiger une synthèse de 300 mots pour le comité de direction. Notez un contrôle entre chaque étape.
 
-**Exercice 11.3 (autonome) — Votre gabarit à variables**
+**Exercice 11.3 (autonome) : Votre gabarit à variables**
 
 Transformez votre meilleure instruction du chapitre 10 en gabarit à variables, avec sa check-list de contrôle, et faites-la tester par un collègue.
 
@@ -220,4 +220,4 @@ Dans une chaîne, une petite erreur à l'étape 1 (une ligne non lue) se propage
 9. **(Analyse critique)** Quel est le risque d'un exemple contenant une erreur ?
 10. **(Application)** Transformez en gabarit à variables : « Résume le rapport de production de mars 2026 pour le DG. »
 
-<div class="carnet" titre="Chapitre 11 — Les techniques avancées de prompting"></div>
+<div class="carnet" titre="Chapitre 11. Les techniques avancées de prompting"></div>

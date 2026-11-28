@@ -38,7 +38,7 @@ def f17_2():
         [("Collecte terrain", "observations,\nlogs, photos\n(géologue)"), ("Saisie & QA/QC", "bases de données,\nanalyses labo,\ncontrôles"),
          ("Structuration", "Claude : tableaux,\nrésumés de logs,\ncontrôles de cohérence"), ("Interprétation", "modèle géologique,\nhypothèses\n(géologue)"),
          ("Rédaction", "Claude : premier jet\ndu rapport, figures\nà partir des données"), ("Revue & signature", "personne\ncompétente")],
-        [H, H, C, H, C, H], note_txt="Vert : étapes humaines — turquoise : étapes assistées par Claude. Illustration réalisée pour cet ouvrage.")
+        [H, H, C, H, C, H], note_txt="Vert : étapes humaines ; ardoise : étapes assistées par Claude. Illustration réalisée pour cet ouvrage.")
 
 def f18_1():
     rows = lire("MCC_sondages_analyses.csv")

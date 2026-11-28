@@ -1,10 +1,10 @@
-## Annexe J — Programme d'apprentissage personnel sur 30 jours
+## Annexe J. Programme d'apprentissage personnel sur 30 jours
 
 *Rythme : environ 45 minutes par jour, cinq à six jours par semaine. Chaque jour associe une lecture, une pratique et une trace écrite dans votre carnet.*
 
-![Figure J.1 — Programme d'apprentissage sur 30 jours. Illustration réalisée pour cet ouvrage.](02_ILLUSTRATIONS/GRAPHIQUES/figJ_programme_30_jours.png){width=100%}
+![Figure J.1. Programme d'apprentissage sur 30 jours. Illustration réalisée pour cet ouvrage.](02_ILLUSTRATIONS/GRAPHIQUES/figJ_programme_30_jours.png){width=100%}
 
-### Semaine 1 — Comprendre et démarrer
+### Semaine 1 : Comprendre et démarrer
 
 | Jour | Lecture | Pratique | Trace |
 |---|---|---|---|
@@ -16,7 +16,7 @@
 | 6 | Ch. 6 | Vos lignes rouges (ex. 6.1) | Liste des décisions non délégables |
 | 7 | Révision | Quiz partie I | Score et points à revoir |
 
-### Semaine 2 — Maîtriser l'outil
+### Semaine 2 : Maîtriser l'outil
 
 | Jour | Lecture | Pratique | Trace |
 |---|---|---|---|
@@ -28,7 +28,7 @@
 | 13 | Ch. 14 | Cinq contrôles sur 3 références | Registre de sources |
 | 14 | Ch. 15-16 | Créer un projet pour une tâche récurrente | Projet configuré |
 
-### Semaine 3 — Mon métier
+### Semaine 3 : Mon métier
 
 | Jour | Lecture | Pratique | Trace |
 |---|---|---|---|
@@ -40,7 +40,7 @@
 | 20 | Ch. 33-34 | Livrable complet selon le cycle | Livrable + grille qualité |
 | 21 | Révision | Quiz de votre chapitre métier | Score |
 
-### Semaine 4 — Sécuriser et systématiser
+### Semaine 4 : Sécuriser et systématiser
 
 | Jour | Lecture | Pratique | Trace |
 |---|---|---|---|
@@ -52,6 +52,6 @@
 | 27 | Ch. 36 | Workflow avec portes | Procédure + RACI |
 | 28 | Ch. 42 | Test pratique de maîtrise | Score et profil |
 
-### Jours 29-30 — Projet final (ch. 43)
+### Jours 29-30 : Projet final (ch. 43)
 
 Assembler le dossier du système de travail assisté, préparer la présentation, la soumettre à votre responsable.

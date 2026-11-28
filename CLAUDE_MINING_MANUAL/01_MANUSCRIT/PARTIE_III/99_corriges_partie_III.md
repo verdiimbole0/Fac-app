@@ -1,6 +1,6 @@
-## Corrigés des quiz — Partie III
+## Corrigés des quiz : Partie III
 
-### Chapitre 17 — Géologie et exploration
+### Chapitre 17. Géologie et exploration
 
 1. **b)** Assistant documentaire et analytique. Le choix des cibles et la modélisation relèvent du géologue ; aucune teneur ne s'estime sur photo.
 2. **Faux.** Les interprétations d'auteurs doivent être présentées comme telles.
@@ -13,7 +13,7 @@
 9. Rapports d'exploration, programmes de sondages, budgets (aussi : notes techniques).
 10. *Exemple :* « Distingue systématiquement : [FAIT] (citation et page), [INTERPRÉTATION DE L'AUTEUR], [QUESTION OUVERTE]. »
 
-### Chapitre 18 — Échantillonnage, ressources et réserves
+### Chapitre 18. Échantillonnage, ressources et réserves
 
 1. **b)** Présumées, indiquées, mesurées.
 2. **Faux.** Les réserves dérivent des ressources indiquées et mesurées.
@@ -26,7 +26,7 @@
 9. **Faux.** Il faut une moyenne pondérée par les tonnages (2,39 % et non 2,43 %).
 10. *Exemple :* « Ne corrige aucune valeur ; signale seulement les anomalies avec leur identifiant. »
 
-### Chapitre 19 — Ingénierie et planification
+### Chapitre 19. Ingénierie et planification
 
 1. **Faux.** Les angles de talus relèvent des études géotechniques et des spécialistes.
 2. 189 000 × 2,41 % × 87,9 % ≈ **4 004 t**.
@@ -39,7 +39,7 @@
 9. (2 400 000 − 1 135 000) / 184 ≈ **6 875 t/jour**.
 10. Chiffres erronés, causalités non démontrées, messages trompeurs pour la décision.
 
-### Chapitre 20 — Forage, minage et extraction
+### Chapitre 20. Forage, minage et extraction
 
 1. **Faux.** Aucun paramètre de tir ne doit être calculé par Claude pour application.
 2. **b).**
@@ -52,7 +52,7 @@
 9. Elle peut détourner l'attention d'une tâche de sécurité en zone de production.
 10. *Exemple :* « Ne propose aucun paramètre de tir ; ces décisions appartiennent aux personnes habilitées. »
 
-### Chapitre 21 — Traitement et métallurgie
+### Chapitre 21. Traitement et métallurgie
 
 1. 6 000 × 43 = **258 000 USD**.
 2. **Faux.** La récupération globale se calcule à partir des totaux de métal.
@@ -65,7 +65,7 @@
 9. Sans données, tout classement serait une supposition présentée comme une analyse.
 10. Environ **un quart à un tiers** (≈ 0,33 MUSD par mois sur ≈ 0,9 à 1,3 MUSD).
 
-### Chapitre 22 — Maintenance
+### Chapitre 22. Maintenance
 
 1. **b).**
 2. **Faux.**
@@ -78,7 +78,7 @@
 9. Il indique où regarder, pas pourquoi ; il faut une analyse des causes.
 10. *Exemple :* « Propose une urgence selon la grille fournie ; elle sera validée par le planificateur. »
 
-### Chapitre 23 — HSE
+### Chapitre 23. HSE
 
 1. **Faux.**
 2. 2 × 1 000 000 / 420 000 ≈ **4,76**.
@@ -91,7 +91,7 @@
 9. Atteinte à la vie privée et à la dignité des personnes, risque juridique, perte de confiance dans le système de déclaration.
 10. **b).**
 
-### Chapitre 24 — Environnement, eau, résidus, fermeture
+### Chapitre 24. Environnement, eau, résidus, fermeture
 
 1. **c) 2020** (5 août).
 2. **Faux.**
@@ -104,7 +104,7 @@
 9. Il faut comprendre l'origine pour éviter la récidive et documenter l'événement.
 10. NP1 (évaluation et gestion E&S) ; NP3 (utilisation rationnelle des ressources et prévention de la pollution) ; NP6 (biodiversité).
 
-### Chapitre 25 — Relations communautaires
+### Chapitre 25. Relations communautaires
 
 1. **Faux.**
 2. **Lupanda** (38 plaintes).
@@ -117,7 +117,7 @@
 9. La confiance dépend des actes et de la relation, pas seulement de la qualité de l'écrit.
 10. Participants, questions, réponses données, engagements, points en suspens, prochaine réunion.
 
-### Chapitre 26 — Achats et logistique
+### Chapitre 26. Achats et logistique
 
 1. (5 400 − 5 100) × 8 = **2 400 USD**.
 2. (228 − 185) / 185 ≈ **23,2 %**.
@@ -130,7 +130,7 @@
 9. Les unités ou spécifications peuvent différer entre commandes d'un même article.
 10. La vérification de complétude et de cohérence entre documents.
 
-### Chapitre 27 — Droit minier et conformité
+### Chapitre 27. Droit minier et conformité
 
 1. **b).**
 2. **Faux.**
@@ -143,7 +143,7 @@
 9. La comparaison est mécanique et vérifiable ; l'avis juridique engage une responsabilité et une interprétation.
 10. Résumé, dispositions nouvelles et modifiées, obligations et échéances, services concernés, questions d'interprétation.
 
-### Chapitre 28 — Finance, fiscalité, contrôle de gestion
+### Chapitre 28. Finance, fiscalité, contrôle de gestion
 
 1. 997,1 − 980,4 = **16,7 MUSD** (crédits supérieurs aux débits).
 2. Le montant disparaît d'un côté et apparaît de l'autre : l'écart vaut deux fois le solde.
@@ -156,7 +156,7 @@
 9. Taux obsolètes ou erronés, déclarations fausses, redressements.
 10. 24 / 549 ≈ **4,4 %**.
 
-### Chapitre 29 — Audit et contrôle interne
+### Chapitre 29. Audit et contrôle interne
 
 1. **b).**
 2. **Faux.**
@@ -169,7 +169,7 @@
 9. Les documents fournis par les audités peuvent tenter d'orienter l'analyse.
 10. Objectif, source des données, prompt, code, résultat, revue, conclusion, date, auteur.
 
-### Chapitre 30 — Ressources humaines
+### Chapitre 30. Ressources humaines
 
 1. **Faux.** Le tri des candidatures est exclu par la charte de MCC.
 2. **27.**
@@ -182,7 +182,7 @@
 9. *Exemple :* « Aucun critère sans lien direct avec le poste ; langage inclusif ; liste les passages potentiellement discriminants. »
 10. Il permet d'anticiper les effets, de construire les parcours de formation et de garantir l'acceptabilité.
 
-### Chapitre 31 — Management et gouvernance
+### Chapitre 31. Management et gouvernance
 
 1. **Faux.** La note doit présenter les options de façon équilibrée.
 2. Pour la traçabilité et pour éviter de mélanger des périodes.
@@ -195,7 +195,7 @@
 9. *Exemples :* écart au budget > 5 % ; tout événement HSE grave ; toute alerte environnementale.
 10. Pour éviter que des données d'autres périodes ne contaminent la synthèse.
 
-### Chapitre 32 — ESG et approvisionnement responsable
+### Chapitre 32. ESG et approvisionnement responsable
 
 1. **b) 5.**
 2. **Faux.**

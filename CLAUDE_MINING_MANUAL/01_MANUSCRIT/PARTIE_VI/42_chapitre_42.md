@@ -1,4 +1,4 @@
-## Chapitre 42 — Évaluation des compétences et mesure de la maîtrise de Claude
+## Chapitre 42. Évaluation des compétences et mesure de la maîtrise de Claude
 
 ### A. Mise en situation professionnelle
 
@@ -31,18 +31,18 @@
 
 #### C.2. L'échelle de maîtrise
 
-1. **Découverte** — connaît la notion.
-2. **Application guidée** — réalise la tâche avec un modèle de prompt.
-3. **Autonomie** — adapte la méthode à un cas nouveau et vérifie le résultat.
-4. **Maîtrise** — conçoit des méthodes réutilisables, forme ses collègues, gère les risques.
+1. **Découverte** : connaît la notion.
+2. **Application guidée** : réalise la tâche avec un modèle de prompt.
+3. **Autonomie** : adapte la méthode à un cas nouveau et vérifie le résultat.
+4. **Maîtrise** : conçoit des méthodes réutilisables, forme ses collègues, gère les risques.
 
-![Figure 42.1 — Exemple de profil de compétences avant et après la formation (valeurs illustratives). Illustration réalisée pour cet ouvrage.](02_ILLUSTRATIONS/GRAPHIQUES/fig42_1_radar_competences.png){width=70%}
+![Figure 42.1. Exemple de profil de compétences avant et après la formation (valeurs illustratives). Illustration réalisée pour cet ouvrage.](02_ILLUSTRATIONS/GRAPHIQUES/fig42_1_radar_competences.png){width=70%}
 
 #### C.3. Les preuves de maîtrise
 
 Une compétence se démontre par des **preuves observables** : un livrable vérifié, un prompt documenté, un contrôle réalisé, un incident évité, un collègue formé. L'Annexe K propose une grille détaillée par bloc avec les preuves attendues à chaque niveau.
 
-### D. Démonstration guidée — Le test pratique de maîtrise (2 heures)
+### D. Démonstration guidée : Le test pratique de maîtrise (2 heures)
 
 Le test comporte cinq épreuves, réalisées avec les fichiers d'exercice :
 
@@ -58,7 +58,7 @@ Le test comporte cinq épreuves, réalisées avec les fichiers d'exercice :
 
 ### E. Prompts commentés
 
-**Prompt 42.1 — Autoévaluation assistée**
+**Prompt 42.1. Autoévaluation assistée**
 
 ```text
 Voici mes réponses au test pratique (épreuves 1 à 5) et la grille d'évaluation.
@@ -69,7 +69,7 @@ Sois exigeant : je préfère une évaluation sévère et juste.
 
 *Commentaire.* L'autoévaluation assistée est utile pour progresser ; pour une certification interne, l'évaluation est réalisée par un évaluateur humain.
 
-**Prompt 42.2 — Plan de progression**
+**Prompt 42.2. Plan de progression**
 
 ```text
 Mon profil (échelle 1 à 4) : C1 [x], C2 [x], C3 [x], C4 [x], C5 [x], C6 [x], C7 [x], C8 [x].
@@ -124,4 +124,4 @@ Lors d'une autoévaluation assistée, Claude peut se montrer trop indulgent si l
 9. **(Application)** Citez deux preuves de maîtrise du bloc C8.
 10. **(Compréhension)** Pourquoi réévaluer les compétences chaque année ?
 
-<div class="carnet" titre="Chapitre 42 — Évaluation des compétences et mesure de la maîtrise de Claude"></div>
+<div class="carnet" titre="Chapitre 42. Évaluation des compétences et mesure de la maîtrise de Claude"></div>

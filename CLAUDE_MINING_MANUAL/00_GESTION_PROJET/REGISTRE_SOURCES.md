@@ -1,6 +1,6 @@
 # Registre des sources vérifiées
 
-> Fichier généré automatiquement depuis `08_OUTILS/sources.py` — ne pas éditer à la main.
+> Fichier généré automatiquement depuis `08_OUTILS/sources.py` : ne pas éditer à la main.
 
 Date de consultation : 16 novembre 2026. D = consultation directe ; R = recherche documentaire.
 
@@ -46,7 +46,7 @@ Date de consultation : 16 novembre 2026. D = consultation directe ; R = recherch
 | JI-2023 | B | R | (Ji et al., 2023) | Ji, Z., Lee, N., Frieske, R., Yu, T., Su, D., Xu, Y., Ishii, E., Bang, Y. J., Madotto, A., & Fung, P. (2023). Survey of hallucination in natural language generation. *ACM Computing Surveys, 55*(12), 1-38. | https://dl.acm.org/doi/10.1145/3571730 | Typologie des hallucinations. |
 | NIST-RMF | B | D | (NIST, 2023) | National Institute of Standards and Technology. (2023). *Artificial Intelligence Risk Management Framework (AI RMF 1.0)* (NIST AI 100-1). U.S. Department of Commerce. | https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-ai-rmf-10 | Fonctions Govern, Map, Measure, Manage. |
 | NIST-GAI | B | D | (NIST, 2024) | National Institute of Standards and Technology. (2024). *Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile* (NIST AI 600-1). U.S. Department of Commerce. | https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence | Risques propres à l'IA générative (confabulation, sécurité de l'information, propriété intellectuelle…). |
-| ISO-42001 | B | R | (ISO/IEC, 2023) | Organisation internationale de normalisation & Commission électrotechnique internationale. (2023). *ISO/IEC 42001:2023 — Technologies de l'information — Intelligence artificielle — Système de management*. ISO. | https://webstore.iec.ch/publication/90574 | Système de management de l'IA, publiée le 18/12/2023. |
+| ISO-42001 | B | R | (ISO/IEC, 2023) | Organisation internationale de normalisation & Commission électrotechnique internationale. (2023). *ISO/IEC 42001:2023. Technologies de l'information. Intelligence artificielle. Système de management*. ISO. | https://webstore.iec.ch/publication/90574 | Système de management de l'IA, publiée le 18/12/2023. |
 | EU-AIACT | B | R | (Règlement (UE) 2024/1689, 2024) | Parlement européen & Conseil de l'Union européenne. (2024). Règlement (UE) 2024/1689 du 13 juin 2024 établissant des règles harmonisées concernant l'intelligence artificielle. *Journal officiel de l'Union européenne*, L, 12 juillet 2024. | https://eur-lex.europa.eu/eli/reg/2024/1689/oj | Approche fondée sur les risques ; référence pour les entreprises opérant avec l'UE. |
 | UNESCO-2021 | B | R | (UNESCO, 2021) | UNESCO. (2021). *Recommandation sur l'éthique de l'intelligence artificielle*. Adoptée le 23 novembre 2021. | https://unesdoc.unesco.org/ark:/48223/pf0000381137 | Premier instrument normatif mondial sur l'éthique de l'IA (193 États membres). |
 | ICMM-CCM | W | D | (ICMM, s.d.-a) | International Council on Mining and Metals. (s.d.-a). *Critical control management*. | https://www.icmm.com/en-gb/our-work/health-and-safety/critical-control-management | Gestion des contrôles critiques. |

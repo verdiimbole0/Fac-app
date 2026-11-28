@@ -1,7 +1,7 @@
 ::: partie
-# PARTIE III — Claude dans les métiers et processus de l'industrie minière
+# PARTIE III. Claude dans les métiers et processus de l'industrie minière
 
-Cette partie est le cœur opérationnel du manuel. Chaque chapitre est consacré à un métier ou à un processus de l'entreprise minière. Il commence par un **profil du métier** — responsabilités, tâches quotidiennes, difficultés, documents, données, livrables — puis développe des **cas d'usage** concrets, tirés du quotidien de Mbiyo Copper Cobalt SA.
+Cette partie est le cœur opérationnel du manuel. Chaque chapitre est consacré à un métier ou à un processus de l'entreprise minière. Il commence par un **profil du métier** (responsabilités, tâches quotidiennes, difficultés, documents, données, livrables) puis développe des **cas d'usage** concrets, tirés du quotidien de Mbiyo Copper Cobalt SA.
 
 Chaque cas d'usage important suit la même grille en douze points : (1) le problème professionnel ; (2) la méthode habituelle ; (3) la contribution possible de Claude ; (4) les données et documents nécessaires ; (5) la procédure ; (6) le prompt ; (7) les échanges successifs ; (8) un exemple de résultat ; (9) le contrôle qualité ; (10) les erreurs possibles ; (11) les limites et précautions ; (12) le livrable final.
 

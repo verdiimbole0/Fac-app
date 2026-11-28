@@ -1,4 +1,4 @@
-## Chapitre 31 — Claude appliqué au management, à l'administration, à la gouvernance et au reporting
+## Chapitre 31. Claude appliqué au management, à l'administration, à la gouvernance et au reporting
 
 ### A. Mise en situation professionnelle
 
@@ -14,9 +14,9 @@ Aline Mujinga, directrice générale de MCC, reçoit chaque mois une quarantaine
 4. **Préparer** des communications internes claires.
 5. **Piloter** un programme de transformation (comme l'adoption de l'IA) avec des indicateurs pertinents.
 
-### C. Comprendre avant de pratiquer — Profil du métier
+### C. Comprendre avant de pratiquer : Profil du métier
 
-*Tableau 31.1 — Profil des managers et de l'administration de direction.*
+*Tableau 31.1. Profil des managers et de l'administration de direction.*
 
 | Dimension | Contenu |
 |---|---|
@@ -29,17 +29,17 @@ Aline Mujinga, directrice générale de MCC, reçoit chaque mois une quarantaine
 | Assistables par Claude | Synthèses multi-rapports ; notes de décision ; ordres du jour ; comptes rendus ; registre des décisions ; communications ; préparation des questions |
 | Limites | Décisions, arbitrages, engagements, communications sensibles (marchés, autorités, crises) |
 
-![Figure 31.1 — Du terrain au conseil : la chaîne de reporting assistée. Les arbitrages et décisions restent ceux de la direction et du conseil. Illustration réalisée pour cet ouvrage.](02_ILLUSTRATIONS/SCHEMAS/fig31_1_reporting_direction.png){width=100%}
+![Figure 31.1. Du terrain au conseil : la chaîne de reporting assistée. Les arbitrages et décisions restent ceux de la direction et du conseil. Illustration réalisée pour cet ouvrage.](02_ILLUSTRATIONS/SCHEMAS/fig31_1_reporting_direction.png){width=100%}
 
-### D. Démonstration guidée — Cas d'usage
+### D. Démonstration guidée : Cas d'usage
 
-#### Cas d'usage 31.1 — Synthèse mensuelle de direction
+#### Cas d'usage 31.1. Synthèse mensuelle de direction
 
 **1. Problème.** Quarante rapports, deux heures de lecture disponibles.
 
 **2. Méthode habituelle.** Lecture des résumés, appels aux directeurs, synthèse rédigée par l'assistante de direction.
 
-**3. Contribution de Claude.** Lecture de tous les rapports (dans un projet « Direction — reporting mensuel »), extraction des faits marquants avec sources, détection des incohérences entre rapports, synthèse d'une page, liste des décisions à prendre.
+**3. Contribution de Claude.** Lecture de tous les rapports (dans un projet « Direction : reporting mensuel »), extraction des faits marquants avec sources, détection des incohérences entre rapports, synthèse d'une page, liste des décisions à prendre.
 
 **4. Données.** Rapports mensuels validés des services (classification « usage interne » ou « confidentiel » selon le cas, dans l'environnement d'entreprise).
 
@@ -59,7 +59,7 @@ décisions à prendre (avec le service concerné) ; incohérences à résoudre a
 
 **7. Échanges successifs.** « Pour chaque décision à prendre, prépare une note de décision d'une demi-page (contexte, options, avantages et inconvénients, recommandation du service) » ; « Quelles questions les administrateurs poseront-ils sur ce mois ? »
 
-**8. Exemple de résultat (extrait, fictif).** Faits marquants : minerai traité inférieur au budget (saison des pluies) ; dépassement des réactifs ; dépassement ponctuel au point de rejet ST-02 en mars ; presque-accident sur la rampe R3 ; délais de traitement des plaintes au-delà de l'objectif. Incohérence relevée : le rapport de production annonce 189 kt traitées en mars, la somme des données journalières transmise par l'usine donne environ 186,5 kt — à réconcilier.
+**8. Exemple de résultat (extrait, fictif).** Faits marquants : minerai traité inférieur au budget (saison des pluies) ; dépassement des réactifs ; dépassement ponctuel au point de rejet ST-02 en mars ; presque-accident sur la rampe R3 ; délais de traitement des plaintes au-delà de l'objectif. Incohérence relevée : le rapport de production annonce 189 kt traitées en mars, la somme des données journalières transmise par l'usine donne environ 186,5 kt : à réconcilier.
 
 **9. Contrôle.** L'assistante de direction vérifie chaque chiffre de la synthèse dans les rapports sources ; les incohérences sont renvoyées aux services.
 
@@ -69,7 +69,7 @@ décisions à prendre (avec le service concerné) ; incohérences à résoudre a
 
 **12. Livrable.** Synthèse mensuelle de direction validée, notes de décision.
 
-#### Cas d'usage 31.2 — Compte rendu et registre des décisions
+#### Cas d'usage 31.2. Compte rendu et registre des décisions
 
 **1. Problème.** Les décisions du comité sont mal tracées ; les actions se perdent.
 
@@ -101,17 +101,17 @@ Puis mets à jour le registre des décisions joint (nouvelles lignes, statuts).
 
 **12. Livrable.** Compte rendu validé et registre à jour.
 
-#### Cas d'usage 31.3 — Rapport trimestriel au conseil (condensé)
+#### Cas d'usage 31.3. Rapport trimestriel au conseil (condensé)
 
 Claude assemble, à partir des synthèses mensuelles validées, le projet de rapport trimestriel : performance, risques, projets, ESG, finances, décisions demandées au conseil, avec un résumé exécutif et une présentation (artefact Slides). Les messages, les chiffres et les recommandations sont validés par la direction ; les informations susceptibles d'être privilégiées suivent les règles applicables.
 
-#### Cas d'usage 31.4 — Piloter le programme « MCC-IA 2026 » (condensé)
+#### Cas d'usage 31.4. Piloter le programme « MCC-IA 2026 » (condensé)
 
 Claude aide Kevin Mutombo à construire le tableau de bord du programme : utilisateurs actifs, cas d'usage déployés, temps gagné **mesuré** sur échantillons, incidents et non-conformités à la charte, formations réalisées, satisfaction. Il prépare les rapports au comité de pilotage. Les indicateurs de gains sont fondés sur des mesures avant/après, pas sur des estimations de l'outil.
 
 ### E. Prompts commentés
 
-**Prompt 31.1 — Note de décision**
+**Prompt 31.1. Note de décision**
 
 ```text
 Rédige une note de décision d'une demi-page pour le comité de direction sur : [sujet].
@@ -172,4 +172,4 @@ Dans une synthèse, Claude écrit « la production de cathodes est conforme au b
 9. **(Application)** Proposez deux seuils de significativité pour une synthèse mensuelle.
 10. **(Compréhension)** Pourquoi une conversation par période ?
 
-<div class="carnet" titre="Chapitre 31 — Claude appliqué au management, à l'administration, à la gouvernance et au reporting"></div>
+<div class="carnet" titre="Chapitre 31. Claude appliqué au management, à l'administration, à la gouvernance et au reporting"></div>

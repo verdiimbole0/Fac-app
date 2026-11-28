@@ -1,4 +1,4 @@
-## Annexe A — Glossaire de l'intelligence artificielle et du secteur minier
+## Annexe A. Glossaire de l'intelligence artificielle et du secteur minier
 
 Les termes sont classés par ordre alphabétique. Le chapitre de référence est indiqué entre parenthèses. Certains termes anglais d'usage courant sont donnés en italique.
 

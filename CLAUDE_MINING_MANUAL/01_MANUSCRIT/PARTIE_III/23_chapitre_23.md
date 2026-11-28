@@ -1,10 +1,10 @@
-## Chapitre 23 — Claude appliqué à l'hygiène, à la sécurité et à l'environnement au travail (HSE)
+## Chapitre 23. Claude appliqué à l'hygiène, à la sécurité et à l'environnement au travail (HSE)
 
 ### A. Mise en situation professionnelle
 
-Le 14 avril 2026, à 2 h 40, le camion CAM-07 glisse au freinage sur la rampe R3 de la fosse Mbiyo Nord et s'arrête contre le merlon de sécurité. Personne n'est blessé. Grace Nsimba, responsable HSE, dispose de la déclaration du conducteur, du rapport du superviseur et des observations de la maintenance. Elle doit transmettre un rapport préliminaire dans les 24 heures, lancer l'enquête, et — cette même semaine — finaliser le rapport HSE mensuel et préparer l'audit des contrôles critiques. Grace veut utiliser Claude pour gagner du temps sur l'écrit, mais une règle s'impose à elle : **aucune décision de sécurité ne sera déléguée**.
+Le 14 avril 2026, à 2 h 40, le camion CAM-07 glisse au freinage sur la rampe R3 de la fosse Mbiyo Nord et s'arrête contre le merlon de sécurité. Personne n'est blessé. Grace Nsimba, responsable HSE, dispose de la déclaration du conducteur, du rapport du superviseur et des observations de la maintenance. Elle doit transmettre un rapport préliminaire dans les 24 heures, lancer l'enquête, et, cette même semaine, finaliser le rapport HSE mensuel et préparer l'audit des contrôles critiques. Grace veut utiliser Claude pour gagner du temps sur l'écrit, mais une règle s'impose à elle : **aucune décision de sécurité ne sera déléguée**.
 
-![Figure 23.1 — Accident type de la circulation minière : un camion de grande capacité a reculé sur un véhicule léger stationné. Titre original : « Haul truck backed over a parked vehicle ». Auteur : NIOSH (National Institute for Occupational Safety and Health). Source : Wikimedia Commons, [https://commons.wikimedia.org/wiki/File:Haul_truck_backed_over_a_parked_vehicle.jpg](https://commons.wikimedia.org/wiki/File:Haul_truck_backed_over_a_parked_vehicle.jpg) (consulté le 16/11/2026). Licence : domaine public. Photographie d'illustration, sans lien avec l'entreprise fictive MCC.](02_ILLUSTRATIONS/PHOTOGRAPHIES/photo_niosh_camion_recul.jpg){width=62%}
+![Figure 23.1. Accident type de la circulation minière : un camion de grande capacité a reculé sur un véhicule léger stationné. Titre original : « Haul truck backed over a parked vehicle ». Auteur : NIOSH (National Institute for Occupational Safety and Health). Source : Wikimedia Commons, [https://commons.wikimedia.org/wiki/File:Haul_truck_backed_over_a_parked_vehicle.jpg](https://commons.wikimedia.org/wiki/File:Haul_truck_backed_over_a_parked_vehicle.jpg) (consulté le 16/11/2026). Licence : domaine public. Photographie d'illustration, sans lien avec l'entreprise fictive MCC.](02_ILLUSTRATIONS/PHOTOGRAPHIES/photo_niosh_camion_recul.jpg){width=62%}
 
 ### B. Objectifs d'apprentissage
 
@@ -16,13 +16,13 @@ Le 14 avril 2026, à 2 h 40, le camion CAM-07 glisse au freinage sur la rampe R3
 4. **Concevoir** des causeries et des supports de formation à partir des incidents réels.
 5. **Délimiter** strictement le rôle de Claude en matière de sécurité.
 
-### C. Comprendre avant de pratiquer — Profil du métier
+### C. Comprendre avant de pratiquer : Profil du métier
 
 #### C.1. Le cadre
 
 La Convention n° 176 de l'OIT impose à l'employeur d'évaluer et de maîtriser les risques et reconnaît aux travailleurs des droits, dont celui de se retirer d'une situation de danger grave [@ILO-C176] ; le recueil de directives de l'OIT sur les mines à ciel ouvert détaille les mesures pratiques, notamment pour la circulation des engins, les talus et les explosifs [@ILO-OPENCAST]. L'ICMM promeut la **gestion des contrôles critiques** : identifier, pour chaque événement indésirable majeur, les contrôles qui le préviennent ou en limitent les conséquences, définir leurs normes de performance, les vérifier et en rendre compte [@ICMM-CCM].
 
-*Tableau 23.1 — Profil de l'équipe HSE.*
+*Tableau 23.1. Profil de l'équipe HSE.*
 
 | Dimension | Contenu |
 |---|---|
@@ -36,14 +36,14 @@ La Convention n° 176 de l'OIT impose à l'employeur d'évaluer et de maîtriser
 | Limites | Classification de la gravité, détermination des causes, décisions d'arrêt ou de reprise, autorisations de travail, gestion des urgences |
 
 ::: attention
-**Hors délégation, sans exception :** gestion des situations d'urgence et des évacuations ; autorisation des travaux dangereux ; décision d'arrêt ou de reprise d'une activité ; détermination finale des causes et des responsabilités ; classification réglementaire des accidents. Claude prépare, structure, relit — il ne décide pas.
+**Hors délégation, sans exception :** gestion des situations d'urgence et des évacuations ; autorisation des travaux dangereux ; décision d'arrêt ou de reprise d'une activité ; détermination finale des causes et des responsabilités ; classification réglementaire des accidents. Claude prépare, structure, relit : il ne décide pas.
 :::
 
-![Figure 23.2 — Rapport d'incident assisté : qui fait quoi ? Les étapes de déclaration, d'enquête et de validation restent humaines. Illustration réalisée pour cet ouvrage.](02_ILLUSTRATIONS/SCHEMAS/fig23_3_workflow_incident.png){width=100%}
+![Figure 23.2. Rapport d'incident assisté : qui fait quoi ? Les étapes de déclaration, d'enquête et de validation restent humaines. Illustration réalisée pour cet ouvrage.](02_ILLUSTRATIONS/SCHEMAS/fig23_3_workflow_incident.png){width=100%}
 
-### D. Démonstration guidée — Cas d'usage
+### D. Démonstration guidée : Cas d'usage
 
-#### Cas d'usage 23.1 — Le rapport préliminaire de l'incident INC-2026-0412
+#### Cas d'usage 23.1. Le rapport préliminaire de l'incident INC-2026-0412
 
 **1. Problème.** Transmettre en 24 heures un rapport préliminaire factuel, complet et prudent.
 
@@ -95,7 +95,7 @@ Rubrique 6 (extrait) : hauteur réelle du merlon [à compléter] ; vitesse au mo
 
 **12. Livrable.** Rapport préliminaire validé et signé par la responsable HSE, transmis dans le délai.
 
-#### Cas d'usage 23.2 — La synthèse mensuelle des indicateurs HSE
+#### Cas d'usage 23.2. La synthèse mensuelle des indicateurs HSE
 
 **1. Problème.** Produire chaque mois les indicateurs (nombre d'événements par type et zone, taux de fréquence, actions en retard) et un commentaire de tendance.
 
@@ -121,7 +121,7 @@ Commentaire de 150 mots : tendances factuelles, sans attribution de cause.
 
 **8. Exemple de résultat (données fictives, cumul de la période).** 160 événements : 46 presque-accidents, 36 événements environnementaux, 23 premiers soins, 20 accidents avec arrêt, 18 dommages matériels, 17 soins médicaux ; 26 événements avec actions en retard ; zones les plus représentées : route d'accès (23), fosse Nord (22) et magasin (22).
 
-![Figure 23.3 — Registre HSE 2025-2026 : événements par type et par zone (données fictives MCC). Graphique réalisé pour cet ouvrage.](02_ILLUSTRATIONS/GRAPHIQUES/fig23_1_incidents_hse.png){width=100%}
+![Figure 23.3. Registre HSE 2025-2026 : événements par type et par zone (données fictives MCC). Graphique réalisé pour cet ouvrage.](02_ILLUSTRATIONS/GRAPHIQUES/fig23_1_incidents_hse.png){width=100%}
 
 **9. Contrôle.** Recalcul du TF à la main ; vérification que les heures travaillées sont celles validées par les RH.
 
@@ -131,19 +131,19 @@ Commentaire de 150 mots : tendances factuelles, sans attribution de cause.
 
 **12. Livrable.** Rapport HSE mensuel validé.
 
-#### Cas d'usage 23.3 — Vérification des contrôles critiques (condensé)
+#### Cas d'usage 23.3. Vérification des contrôles critiques (condensé)
 
 Pour l'événement majeur « collision ou sortie de route d'un engin sur rampe », l'équipe HSE a identifié des contrôles critiques (merlons conformes, état et arrosage maîtrisé des rampes, limitation de vitesse, freinage conforme, séparation engins-véhicules légers). Claude transforme les normes de performance de chaque contrôle en **check-lists de vérification de terrain**, prépare le tableau de suivi des vérifications et synthétise les résultats saisis par les vérificateurs. Les contrôles critiques eux-mêmes et leurs normes de performance sont définis par les experts, conformément à l'approche de l'ICMM [@ICMM-CCM].
 
-#### Cas d'usage 23.4 — Relecture d'une analyse de risques (condensé)
+#### Cas d'usage 23.4. Relecture d'une analyse de risques (condensé)
 
 Claude relit une analyse de risques de poste (par exemple « remplacement d'un flexible hydraulique en atelier ») et signale les dangers fréquemment associés à ce type de tâche qui n'y figurent pas, les mesures de maîtrise imprécises et les incohérences de cotation. L'équipe décide de ce qu'il faut intégrer ; la cotation reste la sienne.
 
-![Figure 23.4 — Chambre de refuge pour environnement souterrain : un exemple de contrôle critique en cas d'urgence. Titre original : « Emergency-and-rescue-shelter-for-underground-environment-mines-tunnels-subroca ». Auteur : LeaSubroca. Source : Wikimedia Commons, [https://commons.wikimedia.org/wiki/File:Emergency-and-rescue-shelter-for-underground-environment-mines-tunnels-subroca.png](https://commons.wikimedia.org/wiki/File:Emergency-and-rescue-shelter-for-underground-environment-mines-tunnels-subroca.png) (consulté le 16/11/2026). Licence : [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.fr) ; image redimensionnée pour l'édition. Photographie d'illustration, sans lien avec l'entreprise fictive MCC.](02_ILLUSTRATIONS/PHOTOGRAPHIES/photo_refuge_souterrain.jpg){width=78%}
+![Figure 23.4. Chambre de refuge pour environnement souterrain : un exemple de contrôle critique en cas d'urgence. Titre original : « Emergency-and-rescue-shelter-for-underground-environment-mines-tunnels-subroca ». Auteur : LeaSubroca. Source : Wikimedia Commons, [https://commons.wikimedia.org/wiki/File:Emergency-and-rescue-shelter-for-underground-environment-mines-tunnels-subroca.png](https://commons.wikimedia.org/wiki/File:Emergency-and-rescue-shelter-for-underground-environment-mines-tunnels-subroca.png) (consulté le 16/11/2026). Licence : [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.fr) ; image redimensionnée pour l'édition. Photographie d'illustration, sans lien avec l'entreprise fictive MCC.](02_ILLUSTRATIONS/PHOTOGRAPHIES/photo_refuge_souterrain.jpg){width=78%}
 
 ### E. Prompts commentés
 
-**Prompt 23.1 — Relecture d'une analyse de risques**
+**Prompt 23.1. Relecture d'une analyse de risques**
 
 ```text
 Voici l'analyse de risques de la tâche « [tâche] » (jointe) et la procédure associée.
@@ -178,7 +178,7 @@ Ne modifie aucune cotation ; présente tes remarques sous forme de questions pou
 :::
 
 ::: setrompe
-Dans un premier jet, Claude écrit : « L'incident est dû à la combinaison de la pluie et d'une défaillance hydraulique. » La phrase est plausible — et peut-être juste —, mais elle anticipe l'enquête et pourrait influencer les témoignages. **Contre-mesure** : règle explicite « aucune cause », et liste finale des phrases non issues des documents.
+Dans un premier jet, Claude écrit : « L'incident est dû à la combinaison de la pluie et d'une défaillance hydraulique. » La phrase est plausible, et peut-être juste, mais elle anticipe l'enquête et pourrait influencer les témoignages. **Contre-mesure** : règle explicite « aucune cause », et liste finale des phrases non issues des documents.
 :::
 
 ### I. Limites et précautions
@@ -206,4 +206,4 @@ Dans un premier jet, Claude écrit : « L'incident est dû à la combinaison de 
 9. **(Analyse critique)** Quel risque présente la diffusion large d'un rapport d'incident non anonymisé ?
 10. **(QCM)** La Convention n° 176 de l'OIT porte sur : a) la fiscalité minière ; b) la sécurité et la santé dans les mines ; c) les résidus ; d) la transparence des revenus.
 
-<div class="carnet" titre="Chapitre 23 — Claude appliqué à l'hygiène, à la sécurité et à l'environnement au travail"></div>
+<div class="carnet" titre="Chapitre 23. Claude appliqué à l'hygiène, à la sécurité et à l'environnement au travail"></div>

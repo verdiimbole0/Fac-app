@@ -1,4 +1,4 @@
-## Corrigés des quiz — Partie I
+## Corrigés des quiz : Partie I
 
 *Chaque réponse est expliquée : pourquoi elle est juste, et pourquoi les autres propositions ne le sont pas.*
 
@@ -26,7 +26,7 @@
 7. *Réponse attendue :* le modèle sort de son domaine de validité (minéralogie différente) ; ses prédictions risquent d'être fausses. Il faut le revalider ou le réentraîner sur des données sulfurées.
 8. **c).** Un projet de procédure rédigé est un contenu nouveau. Les trois autres sorties sont typiques de l'IA prédictive.
 9. *Réponse attendue :* parce que la responsabilité porte sur les effets des résultats (décisions, actions) ; insister sur l'influence rappelle que l'utilisateur doit maîtriser l'usage qui en est fait.
-10. *Réponse attendue :* générative — affirmation fausse mais plausible (hallucination), erreur de calcul, omission dans une synthèse ; prédictive — fausse alerte ou panne non détectée.
+10. *Réponse attendue :* générative : affirmation fausse mais plausible (hallucination), erreur de calcul, omission dans une synthèse ; prédictive : fausse alerte ou panne non détectée.
 
 ### Chapitre 3
 
@@ -74,7 +74,7 @@
 3. *Réponse attendue :* une organisation dans laquelle un humain cadre, vérifie, corrige et valide les résultats produits avec l'IA, à des étapes définies.
 4. *Réponse attendue :* illusion de contrôle ; les erreurs passent inaperçues ; la responsabilité de l'erreur reste la sienne.
 5. **a) ICMM.**
-6. *Réponse attendue :* préparer la check-list d'inspection, structurer le compte rendu d'inspection, synthétiser les données d'auscultation déjà validées, rédiger la note de transmission — sans conclure sur la stabilité.
+6. *Réponse attendue :* préparer la check-list d'inspection, structurer le compte rendu d'inspection, synthétiser les données d'auscultation déjà validées, rédiger la note de transmission, sans conclure sur la stabilité.
 7. **Vrai.**
 8. *Réponse attendue :* la sécurité de l'usage repose sur la capacité de l'expert à juger le résultat ; si cette capacité s'érode, les erreurs ne sont plus détectées.
 9. *Réponse attendue :* cadrer, vérifier, valider et signer.

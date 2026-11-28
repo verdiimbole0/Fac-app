@@ -1,8 +1,8 @@
-## Chapitre 25 — Claude appliqué aux relations communautaires et à la performance sociale
+## Chapitre 25. Claude appliqué aux relations communautaires et à la performance sociale
 
 ### A. Mise en situation professionnelle
 
-Joseph Banza, responsable des relations communautaires de MCC, gère un registre de 95 plaintes reçues depuis mars 2025 de trois villages riverains. Vingt et une sont « escaladées », vingt-cinq toujours « en cours ». Le comité local de suivi se réunit dans deux semaines, et les chefs de Lupanda — le village le plus concerné — attendent des réponses sur la poussière, la sécurité routière et le forage d'eau potable promis dans le cahier des charges. Joseph a appris de l'épisode du courrier « trop généreux » (chapitre 10) : Claude peut l'aider, mais la relation avec les communautés reste une affaire humaine.
+Joseph Banza, responsable des relations communautaires de MCC, gère un registre de 95 plaintes reçues depuis mars 2025 de trois villages riverains. Vingt et une sont « escaladées », vingt-cinq toujours « en cours ». Le comité local de suivi se réunit dans deux semaines, et les chefs de Lupanda, le village le plus concerné, attendent des réponses sur la poussière, la sécurité routière et le forage d'eau potable promis dans le cahier des charges. Joseph a appris de l'épisode du courrier « trop généreux » (chapitre 10) : Claude peut l'aider, mais la relation avec les communautés reste une affaire humaine.
 
 ### B. Objectifs d'apprentissage
 
@@ -14,11 +14,11 @@ Joseph Banza, responsable des relations communautaires de MCC, gère un registre
 4. **Rendre accessibles** des informations techniques (langage simple, traductions à valider).
 5. **Respecter** la confidentialité et la dignité des personnes dans l'usage de l'IA.
 
-### C. Comprendre avant de pratiquer — Profil du métier
+### C. Comprendre avant de pratiquer : Profil du métier
 
 Les Normes de performance de la SFI exigent notamment un mécanisme de gestion des plaintes accessible aux communautés affectées, la consultation et la participation éclairée, et traitent de la santé et de la sécurité des communautés et de la réinstallation [@IFC-PS].
 
-*Tableau 25.1 — Profil de l'équipe relations communautaires.*
+*Tableau 25.1. Profil de l'équipe relations communautaires.*
 
 | Dimension | Contenu |
 |---|---|
@@ -35,11 +35,11 @@ Les Normes de performance de la SFI exigent notamment un mécanisme de gestion d
 Les plaintes contiennent des **données personnelles** (noms, situations familiales, parcelles) et parfois des informations sensibles (santé, conflits). Pseudonymisez avant tout traitement non indispensable, appliquez la classification des données (chapitre 37) et n'utilisez jamais un outil non autorisé par l'entreprise.
 :::
 
-![Figure 25.1 — Mécanisme de gestion des plaintes : la réception, l'évaluation et la clôture restent humaines ; Claude assiste l'enregistrement, la rédaction et l'analyse. Illustration réalisée pour cet ouvrage.](02_ILLUSTRATIONS/SCHEMAS/fig25_2_mecanisme_plaintes.png){width=100%}
+![Figure 25.1. Mécanisme de gestion des plaintes : la réception, l'évaluation et la clôture restent humaines ; Claude assiste l'enregistrement, la rédaction et l'analyse. Illustration réalisée pour cet ouvrage.](02_ILLUSTRATIONS/SCHEMAS/fig25_2_mecanisme_plaintes.png){width=100%}
 
-### D. Démonstration guidée — Cas d'usage
+### D. Démonstration guidée : Cas d'usage
 
-#### Cas d'usage 25.1 — Analyse du registre des plaintes avant le comité local
+#### Cas d'usage 25.1. Analyse du registre des plaintes avant le comité local
 
 **1. Problème.** Joseph doit présenter une vue claire des plaintes : thèmes, villages, délais, escalades, engagements en suspens.
 
@@ -64,9 +64,9 @@ non clôturées de plus de 60 jours ; 5) synthèse de 200 mots des thèmes, pour
 
 **7. Échanges successifs.** « Quelles catégories sont le plus souvent escaladées ? » ; « Prépare pour chaque catégorie la question à poser au service concerné. »
 
-**8. Exemple de résultat (données fictives).** 95 plaintes : Lupanda 38, Kasongo-Mbiyo 29, Mwinda 28 ; catégories principales : sécurité routière (16), bruit (15), cahier des charges, indemnisation et poussière (14 chacune) ; statuts : 49 clôturées, 25 en cours, 21 escaladées. Délai de clôture : moyenne d'environ 46 jours, médiane de 37 jours — au-delà du délai cible de 30 jours.
+**8. Exemple de résultat (données fictives).** 95 plaintes : Lupanda 38, Kasongo-Mbiyo 29, Mwinda 28 ; catégories principales : sécurité routière (16), bruit (15), cahier des charges, indemnisation et poussière (14 chacune) ; statuts : 49 clôturées, 25 en cours, 21 escaladées. Délai de clôture : moyenne d'environ 46 jours, médiane de 37 jours : au-delà du délai cible de 30 jours.
 
-![Figure 25.2 — Plaintes communautaires par catégorie et par village (données fictives MCC). Graphique réalisé pour cet ouvrage.](02_ILLUSTRATIONS/GRAPHIQUES/fig25_1_plaintes.png){width=90%}
+![Figure 25.2. Plaintes communautaires par catégorie et par village (données fictives MCC). Graphique réalisé pour cet ouvrage.](02_ILLUSTRATIONS/GRAPHIQUES/fig25_1_plaintes.png){width=90%}
 
 **9. Contrôle.** Totaux vérifiés dans le registre ; contrôle de 5 plaintes au hasard.
 
@@ -76,7 +76,7 @@ non clôturées de plus de 60 jours ; 5) synthèse de 200 mots des thèmes, pour
 
 **12. Livrable.** Tableau de bord du mécanisme de plaintes et synthèse pour le comité local.
 
-#### Cas d'usage 25.2 — Répondre à une plainte collective
+#### Cas d'usage 25.2. Répondre à une plainte collective
 
 **1. Problème.** Le chef de Lupanda a écrit au nom du village sur la vitesse des camions et la poussière.
 
@@ -107,17 +107,17 @@ traducteur de l'équipe : ne propose pas de traduction.
 
 **12. Livrable.** Courrier validé, version orale, inscription dans le registre.
 
-#### Cas d'usage 25.3 — Préparer et documenter une réunion de consultation (condensé)
+#### Cas d'usage 25.3. Préparer et documenter une réunion de consultation (condensé)
 
-Claude prépare l'ordre du jour, un dossier d'information en langage simple (projet d'extension Mbiyo Profond : calendrier, travaux, nuisances, mesures), une liste de questions probables avec les réponses **disponibles** (et celles à apporter plus tard), puis, à partir des notes de séance, un projet de compte rendu distinguant questions, réponses données et engagements pris — à valider avec les représentants des communautés.
+Claude prépare l'ordre du jour, un dossier d'information en langage simple (projet d'extension Mbiyo Profond : calendrier, travaux, nuisances, mesures), une liste de questions probables avec les réponses **disponibles** (et celles à apporter plus tard), puis, à partir des notes de séance, un projet de compte rendu distinguant questions, réponses données et engagements pris : à valider avec les représentants des communautés.
 
-#### Cas d'usage 25.4 — Suivi du cahier des charges (condensé)
+#### Cas d'usage 25.4. Suivi du cahier des charges (condensé)
 
-À partir du cahier des charges signé en 2021 et des rapports d'avancement des projets, Claude construit une matrice des engagements (projet, échéance, statut, preuves) et prépare le rapport d'avancement à présenter aux communautés. Exemple fictif : le forage d'eau potable promis à Lupanda, en retard, apparaît comme l'engagement le plus sensible — information à remonter à la direction.
+À partir du cahier des charges signé en 2021 et des rapports d'avancement des projets, Claude construit une matrice des engagements (projet, échéance, statut, preuves) et prépare le rapport d'avancement à présenter aux communautés. Exemple fictif : le forage d'eau potable promis à Lupanda, en retard, apparaît comme l'engagement le plus sensible : information à remonter à la direction.
 
 ### E. Prompts commentés
 
-**Prompt 25.1 — Lecture critique d'un projet de réponse**
+**Prompt 25.1. Lecture critique d'un projet de réponse**
 
 ```text
 Voici un projet de réponse à une plainte communautaire. Relis-le du point de vue
@@ -182,4 +182,4 @@ Dans un projet de réponse, Claude écrit « l'entreprise s'engage à installer 
 9. **(Analyse critique)** En quoi un excellent courrier ne suffit-il pas à résoudre une crise de confiance ?
 10. **(Compréhension)** Quelles rubriques doit contenir un compte rendu de consultation ?
 
-<div class="carnet" titre="Chapitre 25 — Claude appliqué aux relations communautaires et à la performance sociale"></div>
+<div class="carnet" titre="Chapitre 25. Claude appliqué aux relations communautaires et à la performance sociale"></div>

@@ -1,4 +1,4 @@
-## Chapitre 9 — Comprendre et maîtriser les paramètres de Claude
+## Chapitre 9. Comprendre et maîtriser les paramètres de Claude
 
 ### A. Mise en situation professionnelle
 
@@ -32,9 +32,9 @@ Jean-Luc Tshibangu, métallurgiste en chef, utilise Claude pour analyser chaque 
 
 L'**effort** indique au modèle combien de tokens il peut consacrer à sa réponse : réflexion, texte et appels d'outils [@ANT-EFFORT]. La documentation décrit cinq niveaux :
 
-![Figure 9.1 — Les cinq niveaux d'effort. Plus l'effort est élevé, plus le modèle réfléchit, au prix d'un temps et d'un coût plus élevés. Source : Anthropic, Effort (consulté le 16/11/2026). Illustration réalisée pour cet ouvrage.](02_ILLUSTRATIONS/SCHEMAS/fig09_1_niveaux_effort.png){width=100%}
+![Figure 9.1. Les cinq niveaux d'effort. Plus l'effort est élevé, plus le modèle réfléchit, au prix d'un temps et d'un coût plus élevés. Source : Anthropic, Effort (consulté le 16/11/2026). Illustration réalisée pour cet ouvrage.](02_ILLUSTRATIONS/SCHEMAS/fig09_1_niveaux_effort.png){width=100%}
 
-*Tableau 9.1 — Niveaux d'effort (d'après la documentation Anthropic, consultée le 16/11/2026).*
+*Tableau 9.1. Niveaux d'effort (d'après la documentation Anthropic, consultée le 16/11/2026).*
 
 | Niveau | Description selon la documentation | Usage typique à MCC |
 |---|---|---|
@@ -68,9 +68,9 @@ Dans l'application, lorsque Claude réfléchit, un résumé de sa réflexion peu
 
 #### C.5. Les paramètres techniques de l'API (pour les équipes techniques)
 
-![Figure 9.2 — Anatomie d'une requête à l'API Messages (exemple simplifié). Paramètres d'après la référence de l'API Messages consultée le 16/11/2026. Illustration réalisée pour cet ouvrage.](02_ILLUSTRATIONS/SCHEMAS/fig09_2_requete_api.png){width=100%}
+![Figure 9.2. Anatomie d'une requête à l'API Messages (exemple simplifié). Paramètres d'après la référence de l'API Messages consultée le 16/11/2026. Illustration réalisée pour cet ouvrage.](02_ILLUSTRATIONS/SCHEMAS/fig09_2_requete_api.png){width=100%}
 
-*Tableau 9.2 — Paramètres principaux de l'API Messages (source : référence de l'API, consultée le 16/11/2026).*
+*Tableau 9.2. Paramètres principaux de l'API Messages (source : référence de l'API, consultée le 16/11/2026).*
 
 | Paramètre | Rôle | Conseil |
 |---|---|---|
@@ -94,7 +94,7 @@ De nombreux tutoriels plus anciens mentionnent d'autres paramètres d'échantill
 
 Pour l'utilisateur non technique, les réglages les plus utiles sont dans l'application : préférences personnelles, capacités (exécution de code et création de fichiers, recherche Web), mémoire et recherche dans les conversations passées, connecteurs, et, dans les organisations, les réglages imposés par l'administrateur [@ANT-HC-ARTIFACTS; @ANT-HC-MEMORY; @ANT-HC-CONNECT].
 
-### D. Démonstration guidée — Régler l'analyse hebdomadaire de l'usine
+### D. Démonstration guidée : Régler l'analyse hebdomadaire de l'usine
 
 Jean-Luc et Kevin définissent deux configurations.
 
@@ -106,7 +106,7 @@ Pour l'outil interne de résumé des rapports de poste, l'équipe données retie
 
 ### E. Prompts commentés
 
-**Prompt 9.1 — Contrôler la longueur par l'instruction**
+**Prompt 9.1. Contrôler la longueur par l'instruction**
 
 ```text
 Réponds en 10 lignes maximum, sous forme de liste :
@@ -116,7 +116,7 @@ Réponds en 10 lignes maximum, sous forme de liste :
 Pas d'introduction, pas de conclusion.
 ```
 
-**Prompt 9.2 — Instructions système pour un outil interne (API)**
+**Prompt 9.2. Instructions système pour un outil interne (API)**
 
 ```text
 Tu résumes des rapports de poste de la mine Mbiyo (entreprise MCC).
@@ -131,7 +131,7 @@ Règles :
 
 *Commentaire.* Placées dans le paramètre `system`, ces règles s'appliquent à chaque appel et garantissent un format constant, facile à contrôler et à intégrer dans un tableau de bord.
 
-**Prompt 9.3 — Demander davantage de rigueur sans changer de modèle**
+**Prompt 9.3. Demander davantage de rigueur sans changer de modèle**
 
 ```text
 Cette analyse demande un raisonnement en plusieurs étapes. Avant de conclure :
@@ -143,15 +143,15 @@ Puis donne ta conclusion.
 
 ### F. Exercices pratiques
 
-**Exercice 9.1 (guidé) — Effort et longueur**
+**Exercice 9.1 (guidé) : Effort et longueur**
 
 Sur une même question (analyse du rapport mensuel de mars 2026, fichier d'exercice), comparez deux réponses : effort faible avec consigne « 10 lignes », et effort élevé avec consigne « analyse détaillée ». Notez temps, longueur, qualité, erreurs.
 
-**Exercice 9.2 (guidé, profil technique) — Lire une requête**
+**Exercice 9.2 (guidé, profil technique) : Lire une requête**
 
 Expliquez, paramètre par paramètre, la requête de la figure 9.2 à un collègue non technicien.
 
-**Exercice 9.3 (autonome) — Vos deux configurations**
+**Exercice 9.3 (autonome) : Vos deux configurations**
 
 Définissez une configuration « rapide » et une configuration « approfondie » pour deux tâches récurrentes de votre métier : modèle, effort, outils, consignes de longueur et de format.
 
@@ -203,4 +203,4 @@ Avec un effort très faible, sur une question en réalité complexe (par exemple
 9. **(Application)** Rédigez une consigne de format pour obtenir un tableau de 5 lignes maximum.
 10. **(QCM)** Le niveau `xhigh` est recommandé pour : a) classer des libellés ; b) des travaux agentiques longs ; c) traduire un courriel ; d) reformuler une phrase.
 
-<div class="carnet" titre="Chapitre 9 — Comprendre et maîtriser les paramètres de Claude"></div>
+<div class="carnet" titre="Chapitre 9. Comprendre et maîtriser les paramètres de Claude"></div>

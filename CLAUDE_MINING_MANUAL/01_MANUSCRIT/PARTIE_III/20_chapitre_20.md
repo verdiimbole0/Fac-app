@@ -1,10 +1,10 @@
-## Chapitre 20 — Claude appliqué au forage, au minage et aux opérations d'extraction
+## Chapitre 20. Claude appliqué au forage, au minage et aux opérations d'extraction
 
 ### A. Mise en situation professionnelle
 
 Albert Kalenga, superintendant forage-minage de MCC, termine chaque poste de nuit par une heure de « paperasse » : rapport de poste, mise à jour du registre des tirs, réponses aux questions de la planification, préparation de la causerie du matin. Il pilote aussi un sujet délicat : les vibrations ressenties au village de Kasongo-Mbiyo après certains tirs, qui suscitent des plaintes. Il voudrait gagner du temps sur l'écrit pour en passer davantage sur le terrain, et mieux expliquer aux riverains ce que fait la mine.
 
-![Figure 20.1 — Chargement d'un camion de grande capacité par une pelle hydraulique. Titre original : « Belaz haul truck and a Hitachi mining excavator ». Auteur : Sandrerro. Source : Wikimedia Commons, [https://commons.wikimedia.org/wiki/File:Belaz_haul_truck_and_a_Hitachi_mining_excavator.jpg](https://commons.wikimedia.org/wiki/File:Belaz_haul_truck_and_a_Hitachi_mining_excavator.jpg) (consulté le 16/11/2026). Licence : [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/deed.fr) ; image redimensionnée pour l'édition. Photographie d'illustration, sans lien avec l'entreprise fictive MCC.](02_ILLUSTRATIONS/PHOTOGRAPHIES/photo_pelle_camion.jpg){width=78%}
+![Figure 20.1. Chargement d'un camion de grande capacité par une pelle hydraulique. Titre original : « Belaz haul truck and a Hitachi mining excavator ». Auteur : Sandrerro. Source : Wikimedia Commons, [https://commons.wikimedia.org/wiki/File:Belaz_haul_truck_and_a_Hitachi_mining_excavator.jpg](https://commons.wikimedia.org/wiki/File:Belaz_haul_truck_and_a_Hitachi_mining_excavator.jpg) (consulté le 16/11/2026). Licence : [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/deed.fr) ; image redimensionnée pour l'édition. Photographie d'illustration, sans lien avec l'entreprise fictive MCC.](02_ILLUSTRATIONS/PHOTOGRAPHIES/photo_pelle_camion.jpg){width=78%}
 
 ### B. Objectifs d'apprentissage
 
@@ -16,9 +16,9 @@ Albert Kalenga, superintendant forage-minage de MCC, termine chaque poste de nui
 4. **Analyser** des données d'exploitation (temps de cycle, productivité) avec calculs traçables.
 5. **Préparer** une communication claire et prudente à destination des riverains.
 
-### C. Comprendre avant de pratiquer — Profil du métier
+### C. Comprendre avant de pratiquer : Profil du métier
 
-*Tableau 20.1 — Profil des métiers du forage-minage et de l'extraction.*
+*Tableau 20.1. Profil des métiers du forage-minage et de l'extraction.*
 
 | Dimension | Contenu |
 |---|---|
@@ -31,15 +31,15 @@ Albert Kalenga, superintendant forage-minage de MCC, termine chaque poste de nui
 | Assistables par Claude | Mise en forme des rapports ; synthèses de données validées ; retours d'expérience ; causeries ; communications aux riverains (à valider) ; analyse de données d'exploitation |
 | Limites | Conception, validation et autorisation des tirs ; gestion des explosifs et des ratés ; distances de sécurité ; décisions d'évacuation |
 
-![Figure 20.2 — Cycle forage-minage : ce que Claude peut faire, et ce qu'il ne fait jamais. Illustration réalisée pour cet ouvrage.](02_ILLUSTRATIONS/SCHEMAS/fig20_2_forage_minage_frontiere.png){width=100%}
+![Figure 20.2. Cycle forage-minage : ce que Claude peut faire, et ce qu'il ne fait jamais. Illustration réalisée pour cet ouvrage.](02_ILLUSTRATIONS/SCHEMAS/fig20_2_forage_minage_frontiere.png){width=100%}
 
 ::: attention
 **Ligne rouge.** La conception, la validation et l'autorisation des tirs, la manipulation et le stockage des explosifs, le traitement des ratés et la fixation des distances de sécurité relèvent exclusivement des personnes habilitées et des procédures de l'entreprise, conformément à la réglementation applicable. Le recueil de l'OIT sur les mines à ciel ouvert consacre des développements détaillés à l'utilisation des explosifs [@ILO-OPENCAST]. Ne demandez jamais à Claude de calculer une charge, un retard ou une distance de sécurité destinés à être appliqués.
 :::
 
-### D. Démonstration guidée — Cas d'usage
+### D. Démonstration guidée : Cas d'usage
 
-#### Cas d'usage 20.1 — Le rapport de poste à partir de notes brutes
+#### Cas d'usage 20.1. Le rapport de poste à partir de notes brutes
 
 **1. Problème.** Les superviseurs rédigent leur rapport en fin de poste, fatigués ; les rapports sont hétérogènes et incomplets.
 
@@ -68,7 +68,7 @@ Style télégraphique, une page maximum.
 
 **7. Échanges successifs.** « Compare avec le rapport du poste précédent et liste les problèmes récurrents » ; « Prépare le message de passation pour le superviseur du poste de jour (5 lignes). »
 
-**8. Exemple de résultat (extrait, fictif).** « SÉCURITÉ : presque-accident 02 h 40 rampe R3 — camion CAM-07 glissade au freinage, arrêt contre le merlon, pas de blessé ; rampe fermée 03 h 00-05 h 20. PRODUCTION : métrage foré : non renseigné… »
+**8. Exemple de résultat (extrait, fictif).** « SÉCURITÉ : presque-accident 02 h 40 rampe R3 : camion CAM-07 glissade au freinage, arrêt contre le merlon, pas de blessé ; rampe fermée 03 h 00-05 h 20. PRODUCTION : métrage foré : non renseigné… »
 
 **9. Contrôle.** Le superviseur relit chaque ligne, complète les chiffres depuis les systèmes officiels et signe.
 
@@ -78,7 +78,7 @@ Style télégraphique, une page maximum.
 
 **12. Livrable.** Rapport de poste signé, archivé dans le système de l'entreprise.
 
-#### Cas d'usage 20.2 — Retour d'expérience sur les tirs et vibrations
+#### Cas d'usage 20.2. Retour d'expérience sur les tirs et vibrations
 
 **1. Problème.** Les plaintes du village de Kasongo-Mbiyo (fissures, tremblements) se multiplient ; Albert doit analyser les mesures de vibrations et préparer un retour d'expérience pour l'équipe de conception des tirs.
 
@@ -116,17 +116,17 @@ ou de retard ; ces décisions appartiennent aux personnes habilitées.
 
 **12. Livrable.** Retour d'expérience daté, intégré au dossier de conception des tirs.
 
-#### Cas d'usage 20.3 — Fiche d'information pour les riverains (condensé)
+#### Cas d'usage 20.3. Fiche d'information pour les riverains (condensé)
 
 À partir des faits validés, Claude rédige une fiche simple pour les habitants : horaires habituels des tirs, signaux d'alerte sonores, consignes, mesures de suivi des vibrations, comment déposer une plainte. La fiche est relue par le responsable forage-minage (exactitude technique) et par le responsable des relations communautaires (ton, traduction, diffusion). Règle : aucune promesse, aucun chiffre non validé.
 
-#### Cas d'usage 20.4 — Productivité de la flotte de transport (condensé)
+#### Cas d'usage 20.4. Productivité de la flotte de transport (condensé)
 
 À partir d'une extraction du système de gestion de flotte (temps de cycle, attentes à la pelle, files d'attente au concasseur), Claude calcule par programme les temps de cycle moyens, identifie les goulets d'étranglement et produit des graphiques. L'ingénieur de production interprète et décide (affectation des camions, organisation des postes).
 
 ### E. Prompts commentés
 
-**Prompt 20.1 — Causerie sécurité à partir d'un événement**
+**Prompt 20.1. Causerie sécurité à partir d'un événement**
 
 ```text
 Prépare une causerie de 10 minutes pour les conducteurs de camions à partir du presque-accident
@@ -188,4 +188,4 @@ Sollicité pour « réduire les vibrations au village », un assistant d'IA peut
 9. **(Analyse critique)** Pourquoi la dictée sur mobile peut-elle poser un problème de sécurité ?
 10. **(Application)** Rédigez la phrase de limitation de rôle d'un prompt d'analyse des tirs.
 
-<div class="carnet" titre="Chapitre 20 — Claude appliqué au forage, au minage et aux opérations d'extraction"></div>
+<div class="carnet" titre="Chapitre 20. Claude appliqué au forage, au minage et aux opérations d'extraction"></div>

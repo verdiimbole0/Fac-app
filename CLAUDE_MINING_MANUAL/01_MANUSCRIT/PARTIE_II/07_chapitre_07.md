@@ -1,4 +1,4 @@
-## Chapitre 7 — Créer son compte et prendre en main Claude
+## Chapitre 7. Créer son compte et prendre en main Claude
 
 ### A. Mise en situation professionnelle
 
@@ -31,11 +31,11 @@ N'utilisez **pas** un compte personnel pour des données professionnelles sans l
 
 #### C.2. Les applications
 
-Claude est disponible sur le Web, en application de bureau et en application mobile [@ANT-PLANS]. Les fonctions de base sont les mêmes ; certaines fonctions avancées (par exemple des extensions de bureau ou des connecteurs locaux) dépendent de l'application. L'application mobile est pratique sur le terrain — par exemple pour dicter une observation ou photographier une pièce —, mais attention à la confidentialité des photographies prises sur site.
+Claude est disponible sur le Web, en application de bureau et en application mobile [@ANT-PLANS]. Les fonctions de base sont les mêmes ; certaines fonctions avancées (par exemple des extensions de bureau ou des connecteurs locaux) dépendent de l'application. L'application mobile est pratique sur le terrain, par exemple pour dicter une observation ou photographier une pièce, mais attention à la confidentialité des photographies prises sur site.
 
 #### C.3. Les zones de l'interface
 
-![Figure 7.1 — Les zones principales de l'interface. Illustration schématique, et non capture d'écran : la disposition et les libellés réels peuvent différer selon la version, l'offre et la langue de l'interface.](02_ILLUSTRATIONS/CAPTURES_CLAUDE/fig07_1_interface_schematique.png){width=100%}
+![Figure 7.1. Les zones principales de l'interface. Illustration schématique, et non capture d'écran : la disposition et les libellés réels peuvent différer selon la version, l'offre et la langue de l'interface.](02_ILLUSTRATIONS/CAPTURES_CLAUDE/fig07_1_interface_schematique.png){width=100%}
 
 | Zone | Rôle |
 |---|---|
@@ -64,23 +64,23 @@ Le centre d'aide précise par exemple que les artefacts nécessitent l'activatio
 Laisser la mémoire mémoriser des informations sensibles sans le savoir. Avant d'utiliser Claude pour des sujets confidentiels, vérifiez les réglages de mémoire de votre compte et ce que votre organisation a configuré, et consultez régulièrement ce que Claude a retenu.
 :::
 
-### D. Démonstration guidée — La première demi-heure de Béatrice
+### D. Démonstration guidée : La première demi-heure de Béatrice
 
-**Étape 1 — Se connecter (2 min).** Béatrice clique sur le lien d'invitation reçu de l'administrateur, se connecte avec son identifiant d'entreprise et vérifie, en haut de la barre latérale ou dans les réglages, qu'elle est bien dans l'espace de l'organisation « MCC » et non dans un espace personnel.
+**Étape 1. Se connecter (2 min).** Béatrice clique sur le lien d'invitation reçu de l'administrateur, se connecte avec son identifiant d'entreprise et vérifie, en haut de la barre latérale ou dans les réglages, qu'elle est bien dans l'espace de l'organisation « MCC » et non dans un espace personnel.
 
-**Étape 2 — Renseigner ses préférences (5 min).** Dans les réglages de profil, elle rédige un court texte de préférences (voir prompt 7.1). Ces préférences s'appliqueront à toutes ses conversations.
+**Étape 2. Renseigner ses préférences (5 min).** Dans les réglages de profil, elle rédige un court texte de préférences (voir prompt 7.1). Ces préférences s'appliqueront à toutes ses conversations.
 
-**Étape 3 — Vérifier les capacités (2 min).** Elle vérifie que l'exécution de code et la création de fichiers sont activées (ou que l'organisation les a activées), pour pouvoir obtenir un document Word en sortie.
+**Étape 3. Vérifier les capacités (2 min).** Elle vérifie que l'exécution de code et la création de fichiers sont activées (ou que l'organisation les a activées), pour pouvoir obtenir un document Word en sortie.
 
-**Étape 4 — Première conversation (10 min).** Elle ouvre une nouvelle conversation, joint la fiche de poste « Superviseur de poste — mine » (document interne de niveau « usage interne », autorisé par la charte), et utilise le prompt 7.2.
+**Étape 4. Première conversation (10 min).** Elle ouvre une nouvelle conversation, joint la fiche de poste « Superviseur de poste : mine » (document interne de niveau « usage interne », autorisé par la charte), et utilise le prompt 7.2.
 
-**Étape 5 — Itérer (8 min).** Elle demande deux modifications : ajouter une section sur la sécurité, et réduire la trame à deux pages. Elle télécharge le fichier produit.
+**Étape 5. Itérer (8 min).** Elle demande deux modifications : ajouter une section sur la sécurité, et réduire la trame à deux pages. Elle télécharge le fichier produit.
 
-**Étape 6 — Ranger (3 min).** Elle renomme la conversation « Trame entretien annuel superviseurs — v1 » pour la retrouver facilement.
+**Étape 6. Ranger (3 min).** Elle renomme la conversation « Trame entretien annuel superviseurs : v1 » pour la retrouver facilement.
 
 ### E. Prompts commentés
 
-**Prompt 7.1 — Texte de préférences personnelles**
+**Prompt 7.1. Texte de préférences personnelles**
 
 ```text
 Je suis responsable des ressources humaines dans une entreprise minière
@@ -94,10 +94,10 @@ Signale toujours tes incertitudes.
 
 *Commentaire.* Ce texte évite de répéter votre contexte dans chaque conversation. Il ne doit contenir **aucune donnée confidentielle** : il est réutilisé partout.
 
-**Prompt 7.2 — Première tâche avec un fichier joint**
+**Prompt 7.2. Première tâche avec un fichier joint**
 
 ```text
-Voici la fiche de poste « Superviseur de poste — mine » (fichier joint).
+Voici la fiche de poste « Superviseur de poste : mine » (fichier joint).
 Prépare une trame d'entretien annuel d'évaluation pour ce poste, sous forme
 de document Word de 2 pages maximum, avec :
 1. un bilan de l'année (objectifs, réalisations, difficultés) ;
@@ -113,18 +113,18 @@ Utilise un langage neutre et non discriminant.
 
 ### F. Exercices pratiques
 
-**Exercice 7.1 (guidé) — Configurer son environnement**
+**Exercice 7.1 (guidé) : Configurer son environnement**
 
 1. Connectez-vous avec le compte approprié.
 2. Rédigez votre texte de préférences (5 à 8 lignes) sur le modèle du prompt 7.1.
 3. Vérifiez l'état des capacités (exécution de code, création de fichiers) et des réglages de mémoire ; notez-les.
 4. Ouvrez une conversation incognito et vérifiez qu'elle n'apparaît pas dans l'historique.
 
-**Exercice 7.2 (guidé) — Première production**
+**Exercice 7.2 (guidé) : Première production**
 
 Avec le fichier d'exercice `MCC_rapport_mensuel_production_mars_2026.pdf`, demandez à Claude un résumé de cinq lignes pour le directeur général, puis une version en anglais. Renommez la conversation.
 
-**Exercice 7.3 (autonome) — Votre première tâche réelle**
+**Exercice 7.3 (autonome) : Votre première tâche réelle**
 
 Choisissez une tâche simple et non confidentielle de votre travail (trame de document, plan de présentation, courrier type). Réalisez-la avec Claude en au plus trois itérations, puis notez le temps passé et la qualité perçue (1 à 5).
 
@@ -157,7 +157,7 @@ Béatrice demande une trame « conforme au Code du travail ». Claude produit un
 
 `[Service] – [Objet] – [Version ou date]`, par exemple : `HSE – Rapport INC-2026-0412 – v2`.
 
-**Check-list 7.1 — Premier jour**
+**Check-list 7.1. Premier jour**
 
 - [ ] Connexion au bon espace.
 - [ ] Préférences rédigées.
@@ -179,4 +179,4 @@ Béatrice demande une trame « conforme au Code du travail ». Claude produit un
 9. **(Analyse critique)** Pourquoi le texte de préférences ne doit-il contenir aucune donnée confidentielle ?
 10. **(QCM)** Dans une organisation Team ou Enterprise, qui contrôle certains réglages comme la disponibilité de la mémoire ? a) chaque utilisateur seul ; b) les propriétaires ou administrateurs de l'organisation ; c) personne ; d) le fournisseur d'accès Internet.
 
-<div class="carnet" titre="Chapitre 7 — Créer son compte et prendre en main Claude"></div>
+<div class="carnet" titre="Chapitre 7. Créer son compte et prendre en main Claude"></div>

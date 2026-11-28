@@ -1,4 +1,4 @@
-## Corrigés des quiz — Partie VI
+## Corrigés des quiz : Partie VI
 
 ### Chapitre 41
 
@@ -18,7 +18,7 @@
 1. **c) 8.**
 2. Un élément observable qui démontre la compétence : livrable vérifié, prompt documenté, contrôle réalisé, collègue formé.
 3. **Faux.** Le volume d'usage ne dit rien de la qualité ni de la vérification.
-4. Niveau 3 — autonomie.
+4. Niveau 3 : autonomie.
 5. 8 + 15 + 20 + 18 + 16 = **77/100** : niveau indicatif « autonomie ».
 6. **Vrai.**
 7. **C7** (vérifier, sécuriser, protéger).

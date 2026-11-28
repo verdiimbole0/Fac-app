@@ -127,7 +127,7 @@ def main(out):
     # Titres
     h1 = find(doc, "Heading 1")   # Parties
     rpr_set(h1, size=24, bold=False, italic=False, color=INK, caps=True, spacing=2); clear_borders(h1)
-    para(h1, before=150, after=30, line=32, align=WD_ALIGN_PARAGRAPH.CENTER, keep=True, page_break=True)
+    para(h1, before=60, after=22, line=32, align=WD_ALIGN_PARAGRAPH.CENTER, keep=True, page_break=True)
     h2 = find(doc, "Heading 2")   # Chapitres
     rpr_set(h2, size=21, bold=False, italic=False, color=INK, caps=False); clear_borders(h2)
     para(h2, before=70, after=28, line=25, align=WD_ALIGN_PARAGRAPH.LEFT, keep=True, page_break=True)
@@ -188,12 +188,20 @@ def main(out):
     pi = get(doc, "Partie Intro"); rpr_set(pi, size=11.5, italic=True, color=INK)
     para(pi, before=0, after=8, line=15, left=0.8, right=0.8, align=WD_ALIGN_PARAGRAPH.JUSTIFY)
     pc = get(doc, "Partie Chapitres"); rpr_set(pc, size=10, color=SOFT); para(pc, after=1, left=0.8, align=WD_ALIGN_PARAGRAPH.LEFT)
+    # variantes resserrées pour les ouvertures de partie très longues (partie III : seize chapitres)
+    pis = get(doc, "Partie Intro Serre"); rpr_set(pis, size=10, italic=True, color=INK)
+    para(pis, before=0, after=4, line=12.4, left=0.3, right=0.3, align=WD_ALIGN_PARAGRAPH.JUSTIFY)
+    pcs = get(doc, "Partie Chapitres Serre"); rpr_set(pcs, size=9, color=SOFT); para(pcs, after=0, line=11, left=0.8, align=WD_ALIGN_PARAGRAPH.LEFT)
 
     # Page de titre
     for name, size, it, caps, before, after in [("Titre Livre", 30, False, True, 140, 14), ("Sous-titre Livre", 13.5, True, False, 0, 40),
                                                ("Mention Livre", 10, False, True, 0, 4)]:
         s = get(doc, name); rpr_set(s, size=size, italic=it, caps=caps, color=INK, spacing=2 if name == "Titre Livre" else None)
         para(s, before=before, after=after, line={"Titre Livre": 40, "Sous-titre Livre": 18}.get(name, 13), align=WD_ALIGN_PARAGRAPH.CENTER)
+
+    # Page des droits (verso du titre) : petit corps, sans alinéa
+    mt = get(doc, "Mentions"); rpr_set(mt, size=8.5, color=INK)
+    para(mt, after=5, line=11, indent_first=0, align=WD_ALIGN_PARAGRAPH.LEFT)
 
     # Bibliographie : retrait suspendu
     ref = get(doc, "Reference"); rpr_set(ref, size=10, color=INK)

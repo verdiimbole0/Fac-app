@@ -52,7 +52,7 @@ function Div(el)
     local e = ENCADRES[cls]
     if e then
       local titre = el.attributes["titre"]
-      local label = e[2] .. (titre and (" — " .. titre) or "")
+      local label = e[2] .. (titre and (" : " .. titre) or "")
       local blocks = { para_text("Encadre " .. e[1] .. " Titre", label) }
       table.insert(blocks, styled("Encadre " .. e[1], flatten(el.content)))
       table.insert(blocks, pandoc.Para({}))  -- séparateur (casse le regroupement des bordures)
@@ -60,13 +60,16 @@ function Div(el)
     end
     if cls == "partie" then
       local out = {}
+      local n = 0
+      for _, b in ipairs(el.content) do if b.t == "BulletList" then n = n + #b.content end end
+      local suf = (n > 10) and " Serre" or ""
       for _, b in ipairs(el.content) do
         if b.t == "Header" then table.insert(out, b)
         elseif b.t == "BulletList" then
           for _, item in ipairs(b.content) do
-            table.insert(out, styled("Partie Chapitres", {pandoc.Para(pandoc.utils.blocks_to_inlines(item))}))
+            table.insert(out, styled("Partie Chapitres" .. suf, {pandoc.Para(pandoc.utils.blocks_to_inlines(item))}))
           end
-        else table.insert(out, styled("Partie Intro", {b})) end
+        else table.insert(out, styled("Partie Intro" .. suf, {b})) end
       end
       return out
     end
@@ -94,7 +97,7 @@ function Div(el)
         for _ = 1, 2 do table.insert(out, para_text("Carnet Ligne", "\u{00A0}")) end
       end
       table.insert(out, pandoc.RawBlock("openxml", PAGEBREAK))
-      table.insert(out, para_text("Carnet Rubrique", "Espace libre — réflexions, schémas, brainstorming"))
+      table.insert(out, para_text("Carnet Rubrique", "Espace libre : réflexions, schémas, brainstorming"))
       for _ = 1, 30 do table.insert(out, para_text("Carnet Cadre", "\u{00A0}")) end
       return out
     end

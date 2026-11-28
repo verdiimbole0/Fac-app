@@ -1,4 +1,4 @@
-## Chapitre 33 — Analyser des données, exploiter des fichiers et construire des tableaux de bord
+## Chapitre 33. Analyser des données, exploiter des fichiers et construire des tableaux de bord
 
 ### A. Mise en situation professionnelle
 
@@ -18,20 +18,20 @@ Nadine Kapinga, contrôleuse de gestion, reçoit chaque mois une dizaine de fich
 
 #### C.1. La méthode en six étapes
 
-![Figure 33.1 — Méthode d'analyse de données avec Claude : la question, les décisions de nettoyage et l'interprétation restent humaines ; Claude profile, calcule et visualise par programme. Illustration réalisée pour cet ouvrage.](02_ILLUSTRATIONS/SCHEMAS/fig33_1_analyse_donnees.png){width=100%}
+![Figure 33.1. Méthode d'analyse de données avec Claude : la question, les décisions de nettoyage et l'interprétation restent humaines ; Claude profile, calcule et visualise par programme. Illustration réalisée pour cet ouvrage.](02_ILLUSTRATIONS/SCHEMAS/fig33_1_analyse_donnees.png){width=100%}
 
 1. **Question** : quelle décision l'analyse doit-elle éclairer ? Quels indicateurs, définis comment ?
 2. **Profil** : structure, période, valeurs manquantes, aberrantes, doublons (chapitre 13).
 3. **Nettoyage** : décisions humaines, documentées, idéalement appliquées à la source.
 4. **Calcul** : par exécution de code, formules affichées, nombre de lignes contrôlé.
 5. **Visualisation** : graphiques adaptés, honnêtes, sourcés.
-6. **Interprétation** : causes, limites, recommandations — par l'humain, aidé par Claude.
+6. **Interprétation** : causes, limites, recommandations : par l'humain, aidé par Claude.
 
 #### C.2. Le dictionnaire de données
 
 Un **dictionnaire de données** décrit chaque colonne d'un fichier : nom, signification, unité, type, valeurs autorisées, source. C'est le document le plus rentable que vous puissiez fournir à Claude : il évite les erreurs d'interprétation (tonnes ou kilotonnes ? minerai extrait ou traité ?).
 
-*Tableau 33.1 — Extrait du dictionnaire du fichier de production (fictif).*
+*Tableau 33.1. Extrait du dictionnaire du fichier de production (fictif).*
 
 | Colonne | Signification | Unité | Règle de validité |
 |---|---|---|---|
@@ -55,19 +55,19 @@ Chaque indicateur du tableau de bord doit avoir une **fiche** : définition, for
 | Données manquantes ignorées | Mois avec une journée absente | Signaler la couverture |
 | Unités mélangées | t et kt dans un même total | Dictionnaire de données |
 
-### D. Démonstration guidée — Le tableau de bord mensuel de direction
+### D. Démonstration guidée : Le tableau de bord mensuel de direction
 
-**Étape 1 — Cadrer.** Nadine liste 12 indicateurs avec la direction (production, coûts, sécurité, environnement, social), rédige leurs fiches et le dictionnaire des fichiers.
+**Étape 1. Cadrer.** Nadine liste 12 indicateurs avec la direction (production, coûts, sécurité, environnement, social), rédige leurs fiches et le dictionnaire des fichiers.
 
-**Étape 2 — Créer un projet** « Tableau de bord mensuel » contenant les fiches d'indicateurs, les dictionnaires et les instructions (prompt 33.1).
+**Étape 2. Créer un projet** « Tableau de bord mensuel » contenant les fiches d'indicateurs, les dictionnaires et les instructions (prompt 33.1).
 
-**Étape 3 — Chaque mois** : déposer les fichiers du mois ; lancer le profil ; décider des corrections ; lancer les calculs ; produire l'artefact de tableau de bord (chapitre 15) ; vérifier ; diffuser.
+**Étape 3. Chaque mois** : déposer les fichiers du mois ; lancer le profil ; décider des corrections ; lancer les calculs ; produire l'artefact de tableau de bord (chapitre 15) ; vérifier ; diffuser.
 
-**Étape 4 — Conserver** le code de calcul : au fil des mois, Nadine demande à Claude de stabiliser le code dans un script réutilisable (éventuellement avec Claude Code par l'équipe données), ce qui rend le calcul identique d'un mois à l'autre.
+**Étape 4. Conserver** le code de calcul : au fil des mois, Nadine demande à Claude de stabiliser le code dans un script réutilisable (éventuellement avec Claude Code par l'équipe données), ce qui rend le calcul identique d'un mois à l'autre.
 
 ### E. Prompts commentés
 
-**Prompt 33.1 — Instructions du projet « Tableau de bord »**
+**Prompt 33.1. Instructions du projet « Tableau de bord »**
 
 ```text
 RÔLE : tu assistes la contrôleuse de gestion de MCC pour le tableau de bord mensuel de direction.
@@ -81,7 +81,7 @@ MÉTHODE OBLIGATOIRE :
 FORMAT : artefact tableau de bord + tableau des 12 indicateurs (valeur, budget, écart, tendance 3 mois, statut).
 ```
 
-**Prompt 33.2 — Stabiliser le code**
+**Prompt 33.2. Stabiliser le code**
 
 ```text
 Rassemble les calculs que tu as réalisés ce mois-ci dans un script Python unique, commenté,
@@ -142,4 +142,4 @@ Le tableau de bord affiche une récupération mensuelle de 89,2 %, calculée com
 9. **(Application)** Citez trois contrôles automatiques à intégrer dans un script de tableau de bord.
 10. **(Compréhension)** Quelle est la différence entre « usage » et « méthode » ?
 
-<div class="carnet" titre="Chapitre 33 — Analyser des données, exploiter des fichiers et construire des tableaux de bord"></div>
+<div class="carnet" titre="Chapitre 33. Analyser des données, exploiter des fichiers et construire des tableaux de bord"></div>

@@ -1,10 +1,10 @@
-## Chapitre 3 — Comprendre les grands modèles de langage
+## Chapitre 3. Comprendre les grands modèles de langage
 
 ### A. Mise en situation professionnelle
 
 Ruth Mbuyi, comptable principale de MCC, a demandé à Claude de calculer le total d'une colonne de 180 montants copiés depuis un export comptable. Le résultat semblait juste… mais différait de 312 USD du total calculé par le tableur. Le même jour, son collègue Olivier Kanku a obtenu de Claude une excellente analyse d'un article de loi fiscale, nuancée et bien structurée.
 
-Comment un même outil peut-il exceller dans l'analyse d'un texte juridique et commettre une erreur sur une simple addition ? Pour le comprendre — et pour savoir quand faire confiance —, il faut ouvrir le capot des **grands modèles de langage**.
+Comment un même outil peut-il exceller dans l'analyse d'un texte juridique et commettre une erreur sur une simple addition ? Pour le comprendre, et pour savoir quand faire confiance, il faut ouvrir le capot des **grands modèles de langage**.
 
 ### B. Objectifs d'apprentissage
 
@@ -23,7 +23,7 @@ Comment un même outil peut-il exceller dans l'analyse d'un texte juridique et c
 
 Un modèle de langage ne lit pas des mots comme nous. Il découpe le texte en **tokens** : des fragments de texte (un mot entier, une partie de mot, un signe de ponctuation, un chiffre). Chaque token est converti en identifiant numérique, puis en une représentation mathématique que le modèle peut traiter.
 
-![Figure 3.1 — Le texte est découpé en tokens avant d'être traité. Découpage illustratif : le découpage réel dépend de l'outil de découpage (« tokenizer ») propre à chaque modèle. Illustration réalisée pour cet ouvrage.](02_ILLUSTRATIONS/SCHEMAS/fig03_1_tokens.png){width=100%}
+![Figure 3.1. Le texte est découpé en tokens avant d'être traité. Découpage illustratif : le découpage réel dépend de l'outil de découpage (« tokenizer ») propre à chaque modèle. Illustration réalisée pour cet ouvrage.](02_ILLUSTRATIONS/SCHEMAS/fig03_1_tokens.png){width=100%}
 
 Pourquoi est-ce important pour vous ?
 
@@ -35,7 +35,7 @@ Pourquoi est-ce important pour vous ?
 
 Le principe fondamental d'un grand modèle de langage est simple à énoncer : **à partir d'un texte, il calcule la probabilité de chaque token possible pour la suite, puis en choisit un**. Il recommence ensuite avec le texte prolongé, token après token, jusqu'à produire une réponse complète.
 
-![Figure 3.2 — Prédire la suite. Le modèle calcule une distribution de probabilités sur les tokens possibles. Valeurs illustratives. Illustration réalisée pour cet ouvrage.](02_ILLUSTRATIONS/GRAPHIQUES/fig03_2_probabilites.png){width=85%}
+![Figure 3.2. Prédire la suite. Le modèle calcule une distribution de probabilités sur les tokens possibles. Valeurs illustratives. Illustration réalisée pour cet ouvrage.](02_ILLUSTRATIONS/GRAPHIQUES/fig03_2_probabilites.png){width=85%}
 
 Ce principe explique à la fois les forces et les faiblesses des modèles :
 
@@ -59,17 +59,17 @@ La construction d'un grand modèle de langage comporte, de manière simplifiée,
 1. **Le pré-entraînement** : le modèle apprend à prédire la suite de textes sur un très grand corpus. Il acquiert ainsi la langue, des connaissances générales et des capacités de raisonnement.
 2. **L'ajustement** : le modèle est ensuite entraîné à se comporter en assistant utile, honnête et inoffensif, notamment à partir de retours humains et, chez Anthropic, de principes écrits. Cette méthode, dite d'**IA constitutionnelle**, a été décrite dans un article de recherche de 2022 [@BAI-2022] ; Anthropic publie par ailleurs la « constitution » qui décrit les valeurs et le comportement visés pour Claude [@ANT-CONSTIT].
 
-Conséquence importante : les connaissances d'un modèle s'arrêtent à une **date limite d'entraînement**. Pour les modèles Claude actuels, la documentation indique une date limite de connaissances fiables de juin 2026 [@ANT-MODELS]. Tout ce qui s'est passé après — nouveau décret, nouveau prix des métaux, nouvelle norme — est inconnu du modèle, sauf si vous le lui fournissez ou s'il utilise un outil de recherche Web.
+Conséquence importante : les connaissances d'un modèle s'arrêtent à une **date limite d'entraînement**. Pour les modèles Claude actuels, la documentation indique une date limite de connaissances fiables de juin 2026 [@ANT-MODELS]. Tout ce qui s'est passé après (nouveau décret, nouveau prix des métaux, nouvelle norme) est inconnu du modèle, sauf si vous le lui fournissez ou s'il utilise un outil de recherche Web.
 
 #### C.4. La fenêtre de contexte : la mémoire de travail
 
 La **fenêtre de contexte** est la quantité maximale de texte (en tokens) que le modèle peut prendre en compte en une fois : vos instructions, les documents joints, l'historique de la conversation et la réponse en cours. Les modèles Claude actuels disposent d'une fenêtre d'un million de tokens et peuvent produire jusqu'à 128 000 tokens en sortie via l'API [@ANT-MODELS; @ANT-CTX].
 
-![Figure 3.3 — La fenêtre de contexte. Tout ce qui est utile à la réponse doit s'y trouver ; ce qui est hors de la fenêtre n'existe pas pour le modèle. Illustration réalisée pour cet ouvrage.](02_ILLUSTRATIONS/SCHEMAS/fig03_3_fenetre_contexte.png){width=95%}
+![Figure 3.3. La fenêtre de contexte. Tout ce qui est utile à la réponse doit s'y trouver ; ce qui est hors de la fenêtre n'existe pas pour le modèle. Illustration réalisée pour cet ouvrage.](02_ILLUSTRATIONS/SCHEMAS/fig03_3_fenetre_contexte.png){width=95%}
 
 Trois conséquences pratiques :
 
-- **Le modèle ne se souvient pas spontanément** de vos conversations précédentes. Ce qu'il « sait » de votre situation est ce qui figure dans la fenêtre — ou ce que les fonctions de mémoire et de projets y ajoutent (chapitres 12 et 15).
+- **Le modèle ne se souvient pas spontanément** de vos conversations précédentes. Ce qu'il « sait » de votre situation est ce qui figure dans la fenêtre, ou ce que les fonctions de mémoire et de projets y ajoutent (chapitres 12 et 15).
 - **Une fenêtre très grande ne garantit pas une attention parfaite** : plus elle est chargée d'informations peu pertinentes, plus le risque est grand qu'un détail important soit négligé. Fournissez des documents ciblés.
 - **Les longues conversations s'alourdissent** : il est souvent préférable de repartir d'une nouvelle conversation avec un résumé (chapitre 12).
 
@@ -91,9 +91,9 @@ Un modèle **multimodal** traite plusieurs types de données. Les modèles Claud
 L'analyse d'image a des limites : une photographie floue, une échelle absente ou un plan de faible résolution peuvent conduire à des interprétations erronées. Une photo ne remplace jamais une observation de terrain ni une mesure.
 :::
 
-![Figure 3.4 — Ce qui se passe entre votre question et la réponse. Les étapes 2 à 5 sont automatiques ; l'étape 6, la vérification, vous revient toujours. Illustration réalisée pour cet ouvrage.](02_ILLUSTRATIONS/SCHEMAS/fig03_4_traitement_instruction.png){width=100%}
+![Figure 3.4. Ce qui se passe entre votre question et la réponse. Les étapes 2 à 5 sont automatiques ; l'étape 6, la vérification, vous revient toujours. Illustration réalisée pour cet ouvrage.](02_ILLUSTRATIONS/SCHEMAS/fig03_4_traitement_instruction.png){width=100%}
 
-### D. Démonstration guidée — Mettre en évidence les forces et les faiblesses
+### D. Démonstration guidée : Mettre en évidence les forces et les faiblesses
 
 Ruth reproduit l'expérience en quatre temps pour former son équipe.
 
@@ -106,7 +106,7 @@ Conclusion pour l'équipe : **Claude est très performant sur le langage ; pour 
 
 ### E. Prompts commentés
 
-**Prompt 3.1 — Calcul fiable sur un fichier**
+**Prompt 3.1. Calcul fiable sur un fichier**
 
 ```text
 Voici le fichier joint [MCC_bons_de_commande.csv] (séparateur point-virgule ;
@@ -121,7 +121,7 @@ Ne fais aucun calcul « de tête » : tous les chiffres doivent provenir du prog
 
 *Commentaire.* Les consignes 2 et 3 rendent le calcul **auditable** : vous pouvez vérifier que toutes les lignes ont été prises en compte et relire le code.
 
-**Prompt 3.2 — Tester les connaissances du modèle sur un sujet évolutif**
+**Prompt 3.2. Tester les connaissances du modèle sur un sujet évolutif**
 
 ```text
 Avant de répondre, indique ta date limite de connaissances et si la question
@@ -131,7 +131,7 @@ Si l'information peut avoir évolué, dis-le clairement et indique quelle source
 officielle je dois consulter pour la vérifier.
 ```
 
-**Prompt 3.3 — Faire analyser une image**
+**Prompt 3.3. Faire analyser une image**
 
 ```text
 Voici la photographie d'un front de taille de la fosse Mbiyo Nord.
@@ -143,21 +143,21 @@ l'interprétation. Ne conclus pas sur la teneur.
 
 ### F. Exercices pratiques
 
-**Exercice 3.1 (guidé) — Les deux additions**
+**Exercice 3.1 (guidé) : Les deux additions**
 
 Avec le fichier `MCC_production_journaliere_S1_2026.csv`, demandez à Claude : (a) le total de la colonne `cathode_Cu_t` pour janvier, sans outil, en collant les valeurs ; (b) le même total en joignant le fichier et en exigeant l'exécution de code. Comparez avec votre tableur. Notez le nombre de lignes et les éventuelles anomalies signalées.
 
-**Exercice 3.2 (guidé) — Mesurer la taille d'un document**
+**Exercice 3.2 (guidé) : Mesurer la taille d'un document**
 
 Estimez le nombre de tokens d'un de vos rapports habituels (rappel : environ 555 000 mots pour un million de tokens avec les modèles actuels, soit un ordre de grandeur de 1,8 token par mot). Combien de rapports de ce type tiendraient dans la fenêtre de contexte ? Pourquoi n'est-il pas forcément judicieux de tous les joindre ?
 
-**Exercice 3.3 (autonome) — L'IA expliquée en cinq minutes**
+**Exercice 3.3 (autonome) : L'IA expliquée en cinq minutes**
 
 Préparez une présentation orale de cinq minutes pour une causerie avec votre équipe : tokens, prédiction, fenêtre de contexte, date limite de connaissances, outils. Utilisez un exemple tiré de votre métier pour chaque notion.
 
 ### G. Livrable professionnel
 
-**Fiche réflexe « Comment Claude fonctionne — ce que cela change pour moi »** (une page), contenant pour chaque notion du chapitre la règle pratique associée. Exemple :
+**Fiche réflexe « Comment Claude fonctionne : ce que cela change pour moi »** (une page), contenant pour chaque notion du chapitre la règle pratique associée. Exemple :
 
 | Notion | Ce que cela implique | Ma règle pratique |
 |---|---|---|
@@ -195,7 +195,7 @@ Vous demandez la teneur moyenne pondérée de cinq passes de sondage. Claude fai
 4. **Chiffres recopiés** → contrôle par échantillonnage.
 5. **Image** → contexte, échelle et prudence d'interprétation.
 
-**Prompt réutilisable 3.4 — Réponse ancrée dans un document**
+**Prompt réutilisable 3.4 : Réponse ancrée dans un document**
 
 ```text
 Réponds uniquement à partir du document joint. Pour chaque affirmation,
@@ -217,4 +217,4 @@ Question : [votre question]
 9. **(Compréhension)** Qu'est-ce que la multimodalité ? Donnez deux exemples d'usage minier.
 10. **(Application)** Citez deux moyens de rendre auditable un calcul réalisé avec Claude.
 
-<div class="carnet" titre="Chapitre 3 — Comprendre les grands modèles de langage"></div>
+<div class="carnet" titre="Chapitre 3. Comprendre les grands modèles de langage"></div>

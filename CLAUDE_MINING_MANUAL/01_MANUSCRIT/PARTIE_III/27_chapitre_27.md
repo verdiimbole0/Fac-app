@@ -1,4 +1,4 @@
-## Chapitre 27 — Claude appliqué au droit minier, à la réglementation et à la conformité
+## Chapitre 27. Claude appliqué au droit minier, à la réglementation et à la conformité
 
 ### A. Mise en situation professionnelle
 
@@ -14,11 +14,11 @@ Me Henriette Ngoy, juriste principale de MCC, doit mettre à jour le **registre 
 4. **Préparer** une correspondance avec l'administration.
 5. **Identifier** les limites de l'usage de l'IA dans le travail juridique (secret, responsabilité, actualité des textes).
 
-### C. Comprendre avant de pratiquer — Profil du métier
+### C. Comprendre avant de pratiquer : Profil du métier
 
 Le cadre minier congolais repose notamment sur la loi n° 007/2002 portant Code minier, modifiée et complétée par la loi n° 18/001 du 9 mars 2018, publiée au Journal officiel (numéro spécial du 28 mars 2018), et sur le règlement minier, lui-même modifié en 2018 [@RDC-CODE-2018]. S'y ajoutent les obligations de transparence de la Norme ITIE 2023, mise en œuvre en RDC [@EITI-2023; @EITI-RDC], et, pour la chaîne d'approvisionnement, le guide de l'OCDE sur le devoir de diligence [@OECD-DDG].
 
-*Tableau 27.1 — Profil de la fonction juridique et conformité.*
+*Tableau 27.1. Profil de la fonction juridique et conformité.*
 
 | Dimension | Contenu |
 |---|---|
@@ -39,11 +39,11 @@ Le cadre minier congolais repose notamment sur la loi n° 007/2002 portant Code 
 **Actualité des textes.** Un modèle de langage peut ignorer une modification récente ou confondre des versions. Travaillez **toujours** à partir du texte officiel fourni, dans sa version en vigueur, et vérifiez qu'aucun texte postérieur ne l'a modifié.
 :::
 
-![Figure 27.1 — Veille réglementaire et conformité assistées : les sources officielles et l'interprétation restent du ressort du juriste. Illustration réalisée pour cet ouvrage.](02_ILLUSTRATIONS/SCHEMAS/fig27_1_veille_reglementaire.png){width=100%}
+![Figure 27.1. Veille réglementaire et conformité assistées : les sources officielles et l'interprétation restent du ressort du juriste. Illustration réalisée pour cet ouvrage.](02_ILLUSTRATIONS/SCHEMAS/fig27_1_veille_reglementaire.png){width=100%}
 
-### D. Démonstration guidée — Cas d'usage
+### D. Démonstration guidée : Cas d'usage
 
-#### Cas d'usage 27.1 — Registre des obligations à partir des textes officiels
+#### Cas d'usage 27.1. Registre des obligations à partir des textes officiels
 
 **1. Problème.** Le registre des obligations est incomplet et non sourcé.
 
@@ -76,7 +76,7 @@ renvoi à un autre texte | service concerné (proposition).
 | N° | Article | Obligation (citation) | Échéance | Renvoi | Service |
 |---|---|---|---|---|---|
 | 1 | [art.] | « … » | annuelle | décret d'application | Juridique / Finance |
-| 2 | [art.] | « … » | avant le début des travaux | — | Environnement |
+| 2 | [art.] | « … » | avant le début des travaux |  | Environnement |
 
 *(Les cellules sont remplies à partir du texte officiel fourni lors de l'exercice ; le livre ne reproduit pas d'article non vérifié.)*
 
@@ -88,7 +88,7 @@ renvoi à un autre texte | service concerné (proposition).
 
 **12. Livrable.** Registre des obligations sourcé, validé, avec échéancier et responsables.
 
-#### Cas d'usage 27.2 — Revue des contrats de sous-traitance
+#### Cas d'usage 27.2. Revue des contrats de sous-traitance
 
 **1. Problème.** Vingt contrats de sous-traitance à revoir avant renouvellement, au regard du contrat type et de la politique de l'entreprise (HSE, droits humains, confidentialité, contenu local, anticorruption).
 
@@ -120,17 +120,17 @@ N'émets pas d'avis sur la validité juridique ; signale les clauses inhabituell
 
 **12. Livrable.** Fiche de revue par contrat et tableau de synthèse des vingt contrats.
 
-#### Cas d'usage 27.3 — Note de veille sur un nouveau texte (condensé)
+#### Cas d'usage 27.3. Note de veille sur un nouveau texte (condensé)
 
 Lorsqu'un nouveau texte est publié, Claude produit, à partir du texte officiel fourni : résumé, dispositions nouvelles, dispositions modifiées (comparaison avec l'ancienne version fournie), obligations nouvelles et échéances, services concernés, questions d'interprétation à instruire. La juriste valide et diffuse.
 
-#### Cas d'usage 27.4 — Réponse à un courrier de l'administration (condensé)
+#### Cas d'usage 27.4. Réponse à un courrier de l'administration (condensé)
 
 Claude analyse le courrier (demandes, délais, références citées), dresse la liste des pièces à réunir, et rédige un projet de réponse factuel, structuré point par point, à partir des éléments fournis par les services. La juriste vérifie chaque affirmation et la direction signe.
 
 ### E. Prompts commentés
 
-**Prompt 27.1 — Comparer deux versions d'un texte**
+**Prompt 27.1. Comparer deux versions d'un texte**
 
 ```text
 Voici l'ancienne version <v1> … </v1> et la nouvelle version <v2> … </v2> d'un texte.
@@ -191,4 +191,4 @@ C'est l'exemple du chapitre 5 : sans texte fourni, un assistant peut citer un ar
 9. **(Analyse critique)** Pourquoi la comparaison de versions est-elle une bonne tâche pour Claude, et l'avis juridique une mauvaise ?
 10. **(Application)** Citez trois rubriques d'une note de veille réglementaire.
 
-<div class="carnet" titre="Chapitre 27 — Claude appliqué au droit minier, à la réglementation et à la conformité"></div>
+<div class="carnet" titre="Chapitre 27. Claude appliqué au droit minier, à la réglementation et à la conformité"></div>

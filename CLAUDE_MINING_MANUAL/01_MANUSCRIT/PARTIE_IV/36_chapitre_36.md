@@ -1,8 +1,8 @@
-## Chapitre 36 — Construire des workflows professionnels assistés par l'intelligence artificielle
+## Chapitre 36. Construire des workflows professionnels assistés par l'intelligence artificielle
 
 ### A. Mise en situation professionnelle
 
-Grace Nsimba veut aller plus loin que l'assistant HSE : chaque fin de mois, le rapport HSE doit être produit selon un **processus** fixe — collecte, calculs, rédaction, contrôles, validation, diffusion —, avec des responsabilités claires et une trace de chaque étape. Elle veut savoir quelles étapes peuvent être automatisées (tâche planifiée, scripts), lesquelles assistées, et lesquelles doivent rester strictement humaines.
+Grace Nsimba veut aller plus loin que l'assistant HSE : chaque fin de mois, le rapport HSE doit être produit selon un **processus** fixe (collecte, calculs, rédaction, contrôles, validation, diffusion) avec des responsabilités claires et une trace de chaque étape. Elle veut savoir quelles étapes peuvent être automatisées (tâche planifiée, scripts), lesquelles assistées, et lesquelles doivent rester strictement humaines.
 
 ### B. Objectifs d'apprentissage
 
@@ -30,39 +30,39 @@ Plus le niveau d'automatisation est élevé, plus les tests, la surveillance et 
 
 Une **porte de validation** est un point du workflow où un humain désigné vérifie un résultat selon des critères définis avant que le processus continue. Elle est placée : après tout calcul utilisé pour décider ; avant toute diffusion externe ; avant toute action irréversible (envoi, modification d'un système) ; après toute étape à fort risque d'erreur.
 
-![Figure 36.1 — Workflow assisté avec trois portes de validation humaine : aucune diffusion sans franchissement des trois portes ; retour en arrière en cas d'anomalie. Illustration réalisée pour cet ouvrage.](02_ILLUSTRATIONS/SCHEMAS/fig36_1_workflow_portes.png){width=100%}
+![Figure 36.1. Workflow assisté avec trois portes de validation humaine : aucune diffusion sans franchissement des trois portes ; retour en arrière en cas d'anomalie. Illustration réalisée pour cet ouvrage.](02_ILLUSTRATIONS/SCHEMAS/fig36_1_workflow_portes.png){width=100%}
 
 #### C.3. Agents et autonomie
 
 Les outils comme Cowork ou Claude Code peuvent enchaîner plusieurs étapes de manière autonome (lire des fichiers, exécuter du code, produire des documents). La documentation de Claude Code souligne l'importance de donner à l'agent des moyens de **vérifier** son propre travail (tests, contrôles) [@ANT-CODE-BP], et le centre d'aide consacre un article à l'utilisation sûre de Cowork [@ANT-HC-COWORK]. Pour un workflow d'entreprise, la règle est simple : **l'autonomie de l'outil s'arrête aux portes de validation**.
 
-### D. Démonstration guidée — Le workflow du rapport HSE mensuel
+### D. Démonstration guidée : Le workflow du rapport HSE mensuel
 
-**Étape 1 — Cartographie actuelle.** Grace décrit le processus actuel : 9 étapes, 4 personnes, environ 16 heures par mois (mesurées sur deux mois).
+**Étape 1. Cartographie actuelle.** Grace décrit le processus actuel : 9 étapes, 4 personnes, environ 16 heures par mois (mesurées sur deux mois).
 
-**Étape 2 — Conception du nouveau workflow.**
+**Étape 2. Conception du nouveau workflow.**
 
 | Étape | Qui / quoi | Niveau | Trace |
 |---|---|---|---|
 | 1. Extraction du registre (fin de mois) | Tâche planifiée (Cowork) ou script | Semi-automatisé | Fichier daté |
 | 2. Profil et contrôles des données | Assistant HSE (code) | Assisté | Journal des anomalies |
-| **Porte 1** — contrôle des données et des calculs | Technicien HSE | Humain | Visa |
+| **Porte 1** : contrôle des données et des calculs | Technicien HSE | Humain | Visa |
 | 3. Calcul des indicateurs et graphiques | Assistant HSE (code stabilisé) | Assisté | Script versionné |
 | 4. Rédaction du rapport au format | Assistant HSE (compétence « rapport mensuel ») | Assisté | Version 0 |
-| **Porte 2** — relecture métier | Responsable HSE | Humain | Commentaires |
+| **Porte 2** : relecture métier | Responsable HSE | Humain | Commentaires |
 | 5. Corrections | Assistant + responsable | Assisté | Version 1 |
-| **Porte 3** — validation | Directeur des opérations | Humain | Signature |
+| **Porte 3** : validation | Directeur des opérations | Humain | Signature |
 | 6. Diffusion et archivage | Responsable HSE | Humain | Système documentaire |
 
-**Étape 3 — Procédure et RACI** rédigés avec Claude (prompt 36.2), validés par le système de management.
+**Étape 3. Procédure et RACI** rédigés avec Claude (prompt 36.2), validés par le système de management.
 
-**Étape 4 — Pilote** sur trois mois, avec mesure du temps et des erreurs détectées aux portes.
+**Étape 4. Pilote** sur trois mois, avec mesure du temps et des erreurs détectées aux portes.
 
-**Étape 5 — Bilan (fictif).** Temps mensuel passé de 16 à 7 heures (mesure sur trois mois) ; deux anomalies de données détectées à la porte 1 ; une formulation suggérant une cause corrigée à la porte 2. Le workflow est adopté, avec une revue semestrielle.
+**Étape 5. Bilan (fictif).** Temps mensuel passé de 16 à 7 heures (mesure sur trois mois) ; deux anomalies de données détectées à la porte 1 ; une formulation suggérant une cause corrigée à la porte 2. Le workflow est adopté, avec une revue semestrielle.
 
 ### E. Prompts commentés
 
-**Prompt 36.1 — Analyse d'un processus existant**
+**Prompt 36.1. Analyse d'un processus existant**
 
 ```text
 Voici la description de notre processus actuel de [processus] : <processus> … </processus>.
@@ -72,7 +72,7 @@ risque d'erreur, conséquences d'une erreur. Propose ensuite un workflow cible i
 en justifiant. Aucune étape de décision ou de diffusion externe ne peut être automatisée.
 ```
 
-**Prompt 36.2 — Procédure et RACI**
+**Prompt 36.2. Procédure et RACI**
 
 ```text
 À partir du workflow cible validé ci-dessous, rédige la procédure au format de notre système
@@ -134,4 +134,4 @@ Après trois mois sans anomalie, l'équipe commence à « valider » la porte 1 
 9. **(QCM)** Quel outil convient pour une extraction mensuelle planifiée ? a) Cowork (tâche planifiée) ou script ; b) le mode incognito ; c) la mémoire ; d) un compte personnel.
 10. **(Application)** Citez trois éléments de traçabilité d'un workflow.
 
-<div class="carnet" titre="Chapitre 36 — Construire des workflows professionnels assistés par l'intelligence artificielle"></div>
+<div class="carnet" titre="Chapitre 36. Construire des workflows professionnels assistés par l'intelligence artificielle"></div>

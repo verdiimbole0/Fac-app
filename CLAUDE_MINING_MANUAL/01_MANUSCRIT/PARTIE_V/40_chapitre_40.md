@@ -1,4 +1,4 @@
-## Chapitre 40 — Déployer une politique d'utilisation de l'intelligence artificielle dans une entreprise minière
+## Chapitre 40. Déployer une politique d'utilisation de l'intelligence artificielle dans une entreprise minière
 
 ### A. Mise en situation professionnelle
 
@@ -18,7 +18,7 @@ Janvier 2026 : Aline Mujinga lance le programme « MCC-IA 2026 ». Elle sait que
 
 #### C.1. Les cadres de référence
 
-- **NIST AI RMF** : quatre fonctions — gouverner (culture, rôles, politiques), cartographier (contextes et risques), mesurer (évaluation), gérer (traitement des risques) [@NIST-RMF] ; complété par un profil spécifique à l'IA générative [@NIST-GAI].
+- **NIST AI RMF** : quatre fonctions : gouverner (culture, rôles, politiques), cartographier (contextes et risques), mesurer (évaluation), gérer (traitement des risques) [@NIST-RMF] ; complété par un profil spécifique à l'IA générative [@NIST-GAI].
 - **ISO/IEC 42001:2023** : exigences d'un système de management de l'IA, certifiable [@ISO-42001].
 - **Règlement (UE) 2024/1689** sur l'intelligence artificielle : approche par niveaux de risque ; pertinent pour les entreprises qui opèrent avec l'Union européenne ou y vendent [@EU-AIACT].
 - **Politique d'utilisation d'Anthropic** : normes d'usage universelles et exigences supplémentaires pour les cas d'usage à haut risque, applicables aux utilisateurs de Claude [@ANT-AUP].
@@ -26,7 +26,7 @@ Janvier 2026 : Aline Mujinga lance le programme « MCC-IA 2026 ». Elle sait que
 
 #### C.2. La gouvernance
 
-![Figure 40.1 — Gouvernance de l'IA à MCC : conseil, comité de pilotage, référent IA, informatique, juridique, propriétaires métier et audit interne. Organisation fictive inspirée de la fonction « Gouverner » du NIST AI RMF. Illustration réalisée pour cet ouvrage.](02_ILLUSTRATIONS/SCHEMAS/fig40_1_gouvernance_ia.png){width=100%}
+![Figure 40.1. Gouvernance de l'IA à MCC : conseil, comité de pilotage, référent IA, informatique, juridique, propriétaires métier et audit interne. Organisation fictive inspirée de la fonction « Gouverner » du NIST AI RMF. Illustration réalisée pour cet ouvrage.](02_ILLUSTRATIONS/SCHEMAS/fig40_1_gouvernance_ia.png){width=100%}
 
 #### C.3. Les composants de la politique
 
@@ -34,15 +34,15 @@ Janvier 2026 : Aline Mujinga lance le programme « MCC-IA 2026 ». Elle sait que
 |---|---|---|
 | Charte d'utilisation | Principes, usages autorisés, interdits, responsabilités, sanctions | F |
 | Classification des données | 4 niveaux, règles par niveau | G |
-| Outils autorisés | Offres, comptes, connecteurs, extensions validés | — |
-| Registre des cas d'usage | Cas validés, propriétaires, risques, contrôles | — |
+| Outils autorisés | Offres, comptes, connecteurs, extensions validés |  |
+| Registre des cas d'usage | Cas validés, propriétaires, risques, contrôles |  |
 | Formation | Parcours obligatoire avant accès ; parcours avancés | J, K |
-| Gestion des incidents | Signalement, analyse, correction | — |
-| Contrôle | Indicateurs, audits, revue annuelle | — |
+| Gestion des incidents | Signalement, analyse, correction |  |
+| Contrôle | Indicateurs, audits, revue annuelle |  |
 
 #### C.4. Le déploiement progressif
 
-![Figure 40.2 — Feuille de route type de déploiement (calendrier illustratif). Illustration réalisée pour cet ouvrage.](02_ILLUSTRATIONS/GRAPHIQUES/fig40_2_feuille_de_route.png){width=95%}
+![Figure 40.2. Feuille de route type de déploiement (calendrier illustratif). Illustration réalisée pour cet ouvrage.](02_ILLUSTRATIONS/GRAPHIQUES/fig40_2_feuille_de_route.png){width=95%}
 
 1. **Cadrage (mois 0-2)** : gouvernance, charte, classification, choix de l'offre, contrat.
 2. **Pilote (mois 2-6)** : 40 utilisateurs, 8 services, cas d'usage à faible risque, mesures avant/après.
@@ -50,7 +50,7 @@ Janvier 2026 : Aline Mujinga lance le programme « MCC-IA 2026 ». Elle sait que
 4. **Extension par vagues (mois 8-14)** : nouveaux services, assistants spécialisés, premiers workflows.
 5. **Amélioration continue** : revue annuelle, audit interne, mise à jour des règles.
 
-### D. Démonstration guidée — Construire la politique de MCC
+### D. Démonstration guidée : Construire la politique de MCC
 
 1. **Constat** : enquête anonyme auprès des cadres sur les usages actuels de l'IA (dont l'usage de comptes personnels).
 2. **Comité de pilotage** : DG, DAF, HSE, juridique, informatique, RH ; référent IA désigné.
@@ -63,7 +63,7 @@ Janvier 2026 : Aline Mujinga lance le programme « MCC-IA 2026 ». Elle sait que
 
 ### E. Prompts commentés
 
-**Prompt 40.1 — Adapter la charte modèle**
+**Prompt 40.1. Adapter la charte modèle**
 
 ```text
 Voici notre modèle de charte d'utilisation de l'IA (Annexe F) et notre contexte : [taille, activités,
@@ -74,7 +74,7 @@ au regard du droit applicable (travail, données personnelles, réglementation b
 Présente les modifications en mode révision.
 ```
 
-**Prompt 40.2 — Indicateurs de pilotage**
+**Prompt 40.2. Indicateurs de pilotage**
 
 ```text
 Propose 10 indicateurs de pilotage d'un programme d'IA générative dans une entreprise minière,
@@ -135,4 +135,4 @@ Un projet de charte rédigé par un assistant d'IA peut citer des obligations «
 9. **(Analyse critique)** Pourquoi le déploiement progressif est-il préférable à un déploiement général immédiat ?
 10. **(Compréhension)** À quelles entreprises le règlement européen sur l'IA est-il particulièrement pertinent ?
 
-<div class="carnet" titre="Chapitre 40 — Déployer une politique d'utilisation de l'intelligence artificielle dans une entreprise minière"></div>
+<div class="carnet" titre="Chapitre 40. Déployer une politique d'utilisation de l'intelligence artificielle dans une entreprise minière"></div>

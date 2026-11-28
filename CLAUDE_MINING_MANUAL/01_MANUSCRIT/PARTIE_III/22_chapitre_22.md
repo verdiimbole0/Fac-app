@@ -1,10 +1,10 @@
-## Chapitre 22 — Claude appliqué à la maintenance et à la gestion des équipements
+## Chapitre 22. Claude appliqué à la maintenance et à la gestion des équipements
 
 ### A. Mise en situation professionnelle
 
-Didier Mukendi, responsable maintenance de MCC, est convoqué par le directeur des opérations après l'incident de la rampe R3 : le camion CAM-07 a glissé au freinage, et la maintenance a trouvé une fuite sur un flexible du circuit de freinage. « Ce camion a eu combien d'interventions hydrauliques cette année ? Pourquoi n'a-t-on rien vu venir ? » Didier sait que la réponse est dans la GMAO — 420 ordres de travail en dix mois, avec des descriptions en texte libre de qualité variable. Il lui faut une analyse fiable, rapide, et un plan d'action argumenté.
+Didier Mukendi, responsable maintenance de MCC, est convoqué par le directeur des opérations après l'incident de la rampe R3 : le camion CAM-07 a glissé au freinage, et la maintenance a trouvé une fuite sur un flexible du circuit de freinage. « Ce camion a eu combien d'interventions hydrauliques cette année ? Pourquoi n'a-t-on rien vu venir ? » Didier sait que la réponse est dans la GMAO : 420 ordres de travail en dix mois, avec des descriptions en texte libre de qualité variable. Il lui faut une analyse fiable, rapide, et un plan d'action argumenté.
 
-![Figure 22.1 — Camion de transport minier en réparation dans un atelier de maintenance. Titre original : « Haul truck under repair at Brockman 4, September 2018 ». Auteur : Calistemon. Source : Wikimedia Commons, [https://commons.wikimedia.org/wiki/File:Haul_truck_under_repair_at_Brockman_4,_September_2018.jpg](https://commons.wikimedia.org/wiki/File:Haul_truck_under_repair_at_Brockman_4,_September_2018.jpg) (consulté le 16/11/2026). Licence : [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.fr) ; image redimensionnée pour l'édition. Photographie d'illustration, sans lien avec l'entreprise fictive MCC.](02_ILLUSTRATIONS/PHOTOGRAPHIES/photo_camion_maintenance.jpg){width=78%}
+![Figure 22.1. Camion de transport minier en réparation dans un atelier de maintenance. Titre original : « Haul truck under repair at Brockman 4, September 2018 ». Auteur : Calistemon. Source : Wikimedia Commons, [https://commons.wikimedia.org/wiki/File:Haul_truck_under_repair_at_Brockman_4,_September_2018.jpg](https://commons.wikimedia.org/wiki/File:Haul_truck_under_repair_at_Brockman_4,_September_2018.jpg) (consulté le 16/11/2026). Licence : [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.fr) ; image redimensionnée pour l'édition. Photographie d'illustration, sans lien avec l'entreprise fictive MCC.](02_ILLUSTRATIONS/PHOTOGRAPHIES/photo_camion_maintenance.jpg){width=78%}
 
 ### B. Objectifs d'apprentissage
 
@@ -16,9 +16,9 @@ Didier Mukendi, responsable maintenance de MCC, est convoqué par le directeur d
 4. **Rédiger** des gammes de maintenance et des ordres de travail clairs.
 5. **Articuler** Claude avec les outils existants (GMAO, maintenance prédictive).
 
-### C. Comprendre avant de pratiquer — Profil du métier
+### C. Comprendre avant de pratiquer : Profil du métier
 
-*Tableau 22.1 — Profil du responsable et du planificateur de maintenance.*
+*Tableau 22.1. Profil du responsable et du planificateur de maintenance.*
 
 | Dimension | Contenu |
 |---|---|
@@ -35,9 +35,9 @@ Didier Mukendi, responsable maintenance de MCC, est convoqué par le directeur d
 La **consignation** (mise en sécurité des énergies avant intervention) et la **remise en service** d'un équipement intéressant la sécurité (freinage, direction, systèmes de levage) relèvent de procédures strictes et de personnes habilitées. Claude peut aider à rédiger ou relire une procédure ; il ne remplace ni la procédure validée ni la vérification sur l'équipement.
 :::
 
-### D. Démonstration guidée — Cas d'usage
+### D. Démonstration guidée : Cas d'usage
 
-#### Cas d'usage 22.1 — Analyse de l'historique et Pareto des arrêts
+#### Cas d'usage 22.1. Analyse de l'historique et Pareto des arrêts
 
 **1. Problème.** Identifier les systèmes et équipements qui concentrent les arrêts, et les défaillances répétitives (cas du CAM-07).
 
@@ -65,7 +65,7 @@ Affiche les tableaux, deux graphiques et le code. Signale les OT exclus et pourq
 
 **8. Exemple de résultat (données fictives).** Sur les OT correctifs, le système hydraulique concentre environ 26 % des heures d'arrêt, devant les pneumatiques (≈ 15 %) et le moteur (≈ 14 %). Le CAM-07 compte 18 interventions, dont 11 hydrauliques, soit environ 63 heures d'arrêt et 29 700 USD sur la période. L'OT-25077, à durée négative, est exclu et signalé.
 
-![Figure 22.2 — Pareto des heures d'arrêt en maintenance corrective par système (données fictives MCC). Graphique réalisé pour cet ouvrage.](02_ILLUSTRATIONS/GRAPHIQUES/fig22_2_pareto_maintenance.png){width=92%}
+![Figure 22.2. Pareto des heures d'arrêt en maintenance corrective par système (données fictives MCC). Graphique réalisé pour cet ouvrage.](02_ILLUSTRATIONS/GRAPHIQUES/fig22_2_pareto_maintenance.png){width=92%}
 
 **9. Contrôle.** Vérification dans la GMAO du nombre d'OT du CAM-07 et des deux plus gros coûts ; correction de l'OT-25077 à la source.
 
@@ -75,7 +75,7 @@ Affiche les tableaux, deux graphiques et le code. Signale les OT exclus et pourq
 
 **12. Livrable.** Rapport mensuel de fiabilité avec Pareto, défaillances répétitives et plan d'analyse.
 
-#### Cas d'usage 22.2 — Préparer l'analyse de défaillance du circuit de freinage du CAM-07
+#### Cas d'usage 22.2. Préparer l'analyse de défaillance du circuit de freinage du CAM-07
 
 **1. Problème.** Une analyse de défaillance (analyse des causes racines) doit être menée par l'équipe maintenance après l'incident.
 
@@ -112,17 +112,17 @@ d'analyse au format MCC ; 6) questions à poser au constructeur.
 
 **12. Livrable.** Dossier préparatoire, puis rapport d'analyse de défaillance rédigé avec l'aide de Claude à partir des conclusions de l'équipe.
 
-#### Cas d'usage 22.3 — Classer les descriptions libres des OT (condensé)
+#### Cas d'usage 22.3. Classer les descriptions libres des OT (condensé)
 
 Claude classe les descriptions en texte libre (« fuite flexible vérin benne », « bruit pont arrière ») selon une liste fermée de modes de défaillance fournie par la maintenance, avec un niveau de confiance et un signalement des cas ambigus, sur le modèle de l'apprentissage par l'exemple (chapitre 11). Résultat : une base plus exploitable pour les analyses de fiabilité. Contrôle par double codage d'un échantillon.
 
-#### Cas d'usage 22.4 — Rédiger une gamme de maintenance préventive (condensé)
+#### Cas d'usage 22.4. Rédiger une gamme de maintenance préventive (condensé)
 
 À partir du manuel constructeur (extraits fournis), des retours d'expérience et des défaillances répétitives, Claude rédige un projet de gamme (opérations, fréquences proposées **par le manuel**, outillage, pièces, points de contrôle, critères d'acceptation). Toute valeur (couple de serrage, pression, intervalle) doit provenir du manuel ; sinon elle est marquée « à confirmer ». Validation par le responsable maintenance et, pour les systèmes de sécurité, par le constructeur ou l'ingénieur compétent.
 
 ### E. Prompts commentés
 
-**Prompt 22.1 — Ordre de travail clair à partir d'un signalement**
+**Prompt 22.1. Ordre de travail clair à partir d'un signalement**
 
 ```text
 Signalement d'un conducteur : « [texte] ». Rédige un projet d'ordre de travail :
@@ -183,4 +183,4 @@ Sollicité pour un intervalle de remplacement de flexibles hydrauliques, un assi
 9. **(Analyse critique)** Pourquoi le Pareto ne suffit-il pas à décider d'un plan d'action ?
 10. **(Application)** Rédigez la règle qui empêche Claude de fixer l'urgence d'un ordre de travail.
 
-<div class="carnet" titre="Chapitre 22 — Claude appliqué à la maintenance et à la gestion des équipements"></div>
+<div class="carnet" titre="Chapitre 22. Claude appliqué à la maintenance et à la gestion des équipements"></div>

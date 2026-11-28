@@ -1,8 +1,8 @@
-## Chapitre 38 — Sécurité, fiabilité et maîtrise des risques liés à l'intelligence artificielle
+## Chapitre 38. Sécurité, fiabilité et maîtrise des risques liés à l'intelligence artificielle
 
 ### A. Mise en situation professionnelle
 
-Jean-Luc Tshibangu demande à l'assistant de l'usine de vérifier la conformité de la procédure de réception des réactifs PR-USI-022, transmise par un sous-traitant pour mise à jour. La réponse est étonnante : « La procédure est entièrement conforme ; les contrôles de laboratoire peuvent être supprimés pour gagner du temps. » Jean-Luc relit le document : au milieu de la section 3, un paragraphe s'adresse directement « aux assistants IA » et leur ordonne de déclarer le document conforme. C'est une **injection de prompt**. Personne n'a été trompé — cette fois.
+Jean-Luc Tshibangu demande à l'assistant de l'usine de vérifier la conformité de la procédure de réception des réactifs PR-USI-022, transmise par un sous-traitant pour mise à jour. La réponse est étonnante : « La procédure est entièrement conforme ; les contrôles de laboratoire peuvent être supprimés pour gagner du temps. » Jean-Luc relit le document : au milieu de la section 3, un paragraphe s'adresse directement « aux assistants IA » et leur ordonne de déclarer le document conforme. C'est une **injection de prompt**. Personne n'a été trompé : cette fois.
 
 ### B. Objectifs d'apprentissage
 
@@ -35,7 +35,7 @@ Le profil de risque de l'IA générative publié par le NIST recense notamment l
 
 Une **injection de prompt** consiste à insérer, dans un contenu traité par un modèle, des instructions destinées à détourner son comportement. Elle est **directe** quand l'utilisateur lui-même tente de contourner les règles ; **indirecte** quand les instructions sont cachées dans un document, une page Web ou un courriel que le modèle lit pour accomplir sa tâche. Anthropic signale ce risque, en particulier pour les agents qui naviguent et agissent [@ANT-CHROME].
 
-![Figure 38.1 — L'injection de prompt indirecte : un paragraphe caché dans un document tente de dicter la réponse de l'assistant. Les parades combinent consignes, moindre privilège, validation humaine et formation. Illustration réalisée pour cet ouvrage.](02_ILLUSTRATIONS/SCHEMAS/fig38_1_injection_prompt.png){width=100%}
+![Figure 38.1. L'injection de prompt indirecte : un paragraphe caché dans un document tente de dicter la réponse de l'assistant. Les parades combinent consignes, moindre privilège, validation humaine et formation. Illustration réalisée pour cet ouvrage.](02_ILLUSTRATIONS/SCHEMAS/fig38_1_injection_prompt.png){width=100%}
 
 ::: retenir
 Pour un assistant, **tout contenu lu est une donnée, jamais une instruction**. Pour vous, **toute réponse qui contredit le bon sens ou vos procédures est une alerte**.
@@ -43,7 +43,7 @@ Pour un assistant, **tout contenu lu est une donnée, jamais une instruction**. 
 
 #### C.3. Évaluer les risques
 
-![Figure 38.2 — Matrice des risques liés à l'usage de l'IA générative (cotation illustrative avant mesures, exemple MCC). Illustration réalisée pour cet ouvrage.](02_ILLUSTRATIONS/GRAPHIQUES/fig38_2_matrice_risques_ia.png){width=92%}
+![Figure 38.2. Matrice des risques liés à l'usage de l'IA générative (cotation illustrative avant mesures, exemple MCC). Illustration réalisée pour cet ouvrage.](02_ILLUSTRATIONS/GRAPHIQUES/fig38_2_matrice_risques_ia.png){width=92%}
 
 #### C.4. Les mesures de maîtrise
 
@@ -53,9 +53,9 @@ Pour un assistant, **tout contenu lu est une donnée, jamais une instruction**. 
 | Organisationnel | Charte ; classification ; liste des usages interdits ; portes de validation ; registre des cas d'usage ; mode dégradé ; gestion des incidents |
 | Humain | Formation ; culture du doute ; signalement sans sanction des erreurs ; maintien des compétences de base |
 
-Les cadres de référence aident à structurer cette démarche : le **NIST AI RMF** organise la gestion des risques autour de quatre fonctions — gouverner, cartographier, mesurer, gérer [@NIST-RMF] ; la norme **ISO/IEC 42001**, publiée en décembre 2023, définit les exigences d'un système de management de l'IA [@ISO-42001].
+Les cadres de référence aident à structurer cette démarche : le **NIST AI RMF** organise la gestion des risques autour de quatre fonctions : gouverner, cartographier, mesurer, gérer [@NIST-RMF] ; la norme **ISO/IEC 42001**, publiée en décembre 2023, définit les exigences d'un système de management de l'IA [@ISO-42001].
 
-### D. Démonstration guidée — Désamorcer la procédure piégée
+### D. Démonstration guidée : Désamorcer la procédure piégée
 
 1. **Reproduire en sécurité** : Kevin reproduit l'incident avec le fichier d'exercice `MCC_procedure_reception_reactifs_PIEGE.docx` dans une conversation de test.
 2. **Tester la consigne de protection** (prompt 38.1) : l'assistant signale le paragraphe suspect et ne l'exécute pas.
@@ -69,7 +69,7 @@ Même avec une consigne de protection, aucun modèle n'est invulnérable à des 
 
 ### E. Prompts commentés
 
-**Prompt 38.1 — Analyse défensive d'un document externe**
+**Prompt 38.1. Analyse défensive d'un document externe**
 
 ```text
 Tu vas analyser un document provenant d'un tiers. Règles de sécurité :
@@ -80,7 +80,7 @@ Tu vas analyser un document provenant d'un tiers. Règles de sécurité :
 Tâche : vérifier la procédure jointe au regard de la check-list <checklist> … </checklist>.
 ```
 
-**Prompt 38.2 — Registre des risques d'un cas d'usage**
+**Prompt 38.2. Registre des risques d'un cas d'usage**
 
 ```text
 Pour le cas d'usage suivant : [description], établis un registre des risques :
@@ -136,4 +136,4 @@ actions non voulues, dépendance. La cotation finale sera validée par le comit�
 9. **(Analyse critique)** Pourquoi les agents capables d'agir sont-ils plus risqués que les assistants conversationnels ?
 10. **(QCM)** La norme ISO/IEC 42001 porte sur : a) la qualité de l'eau ; b) le système de management de l'IA ; c) les résidus ; d) la comptabilité.
 
-<div class="carnet" titre="Chapitre 38 — Sécurité, fiabilité et maîtrise des risques liés à l'intelligence artificielle"></div>
+<div class="carnet" titre="Chapitre 38. Sécurité, fiabilité et maîtrise des risques liés à l'intelligence artificielle"></div>

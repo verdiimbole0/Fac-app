@@ -1,8 +1,8 @@
-## Chapitre 29 — Claude appliqué à l'audit financier, à l'audit opérationnel et au contrôle interne
+## Chapitre 29. Claude appliqué à l'audit financier, à l'audit opérationnel et au contrôle interne
 
 ### A. Mise en situation professionnelle
 
-Michel Lwamba, responsable de l'audit interne de MCC, doit présenter au comité d'audit le plan d'audit 2027, conduire la mission sur le processus achats (voir chapitre 11), et faire le point sur les 64 recommandations émises depuis trois ans, dont une partie n'a jamais été mise en œuvre. Son équipe compte trois auditeurs. Il voit dans Claude un moyen de multiplier la capacité d'analyse de l'équipe — à condition de préserver l'indépendance, le scepticisme professionnel et la qualité des preuves.
+Michel Lwamba, responsable de l'audit interne de MCC, doit présenter au comité d'audit le plan d'audit 2027, conduire la mission sur le processus achats (voir chapitre 11), et faire le point sur les 64 recommandations émises depuis trois ans, dont une partie n'a jamais été mise en œuvre. Son équipe compte trois auditeurs. Il voit dans Claude un moyen de multiplier la capacité d'analyse de l'équipe, à condition de préserver l'indépendance, le scepticisme professionnel et la qualité des preuves.
 
 ### B. Objectifs d'apprentissage
 
@@ -14,9 +14,9 @@ Michel Lwamba, responsable de l'audit interne de MCC, doit présenter au comité
 4. **Suivre** les recommandations et produire un tableau de bord fiable.
 5. **Identifier** les exigences propres à l'audit (preuve, indépendance, confidentialité, traçabilité) dans l'usage de l'IA.
 
-### C. Comprendre avant de pratiquer — Profil du métier
+### C. Comprendre avant de pratiquer : Profil du métier
 
-*Tableau 29.1 — Profil de l'auditeur (interne ou externe) et du contrôleur interne.*
+*Tableau 29.1. Profil de l'auditeur (interne ou externe) et du contrôleur interne.*
 
 | Dimension | Contenu |
 |---|---|
@@ -33,11 +33,11 @@ Michel Lwamba, responsable de l'audit interne de MCC, doit présenter au comité
 En audit, **ce qui n'est pas documenté n'est pas fait**. Toute analyse réalisée avec Claude doit être reproductible : données sources, prompt, code exécuté, résultat, contrôles de l'auditeur, conclusion de l'auditeur.
 :::
 
-![Figure 29.1 — Le cycle d'audit interne assisté par Claude : le jugement d'audit et l'opinion restent ceux de l'auditeur. Illustration réalisée pour cet ouvrage.](02_ILLUSTRATIONS/SCHEMAS/fig29_1_cycle_audit.png){width=100%}
+![Figure 29.1. Le cycle d'audit interne assisté par Claude : le jugement d'audit et l'opinion restent ceux de l'auditeur. Illustration réalisée pour cet ouvrage.](02_ILLUSTRATIONS/SCHEMAS/fig29_1_cycle_audit.png){width=100%}
 
-### D. Démonstration guidée — Cas d'usage
+### D. Démonstration guidée : Cas d'usage
 
-#### Cas d'usage 29.1 — Tests de population sur les achats
+#### Cas d'usage 29.1. Tests de population sur les achats
 
 **1. Problème.** Tester l'ensemble des commandes de la période (et non un échantillon) contre les règles de la procédure d'achat.
 
@@ -77,7 +77,7 @@ En fin : tableau de synthèse et liste des pièces à demander.
 
 **12. Livrable.** Papier de travail complet (objectif, population, code, résultats, revue de l'auditeur).
 
-#### Cas d'usage 29.2 — Rédaction des constats
+#### Cas d'usage 29.2. Rédaction des constats
 
 **1. Problème.** Transformer les résultats des tests et des entretiens en constats clairs et équilibrés.
 
@@ -110,17 +110,17 @@ ton factuel et équilibré ; mentionne les points positifs constatés s'il y en 
 
 **12. Livrable.** Projet de rapport d'audit.
 
-#### Cas d'usage 29.3 — Plan d'audit fondé sur les risques (condensé)
+#### Cas d'usage 29.3. Plan d'audit fondé sur les risques (condensé)
 
 À partir de la cartographie des risques de l'entreprise, des audits passés et des changements récents (programme IA, extension Mbiyo Profond, nouveau contrat de transport), Claude propose une **structure** de plan (univers d'audit, critères de priorisation, missions candidates, ressources) et rédige l'argumentaire. Michel arbitre les priorités et soumet le plan au comité d'audit. À noter : le déploiement de l'IA générative est lui-même un sujet d'audit (gouvernance, données, contrôles), pour lequel des cadres comme le cadre de gestion des risques de l'IA du NIST ou la norme ISO/IEC 42001 fournissent des repères [@NIST-RMF; @ISO-42001].
 
-#### Cas d'usage 29.4 — Suivi des recommandations (condensé)
+#### Cas d'usage 29.4. Suivi des recommandations (condensé)
 
 Claude consolide le tableau de suivi (recommandation, responsable, échéance, statut, preuves reçues), calcule les taux de mise en œuvre et le vieillissement par code, et prépare la synthèse pour le comité d'audit. Les statuts « mis en œuvre » ne sont validés qu'après examen des preuves par l'auditeur.
 
 ### E. Prompts commentés
 
-**Prompt 29.1 — Programme de travail d'une mission**
+**Prompt 29.1. Programme de travail d'une mission**
 
 ```text
 Prépare le programme de travail d'une mission d'audit interne sur [processus] dans une société minière.
@@ -182,4 +182,4 @@ Dans un papier de travail, Claude indique « 0 exception » au test des doublons
 9. **(Analyse critique)** En quoi l'injection de prompt est-elle un risque particulier en audit ?
 10. **(Application)** Citez les éléments d'un papier de travail réalisé avec Claude.
 
-<div class="carnet" titre="Chapitre 29 — Claude appliqué à l'audit financier, à l'audit opérationnel et au contrôle interne"></div>
+<div class="carnet" titre="Chapitre 29. Claude appliqué à l'audit financier, à l'audit opérationnel et au contrôle interne"></div>

@@ -1,4 +1,4 @@
-## Corrigés des quiz — Partie IV
+## Corrigés des quiz : Partie IV
 
 ### Chapitre 33
 

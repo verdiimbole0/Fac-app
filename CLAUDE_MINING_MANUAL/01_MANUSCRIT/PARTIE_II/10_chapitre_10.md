@@ -1,4 +1,4 @@
-## Chapitre 10 — L'art de bien communiquer avec Claude : la méthode CADRE
+## Chapitre 10. L'art de bien communiquer avec Claude : la méthode CADRE
 
 ### A. Mise en situation professionnelle
 
@@ -30,9 +30,9 @@ La **méthode CADRE** organise ces bonnes pratiques en cinq briques faciles à m
 **CADRE est un cadre pédagogique proposé par cet ouvrage.** Ce n'est pas une méthode officielle d'Anthropic. Il s'appuie sur les recommandations publiques de la documentation d'Anthropic, réorganisées pour les professionnels du secteur minier.
 :::
 
-![Figure 10.1 — La méthode CADRE : Contexte, Action, Données, Règles, Exigences de sortie. Cadre pédagogique proposé par cet ouvrage. Illustration réalisée pour cet ouvrage.](02_ILLUSTRATIONS/SCHEMAS/fig10_1_methode_cadre.png){width=100%}
+![Figure 10.1. La méthode CADRE : Contexte, Action, Données, Règles, Exigences de sortie. Cadre pédagogique proposé par cet ouvrage. Illustration réalisée pour cet ouvrage.](02_ILLUSTRATIONS/SCHEMAS/fig10_1_methode_cadre.png){width=100%}
 
-#### C.2. C — Contexte
+#### C.2. C : Contexte
 
 Le **contexte** répond à la question : *dans quelle situation se trouve-t-on ?* Il comprend :
 
@@ -48,7 +48,7 @@ Le **contexte** répond à la question : *dans quelle situation se trouve-t-on ?
 Le contexte inclut aussi le **pourquoi** d'une consigne. « Évite les promesses » est moins efficace que « Évite toute promesse : l'entreprise n'a encore décidé aucune mesure et une promesse non tenue détériorerait gravement la confiance. » Expliquer la raison aide Claude à appliquer la règle avec discernement [@ANT-PROMPT].
 :::
 
-#### C.3. A — Action
+#### C.3. A : Action
 
 L'**action** répond à la question : *que doit faire Claude exactement ?* Elle commence par un **verbe précis** :
 
@@ -61,9 +61,9 @@ Précisez aussi le **périmètre** (ce qui est inclus, ce qui ne l'est pas) et, 
 
 *Exemple :* « Rédige un projet de réponse écrite au chef du village, qui accuse réception de la plainte, présente les mesures déjà en place et propose une réunion. »
 
-#### C.4. D — Données
+#### C.4. D : Données
 
-Les **données** répondent à la question : *sur quoi Claude doit-il s'appuyer ?* Documents joints, extraits copiés, chiffres, exemples, résultats de mesures, modèles de documents. Sans données, Claude comble les vides avec des généralités — ou des inventions.
+Les **données** répondent à la question : *sur quoi Claude doit-il s'appuyer ?* Documents joints, extraits copiés, chiffres, exemples, résultats de mesures, modèles de documents. Sans données, Claude comble les vides avec des généralités, ou des inventions.
 
 Bonnes pratiques :
 
@@ -72,7 +72,7 @@ Bonnes pratiques :
 - fournissez un **exemple** du résultat attendu si vous en avez un ;
 - vérifiez le **niveau de confidentialité** de chaque donnée avant de la transmettre (chapitre 37).
 
-#### C.5. R — Règles
+#### C.5. R : Règles
 
 Les **règles** répondent à la question : *quelles contraintes respecter ?*
 
@@ -82,9 +82,9 @@ Les **règles** répondent à la question : *quelles contraintes respecter ?*
 - **Règles de ton et d'éthique** : respect, langage non discriminant, absence de jargon pour un public non spécialiste.
 - **Limites de rôle** : ce que Claude ne doit pas décider (chapitre 6).
 
-Formulez de préférence les règles **positivement** (« écris en paragraphes continus ») plutôt que négativement (« n'utilise pas de listes »), comme le recommande la documentation [@ANT-PROMPT] — sauf pour les interdits de sécurité, qui doivent rester explicites.
+Formulez de préférence les règles **positivement** (« écris en paragraphes continus ») plutôt que négativement (« n'utilise pas de listes »), comme le recommande la documentation [@ANT-PROMPT], sauf pour les interdits de sécurité, qui doivent rester explicites.
 
-#### C.6. E — Exigences de sortie
+#### C.6. E : Exigences de sortie
 
 Les **exigences de sortie** répondent à la question : *à quoi le résultat doit-il ressembler ?*
 
@@ -96,7 +96,7 @@ Les **exigences de sortie** répondent à la question : *à quoi le résultat do
 
 #### C.7. Avant / après : l'exemple de Joseph
 
-![Figure 10.2 — D'une demande vague à une instruction CADRE (exemple HSE). La version structurée produit un brouillon factuel, traçable, conforme au modèle, avec ses lacunes signalées. Illustration réalisée pour cet ouvrage.](02_ILLUSTRATIONS/SCHEMAS/fig10_2_avant_apres.png){width=100%}
+![Figure 10.2. D'une demande vague à une instruction CADRE (exemple HSE). La version structurée produit un brouillon factuel, traçable, conforme au modèle, avec ses lacunes signalées. Illustration réalisée pour cet ouvrage.](02_ILLUSTRATIONS/SCHEMAS/fig10_2_avant_apres.png){width=100%}
 
 **Version vague :**
 
@@ -107,20 +107,20 @@ Les **exigences de sortie** répondent à la question : *à quoi le résultat do
 **Version CADRE :**
 
 ```text
-[C — CONTEXTE]
+[C : CONTEXTE]
 Je suis responsable des relations communautaires de Mbiyo Copper Cobalt SA,
 mine de cuivre-cobalt à ciel ouvert en RDC. Le village de Lupanda (≈ 4 000 habitants)
 se trouve à 1,5 km de la route d'accès à la mine. La relation est sensible depuis
 une réinstallation en 2020. Le chef du village a déposé la plainte écrite ci-dessous.
 
-[A — ACTION]
+[A : ACTION]
 Rédige un projet de réponse écrite au chef du village qui :
 1. accuse réception de la plainte et reconnaît la gêne exprimée ;
 2. présente les mesures déjà en place (liste ci-dessous), sans en ajouter ;
 3. propose une réunion d'échange au village dans les deux semaines ;
 4. explique la suite de la procédure de traitement des plaintes.
 
-[D — DONNÉES]
+[D : DONNÉES]
 <plainte>
 [texte de la plainte PL-0042 du registre]
 </plainte>
@@ -130,14 +130,14 @@ Rédige un projet de réponse écrite au chef du village qui :
 - Suivi mensuel des poussières à la station située à l'entrée du village.
 </mesures_en_place>
 
-[R — RÈGLES]
+[R : RÈGLES]
 - Ne promets aucune mesure nouvelle ni indemnisation : aucune décision n'a été prise,
   et une promesse non tenue détériorerait gravement la confiance.
 - N'emploie aucun chiffre qui ne figure pas dans les données.
 - Ton respectueux, simple, sans jargon technique ni juridique.
 - Si une information utile manque, indique-la entre crochets [à compléter].
 
-[E — EXIGENCES DE SORTIE]
+[E : EXIGENCES DE SORTIE]
 - Courrier d'une page maximum, en français.
 - Formules de politesse adaptées à un chef coutumier.
 - Après le courrier, liste séparément les points que je dois vérifier avant envoi.
@@ -147,21 +147,21 @@ Le résultat est un courrier sobre, qui reconnaît le problème sans rien promet
 
 #### C.8. Les erreurs de formulation les plus fréquentes
 
-*Tableau 10.1 — Diagnostic des instructions faibles.*
+*Tableau 10.1. Diagnostic des instructions faibles.*
 
 | Erreur | Exemple | Effet | Correction CADRE |
 |---|---|---|---|
 | Pas de contexte | « Analyse ce tableau » | Analyse générique | C : qui, pourquoi, pour qui |
 | Verbe flou | « Regarde ce contrat » | Résumé au lieu d'une analyse de risques | A : « identifie les clauses de pénalité » |
 | Données absentes | « Rédige le rapport d'incident » | Faits inventés | D : déclarations, constats, chronologie |
-| Pas de règle de vérité | — | Chiffres plausibles mais faux | R : « n'invente rien, signale les manques » |
+| Pas de règle de vérité |  | Chiffres plausibles mais faux | R : « n'invente rien, signale les manques » |
 | Pas de format | « Fais-moi un point » | Texte trop long ou mal structuré | E : « tableau de 5 lignes » |
 | Plusieurs tâches mêlées | « Résume, critique, traduis et fais une présentation » | Résultat moyen partout | Découper (chapitre 11) |
 | Question orientée | « Pourquoi le conducteur est-il fautif ? » | Réponse complaisante | Formulation neutre |
 
-### D. Démonstration guidée — CADRE appliqué à quatre métiers
+### D. Démonstration guidée : CADRE appliqué à quatre métiers
 
-#### D.1. Géologie — Synthèse d'une campagne de sondages
+#### D.1. Géologie : Synthèse d'une campagne de sondages
 
 ```text
 [C] Je suis géologue principal d'une mine de cuivre-cobalt (gisement stratiforme
@@ -177,7 +177,7 @@ principaux résultats, intersections significatives, implications pour la suite.
     (sondage, de-à, longueur, Cu %, Co %) ; 3 recommandations ; vocabulaire accessible.
 ```
 
-#### D.2. Finance — Commentaire d'écart budgétaire
+#### D.2. Finance : Commentaire d'écart budgétaire
 
 ```text
 [C] Je suis contrôleuse de gestion d'une mine (MCC). Le comité de direction
@@ -191,7 +191,7 @@ le commentaire de gestion.
     3 questions à poser aux responsables de centres de coût.
 ```
 
-#### D.3. Maintenance — Analyse d'un historique
+#### D.3. Maintenance : Analyse d'un historique
 
 ```text
 [C] Je suis responsable maintenance d'une mine à ciel ouvert (12 camions de 90 t).
@@ -204,7 +204,7 @@ Le camion CAM-07 semble avoir des pannes hydrauliques répétées.
     coût cumulé ; liste d'hypothèses à vérifier par l'équipe ; 1 graphique.
 ```
 
-#### D.4. HSE — Causerie sécurité
+#### D.4. HSE : Causerie sécurité
 
 ```text
 [C] Je suis responsable HSE. Chaque lundi, les superviseurs animent une causerie
@@ -220,7 +220,7 @@ d'instruction variable).
 
 ### E. Prompts commentés
 
-**Prompt 10.1 — Le diagnostic CADRE de votre propre instruction**
+**Prompt 10.1. Le diagnostic CADRE de votre propre instruction**
 
 ```text
 Voici une instruction que je compte te donner : [coller l'instruction].
@@ -231,7 +231,7 @@ puis propose une version améliorée de l'instruction. N'exécute pas encore la 
 
 *Commentaire.* Claude devient ici un coach de formulation. C'est une excellente façon de progresser rapidement : comparez sa version améliorée à la vôtre et retenez ce qui manquait.
 
-**Prompt 10.2 — Demander les questions avant d'agir**
+**Prompt 10.2. Demander les questions avant d'agir**
 
 ```text
 Je veux [objectif]. Avant de commencer, pose-moi les questions dont tu as besoin
@@ -241,20 +241,20 @@ Attends mes réponses avant de rédiger.
 
 *Commentaire.* Lorsque vous ne savez pas exactement quel contexte fournir, laissez Claude vous le demander. Vous construisez ainsi le « C » et le « D » en dialoguant.
 
-**Prompt 10.3 — Gabarit CADRE vierge**
+**Prompt 10.3. Gabarit CADRE vierge**
 
 ```text
-[C — CONTEXTE] Je suis [fonction] chez [entreprise / type de mine / pays].
+[C : CONTEXTE] Je suis [fonction] chez [entreprise / type de mine / pays].
 Situation : [description]. Destinataire et usage : [qui, pour quoi faire].
-[A — ACTION] [Verbe précis] + [objet] + [périmètre] (+ étapes si nécessaire).
-[D — DONNÉES] <source_1> … </source_1> <source_2> … </source_2>
-[R — RÈGLES] Vérité : … Métier : … Prudence : … Ton : … Rôle : …
-[E — EXIGENCES DE SORTIE] Format : … Structure : … Longueur : … Éléments obligatoires : …
+[A : ACTION] [Verbe précis] + [objet] + [périmètre] (+ étapes si nécessaire).
+[D : DONNÉES] <source_1> … </source_1> <source_2> … </source_2>
+[R : RÈGLES] Vérité : … Métier : … Prudence : … Ton : … Rôle : …
+[E : EXIGENCES DE SORTIE] Format : … Structure : … Longueur : … Éléments obligatoires : …
 ```
 
 ### F. Exercices pratiques
 
-**Exercice 10.1 (guidé) — Diagnostiquer et réécrire**
+**Exercice 10.1 (guidé) : Diagnostiquer et réécrire**
 
 Réécrivez avec CADRE les trois instructions suivantes, puis comparez les résultats obtenus :
 
@@ -262,11 +262,11 @@ Réécrivez avec CADRE les trois instructions suivantes, puis comparez les résu
 2. « Calcule les indicateurs HSE du mois. »
 3. « Rédige un mail au fournisseur d'acide pour se plaindre. »
 
-**Exercice 10.2 (guidé) — Le courrier au fournisseur**
+**Exercice 10.2 (guidé) : Le courrier au fournisseur**
 
 À partir du fichier `MCC_contrat_fourniture_acide_extrait.pdf` et de la situation suivante (livraisons de mars : 5 100 t), rédigez avec CADRE l'instruction qui produira un projet de courrier de réclamation au fournisseur, conforme au contrat. *Indice : relisez les articles 3 et 9 ; quelles règles fixerez-vous sur les montants ?*
 
-**Exercice 10.3 (autonome) — Votre bibliothèque CADRE**
+**Exercice 10.3 (autonome) : Votre bibliothèque CADRE**
 
 Rédigez cinq instructions CADRE pour les tâches les plus fréquentes de votre métier. Testez-les, améliorez-les, et enregistrez la meilleure version de chacune.
 
@@ -291,7 +291,7 @@ Prenez votre dernière conversation avec Claude dont le résultat vous a déçu.
 :::
 
 ::: setrompe
-Même avec une instruction CADRE, Claude peut ajouter une « mesure » non fournie en croyant bien faire (par exemple « nous installerons des panneaux de signalisation supplémentaires »). **Contre-mesure** : demander, en fin de réponse, la liste de tout élément qui ne provient pas des données fournies — et relire.
+Même avec une instruction CADRE, Claude peut ajouter une « mesure » non fournie en croyant bien faire (par exemple « nous installerons des panneaux de signalisation supplémentaires »). **Contre-mesure** : demander, en fin de réponse, la liste de tout élément qui ne provient pas des données fournies, et relire.
 :::
 
 ### I. Limites et précautions
@@ -306,11 +306,11 @@ Même avec une instruction CADRE, Claude peut ajouter une « mesure » non fourn
 
 | Brique | Question | Mots-clés |
 |---|---|---|
-| C — Contexte | Quelle situation ? | Je suis… / Notre mine… / Destinataire… / Enjeu… |
-| A — Action | Quoi faire ? | Rédige / Extrais / Compare / Calcule / Vérifie… |
-| D — Données | Sur quoi ? | `<document>` / fichiers joints / exemples |
-| R — Règles | Quelles limites ? | N'invente rien / Signale / Cite / Ne décide pas |
-| E — Exigences | Quel résultat ? | Format / Structure / Longueur / Ton |
+| C : Contexte | Quelle situation ? | Je suis… / Notre mine… / Destinataire… / Enjeu… |
+| A : Action | Quoi faire ? | Rédige / Extrais / Compare / Calcule / Vérifie… |
+| D : Données | Sur quoi ? | `<document>` / fichiers joints / exemples |
+| R : Règles | Quelles limites ? | N'invente rien / Signale / Cite / Ne décide pas |
+| E : Exigences | Quel résultat ? | Format / Structure / Longueur / Ton |
 
 ### K. Quiz
 
@@ -325,4 +325,4 @@ Même avec une instruction CADRE, Claude peut ajouter une « mesure » non fourn
 9. **(Analyse critique)** Pourquoi la question « Pourquoi le conducteur est-il fautif ? » est-elle mal formulée ?
 10. **(Application)** Rédigez la règle de vérité que vous ajouterez systématiquement à vos instructions sensibles.
 
-<div class="carnet" titre="Chapitre 10 — L'art de bien communiquer avec Claude : la méthode CADRE"></div>
+<div class="carnet" titre="Chapitre 10. L'art de bien communiquer avec Claude : la méthode CADRE"></div>

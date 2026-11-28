@@ -1,4 +1,4 @@
-## Annexe M — Répertoire des ressources numériques complémentaires
+## Annexe M. Répertoire des ressources numériques complémentaires
 
 *Adresses vérifiées le 16 novembre 2026. Les références complètes figurent à l'Annexe I.*
 
@@ -22,13 +22,13 @@
 
 | Ressource | Adresse |
 |---|---|
-| ICMM — Gestion des contrôles critiques | icmm.com/en-gb/our-work/health-and-safety/critical-control-management |
+| ICMM : Gestion des contrôles critiques | icmm.com/en-gb/our-work/health-and-safety/critical-control-management |
 | Global Tailings Review (GISTM) | globaltailingsreview.org |
-| ITIE — Norme 2023 et page RDC | eiti.org/eiti-standard ; eiti.org/countries/democratic-republic-congo |
-| OCDE — Devoir de diligence minerais | oecd.org (Guide, 3e édition, 2016) |
-| SFI — Normes de performance | ifc.org/en/insights-reports/2012/ifc-performance-standards |
-| OIT — Recueil mines à ciel ouvert | ilo.org/resource/other/code-practice-safety-and-health-opencast-mines |
-| USGS — Mineral Commodity Summaries | pubs.usgs.gov/publication/mcs2026 |
+| ITIE : Norme 2023 et page RDC | eiti.org/eiti-standard ; eiti.org/countries/democratic-republic-congo |
+| OCDE : Devoir de diligence minerais | oecd.org (Guide, 3e édition, 2016) |
+| SFI : Normes de performance | ifc.org/en/insights-reports/2012/ifc-performance-standards |
+| OIT : Recueil mines à ciel ouvert | ilo.org/resource/other/code-practice-safety-and-health-opencast-mines |
+| USGS : Mineral Commodity Summaries | pubs.usgs.gov/publication/mcs2026 |
 | JORC (code 2012) | jorc.org |
 
 ### M.3. Gouvernance et risques de l'IA
@@ -38,7 +38,7 @@
 | NIST AI RMF et profil IA générative | nist.gov/itl/ai-risk-management-framework |
 | ISO/IEC 42001 | iso.org (norme payante) |
 | Règlement (UE) 2024/1689 | eur-lex.europa.eu/eli/reg/2024/1689/oj |
-| UNESCO — Éthique de l'IA | unesco.org (Recommandation de 2021) |
+| UNESCO : Éthique de l'IA | unesco.org (Recommandation de 2021) |
 
 ### M.4. Fichiers fournis avec le manuel
 

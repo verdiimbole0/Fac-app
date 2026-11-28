@@ -86,4 +86,4 @@
 3. Revalidation des informations datées sur Claude (modèles, prix, offres) à la date de publication.
 4. Vérification par un juriste des passages relatifs au droit minier congolais et aux obligations de transparence, et par des praticiens (géologie, HSE, métallurgie, finance) des chapitres métier.
 5. Seules les références contrôlées pendant la rédaction ont été conservées dans la bibliographie (18 ouvrages et textes, 38 ressources en ligne).
-6. Avant impression : ISBN, code-barres et prix à placer sur la 4e de couverture ; calcul du dos selon le papier retenu.
+6. Avant impression : calcul du dos de chaque tome selon le papier retenu. Ouvrage publié à compte d'auteur, sans ISBN.

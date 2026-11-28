@@ -1,4 +1,4 @@
-## Annexe D — Modèles de rapports et de documents professionnels
+## Annexe D. Modèles de rapports et de documents professionnels
 
 *Modèles génériques, cohérents avec les exercices du manuel. Adaptez-les aux formats officiels de votre entreprise ; en cas de divergence, le format officiel prévaut.*
 
@@ -8,7 +8,7 @@
 |---|---|
 | 1. Identification | N° d'incident, date, heure, lieu, équipements, rédacteur, date de rédaction |
 | 2. Description factuelle | Ce qui s'est passé, sans interprétation |
-| 3. Chronologie | Tableau heure — fait — source |
+| 3. Chronologie | Tableau heure, fait, source |
 | 4. Conséquences constatées | Personnes, matériel, environnement, production |
 | 5. Mesures immédiates prises | Mesures effectivement réalisées |
 | 6. Informations manquantes et questions pour l'enquête | Liste |
@@ -21,7 +21,7 @@
 2. Description de la défaillance (faits, constats, photos).
 3. Chronologie.
 4. Hypothèses examinées (tableau : hypothèse | données/inspections | résultat | retenue oui/non).
-5. Cause(s) racine(s) retenue(s) par l'équipe — avec preuves.
+5. Cause(s) racine(s) retenue(s) par l'équipe, avec preuves.
 6. Facteurs contributifs (techniques, organisationnels, humains).
 7. Actions correctives et préventives (quoi, qui, quand, indicateur d'efficacité).
 8. Validation.
@@ -58,7 +58,7 @@
 
 ### D.5. Note de décision
 
-**Objet** — **Décision attendue** — **Contexte** (3 à 5 lignes) — **Options** (tableau : option | coût | délai | risques | effets sécurité / environnement / communautés) — **Position du service** — **Questions à trancher** — **Annexes**.
+**Objet**, **Décision attendue**, **Contexte** (3 à 5 lignes) : **Options** (tableau : option | coût | délai | risques | effets sécurité / environnement / communautés), **Position du service**, **Questions à trancher** : **Annexes**.
 
 ### D.6. Compte rendu de réunion et registre des décisions
 
@@ -73,11 +73,11 @@
 
 ### D.8. Courrier de réclamation à un fournisseur
 
-En-tête — Références (contrat, article, commandes) — Rappel des faits (chiffrés, datés) — Clauses applicables (citées) — Calcul de la pénalité ou de l'écart — Demande précise et délai — Réserves de droit — Contact — Signature (après validation du juriste).
+En-tête, Références (contrat, article, commandes), Rappel des faits (chiffrés, datés), Clauses applicables (citées), Calcul de la pénalité ou de l'écart, Demande précise et délai, Réserves de droit, Contact, Signature (après validation du juriste).
 
 ### D.9. Réponse à une plainte communautaire
 
-Référence de la plainte — Accusé de réception et reconnaissance — Rappel des faits vérifiés — Mesures en place ou décidées (sans promesse nouvelle) — Proposition d'échange — Suite de la procédure et délai — Contacts — Signature.
+Référence de la plainte, Accusé de réception et reconnaissance, Rappel des faits vérifiés, Mesures en place ou décidées (sans promesse nouvelle), Proposition d'échange, Suite de la procédure et délai, Contacts : Signature.
 
 ### D.10. Grille d'entretien structurée
 
@@ -86,7 +86,7 @@ Référence de la plainte — Accusé de réception et reconnaissance — Rappel
 
 ### D.11. Fiche d'indicateur
 
-Nom — Définition — Formule — Source des données — Fréquence — Responsable — Seuils (cible, alerte) — Limites d'interprétation — Date de mise à jour.
+Nom, Définition, Formule, Source des données, Fréquence, Responsable, Seuils (cible, alerte), Limites d'interprétation, Date de mise à jour.
 
 ### D.12. Dictionnaire de données
 
@@ -95,4 +95,4 @@ Nom — Définition — Formule — Source des données — Fréquence — Respo
 
 ### D.13. Papier de travail d'analyse avec Claude
 
-Objectif — Source et version des données — Prompt (texte intégral) — Code exécuté — Résultats — Contrôles de l'auteur — Conclusion de l'auteur — Date — Auteur — Revue.
+Objectif, Source et version des données, Prompt (texte intégral), Code exécuté, Résultats, Contrôles de l'auteur, Conclusion de l'auteur, Date, Auteur : Revue.

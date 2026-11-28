@@ -1,4 +1,4 @@
-## Chapitre 32 — Claude appliqué à l'ESG, à la traçabilité minérale et à l'approvisionnement responsable
+## Chapitre 32. Claude appliqué à l'ESG, à la traçabilité minérale et à l'approvisionnement responsable
 
 ### A. Mise en situation professionnelle
 
@@ -14,7 +14,7 @@ Un acheteur européen de l'hydroxyde de cobalt de MCC envoie un questionnaire de
 4. **Préparer** un rapport de durabilité traçable et prudent.
 5. **Prévenir** l'écoblanchiment et les affirmations non étayées.
 
-### C. Comprendre avant de pratiquer — Profil du métier
+### C. Comprendre avant de pratiquer : Profil du métier
 
 Plusieurs référentiels encadrent ce domaine :
 
@@ -23,9 +23,9 @@ Plusieurs référentiels encadrent ce domaine :
 - les **Normes de performance** de la SFI [@IFC-PS] ;
 - la **GISTM** pour les résidus [@GISTM-2020].
 
-La place de la RDC dans la production mondiale de cobalt — environ 73 % de la production minière en 2025 selon l'USGS [@USGS-MCS2026] — explique l'attention particulière portée à la traçabilité de ce métal, notamment au regard de l'exploitation artisanale.
+La place de la RDC dans la production mondiale de cobalt, environ 73 % de la production minière en 2025 selon l'USGS [@USGS-MCS2026], explique l'attention particulière portée à la traçabilité de ce métal, notamment au regard de l'exploitation artisanale.
 
-*Tableau 32.1 — Profil de la fonction ESG et conformité de la chaîne d'approvisionnement.*
+*Tableau 32.1. Profil de la fonction ESG et conformité de la chaîne d'approvisionnement.*
 
 | Dimension | Contenu |
 |---|---|
@@ -38,15 +38,15 @@ La place de la RDC dans la production mondiale de cobalt — environ 73 % de la 
 | Assistables par Claude | Pré-remplissage à partir de preuves ; tables de correspondance entre référentiels ; contrôle de cohérence ; rédaction prudente ; détection des affirmations non étayées |
 | Limites | Évaluation des risques en droits humains (terrain, experts), audits indépendants, engagements publics, certification |
 
-![Figure 32.1 — Le cadre en cinq étapes du devoir de diligence de l'OCDE et l'appui possible de Claude. Étapes d'après OCDE (2016) ; rôles de Claude : proposition de l'auteur. Illustration réalisée pour cet ouvrage.](02_ILLUSTRATIONS/SCHEMAS/fig32_1_devoir_diligence_ocde.png){width=100%}
+![Figure 32.1. Le cadre en cinq étapes du devoir de diligence de l'OCDE et l'appui possible de Claude. Étapes d'après OCDE (2016) ; rôles de Claude : proposition de l'auteur. Illustration réalisée pour cet ouvrage.](02_ILLUSTRATIONS/SCHEMAS/fig32_1_devoir_diligence_ocde.png){width=100%}
 
 ::: attention
 **Écoblanchiment.** Une affirmation ESG sans preuve (« zéro risque de travail des enfants », « production neutre en carbone ») peut engager la responsabilité de l'entreprise et détruire sa crédibilité. Avec Claude, la règle est absolue : **pas de preuve, pas d'affirmation**.
 :::
 
-### D. Démonstration guidée — Cas d'usage
+### D. Démonstration guidée : Cas d'usage
 
-#### Cas d'usage 32.1 — Réponse au questionnaire de devoir de diligence
+#### Cas d'usage 32.1. Réponse au questionnaire de devoir de diligence
 
 **1. Problème.** 140 questions, trois semaines, des preuves dispersées dans plusieurs services.
 
@@ -56,7 +56,7 @@ La place de la RDC dans la production mondiale de cobalt — environ 73 % de la 
 
 **4. Données.** Questionnaire ; bibliothèque de preuves (politiques, rapports d'audit tiers, procédures, données, rapport ITIE) ; réponses de l'année précédente.
 
-**5. Procédure.** Projet « ESG — Questionnaires clients » ; bibliothèque de preuves en connaissances du projet ; traitement par thème ; validation par chaque service ; validation finale par Clarisse et la direction.
+**5. Procédure.** Projet « ESG : Questionnaires clients » ; bibliothèque de preuves en connaissances du projet ; traitement par thème ; validation par chaque service ; validation finale par Clarisse et la direction.
 
 **6. Prompt.**
 
@@ -65,7 +65,7 @@ La place de la RDC dans la production mondiale de cobalt — environ 73 % de la 
 [A] Prépare un projet de réponse pour les questions du thème « [thème] ».
 [D] Questions : <questions> … </questions>. Bibliothèque de preuves (connaissances du projet).
 [R] Chaque réponse doit citer le document de preuve (titre, date, section). Si aucune preuve n'existe,
-réponds « [À instruire — aucune preuve disponible] » et propose la preuve à rechercher.
+réponds « [À instruire : aucune preuve disponible] » et propose la preuve à rechercher.
 N'utilise aucune formulation absolue (« aucun », « zéro », « totalement ») sans preuve explicite.
 Ne déduis pas une pratique d'une politique : une politique n'est pas la preuve de son application.
 [E] Tableau : n° | question | projet de réponse | preuve citée | service à valider | statut.
@@ -78,7 +78,7 @@ Ne déduis pas une pratique d'une politique : une politique n'est pas la preuve 
 | N° | Question | Projet de réponse | Preuve | Statut |
 |---|---|---|---|---|
 | 37 | Le minerai artisanal peut-il entrer dans vos flux ? | L'usine n'est alimentée que par les fosses de MCC ; des contrôles d'accès et un rapprochement des tonnages sont en place… | Procédure de contrôle des flux (2025, § 3) ; rapport d'audit tiers 2025 (§ 4.2) | À valider (Opérations) |
-| 52 | Réalisez-vous des évaluations d'impact sur les droits humains ? | [À instruire — aucune preuve disponible] ; rechercher : évaluation 2024 ? | — | Bloquant |
+| 52 | Réalisez-vous des évaluations d'impact sur les droits humains ? | [À instruire : aucune preuve disponible] ; rechercher : évaluation 2024 ? |  | Bloquant |
 
 **9. Contrôle.** Chaque service valide ses réponses ; Clarisse vérifie que chaque preuve citée dit bien ce qui est affirmé.
 
@@ -88,7 +88,7 @@ Ne déduis pas une pratique d'une politique : une politique n'est pas la preuve 
 
 **12. Livrable.** Questionnaire complété, avec index des preuves.
 
-#### Cas d'usage 32.2 — Table de correspondance entre référentiels
+#### Cas d'usage 32.2. Table de correspondance entre référentiels
 
 **1. Problème.** Les mêmes données servent à plusieurs référentiels (normes de reporting de durabilité, ITIE, exigences clients, ICMM), sous des formulations différentes.
 
@@ -121,17 +121,17 @@ Ne crée pas d'exigence qui ne figure pas dans les extraits.
 
 **12. Livrable.** Table de correspondance, plan de collecte unifié.
 
-#### Cas d'usage 32.3 — Rapport annuel de diligence et de durabilité (condensé)
+#### Cas d'usage 32.3. Rapport annuel de diligence et de durabilité (condensé)
 
 Claude rédige les sections à partir des données validées et de la table de correspondance, en appliquant une **vérification d'affirmations** : chaque phrase factuelle est rattachée à une preuve, sinon supprimée ou reformulée (technique de vérification par citation, chapitre 5). Il signale les formulations promotionnelles. Les tiers vérificateurs et la direction valident.
 
-#### Cas d'usage 32.4 — Surveillance documentaire des risques (condensé)
+#### Cas d'usage 32.4. Surveillance documentaire des risques (condensé)
 
 Claude aide à structurer la veille des risques (rapports d'organisations, presse, décisions publiques) concernant la zone d'approvisionnement : résumé, source, date, pertinence pour MCC, action proposée. Chaque information est vérifiée à la source ; les évaluations de risques en droits humains reposent sur des enquêtes de terrain et des experts.
 
 ### E. Prompts commentés
 
-**Prompt 32.1 — Détecteur d'affirmations non étayées**
+**Prompt 32.1. Détecteur d'affirmations non étayées**
 
 ```text
 Relis le projet de rapport de durabilité ci-dessous. Pour chaque phrase contenant une affirmation
@@ -193,4 +193,4 @@ Pour combler une réponse vide, un assistant peut écrire : « MCC applique une 
 9. **(Analyse critique)** Pourquoi les formulations absolues sont-elles dangereuses dans un rapport ESG ?
 10. **(Application)** Rédigez la règle qui impose une preuve pour chaque réponse d'un questionnaire.
 
-<div class="carnet" titre="Chapitre 32 — Claude appliqué à l'ESG, à la traçabilité minérale et à l'approvisionnement responsable"></div>
+<div class="carnet" titre="Chapitre 32. Claude appliqué à l'ESG, à la traçabilité minérale et à l'approvisionnement responsable"></div>

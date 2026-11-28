@@ -1,4 +1,4 @@
-## Chapitre 15 — Découvrir Projects, Artifacts et les espaces de travail
+## Chapitre 15. Découvrir Projects, Artifacts et les espaces de travail
 
 ### A. Mise en situation professionnelle
 
@@ -35,14 +35,14 @@ Pour les offres payantes, lorsque les connaissances du projet approchent des lim
 **Partage (offres Team et Enterprise)** : un projet peut être partagé avec des collègues de l'organisation, avec des droits « peut consulter » (lire et converser dans le projet) ou « peut modifier » (modifier instructions et connaissances, gérer les membres) ; les administrateurs peuvent désactiver le partage [@ANT-HC-PROJECTS].
 
 ::: terrain
-Le centre d'aide signale qu'une **nouvelle version des projets** est en cours de déploiement progressif (d'abord dans Claude Code), dans laquelle un projet fonctionne comme une conversation unique qui répartit le travail en tâches parallèles exécutées dans le cloud [@ANT-HC-PROJECTS]. Les principes de ce chapitre — contexte permanent, documents de référence, règles communes — restent valables quelle que soit la version.
+Le centre d'aide signale qu'une **nouvelle version des projets** est en cours de déploiement progressif (d'abord dans Claude Code), dans laquelle un projet fonctionne comme une conversation unique qui répartit le travail en tâches parallèles exécutées dans le cloud [@ANT-HC-PROJECTS]. Les principes de ce chapitre (contexte permanent, documents de référence, règles communes) restent valables quelle que soit la version.
 :::
 
 #### C.2. Les artefacts
 
 Un **artefact** est un contenu substantiel et autonome que Claude crée et que vous pouvez modifier, réutiliser et partager : document, extrait de code, page Web, diagramme, tableau de bord, petit outil interactif [@ANT-HC-ARTIFACTS]. Depuis septembre 2026, on peut partir de **modèles** (*templates*) :
 
-*Tableau 15.1 — Modèles d'artefacts (d'après le centre d'aide, consulté le 16/11/2026).*
+*Tableau 15.1. Modèles d'artefacts (d'après le centre d'aide, consulté le 16/11/2026).*
 
 | Modèle | Usage | Exemple minier |
 |---|---|---|
@@ -56,29 +56,29 @@ Un **artefact** est un contenu substantiel et autonome que Claude crée et que v
 
 Les artefacts nécessitent l'activation de l'exécution de code et de la création de fichiers ; la disponibilité de certains modèles dépend de l'offre [@ANT-HC-ARTIFACTS]. Tous les artefacts créés sont retrouvés dans l'onglet « Artefacts » de la barre latérale.
 
-![Figure 15.1 — Organiser son travail : un projet regroupe instructions, connaissances et conversations ; les conversations produisent des artefacts modifiables et partageables. Illustration réalisée pour cet ouvrage.](02_ILLUSTRATIONS/SCHEMAS/fig15_1_projets_artefacts.png){width=100%}
+![Figure 15.1. Organiser son travail : un projet regroupe instructions, connaissances et conversations ; les conversations produisent des artefacts modifiables et partageables. Illustration réalisée pour cet ouvrage.](02_ILLUSTRATIONS/SCHEMAS/fig15_1_projets_artefacts.png){width=100%}
 
 ::: attention
 **Partager un artefact ou un projet, c'est diffuser son contenu.** Vérifiez la classification des informations avant tout partage, et privilégiez le partage à l'intérieur de l'organisation. Ne publiez jamais d'artefact contenant des données confidentielles à l'extérieur.
 :::
 
-### D. Démonstration guidée — Le projet « Rapports HSE mensuels »
+### D. Démonstration guidée : Le projet « Rapports HSE mensuels »
 
-**Étape 1 — Créer le projet.** Grace crée le projet « HSE — Rapports mensuels MCC ».
+**Étape 1. Créer le projet.** Grace crée le projet « HSE : Rapports mensuels MCC ».
 
-**Étape 2 — Rédiger les instructions** (prompt 15.1).
+**Étape 2. Rédiger les instructions** (prompt 15.1).
 
-**Étape 3 — Déposer les connaissances** : modèle de rapport (Word), définitions des indicateurs (taux de fréquence, taux de gravité, presque-accidents, etc.), procédure de déclaration des incidents, rapports validés des trois derniers mois. Elle vérifie que ces documents sont de niveau « usage interne ».
+**Étape 3. Déposer les connaissances** : modèle de rapport (Word), définitions des indicateurs (taux de fréquence, taux de gravité, presque-accidents, etc.), procédure de déclaration des incidents, rapports validés des trois derniers mois. Elle vérifie que ces documents sont de niveau « usage interne ».
 
-**Étape 4 — Travailler.** Pour le rapport d'avril, elle ouvre une conversation dans le projet, joint l'extraction du registre d'incidents du mois et demande le rapport. Plus besoin de réexpliquer le contexte.
+**Étape 4. Travailler.** Pour le rapport d'avril, elle ouvre une conversation dans le projet, joint l'extraction du registre d'incidents du mois et demande le rapport. Plus besoin de réexpliquer le contexte.
 
-**Étape 5 — Produire un artefact.** Elle demande un tableau de bord HSE (artefact) : nombre d'incidents par type et par zone, évolution sur 12 mois, statut des actions. Elle le fait évoluer (ajout d'un filtre par zone), puis le partage en lecture avec le directeur des opérations.
+**Étape 5. Produire un artefact.** Elle demande un tableau de bord HSE (artefact) : nombre d'incidents par type et par zone, évolution sur 12 mois, statut des actions. Elle le fait évoluer (ajout d'un filtre par zone), puis le partage en lecture avec le directeur des opérations.
 
-**Étape 6 — Partager le projet** avec ses deux techniciens HSE (droit « peut consulter ») pour qu'ils préparent les sections de leurs zones.
+**Étape 6. Partager le projet** avec ses deux techniciens HSE (droit « peut consulter ») pour qu'ils préparent les sections de leurs zones.
 
 ### E. Prompts commentés
 
-**Prompt 15.1 — Instructions d'un projet**
+**Prompt 15.1. Instructions d'un projet**
 
 ```text
 RÔLE : tu assistes la responsable HSE de Mbiyo Copper Cobalt SA (mine de cuivre-cobalt
@@ -102,7 +102,7 @@ FORMAT : suivre exactement le modèle de rapport (6 rubriques), ton factuel, 3 p
 
 *Commentaire.* Ces instructions sont une application de CADRE à l'échelle d'un projet : elles évitent de répéter contexte, règles et format à chaque conversation, et garantissent la constance d'un mois sur l'autre.
 
-**Prompt 15.2 — Créer un tableau de bord en artefact**
+**Prompt 15.2. Créer un tableau de bord en artefact**
 
 ```text
 À partir du fichier joint (extraction du registre d'incidents 2025-2026), crée un tableau
@@ -115,7 +115,7 @@ Indique sous chaque graphique la période et la source des données.
 Couleurs sobres ; titres en français.
 ```
 
-**Prompt 15.3 — Faire évoluer un artefact**
+**Prompt 15.3. Faire évoluer un artefact**
 
 ```text
 Dans le tableau de bord, ajoute un indicateur « presque-accidents / incidents avec blessure »
@@ -125,15 +125,15 @@ Ne modifie pas les autres éléments.
 
 ### F. Exercices pratiques
 
-**Exercice 15.1 (guidé) — Votre premier projet**
+**Exercice 15.1 (guidé) : Votre premier projet**
 
 Créez un projet pour une tâche récurrente de votre métier. Rédigez des instructions selon le modèle du prompt 15.1, déposez 2 à 4 documents de référence autorisés, et réalisez une première tâche.
 
-**Exercice 15.2 (guidé) — Tableau de bord**
+**Exercice 15.2 (guidé) : Tableau de bord**
 
 Avec `MCC_incidents_HSE_2025_2026.csv`, créez l'artefact du prompt 15.2. Vérifiez trois chiffres du tableau de bord directement dans le fichier.
 
-**Exercice 15.3 (autonome) — Présentation**
+**Exercice 15.3 (autonome) : Présentation**
 
 À partir d'un rapport de votre choix, créez une présentation de 6 diapositives (modèle Slides) pour votre direction, puis exportez-la. Relisez chaque chiffre.
 
@@ -187,4 +187,4 @@ Un document de référence obsolète (définitions d'indicateurs de 2024) est re
 9. **(Analyse critique)** Pourquoi faut-il éviter de bâtir un processus critique sur une fonction en bêta ?
 10. **(QCM)** Quelle est la taille maximale d'un fichier de projet selon le centre d'aide ? a) 5 Mo ; b) 30 Mo ; c) 500 Mo ; d) illimitée.
 
-<div class="carnet" titre="Chapitre 15 — Découvrir Projects, Artifacts et les espaces de travail"></div>
+<div class="carnet" titre="Chapitre 15. Découvrir Projects, Artifacts et les espaces de travail"></div>

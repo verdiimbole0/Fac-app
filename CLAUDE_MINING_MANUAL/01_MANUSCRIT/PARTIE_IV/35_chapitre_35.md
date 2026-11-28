@@ -1,8 +1,8 @@
-## Chapitre 35 — Créer des assistants spécialisés par métier
+## Chapitre 35. Créer des assistants spécialisés par métier
 
 ### A. Mise en situation professionnelle
 
-Six mois après le début du pilote, Kevin Mutombo constate que chaque utilisateur de MCC a « son » Claude : des prompts copiés dans des fichiers personnels, des projets non partagés, des résultats de qualité très inégale. Le comité de pilotage lui demande de créer des **assistants spécialisés** par métier — HSE, maintenance, achats, relations communautaires — configurés une fois, testés, documentés et partagés, pour que chacun bénéficie des meilleures pratiques.
+Six mois après le début du pilote, Kevin Mutombo constate que chaque utilisateur de MCC a « son » Claude : des prompts copiés dans des fichiers personnels, des projets non partagés, des résultats de qualité très inégale. Le comité de pilotage lui demande de créer des **assistants spécialisés** par métier (HSE, maintenance, achats, relations communautaires) configurés une fois, testés, documentés et partagés, pour que chacun bénéficie des meilleures pratiques.
 
 ### B. Objectifs d'apprentissage
 
@@ -20,7 +20,7 @@ Six mois après le début du pilote, Kevin Mutombo constate que chaque utilisate
 
 Dans ce livre, un **assistant spécialisé** désigne une configuration de Claude dédiée à un métier ou à un processus : un projet partagé (instructions et connaissances) éventuellement complété par des compétences (méthodes réutilisables) et des connecteurs (accès aux données), avec des contrôles définis. Ce n'est pas un nouveau modèle : c'est Claude, **cadré** pour un usage précis.
 
-![Figure 35.1 — Anatomie d'un assistant spécialisé : instructions, connaissances, compétences, connecteurs et contrôles, sous la responsabilité d'un propriétaire métier. Illustration réalisée pour cet ouvrage.](02_ILLUSTRATIONS/SCHEMAS/fig35_1_anatomie_assistant.png){width=95%}
+![Figure 35.1. Anatomie d'un assistant spécialisé : instructions, connaissances, compétences, connecteurs et contrôles, sous la responsabilité d'un propriétaire métier. Illustration réalisée pour cet ouvrage.](02_ILLUSTRATIONS/SCHEMAS/fig35_1_anatomie_assistant.png){width=95%}
 
 | Composant | Outil dans l'écosystème | Exemple « Assistant HSE » |
 |---|---|---|
@@ -47,10 +47,10 @@ Dans ce livre, un **assistant spécialisé** désigne une configuration de Claud
 
 Avant le déploiement, l'assistant est testé sur un **jeu de cas** : cas typiques, cas limites, cas pièges (information manquante, demande hors périmètre, document contenant une instruction malveillante). La documentation d'Anthropic insiste, pour les usages répétés, sur la définition de critères de réussite et sur l'évaluation à partir de tests [@ANT-PROMPT-OV]. Chaque test est noté selon les critères d'acceptation ; l'assistant n'est déployé que si les résultats sont satisfaisants, et retesté à chaque modification importante (instructions, modèle, documents).
 
-### D. Démonstration guidée — L'assistant « Maintenance — Analyses et OT »
+### D. Démonstration guidée : L'assistant « Maintenance : Analyses et OT »
 
 1. **Cahier des charges** rédigé avec Didier Mukendi : analyses d'historique, préparation des analyses de défaillance, projets d'OT et de gammes ; exclus : remise en service, diagnostic, valeurs techniques non sourcées.
-2. **Projet partagé** « Maintenance — Assistant » : instructions (prompt 35.1), connaissances (dictionnaire GMAO, modes de défaillance, gabarits, extraits de manuels validés).
+2. **Projet partagé** « Maintenance : Assistant » : instructions (prompt 35.1), connaissances (dictionnaire GMAO, modes de défaillance, gabarits, extraits de manuels validés).
 3. **Compétence** « Pareto et défaillances répétitives MCC » décrivant la méthode du cas 22.1.
 4. **Connecteur** en lecture seule vers une vue GMAO (géré par l'informatique).
 5. **Jeu de 15 tests** : 8 cas typiques, 4 cas limites, 3 cas pièges (demande de remise en service, valeur de couple non sourcée, OT contenant une instruction cachée).
@@ -59,10 +59,10 @@ Avant le déploiement, l'assistant est testé sur un **jeu de cas** : cas typiqu
 
 ### E. Prompts commentés
 
-**Prompt 35.1 — Instructions d'un assistant spécialisé**
+**Prompt 35.1. Instructions d'un assistant spécialisé**
 
 ```text
-IDENTITÉ : Assistant « Maintenance — Analyses et OT » de MCC. Version 1.2 du [date].
+IDENTITÉ : Assistant « Maintenance : Analyses et OT » de MCC. Version 1.2 du [date].
 Propriétaire : responsable maintenance.
 
 PÉRIMÈTRE : analyses d'historique (GMAO), préparation d'analyses de défaillance, projets d'ordres
@@ -80,9 +80,9 @@ RÈGLES :
 FORMATS : gabarits des connaissances du projet.
 ```
 
-*Commentaire.* L'identité versionnée, le périmètre explicite et la conduite à tenir hors périmètre rendent l'assistant prévisible — condition de sa diffusion.
+*Commentaire.* L'identité versionnée, le périmètre explicite et la conduite à tenir hors périmètre rendent l'assistant prévisible : condition de sa diffusion.
 
-**Prompt 35.2 — Générer un jeu de tests**
+**Prompt 35.2. Générer un jeu de tests**
 
 ```text
 Voici le cahier des charges d'un assistant spécialisé : <cdc> … </cdc>.
@@ -142,4 +142,4 @@ Après la mise à jour d'un document de référence, un assistant jusque-là fia
 9. **(Application)** Citez trois rubriques du cahier des charges.
 10. **(Compréhension)** Que doit contenir une fiche d'usage ?
 
-<div class="carnet" titre="Chapitre 35 — Créer des assistants spécialisés par métier"></div>
+<div class="carnet" titre="Chapitre 35. Créer des assistants spécialisés par métier"></div>

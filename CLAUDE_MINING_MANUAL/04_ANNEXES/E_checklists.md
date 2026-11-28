@@ -1,4 +1,4 @@
-## Annexe E — Check-lists de vérification des résultats de Claude
+## Annexe E. Check-lists de vérification des résultats de Claude
 
 ### E.1. Check-list universelle (tout livrable)
 

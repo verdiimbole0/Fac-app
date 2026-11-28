@@ -1,4 +1,4 @@
-## Corrigés des quiz — Partie V
+## Corrigés des quiz : Partie V
 
 ### Chapitre 37
 

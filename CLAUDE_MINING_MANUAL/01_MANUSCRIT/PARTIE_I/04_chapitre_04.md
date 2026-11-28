@@ -1,4 +1,4 @@
-## Chapitre 4 — Découvrir Claude et l'écosystème Anthropic
+## Chapitre 4. Découvrir Claude et l'écosystème Anthropic
 
 ### A. Mise en situation professionnelle
 
@@ -26,7 +26,7 @@ Pour un professionnel, ces documents ne sont pas de simples textes de principe :
 
 Anthropic propose plusieurs modèles, de tailles et de coûts différents. Le tableau 4.1 résume la gamme actuelle d'après la documentation officielle [@ANT-MODELS].
 
-*Tableau 4.1 — Gamme des modèles Claude actuels (source : Anthropic, Models overview, consulté le 16/11/2026).*
+*Tableau 4.1. Gamme des modèles Claude actuels (source : Anthropic, Models overview, consulté le 16/11/2026).*
 
 | Modèle | Positionnement selon la documentation | Latence comparative | Prix API (entrée / sortie, USD par million de tokens) |
 |---|---|---|---|
@@ -37,7 +37,7 @@ Anthropic propose plusieurs modèles, de tailles et de coûts différents. Le ta
 
 Tous ces modèles acceptent du texte et des images en entrée, produisent du texte, sont multilingues, peuvent utiliser des outils, disposent d'une fenêtre de contexte d'un million de tokens et d'une sortie maximale de 128 000 tokens via l'API [@ANT-MODELS]. La même documentation recommande, en cas de doute, de **commencer par Claude Opus 5.5** et de passer à Claude Fable 5.2 pour les raisonnements les plus exigeants.
 
-![Figure 4.1 — Positionnement des modèles Claude actuels selon le prix API et la latence comparative indiqués dans la documentation. Données : Anthropic, Models overview (consulté le 16/11/2026). Graphique réalisé pour cet ouvrage.](02_ILLUSTRATIONS/GRAPHIQUES/fig04_2_gamme_modeles.png){width=88%}
+![Figure 4.1. Positionnement des modèles Claude actuels selon le prix API et la latence comparative indiqués dans la documentation. Données : Anthropic, Models overview (consulté le 16/11/2026). Graphique réalisé pour cet ouvrage.](02_ILLUSTRATIONS/GRAPHIQUES/fig04_2_gamme_modeles.png){width=88%}
 
 Les notes de version du centre d'aide retracent les lancements récents : Claude Opus 5.5 le 22 septembre 2026, Claude Sonnet 5.5 le 28 septembre 2026 et Claude Haiku 5.5 le 7 octobre 2026 [@ANT-HC-RELEASE; @ANT-OPUS55]. Des modèles plus anciens restent disponibles pendant un temps, avec des dates de retrait annoncées [@ANT-MODELS].
 
@@ -47,7 +47,7 @@ Les noms, prix et caractéristiques des modèles changent plusieurs fois par an.
 
 #### C.3. Les façons d'accéder à Claude
 
-![Figure 4.2 — L'écosystème Claude. Les mêmes modèles sont accessibles par plusieurs « portes d'entrée », du simple utilisateur au développeur. Illustration réalisée pour cet ouvrage.](02_ILLUSTRATIONS/SCHEMAS/fig04_1_ecosysteme.png){width=100%}
+![Figure 4.2. L'écosystème Claude. Les mêmes modèles sont accessibles par plusieurs « portes d'entrée », du simple utilisateur au développeur. Illustration réalisée pour cet ouvrage.](02_ILLUSTRATIONS/SCHEMAS/fig04_1_ecosysteme.png){width=100%}
 
 | Porte d'entrée | Pour qui ? | Usage typique à MCC |
 |---|---|---|
@@ -66,7 +66,7 @@ Depuis septembre 2026, Anthropic a progressivement réuni dans une même expéri
 
 La page officielle des offres distingue des offres **individuelles** (Free, Pro, Max, Ultra) et des offres **Team et Enterprise** destinées aux organisations [@ANT-PLANS]. Au 16 novembre 2026, elle indiquait notamment :
 
-*Tableau 4.2 — Offres individuelles (extrait de claude.com/pricing, consulté le 16/11/2026 ; prix hors taxes, susceptibles d'évoluer).*
+*Tableau 4.2. Offres individuelles (extrait de claude.com/pricing, consulté le 16/11/2026 ; prix hors taxes, susceptibles d'évoluer).*
 
 | Offre | Prix indiqué | Éléments distinctifs |
 |---|---|---|
@@ -93,7 +93,7 @@ C'est la question que pose toujours un directeur juridique. Les règles diffère
 Utiliser un compte personnel gratuit pour analyser un contrat confidentiel de l'entreprise « parce que c'est plus rapide ». Même si l'outil est performant, ce choix peut violer la politique de l'entreprise, des engagements de confidentialité et, selon les données, la réglementation. Le chapitre 37 détaille les règles.
 :::
 
-### D. Démonstration guidée — Construire la fiche d'identité de l'outil pour son entreprise
+### D. Démonstration guidée : Construire la fiche d'identité de l'outil pour son entreprise
 
 Kevin prépare pour le comité une fiche d'une page. Sa méthode :
 
@@ -104,7 +104,7 @@ Kevin prépare pour le comité une fiche d'une page. Sa méthode :
 
 ### E. Prompts commentés
 
-**Prompt 4.1 — Comparer des offres à partir de sources fournies**
+**Prompt 4.1. Comparer des offres à partir de sources fournies**
 
 ```text
 Contexte : nous sommes une entreprise minière (2 350 personnes) qui prépare
@@ -128,7 +128,7 @@ au fournisseur avant de contractualiser.
 
 *Commentaire.* Les balises `<offres>` et `<projets>` séparent clairement les sources ; la documentation d'Anthropic recommande d'ailleurs de structurer les documents fournis avec des balises de ce type [@ANT-PROMPT]. La règle « utilise uniquement les extraits fournis » évite que Claude complète avec des informations anciennes.
 
-**Prompt 4.2 — Expliquer l'écosystème à un public non technique**
+**Prompt 4.2. Expliquer l'écosystème à un public non technique**
 
 ```text
 Explique en 250 mots à des chefs de service d'une mine la différence entre :
@@ -141,11 +141,11 @@ Ne cite aucun prix ni caractéristique chiffrée.
 
 ### F. Exercices pratiques
 
-**Exercice 4.1 (guidé) — Fiche d'identité de l'outil**
+**Exercice 4.1 (guidé) : Fiche d'identité de l'outil**
 
 En consultant vous-même la page officielle des modèles et celle des offres, complétez le tableau suivant, en notant la date de consultation : modèles disponibles dans votre offre ; limites de taille des fichiers ; fonctions disponibles (projets, recherche, connecteurs, artefacts) ; paramètre de confidentialité applicable à votre compte.
 
-**Exercice 4.2 (autonome) — Recommandation d'offre**
+**Exercice 4.2 (autonome) : Recommandation d'offre**
 
 Pour un département de MCC de votre choix (par exemple le service juridique, 5 personnes, documents très confidentiels), rédigez une recommandation d'une demi-page sur le mode d'accès à Claude (offre, API, restrictions), avec les questions à soumettre au service juridique.
 
@@ -182,7 +182,7 @@ Demandé « de mémoire », un modèle peut présenter une gamme de modèles ou 
 - Politique de confidentialité : anthropic.com/legal/privacy
 - Centre de transparence : anthropic.com/transparency
 
-**Check-list 4.1 — Avant de choisir une offre**
+**Check-list 4.1. Avant de choisir une offre**
 
 - [ ] Nombre d'utilisateurs et profils identifiés.
 - [ ] Niveau de confidentialité des données à traiter connu.
@@ -204,4 +204,4 @@ Demandé « de mémoire », un modèle peut présenter une gamme de modèles ou 
 9. **(Analyse critique)** Pourquoi est-il préférable de fournir à Claude l'extrait d'une page officielle plutôt que de lui demander de décrire les offres de mémoire ?
 10. **(Application)** Votre entreprise utilise déjà un grand fournisseur cloud. Quelle porte d'entrée vers les modèles Claude la direction informatique pourrait-elle étudier ?
 
-<div class="carnet" titre="Chapitre 4 — Découvrir Claude et l'écosystème Anthropic"></div>
+<div class="carnet" titre="Chapitre 4. Découvrir Claude et l'écosystème Anthropic"></div>

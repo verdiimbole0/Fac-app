@@ -1,4 +1,4 @@
-## Chapitre 30 — Claude appliqué aux ressources humaines et au développement des compétences
+## Chapitre 30. Claude appliqué aux ressources humaines et au développement des compétences
 
 ### A. Mise en situation professionnelle
 
@@ -14,9 +14,9 @@ Béatrice Musau, responsable RH de MCC, doit présenter au comité de direction 
 4. **Identifier** les usages interdits ou à haut risque de l'IA en RH (décisions individuelles, données sensibles, biais).
 5. **Accompagner** les équipes dans l'évolution des compétences liée à l'IA.
 
-### C. Comprendre avant de pratiquer — Profil du métier
+### C. Comprendre avant de pratiquer : Profil du métier
 
-*Tableau 30.1 — Profil de la fonction RH.*
+*Tableau 30.1. Profil de la fonction RH.*
 
 | Dimension | Contenu |
 |---|---|
@@ -33,9 +33,9 @@ Béatrice Musau, responsable RH de MCC, doit présenter au comité de direction 
 **Usages à haut risque.** Le règlement européen sur l'intelligence artificielle classe parmi les usages à haut risque les systèmes d'IA utilisés pour le recrutement, la sélection et les décisions affectant les relations de travail [@EU-AIACT]. Même lorsque ce règlement ne s'applique pas directement, il donne un repère utile. À MCC, la charte IA **interdit** l'usage de Claude pour trier, classer ou évaluer des candidats ou des salariés individuellement, et pour traiter des données de santé.
 :::
 
-### D. Démonstration guidée — Cas d'usage
+### D. Démonstration guidée : Cas d'usage
 
-#### Cas d'usage 30.1 — Plan de rattrapage des habilitations
+#### Cas d'usage 30.1. Plan de rattrapage des habilitations
 
 **1. Problème.** Des habilitations obligatoires (travail en hauteur, produits chimiques, consignation…) sont expirées ou proches de l'expiration ; des personnes peuvent travailler sans habilitation valide.
 
@@ -59,11 +59,11 @@ d'une personne à travailler : signale seulement les habilitations expirées.
 de sessions sur 8 semaines, par priorité ; 4) message type aux managers (100 mots).
 ```
 
-**7. Échanges.** « Liste, par poste, les matricules ayant au moins une habilitation prioritaire expirée — pour transmission confidentielle aux managers concernés. »
+**7. Échanges.** « Liste, par poste, les matricules ayant au moins une habilitation prioritaire expirée, pour transmission confidentielle aux managers concernés. »
 
 **8. Exemple de résultat (données fictives).** 27 habilitations expirées (dont 8 pour le travail en hauteur et 6 pour la manipulation de produits chimiques) concernant 26 matricules, et 46 expirant dans les 90 jours.
 
-![Figure 30.1 — État des formations obligatoires au 16/11/2026 (données fictives MCC, 360 habilitations suivies). Graphique réalisé pour cet ouvrage.](02_ILLUSTRATIONS/GRAPHIQUES/fig30_1_formations.png){width=90%}
+![Figure 30.1. État des formations obligatoires au 16/11/2026 (données fictives MCC, 360 habilitations suivies). Graphique réalisé pour cet ouvrage.](02_ILLUSTRATIONS/GRAPHIQUES/fig30_1_formations.png){width=90%}
 
 **9. Contrôle.** Vérification de 10 lignes dans le logiciel RH ; validation des priorités par le HSE.
 
@@ -73,7 +73,7 @@ de sessions sur 8 semaines, par priorité ; 4) message type aux managers (100 mo
 
 **12. Livrable.** Plan de rattrapage et messages aux managers.
 
-#### Cas d'usage 30.2 — Recrutement de conducteurs : annonce et grille d'entretien
+#### Cas d'usage 30.2. Recrutement de conducteurs : annonce et grille d'entretien
 
 **1. Problème.** Recruter 35 conducteurs, en favorisant l'emploi local, avec un processus équitable.
 
@@ -107,17 +107,17 @@ langage inclusif. Termine par une relecture listant tout passage potentiellement
 
 **12. Livrable.** Annonce, fiche de poste et grille validées.
 
-#### Cas d'usage 30.3 — Supports de formation et quiz (condensé)
+#### Cas d'usage 30.3. Supports de formation et quiz (condensé)
 
 À partir d'une procédure validée (par exemple la consignation), Claude produit un module de formation : objectifs, déroulé, supports simples, cas pratiques tirés d'incidents anonymisés, quiz de 10 questions avec corrigé. Le formateur et le HSE valident le contenu technique ; le module est testé avec un groupe pilote.
 
-#### Cas d'usage 30.4 — Accompagner l'évolution des métiers avec l'IA (condensé)
+#### Cas d'usage 30.4. Accompagner l'évolution des métiers avec l'IA (condensé)
 
-Claude aide à analyser, pour chaque métier, les tâches susceptibles d'être assistées, les compétences nouvelles nécessaires (formulation d'instructions, vérification, gestion des données) et les besoins de formation — en s'appuyant sur les cartes d'opportunités produites par les services (chapitre 1). Les décisions d'organisation font l'objet d'un dialogue avec les représentants du personnel (chapitre 39).
+Claude aide à analyser, pour chaque métier, les tâches susceptibles d'être assistées, les compétences nouvelles nécessaires (formulation d'instructions, vérification, gestion des données) et les besoins de formation, en s'appuyant sur les cartes d'opportunités produites par les services (chapitre 1). Les décisions d'organisation font l'objet d'un dialogue avec les représentants du personnel (chapitre 39).
 
 ### E. Prompts commentés
 
-**Prompt 30.1 — Relecture d'une politique RH**
+**Prompt 30.1. Relecture d'une politique RH**
 
 ```text
 Relis le projet de politique « [titre] » joint. Signale : les ambiguïtés ; les dispositions qui
@@ -177,4 +177,4 @@ Sollicité pour « classer les 200 CV reçus », un assistant peut produire un c
 9. **(Application)** Rédigez la règle anti-discrimination à inclure dans un prompt de recrutement.
 10. **(Compréhension)** Quel rôle joue le dialogue social dans l'évolution des métiers liée à l'IA ?
 
-<div class="carnet" titre="Chapitre 30 — Claude appliqué aux ressources humaines et au développement des compétences"></div>
+<div class="carnet" titre="Chapitre 30. Claude appliqué aux ressources humaines et au développement des compétences"></div>

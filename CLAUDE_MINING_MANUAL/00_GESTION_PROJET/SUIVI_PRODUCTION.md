@@ -48,7 +48,7 @@
 1. ✅ Photographies intégrées (10/10).
 2. Relecture humaine complète ; validation par des praticiens et un juriste (voir `07_CONTROLE_QUALITE`).
 3. Revalidation des informations datées sur Claude avant publication.
-4. Reconstruction : `python3 08_OUTILS/construire_livre.py` puis `python3 08_OUTILS/controle_qualite.py`.
+4. Reconstruction : `python3 08_OUTILS/construire_livre.py` (trois tomes), `python3 08_OUTILS/classeurs_tomes.py`, puis `python3 08_OUTILS/controle_qualite.py`.
 
 
 ## Révision « La Mine augmentée » (16 novembre 2026)
@@ -58,3 +58,10 @@
 - Figures redessinées dans la palette du livre (encre, cuivre, vert de gris, ardoise).
 - Couverture et quatrième de couverture créées (`08_OUTILS/couvertures.py`).
 - Livrables renommés `LA_MINE_AUGMENTEE.docx/.pdf` (610 pages).
+
+## Édition en trois tomes (28 novembre 2026)
+
+- Tome I (parties I et II) : 260 pages ; tome II (partie III) : 240 pages ; tome III (parties IV à VI) : 158 pages.
+- Auteur : Verdi Imbole ; page des droits d'auteur et page « À propos de l'auteur » dans chaque tome ; aucun éditeur ni ISBN.
+- Mention « État des connaissances sur Claude » retirée de la page de titre ; tirets cadratins supprimés.
+- Couvertures déclinées par tome (cuivre, malachite, cobalt) ; classeurs Excel de travail par tome.

@@ -1,10 +1,10 @@
-## Chapitre 5 — Ce que Claude sait faire et ce qu'il ne sait pas faire
+## Chapitre 5. Ce que Claude sait faire et ce qu'il ne sait pas faire
 
 ### A. Mise en situation professionnelle
 
 Me Henriette Ngoy, juriste principale de MCC, prépare une note sur les obligations de l'entreprise en matière de redevances. Elle demande à un assistant d'IA de citer « l'article du Code minier qui fixe le taux applicable au cobalt ». La réponse arrive en quelques secondes : un numéro d'article précis, un alinéa, un taux, et même une référence au Journal officiel. Tout semble parfait. Par réflexe professionnel, Me Ngoy ouvre le texte officiel : l'article cité ne traite pas du tout de ce sujet, et la référence du Journal officiel n'existe pas.
 
-Elle n'a pas perdu de temps — elle a vérifié. Mais combien de collègues auraient copié la réponse dans leur note ?
+Elle n'a pas perdu de temps : elle a vérifié. Mais combien de collègues auraient copié la réponse dans leur note ?
 
 ### B. Objectifs d'apprentissage
 
@@ -20,7 +20,7 @@ Elle n'a pas perdu de temps — elle a vérifié. Mais combien de collègues aur
 
 #### C.1. Ce que Claude sait bien faire
 
-*Tableau 5.1 — Capacités principales et exemples miniers.*
+*Tableau 5.1. Capacités principales et exemples miniers.*
 
 | Capacité | Exemple à MCC | Niveau de vigilance |
 |---|---|---|
@@ -47,7 +47,7 @@ Elle n'a pas perdu de temps — elle a vérifié. Mais combien de collègues aur
 
 Une **hallucination** est une réponse fausse, inventée ou non fondée, présentée avec la même assurance qu'une réponse exacte. Le profil de risque de l'IA générative publié par le NIST parle de **confabulation** : la production de contenus erronés ou faux présentés avec assurance [@NIST-GAI]. Les travaux de recherche distinguent notamment les contenus **incohérents avec la source fournie** et les contenus **impossibles à vérifier ou contraires aux faits** [@JI-2023].
 
-![Figure 5.1 — Anatomie d'une hallucination. La réponse est précise, assurée et bien formulée… mais rien ne garantit que ses éléments existent. Les signaux d'alerte aident à repérer les réponses à vérifier en priorité. Illustration réalisée pour cet ouvrage.](02_ILLUSTRATIONS/SCHEMAS/fig05_1_hallucination.png){width=95%}
+![Figure 5.1. Anatomie d'une hallucination. La réponse est précise, assurée et bien formulée… mais rien ne garantit que ses éléments existent. Les signaux d'alerte aident à repérer les réponses à vérifier en priorité. Illustration réalisée pour cet ouvrage.](02_ILLUSTRATIONS/SCHEMAS/fig05_1_hallucination.png){width=95%}
 
 **Pourquoi se produisent-elles ?** Parce que le modèle génère ce qui est probable dans le contexte (chapitre 3). Si la question appelle un numéro d'article, le modèle sait à quoi ressemble un numéro d'article ; s'il ne dispose pas de l'information exacte, il peut produire un numéro plausible. Les hallucinations sont plus fréquentes :
 
@@ -88,9 +88,9 @@ La meilleure protection contre les hallucinations n'est pas une formule magique 
 
 #### C.6. Une matrice pour décider
 
-![Figure 5.2 — Matrice de décision. Croisez les conséquences d'une erreur et la facilité de vérification pour déterminer le niveau d'usage approprié. Le quadrant « conséquences graves, difficile à vérifier » reste hors du champ de délégation. Illustration réalisée pour cet ouvrage.](02_ILLUSTRATIONS/SCHEMAS/fig05_2_matrice_risque_verif.png){width=78%}
+![Figure 5.2. Matrice de décision. Croisez les conséquences d'une erreur et la facilité de vérification pour déterminer le niveau d'usage approprié. Le quadrant « conséquences graves, difficile à vérifier » reste hors du champ de délégation. Illustration réalisée pour cet ouvrage.](02_ILLUSTRATIONS/SCHEMAS/fig05_2_matrice_risque_verif.png){width=78%}
 
-### D. Démonstration guidée — Transformer une question à risque en question sûre
+### D. Démonstration guidée : Transformer une question à risque en question sûre
 
 Me Ngoy reprend sa question sur les redevances, cette fois avec méthode.
 
@@ -110,7 +110,7 @@ Résultat : Claude identifie les dispositions pertinentes, cite les passages, si
 
 ### E. Prompts commentés
 
-**Prompt 5.1 — Recherche ancrée dans un texte officiel**
+**Prompt 5.1. Recherche ancrée dans un texte officiel**
 
 ```text
 Tu assistes une juriste d'entreprise minière. Voici le texte officiel fourni :
@@ -131,7 +131,7 @@ Règles impératives :
 
 *Commentaire.* Chaque règle correspond à une technique anti-hallucination : restriction aux documents, citation directe, droit de dire « non trouvé ». La règle 3 est particulièrement utile en droit minier, où les taux et modalités dépendent souvent de textes d'application.
 
-**Prompt 5.2 — Vérification a posteriori**
+**Prompt 5.2. Vérification a posteriori**
 
 ```text
 Reprends ta réponse précédente. Pour chaque affirmation factuelle :
@@ -140,7 +140,7 @@ Reprends ta réponse précédente. Pour chaque affirmation factuelle :
 Présente ensuite la version nettoyée de la réponse.
 ```
 
-**Prompt 5.3 — Détecter une question piégée**
+**Prompt 5.3. Détecter une question piégée**
 
 ```text
 Avant de répondre, vérifie si ma question contient une présupposition non démontrée.
@@ -150,7 +150,7 @@ Question : [votre question]
 
 ### F. Exercices pratiques
 
-**Exercice 5.1 (guidé) — Chasse aux hallucinations**
+**Exercice 5.1 (guidé) : Chasse aux hallucinations**
 
 Posez à Claude, **sans lui fournir de source**, les trois questions suivantes, puis vérifiez chaque élément de réponse dans une source officielle :
 
@@ -160,11 +160,11 @@ Posez à Claude, **sans lui fournir de source**, les trois questions suivantes, 
 
 Pour chaque question, classez la réponse : exacte, partiellement exacte, inventée, invérifiable. *Indice : la GISTM a été publiée le 5 août 2020, à l'issue d'un processus co-organisé par l'ICMM, le PNUE et les PRI [@GISTM-2020].*
 
-**Exercice 5.2 (guidé) — Reformuler avec les techniques anti-hallucination**
+**Exercice 5.2 (guidé) : Reformuler avec les techniques anti-hallucination**
 
 Reprenez la question 2 en fournissant un texte officiel et en utilisant le prompt 5.1. Comparez la qualité et la traçabilité des deux réponses.
 
-**Exercice 5.3 (autonome) — Votre matrice personnelle**
+**Exercice 5.3 (autonome) : Votre matrice personnelle**
 
 Placez dix tâches de votre métier dans la matrice de la figure 5.2. Pour chaque quadrant, définissez votre règle d'usage (libre, avec relecture, avec vérification systématique, exclu).
 
@@ -225,4 +225,4 @@ une réponse incomplète mais exacte à une réponse complète mais incertaine.
 9. **(Analyse critique)** « Si la réponse est bien rédigée, elle est probablement exacte. » Discutez.
 10. **(QCM)** Le profil de risque de l'IA générative du NIST désigne la production de contenus faux présentés avec assurance par le terme : a) dérive ; b) confabulation ; c) surapprentissage ; d) latence.
 
-<div class="carnet" titre="Chapitre 5 — Ce que Claude sait faire et ce qu'il ne sait pas faire"></div>
+<div class="carnet" titre="Chapitre 5. Ce que Claude sait faire et ce qu'il ne sait pas faire"></div>

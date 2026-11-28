@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """Assemble le manuscrit : registre des sources -> bibliographie/webographie,
 concaténation des chapitres, DOCX (pandoc) puis PDF (LibreOffice).
-Usage : python3 08_OUTILS/construire_livre.py [--sans-pdf] [--partie PARTIE_I]"""
+Usage : python3 08_OUTILS/construire_livre.py [--sans-pdf] [--tome 1|2|3]"""
 import csv, glob, os, re, subprocess, sys, zipfile, shutil
 from pathlib import Path
 
@@ -12,6 +12,20 @@ sys.path.insert(0, str(ROOT / "08_OUTILS"))
 from sources import SOURCES, CONSULTE  # noqa: E402
 
 TITRE = "LA_MINE_AUGMENTEE"
+AUTEUR = "Verdi Imbole"
+
+# Découpage en trois tomes : numérotation continue des parties et des chapitres ;
+# le glossaire (A) et la bibliographie (I) figurent dans chaque tome.
+TOMES = {
+    1: dict(romain="I", titre="Comprendre et maîtriser Claude", parties=["PARTIE_I", "PARTIE_II"],
+            annexes="ACEHI", chapitres=range(1, 17)),
+    2: dict(romain="II", titre="Claude dans les métiers et les processus miniers", parties=["PARTIE_III"],
+            annexes="ABDI", chapitres=range(17, 33)),
+    3: dict(romain="III", titre="Méthodes, gouvernance et mise en pratique", parties=["PARTIE_IV", "PARTIE_V", "PARTIE_VI"],
+            annexes="AFGIJKLM", chapitres=range(33, 44)),
+}
+TOME_DES_ANNEXES = {l: [t for t, c in TOMES.items() if l in c["annexes"]] for l in "ABCDEFGHIJKLM"}
+TOME_DU_CHAPITRE = {n: t for t, c in TOMES.items() for n in c["chapitres"]}
 
 COURT = {  # auteur abrégé pour les citations dans le texte
     "Anthropic": "Anthropic", "Model Context Protocol": "Model Context Protocol",
@@ -95,19 +109,24 @@ def apa_complete(s):
         ref += f" (consulté le {CONSULTE})"
     return ref
 
+def ecrire_bibliographie(chemin, utilisees=None):
+    """Annexe I : références classées APA, sans note liminaire. `utilisees` restreint aux sources citées dans le tome."""
+    garder = lambda s_: utilisees is None or s_["id"] in utilisees
+    biblio = sorted([s for s in SOURCES if s["cat"] == "B" and garder(s)], key=sort_key)
+    web = sorted([s for s in SOURCES if s["cat"] == "W" and garder(s)], key=sort_key)
+    with open(chemin, "w", encoding="utf-8") as f:
+        f.write("## Annexe I. Bibliographie et webographie\n\n")
+        for titre, lst in (("Bibliographie", biblio), ("Webographie", web)):
+            if not lst: continue
+            f.write(f"### {titre}\n\n")
+            for s_ in lst:
+                f.write(f"::: {{custom-style=\"Reference\"}}\n{apa_complete(s_)}\n:::\n\n")
+    return len(biblio), len(web)
+
 def generer_sources():
     etiquettes()
     d = ROOT / "05_BIBLIOGRAPHIE_WEBOGRAPHIE"; d.mkdir(exist_ok=True)
-    biblio = sorted([s for s in SOURCES if s["cat"] == "B"], key=sort_key)
-    web = sorted([s for s in SOURCES if s["cat"] == "W"], key=sort_key)
-    with open(d / "BIBLIOGRAPHIE_WEBOGRAPHIE.md", "w", encoding="utf-8") as f:
-        f.write("## Annexe I — Bibliographie et webographie\n\n")
-        f.write("### Bibliographie\n\n")
-        for s_ in biblio:
-            f.write(f"::: {{custom-style=\"Reference\"}}\n{apa_complete(s_)}\n:::\n\n")
-        f.write("### Webographie\n\n")
-        for s_ in web:
-            f.write(f"::: {{custom-style=\"Reference\"}}\n{apa_complete(s_)}\n:::\n\n")
+    nb, nw = ecrire_bibliographie(d / "BIBLIOGRAPHIE_WEBOGRAPHIE.md")
     with open(d / "REGISTRE_SOURCES.csv", "w", encoding="utf-8", newline="") as f:
         w = csv.writer(f, delimiter=";")
         w.writerow(["id", "categorie", "type", "citation_dans_le_texte", "reference_APA", "url", "doi", "date_consultation", "verification", "usage"])
@@ -117,38 +136,68 @@ def generer_sources():
                         "Consultation directe" if s["verif"] == "D" else "Recherche documentaire (accès direct indisponible)",
                         s.get("note", "")])
     with open(ROOT / "00_GESTION_PROJET" / "REGISTRE_SOURCES.md", "w", encoding="utf-8") as f:
-        f.write("# Registre des sources vérifiées\n\n> Fichier généré automatiquement depuis `08_OUTILS/sources.py` — ne pas éditer à la main.\n\n")
+        f.write("# Registre des sources vérifiées\n\n> Fichier généré automatiquement depuis `08_OUTILS/sources.py` : ne pas éditer à la main.\n\n")
         f.write(f"Date de consultation : {CONSULTE}. D = consultation directe ; R = recherche documentaire.\n\n")
         f.write("| ID | Cat. | Vérif. | Citation | Référence | URL | Usage |\n|---|---|---|---|---|---|---|\n")
         for s in SOURCES:
             f.write(f"| {s['id']} | {s['cat']} | {s['verif']} | ({s['_cite']}) | {s['_apa']} | {s['url']} | {s.get('note','')} |\n")
-    print(f"Sources : {len(biblio)} bibliographie, {len(web)} webographie")
+    print(f"Sources : {nb} bibliographie, {nw} webographie")
 
-def fichiers(partie=None):
-    m = ROOT / "01_MANUSCRIT"
-    ordre = ["PARTIE_0_LIMINAIRES", "PARTIE_I", "PARTIE_II", "PARTIE_III", "PARTIE_IV", "PARTIE_V", "PARTIE_VI"]
-    files = []
-    for p in ordre:
-        if partie and p != partie and p != "PARTIE_0_LIMINAIRES": continue
+def fichiers_tome(t):
+    """Liste ordonnée des fichiers d'un tome (« @BIBLIO » marque l'emplacement de l'Annexe I)."""
+    m, cfg = ROOT / "01_MANUSCRIT", TOMES[t]
+    files = sorted(glob.glob(str(m / "PARTIE_0_LIMINAIRES" / "*.md")))
+    for p in cfg["parties"]:
         files += sorted(glob.glob(str(m / p / "*.md")))
-    if not partie:
-        ann = sorted(glob.glob(str(ROOT / "04_ANNEXES" / "*.md")))
-        bib = str(ROOT / "05_BIBLIOGRAPHIE_WEBOGRAPHIE" / "BIBLIOGRAPHIE_WEBOGRAPHIE.md")
-        k = next((i for i, a in enumerate(ann) if Path(a).name.startswith("J_")), len(ann))
-        files += ann[:k] + [bib] + ann[k:]
+    files.append(str(ROOT / "04_ANNEXES" / "00_ouverture_annexes.md"))
+    for l in cfg["annexes"]:
+        if l == "I": files.append("@BIBLIO")
+        else: files += glob.glob(str(ROOT / "04_ANNEXES" / f"{l}_*.md"))
     return files
 
-def assembler(files):
+def renvois(txt, t):
+    """Signale le tome des annexes et chapitres situés dans un autre tome."""
+    def ann(m):
+        l = m.group(2); ts = TOME_DES_ANNEXES[l]
+        if t in ts: return m.group(0)
+        suite = m.group(3)
+        if suite.startswith(" ("): return f"{m.group(1)} {l} (tome {ts[0]}, "
+        if suite.startswith(")"): return f"{m.group(1)} {l}, tome {ts[0]})"
+        return f"{m.group(1)} {l} (tome {ts[0]}){suite}"
+    txt = re.sub(r"\b([Aa]nnexe) ([A-M])\b( \(|\)|)", ann, txt)
+    def chap(m):
+        n = int(m.group(1)); tt = TOME_DU_CHAPITRE.get(n)
+        if tt is None or tt == t: return m.group(0)
+        if m.group(2) == ")": return f"chapitre {n}, tome {tt})"
+        if m.group(2) == " (": return f"chapitre {n} (tome {tt}, "
+        return f"chapitre {n} (tome {tt})"
+    return re.sub(r"\bchapitre (\d+)\b(\)| \(|)", chap, txt)
+
+def ouverture_annexes(txt, t):
+    lignes = [l for l in txt.split("\n") if not re.match(r"^- Annexe ([A-M])\.", l)
+              or re.match(r"^- Annexe ([A-M])\.", l).group(1) in TOMES[t]["annexes"]]
+    return "\n".join(lignes)
+
+def assembler_tome(t):
     TMP.mkdir(parents=True, exist_ok=True)
     index = {s["id"]: s for s in SOURCES}
-    parts = []
-    for fp in files:
+    for s_ in SOURCES: s_.pop("_utilisee", None)
+    cfg = TOMES[t]; parts = []; pos_biblio = None
+    for fp in fichiers_tome(t):
+        if fp == "@BIBLIO":
+            pos_biblio = len(parts); parts.append(""); continue
         txt = Path(fp).read_text(encoding="utf-8")
+        txt = txt.replace("{{TOME_ROMAIN}}", cfg["romain"]).replace("{{TITRE_TOME}}", cfg["titre"])
+        if Path(fp).name == "00_ouverture_annexes.md": txt = ouverture_annexes(txt, t)
+        txt = renvois(txt, t)
         txt = citer(txt, index, fp)
         parts.append(txt.strip() + "\n\n")
-    non = [s["id"] for s in SOURCES if not s.get("_utilisee")]
-    if non: print("Sources du registre non citées dans le texte :", ", ".join(non))
-    combined = TMP / "manuscrit_complet.md"
+    utilisees = {s_["id"] for s_ in SOURCES if s_.get("_utilisee")}
+    bib = TMP / f"bibliographie_tome{t}.md"
+    nb, nw = ecrire_bibliographie(bib, utilisees)
+    parts[pos_biblio] = bib.read_text(encoding="utf-8") + "\n\n"
+    print(f"Tome {t} : {nb} références bibliographiques, {nw} ressources en ligne")
+    combined = TMP / f"tome{t}.md"
     combined.write_text("".join(parts), encoding="utf-8")
     return combined
 
@@ -158,7 +207,7 @@ def pandoc_docx(md, docx):
     cmd = ["pandoc", str(md), "-f", "markdown+fenced_divs+pipe_tables+grid_tables+implicit_figures+raw_attribute",
            "-o", str(docx), "--reference-doc", str(ref), "--lua-filter", str(ROOT / "08_OUTILS" / "filtre_manuel.lua"),
            "--resource-path", str(ROOT), "-M", "toc-title=Sommaire",
-           "-M", "lang=fr-FR", "-M", "title=Claude et l'intelligence artificielle au service de l'industrie minière"]
+           "-M", "lang=fr-FR"]
     subprocess.run(cmd, check=True, cwd=str(ROOT))
 
 def couverture_xml(doc, chemin, nom, idx):
@@ -183,7 +232,7 @@ def couverture_xml(doc, chemin, nom, idx):
 <pic:spPr><a:xfrm><a:off x="0" y="0"/><a:ext cx="{cx}" cy="{cy}"/></a:xfrm><a:prstGeom prst="rect"><a:avLst/></a:prstGeom></pic:spPr>
 </pic:pic></a:graphicData></a:graphic></wp:anchor></w:drawing></w:r>''')
 
-def couvertures(doc):
+def couvertures(doc, t):
     """1re de couverture en tête du livre, 4e de couverture en dernière page (sur page paire)."""
     from docx.oxml import OxmlElement
     from docx.oxml.ns import qn
@@ -197,11 +246,11 @@ def couvertures(doc):
         r = OxmlElement("w:r"); br = OxmlElement("w:br"); br.set(qn("w:type"), "page"); r.append(br); return r
     # avant : couverture puis page blanche (verso) avant la page de titre
     body.insert(0, para(saut()))
-    body.insert(0, para(couverture_xml(doc, d / "couverture_avant.png", "Couverture", 1), saut()))
+    body.insert(0, para(couverture_xml(doc, d / f"tome{t}_couverture_avant.png", "Couverture", 1), saut()))
     # arrière : dernière page
     sect = body.find(qn("w:sectPr"))
     sect.addprevious(para(saut()))
-    sect.addprevious(para(couverture_xml(doc, d / "couverture_arriere.png", "Quatrieme de couverture", 2)))
+    sect.addprevious(para(couverture_xml(doc, d / f"tome{t}_couverture_arriere.png", "Quatrieme de couverture", 2)))
 
 def liminaires_sans_entete(doc):
     """Section distincte pour les pages liminaires (couverture, titre, mentions, sommaire) : ni titre courant ni folio."""
@@ -239,7 +288,7 @@ def liminaires_sans_entete(doc):
         for p in hf.paragraphs: p.text = ""
     poser_type(corps, "oddPage")   # le corps démarre sur une belle page
 
-def post_traitement(docx):
+def post_traitement(docx, tome):
     from docx import Document
     from docx.shared import Pt, RGBColor
     from docx.oxml.ns import qn
@@ -281,42 +330,46 @@ def post_traitement(docx):
                         if ri == 0:
                             r.font.bold = False; r.font.small_caps = True; r.font.color.rgb = RGBColor(0x1A, 0x1A, 0x1A)
     liminaires_sans_entete(doc)
-    couvertures(doc)
+    couvertures(doc, tome)
+    cp = doc.core_properties
+    cp.title = f"La Mine augmentée. Tome {TOMES[tome]['romain']} : {TOMES[tome]['titre']}"
+    cp.author = AUTEUR; cp.last_modified_by = AUTEUR; cp.language = "fr-FR"
     # demande à Word de mettre à jour le sommaire à l'ouverture
     settings = doc.settings.element
     uf = OxmlElement("w:updateFields"); uf.set(qn("w:val"), "true"); settings.append(uf)
     doc.save(str(docx))
 
-def main():
-    sans_pdf = "--sans-pdf" in sys.argv
-    partie = None
-    if "--partie" in sys.argv: partie = sys.argv[sys.argv.index("--partie") + 1]
-    generer_sources()
-    files = fichiers(partie)
-    md = assembler(files)
+def construire(t, sans_pdf=False):
+    md = assembler_tome(t)
     OUT.mkdir(exist_ok=True)
-    nom = TITRE if not partie else f"{TITRE}_{partie}"
+    nom = f"{TITRE}_TOME_{t}"
     docx = OUT / f"{nom}.docx"
     pandoc_docx(md, docx)
-    post_traitement(docx)
-    print("DOCX :", docx)
+    post_traitement(docx, t)
     mots = len(re.findall(r"\w+", md.read_text(encoding="utf-8")))
-    print(f"Fichiers : {len(files)} — environ {mots:,} mots".replace(",", " "))
-    if not sans_pdf:
-        pdf = OUT / f"{nom}.pdf"
-        exporter = lambda: subprocess.run(["/usr/bin/python3", str(ROOT / "08_OUTILS" / "maj_toc_pdf.py"), str(docx), str(pdf)], check=True)
-        exporter()
-        pages = int(re.search(r"Pages:\s+(\d+)", subprocess.run(["pdfinfo", str(pdf)], capture_output=True, text=True).stdout).group(1))
-        if pages % 2 and not partie:
-            # la 4e de couverture doit tomber sur une page paire (verso) : on ajoute une page blanche
-            from docx import Document
-            from docx.oxml import OxmlElement
-            from docx.oxml.ns import qn
-            d = Document(str(docx)); body = d.element.body
-            dernier = body.find(qn("w:sectPr")).getprevious()
-            p = OxmlElement("w:p"); r = OxmlElement("w:r"); br = OxmlElement("w:br"); br.set(qn("w:type"), "page")
-            r.append(br); p.append(r); dernier.addprevious(p)
-            d.save(str(docx)); exporter()
+    print(f"DOCX : {docx} (environ {mots:,} mots)".replace(",", " "))
+    if sans_pdf: return
+    pdf = OUT / f"{nom}.pdf"
+    exporter = lambda: subprocess.run(["/usr/bin/python3", str(ROOT / "08_OUTILS" / "maj_toc_pdf.py"), str(docx), str(pdf)], check=True)
+    exporter()
+    pages = int(re.search(r"Pages:\s+(\d+)", subprocess.run(["pdfinfo", str(pdf)], capture_output=True, text=True).stdout).group(1))
+    if pages % 2:
+        # la 4e de couverture doit tomber sur une page paire (verso) : on ajoute une page blanche
+        from docx import Document
+        from docx.oxml import OxmlElement
+        from docx.oxml.ns import qn
+        d = Document(str(docx)); body = d.element.body
+        dernier = body.find(qn("w:sectPr")).getprevious()
+        p = OxmlElement("w:p"); r = OxmlElement("w:r"); br = OxmlElement("w:br"); br.set(qn("w:type"), "page")
+        r.append(br); p.append(r); dernier.addprevious(p)
+        d.save(str(docx)); exporter()
+
+def main():
+    sans_pdf = "--sans-pdf" in sys.argv
+    tomes = [int(sys.argv[sys.argv.index("--tome") + 1])] if "--tome" in sys.argv else [1, 2, 3]
+    generer_sources()
+    for t in tomes:
+        construire(t, sans_pdf)
 
 if __name__ == "__main__":
     main()

@@ -1,4 +1,4 @@
-## Chapitre 1 — L'industrie minière à l'ère de l'intelligence artificielle
+## Chapitre 1. L'industrie minière à l'ère de l'intelligence artificielle
 
 ### A. Mise en situation professionnelle
 
@@ -26,7 +26,7 @@ L'industrie minière fournit les matières premières de la transition énergét
 
 La République démocratique du Congo occupe une place centrale dans ce paysage. Selon l'Institut d'études géologiques des États-Unis (USGS), le pays était en 2025 la première source mondiale de cobalt extrait, avec environ 73 % de la production mondiale (estimation de 230 000 tonnes sur environ 310 000 tonnes), et le deuxième producteur minier de cuivre après le Chili, avec environ 3,2 millions de tonnes sur 23 millions [@USGS-MCS2026, fiches « Cobalt » et « Copper »].
 
-![Figure 1.1 — Production minière de cuivre et de cobalt en 2025 (estimations). La RDC est le deuxième producteur minier de cuivre et le premier producteur de cobalt. Données : U.S. Geological Survey (2026). Graphique réalisé pour cet ouvrage.](02_ILLUSTRATIONS/GRAPHIQUES/fig01_3_rdc_cuivre_cobalt.png){width=100%}
+![Figure 1.1. Production minière de cuivre et de cobalt en 2025 (estimations). La RDC est le deuxième producteur minier de cuivre et le premier producteur de cobalt. Données : U.S. Geological Survey (2026). Graphique réalisé pour cet ouvrage.](02_ILLUSTRATIONS/GRAPHIQUES/fig01_3_rdc_cuivre_cobalt.png){width=100%}
 
 Cette position s'accompagne de fortes exigences : transparence des revenus (la RDC est pays de mise en œuvre de l'Initiative pour la transparence dans les industries extractives [@EITI-RDC]), devoir de diligence sur les chaînes d'approvisionnement [@OECD-DDG], sécurité des travailleurs [@ILO-C176], gestion des résidus [@GISTM-2020], attentes croissantes des investisseurs et des communautés. Chacune de ces exigences se traduit par **davantage de documents, de données, de contrôles et de rapports**.
 
@@ -34,7 +34,7 @@ Cette position s'accompagne de fortes exigences : transparence des revenus (la R
 
 On imagine souvent la mine comme un univers de machines. C'est vrai, mais c'est aussi un univers de documents. Le tableau 1.1 en donne un aperçu pour une entreprise comme MCC.
 
-*Tableau 1.1 — Exemples de documents produits ou utilisés à chaque étape du cycle minier.*
+*Tableau 1.1. Exemples de documents produits ou utilisés à chaque étape du cycle minier.*
 
 | Étape | Documents typiques | Qui les produit ? |
 |---|---|---|
@@ -51,7 +51,7 @@ On imagine souvent la mine comme un univers de machines. C'est vrai, mais c'est 
 | Juridique | Titres miniers, contrats, correspondances avec l'administration | Juristes |
 | Gouvernance | Rapports au conseil, rapports de durabilité, tableaux de bord | Direction |
 
-![Figure 1.2 — La chaîne de valeur minière et les points d'appui de l'IA générative. Chaque étape produit et consomme des documents ; les fonctions transversales accompagnent tout le cycle de vie. Illustration réalisée pour cet ouvrage.](02_ILLUSTRATIONS/SCHEMAS/fig01_1_chaine_valeur.png){width=100%}
+![Figure 1.2. La chaîne de valeur minière et les points d'appui de l'IA générative. Chaque étape produit et consomme des documents ; les fonctions transversales accompagnent tout le cycle de vie. Illustration réalisée pour cet ouvrage.](02_ILLUSTRATIONS/SCHEMAS/fig01_1_chaine_valeur.png){width=100%}
 
 ::: retenir
 L'intelligence artificielle générative n'extrait pas de minerai. Elle aide à **lire, écrire, structurer, analyser et contrôler** l'information qui accompagne chaque tonne extraite. C'est là, d'abord, qu'elle crée de la valeur.
@@ -97,24 +97,24 @@ L'introduction de l'IA générative dans une entreprise minière soulève des d�
 - **Les compétences** : l'outil n'apporte de valeur qu'entre les mains de professionnels formés à l'utiliser et à en contrôler les résultats.
 - **L'acceptabilité sociale** : les communautés, les syndicats et les autorités sont attentifs aux effets de la technologie sur l'emploi et sur la transparence.
 
-### D. Démonstration guidée — Cartographier les tâches documentaires d'un service
+### D. Démonstration guidée : Cartographier les tâches documentaires d'un service
 
 Grace Nsimba, responsable HSE de MCC, veut savoir où Claude pourrait aider son équipe. Plutôt que de partir de l'outil (« que peut faire Claude ? »), elle part de son travail (« que fait mon équipe chaque semaine ? »). C'est la démarche que nous vous recommandons.
 
-**Étape 1 — Lister les tâches récurrentes.** Grace dresse, avec deux collaborateurs, la liste des tâches de l'équipe sur un mois type : rédaction des rapports d'incident, synthèse mensuelle des indicateurs, préparation des causeries sécurité, mise à jour des analyses de risques, suivi des actions correctives, préparation des audits, formation des nouveaux arrivants, veille réglementaire.
+**Étape 1. Lister les tâches récurrentes.** Grace dresse, avec deux collaborateurs, la liste des tâches de l'équipe sur un mois type : rédaction des rapports d'incident, synthèse mensuelle des indicateurs, préparation des causeries sécurité, mise à jour des analyses de risques, suivi des actions correctives, préparation des audits, formation des nouveaux arrivants, veille réglementaire.
 
-**Étape 2 — Estimer le temps passé.** Pour chaque tâche, l'équipe estime le nombre d'heures par mois. Ces estimations n'ont pas besoin d'être précises : un ordre de grandeur suffit.
+**Étape 2. Estimer le temps passé.** Pour chaque tâche, l'équipe estime le nombre d'heures par mois. Ces estimations n'ont pas besoin d'être précises : un ordre de grandeur suffit.
 
-**Étape 3 — Qualifier chaque tâche.** Pour chaque tâche, Grace répond à quatre questions :
+**Étape 3. Qualifier chaque tâche.** Pour chaque tâche, Grace répond à quatre questions :
 
 - La tâche consiste-t-elle surtout à **lire, écrire, structurer ou comparer** de l'information ?
 - Les données nécessaires sont-elles **disponibles sous forme numérique** ?
 - Quelles seraient les **conséquences d'une erreur** ?
 - Le résultat est-il **facile à vérifier** par un expert ?
 
-**Étape 4 — Demander à Claude de structurer et de compléter l'analyse.** Grace ouvre une nouvelle conversation dans Claude et lui fournit sa liste (sans aucune donnée confidentielle), avec la consigne présentée dans la section E.
+**Étape 4. Demander à Claude de structurer et de compléter l'analyse.** Grace ouvre une nouvelle conversation dans Claude et lui fournit sa liste (sans aucune donnée confidentielle), avec la consigne présentée dans la section E.
 
-**Étape 5 — Relire, corriger et prioriser.** Claude propose une matrice et des idées. Grace corrige les estimations irréalistes, supprime les usages inadaptés (par exemple, Claude avait suggéré de « déterminer automatiquement la gravité potentielle des incidents » ; Grace décide que la classification restera faite par un humain, Claude proposant seulement une pré-classification argumentée) et retient trois cas d'usage pilotes.
+**Étape 5. Relire, corriger et prioriser.** Claude propose une matrice et des idées. Grace corrige les estimations irréalistes, supprime les usages inadaptés (par exemple, Claude avait suggéré de « déterminer automatiquement la gravité potentielle des incidents » ; Grace décide que la classification restera faite par un humain, Claude proposant seulement une pré-classification argumentée) et retient trois cas d'usage pilotes.
 
 ::: application
 À l'issue de l'exercice, l'équipe HSE de MCC retient trois pilotes : (1) premier jet des rapports d'incident à partir des déclarations brutes ; (2) synthèse mensuelle des indicateurs avec commentaire des tendances ; (3) préparation des causeries sécurité hebdomadaires à partir des incidents récents. Ces trois cas sont développés au chapitre 23.
@@ -122,7 +122,7 @@ Grace Nsimba, responsable HSE de MCC, veut savoir où Claude pourrait aider son 
 
 ### E. Prompts commentés
 
-**Prompt 1.1 — Cartographie des tâches d'un service**
+**Prompt 1.1. Cartographie des tâches d'un service**
 
 ```text
 Je suis responsable HSE dans une entreprise minière à ciel ouvert (cuivre-cobalt,
@@ -162,7 +162,7 @@ Ne propose aucune délégation de décision de sécurité.
 
 Vous reconnaîtrez là les cinq briques de la méthode **CADRE** (Contexte, Action, Données, Règles, Exigences de sortie), que nous développerons au chapitre 10.
 
-**Prompt 1.2 — Préparer une note de position pour la direction**
+**Prompt 1.2. Préparer une note de position pour la direction**
 
 ```text
 Je suis directrice générale d'une société minière (cuivre-cobalt, RDC, 2 350 personnes).
@@ -189,7 +189,7 @@ Demander « Qu'est-ce que l'IA peut faire pour une mine ? » produit une liste g
 
 ### F. Exercices pratiques
 
-**Exercice 1.1 (guidé) — Inventaire de vos tâches documentaires**
+**Exercice 1.1 (guidé) : Inventaire de vos tâches documentaires**
 
 1. Sur une feuille ou dans un tableur, listez 10 à 15 tâches que vous réalisez au moins une fois par mois.
 2. Pour chacune, estimez le temps mensuel et indiquez si elle consiste principalement à lire, écrire, structurer, comparer, calculer ou décider.
@@ -198,7 +198,7 @@ Demander « Qu'est-ce que l'IA peut faire pour une mine ? » produit une liste g
 
 *Critère de réussite :* vous disposez d'un tableau de 10 tâches au moins, chacune qualifiée (intérêt, risque, données nécessaires), relu et corrigé par vous.
 
-**Exercice 1.2 (autonome) — La carte des opportunités de MCC**
+**Exercice 1.2 (autonome) : La carte des opportunités de MCC**
 
 Choisissez un département de MCC (maintenance, finance, environnement ou relations communautaires). À partir de la fiche de l'entreprise (Avant-propos) et de votre connaissance du métier, construisez la carte des opportunités IA du département : 8 tâches, classées dans la matrice intérêt / risque, avec 2 pilotes recommandés et 2 usages à exclure explicitement.
 
@@ -210,7 +210,7 @@ Trouvez, dans votre fonction, une tâche que vous jugiez « impossible à assist
 
 À la fin de ce chapitre, vous devez être capable de produire une **carte des opportunités IA** de votre service, d'une page, comprenant :
 
-*Tableau 1.2 — Modèle de carte des opportunités IA (extrait, service HSE de MCC, fictif).*
+*Tableau 1.2. Modèle de carte des opportunités IA (extrait, service HSE de MCC, fictif).*
 
 | Tâche | Temps/mois | Apport possible de Claude | Reste humain | Intérêt | Risque | Décision |
 |---|---|---|---|---|---|---|
@@ -218,7 +218,7 @@ Trouvez, dans votre fonction, une tâche que vous jugiez « impossible à assist
 | Synthèse mensuelle des indicateurs | 16 h | Calculs, graphiques, commentaire des tendances | Validation des chiffres, interprétation | Fort | Faible | Pilote 2 |
 | Causeries sécurité | 12 h | Supports adaptés à partir d'incidents réels | Choix du thème, animation | Moyen | Faible | Pilote 3 |
 | Analyses de risques | 24 h | Relecture, suggestions de dangers oubliés | Évaluation, mesures de maîtrise | Moyen | Élevé | Plus tard, avec garde-fous |
-| Décision d'arrêt d'un chantier | — | Aucun | Totalité | — | Critique | Exclu |
+| Décision d'arrêt d'un chantier |  | Aucun | Totalité |  | Critique | Exclu |
 
 ### H. Vérification des résultats
 
@@ -241,14 +241,14 @@ Avant de présenter votre carte des opportunités, vérifiez :
 
 ### J. Boîte à outils
 
-**Fiche pratique 1.1 — Les quatre questions pour qualifier une tâche**
+**Fiche pratique 1.1 : Les quatre questions pour qualifier une tâche**
 
 1. Est-ce surtout une tâche d'information (lire, écrire, structurer, comparer) ?
 2. Les données sont-elles numériques et accessibles en respectant la confidentialité ?
 3. Quelles sont les conséquences d'une erreur (faibles, moyennes, graves, critiques) ?
 4. Un expert peut-il vérifier le résultat facilement ?
 
-**Prompt réutilisable 1.3 — Analyse d'une tâche unique**
+**Prompt réutilisable 1.3 : Analyse d'une tâche unique**
 
 ```text
 Je suis [fonction] dans une entreprise minière [type de mine, substance, pays].
@@ -261,7 +261,7 @@ Analyse comment un assistant d'IA pourrait m'aider sur cette tâche :
 à prévoir, et un premier prompt que je pourrais tester. Sois concret et prudent.
 ```
 
-**Check-list 1.1 — Démarrer sans risque**
+**Check-list 1.1. Démarrer sans risque**
 
 - [ ] J'ai lu la charte IA de mon entreprise (ou j'ai demandé s'il en existe une).
 - [ ] Je connais le niveau de confidentialité des documents que je compte utiliser.
@@ -282,4 +282,4 @@ Analyse comment un assistant d'IA pourrait m'aider sur cette tâche :
 9. **(Application)** Classez dans la matrice intérêt / risque la tâche « répondre automatiquement aux plaintes des communautés sans relecture ». Justifiez.
 10. **(Compréhension)** Pourquoi la qualité des données de terrain reste-t-elle un enjeu majeur, même avec une IA performante ?
 
-<div class="carnet" titre="Chapitre 1 — L'industrie minière à l'ère de l'intelligence artificielle"></div>
+<div class="carnet" titre="Chapitre 1. L'industrie minière à l'ère de l'intelligence artificielle"></div>

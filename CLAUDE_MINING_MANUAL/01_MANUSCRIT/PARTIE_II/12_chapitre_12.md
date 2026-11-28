@@ -1,4 +1,4 @@
-## Chapitre 12 — Gérer efficacement les conversations, les informations et les contextes
+## Chapitre 12. Gérer efficacement les conversations, les informations et les contextes
 
 ### A. Mise en situation professionnelle
 
@@ -20,7 +20,7 @@ Sarah Mwamba, ingénieure planification, travaille depuis trois semaines dans **
 
 Comme expliqué au chapitre 3, Claude travaille à partir de ce qui figure dans la **fenêtre de contexte** : vos instructions, les documents, l'historique. Dans une conversation très longue, des informations contradictoires s'accumulent (anciennes et nouvelles versions), et le risque augmente que le modèle s'appuie sur une version périmée ou néglige un détail.
 
-![Figure 12.1 — Conversations longues : pourquoi repartir sur une base propre. Courbes schématiques illustrant un principe d'usage, non une mesure. Illustration réalisée pour cet ouvrage.](02_ILLUSTRATIONS/GRAPHIQUES/fig12_1_contexte_conversation.png){width=85%}
+![Figure 12.1. Conversations longues : pourquoi repartir sur une base propre. Courbes schématiques illustrant un principe d'usage, non une mesure. Illustration réalisée pour cet ouvrage.](02_ILLUSTRATIONS/GRAPHIQUES/fig12_1_contexte_conversation.png){width=85%}
 
 #### C.2. Quand ouvrir une nouvelle conversation ?
 
@@ -63,7 +63,7 @@ La mémoire est pratique, mais elle peut **mélanger les contextes** (une hypoth
 
 La règle d'or : **une seule version de référence par information**, clairement datée. Dans vos instructions, indiquez explicitement ce qui fait foi : « Les hypothèses de référence sont celles du tableau ci-dessous, version du 12/11/2026 ; ignore toute valeur antérieure. »
 
-### D. Démonstration guidée — Remettre de l'ordre dans le plan minier de Sarah
+### D. Démonstration guidée : Remettre de l'ordre dans le plan minier de Sarah
 
 1. **Diagnostic** : Sarah demande à Claude, dans la conversation encombrée, la liste de toutes les valeurs différentes utilisées pour chaque hypothèse clé (prompt 12.2). Le résultat met en évidence trois valeurs de découverture (6,5 ; 6,2 ; 6,0) et deux taux de disponibilité de la flotte.
 2. **Validation** : Sarah établit elle-même le tableau des hypothèses de référence (version datée).
@@ -73,7 +73,7 @@ La règle d'or : **une seule version de référence par information**, clairemen
 
 ### E. Prompts commentés
 
-**Prompt 12.1 — Résumé de passation**
+**Prompt 12.1. Résumé de passation**
 
 ```text
 Nous allons poursuivre ce travail dans une nouvelle conversation.
@@ -89,7 +89,7 @@ existent dans notre conversation, au lieu d'en choisir une.
 
 *Commentaire.* La dernière consigne est essentielle : elle évite que Claude « tranche » silencieusement entre deux versions.
 
-**Prompt 12.2 — Inventaire des incohérences d'une conversation**
+**Prompt 12.2. Inventaire des incohérences d'une conversation**
 
 ```text
 Liste toutes les valeurs que nous avons utilisées dans cette conversation pour :
@@ -98,7 +98,7 @@ Pour chaque paramètre, indique chaque valeur rencontrée et le contexte où ell
 Ne choisis pas la « bonne » valeur.
 ```
 
-**Prompt 12.3 — Démarrage d'une nouvelle conversation**
+**Prompt 12.3. Démarrage d'une nouvelle conversation**
 
 ```text
 Voici le résumé de passation validé d'un travail en cours : <passation> … </passation>
@@ -106,7 +106,7 @@ Les données de référence de ce résumé font foi et remplacent toute autre va
 Confirme ta compréhension en 5 lignes, puis attends ma prochaine instruction.
 ```
 
-**Prompt 12.4 — Retrouver une information passée (offres payantes)**
+**Prompt 12.4. Retrouver une information passée (offres payantes)**
 
 ```text
 Cherche dans mes conversations précédentes ce que nous avions conclu sur
@@ -116,15 +116,15 @@ Si tu trouves plusieurs conclusions différentes, présente-les toutes.
 
 ### F. Exercices pratiques
 
-**Exercice 12.1 (guidé) — Passation**
+**Exercice 12.1 (guidé) : Passation**
 
 Reprenez votre plus longue conversation avec Claude. Utilisez le prompt 12.1, corrigez le résumé, puis poursuivez dans une nouvelle conversation avec le prompt 12.3. Comparez la qualité des réponses avant et après.
 
-**Exercice 12.2 (guidé) — Audit de mémoire**
+**Exercice 12.2 (guidé) : Audit de mémoire**
 
 Consultez ce que la mémoire de Claude a retenu sur vous (si la fonction est activée). Supprimez ce qui est inexact, obsolète ou sensible.
 
-**Exercice 12.3 (autonome) — Règles d'organisation de votre équipe**
+**Exercice 12.3 (autonome) : Règles d'organisation de votre équipe**
 
 Rédigez une page de règles pour votre équipe : nommage, usage des projets, usage du mode incognito, durée de conservation, archivage des livrables.
 
@@ -174,4 +174,4 @@ Dans une conversation où deux versions d'un budget coexistent, Claude calcule u
 9. **(Analyse critique)** Pourquoi Claude ne doit-il pas servir de système d'archivage officiel ?
 10. **(Vrai ou faux)** Il est recommandé de consulter et nettoyer régulièrement la mémoire de Claude.
 
-<div class="carnet" titre="Chapitre 12 — Gérer efficacement les conversations, les informations et les contextes"></div>
+<div class="carnet" titre="Chapitre 12. Gérer efficacement les conversations, les informations et les contextes"></div>

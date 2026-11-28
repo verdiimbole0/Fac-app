@@ -1,4 +1,4 @@
-## Annexe H — Tableau récapitulatif des capacités et limites de Claude
+## Annexe H. Tableau récapitulatif des capacités et limites de Claude
 
 *État au 16 novembre 2026, d'après la documentation officielle d'Anthropic (voir Annexe I). Les valeurs chiffrées évoluent : vérifiez-les avant toute décision.*
 
@@ -26,7 +26,7 @@
 | PDF | 1 000 pages max ; éléments visuels analysés jusqu'à 100 pages | [@ANT-HC-UPLOAD] |
 | Fichiers de projet | 30 Mo par fichier | [@ANT-HC-UPLOAD] |
 
-### H.3. Ce que Claude fait bien — et à quelles conditions
+### H.3. Ce que Claude fait bien, et à quelles conditions
 
 | Capacité | Condition de fiabilité |
 |---|---|

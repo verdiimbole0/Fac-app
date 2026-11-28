@@ -1,10 +1,10 @@
-## Chapitre 19 — Claude appliqué à l'ingénierie et à la planification minière
+## Chapitre 19. Claude appliqué à l'ingénierie et à la planification minière
 
 ### A. Mise en situation professionnelle
 
 Sarah Mwamba, ingénieure planification de MCC, doit expliquer au comité de direction pourquoi le minerai traité au premier semestre 2026 est inférieur au budget, et proposer un plan de rattrapage pour le second semestre. Elle dispose des données journalières de production, du plan budgétaire, des rapports mensuels et des comptes rendus de réunions. Le logiciel de planification minière produit les plans ; mais l'analyse des écarts, la rédaction des hypothèses, la comparaison des scénarios et la préparation de la présentation lui prennent l'essentiel de son temps.
 
-![Figure 19.1 — Une grande mine de cuivre à ciel ouvert : les gradins, les rampes et le fond de fosse illustrent l'ampleur des choix de planification. Titre original : « Bingham Canyon Open Pit Copper Mine 2012-09-17 21-25-59 ». Auteur : Jet6581. Source : Wikimedia Commons, [https://commons.wikimedia.org/wiki/File:Bingham_Canyon_Open_Pit_Copper_Mine_2012-09-17_21-25-59.jpg](https://commons.wikimedia.org/wiki/File:Bingham_Canyon_Open_Pit_Copper_Mine_2012-09-17_21-25-59.jpg) (consulté le 16/11/2026). Licence : [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/deed.fr) ; image redimensionnée pour l'édition. Photographie d'illustration, sans lien avec l'entreprise fictive MCC.](02_ILLUSTRATIONS/PHOTOGRAPHIES/photo_fosse_bingham_canyon.jpg){width=85%}
+![Figure 19.1. Une grande mine de cuivre à ciel ouvert : les gradins, les rampes et le fond de fosse illustrent l'ampleur des choix de planification. Titre original : « Bingham Canyon Open Pit Copper Mine 2012-09-17 21-25-59 ». Auteur : Jet6581. Source : Wikimedia Commons, [https://commons.wikimedia.org/wiki/File:Bingham_Canyon_Open_Pit_Copper_Mine_2012-09-17_21-25-59.jpg](https://commons.wikimedia.org/wiki/File:Bingham_Canyon_Open_Pit_Copper_Mine_2012-09-17_21-25-59.jpg) (consulté le 16/11/2026). Licence : [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/deed.fr) ; image redimensionnée pour l'édition. Photographie d'illustration, sans lien avec l'entreprise fictive MCC.](02_ILLUSTRATIONS/PHOTOGRAPHIES/photo_fosse_bingham_canyon.jpg){width=85%}
 
 ### B. Objectifs d'apprentissage
 
@@ -16,9 +16,9 @@ Sarah Mwamba, ingénieure planification de MCC, doit expliquer au comité de dir
 4. **Contrôler** la cohérence d'une étude technique (hypothèses, unités, références croisées).
 5. **Préparer** une présentation de plan pour une direction non spécialiste.
 
-### C. Comprendre avant de pratiquer — Profil du métier
+### C. Comprendre avant de pratiquer : Profil du métier
 
-*Tableau 19.1 — Profil de l'ingénieur de planification minière.*
+*Tableau 19.1. Profil de l'ingénieur de planification minière.*
 
 | Dimension | Contenu |
 |---|---|
@@ -35,9 +35,9 @@ Sarah Mwamba, ingénieure planification de MCC, doit expliquer au comité de dir
 Les angles de talus, la largeur des rampes et des banquettes et toute contrainte de stabilité sont fixés par les études géotechniques et validés par des spécialistes. Claude ne les propose pas, ne les modifie pas et ne les « optimise » pas.
 :::
 
-### D. Démonstration guidée — Cas d'usage
+### D. Démonstration guidée : Cas d'usage
 
-#### Cas d'usage 19.1 — Analyse des écarts plan / réalisé du semestre
+#### Cas d'usage 19.1. Analyse des écarts plan / réalisé du semestre
 
 **1. Problème.** Le minerai traité au S1 2026 est inférieur au budget de 200 kt/mois ; la direction veut comprendre pourquoi et ce qui est rattrapable.
 
@@ -70,7 +70,7 @@ en effet tonnage, effet teneur, effet récupération ; commentaire de 200 mots ;
 
 **8. Exemple de résultat (fictif).**
 
-![Figure 19.2 — Minerai traité par mois au premier semestre 2026, comparé au budget de 200 kt. Les mois de saison des pluies sont pénalisés. Données fictives MCC. Graphique réalisé pour cet ouvrage.](02_ILLUSTRATIONS/GRAPHIQUES/fig19_2_minerai_traite_mensuel.png){width=88%}
+![Figure 19.2. Minerai traité par mois au premier semestre 2026, comparé au budget de 200 kt. Les mois de saison des pluies sont pénalisés. Données fictives MCC. Graphique réalisé pour cet ouvrage.](02_ILLUSTRATIONS/GRAPHIQUES/fig19_2_minerai_traite_mensuel.png){width=88%}
 
 Commentaire produit (extrait, à valider) : « Le minerai traité est inférieur au budget au premier semestre, principalement de janvier à avril. Ces mois coïncident avec une fréquence élevée de jours de forte pluie dans les données ; l'extraction y est en moyenne plus faible les jours de pluie. Cette association ne suffit pas à établir la cause : l'effet de l'état des rampes et de la disponibilité de la flotte doit être vérifié avec la production. »
 
@@ -82,7 +82,7 @@ Commentaire produit (extrait, à valider) : « Le minerai traité est inférieur
 
 **12. Livrable.** Note d'analyse plan/réalisé de 3 pages et 5 diapositives pour le comité, validées par Sarah.
 
-#### Cas d'usage 19.2 — Note d'hypothèses du plan trimestriel
+#### Cas d'usage 19.2. Note d'hypothèses du plan trimestriel
 
 **1. Problème.** Les hypothèses du plan (productivités, disponibilités, temps de cycle, découverture, teneurs) sont dispersées dans des fichiers et des courriels ; certaines ont changé sans être documentées.
 
@@ -105,7 +105,7 @@ et liste à la fin les paramètres à arbitrer.
 
 **7. Échanges.** « Pour les paramètres contradictoires, prépare la question à poser à chaque responsable. »
 
-**8. Exemple de résultat.** Tableau de 24 hypothèses, dont 3 contradictoires (disponibilité de la flotte : 85 % dans le plan, 81 % réalisé en mars ; rapport de découverture : 6,0 et 6,5) — à arbitrer par Sarah.
+**8. Exemple de résultat.** Tableau de 24 hypothèses, dont 3 contradictoires (disponibilité de la flotte : 85 % dans le plan, 81 % réalisé en mars ; rapport de découverture : 6,0 et 6,5) : à arbitrer par Sarah.
 
 **9. Contrôle.** Chaque valeur « validée » est rattachée à un document de validation.
 
@@ -115,17 +115,17 @@ et liste à la fin les paramètres à arbitrer.
 
 **12. Livrable.** Note d'hypothèses versionnée, annexée au plan.
 
-#### Cas d'usage 19.3 — Scénarios simples de rattrapage (condensé)
+#### Cas d'usage 19.3. Scénarios simples de rattrapage (condensé)
 
 Par exécution de code, Claude calcule l'effet de quelques leviers sur la production du second semestre : disponibilité de la flotte (81 % → 85 %), nombre de jours de pluie, teneur d'alimentation, récupération. Il présente un tableau de scénarios avec les formules. Ces calculs simplifiés aident à **structurer la discussion** ; ils ne remplacent pas la replanification dans le logiciel minier, qui intègre les contraintes de séquence, de géotechnique et de flotte.
 
-#### Cas d'usage 19.4 — Revue de cohérence d'une étude technique (condensé)
+#### Cas d'usage 19.4. Revue de cohérence d'une étude technique (condensé)
 
 Pour l'étude « Mbiyo Profond », Claude contrôle la cohérence entre chapitres : mêmes hypothèses de prix, de taux de change, de récupération et de coûts ; unités ; références à des tableaux et figures existants ; cohérence entre le résumé et le corps. Il produit un tableau d'incohérences (page, citation, nature). L'ingénieur responsable arbitre.
 
 ### E. Prompts commentés
 
-**Prompt 19.1 — Décomposition d'un écart de production**
+**Prompt 19.1. Décomposition d'un écart de production**
 
 ```text
 Avec l'exécution de code, décompose l'écart de production de cathode du mois [M]
@@ -189,4 +189,4 @@ Claude calcule une « disponibilité moyenne de la flotte » en faisant la moyen
 9. **(Calcul)** Pour atteindre 2,4 Mt en 2026 après un S1 à 1,14 Mt, combien faut-il traiter par jour au S2 (184 jours) ?
 10. **(Analyse critique)** Quels risques présente une présentation au comité préparée par Claude et non relue ?
 
-<div class="carnet" titre="Chapitre 19 — Claude appliqué à l'ingénierie et à la planification minière"></div>
+<div class="carnet" titre="Chapitre 19. Claude appliqué à l'ingénierie et à la planification minière"></div>

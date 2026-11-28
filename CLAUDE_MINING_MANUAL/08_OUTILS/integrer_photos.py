@@ -55,7 +55,7 @@ for md in glob.glob(str(ROOT / "01_MANUSCRIT" / "**" / "*.md"), recursive=True):
         lic = c["licence"]
         lic_txt = f"[{lic}]({c['url_licence']})" if c.get("url_licence") else ("domaine public" if "Public" in lic else lic)
         modif = " ; image redimensionnée pour l'édition" if lic.startswith("CC") else ""
-        leg = (f"{fig} — {titre} Titre original : « {titre_c} ». Auteur : {c['auteur_affiche']}. "
+        leg = (f"{fig}. {titre} Titre original : « {titre_c} ». Auteur : {c['auteur_affiche']}. "
                f"Source : Wikimedia Commons, [{c['page']}]({c['page']}) (consulté le 16/11/2026). "
                f"Licence : {lic_txt}{modif}. Photographie d'illustration, sans lien avec l'entreprise fictive MCC.")
         n += 1

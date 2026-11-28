@@ -1,4 +1,4 @@
-## Annexe G — Modèle de classification et de protection des données
+## Annexe G. Modèle de classification et de protection des données
 
 *Modèle fictif (MCC), à adapter à la politique de sécurité de l'information de votre entreprise et au droit applicable.*
 
@@ -6,10 +6,10 @@
 
 | Niveau | Définition | Exemples (secteur minier) | Usage de Claude | Mesures |
 |---|---|---|---|---|
-| **1 — Public** | Information publiée ou destinée à l'être | Rapports publiés, textes officiels, communiqués, rapports ITIE publiés | Libre | Vérifier que l'information est réellement publique |
-| **2 — Usage interne** | Diffusion interne ; dommage limité en cas de fuite | Procédures, rapports internes non sensibles, données de production agrégées, supports de formation | Espace d'entreprise uniquement | Pas de compte personnel |
-| **3 — Confidentiel** | Dommage significatif en cas de fuite | Contrats et prix, données RH, incidents nominatifs, plaintes, données financières non publiées, résultats techniques non publiés non privilégiés | Espace d'entreprise, accord du propriétaire de la donnée, minimisation et pseudonymisation | Projets à accès restreint ; mémoire et connecteurs vérifiés |
-| **4 — Restreint** | Dommage grave ; diffusion nominative | Informations privilégiées (résultats d'exploration, réserves avant publication), stratégie, fusions-acquisitions, contentieux, données de santé, plans de sûreté | **Interdit** | Outils dédiés, accès nominatif |
+| **1 : Public** | Information publiée ou destinée à l'être | Rapports publiés, textes officiels, communiqués, rapports ITIE publiés | Libre | Vérifier que l'information est réellement publique |
+| **2 : Usage interne** | Diffusion interne ; dommage limité en cas de fuite | Procédures, rapports internes non sensibles, données de production agrégées, supports de formation | Espace d'entreprise uniquement | Pas de compte personnel |
+| **3 : Confidentiel** | Dommage significatif en cas de fuite | Contrats et prix, données RH, incidents nominatifs, plaintes, données financières non publiées, résultats techniques non publiés non privilégiés | Espace d'entreprise, accord du propriétaire de la donnée, minimisation et pseudonymisation | Projets à accès restreint ; mémoire et connecteurs vérifiés |
+| **4 : Restreint** | Dommage grave ; diffusion nominative | Informations privilégiées (résultats d'exploration, réserves avant publication), stratégie, fusions-acquisitions, contentieux, données de santé, plans de sûreté | **Interdit** | Outils dédiés, accès nominatif |
 
 ### G.2. Arbre de décision
 
@@ -42,4 +42,4 @@ En cas de doute, retenir le niveau le plus élevé et demander au propriétaire 
 
 ### G.5. Marquage
 
-Indiquer le niveau en en-tête ou pied de page des documents (« MCC — Confidentiel — Niveau 3 »), dans le nom des projets Claude (« [N3] Achats — Contrats ») et dans le registre des cas d'usage.
+Indiquer le niveau en en-tête ou pied de page des documents (« MCC, Confidentiel, Niveau 3 »), dans le nom des projets Claude (« [N3] Achats : Contrats ») et dans le registre des cas d'usage.

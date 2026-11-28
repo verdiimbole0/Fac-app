@@ -1,10 +1,10 @@
-## Chapitre 21 — Claude appliqué au traitement des minerais et à la métallurgie
+## Chapitre 21. Claude appliqué au traitement des minerais et à la métallurgie
 
 ### A. Mise en situation professionnelle
 
 Jean-Luc Tshibangu, métallurgiste en chef de MCC, fait face à deux problèmes. Le poste « réactifs » de l'usine dépasse le budget de plus de 20 % depuis avril 2026, et le directeur financier attend une explication chiffrée. Par ailleurs, la procédure opératoire de l'électrolyse doit être mise à jour avant l'audit de certification, car l'usine a modifié ses équipements de ventilation. Jean-Luc a les données, les contrats, les anciennes procédures ; il lui manque le temps de tout croiser et rédiger.
 
-![Figure 21.1 — Salle d'électrolyse du cuivre (raffinerie de Luilu, près de Kolwezi, photographie historique). Titre original : « Room where copper is electrolyzed at the Gecamines Luilu refinery near Kolwezi ». Auteur : Gécamines. Source : Wikimedia Commons, [https://commons.wikimedia.org/wiki/File:Room_where_copper_is_electrolyzed_at_the_Gecamines_Luilu_refinery_near_Kolwezi.jpg](https://commons.wikimedia.org/wiki/File:Room_where_copper_is_electrolyzed_at_the_Gecamines_Luilu_refinery_near_Kolwezi.jpg) (consulté le 16/11/2026). Licence : domaine public. Photographie d'illustration, sans lien avec l'entreprise fictive MCC.](02_ILLUSTRATIONS/PHOTOGRAPHIES/photo_electrolyse_luilu.jpg){width=78%}
+![Figure 21.1. Salle d'électrolyse du cuivre (raffinerie de Luilu, près de Kolwezi, photographie historique). Titre original : « Room where copper is electrolyzed at the Gecamines Luilu refinery near Kolwezi ». Auteur : Gécamines. Source : Wikimedia Commons, [https://commons.wikimedia.org/wiki/File:Room_where_copper_is_electrolyzed_at_the_Gecamines_Luilu_refinery_near_Kolwezi.jpg](https://commons.wikimedia.org/wiki/File:Room_where_copper_is_electrolyzed_at_the_Gecamines_Luilu_refinery_near_Kolwezi.jpg) (consulté le 16/11/2026). Licence : domaine public. Photographie d'illustration, sans lien avec l'entreprise fictive MCC.](02_ILLUSTRATIONS/PHOTOGRAPHIES/photo_electrolyse_luilu.jpg){width=78%}
 
 ### B. Objectifs d'apprentissage
 
@@ -16,11 +16,11 @@ Jean-Luc Tshibangu, métallurgiste en chef de MCC, fait face à deux problèmes.
 4. **Structurer** une démarche de diagnostic d'une baisse de performance sans déléguer les conclusions.
 5. **Exploiter** les rapports de laboratoire de façon traçable.
 
-### C. Comprendre avant de pratiquer — Profil du métier
+### C. Comprendre avant de pratiquer : Profil du métier
 
-![Figure 21.2 — Schéma de traitement simplifié de l'usine de MCC (fictif) : lixiviation acide, décantation à contre-courant, extraction par solvant et électrolyse pour le cuivre ; précipitation du cobalt. Illustration réalisée pour cet ouvrage.](02_ILLUSTRATIONS/SCHEMAS/fig21_2_schema_usine.png){width=100%}
+![Figure 21.2. Schéma de traitement simplifié de l'usine de MCC (fictif) : lixiviation acide, décantation à contre-courant, extraction par solvant et électrolyse pour le cuivre ; précipitation du cobalt. Illustration réalisée pour cet ouvrage.](02_ILLUSTRATIONS/SCHEMAS/fig21_2_schema_usine.png){width=100%}
 
-*Tableau 21.1 — Profil du métallurgiste et de l'équipe de l'usine.*
+*Tableau 21.1. Profil du métallurgiste et de l'équipe de l'usine.*
 
 | Dimension | Contenu |
 |---|---|
@@ -33,9 +33,9 @@ Jean-Luc Tshibangu, métallurgiste en chef de MCC, fait face à deux problèmes.
 | Assistables par Claude | Bilans et graphiques par code ; analyse des écarts de coût ; rédaction et révision de procédures ; structuration de diagnostics ; synthèses de rapports d'essais |
 | Limites | Pilotage du procédé ; modifications des paramètres ; sécurité des procédés chimiques (acide, solvants, hydrogène sulfuré éventuel, brouillard acide en électrolyse) : décisions humaines et procédures validées |
 
-### D. Démonstration guidée — Cas d'usage
+### D. Démonstration guidée : Cas d'usage
 
-#### Cas d'usage 21.1 — Bilan métallurgique mensuel avec contrôle des données
+#### Cas d'usage 21.1. Bilan métallurgique mensuel avec contrôle des données
 
 **1. Problème.** Le bilan mensuel est construit à partir des données journalières ; des erreurs de saisie faussent les moyennes.
 
@@ -63,7 +63,7 @@ indique l'effet de leur exclusion sur chaque indicateur.
 
 **8. Exemple de résultat.** Détection de la récupération de 121,4 % (15 février) et de la production de cathode ×10 (1er juin) ; effet de leur exclusion chiffré.
 
-![Figure 21.3 — Récupération journalière du cuivre au premier semestre 2026 : une valeur impossible signale une erreur de saisie à corriger à la source. Données fictives MCC. Graphique réalisé pour cet ouvrage.](02_ILLUSTRATIONS/GRAPHIQUES/fig21_3_recuperation_journaliere.png){width=92%}
+![Figure 21.3. Récupération journalière du cuivre au premier semestre 2026 : une valeur impossible signale une erreur de saisie à corriger à la source. Données fictives MCC. Graphique réalisé pour cet ouvrage.](02_ILLUSTRATIONS/GRAPHIQUES/fig21_3_recuperation_journaliere.png){width=92%}
 
 **9. Contrôle.** Retour aux relevés de l'usine pour les valeurs exclues ; vérification d'une moyenne pondérée à la main.
 
@@ -73,7 +73,7 @@ indique l'effet de leur exclusion sur chaque indicateur.
 
 **12. Livrable.** Bilan métallurgique mensuel validé, avec annexe des anomalies.
 
-#### Cas d'usage 21.2 — Expliquer le dépassement du budget des réactifs
+#### Cas d'usage 21.2. Expliquer le dépassement du budget des réactifs
 
 **1. Problème.** Le centre de coût « Usine – réactifs » dépasse son budget de 18 à 26 % d'avril à juin 2026.
 
@@ -121,17 +121,17 @@ le plafond contractuel. N'attribue pas le reste de l'écart à une cause non doc
 
 **12. Livrable.** Note d'explication des écarts (1 page), avec les questions ouvertes.
 
-#### Cas d'usage 21.3 — Actualiser une procédure opératoire (condensé)
+#### Cas d'usage 21.3. Actualiser une procédure opératoire (condensé)
 
 À partir de l'ancienne procédure de l'électrolyse, de la description des nouveaux équipements de ventilation et des fiches de données de sécurité, Claude produit une version révisée **en mode révision** : chaque modification est signalée et justifiée, chaque information nouvelle est rattachée à un document fourni, et les points à confirmer sont marqués. La procédure est ensuite revue par le métallurgiste, le responsable HSE et la maintenance, puis approuvée selon le système documentaire. Claude ne crée **aucune** valeur limite d'exposition, consigne d'équipement de protection ou étape de consignation qui ne figure pas dans un document de référence.
 
-#### Cas d'usage 21.4 — Structurer un diagnostic de baisse de récupération (condensé)
+#### Cas d'usage 21.4. Structurer un diagnostic de baisse de récupération (condensé)
 
 Lorsque la récupération baisse, Claude aide à **organiser** le diagnostic : arbre des causes possibles (minéralogie, granulométrie, conditions de lixiviation, pertes en CCD, extraction par solvant…), données à collecter pour chaque hypothèse, tests à réaliser, responsables. Il ne conclut pas : les essais et le jugement de l'équipe tranchent.
 
 ### E. Prompts commentés
 
-**Prompt 21.1 — Arbre de diagnostic**
+**Prompt 21.1. Arbre de diagnostic**
 
 ```text
 La récupération du cuivre de notre usine (lixiviation acide, CCD, SX-EW) est passée
@@ -194,4 +194,4 @@ Claude rédige une procédure révisée très propre… dans laquelle il a ajout
 9. **(Analyse critique)** Pourquoi est-il honnête de ne pas classer les causes par probabilité sans données ?
 10. **(Application)** Quelle part approximative de l'écart des réactifs l'acide explique-t-il dans le scénario ?
 
-<div class="carnet" titre="Chapitre 21 — Claude appliqué au traitement des minerais et à la métallurgie"></div>
+<div class="carnet" titre="Chapitre 21. Claude appliqué au traitement des minerais et à la métallurgie"></div>

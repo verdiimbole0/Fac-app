@@ -1,8 +1,8 @@
-## Chapitre 34 — Produire des livrables professionnels avec Claude
+## Chapitre 34. Produire des livrables professionnels avec Claude
 
 ### A. Mise en situation professionnelle
 
-Thomas Kayembe doit produire, en une semaine, le rapport trimestriel au conseil d'administration (25 pages), sa présentation (15 diapositives) et une note de synthèse en anglais pour l'actionnaire de référence. Il a déjà constaté qu'un « rapport écrit par Claude » se reconnaît vite : phrases génériques, structure attendue, affirmations vagues. Il veut l'inverse : des livrables **au standard de MCC**, précis, sourcés, au ton juste — produits plus vite, sans perte de qualité.
+Thomas Kayembe doit produire, en une semaine, le rapport trimestriel au conseil d'administration (25 pages), sa présentation (15 diapositives) et une note de synthèse en anglais pour l'actionnaire de référence. Il a déjà constaté qu'un « rapport écrit par Claude » se reconnaît vite : phrases génériques, structure attendue, affirmations vagues. Il veut l'inverse : des livrables **au standard de MCC**, précis, sourcés, au ton juste : produits plus vite, sans perte de qualité.
 
 ### B. Objectifs d'apprentissage
 
@@ -16,12 +16,12 @@ Thomas Kayembe doit produire, en une semaine, le rapport trimestriel au conseil 
 
 ### C. Comprendre avant de pratiquer
 
-![Figure 34.1 — Le cycle de production d'un livrable professionnel avec Claude. La structure est validée avant la rédaction ; la vérification et la relecture sont humaines. Illustration réalisée pour cet ouvrage.](02_ILLUSTRATIONS/SCHEMAS/fig34_1_cycle_livrable.png){width=100%}
+![Figure 34.1. Le cycle de production d'un livrable professionnel avec Claude. La structure est validée avant la rédaction ; la vérification et la relecture sont humaines. Illustration réalisée pour cet ouvrage.](02_ILLUSTRATIONS/SCHEMAS/fig34_1_cycle_livrable.png){width=100%}
 
 #### C.1. Les cinq règles d'un livrable de qualité
 
 1. **Valider le plan avant la rédaction.** Un plan juste évite 80 % des réécritures.
-2. **Rédiger par sections**, chacune à partir de sources identifiées — pas « tout le rapport d'un coup ».
+2. **Rédiger par sections**, chacune à partir de sources identifiées, pas « tout le rapport d'un coup ».
 3. **Imposer les standards** : modèle de document, charte rédactionnelle, glossaire, exemples de bons livrables.
 4. **Vérifier chaque fait et chaque chiffre** (chapitres 5, 13, 14).
 5. **Assumer** : le livrable est signé par son auteur, qui doit pouvoir le défendre ligne à ligne.
@@ -41,7 +41,7 @@ Thomas Kayembe doit produire, en une semaine, le rapport trimestriel au conseil 
 
 Avec la création de fichiers activée, Claude produit des documents Word, des classeurs Excel, des présentations et des PDF ; les modèles d'artefacts Docs, Slides et Sheets permettent d'éditer et de partager dans l'application, et les présentations Slides s'exportent en PowerPoint ou en PDF [@ANT-HC-ARTIFACTS; @ANT-HC-SKILLS]. Pour respecter la charte graphique de l'entreprise, fournissez le modèle (fichier Word ou PowerPoint) ou, dans les organisations qui l'ont configuré, utilisez le système de design de l'entreprise.
 
-### D. Démonstration guidée — Le rapport trimestriel au conseil
+### D. Démonstration guidée : Le rapport trimestriel au conseil
 
 **1. Cadrer** (prompt 34.1) : destinataires, objectifs, messages clés, sources, longueur, modèle.
 
@@ -59,7 +59,7 @@ Avec la création de fichiers activée, Claude produit des documents Word, des c
 
 ### E. Prompts commentés
 
-**Prompt 34.1 — Cadrage d'un livrable**
+**Prompt 34.1. Cadrage d'un livrable**
 
 ```text
 Je prépare [livrable] pour [destinataires], qui doivent [décider / être informés de / approuver] [objet].
@@ -70,7 +70,7 @@ Propose un plan détaillé : pour chaque section, titre, objectif, messages, sou
 longueur cible, graphiques ou tableaux prévus. N'écris pas encore le texte.
 ```
 
-**Prompt 34.2 — Rédaction d'une section**
+**Prompt 34.2. Rédaction d'une section**
 
 ```text
 Rédige la section [n° et titre] du plan validé ci-dessous.
@@ -82,7 +82,7 @@ Respecte la charte rédactionnelle jointe (vocabulaire, unités, ton).
 
 *Commentaire.* Les sources entre crochets pendant la rédaction rendent la vérification rapide ; elles sont supprimées à la mise en page.
 
-**Prompt 34.3 — Grille de qualité**
+**Prompt 34.3. Grille de qualité**
 
 ```text
 Évalue le projet de document selon cette grille (1 à 5) et propose des corrections précises :
@@ -143,4 +143,4 @@ Dans la version anglaise d'une note, Claude traduit « réserves probables » pa
 9. **(QCM)** Quel modèle d'artefact permet d'exporter une présentation en PowerPoint ? a) Docs ; b) Slides ; c) Whiteboards ; d) Data.
 10. **(Application)** Proposez deux moyens d'imposer la charte graphique de l'entreprise à un livrable.
 
-<div class="carnet" titre="Chapitre 34 — Produire des livrables professionnels avec Claude"></div>
+<div class="carnet" titre="Chapitre 34. Produire des livrables professionnels avec Claude"></div>

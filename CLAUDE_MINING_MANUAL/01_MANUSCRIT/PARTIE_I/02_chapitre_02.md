@@ -1,4 +1,4 @@
-## Chapitre 2 — Comprendre les fondamentaux de l'intelligence artificielle
+## Chapitre 2. Comprendre les fondamentaux de l'intelligence artificielle
 
 ### A. Mise en situation professionnelle
 
@@ -55,7 +55,7 @@ L'**apprentissage profond (deep learning)** est une sous-famille de l'apprentiss
 
 Un **réseau de neurones artificiel** est un modèle mathématique composé d'unités de calcul (les « neurones ») organisées en couches. Chaque neurone reçoit des valeurs, les combine selon des **poids** (des coefficients numériques) et transmet un résultat à la couche suivante. Pendant l'**entraînement**, ces poids sont ajustés progressivement pour réduire l'écart entre la réponse du modèle et la réponse attendue.
 
-![Figure 2.1 — Un réseau de neurones, vu de très loin. Les données entrent à gauche, traversent des couches cachées qui construisent des représentations de plus en plus abstraites, et produisent une sortie à droite. Chaque lien porte un poids ajusté pendant l'entraînement. Illustration réalisée pour cet ouvrage.](02_ILLUSTRATIONS/SCHEMAS/fig02_3_reseau_neurones.png){width=85%}
+![Figure 2.1. Un réseau de neurones, vu de très loin. Les données entrent à gauche, traversent des couches cachées qui construisent des représentations de plus en plus abstraites, et produisent une sortie à droite. Chaque lien porte un poids ajusté pendant l'entraînement. Illustration réalisée pour cet ouvrage.](02_ILLUSTRATIONS/SCHEMAS/fig02_3_reseau_neurones.png){width=85%}
 
 L'apprentissage profond a permis des progrès spectaculaires dans la reconnaissance d'images (détection automatique d'équipements de protection individuelle sur une vidéo, analyse de photographies de carottes de sondage), la reconnaissance vocale et, surtout, le traitement du langage.
 
@@ -67,17 +67,17 @@ Pendant longtemps, ces techniques ont été spécialisées : un modèle pour la 
 
 #### C.5. L'IA générative
 
-L'**IA générative** désigne les systèmes capables de **produire de nouveaux contenus** — texte, images, code, sons — à partir d'une instruction. Les **grands modèles de langage** (en anglais *Large Language Models*, LLM) en sont la forme la plus répandue pour le travail de bureau : ils sont entraînés sur de très grandes quantités de textes et apprennent à prédire la suite la plus probable d'un texte. Le chapitre 3 explique en détail ce mécanisme.
+L'**IA générative** désigne les systèmes capables de **produire de nouveaux contenus** (texte, images, code, sons) à partir d'une instruction. Les **grands modèles de langage** (en anglais *Large Language Models*, LLM) en sont la forme la plus répandue pour le travail de bureau : ils sont entraînés sur de très grandes quantités de textes et apprennent à prédire la suite la plus probable d'un texte. Le chapitre 3 explique en détail ce mécanisme.
 
-![Figure 2.2 — Des concepts emboîtés. L'IA générative et les grands modèles de langage sont un cas particulier de l'apprentissage profond, lui-même branche de l'apprentissage automatique, lui-même branche de l'intelligence artificielle. Illustration réalisée pour cet ouvrage.](02_ILLUSTRATIONS/SCHEMAS/fig02_1_emboitement.png){width=72%}
+![Figure 2.2. Des concepts emboîtés. L'IA générative et les grands modèles de langage sont un cas particulier de l'apprentissage profond, lui-même branche de l'apprentissage automatique, lui-même branche de l'intelligence artificielle. Illustration réalisée pour cet ouvrage.](02_ILLUSTRATIONS/SCHEMAS/fig02_1_emboitement.png){width=72%}
 
 #### C.6. IA prédictive et IA générative : deux familles complémentaires
 
 La distinction la plus utile pour un professionnel minier oppose l'**IA prédictive** (ou analytique) et l'**IA générative**.
 
-![Figure 2.3 — IA prédictive et IA générative. La première produit un chiffre, une classe ou une alerte à partir de données structurées ; la seconde produit du texte, des tableaux ou du code à partir d'instructions en langage naturel. Illustration réalisée pour cet ouvrage.](02_ILLUSTRATIONS/SCHEMAS/fig02_2_classique_vs_generative.png){width=100%}
+![Figure 2.3. IA prédictive et IA générative. La première produit un chiffre, une classe ou une alerte à partir de données structurées ; la seconde produit du texte, des tableaux ou du code à partir d'instructions en langage naturel. Illustration réalisée pour cet ouvrage.](02_ILLUSTRATIONS/SCHEMAS/fig02_2_classique_vs_generative.png){width=100%}
 
-*Tableau 2.1 — Comparaison des deux familles.*
+*Tableau 2.1. Comparaison des deux familles.*
 
 | Critère | IA prédictive | IA générative (LLM) |
 |---|---|---|
@@ -110,21 +110,21 @@ Les deux familles se complètent. À MCC, le système de maintenance prédictive
 | Surapprentissage | Le modèle « récite » ses données d'entraînement et généralise mal |
 | Prompt | Instruction donnée à un modèle génératif |
 
-### D. Démonstration guidée — Faire expliquer un concept par Claude, puis le contrôler
+### D. Démonstration guidée : Faire expliquer un concept par Claude, puis le contrôler
 
 Kevin Mutombo prépare une fiche d'une page pour le comité de direction. Il utilise Claude comme tuteur, en procédant en quatre temps.
 
-**Étape 1 — Demander une explication adaptée au public.** Kevin précise que les lecteurs sont des directeurs non spécialistes et qu'il veut des exemples miniers (prompt 2.1).
+**Étape 1. Demander une explication adaptée au public.** Kevin précise que les lecteurs sont des directeurs non spécialistes et qu'il veut des exemples miniers (prompt 2.1).
 
-**Étape 2 — Demander une auto-vérification.** Il demande ensuite à Claude de relire son explication et de signaler les simplifications qui pourraient induire en erreur (prompt 2.2). Claude signale notamment que l'expression « l'IA apprend comme un humain » est une analogie trompeuse si elle est prise au pied de la lettre.
+**Étape 2. Demander une auto-vérification.** Il demande ensuite à Claude de relire son explication et de signaler les simplifications qui pourraient induire en erreur (prompt 2.2). Claude signale notamment que l'expression « l'IA apprend comme un humain » est une analogie trompeuse si elle est prise au pied de la lettre.
 
-**Étape 3 — Confronter à une source de référence.** Kevin compare la définition proposée à celle du NIST [@NIST-RMF] et ajuste sa fiche.
+**Étape 3. Confronter à une source de référence.** Kevin compare la définition proposée à celle du NIST [@NIST-RMF] et ajuste sa fiche.
 
-**Étape 4 — Tester la compréhension.** Il demande à Claude cinq questions de quiz pour vérifier que les directeurs ont compris. Il les utilisera en fin de réunion.
+**Étape 4. Tester la compréhension.** Il demande à Claude cinq questions de quiz pour vérifier que les directeurs ont compris. Il les utilisera en fin de réunion.
 
 ### E. Prompts commentés
 
-**Prompt 2.1 — Explication adaptée à un public**
+**Prompt 2.1. Explication adaptée à un public**
 
 ```text
 Explique la différence entre IA prédictive et IA générative à des directeurs
@@ -141,7 +141,7 @@ Contraintes :
 
 *Commentaire.* Le public est précisé (directeurs non spécialistes), la longueur est limitée, les exemples sont imposés dans le domaine minier. La demande de préciser « les limites de l'analogie » évite qu'une image simplificatrice soit prise pour une vérité.
 
-**Prompt 2.2 — Auto-critique**
+**Prompt 2.2. Auto-critique**
 
 ```text
 Relis l'explication que tu viens de produire, comme le ferait un spécialiste
@@ -153,7 +153,7 @@ de l'apprentissage automatique exigeant. Liste :
 
 *Commentaire.* Demander à Claude de critiquer sa propre réponse améliore souvent la précision. Cela ne remplace pas une vérification indépendante, mais c'est un premier filtre utile.
 
-**Prompt 2.3 — Qualifier une « solution d'IA » proposée par un fournisseur**
+**Prompt 2.3. Qualifier une « solution d'IA » proposée par un fournisseur**
 
 ```text
 Un fournisseur propose à notre mine un système de « tri du minerai par IA ».
@@ -169,7 +169,7 @@ Ne suppose rien qui ne soit pas écrit dans la brochure ; signale ce qui manque.
 
 ### F. Exercices pratiques
 
-**Exercice 2.1 (guidé) — Classer des cas d'usage**
+**Exercice 2.1 (guidé) : Classer des cas d'usage**
 
 Classez les dix cas suivants en IA prédictive, IA générative ou autre technologie (automatisme, logiciel classique) :
 
@@ -186,7 +186,7 @@ Classez les dix cas suivants en IA prédictive, IA générative ou autre technol
 
 *Corrigé indicatif :* prédictive : 1, 3, 7 (3 relève de la vision par ordinateur, une branche de l'apprentissage profond) ; générative : 2, 4, 6, 8, 10 ; autre : 5 (automatisme), 9 (logiciel de paie à règles).
 
-**Exercice 2.2 (autonome) — La fiche « IA expliquée à mon équipe »**
+**Exercice 2.2 (autonome) : La fiche « IA expliquée à mon équipe »**
 
 Rédigez, avec l'aide de Claude, une fiche d'une page qui explique à votre équipe les notions de ce chapitre, avec deux exemples tirés de votre métier. Faites-la relire par un collègue non spécialiste : comprend-il la différence entre IA prédictive et IA générative ?
 
@@ -215,7 +215,7 @@ Interrogé sur l'origine des modèles de langage, un assistant d'IA peut attribu
 
 ### J. Boîte à outils
 
-**Fiche pratique 2.1 — Les cinq questions à poser à tout fournisseur de « solution IA »**
+**Fiche pratique 2.1 : Les cinq questions à poser à tout fournisseur de « solution IA »**
 
 1. Quelle famille d'IA utilisez-vous, et pour quelle tâche précise ?
 2. Sur quelles données le modèle a-t-il été entraîné ? Sont-elles comparables aux nôtres ?
@@ -223,7 +223,7 @@ Interrogé sur l'origine des modèles de langage, un assistant d'IA peut attribu
 4. Que se passe-t-il quand le modèle se trompe ? Qui est alerté, qui décide ?
 5. Où sont stockées nos données, et sont-elles utilisées pour entraîner vos modèles ?
 
-**Prompt réutilisable 2.4 — Tuteur personnel**
+**Prompt réutilisable 2.4 : Tuteur personnel**
 
 ```text
 Tu es mon tuteur pour comprendre [notion]. Je suis [fonction] dans le secteur minier,
@@ -246,4 +246,4 @@ Pose-moi ensuite deux questions pour vérifier ma compréhension.
 9. **(Analyse critique)** Pourquoi la définition du NIST insiste-t-elle sur l'« influence » des résultats d'un système d'IA ?
 10. **(Compréhension)** Citez deux erreurs typiques d'une IA générative et une erreur typique d'une IA prédictive.
 
-<div class="carnet" titre="Chapitre 2 — Comprendre les fondamentaux de l'intelligence artificielle"></div>
+<div class="carnet" titre="Chapitre 2. Comprendre les fondamentaux de l'intelligence artificielle"></div>

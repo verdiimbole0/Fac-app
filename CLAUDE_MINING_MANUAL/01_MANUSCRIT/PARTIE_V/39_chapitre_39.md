@@ -1,4 +1,4 @@
-## Chapitre 39 — Éthique, responsabilité et transformation du travail
+## Chapitre 39. Éthique, responsabilité et transformation du travail
 
 ### A. Mise en situation professionnelle
 
@@ -18,7 +18,7 @@ Lors d'une réunion avec les délégués du personnel, une question directe est 
 
 #### C.1. Les repères internationaux
 
-La **Recommandation de l'UNESCO sur l'éthique de l'intelligence artificielle**, adoptée en novembre 2021 par les 193 États membres, constitue le premier instrument normatif mondial en la matière ; elle met notamment en avant la protection des droits humains et de la dignité, la transparence, la responsabilité, la non-discrimination, la protection de l'environnement et la supervision humaine [@UNESCO-2021]. Le cadre du NIST insiste sur des systèmes d'IA dignes de confiance — valides et fiables, sûrs, sécurisés, responsables et transparents, explicables, respectueux de la vie privée et équitables [@NIST-RMF].
+La **Recommandation de l'UNESCO sur l'éthique de l'intelligence artificielle**, adoptée en novembre 2021 par les 193 États membres, constitue le premier instrument normatif mondial en la matière ; elle met notamment en avant la protection des droits humains et de la dignité, la transparence, la responsabilité, la non-discrimination, la protection de l'environnement et la supervision humaine [@UNESCO-2021]. Le cadre du NIST insiste sur des systèmes d'IA dignes de confiance : valides et fiables, sûrs, sécurisés, responsables et transparents, explicables, respectueux de la vie privée et équitables [@NIST-RMF].
 
 #### C.2. Cinq questions éthiques pour une mine
 
@@ -37,7 +37,7 @@ La numérisation et l'automatisation transforment depuis plusieurs décennies le
 Pour une entreprise comme MCC, l'analyse honnête est la suivante (interprétation de l'auteur) :
 
 - l'IA générative transforme surtout des **tâches** (rédaction, synthèse, analyse documentaire), plus que des **métiers entiers** ;
-- elle peut libérer du temps pour le terrain, l'analyse, la relation — si l'organisation le décide ;
+- elle peut libérer du temps pour le terrain, l'analyse, la relation, si l'organisation le décide ;
 - certaines fonctions très documentaires peuvent évoluer fortement ;
 - de nouvelles compétences deviennent nécessaires : formulation, vérification, gestion des données, gouvernance ;
 - les effets dépendent des **choix de l'entreprise**, pas de la technologie seule.
@@ -50,7 +50,7 @@ Pour une entreprise comme MCC, l'analyse honnête est la suivante (interprétati
 
 Dans les villages riverains, l'accès au numérique est souvent limité. L'usage de l'IA par l'entreprise ne doit pas créer de nouvelle asymétrie : les communautés doivent pouvoir comprendre comment leurs plaintes sont traitées, obtenir une réponse humaine et contester. Les décisions qui les concernent (indemnisations, emplois, projets) restent des décisions humaines, prises selon les procédures et dans le dialogue.
 
-### D. Démonstration guidée — Préparer le dialogue social
+### D. Démonstration guidée : Préparer le dialogue social
 
 Béatrice prépare la réunion avec les délégués du personnel :
 
@@ -62,7 +62,7 @@ Béatrice prépare la réunion avec les délégués du personnel :
 
 ### E. Prompts commentés
 
-**Prompt 39.1 — Anticiper les préoccupations des parties prenantes**
+**Prompt 39.1. Anticiper les préoccupations des parties prenantes**
 
 ```text
 Nous présentons notre programme d'IA générative (pilote de 40 utilisateurs, usages documentaires,
@@ -74,7 +74,7 @@ et les questions à leur retourner. Ne propose pas d'engagement : la direction l
 
 *Commentaire.* Distinguer « ce que nous savons » et « ce que nous ne savons pas » est la base d'un dialogue honnête.
 
-**Prompt 39.2 — Analyse éthique d'un cas d'usage**
+**Prompt 39.2. Analyse éthique d'un cas d'usage**
 
 ```text
 Analyse le cas d'usage suivant selon cinq dimensions : responsabilité, transparence, équité,
@@ -132,4 +132,4 @@ Interrogé sur « l'impact de l'IA sur l'emploi minier », un assistant peut pro
 9. **(Compréhension)** Pourquoi l'empreinte environnementale de l'IA est-elle un enjeu éthique ?
 10. **(Application)** Rédigez la réponse honnête à « L'IA va-t-elle supprimer des postes ? » en trois phrases.
 
-<div class="carnet" titre="Chapitre 39 — Éthique, responsabilité et transformation du travail"></div>
+<div class="carnet" titre="Chapitre 39. Éthique, responsabilité et transformation du travail"></div>

@@ -1,5 +1,5 @@
 ::: partie
-# PARTIE VI — Ateliers pratiques, évaluation et projet final
+# PARTIE VI. Ateliers pratiques, évaluation et projet final
 
 Vous avez acquis les connaissances et les méthodes. Il est temps de les mettre à l'épreuve dans des situations complètes, transversales et réalistes ; de mesurer objectivement votre niveau de maîtrise ; puis de concevoir votre propre système de travail assisté par Claude, que vous pourrez défendre devant votre hiérarchie et mettre en œuvre dès demain.
 

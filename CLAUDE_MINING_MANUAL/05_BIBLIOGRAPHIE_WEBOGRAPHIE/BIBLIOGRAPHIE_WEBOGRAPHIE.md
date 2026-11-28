@@ -1,4 +1,4 @@
-## Annexe I — Bibliographie et webographie
+## Annexe I. Bibliographie et webographie
 
 ### Bibliographie
 
@@ -35,7 +35,7 @@ OCDE. (2016). *Guide OCDE sur le devoir de diligence pour des chaînes d'approvi
 :::
 
 ::: {custom-style="Reference"}
-Organisation internationale de normalisation & Commission électrotechnique internationale. (2023). *ISO/IEC 42001:2023 — Technologies de l'information — Intelligence artificielle — Système de management*. ISO. https://webstore.iec.ch/publication/90574 (consulté le 16 novembre 2026)
+Organisation internationale de normalisation & Commission électrotechnique internationale. (2023). *ISO/IEC 42001:2023. Technologies de l'information. Intelligence artificielle. Système de management*. ISO. https://webstore.iec.ch/publication/90574 (consulté le 16 novembre 2026)
 :::
 
 ::: {custom-style="Reference"}

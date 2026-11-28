@@ -1,10 +1,10 @@
-## Chapitre 17 — Claude appliqué à la géologie et à l'exploration minière
+## Chapitre 17. Claude appliqué à la géologie et à l'exploration minière
 
 ### A. Mise en situation professionnelle
 
 Patrick Ilunga, géologue principal de MCC, prépare la campagne d'exploration 2027 de l'extension « Mbiyo Profond ». Sur son bureau : dix ans de rapports internes, 412 journaux de sondage, des centaines de photos de carottes, des notes de terrain manuscrites numérisées, deux rapports de consultants et une pile d'articles sur les gisements stratiformes du Copperbelt. Il doit produire en trois semaines une note de synthèse, une proposition de programme de sondages et un budget. Le temps manque, non pour réfléchir, mais pour **retrouver, lire et mettre en forme** l'information.
 
-![Figure 17.1 — Foreuse d'exploration en opération au lever du jour. Titre original : « Where the Earth Meets the Sky ». Auteur : ExplorationGeologist. Source : Wikimedia Commons, [https://commons.wikimedia.org/wiki/File:Where_the_Earth_Meets_the_Sky.jpg](https://commons.wikimedia.org/wiki/File:Where_the_Earth_Meets_the_Sky.jpg) (consulté le 16/11/2026). Licence : [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.fr) ; image redimensionnée pour l'édition. Photographie d'illustration, sans lien avec l'entreprise fictive MCC.](02_ILLUSTRATIONS/PHOTOGRAPHIES/photo_foreuse_exploration.jpg){width=78%}
+![Figure 17.1. Foreuse d'exploration en opération au lever du jour. Titre original : « Where the Earth Meets the Sky ». Auteur : ExplorationGeologist. Source : Wikimedia Commons, [https://commons.wikimedia.org/wiki/File:Where_the_Earth_Meets_the_Sky.jpg](https://commons.wikimedia.org/wiki/File:Where_the_Earth_Meets_the_Sky.jpg) (consulté le 16/11/2026). Licence : [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.fr) ; image redimensionnée pour l'édition. Photographie d'illustration, sans lien avec l'entreprise fictive MCC.](02_ILLUSTRATIONS/PHOTOGRAPHIES/photo_foreuse_exploration.jpg){width=78%}
 
 ### B. Objectifs d'apprentissage
 
@@ -16,9 +16,9 @@ Patrick Ilunga, géologue principal de MCC, prépare la campagne d'exploration 2
 4. **Préparer** une proposition de programme d'exploration et son argumentaire.
 5. **Reconnaître** les limites de Claude en interprétation géologique.
 
-### C. Comprendre avant de pratiquer — Profil du métier
+### C. Comprendre avant de pratiquer : Profil du métier
 
-*Tableau 17.1 — Profil du géologue d'exploration.*
+*Tableau 17.1. Profil du géologue d'exploration.*
 
 | Dimension | Contenu |
 |---|---|
@@ -35,11 +35,11 @@ Patrick Ilunga, géologue principal de MCC, prépare la campagne d'exploration 2
 En géologie, Claude est un **assistant documentaire et analytique**, pas un géologue. Il accélère la lecture, la structuration et la rédaction ; il ne remplace ni l'observation des carottes, ni la modélisation, ni le jugement sur les cibles.
 :::
 
-![Figure 17.2 — Exploration : du terrain au rapport. Les étapes d'observation, d'interprétation et de signature restent humaines. Illustration réalisée pour cet ouvrage.](02_ILLUSTRATIONS/SCHEMAS/fig17_2_workflow_exploration.png){width=100%}
+![Figure 17.2. Exploration : du terrain au rapport. Les étapes d'observation, d'interprétation et de signature restent humaines. Illustration réalisée pour cet ouvrage.](02_ILLUSTRATIONS/SCHEMAS/fig17_2_workflow_exploration.png){width=100%}
 
-### D. Démonstration guidée — Cas d'usage
+### D. Démonstration guidée : Cas d'usage
 
-#### Cas d'usage 17.1 — Synthèse d'un corpus de rapports historiques
+#### Cas d'usage 17.1. Synthèse d'un corpus de rapports historiques
 
 **1. Problème professionnel.** Patrick doit connaître, en quelques jours, tout ce qui a été écrit sur la zone « Mbiyo Profond » dans 24 rapports internes et de consultants (2015-2025), soit environ 1 800 pages.
 
@@ -65,7 +65,7 @@ Document : [titre du rapport, auteur, année] (joint).
 Extrais une fiche structurée :
 1. Objet et période des travaux.
 2. Travaux réalisés (type, nombre, métrage de sondages, analyses).
-3. Principaux résultats (intersections, teneurs) — avec page et citation exacte.
+3. Principaux résultats (intersections, teneurs), avec page et citation exacte.
 4. Interprétations géologiques proposées par les auteurs (marquées comme interprétations).
 5. Recommandations des auteurs.
 6. Limites, incertitudes ou problèmes de données signalés par les auteurs.
@@ -92,7 +92,7 @@ Règles : n'utilise que ce document ; n'ajoute aucune interprétation personnell
 
 **12. Livrable final.** Note de synthèse historique (10 pages) avec tableau des fiches en annexe, chaque information sourcée par rapport et page, validée par Patrick.
 
-#### Cas d'usage 17.2 — Structurer des descriptions de sondages
+#### Cas d'usage 17.2. Structurer des descriptions de sondages
 
 **1. Problème.** Les géologues de terrain rédigent leurs descriptions de carottes en texte libre, de style variable ; la base de données exige des codes normalisés (lithologie, altération, minéralisation, structure).
 
@@ -128,17 +128,17 @@ de choisir, mets « ? » et confiance « basse » ; ne modifie jamais les profon
 
 **12. Livrable.** Fichier codé validé, prêt à l'import, avec journal des corrections.
 
-#### Cas d'usage 17.3 — Préparer un programme d'exploration (version condensée)
+#### Cas d'usage 17.3. Préparer un programme d'exploration (version condensée)
 
 Patrick fournit la synthèse historique, les objectifs de la direction et les coûts unitaires (forage, analyses, logistique). Claude propose une **structure de programme** (objectifs, phases, nombre et métrage de sondages par phase, critères de passage d'une phase à l'autre, budget, risques), **calcule le budget par programme** à partir des coûts unitaires et rédige l'argumentaire. Les cibles, l'implantation et les métrages sont **décidés par Patrick** ; Claude n'en propose que si on lui fournit les critères, et ses propositions sont discutées comme des hypothèses. Contrôle : recalcul du budget, cohérence entre texte et tableaux, revue par la direction technique.
 
-#### Cas d'usage 17.4 — Vulgariser pour la direction et les communautés (version condensée)
+#### Cas d'usage 17.4. Vulgariser pour la direction et les communautés (version condensée)
 
 Claude transforme une note technique en résumé pour le comité de direction (enjeux, coûts, décisions attendues) et en fiche d'information pour les communautés riveraines (où, quand, quels travaux, quelles nuisances, qui contacter), en français simple, à faire valider par le responsable des relations communautaires. Règle : aucune information sur des teneurs ou des ressources dans les communications externes sans validation de la direction (informations potentiellement sensibles).
 
 ### E. Prompts commentés
 
-**Prompt 17.2 — Synthèse transversale**
+**Prompt 17.2. Synthèse transversale**
 
 ```text
 Voici les 24 fiches d'extraction (une par rapport) : <fiches> … </fiches>
@@ -153,7 +153,7 @@ Distingue systématiquement faits, interprétations des auteurs et questions ouv
 
 *Commentaire.* La synthèse ne travaille que sur les fiches déjà contrôlées : on limite ainsi la propagation d'erreurs.
 
-**Prompt 17.3 — Analyse d'une photo de carotte**
+**Prompt 17.3. Analyse d'une photo de carotte**
 
 ```text
 Photo jointe : caisse de carottes du sondage [ID], de [x] à [y] m, éclairage naturel,
@@ -195,7 +195,7 @@ Interrogé sur « la géologie du Copperbelt congolais », un assistant d'IA peu
 
 ### J. Boîte à outils
 
-- Prompt 17.1 — fiche d'extraction de rapport ; prompt 17.2 — synthèse transversale ; prompt 17.3 — photo de carotte.
+- Prompt 17.1 : fiche d'extraction de rapport ; prompt 17.2 : synthèse transversale ; prompt 17.3 : photo de carotte.
 - Check-list « avant de transmettre une note d'exploration » : sources vérifiées ; calculs recontrôlés ; validation du géologue principal ; classification respectée.
 - Modèle de fiche d'extraction (Annexe D).
 
@@ -212,4 +212,4 @@ Interrogé sur « la géologie du Copperbelt congolais », un assistant d'IA peu
 9. **(Compréhension)** Citez trois livrables typiques du géologue d'exploration.
 10. **(Application)** Rédigez la règle qui distingue faits et interprétations dans un prompt de synthèse.
 
-<div class="carnet" titre="Chapitre 17 — Claude appliqué à la géologie et à l'exploration minière"></div>
+<div class="carnet" titre="Chapitre 17. Claude appliqué à la géologie et à l'exploration minière"></div>

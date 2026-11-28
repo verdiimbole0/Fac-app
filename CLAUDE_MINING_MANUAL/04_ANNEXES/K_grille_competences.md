@@ -1,4 +1,4 @@
-## Annexe K — Grille d'évaluation des compétences
+## Annexe K. Grille d'évaluation des compétences
 
 *Échelle : 1 = découverte ; 2 = application guidée ; 3 = autonomie ; 4 = maîtrise. Le niveau est attribué sur preuves.*
 
@@ -11,7 +11,7 @@
 | **C5** Cas métier | Connaît des usages possibles | Réalise un cas guidé | Réalise 3 cas de bout en bout, grille en 12 points | Conçoit de nouveaux cas pour son service | Fiches de cas d'usage |
 | **C6** Livrables | Obtient un brouillon | Améliore un livrable avec une grille | Produit un livrable conforme au cycle complet | Définit les standards de livrables du service | Livrable validé + dossier |
 | **C7** Vérifier, sécuriser, protéger | Sait qu'il faut vérifier | Applique les check-lists | Détecte erreurs, injections, problèmes de données ; classe correctement | Conçoit contrôles et règles ; gère les incidents | Check-lists ; atelier 6 réussi |
-| **C8** Méthodes et workflows | — | Décrit un processus | Conçoit un assistant ou un workflow testé | Déploie, mesure et améliore des workflows d'équipe | Dossier de projet final |
+| **C8** Méthodes et workflows |  | Décrit un processus | Conçoit un assistant ou un workflow testé | Déploie, mesure et améliore des workflows d'équipe | Dossier de projet final |
 
 ### Fiche de synthèse
 

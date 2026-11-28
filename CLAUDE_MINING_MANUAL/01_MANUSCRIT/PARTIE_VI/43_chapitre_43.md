@@ -1,4 +1,4 @@
-## Chapitre 43 — Projet final : concevoir son propre système de travail assisté par Claude
+## Chapitre 43. Projet final : concevoir son propre système de travail assisté par Claude
 
 ### A. Mise en situation professionnelle
 
@@ -15,9 +15,9 @@ Vous arrivez au terme du parcours. Votre hiérarchie vous demande désormais de 
 5. **Défini** vos règles de confidentialité et vos contrôles qualité.
 6. **Mesuré** les gains et **présenté** votre système.
 
-### C. Comprendre avant de pratiquer — Les huit composantes du système
+### C. Comprendre avant de pratiquer : Les huit composantes du système
 
-![Figure 43.1 — Les huit composantes de votre système de travail assisté par Claude. Illustration réalisée pour cet ouvrage.](02_ILLUSTRATIONS/SCHEMAS/fig43_1_systeme_travail.png){width=88%}
+![Figure 43.1. Les huit composantes de votre système de travail assisté par Claude. Illustration réalisée pour cet ouvrage.](02_ILLUSTRATIONS/SCHEMAS/fig43_1_systeme_travail.png){width=88%}
 
 | Composante | Contenu | Chapitres |
 |---|---|---|
@@ -30,7 +30,7 @@ Vous arrivez au terme du parcours. Votre hiérarchie vous demande désormais de 
 | 7. Règles de confidentialité | Classification de vos données, minimisation | 37 |
 | 8. Mesure des gains | Avant/après sur tâches réelles | 36, 42 |
 
-### D. Démonstration guidée — Le projet de Grace Nsimba (HSE)
+### D. Démonstration guidée : Le projet de Grace Nsimba (HSE)
 
 À titre d'exemple, voici la synthèse (fictive) du projet final de Grace :
 
@@ -39,7 +39,7 @@ Vous arrivez au terme du parcours. Votre hiérarchie vous demande désormais de 
 | Diagnostic | 12 tâches cartographiées ; 160 h/mois pour l'équipe |
 | Cas d'usage | Rapport préliminaire d'incident ; rapport mensuel ; causeries ; vérification des contrôles critiques |
 | Bibliothèque | 11 instructions CADRE versionnées, avec check-list associée |
-| Assistant | Projet « HSE — MCC » partagé (consultation pour les techniciens) ; compétences « rapport préliminaire » et « causerie » |
+| Assistant | Projet « HSE : MCC » partagé (consultation pour les techniciens) ; compétences « rapport préliminaire » et « causerie » |
 | Workflow | Rapport mensuel à 3 portes (ch. 36) |
 | Contrôles | Recalcul de 2 indicateurs par mois ; liste des « phrases non issues des documents » |
 | Confidentialité | Pseudonymisation des déclarations ; aucune donnée médicale ; mémoire désactivée pour le projet |
@@ -47,7 +47,7 @@ Vous arrivez au terme du parcours. Votre hiérarchie vous demande désormais de 
 
 ### E. Prompts commentés
 
-**Prompt 43.1 — Accompagnement du projet final**
+**Prompt 43.1. Accompagnement du projet final**
 
 ```text
 Je construis mon système de travail assisté par Claude pour mon poste de [poste] chez [entreprise].
@@ -57,7 +57,7 @@ les risques non traités et la preuve qu'un jury me demanderait. Termine par les
 prioritaires avant ma soutenance.
 ```
 
-**Prompt 43.2 — Présentation de soutenance**
+**Prompt 43.2. Présentation de soutenance**
 
 ```text
 À partir de mon dossier de projet final (joint), prépare une présentation de 10 diapositives
@@ -66,7 +66,7 @@ contrôles et sécurité, gains mesurés, limites, plan de déploiement, décisi
 Chaque chiffre doit provenir du dossier ; aucune promesse de gain non mesuré.
 ```
 
-### F. Exercices pratiques — Le projet en six étapes (4 à 6 semaines)
+### F. Exercices pratiques : Le projet en six étapes (4 à 6 semaines)
 
 1. **Semaine 1** : diagnostic (carte des opportunités) et choix de 3 à 5 cas d'usage.
 2. **Semaine 2** : bibliothèque CADRE (10 instructions), tests et versions.
@@ -75,7 +75,7 @@ Chaque chiffre doit provenir du dossier ; aucune promesse de gain non mesuré.
 5. **Semaines 5-6** : utilisation réelle ; mesures avant/après ; ajustements.
 6. **Soutenance** : présentation de 20 minutes et questions.
 
-### G. Livrable professionnel — Le dossier de projet final
+### G. Livrable professionnel : Le dossier de projet final
 
 Structure attendue (15 à 25 pages + annexes) :
 
@@ -102,7 +102,7 @@ Structure attendue (15 à 25 pages + annexes) :
 :::
 
 ::: setrompe
-Dans une présentation de soutenance générée sans consigne, un assistant peut « arrondir » les gains ou ajouter des bénéfices non mesurés (« amélioration de la satisfaction des équipes »). Le jury le remarquera — et votre crédibilité en souffrira. Chaque affirmation doit être appuyée par le dossier.
+Dans une présentation de soutenance générée sans consigne, un assistant peut « arrondir » les gains ou ajouter des bénéfices non mesurés (« amélioration de la satisfaction des équipes »). Le jury le remarquera, et votre crédibilité en souffrira. Chaque affirmation doit être appuyée par le dossier.
 :::
 
 ### I. Limites et précautions
@@ -128,4 +128,4 @@ Dans une présentation de soutenance générée sans consigne, un assistant peut
 9. **(Analyse critique)** Pourquoi les lignes rouges doivent-elles apparaître explicitement dans le dossier ?
 10. **(Compréhension)** Que doit contenir la section « Limites » du dossier ?
 
-<div class="carnet" titre="Chapitre 43 — Projet final : concevoir son propre système de travail assisté par Claude"></div>
+<div class="carnet" titre="Chapitre 43. Projet final : concevoir son propre système de travail assisté par Claude"></div>

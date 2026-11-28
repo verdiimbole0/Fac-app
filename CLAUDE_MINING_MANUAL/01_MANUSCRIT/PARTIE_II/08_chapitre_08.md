@@ -1,4 +1,4 @@
-## Chapitre 8 — Comprendre les modèles et choisir le bon outil pour chaque tâche
+## Chapitre 8. Comprendre les modèles et choisir le bon outil pour chaque tâche
 
 ### A. Mise en situation professionnelle
 
@@ -33,9 +33,9 @@ La documentation d'Anthropic propose une page dédiée au choix du modèle, qui 
 
 #### C.2. L'arbre de décision
 
-![Figure 8.1 — Arbre de décision pour choisir un modèle. Les niveaux d'effort indiqués sont des points de départ, à ajuster selon les résultats. Illustration réalisée pour cet ouvrage, d'après la documentation Anthropic (consultée le 16/11/2026).](02_ILLUSTRATIONS/SCHEMAS/fig08_1_arbre_choix_modele.png){width=100%}
+![Figure 8.1. Arbre de décision pour choisir un modèle. Les niveaux d'effort indiqués sont des points de départ, à ajuster selon les résultats. Illustration réalisée pour cet ouvrage, d'après la documentation Anthropic (consultée le 16/11/2026).](02_ILLUSTRATIONS/SCHEMAS/fig08_1_arbre_choix_modele.png){width=100%}
 
-*Tableau 8.1 — Exemples de choix pour des tâches de MCC (recommandations de l'auteur, à tester).*
+*Tableau 8.1. Exemples de choix pour des tâches de MCC (recommandations de l'auteur, à tester).*
 
 | Tâche | Modèle de départ | Pourquoi |
 |---|---|---|
@@ -76,13 +76,13 @@ Pour l'API, la facturation se fait au **nombre de tokens** en entrée (ce que vo
 - sortie : 3 600 tokens × 20 USD / 1 000 000 ≈ 0,07 USD ;
 - **total ≈ 0,25 USD**, hors tokens de réflexion (qui comptent comme des tokens de sortie).
 
-Le même traitement répété sur 5 000 documents coûterait environ 1 250 USD avec Opus 5.5, environ 625 USD avec Sonnet 5.5, et sensiblement moins avec Haiku 5.5 — d'où l'intérêt de tester un modèle plus léger pour les traitements de masse.
+Le même traitement répété sur 5 000 documents coûterait environ 1 250 USD avec Opus 5.5, environ 625 USD avec Sonnet 5.5, et sensiblement moins avec Haiku 5.5 : d'où l'intérêt de tester un modèle plus léger pour les traitements de masse.
 
 ::: attention
 Ces calculs sont des **ordres de grandeur**. Le nombre réel de tokens dépend de la langue, des tableaux, de la réflexion du modèle et des outils utilisés. Pour un budget, mesurez sur un échantillon réel.
 :::
 
-### D. Démonstration guidée — Le test A/B de Nadine
+### D. Démonstration guidée : Le test A/B de Nadine
 
 Kevin propose à Nadine une méthode simple pour choisir objectivement.
 
@@ -96,7 +96,7 @@ Résultat (fictif) : Haiku 5.5 classe correctement 48 lignes sur 50, Opus 5.5 49
 
 ### E. Prompts commentés
 
-**Prompt 8.1 — Classement à fort volume**
+**Prompt 8.1. Classement à fort volume**
 
 ```text
 Classe chaque ligne de commande ci-dessous dans UNE des catégories suivantes :
@@ -113,7 +113,7 @@ Lignes :
 
 *Commentaire.* Pour un modèle léger et un fort volume, un format de sortie strict et une liste fermée de catégories sont essentiels. La colonne « confiance » permet de router les cas douteux vers un humain.
 
-**Prompt 8.2 — Analyse exigeante**
+**Prompt 8.2. Analyse exigeante**
 
 ```text
 Tu es un géologue senior chargé de relire un rapport de ressources minérales
@@ -132,15 +132,15 @@ Ne valide pas le rapport : ton rôle est de préparer la revue de la personne co
 
 ### F. Exercices pratiques
 
-**Exercice 8.1 (guidé) — Test A/B**
+**Exercice 8.1 (guidé) : Test A/B**
 
 Avec le fichier `MCC_bons_de_commande.csv`, extrayez 30 lignes. Classez-les vous-même, puis testez deux modèles avec le prompt 8.1. Calculez le taux de bonnes réponses et notez le temps de réponse.
 
-**Exercice 8.2 (guidé) — Estimation de coût**
+**Exercice 8.2 (guidé) : Estimation de coût**
 
 Estimez le coût API du résumé mensuel des 160 incidents HSE de MCC (environ 120 mots par incident ; synthèse de 1 500 mots) avec Opus 5.5 et avec Sonnet 5.5.
 
-**Exercice 8.3 (autonome) — Votre matrice modèle / tâche**
+**Exercice 8.3 (autonome) : Votre matrice modèle / tâche**
 
 Pour dix tâches de votre métier, indiquez le modèle de départ, l'outil (conversation, projet, Cowork, Code, API) et la justification.
 
@@ -194,4 +194,4 @@ Interrogé sur « le meilleur modèle Claude », un assistant peut citer de mém
 9. **(Compréhension)** À quoi sert la colonne « confiance » du prompt 8.1 ?
 10. **(Application)** Quel outil de l'écosystème convient à une tâche longue en plusieurs étapes sur des fichiers, que vous souhaitez pouvoir reprendre ?
 
-<div class="carnet" titre="Chapitre 8 — Comprendre les modèles et choisir le bon outil pour chaque tâche"></div>
+<div class="carnet" titre="Chapitre 8. Comprendre les modèles et choisir le bon outil pour chaque tâche"></div>

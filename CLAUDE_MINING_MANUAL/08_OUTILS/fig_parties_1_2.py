@@ -63,7 +63,7 @@ def f01_2():
     # échelle et nord
     ax.plot([8, 18], [3, 3], color=INK, lw=2); ax.text(13, 4.2, "≈ 2 km", ha="center", fontsize=7)
     arrow(ax, (96, 56), (96, 63), color=INK, lw=1.5); ax.text(96, 64.5, "N", ha="center", fontsize=9, fontweight="bold")
-    note(ax, "Plan non à l'échelle, entièrement fictif — sert de repère pour les exercices de l'ouvrage.", y=0.8)
+    note(ax, "Plan non à l'échelle, entièrement fictif, sert de repère pour les exercices de l'ouvrage.", y=0.8)
     return save(fig, "fig01_2_plan_site_mcc")
 
 def f02_1():
@@ -140,7 +140,7 @@ def f03_1():
         x += w + 0.8
     ax.text(3, 11, "▲ identifiants numériques (valeurs illustratives)", fontsize=7.5, color=MID)
     ax.text(55, 5, "Découpage illustratif : le découpage réel dépend du « tokenizer » de chaque modèle. Les mots rares, les noms propres\n"
-            "et les nombres sont souvent fragmentés — une des raisons pour lesquelles un LLM peut mal compter ou mal recopier un chiffre.",
+            "et les nombres sont souvent fragmentés : une des raisons pour lesquelles un LLM peut mal compter ou mal recopier un chiffre.",
             ha="center", fontsize=8, color=INK)
     return save(fig, "fig03_1_tokens")
 
@@ -227,7 +227,7 @@ def f04_2():
     ax.set_xticks([1, 2, 3, 4]); ax.set_xticklabels(["Latence la\nplus faible", "Rapide", "Modérée", "Modérée"])
     ax.set_xlim(0.4, 4.6); ax.set_ylim(-3.2, 10); ax.set_yticks([0, 2, 4, 6, 8, 10]); ax.set_xlabel("Latence comparative (selon la documentation)")
     ax.set_ylabel("Prix API en entrée (USD par million de tokens)")
-    ax.set_title("Gamme de modèles Claude actuelle — positionnement", fontsize=12)
+    ax.set_title("Gamme de modèles Claude actuelle : positionnement", fontsize=12)
     style_axes(ax)
     fig.text(0.5, -0.05, "Données : Anthropic, Models overview, tableau « Latest models » (consulté le 16/11/2026). Haiku : « à partir de » 0,10 USD. "
              "Prix et gamme susceptibles d'évoluer.", ha="center", fontsize=7.6, style="italic", color=MID)
@@ -247,7 +247,7 @@ def f05_1():
     box(ax, 3, 3, 99, 20, "", fc=GREY, ec=MID)
     ax.text(5, 19.5, "Signaux d'alerte", fontsize=9.5, fontweight="bold", color=NAVY)
     for i, s in enumerate(signes):
-        ax.text(6 + (i % 2) * 48, 14.5 - (i // 2) * 4.6, "—  " + s, fontsize=8.5, color=INK)
+        ax.text(6 + (i % 2) * 48, 14.5 - (i // 2) * 4.6, "•  " + s, fontsize=8.5, color=INK)
     return save(fig, "fig05_1_hallucination")
 
 def f05_2():
@@ -306,7 +306,7 @@ def f06_2():
         x = 2 + i * 36
         box(ax, x, 38, 34, 8, h, fc=c, ec=c, color="white", bold=True, fs=9.8)
         for j, it in enumerate(items):
-            ax.text(x + 2, 33 - j * 5, "—  " + it, fontsize=8.8, color=INK, va="center")
+            ax.text(x + 2, 33 - j * 5, "•  " + it, fontsize=8.8, color=INK, va="center")
     return save(fig, "fig06_2_partage_roles")
 
 def f07_1():
@@ -331,7 +331,7 @@ def f07_1():
         if t:
             ax.annotate(t, xy=p, xytext=q, fontsize=8, color=RED, fontweight="bold", ha="center",
                         arrowprops=dict(arrowstyle="-|>", color=RED, lw=1.2))
-    ax.text(55, -2.5, "ILLUSTRATION SCHÉMATIQUE — ce n'est pas une capture d'écran. La disposition réelle de l'interface évolue ;\n"
+    ax.text(55, -2.5, "ILLUSTRATION SCHÉMATIQUE : ce n'est pas une capture d'écran. La disposition réelle de l'interface évolue ;\n"
             "les libellés exacts peuvent différer selon la version, l'offre et la langue.", ha="center", fontsize=8, color=RED, style="italic")
     ax.set_ylim(-5, 66)
     return save(fig, "fig07_1_interface_schematique", "CAPTURES_CLAUDE")
@@ -403,7 +403,7 @@ def f10_1():
         ax.text(x + 10, 38, l, ha="center", va="center", fontsize=24, fontweight="bold", color="white")
         ax.text(x + 10, 26.5, n, ha="center", va="center", fontsize=10.5, fontweight="bold", color=c)
         box(ax, x, 5, 20, 16, d, fc=GREY, ec=c, fs=8.3)
-    note(ax, "Cadre pédagogique proposé par cet ouvrage — ce n'est pas une méthode officielle d'Anthropic.", y=1.5, fs=8)
+    note(ax, "Cadre pédagogique proposé par cet ouvrage, ce n'est pas une méthode officielle d'Anthropic.", y=1.5, fs=8)
     return save(fig, "fig10_1_methode_cadre")
 
 def f10_2():
@@ -502,7 +502,7 @@ def f15_1():
     fig, ax = canvas(11, 6, 110, 60)
     title(ax, "Organiser son travail : conversations, projets et artefacts", y=57.5, fs=12)
     box(ax, 3, 6, 62, 46, "", fc=LIGHTNAVY, ec=NAVY, lw=2)
-    ax.text(34, 48.5, "PROJET « Rapports mensuels HSE — MCC »", ha="center", fontsize=10, fontweight="bold", color=NAVY)
+    ax.text(34, 48.5, "PROJET « Rapports mensuels HSE MCC »", ha="center", fontsize=10, fontweight="bold", color=NAVY)
     box(ax, 6, 34, 27, 11, "Instructions du projet\n(rôle, format, règles)", fc="white", ec=NAVY, fs=8.3)
     box(ax, 36, 34, 26, 11, "Connaissances du projet\n(procédures, modèles,\nindicateurs 2025)", fc="white", ec=NAVY, fs=8.3)
     for i, t in enumerate(["Conversation : rapport de janvier", "Conversation : rapport de février", "Conversation : analyse trimestrielle"]):

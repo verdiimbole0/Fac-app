@@ -1,4 +1,4 @@
-## Chapitre 13 — Travailler avec les documents et les fichiers
+## Chapitre 13. Travailler avec les documents et les fichiers
 
 ### A. Mise en situation professionnelle
 
@@ -20,14 +20,14 @@ Le directeur des opérations de MCC demande à Thomas Kayembe, directeur financi
 
 D'après le centre d'aide [@ANT-HC-UPLOAD] :
 
-*Tableau 13.1 — Fichiers acceptés dans l'application.*
+*Tableau 13.1. Fichiers acceptés dans l'application.*
 
 | Catégorie | Formats | Remarque |
 |---|---|---|
 | Documents | PDF, DOCX, CSV, TXT, HTML, ODT, RTF, EPUB, JSON, XLSX | L'import de fichiers XLSX nécessite l'activation de l'exécution de code et de la création de fichiers |
 | Images | JPEG, PNG, GIF, WebP | Préférer des images d'au moins 1 000 × 1 000 pixels |
 
-*Tableau 13.2 — Limites indiquées par le centre d'aide.*
+*Tableau 13.2. Limites indiquées par le centre d'aide.*
 
 | Limite | Valeur |
 |---|---|
@@ -75,25 +75,25 @@ Claude peut décrire et analyser des images : graphiques, schémas, photos de pi
 
 Avec l'exécution de code et la création de fichiers activées, Claude peut produire des documents Word, des classeurs Excel, des présentations et des PDF, ainsi que des graphiques ; les compétences (*Skills*) fournies par Anthropic pour la création de documents bureautiques sont invoquées automatiquement lorsque c'est pertinent [@ANT-HC-SKILLS]. Les artefacts (chapitre 15) permettent en outre de créer des documents, présentations et tableaux de bord modifiables dans l'application [@ANT-HC-ARTIFACTS].
 
-![Figure 13.1 — Circuit de travail sur un document. La préparation et la vérification encadrent toujours le travail de Claude. Illustration réalisée pour cet ouvrage.](02_ILLUSTRATIONS/SCHEMAS/fig13_1_circuit_documentaire.png){width=100%}
+![Figure 13.1. Circuit de travail sur un document. La préparation et la vérification encadrent toujours le travail de Claude. Illustration réalisée pour cet ouvrage.](02_ILLUSTRATIONS/SCHEMAS/fig13_1_circuit_documentaire.png){width=100%}
 
-### D. Démonstration guidée — L'analyse de Thomas
+### D. Démonstration guidée : L'analyse de Thomas
 
-**Étape 1 — Préparer.** Thomas vérifie que les trois fichiers sont de niveau « usage interne » (autorisés dans l'espace MCC). Il recadre la photo du tableau blanc et la recopie partiellement à la main pour les valeurs illisibles.
+**Étape 1. Préparer.** Thomas vérifie que les trois fichiers sont de niveau « usage interne » (autorisés dans l'espace MCC). Il recadre la photo du tableau blanc et la recopie partiellement à la main pour les valeurs illisibles.
 
-**Étape 2 — Profiler les données.** Il joint `MCC_production_journaliere_S1_2026.xlsx` et demande un profil (prompt 13.1). Claude signale : une journée manquante (11 avril), une récupération de 121,4 % le 15 février, une production de cathode anormalement élevée le 1er juin. Ce sont les anomalies volontairement insérées dans le jeu de données.
+**Étape 2. Profiler les données.** Il joint `MCC_production_journaliere_S1_2026.xlsx` et demande un profil (prompt 13.1). Claude signale : une journée manquante (11 avril), une récupération de 121,4 % le 15 février, une production de cathode anormalement élevée le 1er juin. Ce sont les anomalies volontairement insérées dans le jeu de données.
 
-**Étape 3 — Extraire du PDF.** Il joint `MCC_rapport_mensuel_production_mars_2026.pdf` et demande l'extraction des chiffres clés avec citation (prompt 13.2).
+**Étape 3. Extraire du PDF.** Il joint `MCC_rapport_mensuel_production_mars_2026.pdf` et demande l'extraction des chiffres clés avec citation (prompt 13.2).
 
-**Étape 4 — Croiser.** Il demande la réconciliation entre le rapport (189 kt traitées, 2,41 % Cu, 87,9 % de récupération, 4 007 t de cathode) et les données journalières de mars, avec calcul par programme (prompt 13.3). Claude calcule que 189 000 t × 2,41 % × 87,9 % ≈ 4 004 t, cohérent avec les 4 007 t annoncées à l'arrondi près, et compare aux totaux journaliers.
+**Étape 4. Croiser.** Il demande la réconciliation entre le rapport (189 kt traitées, 2,41 % Cu, 87,9 % de récupération, 4 007 t de cathode) et les données journalières de mars, avec calcul par programme (prompt 13.3). Claude calcule que 189 000 t × 2,41 % × 87,9 % ≈ 4 004 t, cohérent avec les 4 007 t annoncées à l'arrondi près, et compare aux totaux journaliers.
 
-**Étape 5 — Lire l'image.** Il joint la photo du tableau blanc et demande la transcription des arrêts, en marquant les éléments illisibles.
+**Étape 5. Lire l'image.** Il joint la photo du tableau blanc et demande la transcription des arrêts, en marquant les éléments illisibles.
 
-**Étape 6 — Produire.** Il demande une note Word de deux pages avec un tableau et un graphique, puis la relit, corrige un libellé et ajoute son commentaire.
+**Étape 6. Produire.** Il demande une note Word de deux pages avec un tableau et un graphique, puis la relit, corrige un libellé et ajoute son commentaire.
 
 ### E. Prompts commentés
 
-**Prompt 13.1 — Profil d'un fichier de données**
+**Prompt 13.1. Profil d'un fichier de données**
 
 ```text
 Fichier joint : MCC_production_journaliere_S1_2026.xlsx (ligne 1 = bandeau, ligne 2 = en-têtes).
@@ -108,7 +108,7 @@ Ne corrige rien : signale seulement.
 
 *Commentaire.* Le profil précède toute analyse : il évite de bâtir un raisonnement sur des données défectueuses. La consigne « ne corrige rien » préserve votre contrôle sur les données.
 
-**Prompt 13.2 — Extraction traçable d'un PDF**
+**Prompt 13.2. Extraction traçable d'un PDF**
 
 ```text
 Document joint : rapport mensuel de production de mars 2026.
@@ -118,7 +118,7 @@ consommation d'acide, coût unitaire, arrêts non planifiés.
 Si un indicateur est absent, écris « absent ». N'effectue aucun calcul à ce stade.
 ```
 
-**Prompt 13.3 — Réconciliation entre sources**
+**Prompt 13.3. Réconciliation entre sources**
 
 ```text
 Compare les chiffres extraits du rapport (tableau précédent) avec le fichier journalier
@@ -129,7 +129,7 @@ pour le mois de mars 2026. Avec l'exécution de code :
 Commente uniquement les écarts supérieurs à 1 %. Affiche le code.
 ```
 
-**Prompt 13.4 — Lecture d'une photo**
+**Prompt 13.4. Lecture d'une photo**
 
 ```text
 Photo jointe : tableau blanc de la salle de contrôle (arrêts de l'usine).
@@ -140,15 +140,15 @@ Ne déduis aucune valeur manquante.
 
 ### F. Exercices pratiques
 
-**Exercice 13.1 (guidé) — Profil et anomalies**
+**Exercice 13.1 (guidé) : Profil et anomalies**
 
 Réalisez l'étape 2 de la démonstration avec le fichier de production. Retrouvez-vous les trois anomalies ? Comparez avec `ANOMALIES_ATTENDUES.md`.
 
-**Exercice 13.2 (guidé) — Le contrat**
+**Exercice 13.2 (guidé) : Le contrat**
 
 Avec `MCC_contrat_fourniture_acide_extrait.pdf`, extrayez toutes les obligations du fournisseur et de l'acheteur avec l'article et la citation. Puis demandez : « Quelle pénalité pour une livraison de 5 100 t en mars, si la facturation mensuelle est de 1 020 000 USD ? » Vérifiez le calcul vous-même : (5 400 − 5 100) × 8 = 2 400 USD, sous le plafond de 5 % (51 000 USD).
 
-**Exercice 13.3 (autonome) — Votre document réel**
+**Exercice 13.3 (autonome) : Votre document réel**
 
 Choisissez un document de votre travail autorisé par la charte. Appliquez le circuit complet de la figure 13.1 et documentez chaque contrôle.
 
@@ -203,4 +203,4 @@ Dans un tableau PDF à colonnes serrées, Claude décale une valeur d'une colonn
 9. **(Analyse critique)** Une extraction « propre » peut-elle contenir des erreurs ? Donnez un exemple.
 10. **(Application)** Rédigez la consigne qui empêche Claude de deviner les éléments illisibles d'une photo.
 
-<div class="carnet" titre="Chapitre 13 — Travailler avec les documents et les fichiers"></div>
+<div class="carnet" titre="Chapitre 13. Travailler avec les documents et les fichiers"></div>

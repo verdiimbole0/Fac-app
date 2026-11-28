@@ -1,4 +1,4 @@
-## Chapitre 28 — Claude appliqué à la comptabilité, à la finance, à la fiscalité et au contrôle de gestion
+## Chapitre 28. Claude appliqué à la comptabilité, à la finance, à la fiscalité et au contrôle de gestion
 
 ### A. Mise en situation professionnelle
 
@@ -14,11 +14,11 @@ Fin de semestre chez MCC. Thomas Kayembe, directeur administratif et financier, 
 4. **Produire** des notes de gestion et des synthèses pour la direction et le comité d'audit.
 5. **Appliquer** les règles de confidentialité et de séparation des tâches propres à la fonction financière.
 
-### C. Comprendre avant de pratiquer — Profil du métier
+### C. Comprendre avant de pratiquer : Profil du métier
 
 En RDC, État membre de l'OHADA, la comptabilité des entreprises s'inscrit dans le cadre de l'Acte uniforme relatif au droit comptable et à l'information financière, adopté en 2017, et du système comptable révisé qui l'accompagne [@OHADA-AUDCIF]. Les entreprises extractives sont par ailleurs concernées par les exigences de déclaration des paiements aux États prévues par la Norme ITIE [@EITI-2023].
 
-*Tableau 28.1 — Profil de la fonction finance.*
+*Tableau 28.1. Profil de la fonction finance.*
 
 | Dimension | Contenu |
 |---|---|
@@ -35,9 +35,9 @@ En RDC, État membre de l'OHADA, la comptabilité des entreprises s'inscrit dans
 **Séparation des tâches et traçabilité.** Claude ne passe aucune écriture et n'a pas accès aux systèmes comptables en écriture. Toute analyse réalisée avec Claude qui sert de justification doit être conservée (données, prompt, résultat, contrôles) dans le dossier de travail, comme n'importe quel papier de travail.
 :::
 
-### D. Démonstration guidée — Cas d'usage
+### D. Démonstration guidée : Cas d'usage
 
-#### Cas d'usage 28.1 — Contrôle de la balance générale et revue analytique
+#### Cas d'usage 28.1. Contrôle de la balance générale et revue analytique
 
 **1. Problème.** La balance générale 2025 transmise ne s'équilibre pas ; Ruth doit trouver l'origine et réaliser une revue analytique avant la clôture.
 
@@ -63,7 +63,7 @@ aux amortissements / immobilisations ; 4) hypothèses d'origine de l'écart d'é
 
 **7. Échanges.** « Vérifie si l'écart correspond au montant d'un compte, au double d'un compte, ou à une inversion de sens » (techniques classiques de recherche d'écart).
 
-**8. Exemple de résultat (fictif).** Total débit 980,4 MUSD, total crédit 997,1 MUSD : écart de 16,7 MUSD. Claude teste les hypothèses classiques (compte omis, compte saisi dans le mauvais sens — une inversion produirait un écart égal au double du solde —, erreur de transposition) et liste les comptes candidats ; Ruth vérifie dans le grand livre. Revue analytique : redevances de 24 MUSD pour un chiffre d'affaires de 549 MUSD, soit 4,4 % — cohérent avec le dossier fiscal.
+**8. Exemple de résultat (fictif).** Total débit 980,4 MUSD, total crédit 997,1 MUSD : écart de 16,7 MUSD. Claude teste les hypothèses classiques (compte omis, compte saisi dans le mauvais sens, une inversion produirait un écart égal au double du solde, erreur de transposition) et liste les comptes candidats ; Ruth vérifie dans le grand livre. Revue analytique : redevances de 24 MUSD pour un chiffre d'affaires de 549 MUSD, soit 4,4 % : cohérent avec le dossier fiscal.
 
 **9. Contrôle.** Recalcul des totaux dans le tableur ; vérification des hypothèses dans le grand livre.
 
@@ -73,7 +73,7 @@ aux amortissements / immobilisations ; 4) hypothèses d'origine de l'écart d'é
 
 **12. Livrable.** Note de contrôle de la balance et revue analytique, versées au dossier de clôture.
 
-#### Cas d'usage 28.2 — Expliquer les écarts budgétaires du semestre
+#### Cas d'usage 28.2. Expliquer les écarts budgétaires du semestre
 
 **1. Problème.** Les coûts du S1 2026 dépassent le budget ; le comité de direction veut des explications par centre de coût.
 
@@ -95,7 +95,7 @@ part non expliquée. Ne comble pas la part non expliquée par une hypothèse.
 
 **8. Exemple de résultat (fictif).**
 
-![Figure 28.1 — Écarts budgétaires cumulés par centre de coût au premier semestre 2026 (données fictives MCC) : le poste réactifs concentre l'essentiel du dépassement. Graphique réalisé pour cet ouvrage.](02_ILLUSTRATIONS/GRAPHIQUES/fig28_1_ecarts_budget.png){width=90%}
+![Figure 28.1. Écarts budgétaires cumulés par centre de coût au premier semestre 2026 (données fictives MCC) : le poste réactifs concentre l'essentiel du dépassement. Graphique réalisé pour cet ouvrage.](02_ILLUSTRATIONS/GRAPHIQUES/fig28_1_ecarts_budget.png){width=90%}
 
 Message clé (à valider) : « Le dépassement est concentré sur les réactifs de l'usine (≈ + 3,8 MUSD cumulés, essentiellement d'avril à juin). La hausse du prix de l'acide et une consommation supérieure au budget en expliquent environ 1 MUSD sur le trimestre ; le solde reste à expliquer avec l'usine et les achats (autres réactifs). La conformité de la hausse de prix au contrat est en cours d'examen. »
 
@@ -107,17 +107,17 @@ Message clé (à valider) : « Le dépassement est concentré sur les réactifs 
 
 **12. Livrable.** Note d'écarts semestrielle et support du comité.
 
-#### Cas d'usage 28.3 — Dossier de calcul des redevances minières (condensé)
+#### Cas d'usage 28.3. Dossier de calcul des redevances minières (condensé)
 
 Olivier fournit à Claude les textes applicables (Code minier modifié, textes d'application), les données de ventes et les taux retenus **après sa propre analyse**. Claude construit le dossier de calcul par code (assiette, taux, montants par substance et par période), le rapproche des montants comptabilisés et des paiements, et liste les points d'interprétation à confirmer. Dans le scénario (assiette simplifiée de l'exercice) : 3,5 % × 475 MUSD (cuivre) + 10 % × 74 MUSD (cobalt) = 16,6 + 7,4 = **24,0 MUSD**, cohérent avec la balance. Les taux et l'assiette réels doivent être vérifiés dans les textes en vigueur ; la position fiscale et la déclaration relèvent du fiscaliste et de la direction.
 
-#### Cas d'usage 28.4 — Données pour la déclaration ITIE et coût unitaire (condensé)
+#### Cas d'usage 28.4. Données pour la déclaration ITIE et coût unitaire (condensé)
 
 Claude aide à rassembler, à partir des registres validés, les paiements à déclarer par flux et par entité publique selon le modèle fourni par le secrétariat national, avec rapprochement aux paiements bancaires. En contrôle de gestion, il calcule le coût unitaire (USD par livre de cuivre) à partir des coûts et de la production, et vérifie la cohérence avec les rapports mensuels (par exemple 2,02 USD/lb en mars 2026 contre 1,85 au budget, selon le rapport de mars).
 
 ### E. Prompts commentés
 
-**Prompt 28.1 — Préparer les questions du comité d'audit**
+**Prompt 28.1. Préparer les questions du comité d'audit**
 
 ```text
 Voici le projet de note financière semestrielle : <note> … </note>.
@@ -179,4 +179,4 @@ Interrogé « de mémoire » sur le taux de redevance d'une substance en RDC, un
 9. **(Analyse critique)** Quels risques présente l'usage de taux fiscaux fournis de mémoire par Claude ?
 10. **(Application)** Quel ratio redevances / chiffre d'affaires obtient-on dans le scénario ?
 
-<div class="carnet" titre="Chapitre 28 — Claude appliqué à la comptabilité, à la finance, à la fiscalité et au contrôle de gestion"></div>
+<div class="carnet" titre="Chapitre 28. Claude appliqué à la comptabilité, à la finance, à la fiscalité et au contrôle de gestion"></div>

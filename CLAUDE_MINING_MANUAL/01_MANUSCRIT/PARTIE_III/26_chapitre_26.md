@@ -1,4 +1,4 @@
-## Chapitre 26 — Claude appliqué aux achats, aux approvisionnements et à la logistique minière
+## Chapitre 26. Claude appliqué aux achats, aux approvisionnements et à la logistique minière
 
 ### A. Mise en situation professionnelle
 
@@ -14,9 +14,9 @@ Amina Lukusa, responsable supply chain de MCC, prépare trois dossiers en parall
 4. **Structurer** la documentation logistique d'une expédition à l'export.
 5. **Préparer** un rapport sur les achats locaux à partir de données vérifiées.
 
-### C. Comprendre avant de pratiquer — Profil du métier
+### C. Comprendre avant de pratiquer : Profil du métier
 
-*Tableau 26.1 — Profil de la fonction achats, approvisionnements et logistique.*
+*Tableau 26.1. Profil de la fonction achats, approvisionnements et logistique.*
 
 | Dimension | Contenu |
 |---|---|
@@ -33,9 +33,9 @@ Amina Lukusa, responsable supply chain de MCC, prépare trois dossiers en parall
 L'évaluation et l'attribution des marchés exigent impartialité et traçabilité. Claude peut structurer une grille et vérifier la cohérence d'une notation ; il ne choisit pas le fournisseur. Ne transmettez jamais les offres confidentielles d'un soumissionnaire hors de l'environnement autorisé.
 :::
 
-### D. Démonstration guidée — Cas d'usage
+### D. Démonstration guidée : Cas d'usage
 
-#### Cas d'usage 26.1 — Revue annuelle des dépenses et détection d'anomalies
+#### Cas d'usage 26.1. Revue annuelle des dépenses et détection d'anomalies
 
 **1. Problème.** Le directeur financier veut une vue claire des dépenses par fournisseur et catégorie, et l'assurance que les règles d'approbation sont respectées.
 
@@ -62,7 +62,7 @@ Les signalements sont des points à vérifier, pas des conclusions.
 
 **8. Exemple de résultat (données fictives).** Trois commandes de 9 800 USD passées le 14 mars 2026 à un même prestataire, pour un total de 29 400 USD ; une commande en double (BC-60999 identique à BC-60012).
 
-![Figure 26.1 — Distribution des montants de commandes autour du seuil d'approbation (données fictives MCC). Graphique réalisé pour cet ouvrage.](02_ILLUSTRATIONS/GRAPHIQUES/fig26_1_commandes_seuil.png){width=90%}
+![Figure 26.1. Distribution des montants de commandes autour du seuil d'approbation (données fictives MCC). Graphique réalisé pour cet ouvrage.](02_ILLUSTRATIONS/GRAPHIQUES/fig26_1_commandes_seuil.png){width=90%}
 
 **9. Contrôle.** Vérification des pièces dans l'ERP ; entretien avec le demandeur ; transmission à l'audit interne si nécessaire (chapitre 29).
 
@@ -72,7 +72,7 @@ Les signalements sont des points à vérifier, pas des conclusions.
 
 **12. Livrable.** Revue des dépenses avec annexe des signalements et suites données.
 
-#### Cas d'usage 26.2 — Réclamation au fournisseur d'acide
+#### Cas d'usage 26.2. Réclamation au fournisseur d'acide
 
 **1. Problème.** En mars 2026, Kat-Chem (fictif) n'a livré que 5 100 t au lieu du minimum contractuel de 5 400 t ; par ailleurs, le prix facturé à partir d'avril (228 USD/t) représente une hausse de 23 % par rapport au prix de base (185 USD/t).
 
@@ -97,7 +97,7 @@ le plafond. Pour la révision de prix, indique ce que dit l'article 5 et ce qui 
 
 **7. Échanges.** « Quels arguments le fournisseur pourrait-il avancer (force majeure, pénurie) et que dit l'article 12 ? »
 
-**8. Exemple de résultat.** Pénalité : (5 400 − 5 100) × 8 = 2 400 USD, sous le plafond de 5 % de la facturation mensuelle (51 000 USD). Révision de prix : l'article 5 plafonne la révision à ± 15 % par trimestre ; une hausse de 23 % dépasse ce plafond, sauf si plusieurs révisions trimestrielles successives sont intervenues — point à vérifier avec l'historique des prix et les valeurs de l'indice. L'article 12 précise que les pénuries chez les sous-traitants du fournisseur ne constituent pas un cas de force majeure.
+**8. Exemple de résultat.** Pénalité : (5 400 − 5 100) × 8 = 2 400 USD, sous le plafond de 5 % de la facturation mensuelle (51 000 USD). Révision de prix : l'article 5 plafonne la révision à ± 15 % par trimestre ; une hausse de 23 % dépasse ce plafond, sauf si plusieurs révisions trimestrielles successives sont intervenues : point à vérifier avec l'historique des prix et les valeurs de l'indice. L'article 12 précise que les pénuries chez les sous-traitants du fournisseur ne constituent pas un cas de force majeure.
 
 **9. Contrôle.** Relecture du contrat complet (l'extrait peut omettre des clauses pertinentes) ; validation par Me Ngoy.
 
@@ -107,17 +107,17 @@ le plafond. Pour la révision de prix, indique ce que dit l'article 5 et ce qui 
 
 **12. Livrable.** Note d'analyse contractuelle et courrier validé.
 
-#### Cas d'usage 26.3 — Appel d'offres pour le transport des cathodes (condensé)
+#### Cas d'usage 26.3. Appel d'offres pour le transport des cathodes (condensé)
 
 Claude rédige le projet de cahier des charges (périmètre : site → Dar es Salaam via la frontière zambienne ; exigences de sécurité routière, de suivi des camions, d'assurance, de documentation ; indicateurs de performance), une grille d'évaluation pondérée (technique, sécurité, prix, contenu local) et la liste des pièces à exiger. Après réception des offres, il peut vérifier la complétude de chaque dossier par rapport à la liste et la cohérence arithmétique des grilles remplies par le comité. Le comité d'évaluation note et décide.
 
-#### Cas d'usage 26.4 — Dossier documentaire d'une expédition à l'export (condensé)
+#### Cas d'usage 26.4. Dossier documentaire d'une expédition à l'export (condensé)
 
 Claude produit une check-list des documents d'une expédition de cathodes (contrat de vente, facture, liste de colisage, certificats d'analyse et de poids, documents de transport, déclarations et autorisations d'exportation applicables) et vérifie la **cohérence** des documents fournis entre eux (poids, nombre de lots, références). La liste exacte des documents réglementaires est validée par le transitaire et le service juridique.
 
 ### E. Prompts commentés
 
-**Prompt 26.1 — Grille d'évaluation des offres**
+**Prompt 26.1. Grille d'évaluation des offres**
 
 ```text
 Propose une grille d'évaluation des offres pour [objet du marché], avec : critères, sous-critères,
@@ -178,4 +178,4 @@ Sur la base d'un extrait de contrat, Claude conclut que « le fournisseur doit r
 9. **(Analyse critique)** Pourquoi comparer des prix unitaires peut-il produire de faux signalements ?
 10. **(Compréhension)** Qu'apporte Claude dans la vérification d'un dossier d'expédition ?
 
-<div class="carnet" titre="Chapitre 26 — Claude appliqué aux achats, aux approvisionnements et à la logistique minière"></div>
+<div class="carnet" titre="Chapitre 26. Claude appliqué aux achats, aux approvisionnements et à la logistique minière"></div>

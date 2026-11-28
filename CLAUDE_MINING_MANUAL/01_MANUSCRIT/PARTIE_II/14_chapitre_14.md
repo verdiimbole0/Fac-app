@@ -1,4 +1,4 @@
-## Chapitre 14 — Utiliser Claude pour la recherche, la documentation et la vérification des sources
+## Chapitre 14. Utiliser Claude pour la recherche, la documentation et la vérification des sources
 
 ### A. Mise en situation professionnelle
 
@@ -38,7 +38,7 @@ Une page citée par Claude peut :
 - être peu fiable (blog anonyme, contenu promotionnel) ;
 - être une source secondaire qui déforme la source primaire.
 
-![Figure 14.1 — Hiérarchie de fiabilité des sources. Une réponse de Claude sans source n'est qu'un point de départ. Illustration réalisée pour cet ouvrage.](02_ILLUSTRATIONS/SCHEMAS/fig14_1_pyramide_sources.png){width=80%}
+![Figure 14.1. Hiérarchie de fiabilité des sources. Une réponse de Claude sans source n'est qu'un point de départ. Illustration réalisée pour cet ouvrage.](02_ILLUSTRATIONS/SCHEMAS/fig14_1_pyramide_sources.png){width=80%}
 
 #### C.3. Remonter à la source primaire
 
@@ -58,7 +58,7 @@ C'est la méthode utilisée pour constituer la bibliographie de ce livre : chaqu
 
 #### C.5. Citer selon les normes APA
 
-Les normes **APA** (*American Psychological Association*, 7e édition) sont largement utilisées dans les rapports professionnels et académiques. Principe : une citation courte dans le texte — (Auteur, année) — renvoie à une référence complète dans la bibliographie.
+Les normes **APA** (*American Psychological Association*, 7e édition) sont largement utilisées dans les rapports professionnels et académiques. Principe : une citation courte dans le texte, (Auteur, année), renvoie à une référence complète dans la bibliographie.
 
 *Exemples (référence complète) :*
 
@@ -67,21 +67,21 @@ Les normes **APA** (*American Psychological Association*, 7e édition) sont larg
 
 Pour les pages Web susceptibles d'évoluer, indiquez toujours la **date de consultation**.
 
-### D. Démonstration guidée — La note de Clarisse
+### D. Démonstration guidée : La note de Clarisse
 
-**Étape 1 — Cartographier.** Clarisse demande à Claude, sans recherche, la liste des référentiels internationaux pertinents pour un producteur de cobalt (prompt 14.1). Elle obtient une liste de travail (devoir de diligence de l'OCDE, Norme ITIE, GISTM, Normes de performance de la SFI, etc.) qu'elle traite comme une **hypothèse**.
+**Étape 1. Cartographier.** Clarisse demande à Claude, sans recherche, la liste des référentiels internationaux pertinents pour un producteur de cobalt (prompt 14.1). Elle obtient une liste de travail (devoir de diligence de l'OCDE, Norme ITIE, GISTM, Normes de performance de la SFI, etc.) qu'elle traite comme une **hypothèse**.
 
-**Étape 2 — Rechercher avec sources.** Elle lance une recherche approfondie, en exigeant des sources primaires et la date de chaque document (prompt 14.2).
+**Étape 2. Rechercher avec sources.** Elle lance une recherche approfondie, en exigeant des sources primaires et la date de chaque document (prompt 14.2).
 
-**Étape 3 — Vérifier.** Pour chaque référence, elle applique les cinq contrôles. Elle constate notamment que la norme de l'ITIE en vigueur est l'édition 2023 [@EITI-2023], et écarte une référence de reporting dont deux versions circulaient sans qu'elle puisse établir laquelle était applicable.
+**Étape 3. Vérifier.** Pour chaque référence, elle applique les cinq contrôles. Elle constate notamment que la norme de l'ITIE en vigueur est l'édition 2023 [@EITI-2023], et écarte une référence de reporting dont deux versions circulaient sans qu'elle puisse établir laquelle était applicable.
 
-**Étape 4 — Registre.** Elle consigne chaque source dans un registre (prompt 14.4).
+**Étape 4. Registre.** Elle consigne chaque source dans un registre (prompt 14.4).
 
-**Étape 5 — Rédiger.** Elle rédige la note avec Claude, à partir **uniquement** des sources vérifiées (prompt 14.3), puis relit chaque citation.
+**Étape 5. Rédiger.** Elle rédige la note avec Claude, à partir **uniquement** des sources vérifiées (prompt 14.3), puis relit chaque citation.
 
 ### E. Prompts commentés
 
-**Prompt 14.1 — Cartographie préliminaire (à vérifier)**
+**Prompt 14.1. Cartographie préliminaire (à vérifier)**
 
 ```text
 Je prépare une note pour le conseil d'administration d'un producteur de cuivre
@@ -96,7 +96,7 @@ ni date, ni numéro de version, ni URL à ce stade.
 
 *Commentaire.* En interdisant dates, versions et URL, on évite les détails les plus exposés à l'hallucination à une étape où aucune recherche n'a été faite.
 
-**Prompt 14.2 — Recherche avec exigences de sources**
+**Prompt 14.2. Recherche avec exigences de sources**
 
 ```text
 Utilise la recherche pour vérifier et compléter la liste précédente.
@@ -110,7 +110,7 @@ Si tu ne trouves pas de source officielle pour un élément, écris « non véri
 Distingue clairement sources primaires et sources secondaires.
 ```
 
-**Prompt 14.3 — Rédiger uniquement à partir de sources vérifiées**
+**Prompt 14.3. Rédiger uniquement à partir de sources vérifiées**
 
 ```text
 Voici mon registre de sources vérifiées : <sources> … </sources>
@@ -119,7 +119,7 @@ Après chaque affirmation, indique la source entre parenthèses au format (Auteu
 N'introduis aucune référence qui ne figure pas dans le registre.
 ```
 
-**Prompt 14.4 — Fiche de registre**
+**Prompt 14.4. Fiche de registre**
 
 ```text
 Pour la source suivante [titre / URL], prépare une fiche de registre :
@@ -130,15 +130,15 @@ Marque chaque champ que tu n'as pas pu vérifier sur la source elle-même.
 
 ### F. Exercices pratiques
 
-**Exercice 14.1 (guidé) — Les cinq contrôles**
+**Exercice 14.1 (guidé) : Les cinq contrôles**
 
 Appliquez les cinq contrôles aux trois références suivantes et notez vos constats : (1) la Norme mondiale de l'industrie sur la gestion des résidus miniers ; (2) le recueil de directives pratiques de l'OIT sur la sécurité et la santé dans les mines à ciel ouvert ; (3) les « Mineral Commodity Summaries » de l'USGS. *Indice : vérifiez l'année et l'édition de chacune [@GISTM-2020; @ILO-OPENCAST; @USGS-MCS2026].*
 
-**Exercice 14.2 (guidé) — Débusquer une référence fragile**
+**Exercice 14.2 (guidé) : Débusquer une référence fragile**
 
 Demandez à Claude, sans recherche, trois références scientifiques sur « l'IA générative appliquée à la maintenance minière ». Vérifiez chacune. Combien existent réellement, avec les bons auteurs et la bonne revue ?
 
-**Exercice 14.3 (autonome) — Votre veille réglementaire**
+**Exercice 14.3 (autonome) : Votre veille réglementaire**
 
 Pour votre métier, constituez un registre de 8 sources de référence (textes, normes, guides), vérifiées selon les cinq contrôles, avec leur référence APA.
 
@@ -157,7 +157,7 @@ Pour votre métier, constituez un registre de 8 sources de référence (textes, 
 :::
 
 ::: setrompe
-Lors d'une recherche, Claude cite une page officielle réelle, mais lui attribue une exigence qui figure en réalité dans un autre document du même organisme. Le lien fonctionne, la source est fiable… mais le contenu attribué est faux. **Contre-mesure** : le contrôle n° 4 (contenu) — lire le passage dans la source.
+Lors d'une recherche, Claude cite une page officielle réelle, mais lui attribue une exigence qui figure en réalité dans un autre document du même organisme. Le lien fonctionne, la source est fiable… mais le contenu attribué est faux. **Contre-mesure** : le contrôle n° 4 (contenu) : lire le passage dans la source.
 :::
 
 ### I. Limites et précautions
@@ -191,4 +191,4 @@ Lors d'une recherche, Claude cite une page officielle réelle, mais lui attribue
 9. **(Analyse critique)** Quelle est la limite d'un article de presse qui résume une norme ?
 10. **(Vrai ou faux)** Une référence dont on n'a pas pu vérifier l'édition ou le contenu peut figurer dans une bibliographie si elle paraît plausible.
 
-<div class="carnet" titre="Chapitre 14 — Utiliser Claude pour la recherche, la documentation et la vérification des sources"></div>
+<div class="carnet" titre="Chapitre 14. Utiliser Claude pour la recherche, la documentation et la vérification des sources"></div>

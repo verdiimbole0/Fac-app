@@ -1,4 +1,4 @@
-## Corrigés des quiz — Partie II
+## Corrigés des quiz : Partie II
 
 ### Chapitre 7
 
@@ -46,7 +46,7 @@
 3. *Réponse attendue :* comprendre la raison aide Claude à appliquer la règle avec discernement dans des cas non prévus.
 4. **b)** En tête, avant la question.
 5. *Exemple :* « Identifie et liste les clauses de pénalité, de résiliation et de force majeure, avec l'article et la citation. »
-6. **R — Règles** (aucune interdiction de promesse) et **D — Données** (mesures réelles non fournies).
+6. **R, Règles** (aucune interdiction de promesse) et **D, Données** (mesures réelles non fournies).
 7. **Vrai.**
 8. Format, structure, longueur, ton, langue, éléments obligatoires (sources, questions ouvertes…).
 9. *Réponse attendue :* elle présuppose la faute et oriente la réponse ; formulation neutre : « Quels facteurs ont pu contribuer à l'événement ? »

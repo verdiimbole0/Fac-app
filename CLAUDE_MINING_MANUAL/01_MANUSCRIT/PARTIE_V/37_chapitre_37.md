@@ -1,8 +1,8 @@
-## Chapitre 37 — Confidentialité et protection des données minières
+## Chapitre 37. Confidentialité et protection des données minières
 
 ### A. Mise en situation professionnelle
 
-Un vendredi soir, un ingénieur de MCC, pressé, copie dans son compte personnel d'un assistant d'IA grand public le projet d'estimation des réserves de l'extension « Mbiyo Profond » — non publié — pour « faire relire la syntaxe ». Le lundi, le service informatique le découvre lors d'un contrôle. Rien ne prouve que l'information ait fuité. Mais l'entreprise ne peut plus garantir sa confidentialité : la donnée est sortie de son périmètre de maîtrise. Pour une information susceptible d'intéresser les marchés et les partenaires, c'est un incident sérieux.
+Un vendredi soir, un ingénieur de MCC, pressé, copie dans son compte personnel d'un assistant d'IA grand public le projet d'estimation des réserves de l'extension « Mbiyo Profond », non publié, pour « faire relire la syntaxe ». Le lundi, le service informatique le découvre lors d'un contrôle. Rien ne prouve que l'information ait fuité. Mais l'entreprise ne peut plus garantir sa confidentialité : la donnée est sortie de son périmètre de maîtrise. Pour une information susceptible d'intéresser les marchés et les partenaires, c'est un incident sérieux.
 
 ### B. Objectifs d'apprentissage
 
@@ -30,16 +30,16 @@ Un vendredi soir, un ingénieur de MCC, pressé, copie dans son compte personnel
 
 #### C.2. La classification de MCC
 
-![Figure 37.1 — Classification des données de MCC et usage autorisé de Claude (modèle fictif détaillé à l'Annexe G). Illustration réalisée pour cet ouvrage.](02_ILLUSTRATIONS/SCHEMAS/fig37_1_classification_donnees.png){width=92%}
+![Figure 37.1. Classification des données de MCC et usage autorisé de Claude (modèle fictif détaillé à l'Annexe G). Illustration réalisée pour cet ouvrage.](02_ILLUSTRATIONS/SCHEMAS/fig37_1_classification_donnees.png){width=92%}
 
 | Niveau | Définition | Usage de Claude à MCC |
 |---|---|---|
-| 1 — Public | Information publiée ou destinée à l'être | Libre (vérifier que l'information est réellement publique) |
-| 2 — Usage interne | Diffusion interne sans dommage notable en cas de fuite | Espace d'entreprise uniquement |
-| 3 — Confidentiel | Dommage significatif en cas de fuite | Espace d'entreprise, accord du propriétaire de la donnée, minimisation |
-| 4 — Restreint | Dommage grave ; diffusion nominative | Interdit dans Claude |
+| 1 : Public | Information publiée ou destinée à l'être | Libre (vérifier que l'information est réellement publique) |
+| 2 : Usage interne | Diffusion interne sans dommage notable en cas de fuite | Espace d'entreprise uniquement |
+| 3 : Confidentiel | Dommage significatif en cas de fuite | Espace d'entreprise, accord du propriétaire de la donnée, minimisation |
+| 4 : Restreint | Dommage grave ; diffusion nominative | Interdit dans Claude |
 
-#### C.3. Ce que dit l'outil — et ce que décide l'entreprise
+#### C.3. Ce que dit l'outil, et ce que décide l'entreprise
 
 Les règles d'utilisation des données diffèrent selon les offres (chapitre 4) : pour les offres grand public, la page des offres indique un fonctionnement par exclusion volontaire pour l'usage des conversations à des fins d'entraînement, avec un paramètre dédié [@ANT-PLANS] ; pour les offres commerciales, les conditions contractuelles s'appliquent ; la politique de confidentialité décrit le traitement des données personnelles [@ANT-PRIV-POL]. Les offres d'entreprise offrent en outre des contrôles d'administration (authentification unique, gestion des accès, contrôles de connecteurs, et, selon les offres, journalisation et autres fonctions de sécurité) [@ANT-PLANS; @ANT-HC-RELEASE].
 
@@ -59,12 +59,12 @@ La mémoire, les projets partagés et les connecteurs étendent la portée de ce
 #### C.5. Que faire en cas d'incident ?
 
 1. **Arrêter** : ne plus utiliser l'outil pour cette donnée ; supprimer la conversation si possible.
-2. **Signaler** immédiatement au référent IA et à la sécurité informatique — sans attendre, sans dissimuler.
+2. **Signaler** immédiatement au référent IA et à la sécurité informatique, sans attendre, sans dissimuler.
 3. **Documenter** : quoi, quand, quel outil, quel compte, quelles données.
 4. **Évaluer** avec le juridique : obligations de notification (personnes, partenaires, autorités, marchés).
 5. **Corriger** : mesures techniques et formation ; retour d'expérience sans recherche de bouc émissaire.
 
-### D. Démonstration guidée — Classer avant d'agir
+### D. Démonstration guidée : Classer avant d'agir
 
 Kevin Mutombo forme les utilisateurs du pilote avec un exercice : 10 documents réels (rendus fictifs pour la formation) à classer, puis à associer à un mode de traitement. Exemple :
 
@@ -79,7 +79,7 @@ Kevin Mutombo forme les utilisateurs du pilote avec un exercice : 10 documents r
 
 ### E. Prompts commentés
 
-**Prompt 37.1 — Aide à la pseudonymisation (sur un échantillon fictif ou déjà autorisé)**
+**Prompt 37.1. Aide à la pseudonymisation (sur un échantillon fictif ou déjà autorisé)**
 
 ```text
 Voici un modèle de texte de déclaration d'incident (exemple fictif) : <texte> … </texte>.
@@ -90,7 +90,7 @@ Identifie tous les éléments permettant d'identifier directement ou indirecteme
 
 *Commentaire.* Utilisez ce prompt pour **apprendre** à repérer les identifiants, sur des exemples fictifs, ou dans un cadre autorisé. Pour les données réelles de niveau élevé, la pseudonymisation doit être faite **avant** tout envoi, avec des outils internes.
 
-**Prompt 37.2 — Vérifier son propre envoi**
+**Prompt 37.2. Vérifier son propre envoi**
 
 ```text
 Avant que je ne te transmette des données, voici la description de ce que je compte envoyer
@@ -149,4 +149,4 @@ Un utilisateur demande à Claude « Est-ce que je peux te confier ce contrat con
 9. **(Analyse critique)** Pourquoi faut-il signaler un incident sans attendre, même sans preuve de fuite ?
 10. **(Compréhension)** Citez trois catégories de données sensibles spécifiques à une entreprise minière.
 
-<div class="carnet" titre="Chapitre 37 — Confidentialité et protection des données minières"></div>
+<div class="carnet" titre="Chapitre 37. Confidentialité et protection des données minières"></div>

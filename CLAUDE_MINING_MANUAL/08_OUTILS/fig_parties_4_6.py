@@ -19,7 +19,7 @@ def f34_1():
 
 def f35_1():
     fig, ax = canvas(11, 6.2, 110, 62); title(ax, "Anatomie d'un assistant spécialisé par métier", y=59.5, fs=12.5)
-    box(ax, 40, 24, 30, 14, "ASSISTANT\n« HSE — Rapports MCC »", fc=NAVY, ec=NAVY, color="white", bold=True, fs=10.5)
+    box(ax, 40, 24, 30, 14, "ASSISTANT\n« HSE : Rapports MCC »", fc=NAVY, ec=NAVY, color="white", bold=True, fs=10.5)
     items = [(3, 44, "Instructions (CADRE)", "rôle, règles, format,\nlimites de rôle", LIGHTNAVY, NAVY), (77, 44, "Connaissances", "procédures, modèles,\ndéfinitions validées", LIGHTGOLD, GOLD),
              (3, 4, "Compétences (Skills)", "méthodes maison\nréutilisables", LIGHTTURQ, TURQ), (77, 4, "Connecteurs", "accès en lecture\naux données utiles", GREY, MID),
              (40, 3, "Contrôles", "check-lists, tests,\nvalidation humaine", "#E3E9E2", GREEN)]
@@ -53,10 +53,10 @@ def f36_1():
 
 def f37_1():
     fig, ax = canvas(10.5, 6.2, 105, 62); title(ax, "Classification des données de MCC et usage autorisé de Claude", y=59.5, fs=12)
-    niv = [("4 — RESTREINT", "stratégie, M&A, contentieux,\ndonnées de santé, informations privilégiées", "INTERDIT dans Claude", RED),
-           ("3 — CONFIDENTIEL", "contrats, données RH, réserves non publiées,\nincidents nominatifs, prix", "Espace d'entreprise uniquement,\nautorisation du propriétaire", ORANGE),
-           ("2 — USAGE INTERNE", "procédures, rapports internes,\ndonnées de production agrégées", "Espace d'entreprise", TURQ),
-           ("1 — PUBLIC", "rapports publiés, textes officiels,\ncommunications publiques", "Libre", GREEN)]
+    niv = [("4. RESTREINT", "stratégie, M&A, contentieux,\ndonnées de santé, informations privilégiées", "INTERDIT dans Claude", RED),
+           ("3. CONFIDENTIEL", "contrats, données RH, réserves non publiées,\nincidents nominatifs, prix", "Espace d'entreprise uniquement,\nautorisation du propriétaire", ORANGE),
+           ("2. USAGE INTERNE", "procédures, rapports internes,\ndonnées de production agrégées", "Espace d'entreprise", TURQ),
+           ("1. PUBLIC", "rapports publiés, textes officiels,\ncommunications publiques", "Libre", GREEN)]
     for i, (n, ex, r, c) in enumerate(niv):
         y = 48 - i * 11.5; half = 12 + i * 6
         ax.add_patch(Polygon([(36 - half, y), (36 + half, y), (36 + half + 3.5, y - 10), (36 - half - 3.5, y - 10)], fc=c, ec="white", lw=2))

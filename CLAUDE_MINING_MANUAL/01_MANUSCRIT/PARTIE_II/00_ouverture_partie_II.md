@@ -1,7 +1,7 @@
 ::: partie
-# PARTIE II — Apprendre à maîtriser Claude de A à Z
+# PARTIE II. Apprendre à maîtriser Claude de A à Z
 
-Vous savez maintenant ce qu'est Claude et ce qu'il peut — ou ne peut pas — faire. Cette deuxième partie vous apprend à vous en servir comme un professionnel : créer et configurer votre environnement, choisir le bon modèle et les bons réglages, formuler des instructions précises grâce à la méthode CADRE, gérer vos conversations, travailler sur des documents et des données, rechercher et vérifier des sources, organiser vos dossiers avec les projets et les artefacts, et connecter Claude à votre environnement de travail.
+Vous savez maintenant ce qu'est Claude et ce qu'il peut, ou ne peut pas, faire. Cette deuxième partie vous apprend à vous en servir comme un professionnel : créer et configurer votre environnement, choisir le bon modèle et les bons réglages, formuler des instructions précises grâce à la méthode CADRE, gérer vos conversations, travailler sur des documents et des données, rechercher et vérifier des sources, organiser vos dossiers avec les projets et les artefacts, et connecter Claude à votre environnement de travail.
 
 C'est la partie la plus « outil » du manuel. Gardez Claude ouvert et reproduisez chaque démonstration.
 
