@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """Couvertures (1re et 4e) des trois tomes, format 15,5 × 23,5 cm.
-Même maquette pour les trois tomes ; seuls changent la couleur d'accent (cuivre, malachite, cobalt),
-la position des courbes de niveau et les textes.
+Tome I : fond anthracite et cuivre. Tome II : orange pastel et blanc. Tome III : bleu pastel et or sable.
+Les trois partagent la fosse en courbes de niveau, la typographie et la hiérarchie des textes.
 Sorties : 02_ILLUSTRATIONS/COUVERTURES/tome{N}_couverture_avant.(pdf|png), tome{N}_couverture_arriere.(pdf|png)"""
 import textwrap
 from pathlib import Path
@@ -41,10 +41,10 @@ TOMES = {
                     "Travailler sur des documents, rechercher et vérifier des sources",
                     "Organiser ses dossiers avec les projets et connecter Claude à son environnement"],
             chiffres="Parties I et II · chapitres 1 à 16 · 160 questions corrigées · 60 prompts commentés"),
-    2: dict(romain="II", titre="Claude dans les métiers et les processus miniers", accent="#DE8250", sombre="#F2B48A",
-            theme=dict(fond="#FFFCF7", texte="#1E3557", doux="#4F7AA8", lignes="#8DB3DC", fort="#F0A06E",
-                       remplissage=["#FFF4EA", "#FDE6D3", "#FBEFE6", "#F4F1F0", "#E6EFF8", "#D6E6F5", "#C3D9EF", "#AECBE9"],
-                       bande="#F8CBA8", bande_texte="#1E3557", panneau="#EEF4FB"),
+    2: dict(romain="II", titre="Claude dans les métiers et les processus miniers", accent="#C8693A", sombre="#E9A273",
+            clair=dict(fond="#FFFFFF", encre="#3A2A22", accent="#C8693A", pastel="#F6B98A", motif="metiers",
+                       bandes=["#FFFFFF", "#FEF3EA", "#FCE4D1", "#F9D2B4", "#F6BE95", "#F2AA79", "#EC9762"],
+                       panneau="#FEF3EA", bande="#FCE4D1", trait="#FFFFFF"),
             fosse=dict(cx=112, cy=42, rx=88, ry=44, seed=23),
             citation="« Dans une mine, les processus sont interdépendants, et la meilleure idée d'usage vient souvent d'un autre service. »",
             texte="Ce tome est le cœur opérationnel de l'ouvrage. Chaque chapitre est consacré à un métier ou à un processus "
@@ -57,7 +57,10 @@ TOMES = {
                        "Finance, fiscalité, gestion", "Audit et contrôle interne", "Ressources humaines",
                        "Management et reporting", "ESG et traçabilité"]],
             chiffres="Partie III · chapitres 17 à 32 · 160 questions corrigées · 49 prompts commentés · bibliothèque de 124 prompts par métier"),
-    3: dict(romain="III", titre="Méthodes, gouvernance et mise en pratique", accent="#6F8FC4", sombre="#4C6390",
+    3: dict(romain="III", titre="Méthodes, gouvernance et mise en pratique", accent="#B08A3E", sombre="#D9BC82",
+            clair=dict(fond="#FFFFFF", encre="#1D3354", accent="#B08A3E", pastel="#A9CBE8", motif="quadrillage",
+                       bandes=["#FFFFFF", "#F1F7FC", "#E0EDF8", "#CCE0F2", "#B6D2EC", "#9EC2E4", "#86B1DA"],
+                       panneau="#EEF5FB", bande="#DDEBF7", trait="#FFFFFF"),
             fosse=dict(cx=44, cy=42, rx=90, ry=44, seed=37),
             citation="« Utiliser Claude ponctuellement fait gagner du temps. Construire des méthodes transforme durablement "
                      "la manière de travailler d'une équipe. »",
@@ -227,7 +230,182 @@ def arriere(n, c):
         fig.savefig(OUT / f"tome{n}_couverture_arriere.{ext}", dpi=300, facecolor=th["fond"])
     plt.close(fig)
 
+# ---------------------------------------------------------------- maquette claire (tomes II et III)
+from matplotlib.patches import FancyBboxPatch, Polygon
+BOLD = FontProperties(fname=str(Path(__file__).resolve().parent / "polices" / "EBGaramond12-Bold.ttf"))
+
+def anneau(cx, cy, rx, ry, k, ph, t):
+    r = 1 + 0.07 * np.sin(2 * t + ph[0]) + 0.045 * np.sin(3 * t + ph[1]) * k + 0.02 * np.sin(7 * t + ph[2])
+    return cx + rx * k * r * np.cos(t), cy + ry * k * r * np.sin(t) - (1 - k) * 7
+
+def relief(ax, P, cx, cy, rx, ry, seed, n=22, clip=None, alpha=1.0, points=0):
+    """Fosse en gradins : chaque gradin est une plage de couleur, son talus une ombre portée,
+    son arête un filet blanc ; la rampe d'accès est tracée en tirets."""
+    from matplotlib.colors import to_rgb
+    rng = np.random.default_rng(seed); t = np.linspace(0, 2 * np.pi, 720); ph = rng.uniform(0, 2 * np.pi, 4)
+    objets = []
+    for i in range(n):
+        k = 1 - i / (n + 1.5); u = i / (n - 1)
+        x, y = anneau(cx, cy, rx, ry, k, ph, t)
+        col = np.array(degrade(P["bandes"], u))
+        objets += ax.fill(x, y - 1.3, color=tuple(col * 0.86), lw=0, alpha=alpha * 0.55, zorder=1.4)   # talus
+        objets += ax.fill(x, y, color=tuple(col), lw=0, alpha=alpha, zorder=1.5)                   # gradin
+        objets += ax.plot(x, y, color=P["trait"], lw=0.7 if i % 4 else 1.2, alpha=alpha * 0.95, zorder=1.6)
+        if i % 4 == 0 and i:
+            objets += ax.plot(x, y - 1.3, color=P["accent"], lw=0.35, alpha=alpha * 0.45, zorder=1.55)
+    s_ = np.linspace(0, 1, 500); ang = -0.6 + 5.2 * np.pi * s_; k = 1 - 0.9 * s_
+    objets += ax.plot(cx + rx * k * np.cos(ang), cy + ry * k * np.sin(ang) - 0.9 * s_ * 7, color=P["accent"],
+                      lw=0.9, alpha=alpha * 0.9, ls=(0, (5, 2.5)), zorder=1.7)
+    if points:   # un repère par métier, posé sur un même gradin
+        kk = 1 - 7 / (n + 1.5); tp = np.linspace(0, 2 * np.pi, points, endpoint=False) + 0.2
+        x, y = anneau(cx, cy, rx, ry, kk, ph, tp)
+        objets += [ax.scatter(x, y, s=16, c=P["fond"], edgecolors=P["accent"], linewidths=0.9, zorder=1.8, alpha=alpha)]
+    if clip is not None:
+        for o in objets: o.set_clip_path(clip)
+
+def cadre_carto(ax, P):
+    """Cadre cartographique : filet fin et graduation alternée, comme sur une carte topographique."""
+    m, e = 5.5, 1.5
+    ax.add_patch(Rectangle((m, m), 155 - 2 * m, 235 - 2 * m, fc="none", ec=P["encre"], lw=0.45, zorder=7))
+    ax.add_patch(Rectangle((m + e, m + e), 155 - 2 * (m + e), 235 - 2 * (m + e), fc="none", ec=P["encre"], lw=0.3, zorder=7))
+    pas = 10
+    for x0 in np.arange(m, 155 - m, pas):
+        if int((x0 - m) / pas) % 2 == 0:
+            for y0 in (m, 235 - m - e):
+                ax.add_patch(Rectangle((x0, y0), min(pas, 155 - m - x0), e, fc=P["accent"], ec="none", alpha=0.85, zorder=7))
+    for y0 in np.arange(m, 235 - m, pas):
+        if int((y0 - m) / pas) % 2 == 0:
+            for x0 in (m, 155 - m - e):
+                ax.add_patch(Rectangle((x0, y0), e, min(pas, 235 - m - y0), fc=P["accent"], ec="none", alpha=0.85, zorder=7))
+
+def nord(ax, P, x, y, h=9):
+    ax.add_patch(Polygon([(x, y + h), (x - 2.2, y), (x, y + 2), (x + 2.2, y)], closed=True, fc=P["encre"], ec="none", zorder=6))
+    ax.add_patch(Polygon([(x, y + h), (x + 2.2, y), (x, y + 2)], closed=True, fc=P["fond"], ec=P["encre"], lw=0.4, zorder=6))
+    texte(ax, x, y + h + 3.2, "N", 7.5, font=BOLD, color=P["encre"])
+
+def fondu(ax, blanc, teinte, y0, y1):
+    """Teinte pastel en bas de page qui se fond progressivement dans le blanc, sans arête visible."""
+    from matplotlib.colors import to_rgb
+    a, b = np.array(to_rgb(teinte)), np.array(to_rgb(blanc))
+    g = (np.linspace(0, 1, 400) ** 1.3)[:, None]
+    img = (a * (1 - g) + b * g)[::-1][:, None, :]
+    ax.imshow(img, extent=(0, 155, y0, y1), aspect="auto", zorder=0.5, interpolation="bicubic")
+
+def quadrillage(ax, P, y_max):
+    """Quadrillage d'arpentage dont l'intensité décroît vers le haut."""
+    from matplotlib.colors import to_rgba
+    def a_(y): return max(0.0, 1 - y / y_max) ** 0.8
+    for x in np.arange(15, 155, 15):
+        ys = np.linspace(0, y_max, 40)
+        for y_a, y_b in zip(ys[:-1], ys[1:]):
+            ax.plot([x, x], [y_a, y_b], color=P["accent"], lw=0.25, alpha=0.4 * a_(y_a), zorder=1.9)
+    for y in np.arange(10, y_max, 15):
+        ax.plot([0, 155], [y, y], color=P["accent"], lw=0.25, alpha=0.4 * a_(y), zorder=1.9)
+    for x in np.arange(15, 155, 15):
+        for y in np.arange(10, y_max, 15):
+            ax.plot([x - 0.9, x + 0.9], [y, y], color=P["accent"], lw=0.5, alpha=0.9 * a_(y), zorder=1.95)
+            ax.plot([x, x], [y - 0.9, y + 0.9], color=P["accent"], lw=0.5, alpha=0.9 * a_(y), zorder=1.95)
+
+def _quadrillage_ancien(ax, P, y_max):
+    for x in np.arange(15, 155, 15):
+        ax.plot([x, x], [0, y_max], color=P["accent"], lw=0.25, alpha=0.35, zorder=1.9)
+    for y in np.arange(10, y_max, 15):
+        ax.plot([0, 155], [y, y], color=P["accent"], lw=0.25, alpha=0.35, zorder=1.9)
+    for x in np.arange(15, 155, 15):          # croisillons d'arpentage
+        for y in np.arange(10, y_max, 15):
+            ax.plot([x - 0.9, x + 0.9], [y, y], color=P["accent"], lw=0.5, alpha=0.8, zorder=1.95)
+            ax.plot([x, x], [y - 0.9, y + 0.9], color=P["accent"], lw=0.5, alpha=0.8, zorder=1.95)
+
+def pastille(ax, x, y, txt, P, w=26, h=7.5):
+    ax.add_patch(FancyBboxPatch((x - w / 2, y - h / 2), w, h, boxstyle=f"round,pad=0,rounding_size={h / 2}",
+                                fc=P["pastel"], ec="none", zorder=6))
+    texte(ax, x, y + 0.2, espace(txt), 9.5, font=BOLD, color=P["encre"])
+
+def avant_clair(n, c):
+    P = c["clair"]; E = P["encre"]
+    fig, ax = toile(P["fond"])
+    clip = Rectangle((5.5, 5.5), 144, 224, transform=ax.transData)
+    fondu(ax, P["fond"], P["panneau"], 0, 125)
+    if P["motif"] == "quadrillage": quadrillage(ax, P, 125)
+    cx, cy = (96, 40) if n == 2 else (60, 40)
+    relief(ax, P, cx, cy, 98, 58, seed=c["fosse"]["seed"], clip=clip, points=16 if P["motif"] == "metiers" else 0)
+    nord(ax, P, 138 if n == 2 else 140, 82)
+    cadre_carto(ax, P)
+    texte(ax, 77.5, 216, espace("GUIDE PROFESSIONNEL"), 8.2, color=P["accent"])
+    pastille(ax, 77.5, 203, f"TOME {c['romain']}", P)
+    texte(ax, 77.5, 181, espace("LA MINE"), 33, color=E)
+    texte(ax, 77.5, 158, espace("AUGMENTÉE"), 33, color=E)
+    ax.plot([62, 74], [145, 145], color=P["accent"], lw=1.2, zorder=6, solid_capstyle="round")
+    ax.add_patch(Polygon([(77.5, 147), (79.5, 145), (77.5, 143), (75.5, 145)], closed=True, fc=P["accent"], ec="none", zorder=6))
+    ax.plot([81, 93], [145, 145], color=P["accent"], lw=1.2, zorder=6, solid_capstyle="round")
+    lignes = textwrap.wrap(SOUS_TITRE, 44)
+    for i, l in enumerate(lignes):
+        texte(ax, 77.5, 134 - i * 7, l, 12.5, font=ITA, color=E)
+    y = 134 - len(lignes) * 7 - 4.5
+    tt = c["titre"].upper()
+    for i, l in enumerate(textwrap.wrap(tt, 44 if len(tt) <= 44 else len(tt) // 2 + 3)):
+        texte(ax, 77.5, y - i * 6, l, 9.8, font=BOLD, color=P["accent"])
+    ax.add_patch(FancyBboxPatch((44, 10.5), 67, 9, boxstyle="round,pad=0,rounding_size=1.2", fc=P["fond"], ec=P["accent"], lw=0.6, zorder=6))
+    texte(ax, 77.5, 15.2, espace(AUTEUR.upper()), 8.8, font=BOLD, color=E)
+    for ext in ("pdf", "png"):
+        fig.savefig(OUT / f"tome{n}_couverture_avant.{ext}", dpi=300, facecolor=P["fond"])
+    plt.close(fig)
+
+def arriere_clair(n, c):
+    P = c["clair"]; E = P["encre"]
+    fig, ax = toile(P["fond"])
+    clip = Rectangle((5.5, 5.5), 144, 224, transform=ax.transData)
+    relief(ax, P, 150, 232, 72, 46, seed=c["fosse"]["seed"] + 1, n=16, clip=clip, alpha=0.75)
+    cadre_carto(ax, P)
+    pastille(ax, 30, 214, f"TOME {c['romain']}", P, w=28)
+    y = 199
+    cit = textwrap.wrap(c["citation"].replace("« ", "«\u00a0").replace(" »", "\u00a0»"), 42 if n == 3 else 44)
+    ax.plot([14, 14], [y + 3.4, y - 7.4 * len(cit) + 3.8], color=P["accent"], lw=2, zorder=6, solid_capstyle="round")
+    for l in cit:
+        texte(ax, 19, y, l, 13.5, font=ITA, ha="left", color=E); y -= 7.4
+    y -= 5
+    for l in textwrap.wrap(c["texte"], 68):
+        texte(ax, 14, y, l, 9.9, ha="left", color=E); y -= 5.3
+    y -= 7
+    texte(ax, 14, y, espace("DANS CE TOME"), 8.2, font=BOLD, color=P["accent"], ha="left"); y -= 4
+    if "colonnes" in c:
+        haut = 6.2 * max(len(col) for col in c["colonnes"]) + 7
+        ax.add_patch(FancyBboxPatch((12, y - haut), 131, haut, boxstyle="round,pad=0,rounding_size=2.5",
+                                    fc=P["panneau"], ec=P["pastel"], lw=0.7, zorder=4.8))
+        y -= 5.5; hauts = []
+        for j, col in enumerate(c["colonnes"]):
+            yy = y
+            for k_, p_ in enumerate(col):
+                num = j * len(col) + k_ + 17
+                texte(ax, 17 + j * 64, yy, str(num), 8, font=BOLD, color=P["accent"], ha="left")
+                texte(ax, 24 + j * 64, yy, p_, 9.6, ha="left", color=E); yy -= 6.2
+            hauts.append(yy)
+        y = min(hauts) - 2
+    else:
+        y -= 4
+        for k_, p_ in enumerate(c["points"]):
+            ax.add_patch(Rectangle((14.2, y - 1.2), 2.4, 2.4, fc=P["pastel"], ec=P["accent"], lw=0.5, zorder=6))
+            for l in textwrap.wrap(p_, 64):
+                texte(ax, 20.5, y, l, 10, ha="left", color=E); y -= 5.3
+            y -= 2
+    y -= 3
+    y -= 2
+    for l in textwrap.wrap(c["chiffres"], 72):
+        texte(ax, 14, y, l, 9.2, font=ITA, color=P["accent"], ha="left"); y -= 4.9
+    # bloc auteur sur bande pastel
+    ax.add_patch(Rectangle((7, 7), 141, 41, fc=P["bande"], ec="none", zorder=4.2))
+    ax.plot([7, 148], [48, 48], color=P["accent"], lw=0.9, zorder=5)
+    texte(ax, 14, 40, espace(AUTEUR.upper()), 8.6, font=BOLD, color=E, ha="left")
+    yy = 33.5
+    for l in textwrap.wrap(BIO, 86):
+        texte(ax, 14, yy, l, 7.9, ha="left", color=E); yy -= 4
+    texte(ax, 14, 12.5, "Mines · Intelligence artificielle · Management", 7.5, ha="left", color=P["accent"])
+    for ext in ("pdf", "png"):
+        fig.savefig(OUT / f"tome{n}_couverture_arriere.{ext}", dpi=300, facecolor=P["fond"])
+    plt.close(fig)
+
 if __name__ == "__main__":
     for n, c in TOMES.items():
-        avant(n, c); arriere(n, c)
+        if "clair" in c: avant_clair(n, c); arriere_clair(n, c)
+        else: avant(n, c); arriere(n, c)
     print("Couvertures produites dans", OUT)
